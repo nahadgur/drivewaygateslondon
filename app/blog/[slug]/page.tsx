@@ -51,9 +51,9 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
             return <p key={i} className="text-gray-600 leading-relaxed mb-5">{block.text}</p>;
           case 'image':
             return (
-              <div key={i} className="my-8 rounded-2xl overflow-hidden border border-gray-200 shadow-lg">
+              <div key={i} className="my-8 rounded-2xl overflow-hidden border border-gray-200 shadow-lg aspect-[16/9]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={block.src} alt={block.alt} className="w-full h-auto" loading="lazy" />
+                <img src={block.src} alt={block.alt} className="w-full h-full object-cover" loading="lazy" />
               </div>
             );
           case 'list':
