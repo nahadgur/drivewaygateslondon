@@ -18,7 +18,7 @@ const GATE_TYPES = [
 ];
 
 const GOOGLE_SCRIPT_URL =
-  'https://script.google.com/macros/s/REPLACE_WITH_YOUR_SCRIPT_URL/exec';
+  'https://script.google.com/macros/s/AKfycbwIkSKA8qGfLjJ3e_lUUJp5U0oNZLo51wpZtXvdvNSaPXNyynWrdtN-ZcoYql3hcAjy/exec';
 
 export function HeroLeadForm({ city, service }: HeroLeadFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
