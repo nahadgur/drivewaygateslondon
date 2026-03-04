@@ -41,7 +41,8 @@ export function Header({ onOpenModal }: HeaderProps) {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2.5 group">
-              <div className="w-10 h-10 bg-brand-500 rounded-lg flex items-center justify-center text-white font-bold text-lg">DG</div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo.png" alt="Driveway Gates London" className="h-10 w-auto" />
               <div className="flex flex-col">
                 <span className="font-display font-bold text-xl leading-none text-gray-900">Driveway Gates</span>
                 <span className="text-xs text-brand-500 font-semibold tracking-widest uppercase">London</span>
