@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { Calendar, ArrowLeft, ArrowRight, ChevronUp, Tag } from 'lucide-react';
+import { Calendar, ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react';
 import { blogArticles, getArticleBySlug, type ContentBlock } from '@/data/blog';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -43,12 +43,16 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
     <div className="prose prose-gray max-w-none">
       {blocks.map((block, i) => {
         switch (block.type) {
+
           case 'h2':
             return <h2 key={i} className="text-2xl md:text-3xl font-display font-bold text-gray-900 mt-10 mb-4">{block.text}</h2>;
+
           case 'h3':
             return <h3 key={i} className="text-xl md:text-2xl font-display font-bold text-gray-900 mt-8 mb-3">{block.text}</h3>;
+
           case 'p':
             return <p key={i} className="text-gray-600 leading-relaxed mb-5">{block.text}</p>;
+
           case 'image':
             return (
               <div key={i} className="my-8 rounded-2xl overflow-hidden border border-gray-200 shadow-lg aspect-[16/9]">
@@ -56,6 +60,7 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
                 <img src={block.src} alt={block.alt} className="w-full h-full object-cover" loading="lazy" />
               </div>
             );
+
           case 'list':
             return (
               <ul key={i} className="my-6 pl-6 space-y-2">
@@ -64,8 +69,93 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
                 ))}
               </ul>
             );
+
           case 'cta':
             return <BlogCtaBanner key={i} onOpenModal={onOpenModal} />;
+
+          // ── NEW: Internal service x location link ─────────────────────────
+          case 'internal-link':
+            return (
+              <div key={i} className="my-6 rounded-xl border border-brand-100 bg-brand-50 px-5 py-4 flex items-start gap-3">
+                <div className="flex-shrink-0 mt-0.5 w-5 h-5 rounded-full bg-brand-500 flex items-center justify-center">
+                  <ArrowRight className="w-3 h-3 text-white" />
+                </div>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  {block.context.replace(block.text, '')}
+                  <Link
+                    href={block.href}
+                    className="font-semibold text-brand-600 hover:text-brand-700 underline underline-offset-2 decoration-brand-300 hover:decoration-brand-500 transition-colors"
+                  >
+                    {block.text}
+                  </Link>
+                  {block.context.endsWith(block.text) ? '.' : ''}
+                </p>
+              </div>
+            );
+
+          // ── NEW: External authority link ──────────────────────────────────
+          case 'external-link':
+            return (
+              <div key={i} className="my-5 rounded-xl border border-gray-200 bg-gray-50 px-5 py-3 flex items-center gap-3">
+                <ExternalLink className="flex-shrink-0 w-4 h-4 text-gray-400" />
+                <div className="flex-1 min-w-0">
+                  <a
+                    href={block.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-semibold text-brand-700 hover:text-brand-800 underline underline-offset-2 decoration-brand-300 hover:decoration-brand-600 transition-colors leading-snug"
+                  >
+                    {block.text}
+                  </a>
+                  <p className="text-[11px] text-gray-400 mt-0.5 font-medium uppercase tracking-wide">{block.source}</p>
+                </div>
+              </div>
+            );
+
+          // ── NEW: Related articles block ───────────────────────────────────
+          case 'related-articles':
+            return (
+              <div key={i} className="mt-12 pt-8 border-t border-gray-200">
+                <h3 className="text-base font-bold text-gray-500 uppercase tracking-wider mb-5">You might also like</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  {block.articles.map((a) => {
+                    const fullArticle = blogArticles.find(art => art.slug === a.slug);
+                    return (
+                      <Link
+                        key={a.slug}
+                        href={`/blog/${a.slug}/`}
+                        className="group flex flex-col rounded-xl border border-gray-100 overflow-hidden hover:shadow-md hover:border-brand-200 transition-all bg-white"
+                      >
+                        {fullArticle?.featuredImage && (
+                          <div className="relative h-28 overflow-hidden">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img
+                              src={fullArticle.featuredImage}
+                              alt={a.title}
+                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                              loading="lazy"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-gray-900/40 to-transparent" />
+                            <span className="absolute top-2 left-2 px-2 py-0.5 bg-brand-500/90 text-white text-[9px] font-bold uppercase rounded-full">
+                              {a.category}
+                            </span>
+                          </div>
+                        )}
+                        <div className="p-3 flex-grow flex flex-col">
+                          <h4 className="text-sm font-bold text-gray-900 group-hover:text-brand-600 transition-colors leading-snug line-clamp-2">
+                            {a.title}
+                          </h4>
+                          <span className="text-brand-600 text-xs font-semibold flex items-center gap-1 mt-auto pt-2">
+                            Read more <ArrowRight className="w-3 h-3" />
+                          </span>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+
           default:
             return null;
         }
@@ -160,7 +250,7 @@ export default function BlogArticlePage({ params }: { params: { slug: string } }
           </div>
         </div>
 
-        {/* Related Articles Grid */}
+        {/* Related Articles Grid — bottom of page */}
         {related.length > 0 && (
           <section className="section-padding bg-gray-50">
             <div className="container-width">
