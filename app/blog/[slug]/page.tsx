@@ -101,18 +101,21 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
             return <BlogCtaBanner key={i} onOpenModal={onOpenModal} />;
 
           // Internal link: clean inline sentence with linked anchor text
-          case 'internal-link':
+          case 'internal-link': {
+            const [before, after] = block.context.split(block.text);
             return (
               <p key={i} className="my-5 text-gray-600 leading-relaxed">
-                {block.context.replace(block.text, '').trim().replace(/\.$/, '')}{' '}
+                {before}
                 <Link
                   href={block.href}
                   className="font-semibold text-brand-600 hover:text-brand-700 underline underline-offset-2 decoration-brand-300 hover:decoration-brand-500 transition-colors"
                 >
                   {block.text}
-                </Link>.
+                </Link>
+                {after ?? ''}
               </p>
             );
+          }
 
           // External links rendered invisibly here — shown in sidebar as Further Reading
           case 'external-link':
