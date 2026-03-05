@@ -100,22 +100,9 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
           case 'cta':
             return <BlogCtaBanner key={i} onOpenModal={onOpenModal} />;
 
-          // Internal link: clean inline sentence with linked anchor text
-          case 'internal-link': {
-            const [before, after] = block.context.split(block.text);
-            return (
-              <p key={i} className="my-5 text-gray-600 leading-relaxed">
-                {before}
-                <Link
-                  href={block.href}
-                  className="font-semibold text-brand-600 hover:text-brand-700 underline underline-offset-2 decoration-brand-300 hover:decoration-brand-500 transition-colors"
-                >
-                  {block.text}
-                </Link>
-                {after ?? ''}
-              </p>
-            );
-          }
+          // Internal links shown in sidebar only — hidden in article body
+          case 'internal-link':
+            return null;
 
           // External links rendered invisibly here — shown in sidebar as Further Reading
           case 'external-link':
