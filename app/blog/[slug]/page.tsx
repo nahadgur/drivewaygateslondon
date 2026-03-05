@@ -52,22 +52,41 @@ function BlogCtaBanner({ onOpenModal }: { onOpenModal: () => void }) {
 }
 
 function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOpenModal: () => void }) {
-  // Inject CTA once: just before the third h2 (after second h2's content)
+  // Pre-process: pull all image blocks out, map them to the h2 index they follow
+  // Also find index of 2nd h2 for CTA injection
+  const imageQueue: { [h2Index: number]: { src: string; alt: string }[] } = {};
   let h2Count = 0;
-  let ctaInsertIndex = -1;
+  let currentH2Index = -1;
+  let ctaInsertBeforeH2 = -1; // we'll store the block index of the 2nd h2
+
   for (let i = 0; i < blocks.length; i++) {
-    if (blocks[i].type === 'h2') {
+    const block = blocks[i];
+    if (block.type === 'h2') {
       h2Count++;
-      if (h2Count === 3) { ctaInsertIndex = i; break; }
+      currentH2Index = i;
+      if (h2Count === 2) ctaInsertBeforeH2 = i;
+    }
+    if (block.type === 'image' && currentH2Index !== -1) {
+      if (!imageQueue[currentH2Index]) imageQueue[currentH2Index] = [];
+      imageQueue[currentH2Index].push({ src: block.src, alt: block.alt });
     }
   }
+
+  // Track which images have been rendered
+  const renderedImages = new Set<number>();
 
   return (
     <div className="prose prose-gray max-w-none">
       {blocks.map((block, i) => {
+        // Skip image blocks — they render attached to their h2 instead
+        if (block.type === 'image') return null;
+        // Skip internal-link, external-link, cta data blocks
+        if (block.type === 'internal-link' || block.type === 'external-link' || block.type === 'cta') return null;
+
         const elements: React.ReactNode[] = [];
 
-        if (i === ctaInsertIndex) {
+        // Inject CTA banner just before the 2nd h2
+        if (i === ctaInsertBeforeH2) {
           elements.push(<BlogCtaBanner key="cta-inject" onOpenModal={onOpenModal} />);
         }
 
@@ -78,7 +97,19 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
                 {block.text}
               </h2>
             );
+            // Inject images that belong to this h2, immediately after the heading
+            if (imageQueue[i]) {
+              imageQueue[i].forEach((img, imgIdx) => {
+                elements.push(
+                  <div key={`img-${i}-${imgIdx}`} className="my-6 rounded-2xl overflow-hidden border border-gray-200 shadow-lg aspect-[16/9]">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={img.src} alt={img.alt} className="w-full h-full object-cover" loading="lazy" />
+                  </div>
+                );
+              });
+            }
             break;
+
           case 'h3':
             elements.push(
               <h3 key={i} className="text-xl md:text-2xl font-display font-bold text-gray-900 mt-8 mb-3">
@@ -86,6 +117,7 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
               </h3>
             );
             break;
+
           case 'p':
             elements.push(
               <p key={i} className="text-gray-600 leading-relaxed mb-5">
@@ -93,14 +125,7 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
               </p>
             );
             break;
-          case 'image':
-            elements.push(
-              <div key={i} className="my-8 rounded-2xl overflow-hidden border border-gray-200 shadow-lg aspect-[16/9]">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={block.src} alt={block.alt} className="w-full h-full object-cover" loading="lazy" />
-              </div>
-            );
-            break;
+
           case 'list':
             elements.push(
               <ul key={i} className="my-6 pl-6 space-y-2">
@@ -112,6 +137,7 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
               </ul>
             );
             break;
+
           case 'related-articles':
             elements.push(
               <div key={i} className="mt-12 pt-8 border-t border-gray-200 not-prose">
@@ -152,10 +178,7 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
               </div>
             );
             break;
-          // Hidden from article body
-          case 'cta':
-          case 'internal-link':
-          case 'external-link':
+
           default:
             break;
         }
