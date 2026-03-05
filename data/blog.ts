@@ -71,7 +71,7 @@ const article1: BlogArticle = {
       type: 'internal-link',
       href: '/services/electric-sliding-gates/barnet/',
       text: 'electric sliding gate installations in Barnet and North London',
-      context: 'See examples and get a free quote for our electric sliding gate installations in Barnet and North London.',
+      context: 'Compare quotes for electric sliding gate installations in Barnet and North London from vetted local installers.',
     },
     { type: 'image', src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop', alt: 'Modern sliding driveway gate on a London property' },
 
@@ -83,7 +83,7 @@ const article1: BlogArticle = {
       type: 'internal-link',
       href: '/services/electric-swing-gates/richmond/',
       text: 'swing gate installations in Richmond and South West London',
-      context: 'View our swing gate installations in Richmond and South West London, including underground motor options for period properties.',
+      context: 'Find vetted installers for swing gate installations in Richmond and South West London, including underground motor options for period properties.',
     },
 
     { type: 'h2', text: 'Wooden Driveway Gates: £2,500 to £8,000' },
@@ -94,7 +94,7 @@ const article1: BlogArticle = {
       type: 'internal-link',
       href: '/services/wooden-driveway-gates/camden/',
       text: 'wooden driveway gates in Camden and North London conservation areas',
-      context: 'Explore our range of hardwood wooden driveway gates in Camden and North London conservation areas.',
+      context: 'Get matched with specialists in hardwood wooden driveway gates in Camden and North London conservation areas.',
     },
     { type: 'image', src: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop', alt: 'Wooden driveway gates on a period London home' },
 
@@ -105,7 +105,7 @@ const article1: BlogArticle = {
       type: 'internal-link',
       href: '/services/wrought-iron-gates/kensington/',
       text: 'wrought iron gate installations in Kensington and Chelsea',
-      context: 'For the most traditional look, see our wrought iron gate installations in Kensington and Chelsea.',
+      context: 'For the most traditional look, compare quotes for wrought iron gate installations in Kensington and Chelsea.',
     },
 
     { type: 'h2', text: 'What Affects the Final Price?' },
@@ -190,13 +190,13 @@ const article2: BlogArticle = {
       type: 'internal-link',
       href: '/services/wooden-driveway-gates/camden/',
       text: 'timber gate installations in Camden conservation areas',
-      context: 'See examples of our sympathetic timber gate installations in Camden conservation areas, designed to meet local character guidelines.',
+      context: 'Find installers who specialise in timber gate installations in Camden conservation areas, designed to meet local character guidelines.',
     },
     {
       type: 'internal-link',
       href: '/services/wrought-iron-gates/kensington/',
       text: 'wrought iron gates in Kensington and Chelsea',
-      context: 'For conservation areas in Kensington and Chelsea, our wrought iron gates are regularly approved by local planning officers.',
+      context: 'For conservation areas in Kensington and Chelsea, find approved installers for wrought iron gates with strong local planning track records.',
     },
     {
       type: 'external-link',
@@ -225,7 +225,7 @@ const article2: BlogArticle = {
       type: 'internal-link',
       href: '/services/electric-swing-gates/richmond/',
       text: 'gate installations in Richmond upon Thames',
-      context: 'Our team has extensive experience navigating the planning rules for gate installations in Richmond upon Thames, one of London\'s most conservation-sensitive boroughs.',
+      context: 'Find gate installers with experience navigating the planning rules for gate installations in Richmond upon Thames, one of London\'s most conservation-sensitive boroughs.',
     },
 
     { type: 'h2', text: 'Dropped Kerbs and Vehicle Crossovers' },
@@ -280,7 +280,7 @@ const article3: BlogArticle = {
       type: 'internal-link',
       href: '/services/electric-sliding-gates/croydon/',
       text: 'electric sliding gate installations in Croydon and South London',
-      context: 'See our electric sliding gate installations in Croydon and South London — ideal for shorter driveways and plots with limited swing space.',
+      context: 'Compare quotes for electric sliding gate installations in Croydon and South London — ideal for shorter driveways and plots with limited swing space.',
     },
     { type: 'image', src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop', alt: 'Electric sliding gate opening on a London driveway' },
 
@@ -296,7 +296,7 @@ const article3: BlogArticle = {
       type: 'internal-link',
       href: '/services/electric-sliding-gates/barnet/',
       text: 'sliding gate solutions for sloped driveways in Barnet and North London',
-      context: 'Our team installs sliding gate solutions for sloped driveways in Barnet and North London, including cantilever options for steep approaches.',
+      context: 'Get matched with installers for sliding gate solutions on sloped driveways in Barnet and North London, including cantilever options for steep approaches.',
     },
     { type: 'image', src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop', alt: 'Driveway gate on a sloped London property' },
 
@@ -311,7 +311,7 @@ const article3: BlogArticle = {
       type: 'internal-link',
       href: '/services/electric-swing-gates/richmond/',
       text: 'traditional swing gate installations in Richmond',
-      context: 'For period properties, explore our traditional swing gate installations in Richmond where classic aesthetics and heritage character are priorities.',
+      context: 'For period properties, find specialists in traditional swing gate installations in Richmond where classic aesthetics and heritage character are priorities.',
     },
     { type: 'image', src: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c0?q=80&w=1200&auto=format&fit=crop', alt: 'Traditional swing driveway gates on a period London home' },
 
@@ -365,7 +365,7 @@ const article4: BlogArticle = {
       type: 'internal-link',
       href: '/services/wooden-driveway-gates/richmond/',
       text: 'iroko and hardwood gate installations in Richmond',
-      context: 'Our team installs iroko and hardwood gate installations in Richmond, a borough where natural timber suits the period character of most streets.',
+      context: 'Get matched with iroko and hardwood gate specialists for installations in Richmond, a borough where natural timber suits the period character of most streets.',
     },
     { type: 'image', src: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=1200&auto=format&fit=crop', alt: 'Close-up of hardwood timber grain suitable for driveway gates' },
 
@@ -377,7 +377,7 @@ const article4: BlogArticle = {
       type: 'internal-link',
       href: '/services/wooden-driveway-gates/camden/',
       text: 'oak gate installations in Camden and Islington',
-      context: 'For the most characterful natural timber, explore our oak gate installations in Camden and Islington.',
+      context: 'For the most characterful natural timber, compare quotes for oak gate installations in Camden and Islington.',
     },
 
     { type: 'h2', text: 'Western Red Cedar: Lightweight and Fragrant' },
@@ -438,7 +438,7 @@ const article5: BlogArticle = {
       type: 'internal-link',
       href: '/services/gate-automation/barnet/',
       text: 'gate automation retrofits in Barnet and North London',
-      context: 'Book a free site survey for gate automation retrofits in Barnet and North London — we assess suitability at no charge.',
+      context: 'Get a free quote for gate automation retrofits in Barnet and North London from vetted local specialists.',
     },
     { type: 'image', src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop', alt: 'Manual driveway gates ready for automation retrofit' },
 
@@ -490,7 +490,7 @@ const article5: BlogArticle = {
       type: 'internal-link',
       href: '/services/gate-intercom-systems/richmond/',
       text: 'video intercom systems fitted alongside gate automation in Richmond',
-      context: 'See examples of video intercom systems fitted alongside gate automation in Richmond, Bromley, and South West London.',
+      context: 'Compare quotes for video intercom systems fitted alongside gate automation in Richmond, Bromley, and South West London.',
     },
 
     { type: 'h2', text: 'What Does a Retrofit Cost in London?' },
@@ -587,7 +587,7 @@ const article6: BlogArticle = {
       type: 'internal-link',
       href: '/services/gate-safety-inspections/london/',
       text: 'book a gate safety inspection anywhere in London',
-      context: 'If you are unsure whether your existing gate meets current standards, book a gate safety inspection anywhere in London through our certified engineer network.',
+      context: 'If you are unsure whether your existing gate meets current standards, find a certified engineer for a gate safety inspection anywhere in London.',
     },
 
     { type: 'h2', text: 'Checking and Testing Your Existing Gate' },
@@ -636,7 +636,7 @@ const article7: BlogArticle = {
       type: 'internal-link',
       href: '/services/wooden-driveway-gates/wandsworth/',
       text: 'hardwood timber gate installations in Wandsworth and South London',
-      context: 'For warmth and natural character, see our hardwood timber gate installations in Wandsworth and South London.',
+      context: 'For warmth and natural character, compare quotes for hardwood timber gate installations in Wandsworth and South London.',
     },
     { type: 'image', src: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop', alt: 'Hardwood timber driveway gate with natural grain finish' },
 
@@ -648,7 +648,7 @@ const article7: BlogArticle = {
       type: 'internal-link',
       href: '/services/metal-driveway-gates/ealing/',
       text: 'steel driveway gate installations in Ealing and West London',
-      context: 'View our steel driveway gate installations in Ealing and West London, including galvanised and powder-coated options.',
+      context: 'Find vetted installers for steel driveway gate installations in Ealing and West London, including galvanised and powder-coated options.',
     },
 
     { type: 'h2', text: 'Aluminium: Low Maintenance, Lightweight, and Modern' },
@@ -659,7 +659,7 @@ const article7: BlogArticle = {
       type: 'internal-link',
       href: '/services/aluminium-gates/croydon/',
       text: 'aluminium gate installations in Croydon and South London',
-      context: 'For a modern, low-maintenance option, explore our aluminium gate installations in Croydon and South London.',
+      context: 'For a modern, low-maintenance option, compare quotes for aluminium gate installations in Croydon and South London.',
     },
     { type: 'image', src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop', alt: 'Modern aluminium driveway gate with horizontal slatted design' },
 
@@ -670,7 +670,7 @@ const article7: BlogArticle = {
       type: 'internal-link',
       href: '/services/wrought-iron-gates/kensington/',
       text: 'hand-forged wrought iron gates in Kensington and Chelsea',
-      context: 'See our portfolio of hand-forged wrought iron gates in Kensington and Chelsea, including several conservation area approvals.',
+      context: 'Find specialists in hand-forged wrought iron gates in Kensington and Chelsea, including installers with conservation area approvals.',
     },
     {
       type: 'external-link',
@@ -735,13 +735,13 @@ const article8: BlogArticle = {
       type: 'internal-link',
       href: '/services/electric-sliding-gates/barnet/',
       text: 'driveway gate installations in Barnet',
-      context: 'See our driveway gate installations in Barnet, one of London\'s top boroughs for gate-related property value uplift.',
+      context: 'Compare quotes for driveway gate installations in Barnet, one of London\'s top boroughs for gate-related property value uplift.',
     },
     {
       type: 'internal-link',
       href: '/services/electric-swing-gates/richmond/',
       text: 'gate installations in Richmond upon Thames',
-      context: 'Browse our portfolio of gate installations in Richmond upon Thames, where premium properties consistently benefit from well-designed entrance gates.',
+      context: 'Find vetted gate installers in Richmond upon Thames, where premium properties consistently benefit from well-designed entrance gates.',
     },
     { type: 'image', src: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1200&auto=format&fit=crop', alt: 'Suburban London home with gated driveway in a tree-lined street' },
 
@@ -807,7 +807,7 @@ const article9: BlogArticle = {
       type: 'internal-link',
       href: '/services/gate-intercom-systems/barnet/',
       text: 'video intercom installation in Barnet and North London',
-      context: 'Get a free quote for video intercom installation in Barnet and North London — we fit wired and smart systems to suit every property.',
+      context: 'Compare quotes for video intercom installation in Barnet and North London from specialists in wired and smart systems.',
     },
 
     { type: 'h2', text: 'Smart Wi-Fi Intercoms: Control Your Gate from Anywhere' },
@@ -818,7 +818,7 @@ const article9: BlogArticle = {
       type: 'internal-link',
       href: '/services/gate-intercom-systems/richmond/',
       text: 'smart intercom systems in Richmond and Kensington',
-      context: 'View our smart intercom installations in Richmond and Kensington, including full smartphone control and cloud recording.',
+      context: 'Find installers for smart intercom systems in Richmond and Kensington, including full smartphone control and cloud recording.',
     },
     { type: 'image', src: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1200&auto=format&fit=crop', alt: 'Smart video intercom system showing colour display and gate control panel' },
 
@@ -874,7 +874,7 @@ const article10: BlogArticle = {
       type: 'internal-link',
       href: '/services/gate-repairs-maintenance/barnet/',
       text: 'annual gate servicing in Barnet and North London',
-      context: 'Book your annual gate servicing in Barnet and North London — we cover all makes and models of residential gate systems.',
+      context: 'Compare quotes for annual gate servicing in Barnet and North London from engineers covering all makes and models.',
     },
     { type: 'image', src: 'https://images.unsplash.com/photo-1600573472592-401b489a3cdc?q=80&w=1200&auto=format&fit=crop', alt: 'Gate engineer lubricating hinges during an annual maintenance service' },
 
@@ -889,7 +889,7 @@ const article10: BlogArticle = {
       type: 'internal-link',
       href: '/services/gate-safety-inspections/london/',
       text: 'gate safety inspection service across all London boroughs',
-      context: 'Our gate safety inspection service across all London boroughs covers all safety systems to current BS EN 12453 standards.',
+      context: 'Find certified engineers for a gate safety inspection across all London boroughs, covering all safety systems to current BS EN 12453 standards.',
     },
     {
       type: 'external-link',
@@ -924,7 +924,7 @@ const article10: BlogArticle = {
       type: 'internal-link',
       href: '/services/gate-repairs-maintenance/bromley/',
       text: 'gate repair and maintenance service in Bromley and South London',
-      context: 'If your gate has developed a fault between services, our gate repair and maintenance service in Bromley and South London offers prompt callouts.',
+      context: 'If your gate has developed a fault between services, find engineers offering prompt callouts for gate repair and maintenance in Bromley and South London.',
     },
     { type: 'cta' },
     { type: 'p', text: 'The bottom line is a simple one: a £200 annual service protects a gate system that costs £5,000 to £10,000 to install, keeps it operating safely within legal requirements, and preserves the manufacturer warranty. It takes around an hour and causes no meaningful disruption to your day.' },
