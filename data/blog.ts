@@ -196,7 +196,7 @@ const article2: BlogArticle = {
       type: 'internal-link',
       href: '/services/wrought-iron-gates/kensington/',
       text: 'wrought iron gates in Kensington and Chelsea',
-      context: 'For conservation areas in Kensington and Chelsea, find approved installers for wrought iron gates with strong local planning track records.',
+      context: 'For conservation areas, find approved installers for wrought iron gates in Kensington and Chelsea with strong local planning track records.',
     },
     {
       type: 'external-link',
@@ -296,7 +296,7 @@ const article3: BlogArticle = {
       type: 'internal-link',
       href: '/services/electric-sliding-gates/barnet/',
       text: 'sliding gate solutions for sloped driveways in Barnet and North London',
-      context: 'Get matched with installers for sliding gate solutions on sloped driveways in Barnet and North London, including cantilever options for steep approaches.',
+      context: 'Get matched with installers offering sliding gate solutions for sloped driveways in Barnet and North London, including cantilever options for steep approaches.',
     },
     { type: 'image', src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop', alt: 'Driveway gate on a sloped London property' },
 
@@ -365,7 +365,7 @@ const article4: BlogArticle = {
       type: 'internal-link',
       href: '/services/wooden-driveway-gates/richmond/',
       text: 'iroko and hardwood gate installations in Richmond',
-      context: 'Get matched with iroko and hardwood gate specialists for installations in Richmond, a borough where natural timber suits the period character of most streets.',
+      context: 'Get matched with specialists in iroko and hardwood gate installations in Richmond, a borough where natural timber suits the period character of most streets.',
     },
     { type: 'image', src: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=1200&auto=format&fit=crop', alt: 'Close-up of hardwood timber grain suitable for driveway gates' },
 
@@ -587,7 +587,7 @@ const article6: BlogArticle = {
       type: 'internal-link',
       href: '/services/gate-safety-inspections/london/',
       text: 'book a gate safety inspection anywhere in London',
-      context: 'If you are unsure whether your existing gate meets current standards, find a certified engineer for a gate safety inspection anywhere in London.',
+      context: 'If you are unsure whether your existing gate meets current standards, find a certified engineer and book a gate safety inspection anywhere in London.',
     },
 
     { type: 'h2', text: 'Checking and Testing Your Existing Gate' },
@@ -741,7 +741,7 @@ const article8: BlogArticle = {
       type: 'internal-link',
       href: '/services/electric-swing-gates/richmond/',
       text: 'gate installations in Richmond upon Thames',
-      context: 'Find vetted gate installers in Richmond upon Thames, where premium properties consistently benefit from well-designed entrance gates.',
+      context: 'Compare quotes for gate installations in Richmond upon Thames, where premium properties consistently benefit from well-designed entrance gates.',
     },
     { type: 'image', src: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1200&auto=format&fit=crop', alt: 'Suburban London home with gated driveway in a tree-lined street' },
 
@@ -889,7 +889,7 @@ const article10: BlogArticle = {
       type: 'internal-link',
       href: '/services/gate-safety-inspections/london/',
       text: 'gate safety inspection service across all London boroughs',
-      context: 'Find certified engineers for a gate safety inspection across all London boroughs, covering all safety systems to current BS EN 12453 standards.',
+      context: 'Find certified engineers providing a gate safety inspection service across all London boroughs, covering all safety systems to current BS EN 12453 standards.',
     },
     {
       type: 'external-link',
@@ -924,7 +924,7 @@ const article10: BlogArticle = {
       type: 'internal-link',
       href: '/services/gate-repairs-maintenance/bromley/',
       text: 'gate repair and maintenance service in Bromley and South London',
-      context: 'If your gate has developed a fault between services, find engineers offering prompt callouts for gate repair and maintenance in Bromley and South London.',
+      context: 'If your gate has developed a fault between services, find engineers offering a prompt gate repair and maintenance service in Bromley and South London.',
     },
     { type: 'cta' },
     { type: 'p', text: 'The bottom line is a simple one: a £200 annual service protects a gate system that costs £5,000 to £10,000 to install, keeps it operating safely within legal requirements, and preserves the manufacturer warranty. It takes around an hour and causes no meaningful disruption to your day.' },
