@@ -56,7 +56,7 @@ const article1: BlogArticle = {
   metaDescription: 'Wondering what driveway gates cost in London? We break down prices for electric sliding gates, swing gates, wooden gates and more with real installer quotes.',
   category: 'Pricing',
   publishDate: '2026-02-10',
-  featuredImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop',
+  featuredImage: '/images/gates/gate-hero-wrought-iron-sunset-cobblestone.png',
   excerpt: 'London driveway gate prices vary enormously depending on material, automation, and design complexity. Here is what homeowners actually pay in 2026.',
   content: [
     { type: 'p', text: 'If you are researching driveway gates for your London property, the first question on your mind is probably "how much is this going to cost?" The honest answer is that it depends on several factors, but we can give you a clear picture of what homeowners across London are actually paying in 2026.' },
@@ -73,7 +73,7 @@ const article1: BlogArticle = {
       text: 'electric sliding gate installations in Barnet and North London',
       context: 'Compare quotes for electric sliding gate installations in Barnet and North London from vetted local installers.',
     },
-    { type: 'image', src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop', alt: 'Modern sliding driveway gate on a London property' },
+    { type: 'image', src: '/images/gates/gate-aluminium-sliding-modern-dark-brick-2.png', alt: 'Modern sliding driveway gate on a London property' },
 
     { type: 'h2', text: 'Electric Swing Gates: £3,500 to £10,000' },
     { type: 'p', text: 'Swing gates are the classic choice and tend to be somewhat cheaper than sliding because there is no ground track to install. A pair of timber or steel swing gates with above-ground ram-arm motors starts at around £3,500. Mid-range installations with intercom access and a bespoke design typically sit between £5,000 and £7,500.' },
@@ -96,7 +96,7 @@ const article1: BlogArticle = {
       text: 'wooden driveway gates in Camden and North London conservation areas',
       context: 'Get matched with specialists in hardwood wooden driveway gates in Camden and North London conservation areas.',
     },
-    { type: 'image', src: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop', alt: 'Wooden driveway gates on a period London home' },
+    { type: 'image', src: '/images/gates/gate-wooden-oak-swing-cottage-flowers.png', alt: 'Wooden driveway gates on a period London home' },
 
     { type: 'h2', text: 'Metal Driveway Gates: £2,800 to £9,500' },
     { type: 'p', text: 'Steel and aluminium gates cover a broad price spectrum. A simple flat-bar aluminium design with powder coating starts at around £2,800. Bespoke mild steel gates with hot-dip galvanising, intricate laser-cut patterns, and RAL colour matching typically cost between £4,500 and £7,000. Hand-forged wrought iron with traditional scrollwork can reach £9,500 or beyond.' },
@@ -118,7 +118,7 @@ const article1: BlogArticle = {
       'Access logistics: tight streets and parking restrictions in inner London can add meaningfully to labour costs',
       'Pillar or post work: new brick, stone, or steel pillars add £800 to £2,500 per pair',
     ]},
-    { type: 'image', src: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c0?q=80&w=1200&auto=format&fit=crop', alt: 'Gate installer measuring a London driveway entrance' },
+    { type: 'image', src: '/images/gates/gate-wrought-iron-open-spring-avenue.png', alt: 'Gate installer measuring a London driveway entrance' },
 
     { type: 'h2', text: 'Intercom and Access Control: What to Budget' },
     { type: 'p', text: 'Many homeowners underestimate what they want from an intercom system until the gate is installed. Adding a basic wired audio intercom costs around £200 to £400. A wired colour video intercom with night vision typically adds £400 to £800. A smart Wi-Fi video intercom that lets you answer the gate from your phone costs £600 to £1,200 installed.' },
@@ -157,7 +157,7 @@ const article2: BlogArticle = {
   metaDescription: 'Find out whether you need planning permission for driveway gates in London. We cover permitted development rules, conservation areas, and borough-specific guidelines.',
   category: 'Planning',
   publishDate: '2026-02-12',
-  featuredImage: 'https://images.unsplash.com/photo-1600573472592-401b489a3cdc?q=80&w=1200&auto=format&fit=crop',
+  featuredImage: '/images/gates/gate-wrought-iron-ornate-sunset-golden.png',
   excerpt: 'Most driveway gates in London fall under permitted development, but there are important exceptions. Here is what you need to know before you start.',
   content: [
     { type: 'p', text: 'Planning permission is one of the most common concerns London homeowners raise when they start considering driveway gates. The good news is that most residential gate installations do not require a formal planning application. However, there are specific situations where permission is absolutely necessary, and getting it wrong can lead to enforcement action and, in the worst cases, a costly removal order.' },
@@ -181,7 +181,7 @@ const article2: BlogArticle = {
       source: 'legislation.gov.uk',
       rel: 'noopener noreferrer',
     },
-    { type: 'image', src: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200&auto=format&fit=crop', alt: 'Residential driveway gates in a London suburb' },
+    { type: 'image', src: '/images/gates/gate-wrought-iron-open-manor-tree-lined.png', alt: 'Residential driveway gates in a London suburb' },
 
     { type: 'h2', text: 'Conservation Areas: Where It Gets More Complex' },
     { type: 'p', text: 'If your property sits within a conservation area, permitted development rights may be significantly restricted. Many London boroughs have Article 4 directions in place within their conservation areas. An Article 4 direction removes certain permitted development rights and requires you to seek full planning permission for works that would otherwise be allowed automatically.' },
@@ -216,7 +216,7 @@ const article2: BlogArticle = {
       source: 'Historic England',
       rel: 'noopener noreferrer',
     },
-    { type: 'image', src: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1200&auto=format&fit=crop', alt: 'Period London property with ornate iron driveway gates' },
+    { type: 'image', src: '/images/gates/gate-wrought-iron-gold-crest-stately-home.png', alt: 'Period London property with ornate iron driveway gates' },
 
     { type: 'h2', text: 'London Borough-Specific Rules' },
     { type: 'p', text: 'Some London boroughs have supplementary planning guidance that adds local requirements on top of national rules. Boroughs with extensive conservation areas, such as Richmond upon Thames, Kensington and Chelsea, Camden, Islington, and Westminster, tend to have the most detailed and restrictive guidance.' },
@@ -267,7 +267,7 @@ const article3: BlogArticle = {
   metaDescription: 'Comparing electric sliding and swing gates for London homes. We cover space requirements, costs, aesthetics, and which works best for different driveway layouts.',
   category: 'Guides',
   publishDate: '2026-02-14',
-  featuredImage: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1200&auto=format&fit=crop',
+  featuredImage: '/images/gates/gate-aluminium-sliding-modern-dark-brick.png',
   excerpt: 'The sliding vs swing gate debate comes down to your driveway layout, budget, and personal style. Here is an honest comparison to help you decide.',
   content: [
     { type: 'p', text: 'This is the question every London homeowner asks when they start looking at automated driveway gates. Both sliding and swing options will secure your property, both can be fully automated with intercoms and smartphone control, and both come in a huge range of materials and styles. The real difference lies in how each type interacts with your specific driveway layout.' },
@@ -282,7 +282,7 @@ const article3: BlogArticle = {
       text: 'electric sliding gate installations in Croydon and South London',
       context: 'Compare quotes for electric sliding gate installations in Croydon and South London — ideal for shorter driveways and plots with limited swing space.',
     },
-    { type: 'image', src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop', alt: 'Electric sliding gate opening on a London driveway' },
+    { type: 'image', src: '/images/gates/gate-aluminium-sliding-modern-dark-brick-3.png', alt: 'Electric sliding gate opening on a London driveway' },
 
     { type: 'h2', text: 'Cost: What You Actually Pay' },
     { type: 'p', text: 'Swing gates are typically £500 to £2,000 cheaper than equivalent sliding systems for the same width and material. The saving comes from simpler groundwork, lighter motor requirements, and less engineering complexity overall.' },
@@ -298,7 +298,7 @@ const article3: BlogArticle = {
       text: 'sliding gate solutions for sloped driveways in Barnet and North London',
       context: 'Get matched with installers offering sliding gate solutions for sloped driveways in Barnet and North London, including cantilever options for steep approaches.',
     },
-    { type: 'image', src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop', alt: 'Driveway gate on a sloped London property' },
+    { type: 'image', src: '/images/gates/gate-aluminium-sliding-vertical-bar-stone-pillars.png', alt: 'Driveway gate on a sloped London property' },
 
     { type: 'h2', text: 'Security: Which Type Is Stronger?' },
     { type: 'p', text: 'Both gate types offer strong physical security when properly installed. The key variables are material, construction quality, and the strength of the posts or pillars rather than the gate type itself. A solidly built steel sliding gate and a solidly built steel swing gate present similar resistance to forced entry.' },
@@ -313,7 +313,7 @@ const article3: BlogArticle = {
       text: 'traditional swing gate installations in Richmond',
       context: 'For period properties, find specialists in traditional swing gate installations in Richmond where classic aesthetics and heritage character are priorities.',
     },
-    { type: 'image', src: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c0?q=80&w=1200&auto=format&fit=crop', alt: 'Traditional swing driveway gates on a period London home' },
+    { type: 'image', src: '/images/gates/gate-aluminium-swing-open-contemporary-mansion.png', alt: 'Traditional swing driveway gates on a period London home' },
 
     { type: 'h2', text: 'Reliability and Day-to-Day Maintenance' },
     { type: 'p', text: 'Both types are highly reliable when fitted with quality motors from established manufacturers. Sliding gates have a slight advantage in windy conditions because the gate is fully supported along its track or rail. A large swing gate caught by a strong gust places considerable strain on the hinges and the motor.' },
@@ -351,7 +351,7 @@ const article4: BlogArticle = {
   metaDescription: 'Comparing the best timber species for driveway gates in the UK. We cover durability, maintenance, cost, and appearance for iroko, oak, cedar, and Accoya.',
   category: 'Materials',
   publishDate: '2026-02-17',
-  featuredImage: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop',
+  featuredImage: '/images/gates/gate-wooden-oak-swing-cottage-garden.png',
   excerpt: 'Choosing the right timber for your driveway gates makes the difference between a gate that lasts 10 years and one that lasts 30. Here is how the main species compare.',
   content: [
     { type: 'p', text: 'Timber driveway gates remain one of the most popular choices for London homeowners, and it is easy to understand why. Wood offers warmth, character, and design flexibility that no other material fully replicates. But not all timber is equal, and the species you choose will determine how your gate looks, performs, and ages over the next two to three decades.' },
@@ -367,7 +367,7 @@ const article4: BlogArticle = {
       text: 'iroko and hardwood gate installations in Richmond',
       context: 'Get matched with specialists in iroko and hardwood gate installations in Richmond, a borough where natural timber suits the period character of most streets.',
     },
-    { type: 'image', src: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=1200&auto=format&fit=crop', alt: 'Close-up of hardwood timber grain suitable for driveway gates' },
+    { type: 'image', src: '/images/gates/gate-wrought-iron-closeup-fleur-de-lis-detail.png', alt: 'Close-up of hardwood timber grain suitable for driveway gates' },
 
     { type: 'h2', text: 'European Oak: The Premium Traditional Choice' },
     { type: 'p', text: 'Oak is the timber that most people picture when they imagine a classic English driveway gate. European oak (Quercus robur) is exceptionally strong, dense, and durable. Its grain pattern is among the most attractive of any commercially available timber, with a distinctive figure and natural lustre that matures beautifully over time.' },
@@ -388,7 +388,7 @@ const article4: BlogArticle = {
     { type: 'p', text: 'Accoya is not a species of tree but a modified timber product. Radiata pine is treated through an acetylation process that fundamentally changes the cell structure of the wood, making it exceptionally stable, highly rot-resistant, and dimensionally consistent. The manufacturer offers a 50-year above-ground guarantee on Accoya.' },
     { type: 'p', text: 'In practical terms, Accoya does not swell, shrink, or warp in the way that natural timber can. It takes paint and stain exceptionally well and holds finishes for longer than comparable unmodified timbers. For painted gates, Accoya is arguably the best substrate available.' },
     { type: 'p', text: 'The main downside is cost. Accoya gates typically cost in a similar bracket to oak, and the acetylation process makes Accoya significantly more expensive than iroko.' },
-    { type: 'image', src: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c0?q=80&w=1200&auto=format&fit=crop', alt: 'Timber driveway gate with natural wood finish in a garden setting' },
+    { type: 'image', src: '/images/gates/gate-wooden-oak-swing-cottage-garden.png', alt: 'Timber driveway gate with natural wood finish in a garden setting' },
 
     { type: 'h2', text: 'Maintenance: What Each Timber Actually Requires' },
     { type: 'list', items: [
@@ -424,7 +424,7 @@ const article5: BlogArticle = {
   metaDescription: 'Want to add electric automation to your existing manual driveway gates? Here is everything you need to know about retrofitting motors, intercoms, and smart controls.',
   category: 'Automation',
   publishDate: '2026-02-19',
-  featuredImage: 'https://images.unsplash.com/photo-1600573472592-401b489a3cdc?q=80&w=1200&auto=format&fit=crop',
+  featuredImage: '/images/gates/gate-automation-intercom-evening-lighting.png',
   excerpt: 'You do not always need new gates to get electric convenience. Retrofitting automation to existing manual gates is faster and cheaper than most people expect.',
   content: [
     { type: 'p', text: 'Many London homeowners already have perfectly good manual driveway gates but have grown tired of getting out of the car every time they come home. If your gates are structurally sound and properly hung, adding electric automation is usually a straightforward project and far cheaper than replacing the entire gate.' },
@@ -440,7 +440,7 @@ const article5: BlogArticle = {
       text: 'gate automation retrofits in Barnet and North London',
       context: 'Get a free quote for gate automation retrofits in Barnet and North London from vetted local specialists.',
     },
-    { type: 'image', src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop', alt: 'Manual driveway gates ready for automation retrofit' },
+    { type: 'image', src: '/images/gates/gate-wrought-iron-open-manor-spring-gardens.png', alt: 'Manual driveway gates ready for automation retrofit' },
 
     { type: 'h2', text: 'Motor Types for Swing Gate Retrofits' },
     { type: 'p', text: 'For swing gates, there are two main motor configurations. Ram-arm motors mount on the face of the post and connect to the back of the gate via an articulated arm. They are the most common choice for retrofits because installation is straightforward and they are compatible with most existing post configurations.' },
@@ -463,7 +463,7 @@ const article5: BlogArticle = {
       source: 'BFT Automation',
       rel: 'noopener noreferrer',
     },
-    { type: 'image', src: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1200&auto=format&fit=crop', alt: 'Gate automation motor and control box installation' },
+    { type: 'image', src: '/images/gates/gate-automation-intercom-evening-lighting.png', alt: 'Gate automation motor and control box installation' },
 
     { type: 'h2', text: 'What a Standard Automation Package Includes' },
     { type: 'list', items: [
@@ -530,7 +530,7 @@ const article6: BlogArticle = {
   metaDescription: 'Understanding automated gate safety features including photocells, safety edges, auto-reverse, and compliance requirements for UK residential installations.',
   category: 'Safety',
   publishDate: '2026-02-22',
-  featuredImage: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1200&auto=format&fit=crop',
+  featuredImage: '/images/gates/gate-wrought-iron-closeup-scrollwork-detail.png',
   excerpt: 'Automated gates must comply with safety regulations. Here is what every feature does, why it matters, and how to make sure your installation is compliant.',
   content: [
     { type: 'p', text: 'Automated driveway gates are genuinely powerful pieces of machinery. A typical residential gate weighs between 100 and 400 kilograms, and the motor that drives it generates considerable force throughout the opening and closing cycle. Without the right safety features correctly installed and regularly tested, an automated gate can cause serious injury to people, pets, and vehicles.' },
@@ -540,7 +540,7 @@ const article6: BlogArticle = {
     { type: 'p', text: 'Photocells are infrared sensors mounted on the gate posts that project an invisible beam across the gate opening. If anything interrupts that beam while the gate is in motion, the gate stops immediately and reverses. They are the most fundamental safety feature on any automated gate and should be present on every installation without exception.' },
     { type: 'p', text: 'A standard installation includes one pair of photocells positioned at around 30 centimetres above ground level. Better-specified installations add a second pair at 60 to 80 centimetres, which catches objects that the lower beam might miss, including children on bikes, pushchairs, and smaller pets.' },
     { type: 'p', text: 'Photocells need to be kept clean and correctly aligned to work properly. Dirt, spider webs, and vegetation growth can all disrupt the beam. Checking photocell function should be part of every annual service visit.' },
-    { type: 'image', src: 'https://images.unsplash.com/photo-1600573472592-401b489a3cdc?q=80&w=1200&auto=format&fit=crop', alt: 'Safety photocell sensor mounted on a driveway gate post' },
+    { type: 'image', src: '/images/gates/gate-wrought-iron-closeup-scrollwork-detail.png', alt: 'Safety photocell sensor mounted on a driveway gate post' },
 
     { type: 'h2', text: 'Safety Edges: Contact Protection as a Backup' },
     { type: 'p', text: 'Safety edges are pressure-sensitive rubber strips fitted to the leading edge of the gate panel. If the gate makes physical contact with any object during travel, the pressure triggers an immediate stop and reversal. They provide a contact-based layer of protection as a secondary backup to the photocells.' },
@@ -557,7 +557,7 @@ const article6: BlogArticle = {
       source: 'legislation.gov.uk',
       rel: 'noopener noreferrer',
     },
-    { type: 'image', src: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200&auto=format&fit=crop', alt: 'Automated gate control board and wiring during installation' },
+    { type: 'image', src: '/images/gates/gate-wrought-iron-closeup-fleur-de-lis-detail.png', alt: 'Automated gate control board and wiring during installation' },
 
     { type: 'h2', text: 'Warning Lights and Visual Signals' },
     { type: 'p', text: 'A flashing amber warning light should activate whenever the gate begins to move, continuing throughout the full opening and closing cycle. This alerts pedestrians, cyclists, and other road users approaching from outside. In London, where pavements are busy and pedestrians pass close to driveway entrances without expecting movement, this is a particularly important feature.' },
@@ -622,7 +622,7 @@ const article7: BlogArticle = {
   metaDescription: 'A detailed comparison of driveway gate materials for London homes. We cover durability, maintenance, cost, weight, and style for every option.',
   category: 'Materials',
   publishDate: '2026-02-24',
-  featuredImage: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c0?q=80&w=1200&auto=format&fit=crop',
+  featuredImage: '/images/gates/gate-aluminium-sliding-vertical-bar-modern.png',
   excerpt: 'Each gate material has strengths and trade-offs. This guide covers what really matters so you can make an informed decision.',
   content: [
     { type: 'p', text: 'The material you choose for your driveway gate affects everything about it: how it looks on day one, how it looks after ten years, how much work it takes to keep it that way, how much it costs to buy and install, and how well it does its core job of securing your property. There is no single material that wins on every measure.' },
@@ -638,7 +638,7 @@ const article7: BlogArticle = {
       text: 'hardwood timber gate installations in Wandsworth and South London',
       context: 'For warmth and natural character, compare quotes for hardwood timber gate installations in Wandsworth and South London.',
     },
-    { type: 'image', src: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop', alt: 'Hardwood timber driveway gate with natural grain finish' },
+    { type: 'image', src: '/images/gates/gate-wooden-oak-swing-cottage-flowers.png', alt: 'Hardwood timber driveway gate with natural grain finish' },
 
     { type: 'h2', text: 'Mild Steel: Versatile, Strong, and Long-Lasting' },
     { type: 'p', text: 'Mild steel is the most versatile metal used in gate fabrication. It can be worked into virtually any design, from the simplest flat-bar contemporary pattern to elaborate traditional scrollwork. Steel gates are inherently strong, present a serious physical barrier, and when properly prepared and coated, they require almost no attention for decades.' },
@@ -661,7 +661,7 @@ const article7: BlogArticle = {
       text: 'aluminium gate installations in Croydon and South London',
       context: 'For a modern, low-maintenance option, compare quotes for aluminium gate installations in Croydon and South London.',
     },
-    { type: 'image', src: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1200&auto=format&fit=crop', alt: 'Modern aluminium driveway gate with horizontal slatted design' },
+    { type: 'image', src: '/images/gates/gate-aluminium-sliding-modern-dark-brick.png', alt: 'Modern aluminium driveway gate with horizontal slatted design' },
 
     { type: 'h2', text: 'Wrought Iron: Heritage Craftsmanship for Period Properties' },
     { type: 'p', text: 'Hand-forged wrought iron sits in a category of its own. Each wrought iron gate is individually crafted by a blacksmith using traditional techniques. The result is a gate with a level of detail, variation, and character that no machine-fabricated product can replicate. Traditional scrollwork, finials, collars, and forged panels give wrought iron gates a presence and authenticity that suits heritage properties.' },
@@ -713,7 +713,7 @@ const article8: BlogArticle = {
   metaDescription: 'Find out how much value driveway gates add to London properties. We asked estate agents, surveyors, and homeowners for their real-world experience.',
   category: 'Property',
   publishDate: '2026-02-27',
-  featuredImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop',
+  featuredImage: '/images/gates/gate-aluminium-swing-open-luxury-garden.png',
   excerpt: 'Driveway gates are one of the few home improvements that consistently add more value than they cost. Here is the evidence from London property professionals.',
   content: [
     { type: 'p', text: 'Homeowners often justify the cost of driveway gates on security and convenience grounds. But there is an additional financial case that does not get enough attention: quality driveway gates consistently add more to London property values than they cost to install.' },
@@ -722,7 +722,7 @@ const article8: BlogArticle = {
     { type: 'h2', text: 'What London Estate Agents Actually Report' },
     { type: 'p', text: 'London estate agents consistently report that quality driveway gates contribute a perceived value uplift of three to five per cent in the right property context. On a property worth £750,000, that represents a potential increase of £22,500 to £37,500 for a gate installation that typically costs between £5,000 and £10,000. Very few home improvements generate that kind of return on investment relative to outlay.' },
     { type: 'p', text: 'The emphasis on quality is equally important. Agents are clear that the uplift comes from well-designed gates that complement the property, installed by experienced professionals using appropriate materials. A cheap gate that does not suit the house can detract from rather than add to perceived value.' },
-    { type: 'image', src: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1200&auto=format&fit=crop', alt: 'High value London property with well-designed electric driveway gates' },
+    { type: 'image', src: '/images/gates/gate-wrought-iron-aerial-sunset-estate.png', alt: 'High value London property with well-designed electric driveway gates' },
 
     { type: 'h2', text: 'Why Gates Add Value: The Underlying Drivers' },
     { type: 'p', text: 'Security is the primary driver of gate-related value uplift. London property crime rates are higher than the national average, and buyers in most London boroughs are acutely aware of vehicle and residential security. A gated driveway signals clearly that the property takes security seriously, which is a tangible selling point that buyers will pay a premium for.' },
@@ -743,7 +743,7 @@ const article8: BlogArticle = {
       text: 'gate installations in Richmond upon Thames',
       context: 'Compare quotes for gate installations in Richmond upon Thames, where premium properties consistently benefit from well-designed entrance gates.',
     },
-    { type: 'image', src: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1200&auto=format&fit=crop', alt: 'Suburban London home with gated driveway in a tree-lined street' },
+    { type: 'image', src: '/images/gates/driveway-tree-lined-avenue-view-from-house.png', alt: 'Suburban London home with gated driveway in a tree-lined street' },
 
     { type: 'h2', text: 'The Insurance Benefit' },
     { type: 'p', text: 'A number of London insurance brokers have confirmed that automated driveway gates can reduce home insurance premiums by five to fifteen per cent, depending on the insurer, the property location, and the specific features of the gate and access control system. Gates are classified as a physical security improvement.' },
@@ -788,7 +788,7 @@ const article9: BlogArticle = {
   metaDescription: 'Choosing the right intercom for your driveway gates. We compare audio, video, Wi-Fi, and smart intercom systems with real pricing for London installations.',
   category: 'Automation',
   publishDate: '2026-03-01',
-  featuredImage: 'https://images.unsplash.com/photo-1600573472592-401b489a3cdc?q=80&w=1200&auto=format&fit=crop',
+  featuredImage: '/images/gates/gate-swing-open-night-gold-lighting-drive.png',
   excerpt: 'An intercom turns your driveway gates from a security barrier into a complete access control system. Here is how to choose the right one.',
   content: [
     { type: 'p', text: 'A driveway gate without an intercom is like a front door without a doorbell or a peephole. You know someone is there because the gate is not opening, but you cannot see who it is or speak to them without leaving the house and walking to the gate. For most London homeowners, adding an intercom to their gate automation is one of the most practical and well-used features in the entire system.' },
@@ -798,7 +798,7 @@ const article9: BlogArticle = {
     { type: 'p', text: 'Audio intercoms are the most straightforward option. A visitor presses a button on the gate panel, you hear them through a handset or wall-mounted speaker inside the house, you speak back, and you press a button to release the gate. The system is wired, robust, and entirely independent of internet connectivity.' },
     { type: 'p', text: 'Audio intercoms start from around £200 to £400 installed alongside a gate automation project. They work reliably for decades with minimal maintenance and are immune to Wi-Fi drop-outs and software update issues.' },
     { type: 'p', text: 'The practical limitation is the obvious one: you cannot see who is at the gate. For most homeowners, this limitation is significant enough to push the decision toward video.' },
-    { type: 'image', src: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1200&auto=format&fit=crop', alt: 'Gate intercom panel with call button mounted on a brick entrance pillar' },
+    { type: 'image', src: '/images/gates/gate-swing-open-night-stone-pillars-drive.png', alt: 'Gate intercom panel with call button mounted on a brick entrance pillar' },
 
     { type: 'h2', text: 'Wired Video Intercoms: The Reliable Middle Ground' },
     { type: 'p', text: 'Wired video intercoms add a colour camera to the gate panel. When a visitor presses the call button, their image appears on a monitor inside the house alongside two-way audio. Modern systems use wide-angle lenses and infrared night vision that deliver a clear image in complete darkness.' },
@@ -820,7 +820,7 @@ const article9: BlogArticle = {
       text: 'smart intercom systems in Richmond and Kensington',
       context: 'Find installers for smart intercom systems in Richmond and Kensington, including full smartphone control and cloud recording.',
     },
-    { type: 'image', src: 'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1200&auto=format&fit=crop', alt: 'Smart video intercom system showing colour display and gate control panel' },
+    { type: 'image', src: '/images/gates/gate-swing-open-night-gold-lighting-drive.png', alt: 'Smart video intercom system showing colour display and gate control panel' },
 
     { type: 'h2', text: 'Keypads: The Practical Companion to Any Intercom' },
     { type: 'p', text: 'A keypad allows anyone with a programmed PIN code to open the gate without a remote handset or a smartphone app. For regular visitors such as family members, regular tradespeople, childminders, or gardeners, a keypad removes the need to issue remotes or rely on the intercom every time they arrive.' },
@@ -861,7 +861,7 @@ const article10: BlogArticle = {
   metaDescription: 'What does annual gate maintenance involve? We explain what engineers check, what it costs, and why regular servicing prevents expensive repairs.',
   category: 'Maintenance',
   publishDate: '2026-03-03',
-  featuredImage: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c0?q=80&w=1200&auto=format&fit=crop',
+  featuredImage: '/images/gates/gate-wrought-iron-open-misty-morning-manor.png',
   excerpt: 'A one-hour annual service prevents breakdowns, extends the life of your gate system, and keeps your warranty valid. Here is exactly what is involved.',
   content: [
     { type: 'p', text: 'Automated driveway gates are mechanical systems with motors, drive mechanisms, hinges, control electronics, and safety devices that all need periodic attention to continue working safely and reliably. Just as a boiler service or a car service catches small problems before they become expensive failures, annual gate maintenance keeps your system in the condition it was installed in, rather than slowly drifting toward a breakdown.' },
@@ -876,7 +876,7 @@ const article10: BlogArticle = {
       text: 'annual gate servicing in Barnet and North London',
       context: 'Compare quotes for annual gate servicing in Barnet and North London from engineers covering all makes and models.',
     },
-    { type: 'image', src: 'https://images.unsplash.com/photo-1600573472592-401b489a3cdc?q=80&w=1200&auto=format&fit=crop', alt: 'Gate engineer lubricating hinges during an annual maintenance service' },
+    { type: 'image', src: '/images/gates/gate-wrought-iron-open-golden-hour-curved-drive.png', alt: 'Gate engineer lubricating hinges during an annual maintenance service' },
 
     { type: 'h2', text: 'Motor and Drive Mechanism Checks' },
     { type: 'p', text: 'The motor is the most expensive individual component in the gate system, and it is the component whose failure causes the most disruption. A thorough service includes running the gate through several complete open-close cycles while listening and feeling for any signs of unusual noise, vibration, or hesitation.' },
@@ -898,7 +898,7 @@ const article10: BlogArticle = {
       source: 'Door and Hardware Federation',
       rel: 'noopener noreferrer',
     },
-    { type: 'image', src: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop', alt: 'Gate engineer testing safety photocell response during annual service' },
+    { type: 'image', src: '/images/gates/gate-wrought-iron-open-misty-morning-manor.png', alt: 'Gate engineer testing safety photocell response during annual service' },
 
     { type: 'h2', text: 'Force Measurement and Legal Compliance' },
     { type: 'p', text: 'A complete service should include force measurement to verify that the gate operates within the legal limits set by BS EN 12453. The maximum permitted peak force is 400 Newtons, with a maximum sustained force of 150 Newtons over five seconds. Force settings can drift as motors age and mechanical components wear.' },
