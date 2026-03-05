@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Calendar, ArrowLeft, ArrowRight, ExternalLink, MapPin } from 'lucide-react';
@@ -52,42 +52,57 @@ function BlogCtaBanner({ onOpenModal }: { onOpenModal: () => void }) {
 }
 
 function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOpenModal: () => void }) {
+  // Inject CTA once: just before the third h2 (after second h2's content)
+  let h2Count = 0;
+  let ctaInsertIndex = -1;
+  for (let i = 0; i < blocks.length; i++) {
+    if (blocks[i].type === 'h2') {
+      h2Count++;
+      if (h2Count === 3) { ctaInsertIndex = i; break; }
+    }
+  }
+
   return (
     <div className="prose prose-gray max-w-none">
       {blocks.map((block, i) => {
-        switch (block.type) {
+        const elements: React.ReactNode[] = [];
 
+        if (i === ctaInsertIndex) {
+          elements.push(<BlogCtaBanner key="cta-inject" onOpenModal={onOpenModal} />);
+        }
+
+        switch (block.type) {
           case 'h2':
-            return (
+            elements.push(
               <h2 key={i} className="text-2xl md:text-3xl font-display font-bold text-gray-900 mt-10 mb-4">
                 {block.text}
               </h2>
             );
-
+            break;
           case 'h3':
-            return (
+            elements.push(
               <h3 key={i} className="text-xl md:text-2xl font-display font-bold text-gray-900 mt-8 mb-3">
                 {block.text}
               </h3>
             );
-
+            break;
           case 'p':
-            return (
+            elements.push(
               <p key={i} className="text-gray-600 leading-relaxed mb-5">
                 {block.text}
               </p>
             );
-
+            break;
           case 'image':
-            return (
+            elements.push(
               <div key={i} className="my-8 rounded-2xl overflow-hidden border border-gray-200 shadow-lg aspect-[16/9]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={block.src} alt={block.alt} className="w-full h-full object-cover" loading="lazy" />
               </div>
             );
-
+            break;
           case 'list':
-            return (
+            elements.push(
               <ul key={i} className="my-6 pl-6 space-y-2">
                 {block.items.map((item, j) => (
                   <li key={j} className="text-gray-600 leading-relaxed list-disc marker:text-brand-500">
@@ -96,21 +111,9 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
                 ))}
               </ul>
             );
-
-          case 'cta':
-            return <BlogCtaBanner key={i} onOpenModal={onOpenModal} />;
-
-          // Internal links shown in sidebar only — hidden in article body
-          case 'internal-link':
-            return null;
-
-          // External links rendered invisibly here — shown in sidebar as Further Reading
-          case 'external-link':
-            return null;
-
-          // Related articles card grid
+            break;
           case 'related-articles':
-            return (
+            elements.push(
               <div key={i} className="mt-12 pt-8 border-t border-gray-200 not-prose">
                 <h3 className="text-lg font-display font-bold text-gray-900 mb-6">Related articles</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -148,10 +151,16 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
                 </div>
               </div>
             );
-
+            break;
+          // Hidden from article body
+          case 'cta':
+          case 'internal-link':
+          case 'external-link':
           default:
-            return null;
+            break;
         }
+
+        return elements.length > 0 ? <React.Fragment key={i}>{elements}</React.Fragment> : null;
       })}
     </div>
   );
