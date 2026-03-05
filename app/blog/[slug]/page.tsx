@@ -3,26 +3,39 @@
 import { useState } from 'react';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { Calendar, ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react';
+import { Calendar, ArrowLeft, ArrowRight, ExternalLink, MapPin } from 'lucide-react';
 import { blogArticles, getArticleBySlug, type ContentBlock } from '@/data/blog';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { LeadFormModal } from '@/components/LeadFormModal';
 
+// Update these to match your actual live service x location pages
+const SIDEBAR_SERVICE_LINKS = [
+  { label: 'Electric Sliding Gates — Barnet', href: '/services/electric-sliding-gates/barnet/' },
+  { label: 'Electric Swing Gates — Richmond', href: '/services/electric-swing-gates/richmond/' },
+  { label: 'Wooden Driveway Gates — Camden', href: '/services/wooden-driveway-gates/camden/' },
+  { label: 'Wrought Iron Gates — Kensington', href: '/services/wrought-iron-gates/kensington/' },
+  { label: 'Aluminium Gates — Bromley', href: '/services/aluminium-gates/bromley/' },
+  { label: 'Gate Automation — Harrow', href: '/services/gate-automation/harrow/' },
+  { label: 'Gate Intercom Systems — Wandsworth', href: '/services/gate-intercom-systems/wandsworth/' },
+  { label: 'Gate Safety Inspections — London', href: '/services/gate-safety-inspections/london/' },
+  { label: 'Gate Repairs — Ealing', href: '/services/gate-repairs-maintenance/ealing/' },
+];
+
 function BlogCtaBanner({ onOpenModal }: { onOpenModal: () => void }) {
   return (
-    <div className="my-10 rounded-2xl overflow-hidden border border-gray-200 bg-gradient-to-r from-brand-900 to-brand-800 shadow-xl relative">
+    <div className="my-10 rounded-2xl overflow-hidden border border-brand-800 bg-gradient-to-r from-brand-900 to-brand-800 shadow-xl relative">
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-brand-400 via-brand-500 to-transparent" />
-      <div className="px-8 py-8 md:px-10 md:py-8 flex flex-col md:flex-row items-center gap-6">
+      <div className="px-8 py-8 md:px-10 flex flex-col md:flex-row items-center gap-6">
         <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-brand-500/20 flex items-center justify-center">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="text-brand-400">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
           </svg>
         </div>
         <div className="flex-1 text-center md:text-left">
           <p className="text-[10px] font-bold uppercase tracking-widest text-brand-400 mb-1">Free Matching Service</p>
-          <h3 className="text-lg md:text-xl font-bold text-white leading-snug mb-1">Ready to Get Driveway Gate Quotes?</h3>
-          <p className="text-brand-200 text-sm">Get matched with vetted London installers. No obligation, no cost.</p>
+          <h3 className="text-lg md:text-xl font-bold text-white leading-snug mb-1">Ready to get driveway gate quotes?</h3>
+          <p className="text-brand-200 text-sm">Get matched with vetted London installers — no obligation, no cost.</p>
         </div>
         <div className="flex-shrink-0">
           <button
@@ -45,13 +58,25 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
         switch (block.type) {
 
           case 'h2':
-            return <h2 key={i} className="text-2xl md:text-3xl font-display font-bold text-gray-900 mt-10 mb-4">{block.text}</h2>;
+            return (
+              <h2 key={i} className="text-2xl md:text-3xl font-display font-bold text-gray-900 mt-10 mb-4">
+                {block.text}
+              </h2>
+            );
 
           case 'h3':
-            return <h3 key={i} className="text-xl md:text-2xl font-display font-bold text-gray-900 mt-8 mb-3">{block.text}</h3>;
+            return (
+              <h3 key={i} className="text-xl md:text-2xl font-display font-bold text-gray-900 mt-8 mb-3">
+                {block.text}
+              </h3>
+            );
 
           case 'p':
-            return <p key={i} className="text-gray-600 leading-relaxed mb-5">{block.text}</p>;
+            return (
+              <p key={i} className="text-gray-600 leading-relaxed mb-5">
+                {block.text}
+              </p>
+            );
 
           case 'image':
             return (
@@ -65,7 +90,9 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
             return (
               <ul key={i} className="my-6 pl-6 space-y-2">
                 {block.items.map((item, j) => (
-                  <li key={j} className="text-gray-600 leading-relaxed list-disc marker:text-brand-500">{item}</li>
+                  <li key={j} className="text-gray-600 leading-relaxed list-disc marker:text-brand-500">
+                    {item}
+                  </li>
                 ))}
               </ul>
             );
@@ -73,50 +100,29 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
           case 'cta':
             return <BlogCtaBanner key={i} onOpenModal={onOpenModal} />;
 
-          // ── NEW: Internal service x location link ─────────────────────────
+          // Internal link: clean inline sentence with linked anchor text
           case 'internal-link':
             return (
-              <div key={i} className="my-6 rounded-xl border border-brand-100 bg-brand-50 px-5 py-4 flex items-start gap-3">
-                <div className="flex-shrink-0 mt-0.5 w-5 h-5 rounded-full bg-brand-500 flex items-center justify-center">
-                  <ArrowRight className="w-3 h-3 text-white" />
-                </div>
-                <p className="text-gray-700 text-sm leading-relaxed">
-                  {block.context.replace(block.text, '')}
-                  <Link
-                    href={block.href}
-                    className="font-semibold text-brand-600 hover:text-brand-700 underline underline-offset-2 decoration-brand-300 hover:decoration-brand-500 transition-colors"
-                  >
-                    {block.text}
-                  </Link>
-                  {block.context.endsWith(block.text) ? '.' : ''}
-                </p>
-              </div>
+              <p key={i} className="my-5 text-gray-600 leading-relaxed">
+                {block.context.replace(block.text, '').trim().replace(/\.$/, '')}{' '}
+                <Link
+                  href={block.href}
+                  className="font-semibold text-brand-600 hover:text-brand-700 underline underline-offset-2 decoration-brand-300 hover:decoration-brand-500 transition-colors"
+                >
+                  {block.text}
+                </Link>.
+              </p>
             );
 
-          // ── NEW: External authority link ──────────────────────────────────
+          // External links rendered invisibly here — shown in sidebar as Further Reading
           case 'external-link':
-            return (
-              <div key={i} className="my-5 rounded-xl border border-gray-200 bg-gray-50 px-5 py-3 flex items-center gap-3">
-                <ExternalLink className="flex-shrink-0 w-4 h-4 text-gray-400" />
-                <div className="flex-1 min-w-0">
-                  <a
-                    href={block.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm font-semibold text-brand-700 hover:text-brand-800 underline underline-offset-2 decoration-brand-300 hover:decoration-brand-600 transition-colors leading-snug"
-                  >
-                    {block.text}
-                  </a>
-                  <p className="text-[11px] text-gray-400 mt-0.5 font-medium uppercase tracking-wide">{block.source}</p>
-                </div>
-              </div>
-            );
+            return null;
 
-          // ── NEW: Related articles block ───────────────────────────────────
+          // Related articles card grid
           case 'related-articles':
             return (
-              <div key={i} className="mt-12 pt-8 border-t border-gray-200">
-                <h3 className="text-base font-bold text-gray-500 uppercase tracking-wider mb-5">You might also like</h3>
+              <div key={i} className="mt-12 pt-8 border-t border-gray-200 not-prose">
+                <h3 className="text-lg font-display font-bold text-gray-900 mb-6">Related articles</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   {block.articles.map((a) => {
                     const fullArticle = blogArticles.find(art => art.slug === a.slug);
@@ -127,7 +133,7 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
                         className="group flex flex-col rounded-xl border border-gray-100 overflow-hidden hover:shadow-md hover:border-brand-200 transition-all bg-white"
                       >
                         {fullArticle?.featuredImage && (
-                          <div className="relative h-28 overflow-hidden">
+                          <div className="relative h-32 overflow-hidden">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img
                               src={fullArticle.featuredImage}
@@ -135,18 +141,15 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                               loading="lazy"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-gray-900/40 to-transparent" />
-                            <span className="absolute top-2 left-2 px-2 py-0.5 bg-brand-500/90 text-white text-[9px] font-bold uppercase rounded-full">
-                              {a.category}
-                            </span>
+                            <div className="absolute top-2 left-2 w-6 h-1 rounded-full bg-brand-500" />
                           </div>
                         )}
-                        <div className="p-3 flex-grow flex flex-col">
-                          <h4 className="text-sm font-bold text-gray-900 group-hover:text-brand-600 transition-colors leading-snug line-clamp-2">
+                        <div className="p-4 flex-grow flex flex-col">
+                          <h4 className="text-sm font-bold text-gray-900 group-hover:text-brand-600 transition-colors leading-snug line-clamp-2 mb-3">
                             {a.title}
                           </h4>
-                          <span className="text-brand-600 text-xs font-semibold flex items-center gap-1 mt-auto pt-2">
-                            Read more <ArrowRight className="w-3 h-3" />
+                          <span className="text-brand-600 text-xs font-bold uppercase tracking-wide flex items-center gap-1 mt-auto">
+                            Read article <ArrowRight className="w-3 h-3" />
                           </span>
                         </div>
                       </Link>
@@ -169,7 +172,12 @@ export default function BlogArticlePage({ params }: { params: { slug: string } }
   const article = getArticleBySlug(params.slug);
   if (!article) notFound();
 
-  const related = blogArticles
+  // Collect external-link blocks from article content for sidebar Further Reading
+  const furtherReading = article.content.filter(
+    (b): b is Extract<ContentBlock, { type: 'external-link' }> => b.type === 'external-link'
+  );
+
+  const bottomRelated = blogArticles
     .filter(a => a.slug !== article.slug)
     .sort((a, b) => {
       if (a.category === article.category && b.category !== article.category) return -1;
@@ -184,7 +192,7 @@ export default function BlogArticlePage({ params }: { params: { slug: string } }
       <Header onOpenModal={() => setIsModalOpen(true)} />
       <main className="flex-grow">
 
-        {/* Featured Image Header */}
+        {/* Hero */}
         <div className="relative h-[400px] md:h-[500px] overflow-hidden">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={article.featuredImage} alt={article.title} className="w-full h-full object-cover" loading="eager" />
@@ -208,55 +216,82 @@ export default function BlogArticlePage({ params }: { params: { slug: string } }
           </div>
         </div>
 
-        {/* Article Content */}
+        {/* Content + Sidebar */}
         <div className="container-width py-12 md:py-16">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+
             <article className="lg:col-span-2">
               <ContentRenderer blocks={article.content} onOpenModal={() => setIsModalOpen(true)} />
             </article>
 
-            {/* Sidebar */}
             <aside className="lg:col-span-1">
               <div className="sticky top-28 space-y-6">
+
+                {/* CTA */}
                 <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                  <h3 className="text-lg font-display font-bold text-gray-900 mb-3">Get Your Free Gate Quotes</h3>
-                  <p className="text-gray-600 text-sm mb-5">Compare up to 3 vetted London installers. Free, no obligation.</p>
-                  <button onClick={() => setIsModalOpen(true)} className="block w-full btn-primary text-center">Find Installers</button>
+                  <h3 className="text-lg font-display font-bold text-gray-900 mb-3">Get your free gate quotes</h3>
+                  <p className="text-gray-500 text-sm mb-5">Compare up to 3 vetted London installers — free, no obligation.</p>
+                  <button onClick={() => setIsModalOpen(true)} className="block w-full btn-primary text-center">
+                    Find Installers
+                  </button>
                 </div>
 
-                {related.length > 0 && (
-                  <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                    <h3 className="font-bold text-gray-900 text-sm mb-4">Related Articles</h3>
-                    <div className="space-y-4">
-                      {related.map(a => (
-                        <Link key={a.slug} href={`/blog/${a.slug}/`} className="group block">
-                          <div className="flex gap-3">
-                            <div className="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
-                              {/* eslint-disable-next-line @next/next/no-img-element */}
-                              <img src={a.featuredImage} alt={a.title} className="w-full h-full object-cover" loading="lazy" />
-                            </div>
-                            <div>
-                              <h4 className="text-sm font-bold text-gray-900 group-hover:text-brand-600 transition-colors leading-snug line-clamp-2">{a.title}</h4>
-                              <span className="text-[10px] text-gray-400 uppercase font-bold tracking-wider">{a.category}</span>
-                            </div>
-                          </div>
+                {/* Service x Location links */}
+                <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                  <div className="flex items-center gap-2 mb-4">
+                    <MapPin className="w-4 h-4 text-brand-500 flex-shrink-0" />
+                    <h3 className="font-bold text-gray-900 text-sm">Our Services</h3>
+                  </div>
+                  <ul className="space-y-2.5">
+                    {SIDEBAR_SERVICE_LINKS.map(link => (
+                      <li key={link.href}>
+                        <Link
+                          href={link.href}
+                          className="text-sm text-brand-600 hover:text-brand-800 hover:underline underline-offset-2 transition-colors leading-snug"
+                        >
+                          {link.label}
                         </Link>
-                      ))}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Further Reading — external links from article */}
+                {furtherReading.length > 0 && (
+                  <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                    <div className="flex items-center gap-2 mb-4">
+                      <ExternalLink className="w-4 h-4 text-gray-400 flex-shrink-0" />
+                      <h3 className="font-bold text-gray-900 text-sm">Further Reading</h3>
                     </div>
+                    <ul className="space-y-2.5">
+                      {furtherReading.map((link, i) => (
+                        <li key={i}>
+                          <a
+                            href={link.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm text-brand-600 hover:text-brand-800 hover:underline underline-offset-2 transition-colors leading-snug block"
+                          >
+                            {link.source}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 )}
+
               </div>
             </aside>
           </div>
         </div>
 
-        {/* Related Articles Grid — bottom of page */}
-        {related.length > 0 && (
+        {/* Bottom related articles */}
+        {bottomRelated.length > 0 && (
           <section className="section-padding bg-gray-50">
             <div className="container-width">
-              <h2 className="text-2xl font-display font-bold text-gray-900 mb-8">More Articles You Might Like</h2>
+              <h2 className="text-2xl font-display font-bold text-gray-900 mb-8">More articles you might like</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                {related.map(a => (
+                {bottomRelated.map(a => (
                   <Link
                     key={a.slug}
                     href={`/blog/${a.slug}/`}
