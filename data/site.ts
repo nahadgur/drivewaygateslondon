@@ -2,9 +2,6 @@ export const siteConfig = {
   name: 'Driveway Gates London',
   domain: 'drivewaygateslondon.co.uk',
   url: 'https://www.drivewaygateslondon.co.uk',
-  phone: '020 0000 0000',
-  phoneHref: 'tel:+442000000000',
-  email: 'hello@drivewaygateslondon.co.uk',
   description: 'Find vetted, experienced driveway gate installers across London. Compare quotes for electric sliding gates, swing gates, wooden gates, metal gates, automation, and repairs.',
   tagline: 'London\'s Trusted Gate Installer Network',
 };
