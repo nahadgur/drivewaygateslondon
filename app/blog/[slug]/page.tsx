@@ -215,9 +215,7 @@ export default function BlogArticlePage({ params }: { params: { slug: string } }
   const article = getArticleBySlug(params.slug);
   if (!article) notFound();
 
-  const furtherReading = article.content.filter(
-    (b): b is Extract<ContentBlock, { type: 'external-link' }> => b.type === 'external-link'
-  );
+  const furtherReading = article.content.filter(b => b.type === 'external-link');
 
   const bottomRelated = blogArticles
     .filter(a => a.slug !== article.slug)
@@ -309,12 +307,12 @@ export default function BlogArticlePage({ params }: { params: { slug: string } }
                       {furtherReading.map((link, i) => (
                         <li key={i}>
                           <a
-                            href={link.href}
+                            href={link.href ?? ''}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-sm text-brand-600 hover:text-brand-800 hover:underline underline-offset-2 transition-colors leading-snug block"
                           >
-                            {link.source}
+                            {link.source ?? link.text ?? ''}
                           </a>
                         </li>
                       ))}
