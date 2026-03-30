@@ -1,21 +1,58 @@
 import Link from 'next/link';
-import { MapPin } from 'lucide-react';
+import { MapPin, Shield, Building2, FileText } from 'lucide-react';
 import { services } from '@/data/services';
 import { siteConfig } from '@/data/site';
 
+const POPULAR_LOCATIONS = [
+  { label: 'Gates in Barnet',     href: '/location/barnet/' },
+  { label: 'Gates in Richmond',   href: '/location/richmond/' },
+  { label: 'Gates in Bromley',    href: '/location/bromley/' },
+  { label: 'Gates in Wimbledon',  href: '/location/wimbledon/' },
+  { label: 'Gates in Ealing',     href: '/location/ealing/' },
+  { label: 'Gates in Kensington', href: '/location/kensington/' },
+  { label: 'Gates in Harrow',     href: '/location/harrow/' },
+  { label: 'Gates in Hampstead',  href: '/location/hampstead/' },
+];
+
+const ACCESS_CONTROL = [
+  { label: 'Video Intercoms',     href: '/services/access-control/video-intercoms/' },
+  { label: 'Keypad Entry',        href: '/services/access-control/keypad-entry-systems/' },
+  { label: 'GSM Phone Entry',     href: '/services/access-control/gsm-phone-entry/' },
+  { label: 'ANPR Systems',        href: '/services/access-control/anpr-systems/' },
+];
+
+const COMMERCIAL = [
+  { label: 'Industrial Security Gates', href: '/commercial/industrial-security-gates/' },
+  { label: 'School Gate Systems',       href: '/commercial/school-gate-systems/' },
+  { label: 'Car Park Barriers',         href: '/commercial/car-park-barriers/' },
+  { label: 'Heavy-Duty Sliding Gates',  href: '/commercial/heavy-duty-sliding-gates/' },
+];
+
+const PLANNING_BOROUGHS = [
+  { label: 'Barnet Planning Guide',   href: '/local-regulations/barnet/' },
+  { label: 'Camden Planning Guide',   href: '/local-regulations/camden/' },
+  { label: 'Islington Planning Guide',href: '/local-regulations/islington/' },
+  { label: 'Richmond Planning Guide', href: '/local-regulations/richmond-upon-thames/' },
+  { label: 'Westminster Planning Guide', href: '/local-regulations/westminster/' },
+  { label: 'RBKC Planning Guide',     href: '/local-regulations/kensington-and-chelsea/' },
+];
+
 export function Footer() {
+  const residentialServices = services.filter(s => s.slug !== 'commercial-gates');
+
   return (
     <footer className="bg-gray-900 text-gray-300 pt-16 pb-8">
       <div className="container-width">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-          {/* Brand */}
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
+
+          {/* Brand — spans 2 cols */}
+          <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-brand-500 rounded-md flex items-center justify-center text-white font-bold">DG</div>
+              <div className="w-8 h-8 bg-brand-500 rounded-md flex items-center justify-center text-white font-bold text-sm">DG</div>
               <span className="font-display font-bold text-lg text-white">Driveway Gates London</span>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed mb-4">
-              Independent matching service connecting London homeowners with vetted, experienced driveway gate installers across every borough.
+              Independent matching service connecting London homeowners and businesses with vetted, experienced gate installers across every borough.
             </p>
             <p className="text-xs text-gray-500 italic border-l-2 border-gray-700 pl-3">
               Driveway Gates London is a referral service. We connect you with independent gate installers. We do not carry out installations ourselves.
@@ -24,53 +61,77 @@ export function Footer() {
 
           {/* Gate Types */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Gate Types</h4>
+            <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Gate Types</h4>
             <ul className="space-y-2 text-sm">
-              {services.map(s => (
+              {residentialServices.map(s => (
                 <li key={s.id}>
-                  <Link href={`/services/${s.slug}/`} className="hover:text-brand-400 transition-colors">{s.title}</Link>
+                  <Link href={`/services/${s.slug}/`} className="hover:text-brand-400 transition-colors leading-snug block">{s.title}</Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Popular Locations */}
+          {/* Access Control + Commercial */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Popular Locations</h4>
+            <h4 className="text-white font-semibold mb-3 text-sm uppercase tracking-wider flex items-center gap-1.5">
+              <Shield className="w-3.5 h-3.5 text-brand-400" /> Access Control
+            </h4>
+            <ul className="space-y-2 text-sm mb-6">
+              <li><Link href="/services/access-control/" className="hover:text-brand-400 transition-colors font-medium">All Systems →</Link></li>
+              {ACCESS_CONTROL.map(l => (
+                <li key={l.href}><Link href={l.href} className="hover:text-brand-400 transition-colors">{l.label}</Link></li>
+              ))}
+            </ul>
+
+            <h4 className="text-white font-semibold mb-3 text-sm uppercase tracking-wider flex items-center gap-1.5">
+              <Building2 className="w-3.5 h-3.5 text-brand-400" /> Commercial
+            </h4>
             <ul className="space-y-2 text-sm">
-              {[
-                { label: 'Gates in Barnet', href: '/location/barnet/' },
-                { label: 'Gates in Richmond', href: '/location/richmond/' },
-                { label: 'Gates in Bromley', href: '/location/bromley/' },
-                { label: 'Gates in Wimbledon', href: '/location/wimbledon/' },
-                { label: 'Gates in Ealing', href: '/location/ealing/' },
-                { label: 'Gates in Kensington', href: '/location/kensington/' },
-              ].map(link => (
-                <li key={link.href}>
-                  <Link href={link.href} className="hover:text-brand-400 transition-colors">{link.label}</Link>
-                </li>
+              <li><Link href="/commercial/" className="hover:text-brand-400 transition-colors font-medium">All Commercial →</Link></li>
+              {COMMERCIAL.map(l => (
+                <li key={l.href}><Link href={l.href} className="hover:text-brand-400 transition-colors">{l.label}</Link></li>
               ))}
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Locations + Planning */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Contact</h4>
-            <ul className="space-y-3 text-sm">
-              <li className="flex items-center gap-2 text-gray-400">
-                <MapPin className="w-4 h-4 text-brand-500" /> Greater London, United Kingdom
-              </li>
+            <h4 className="text-white font-semibold mb-3 text-sm uppercase tracking-wider flex items-center gap-1.5">
+              <MapPin className="w-3.5 h-3.5 text-brand-400" /> Locations
+            </h4>
+            <ul className="space-y-2 text-sm mb-6">
+              {POPULAR_LOCATIONS.map(l => (
+                <li key={l.href}><Link href={l.href} className="hover:text-brand-400 transition-colors">{l.label}</Link></li>
+              ))}
+              <li><Link href="/location/" className="hover:text-brand-400 transition-colors font-medium">All 114 areas →</Link></li>
             </ul>
           </div>
+
+          {/* Planning guides */}
+          <div>
+            <h4 className="text-white font-semibold mb-3 text-sm uppercase tracking-wider flex items-center gap-1.5">
+              <FileText className="w-3.5 h-3.5 text-brand-400" /> Planning Guides
+            </h4>
+            <ul className="space-y-2 text-sm">
+              {PLANNING_BOROUGHS.map(l => (
+                <li key={l.href}><Link href={l.href} className="hover:text-brand-400 transition-colors">{l.label}</Link></li>
+              ))}
+              <li><Link href="/local-regulations/" className="hover:text-brand-400 transition-colors font-medium">All boroughs →</Link></li>
+            </ul>
+          </div>
+
         </div>
 
-        {/* Bottom */}
+        {/* Bottom bar */}
         <div className="border-t border-gray-800 pt-8 text-sm text-gray-500 flex flex-col md:flex-row justify-between items-center gap-4">
           <p>&copy; {new Date().getFullYear()} {siteConfig.name}. We are a matching service, not a gate installer.</p>
           <div className="flex gap-6">
             <Link href="/sitemap.xml" className="hover:text-gray-300">Sitemap</Link>
-            <Link href="/services/" className="hover:text-gray-300">Services</Link>
-            <Link href="/location/" className="hover:text-gray-300">Locations</Link>
+            <Link href="/services/"           className="hover:text-gray-300">Gate Types</Link>
+            <Link href="/services/access-control/" className="hover:text-gray-300">Access Control</Link>
+            <Link href="/commercial/"         className="hover:text-gray-300">Commercial</Link>
+            <Link href="/local-regulations/"  className="hover:text-gray-300">Planning</Link>
+            <Link href="/location/"           className="hover:text-gray-300">Locations</Link>
           </div>
         </div>
       </div>
