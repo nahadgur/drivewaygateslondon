@@ -14,7 +14,6 @@ import { Testimonials } from '@/components/Testimonials';
 import { FAQ } from '@/components/FAQ';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { LeadFormModal } from '@/components/LeadFormModal';
-import { HeroLeadForm } from '@/components/HeroLeadForm';
 import { PricingSection } from '@/components/PricingSection';
 
 /* ── Inline content data (unchanged from original) ── */
@@ -55,33 +54,59 @@ export default function ServicePage({ params }: { params: { serviceSlug: string 
       <Header onOpenModal={() => setIsModalOpen(true)} />
       <main>
 
-        {/* Craftsman hero */}
-        <section className="bg-brand-950 border-b-[3px] border-brand-900 relative overflow-hidden">
-          <div className="absolute inset-0">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={service.image} alt="" className="w-full h-full object-cover opacity-10" style={{ filter: 'saturate(.5)' }} loading="eager" />
-          </div>
-          <div className="container-width py-12 md:py-20 relative z-10">
-            <Breadcrumbs items={[{ label: 'Gate Types', href: '/services/' }, { label: service.title }]} />
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mt-6">
-              <div>
-                <div className="hero-oversize font-display text-brand-800/40 select-none leading-none mb-[-8px]"
-                  style={{ fontSize: 'clamp(60px, 10vw, 120px)' }}>01</div>
-                <h1 className="font-syne font-extrabold uppercase tracking-tight text-white mb-5"
-                  style={{ fontSize: 'clamp(28px, 4vw, 52px)', lineHeight: 1.02, letterSpacing: '-.02em' }}>
-                  {service.title}
-                </h1>
-                <p className="text-brand-300 text-lg mb-8 leading-relaxed">{service.description}</p>
-                <div className="space-y-2 mb-8">
-                  {['Compare up to 3 free quotes', 'Every installer vetted and insured', `${totalCities}+ London locations covered`].map((item, i) => (
-                    <div key={i} className="flex items-center gap-3">
-                      <span className="w-1.5 h-1.5 rounded-full bg-brand-500 flex-shrink-0" />
-                      <span className="font-syne font-bold text-[11px] tracking-[.06em] uppercase text-brand-300">{item}</span>
-                    </div>
-                  ))}
+        {/* Split hero — text left, image right */}
+        <section className="grid grid-cols-1 lg:grid-cols-[1fr_400px] xl:grid-cols-[1fr_480px] border-b-[3px] border-brand-900 min-h-[60vh] lg:min-h-[82vh]">
+
+          {/* Text side */}
+          <div className="flex flex-col justify-center px-6 sm:px-10 lg:px-14 py-14 lg:py-16 border-b-[3px] lg:border-b-0 lg:border-r-[3px] border-brand-900 bg-brand-50">
+            <div className="mb-4">
+              <Breadcrumbs items={[{ label: 'Gate Types', href: '/services/' }, { label: service.title }]} />
+            </div>
+            <div aria-hidden className="font-display font-black text-brand-200 leading-none mb-[-12px] select-none"
+              style={{ fontSize: 'clamp(80px, 14vw, 160px)' }}>01</div>
+            <h1 className="font-syne font-extrabold uppercase tracking-tight text-brand-900 mb-5"
+              style={{ fontSize: 'clamp(28px, 4vw, 54px)', lineHeight: 1.02, letterSpacing: '-.025em' }}>
+              {service.title}
+            </h1>
+            <p className="text-brand-700 mb-10 max-w-lg leading-relaxed" style={{ fontSize: 'clamp(15px, 1.5vw, 17px)' }}>
+              {service.description}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 mb-10">
+              <button onClick={() => setIsModalOpen(true)} className="btn-primary !text-[12px] !py-3.5 !px-7">
+                Get Free Quotes
+              </button>
+              <Link href="/services/" className="btn-secondary !text-[12px] !py-3.5 !px-7">
+                All Gate Types
+              </Link>
+            </div>
+            <div className="flex flex-wrap gap-x-8 gap-y-3">
+              {['Compare up to 3 free quotes', 'Every installer vetted and insured', `${totalCities}+ London locations`].map(item => (
+                <div key={item} className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-brand-500" />
+                  <span className="font-syne font-bold text-[11px] tracking-[.08em] uppercase text-brand-600">{item}</span>
                 </div>
-              </div>
-              <div><HeroLeadForm service={service.title} /></div>
+              ))}
+            </div>
+          </div>
+
+          {/* Image side */}
+          <div className="relative overflow-hidden bg-brand-200 min-h-[280px] lg:min-h-0">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={service.image} alt={service.title}
+              className="w-full h-full object-cover"
+              style={{ filter: 'saturate(.85)' }} loading="eager" />
+            <div className="absolute top-0 left-0 bg-brand-900 px-4 py-2 font-syne font-bold text-[9.5px] tracking-[.2em] uppercase text-brand-400">
+              Featured Install
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 bg-brand-900 px-5 py-4 flex flex-wrap gap-4">
+              {[['500+', 'Installations'], ['4.9★', 'Rated'], ['32', 'Boroughs'], ['Free', 'Survey']].map(([n, l]) => (
+                <div key={l} className="flex items-center gap-2">
+                  <span className="w-1 h-1 rounded-full bg-brand-500" />
+                  <span className="text-brand-300 text-[11.5px] font-body">
+                    <strong className="text-brand-200">{n}</strong> {l}
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
         </section>
