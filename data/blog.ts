@@ -20,12 +20,14 @@ export interface BlogArticle {
   publishDate: string;
   featuredImage: string;
   excerpt: string;
+  relatedServiceSlug?: string;
   content: ContentBlock[];
 }
 
 export const blogArticles: BlogArticle[] = [
   {
-    slug: 'bi-fold-vs-sliding-gates-and-which-system-works-best-for-short-london-driveways',
+    slug: 'bi-fold-vs-sliding-gates-london',
+    relatedServiceSlug: 'electric-sliding-gates',
     title: 'Bi Fold vs Sliding Gates and Which System Works Best for Short London Driveways',
     metaTitle: 'Bi Fold vs Sliding Gates: Best for Short London Drives',
     metaDescription: 'Compare bi fold vs sliding gates for tight London driveways. Explore folding mechanisms, track systems, space needs, and installation challenges. Find expert-backed verdict on efficiency and performance to secure your home now.',
@@ -171,7 +173,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'the-no-swing-solution-and-how-telescopic-gates-save-space-in-tight-front-gardens',
+    slug: 'telescopic-gates-space-saving-london',
+    relatedServiceSlug: 'electric-sliding-gates',
     title: 'The No Swing Solution and How Telescopic Gates Save Space in Tight Front Gardens',
     metaTitle: 'No Swing Solution: Telescopic Gates Save Space',
     metaDescription: 'Struggling with tight front gardens? Discover the No Swing Solution and how telescopic gates save space with zero swing radius, compact footprints, and enhanced safety. Solve accessibility issues effortlessly today.',
@@ -269,7 +272,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'sloping-driveways-and-how-to-install-automated-gates-on-uneven-london-terrain',
+    slug: 'automated-gates-sloping-driveways-london',
+    relatedServiceSlug: 'automated-gate-systems',
     title: 'Sloping Driveways and How to Install Automated Gates on Uneven London Terrain',
     metaTitle: 'Install Automated Gates on Sloping London Driveways',
     metaDescription: 'Master sloping driveways in London with our expert guide on automated gates for uneven terrain. Overcome soil instability, weather challenges, and site assessments. Learn foundation levelling, gate selection, and step-by-step sliding gate installation now.',
@@ -407,7 +411,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'sidewalk-encroachment-and-how-to-navigate-uk-rules-on-outward-swinging-gates',
+    slug: 'outward-swinging-gates-uk-rules',
+    relatedServiceSlug: 'electric-swing-gates',
     title: 'Sidewalk Encroachment and How to Navigate UK Rules on Outward Swinging Gates',
     metaTitle: 'UK Sidewalk Encroachment Rules for Outward Gates',
     metaDescription: 'Discover how to avoid sidewalk encroachment with outward-swinging gates under UK Highways Act 1980. Learn clearance guidelines, planning rules, and compliance steps to protect your property from disputes. Get expert advice now.',
@@ -590,7 +595,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'underground-motors-and-why-discreet-automation-is-the-best-choice-for-period-london-homes',
+    slug: 'underground-gate-motors-london',
+    relatedServiceSlug: 'electric-swing-gates',
     title: 'Underground Motors and Why Discreet Automation Is the Best Choice for Period London Homes',
     metaTitle: 'Underground Motors: Discreet Automation for London Period Homes',
     metaDescription: 'Discover underground motors for period London homes. Learn how they work silently beneath heritage properties, solve noise and vibration issues, and preserve architectural integrity with seamless modern functionality. Elevate your home today.',
@@ -740,7 +746,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'article-4-directions-and-whether-you-need-planning-permission-for-a-new-gate-in-london',
+    slug: 'article-4-directions-gate-planning-permission',
+    relatedServiceSlug: 'metal-driveway-gates',
     title: 'Article 4 Directions and Whether You Need Planning Permission for a New Gate in London',
     metaTitle: 'Article 4 Directions: Gate Planning Permission London',
     metaDescription: 'Planning a new gate in London? Article 4 Directions may strip permitted development rights in conservation areas. Learn what they are, key triggers for gates, standard rules, and a step-by-step check process to avoid enforcement issues. Get expert guidance now.',
@@ -867,7 +874,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'conservation-area-compliance-and-how-to-design-wrought-iron-gates-that-meet-council-standards',
+    slug: 'conservation-area-gate-planning-london',
+    relatedServiceSlug: 'metal-driveway-gates',
     title: 'Conservation Area Compliance and How to Design Wrought Iron Gates That Meet Council Standards',
     metaTitle: 'Conservation Area Compliance: Design Wrought Iron Gates for Council Approval',
     metaDescription: 'Master conservation area compliance and design wrought iron gates that meet strict council standards. Learn key regulations, heritage styles, materials, safety rules, and the approval process to avoid fines and enhance your property\'s heritage appeal. Get expert tips now.',
@@ -981,7 +989,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'heritage-grade-finishes-and-how-to-balance-modern-automation-with-victorian-aesthetics',
+    slug: 'heritage-gate-finishes-victorian-homes',
+    relatedServiceSlug: 'metal-driveway-gates',
     title: 'Heritage Grade Finishes and How to Balance Modern Automation with Victorian Aesthetics',
     metaTitle: 'Blend Heritage Finishes with Victorian Automation',
     metaDescription: 'Master heritage grade finishes and balance modern automation with Victorian aesthetics. Explore authentic materials, ornate details, smart home tech, and compatibility solutions for luxury preservation. Achieve seamless blends today.',
@@ -1133,7 +1142,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'tree-protection-orders-and-how-gate-groundworks-can-affect-front-garden-trees',
+    slug: 'tree-protection-orders-gate-installation',
+    relatedServiceSlug: 'wooden-driveway-gates',
     title: 'Tree Protection Orders and How Gate Groundworks Can Affect Front Garden Trees',
     metaTitle: 'TPO Risks: Gate Groundworks & Front Garden Trees',
     metaDescription: 'Discover Tree Protection Orders and how gate groundworks can damage front garden trees, risking £20,000 fines. Learn TPO legal requirements, root damage risks, and compliance strategies to protect your property safely.',
@@ -1269,7 +1279,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'smart-entry-in-2026-and-how-to-integrate-your-driveway-gate-with-ring-nest-and-control4',
+    slug: 'smart-gate-integration-ring-nest-control4',
+    relatedServiceSlug: 'automated-gate-systems',
     title: 'Smart Entry in 2026 and How to Integrate Your Driveway Gate with Ring Nest and Control4',
     metaTitle: '2026 Smart Entry: Integrate Gates with Ring, Nest, Control4',
     metaDescription: 'Discover 2026 smart entry trends and master driveway gate integration with Ring cameras, Nest alerts, and Control4 automation. Get step-by-step setup guides for seamless home security and convenience today.',
@@ -1403,7 +1414,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'video-intercom-showdown-and-whether-comelit-or-hikvision-is-better-for-london-homes',
+    slug: 'video-intercom-comelit-vs-hikvision',
+    relatedServiceSlug: 'automated-gate-systems',
     title: 'Video Intercom Showdown and Whether Comelit or Hikvision Is Better for London Homes',
     metaTitle: 'Comelit vs Hikvision: Best Video Intercom for London Homes',
     metaDescription: 'Discover the ultimate video intercom showdown: Comelit vs Hikvision for London homes. Compare video quality, night vision, audio, UK installation, and durability. Find out which brand wins for your security needs today.',
@@ -1532,7 +1544,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'gsm-gate-openers-and-why-you-should-be-able-to-open-your-london-gate-from-anywhere',
+    slug: 'gsm-gate-openers-london',
+    relatedServiceSlug: 'gate-automation-kits',
     title: 'GSM Gate Openers and Why You Should Be Able to Open Your London Gate from Anywhere',
     metaTitle: 'GSM Gate Openers: Unlock London Gates Remotely',
     metaDescription: 'Discover GSM gate openers for effortless remote access to your London gate from anywhere. Explore how they work, key benefits for busy urbanites, top features, security perks, and easy installation tips for London homes. Upgrade your access today.',
@@ -1669,7 +1682,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'automatic-number-plate-recognition-and-whether-your-driveway-is-ready-for-hands-free-entry',
+    slug: 'anpr-gate-entry-london',
+    relatedServiceSlug: 'automated-gate-systems',
     title: 'Automatic Number Plate Recognition and Whether Your Driveway Is Ready for Hands Free Entry',
     metaTitle: 'ANPR Hands-Free Entry: Is Your Driveway Ready?',
     metaDescription: 'Explore Automatic Number Plate Recognition and whether your driveway is ready for hands-free entry. Learn how ANPR works, its benefits for security and convenience, key components, and optimal setups. Discover costs and assess your property today.',
@@ -1828,7 +1842,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'solar-powered-gate-automation-and-whether-london-gets-enough-sun-for-it-to-work-well',
+    slug: 'solar-powered-gate-automation-london',
+    relatedServiceSlug: 'gate-automation-kits',
     title: 'Solar Powered Gate Automation and Whether London Gets Enough Sun for It to Work Well',
     metaTitle: 'Solar Gate Automation: London\'s Sun Enough?',
     metaDescription: 'Discover if solar powered gate automation works reliably in London despite cloudy skies. Explore components, sunshine analysis, energy needs, advantages, case studies, and cost benefits. Find out now.',
@@ -1957,7 +1972,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'aluminium-vs-timber-gates-and-why-londoners-are-choosing-wood-effect-metal',
+    slug: 'aluminium-vs-timber-gates-london',
+    relatedServiceSlug: 'metal-driveway-gates',
     title: 'Aluminium vs Timber Gates and Why Londoners Are Choosing Wood Effect Metal',
     metaTitle: 'Aluminium vs Timber Gates: Londoners Pick Wood Effect Metal',
     metaDescription: 'Discover why aluminium beats timber gates for durability and low maintenance in London\'s weather. Explore wood effect metal\'s stylish appeal and cost benefits. Londoners love this perfect blend. Learn why now.',
@@ -2063,7 +2079,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'why-anthracite-grey-still-dominates-london-driveway-gate-trends-in-2026',
+    slug: 'anthracite-grey-gate-trends-london',
+    relatedServiceSlug: 'metal-driveway-gates',
     title: 'Why Anthracite Grey Still Dominates London Driveway Gate Trends in 2026',
     metaTitle: 'Anthracite Grey Rules 2026 London Driveway Gates',
     metaDescription: 'Discover why anthracite grey dominates London driveway gate trends in 2026. From aesthetic versatility with Victorian and modern homes to superior durability in rainy weather, low maintenance, and designer endorsements, learn the key reasons now.',
@@ -2190,7 +2207,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'accoya-wood-gates-and-how-to-stop-timber-gates-warping-in-damp-london-winters',
+    slug: 'accoya-wood-gates-london',
+    relatedServiceSlug: 'wooden-driveway-gates',
     title: 'Accoya Wood Gates and How to Stop Timber Gates Warping in Damp London Winters',
     metaTitle: 'Stop Gate Warping: Accoya Wood for London Winters',
     metaDescription: 'Tired of warped timber gates in damp London winters? Discover Accoya wood gates, acetylated for superior stability that beats oak and cedar. Learn causes, benefits, installation tips, and real case studies to save time and money long-term.',
@@ -2329,7 +2347,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'minimalist-steel-slat-gates-and-why-private-contemporary-designs-are-growing-in-london',
+    slug: 'minimalist-steel-slat-gates-london',
+    relatedServiceSlug: 'metal-driveway-gates',
     title: 'Minimalist Steel Slat Gates and Why Private Contemporary Designs Are Growing in London',
     metaTitle: 'London\'s Rise: Minimalist Steel Slat Gates Trend',
     metaDescription: 'Explore why minimalist steel slat gates and private contemporary designs are booming in London. Learn horizontal vs vertical slats, powder coating options, security benefits, and urban trends. Elevate your property with sleek, durable gates today.',
@@ -2463,7 +2482,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'restoring-wrought-iron-gates-and-how-to-bring-old-london-railings-back-to-life',
+    slug: 'wrought-iron-gate-restoration-london',
+    relatedServiceSlug: 'gate-repair-and-maintenance',
     title: 'Restoring Wrought Iron Gates and How to Bring Old London Railings Back to Life',
     metaTitle: 'Restore Wrought Iron Gates & London Railings',
     metaDescription: 'Revive historic wrought iron gates and old London railings with expert steps: inspect damage, remove rust, repair structures, prime, and paint for timeless elegance. Boost curb appeal today using Historic England guidelines.',
@@ -2621,7 +2641,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'force-testing-explained-and-why-your-gate-installer-must-legally-test-impact-power',
+    slug: 'gate-force-testing-legal-requirements',
+    relatedServiceSlug: 'gate-repair-and-maintenance',
     title: 'Force Testing Explained and Why Your Gate Installer Must Legally Test Impact Power',
     metaTitle: 'Force Testing Explained: Legal Gate Impact Rules',
     metaDescription: 'Force Testing Explained and Why Your Gate Installer Must Legally Test Impact Power. Learn UL 325 standards, testing processes, risks of skipping tests, and legal penalties to ensure safe gates. Verify compliance today for total safety.',
@@ -2758,7 +2779,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'the-annual-service-checklist-for-preventing-gate-failure-during-a-london-freeze',
+    slug: 'annual-gate-service-checklist-london',
+    relatedServiceSlug: 'gate-repair-and-maintenance',
     title: 'The Annual Service Checklist for Preventing Gate Failure During a London Freeze',
     metaTitle: 'Prevent Gate Failure in London Freeze: Annual Checklist',
     metaDescription: 'Avoid £5,000+ gate repair bills from London freezes with this expert annual service checklist. Cover weather risks, electrical inspections, motors, mechanical checks, freeze-resistant lubrication, and heating audits for reliable operation.',
@@ -2907,7 +2929,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'safety-photocells-vs-safety-ribs-and-which-gate-safety-tech-protects-kids-and-pets-better',
+    slug: 'gate-safety-photocells-vs-safety-ribs',
+    relatedServiceSlug: 'automated-gate-systems',
     title: 'Safety Photocells vs Safety Ribs and Which Gate Safety Tech Protects Kids and Pets Better',
     metaTitle: 'Photocells vs Ribs: Best Gate Safety for Kids & Pets',
     metaDescription: 'Discover safety photocells vs safety ribs: key differences in detection, installation, pinch protection for kids, and handling fast pets. Unpack pros, cons, and the top tech that truly safeguards your family from gate accidents.',
@@ -3014,7 +3037,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'how-to-manually-open-an-electric-gate-during-a-power-cut',
+    slug: 'manual-gate-release-power-cut',
+    relatedServiceSlug: 'gate-repair-and-maintenance',
     title: 'How to Manually Open an Electric Gate During a Power Cut',
     metaTitle: 'Manually Open Electric Gate in Power Cut: Guide',
     metaDescription: 'Power outage trapping you? Learn how to manually open an electric gate during a power cut safely. Follow steps for sliding gates, swing gates, manual keys, and more. Regain access fast with our expert guide.',
@@ -3183,7 +3207,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'why-your-gate-motor-is-humming-but-not-moving',
+    slug: 'gate-motor-humming-not-moving',
+    relatedServiceSlug: 'gate-repair-and-maintenance',
     title: 'Why Your Gate Motor Is Humming but Not Moving',
     metaTitle: 'Gate Motor Humming But Not Moving? Fix It Now',
     metaDescription: 'Gate motor humming but not moving? Uncover common causes like power issues, obstructions, worn gears, and overloads. Get step-by-step diagnostics, reset tips for popular models, and easy fixes to restore motion quickly.',
@@ -3371,7 +3396,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'how-a-bespoke-driveway-gate-can-increase-your-london-property-value',
+    slug: 'driveway-gate-property-value-london',
+    relatedServiceSlug: 'electric-swing-gates',
     title: 'How a Bespoke Driveway Gate Can Increase Your London Property Value',
     metaTitle: 'Boost London Property Value with Bespoke Gates',
     metaDescription: 'Discover how a bespoke driveway gate can increase your London property value through superior curb appeal, enhanced security, privacy, and durable materials. Boost first impressions and resale ROI in the competitive market today.',
@@ -3487,7 +3513,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'can-solid-driveway-gates-help-reduce-london-traffic-noise',
+    slug: 'driveway-gates-noise-reduction-london',
+    relatedServiceSlug: 'wooden-driveway-gates',
     title: 'Can Solid Driveway Gates Help Reduce London Traffic Noise',
     metaTitle: 'Reduce London Traffic Noise with Solid Driveway Gates',
     metaDescription: 'Discover if solid driveway gates can block London\'s traffic noise. Explore sound reduction principles, materials, scientific studies, and installation tips for quieter homes. Learn proven strategies today.',
@@ -3618,7 +3645,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'can-installing-an-automated-gate-lower-your-home-insurance-premium',
+    slug: 'automated-gate-home-insurance',
+    relatedServiceSlug: 'automated-gate-systems',
     title: 'Can Installing an Automated Gate Lower Your Home Insurance Premium',
     metaTitle: 'Automated Gates: Cut Home Insurance Premiums?',
     metaDescription: 'Can installing an automated gate lower your home insurance premium? Discover types, security features, insurer discounts like State Farm\'s, real-world case studies, and average savings. Boost security and save money today.',
@@ -3737,7 +3765,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'the-total-cost-of-owning-an-automated-gate-in-london-in-2026',
+    slug: 'automated-gate-total-cost-london',
+    relatedServiceSlug: 'automated-gate-systems',
     title: 'The Total Cost of Owning an Automated Gate in London in 2026',
     metaTitle: '2026 London Automated Gate Ownership Costs Guide',
     metaDescription: 'Uncover the total cost of owning an automated gate in London in 2026. Explore purchase prices, installation fees, maintenance, repairs, and energy costs. Get expert insights to budget wisely and enhance security today.',
@@ -3880,7 +3909,8 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
   {
-    slug: 'how-to-budget-for-driveway-gate-installation-electricity-and-servicing-in-london',
+    slug: 'driveway-gate-installation-costs-london',
+    relatedServiceSlug: 'electric-swing-gates',
     title: 'How to Budget for Driveway Gate Installation Electricity and Servicing in London',
     metaTitle: 'Budget Driveway Gate Electricity Costs in London',
     metaDescription: 'Master budgeting for driveway gate installation electricity and servicing in London. Explore power needs, wiring costs, electrician fees, local rates, and ongoing consumption. Save money with expert tips on tariffs and setups today.',

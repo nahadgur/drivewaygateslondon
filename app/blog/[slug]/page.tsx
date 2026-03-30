@@ -5,22 +5,9 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { Calendar, ArrowLeft, ArrowRight, ExternalLink, MapPin } from 'lucide-react';
 import { blogArticles, getArticleBySlug, type ContentBlock } from '@/data/blog';
-import { Header } from '@/components/Header';
+import { services } from '@/data/services';
 import { Footer } from '@/components/Footer';
 import { LeadFormModal } from '@/components/LeadFormModal';
-
-// Update these to match your actual live service x location pages
-const SIDEBAR_SERVICE_LINKS = [
-  { label: 'Electric Sliding Gates — Barnet', href: '/services/electric-sliding-gates/barnet/' },
-  { label: 'Electric Swing Gates — Richmond', href: '/services/electric-swing-gates/richmond/' },
-  { label: 'Wooden Driveway Gates — Camden', href: '/services/wooden-driveway-gates/camden/' },
-  { label: 'Wrought Iron Gates — Kensington', href: '/services/wrought-iron-gates/kensington/' },
-  { label: 'Aluminium Gates — Bromley', href: '/services/aluminium-gates/bromley/' },
-  { label: 'Gate Automation — Harrow', href: '/services/gate-automation/harrow/' },
-  { label: 'Gate Intercom Systems — Wandsworth', href: '/services/gate-intercom-systems/wandsworth/' },
-  { label: 'Gate Safety Inspections — London', href: '/services/gate-safety-inspections/london/' },
-  { label: 'Gate Repairs — Ealing', href: '/services/gate-repairs-maintenance/ealing/' },
-];
 
 function BlogCtaBanner({ onOpenModal }: { onOpenModal: () => void }) {
   return (
@@ -215,6 +202,10 @@ export default function BlogArticlePage({ params }: { params: { slug: string } }
   const article = getArticleBySlug(params.slug);
   if (!article) notFound();
 
+  const relatedService = article.relatedServiceSlug
+    ? services.find(s => s.slug === article.relatedServiceSlug)
+    : null;
+
   const furtherReading = article.content.filter(b => b.type === 'external-link');
 
   const bottomRelated = blogArticles
@@ -276,20 +267,39 @@ export default function BlogArticlePage({ params }: { params: { slug: string } }
                   </button>
                 </div>
 
-                {/* Service x Location links */}
+                {/* Contextual service CTA */}
+                {relatedService && (
+                  <div className="bg-brand-900 p-6 rounded-2xl border border-brand-700">
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-brand-400 mb-2">Relevant Service</p>
+                    <h3 className="text-base font-display font-bold text-white mb-2 leading-snug">
+                      {relatedService.title}
+                    </h3>
+                    <p className="text-brand-200 text-xs leading-relaxed mb-5">
+                      {relatedService.description}
+                    </p>
+                    <Link
+                      href={`/services/${relatedService.slug}/`}
+                      className="inline-flex items-center gap-2 w-full justify-center px-4 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-400 text-white font-bold text-sm transition-all hover:scale-105 active:scale-95"
+                    >
+                      See {relatedService.title} <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
+                )}
+
+                {/* Service links */}
                 <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
                   <div className="flex items-center gap-2 mb-4">
                     <MapPin className="w-4 h-4 text-brand-500 flex-shrink-0" />
                     <h3 className="font-bold text-gray-900 text-sm">Our Services</h3>
                   </div>
                   <ul className="space-y-2.5">
-                    {SIDEBAR_SERVICE_LINKS.map(link => (
-                      <li key={link.href}>
+                    {services.map(service => (
+                      <li key={service.slug}>
                         <Link
-                          href={link.href}
+                          href={`/services/${service.slug}/`}
                           className="text-sm text-brand-600 hover:text-brand-800 hover:underline underline-offset-2 transition-colors leading-snug"
                         >
-                          {link.label}
+                          {service.title}
                         </Link>
                       </li>
                     ))}
