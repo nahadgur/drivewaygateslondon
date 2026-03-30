@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { Calendar, ArrowLeft, ArrowRight, ExternalLink, MapPin } from 'lucide-react';
 import { blogArticles, getArticleBySlug, type ContentBlock } from '@/data/blog';
 import { services } from '@/data/services';
+import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { LeadFormModal } from '@/components/LeadFormModal';
 
