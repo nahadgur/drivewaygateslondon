@@ -22,7 +22,6 @@ export default function LocalRegulationsHub() {
           <div className="container-width py-16 md:py-24">
             <Breadcrumbs items={[{ label: 'London Gate Planning Guides' }]} />
             <div className="max-w-3xl mt-6">
-              <div className="font-display text-brand-800/40 leading-none mb-[-6px] select-none" style={{ fontSize: 'clamp(60px, 10vw, 120px)' }}>05</div>
               <h1 className="font-syne font-extrabold uppercase tracking-tight text-white mb-5"
                 style={{ fontSize: 'clamp(28px, 4vw, 52px)', lineHeight: 1.02, letterSpacing: '-.02em' }}>
                 Driveway Gate Planning<br /><span className="text-brand-500">by London Borough</span>

@@ -62,8 +62,6 @@ export default function ServicePage({ params }: { params: { serviceSlug: string 
             <div className="mb-4">
               <Breadcrumbs items={[{ label: 'Gate Types', href: '/services/' }, { label: service.title }]} />
             </div>
-            <div aria-hidden className="font-display font-black text-brand-200 leading-none mb-[-12px] select-none"
-              style={{ fontSize: 'clamp(80px, 14vw, 160px)' }}>01</div>
             <h1 className="font-syne font-extrabold uppercase tracking-tight text-brand-900 mb-5"
               style={{ fontSize: 'clamp(28px, 4vw, 54px)', lineHeight: 1.02, letterSpacing: '-.025em' }}>
               {service.title}

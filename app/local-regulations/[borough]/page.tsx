@@ -45,8 +45,6 @@ export default function BoroughPlanningPage({ params }: { params: { borough: str
               <div className="inline-flex items-center gap-2 border border-brand-500/30 text-brand-400 px-3 py-1 font-syne font-bold text-[11px] tracking-[.08em] uppercase mb-6">
                 <MapPin className="w-3 h-3" /> {borough.name} Planning Guide
               </div>
-              <div className="font-display text-brand-800/40 leading-none mb-[-6px] select-none"
-                style={{ fontSize: 'clamp(60px, 10vw, 100px)' }}>Reg</div>
               <h1 className="font-syne font-extrabold uppercase tracking-tight text-white mb-4"
                 style={{ fontSize: 'clamp(26px, 4vw, 50px)', lineHeight: 1.02, letterSpacing: '-.02em' }}>
                 Driveway Gate Planning in <span className="text-brand-500">{borough.name}</span>

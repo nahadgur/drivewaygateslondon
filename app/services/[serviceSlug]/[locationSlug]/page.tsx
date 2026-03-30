@@ -51,8 +51,6 @@ export default function ServiceLocationPage({ params }: { params: { serviceSlug:
             <div className="inline-flex items-center gap-2 mb-3 w-fit border border-brand-300 bg-brand-100 px-3 py-1 font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-600">
               <MapPin className="w-3 h-3" /> Vetted Installers in {cityName}
             </div>
-            <div aria-hidden className="font-display font-black text-brand-200 leading-none mb-[-12px] select-none"
-              style={{ fontSize: 'clamp(70px, 12vw, 140px)' }}>01</div>
             <h1 className="font-syne font-extrabold uppercase tracking-tight text-brand-900 mb-5"
               style={{ fontSize: 'clamp(26px, 3.8vw, 50px)', lineHeight: 1.02, letterSpacing: '-.025em' }}>
               {service.title} in {cityName}

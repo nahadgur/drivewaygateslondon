@@ -47,8 +47,6 @@ export default function CityPage({ params }: { params: { city: string } }) {
                 <div className="inline-flex items-center gap-2 border border-brand-500/30 text-brand-400 px-3 py-1 text-[11px] font-syne font-bold tracking-[.08em] uppercase mb-6">
                   <MapPin className="w-3 h-3" /> Vetted Gate Installers in {cityName}
                 </div>
-                <div className="font-display text-brand-800/40 leading-none mb-[-6px] select-none"
-                  style={{ fontSize: 'clamp(60px, 10vw, 100px)' }}>01</div>
                 <h1 className="font-syne font-extrabold uppercase tracking-tight text-white mb-5"
                   style={{ fontSize: 'clamp(28px, 4vw, 52px)', lineHeight: 1.02, letterSpacing: '-.02em' }}>
                   Driveway Gates in <span className="text-brand-500">{cityName}</span>

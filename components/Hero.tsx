@@ -15,14 +15,7 @@ export function Hero({ title, subtitle, image, showCta = true, showTrust = true,
 
       {/* Text side */}
       <div className="flex flex-col justify-center px-6 sm:px-10 lg:px-14 py-14 lg:py-16 border-b-[3px] lg:border-b-0 lg:border-r-[3px] border-brand-900">
-        {/* Oversized decorative number */}
-        <div
-          aria-hidden
-          className="font-display font-black leading-none text-brand-200 mb-[-12px] select-none"
-          style={{ fontSize: 'clamp(80px, 16vw, 180px)' }}
-        >
-          01
-        </div>
+
 
         <h1
           className="font-syne font-extrabold uppercase tracking-tight text-brand-900 mb-5"

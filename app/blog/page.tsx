@@ -38,8 +38,6 @@ export default function BlogIndexPage() {
           </div>
           <div className="container-width py-16 md:py-24 relative z-10">
             <div className="max-w-3xl">
-              <div className="font-display text-brand-800/40 leading-none mb-[-6px] select-none"
-                style={{ fontSize: 'clamp(60px, 10vw, 120px)' }}>06</div>
               <h1 className="font-syne font-extrabold uppercase tracking-tight text-white mb-5"
                 style={{ fontSize: 'clamp(28px, 4vw, 52px)', lineHeight: 1.02, letterSpacing: '-.02em' }}>
                 Driveway Gate Guides<br /><span className="text-brand-500">for London Homeowners</span>
