@@ -179,6 +179,142 @@ const serviceContent: Record<string, { intro: string[]; benefits: { title: strin
       { title: 'Testing and Safety Check', desc: 'After the repair, the full system is tested including motor travel limits, safety sensor responses, and all access controls.' },
       { title: 'Service Report', desc: 'You receive a written report of the work done, any parts replaced, and recommendations for ongoing maintenance to prevent future issues.' },
     ],
+  },,
+
+  'aluminium-gates': {
+    intro: [
+      "Aluminium driveway gates have become the dominant choice for new installations across London over the past five years, and the reasons are straightforward. Aluminium does not rust, ever. It does not need annual painting. The powder coat finish is baked on at the factory and carries a 25-year guarantee from reputable manufacturers. In a city where damp winters, road salt, and air pollution accelerate corrosion on steel and iron, aluminium has become the material specification serious installers default to.",
+      "The material also suits London's density perfectly. Aluminium's low density means gates can be made larger and heavier-looking than their actual weight. A 5-metre wide gate in aluminium might weigh half what an equivalent mild steel gate weighs, which allows smaller, quieter motors and reduces wear on posts, hinges, and motor mounts over time. The result is a system that runs more reliably and costs less to maintain.",
+      "Design options in aluminium have expanded dramatically. Flat-face infill panels, horizontal slat designs, vertical bar styles with raked tops, and full privacy panels are all available in any RAL colour. Dual-tone finishes, where the outer face is anthracite and the inner face is white or grey, are increasingly popular in London and add no cost premium. Our network includes fabricators who specialise in aluminium and can turn a design brief into a finished gate in two to four weeks.",
+    ],
+    benefits: [
+      { title: 'Zero Rust, Zero Repainting', desc: 'Aluminium does not corrode. The powder coat finish is factory-baked and guaranteed for 25 years, making it the lowest-maintenance gate material available in London.' },
+      { title: 'Lighter Than Steel', desc: 'Lower weight means smaller motors, less stress on posts and hinges, and lower long-term maintenance costs. A 5-metre aluminium gate can weigh half an equivalent steel design.' },
+      { title: 'Any RAL Colour', desc: 'Over 200 standard RAL shades plus custom matches. Dual-tone finishes — different colours on each face — are available at no extra cost and are increasingly popular in London.' },
+      { title: 'Fast Lead Times', desc: 'Aluminium extrusions are stock profiles. Most fabricators can produce standard designs in 10 to 14 days, compared to 4 to 6 weeks for bespoke steel or timber gates.' },
+    ],
+    candidateIntro: "Aluminium gates are usually the best choice if:",
+    candidates: [
+      "You want a premium, contemporary look with zero ongoing maintenance",
+      "Your property is exposed to damp, salt air, or urban pollution",
+      "You want a large gate opening without heavy motors or thick posts",
+      "You want a specific RAL colour that precisely matches your front door or window frames",
+      "You are in a conservation area and need a modern design that does not conflict with planning guidelines",
+    ],
+    process: [
+      { title: 'Design Consultation and Site Survey', desc: 'Your installer visits to measure the opening, assess post positions, discuss design options, and specify the motor system. Most bring material samples and RAL colour charts.' },
+      { title: 'Fabrication', desc: 'The gate is manufactured using aluminium extrusion profiles, welded and assembled in the fabricator workshop, then powder coated to your chosen colour.' },
+      { title: 'Installation', desc: 'Groundwork for posts and conduit, gate hanging, motor fitting, and wiring of all access controls. Most aluminium gate installations complete in one to two days.' },
+      { title: 'Commissioning and Handover', desc: 'Full system test, motor limit setting, safety sensor calibration, and handover with remotes, keypads, and manual release instructions.' },
+    ],
+  },
+  'composite-gates': {
+    intro: [
+      "Composite driveway gates are the fastest-growing segment in the London gate market, and the reason is simple: they look exactly like real timber but need almost nothing in the way of maintenance. A composite gate uses a structural aluminium or galvanised steel frame clad in composite boarding — engineered wood-polymer panels that replicate the grain, texture, and warmth of real timber without any of its vulnerabilities. No rot, no warping, no annual oiling.",
+      "The composite market has matured significantly over the past decade. The finish quality has improved to the point where many visitors cannot distinguish a composite gate from a high-quality hardwood design at normal viewing distances. Available profiles include horizontal full-privacy planks, slatted designs with gaps for airflow and light, and V-groove patterns that mimic traditional tongue-and-groove boarding. Colour options include oak, mahogany, walnut, driftwood grey, and anthracite.",
+      "For London homeowners who love the look of wooden gates but do not want the maintenance commitment, composite is the obvious answer. The structural frame is galvanised metal, so the gate remains rigid and automation-ready. Composite boarding does not swell in wet weather, which eliminates one of the most common causes of automation failure on traditional timber gates. Our installers specify composite from several manufacturers and will advise on the best product for your design and budget during the site visit.",
+    ],
+    benefits: [
+      { title: 'Wood Look, Zero Maintenance', desc: 'Composite cladding replicates timber grain and texture authentically while being completely impervious to rot, splitting, or colour fade. No oiling, no staining, no repainting.' },
+      { title: 'Dimensionally Stable', desc: 'Unlike real timber, composite does not swell in wet weather or shrink in dry conditions. This makes automation far more reliable — gates do not stick or bind through the seasons.' },
+      { title: 'Long Manufacturer Warranties', desc: 'Quality composite products carry 15 to 25 year warranties against structural failure and colour fade. Most hardwood gates carry no material warranty at all.' },
+      { title: 'Full Privacy Options', desc: 'Composite panels can be specified as fully solid, giving complete privacy between the planks. Ideal for London properties close to the pavement or overlooked from the street.' },
+    ],
+    candidateIntro: "Composite gates are typically the right choice if:",
+    candidates: [
+      "You want the warmth of a wooden gate without any annual maintenance",
+      "Your previous timber gate warped, rotted, or caused automation problems",
+      "You want a full-privacy design that completely screens the driveway",
+      "You are buying for a rental property and need a gate that requires no landlord upkeep",
+      "You want a long manufacturer guarantee on the gate material itself",
+    ],
+    process: [
+      { title: 'Design and Specification', desc: 'The installer assesses your opening, agrees the frame specification and composite profile, selects the colour, and designs the gate to your privacy and aesthetic requirements.' },
+      { title: 'Frame Fabrication and Cladding', desc: 'The structural frame is fabricated and hot-dip galvanised. Composite boards are cut and fitted to the frame in the workshop before delivery.' },
+      { title: 'On-site Installation', desc: 'Posts, groundwork, and gate hanging. Automation, intercoms, and access controls are wired and fitted. Most composite gate installations complete in one to two days.' },
+      { title: 'Testing and Handover', desc: 'Full system commissioning, safety testing, and handover with operating instructions, maintenance guide, and manufacturer warranty documentation.' },
+    ],
+  },
+  'hardwood-gates': {
+    intro: [
+      "Hardwood driveway gates represent the premium end of the London gate market — hand-crafted from materials that take decades to grow and are built to last just as long. Iroko, European oak, and Accoya are the three timbers our London installers work with most frequently, each with distinct character, maintenance profiles, and price points. For period homes, conservation areas, and affluent London addresses where authenticity matters, nothing else comes close.",
+      "Iroko is the workhorse hardwood for London gates. Naturally oily, resistant to moisture, dimensionally stable in London's damp climate, and available in a wide range of profiles and designs. European oak gives a more pronounced grain and weathers to a beautiful silver-grey if left untreated — a look many homeowners actively prefer. Accoya is the modern benchmark: a modified radiata pine that has been acetylated to eliminate the cellular structure wood uses to absorb water. The result carries a 50-year above-ground guarantee and needs treatment only every three to five years.",
+      "Hardwood gates are almost always made entirely bespoke. Your installer works from your design brief — or develops one with you — and the gate is built to fit your exact opening, post configuration, and architectural style. The best London joiners can match existing boundary railings, replicate period details from old photographs, or design a completely original gate that becomes a feature of the property.",
+    ],
+    benefits: [
+      { title: 'Authentic Craftsmanship', desc: 'A quality hardwood gate is a piece of joinery. The grain, the weight, the sound of it closing — no other material replicates the sensory quality of a well-made timber gate.' },
+      { title: 'Conservation Area Approved', desc: 'Planning authorities in London conservation areas almost universally prefer hardwood gates over metal alternatives where a traditional character is required. Our installers know the local guidelines.' },
+      { title: 'Fully Bespoke Design', desc: 'Every hardwood gate is made to order. Exact dimensions, profile selection, hardware finishes, automation specifications, and decorative details are all agreed before manufacture begins.' },
+      { title: 'Long Material Lifespan', desc: 'Iroko and oak gates last 25 years or more with correct maintenance. Accoya gates carry a 50-year guarantee. No manufactured gate material matches the lifespan of properly specified hardwood.' },
+    ],
+    candidateIntro: "Hardwood gates are typically the right choice if:",
+    candidates: [
+      "Your property is a period home where authentic timber detailing matters",
+      "You are in a conservation area or need to satisfy planning conditions",
+      "You want a fully bespoke gate designed around your property's specific character",
+      "You are in an affluent London area and want the most premium kerb appeal result",
+      "You are prepared to commit to annual maintenance to protect the investment",
+    ],
+    process: [
+      { title: 'Design Consultation', desc: 'The joiner visits your property, discusses design options, selects timber species, agrees hardware finishes and any decorative details. Often involves reviewing photographs of similar properties for reference.' },
+      { title: 'Manufacture', desc: 'The gate is built in the workshop from seasoned hardwood. Mortise and tenon or draw-bore construction is typical for structural joints. Lead times are usually 3 to 6 weeks.' },
+      { title: 'Installation', desc: 'Delivery, post preparation, hanging, and automation installation. The gate is adjusted and balanced, hardware fitted, and any automation commissioned on the same day.' },
+      { title: 'Finishing and Handover', desc: 'First oil or stain coat applied on site if agreed. Automation tested, remotes programmed, and maintenance schedule discussed. Manufacturer certifications and warranty documents provided.' },
+    ],
+  },
+  'wrought-iron-gates': {
+    intro: [
+      "Wrought iron gates are the defining gate aesthetic for London's Victorian, Edwardian, and Georgian housing stock. The ornate scrollwork, fleur-de-lis finials, and hand-forged details that characterise period ironwork are a natural fit for the architecture of inner and outer London alike. When done well, a wrought iron gate does not just secure a driveway — it becomes a piece of architectural ironmongery that adds genuine character and value to the property.",
+      "Most contemporary gates described as wrought iron are actually fabricated from mild steel, which is the correct material for the purpose. True wrought iron — hand-forged by a blacksmith — is available for heritage restoration projects but commands a significant premium. Mild steel fabrication allows complex decorative profiles to be produced efficiently by skilled metalworkers, hot-dip galvanised, and powder coated to any RAL colour. The standard London specification for corrosion protection is hot-dip galvanising plus powder coat, which gives a minimum 20-year protection guarantee.",
+      "Our network includes metalworkers and fabricators who specialise in ornate gate designs for London period properties. They can work from your brief, from photographs of existing railings or period examples, or from architectural drawings. Most provide CAD drawings or 3D renders before fabrication begins so you can visualise the gate on your property before any metal is cut.",
+    ],
+    benefits: [
+      { title: 'Authentic London Aesthetic', desc: 'No other material captures the character of a London period property gate like ornate ironwork. Scrolls, railheads, collars, and finials are all achievable in mild steel fabrication.' },
+      { title: 'Virtually Unlimited Design Freedom', desc: 'Mild steel can be bent, forged, welded, and shaped into almost any decorative form. Matching existing railings, replicating period patterns, or creating original designs are all straightforward for a skilled fabricator.' },
+      { title: 'High Kerb Appeal', desc: 'A quality wrought iron gate is immediately visible from the street and sets the character of the entire front boundary. Estate agents consistently report that ornate ironwork contributes to first impressions and sale prices.' },
+      { title: 'Fully Automatable', desc: 'Wrought iron gates work perfectly with swing gate automation — underground motors or ram-arm systems. The weight is the main specification variable; our installers size the motor correctly during the site survey.' },
+    ],
+    candidateIntro: "Wrought iron gates are typically the right choice if:",
+    candidates: [
+      "Your property is Victorian, Edwardian, or Georgian and you want an authentic period boundary treatment",
+      "You want to match or complement existing railings, garden walls, or architectural ironwork on the property",
+      "You are in a conservation area and ornate ironwork is the expected gate aesthetic for the street",
+      "You want maximum design individualisation and are prepared to commission a bespoke fabrication",
+      "You want a gate that will increase the property's kerb appeal and perceived value significantly",
+    ],
+    process: [
+      { title: 'Design and Survey', desc: 'The fabricator visits your property, photographs existing ironwork for reference, agrees the design and decorative programme, and specifies posts, hinges, and any automation requirements.' },
+      { title: 'Fabrication', desc: 'The gate is fabricated in mild steel — cut, bent, welded, and assembled in the workshop. Decorative elements are forged or machined and welded in place. Lead time is typically 4 to 6 weeks for bespoke designs.' },
+      { title: 'Hot-Dip Galvanising and Powder Coating', desc: 'The finished gate is submerged in molten zinc for corrosion protection, then powder coated to your chosen RAL colour. Both steps are critical in the London environment.' },
+      { title: 'Installation and Automation', desc: 'The gate is delivered to site, hung on prepared posts, and automated. Safety sensors, intercoms, and remotes are fitted and commissioned on the same day.' },
+    ],
+  },
+  'pedestrian-side-gates': {
+    intro: [
+      "A pedestrian or side gate is often the practical detail that makes a driveway gate setup genuinely usable day-to-day. Without dedicated foot access, every person walking to the front door has to trigger the main gate — which means waiting for the motor cycle, creating wear on the system, and potentially leaving the driveway unintentionally open while people pass through. A well-placed pedestrian gate solves all of that instantly.",
+      "The two most common configurations are a standalone pedestrian gate in a separate opening alongside the main driveway gate, and a wicket gate — a smaller leaf built into one of the main gate panels. The right choice depends on your boundary layout. If you have a separate gap alongside the driveway, a standalone gate is cleaner. If the boundary is one continuous run, a wicket cut into the main gate avoids the need for an additional post.",
+      "Our London installers offer pedestrian gates in all the same materials as main driveway gates — aluminium, mild steel, wrought iron, hardwood, and composite. Matching the side gate material and finish to the main gate creates a cohesive boundary that looks intentional rather than afterthought. Automation options include simple latches, electromagnetic locks, GSM openers, keypad entry, and full video intercom integration.",
+    ],
+    benefits: [
+      { title: 'Reduces Wear on Main Gate', desc: 'Foot traffic through a dedicated pedestrian gate instead of the main gate reduces motor cycles significantly, extending the lifespan of the automation system and reducing maintenance frequency.' },
+      { title: 'Can Be Automated Independently', desc: 'A pedestrian gate can have its own motor, keypad, or intercom and operate completely separately from the main driveway gate — useful for regular delivery access or separate household access patterns.' },
+      { title: 'Matches Any Boundary Style', desc: 'Available in all materials, heights, and designs to match your existing or planned main gate. Matching hardware, finish, and profile creates a professional, considered boundary design.' },
+      { title: 'Planning Friendly', desc: 'Side gates under 2 metres tall (or 1 metre beside a highway) do not typically require planning permission. Our installers will confirm the specific rules for your borough during the site survey.' },
+    ],
+    candidateIntro: "A pedestrian or side gate is typically needed if:",
+    candidates: [
+      "Your main driveway gate is automated and you need a convenient route for foot access without triggering the full gate",
+      "You have a separate side return or garden access point that needs securing",
+      "You want to control who has access to the rear of the property independently of the driveway",
+      "Your current wicket or side gate is mismatched with the main gate and reduces the overall kerb appeal",
+      "You are adding a main driveway gate and want a complete, coordinated boundary design from the start",
+    ],
+    process: [
+      { title: 'Survey and Configuration', desc: 'The installer assesses the available space alongside your driveway or boundary and recommends the best configuration — standalone gate or wicket cut into the main gate leaf.' },
+      { title: 'Design and Specification', desc: 'Dimensions, material, finish, hardware, and automation options are agreed. For standalone gates, post positions and foundation requirements are confirmed.' },
+      { title: 'Fabrication and Installation', desc: 'The gate is manufactured to spec and installed, with posts set in concrete where required and all automation or locking hardware fitted.' },
+      { title: 'Testing and Handover', desc: 'Full operation test, key and remote handover, and a brief on maintenance requirements for the specific material chosen.' },
+    ],
   },
 };
 
