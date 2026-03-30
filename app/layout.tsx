@@ -1,13 +1,16 @@
-import type { Metadata } from "next";
-import Script from "next/script";
-import "./globals.css";
-import { siteConfig } from "@/data/site";
+// Static metadata for the root layout segment
+// app/layout.tsx is already server-side - update it with better OG image + SearchAction
+
+import type { Metadata } from 'next';
+import Script from 'next/script';
+import './globals.css';
+import { siteConfig } from '@/data/site';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Driveway Gates London | Find Trusted Gate Installers Across London",
-    template: `%s | ${siteConfig.name}`,
+    default: "Driveway Gates London | Vetted Gate Installers, Free Quotes",
+    template: `%s | Driveway Gates London`,
   },
   description: siteConfig.description,
   alternates: { canonical: siteConfig.url },
@@ -27,23 +30,16 @@ export const metadata: Metadata = {
     type: "website",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: siteConfig.name,
+    title: "Driveway Gates London | Vetted Gate Installers, Free Quotes",
     description: siteConfig.description,
     locale: "en_GB",
-    images: [
-      {
-        url: "/android-chrome-512x512.png",
-        width: 512,
-        height: 512,
-        alt: siteConfig.name,
-      },
-    ],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: siteConfig.name }],
   },
   twitter: {
     card: "summary_large_image",
-    title: siteConfig.name,
+    title: "Driveway Gates London | Vetted Gate Installers, Free Quotes",
     description: siteConfig.description,
-    images: ["/android-chrome-512x512.png"],
+    images: ["/og-image.jpg"],
   },
 };
 
@@ -54,6 +50,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     name: siteConfig.name,
     alternateName: siteConfig.tagline,
     url: siteConfig.url,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: { "@type": "EntryPoint", urlTemplate: `${siteConfig.url}/location/?q={search_term_string}` },
+      "query-input": "required name=search_term_string",
+    },
   };
 
   const organizationSchema = {
@@ -61,7 +62,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "@type": "Organization",
     name: siteConfig.name,
     url: siteConfig.url,
-    logo: `${siteConfig.url}/android-chrome-512x512.png`,
+    logo: {
+      "@type": "ImageObject",
+      url: `${siteConfig.url}/android-chrome-512x512.png`,
+      width: 512,
+      height: 512,
+    },
+    description: siteConfig.description,
+    areaServed: { "@type": "City", name: "London", addressCountry: "GB" },
+    sameAs: [],
   };
 
   return (
@@ -89,7 +98,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', 'G-F4ZHZBYKEL');
           `}
         </Script>
-
         {children}
       </body>
     </html>
