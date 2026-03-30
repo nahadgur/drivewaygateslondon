@@ -5,7 +5,6 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { AlertCircle, CheckCircle, ArrowRight, FileText, MapPin } from 'lucide-react';
 import { boroughRegulations, getBoroughBySlug } from '@/data/regulations';
-import { siteConfig } from '@/data/site';
 import { services } from '@/data/services';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -22,17 +21,8 @@ export function BoroughPageClient({ params }: { params: { borough: string } }) {
     .sort(() => Math.random() - 0.5)
     .slice(0, 6);
 
-  const schema = {
-    '@context': 'https://schema.org', '@type': 'Article',
-    headline: `Driveway Gate Planning Permission in ${borough.name} — What You Need to Know`,
-    description: `Complete guide to driveway gate planning rules in ${borough.name}. Conservation areas, Article 4 directions, permitted development rights.`,
-    url: `${siteConfig.url}/local-regulations/${borough.slug}/`,
-    publisher: { '@type': 'Organization', name: siteConfig.name, url: siteConfig.url },
-  };
-
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
       <main>

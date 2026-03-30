@@ -5,7 +5,6 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowRight, Building2 } from 'lucide-react';
 import { commercialServices, getCommercialBySlug } from '@/data/commercial';
-import { siteConfig } from '@/data/site';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { LeadFormModal } from '@/components/LeadFormModal';
@@ -20,28 +19,9 @@ export function CommercialPageClient({ params }: { params: { slug: string } }) {
   if (!service) notFound();
 
   const otherServices = commercialServices.filter(s => s.slug !== service.slug);
-  const schema = {
-    '@context': 'https://schema.org', '@type': 'Service',
-    name: service.title, description: service.description,
-    url: `${siteConfig.url}/commercial/${service.slug}/`,
-    provider: { '@type': 'LocalBusiness', name: siteConfig.name, url: siteConfig.url },
-  };
-
-
-  const faqSchema = service.faqs && service.faqs.length > 0 ? {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: service.faqs.map((faq: { question: string; answer: string }) => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
-    })),
-  } : null;
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
       <main>

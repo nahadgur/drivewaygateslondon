@@ -48,21 +48,8 @@ export function ServicePageClient({ params }: { params: { serviceSlug: string } 
   const totalCities = Object.values(LOCATIONS).flat().length;
   const combinedFaqs = [...(service.faqs || []), ...FAQS_SERVICES];
 
-
-  // FAQPage schema
-  const faqSchema = combinedFaqs.length > 0 ? {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: combinedFaqs.map(faq => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
-    })),
-  } : null;
-
   return (
     <>
-      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
       <main>

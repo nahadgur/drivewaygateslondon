@@ -6,7 +6,6 @@ import Link from 'next/link';
 import { CheckCircle, MapPin, Star, Clock, Shield, Award, Users } from 'lucide-react';
 import { services, getServiceBySlug } from '@/data/services';
 import { LOCATIONS, getCityBySlug, toSlug } from '@/data/locations';
-import { siteConfig } from '@/data/site';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FAQ } from '@/components/FAQ';
@@ -24,18 +23,8 @@ export function ServiceLocationPageClient({ params }: { params: { serviceSlug: s
 
   const allCities = Object.values(LOCATIONS).flat();
 
-  const schema = {
-    '@context': 'https://schema.org', '@type': 'Service',
-    name: `${service.title} in ${cityName}`, description: service.description,
-    url: `${siteConfig.url}/services/${params.serviceSlug}/${params.locationSlug}/`,
-    serviceType: service.title,
-    areaServed: { '@type': 'City', name: cityName, addressCountry: 'GB' },
-    provider: { '@type': 'LocalBusiness', name: siteConfig.name, url: siteConfig.url },
-  };
-
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
       <main>

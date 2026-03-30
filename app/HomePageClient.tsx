@@ -13,6 +13,7 @@ import { TrustBadges } from '@/components/TrustBadges';
 import { Testimonials } from '@/components/Testimonials';
 import { FAQ } from '@/components/FAQ';
 import { LeadFormModal } from '@/components/LeadFormModal';
+import { HOMEPAGE_FAQS as homepageFaqs } from '@/data/site';
 
 const topAreas = ['Barnet', 'Richmond', 'Wimbledon', 'Bromley', 'Ealing', 'Hampstead', 'Kensington', 'Chiswick', 'Croydon', 'Harrow', 'Ilford', 'Kingston upon Thames'];
 
@@ -27,17 +28,6 @@ const WHY_ITEMS = [
 
 const ELECTRIC_PROS  = ['Open and close from your car, phone, or keypad', 'Integrated safety sensors protect children and pets', 'Intercom and video entry systems available', 'Consistent, smooth operation in all weather', 'Smart home integration with Alexa, Google Home, Ring', 'Battery backup keeps gates working during power cuts', 'Deters intruders with visible automation', 'Adds more property value than manual gates'];
 const MANUAL_CONS = ['Must get out of the car to open and close', 'No safety sensors or auto-reverse features', 'No intercom or remote access possible', 'Gates can swing in wind if not latched properly', 'No smart home connectivity', 'Lower upfront cost but no convenience benefit', 'Still provides a physical security barrier', 'Can be automated later at additional cost'];
-
-const homepageFaqs = [
-  { question: 'How much do driveway gates cost in London?', answer: 'Prices vary significantly depending on what you choose. A basic pair of manual wooden gates, installed, starts around £2,500. Electric swing gates with automation typically range from £3,500 to £10,000. Premium electric sliding gates with full automation and intercom systems can run from £4,500 to £12,000 or more. The biggest price drivers are material, gate width, automation spec, and whether the design is off-the-shelf or bespoke. Nearly all our London installers offer 0% finance so you can spread the cost.' },
-  { question: 'Do I need planning permission for driveway gates in London?', answer: 'In most cases, no. Gates under 2 metres tall that open inward onto your property usually fall under permitted development rights. If your gate is next to a classified road and over 1 metre tall, you may need permission. Listed buildings and conservation areas have stricter rules, and some London boroughs have specific local guidelines. Your installer will check all of this during the free site survey and handle any applications if needed.' },
-  { question: 'How long does a driveway gate installation take?', answer: 'A standard installation takes 2 to 4 working days. Day one covers groundwork, post holes, and foundations. Day two is gate hanging, motor fitting, and wiring. Days three and four handle finishing, intercom setup, and commissioning. Bespoke fabricated gates may need 4 to 6 weeks lead time for manufacturing before the installation starts.' },
-  { question: 'What type of gate is best for a London driveway?', answer: 'It depends on your space and priorities. If your driveway is short or slopes toward the road, electric sliding gates are usually the best option because they do not need swing clearance. If you have plenty of room, electric swing gates are the most popular and tend to be slightly cheaper. Wooden gates suit period properties. Metal gates work well for modern and Victorian homes alike. Your installer will recommend the best option during the free site survey.' },
-  { question: 'Can I automate my existing manual gates?', answer: 'In most cases, yes. If your gates are structurally sound and properly hung, a motor system can be retrofitted for £1,200 to £3,500 depending on the gate type and weight. The installer will check the hinges, gate condition, and pillar strength during the site visit.' },
-  { question: 'How does your free matching service work?', answer: 'We are not gate installers. We are a free matching service that connects London homeowners with vetted, experienced gate installers. You fill in a short form with your area, gate type, and rough budget. We match you with up to 3 installers who specialise in your requirements. They contact you directly to arrange a free site survey. You pay us nothing at any stage. Installers pay us a referral fee only if you go ahead with the work.' },
-  { question: 'Are electric gates safe for children and pets?', answer: 'Yes, provided they are installed correctly with the required safety features. All gate automation installed in the UK must comply with the Machinery Directive and relevant standards. This means photocells to detect objects in the gate path, safety edges that stop the gate if it hits resistance, and auto-reverse functionality. Our installers fit all of these as standard.' },
-  { question: 'What happens if there is a power cut?', answer: 'Every automated gate system includes a manual release mechanism so you can open the gates by hand during a power failure. Many modern motors also have battery backup that keeps the gate operational for 20 to 50 cycles after the mains power goes out. Solar-powered options are also available.' },
-];
 
 /* ── Section wrapper ── */
 function Section({ children, className = '' }: { children: React.ReactNode; className?: string }) {
@@ -63,20 +53,8 @@ export function HomePageClient() {
   const open = () => setIsModalOpen(true);
 
 
-  // FAQPage schema
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: homepageFaqs.map(faq => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
-    })),
-  };
-
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={open} />
 

@@ -34,5 +34,33 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default function CommercialServicePage({ params }: Props) {
   const service = getCommercialBySlug(params.slug);
   if (!service) notFound();
-  return <CommercialPageClient params={params} />;
+
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: service.title,
+    description: service.description,
+    url: `${siteConfig.url}/commercial/${service.slug}/`,
+    serviceType: service.title,
+    areaServed: { '@type': 'City', name: 'London', addressCountry: 'GB' },
+    provider: { '@type': 'LocalBusiness', name: siteConfig.name, url: siteConfig.url },
+  };
+
+  const faqSchema = service.faqs && service.faqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: service.faqs.map((faq: { question: string; answer: string }) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+    })),
+  } : null;
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
+      <CommercialPageClient params={params} />
+    </>
+  );
 }

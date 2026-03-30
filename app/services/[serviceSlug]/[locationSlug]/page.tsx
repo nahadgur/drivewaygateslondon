@@ -37,5 +37,33 @@ export default function ServiceLocationPage({ params }: Props) {
   const service  = getServiceBySlug(params.serviceSlug);
   const cityName = getCityBySlug(params.locationSlug);
   if (!service || !cityName) notFound();
-  return <ServiceLocationPageClient params={params} />;
+
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: `${service.title} in ${cityName}`,
+    description: service.description,
+    url: `${siteConfig.url}/services/${params.serviceSlug}/${params.locationSlug}/`,
+    serviceType: service.title,
+    areaServed: { '@type': 'City', name: cityName, addressCountry: 'GB' },
+    provider: { '@type': 'LocalBusiness', name: siteConfig.name, url: siteConfig.url },
+  };
+
+  const faqSchema = service.faqs && service.faqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: service.faqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+    })),
+  } : null;
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
+      <ServiceLocationPageClient params={params} />
+    </>
+  );
 }

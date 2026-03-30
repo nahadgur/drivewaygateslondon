@@ -33,5 +33,47 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default function BlogArticlePage({ params }: Props) {
   const article = getArticleBySlug(params.slug);
   if (!article) notFound();
-  return <BlogArticlePageClient params={params} />;
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: article.title,
+    description: article.metaDescription,
+    url: `${siteConfig.url}/blog/${article.slug}/`,
+    datePublished: article.publishDate,
+    dateModified: article.publishDate,
+    image: {
+      '@type': 'ImageObject',
+      url: article.featuredImage,
+      width: 1200,
+      height: 630,
+    },
+    author: {
+      '@type': 'Organization',
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: siteConfig.name,
+      url: siteConfig.url,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${siteConfig.url}/android-chrome-512x512.png`,
+        width: 512,
+        height: 512,
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${siteConfig.url}/blog/${article.slug}/`,
+    },
+  };
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <BlogArticlePageClient params={params} />
+    </>
+  );
 }

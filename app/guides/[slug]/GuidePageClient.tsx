@@ -6,7 +6,6 @@ import Link from 'next/link';
 import { Clock, ArrowLeft, ArrowRight, BookOpen, ShieldCheck, PoundSterling, BarChart3, Wrench } from 'lucide-react';
 import { guides, getGuideBySlug, type GuidePillar } from '@/data/guides';
 import { services } from '@/data/services';
-import { siteConfig } from '@/data/site';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { LeadFormModal } from '@/components/LeadFormModal';
@@ -28,31 +27,8 @@ export function GuidePageClient({ params }: { params: { slug: string } }) {
   const relatedService = guide.relatedServiceSlug ? services.find(s => s.slug === guide.relatedServiceSlug) : null;
   const relatedGuides  = (guide.relatedGuides ?? []).map(slug => guides.find(g => g.slug === slug)).filter(Boolean) as typeof guides;
 
-  const schema = {
-    '@context': 'https://schema.org', '@type': 'Article',
-    headline: guide.title, description: guide.metaDescription,
-    url: `${siteConfig.url}/guides/${guide.slug}/`,
-    datePublished: guide.publishDate,
-    publisher: { '@type': 'Organization', name: siteConfig.name, url: siteConfig.url },
-    image: guide.featuredImage,
-  };
-
-
-  // FAQPage schema
-  const faqSchema = guide.faqs && guide.faqs.length > 0 ? {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: guide.faqs.map((faq: { question: string; answer: string }) => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
-    })),
-  } : null;
-
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
       <main>

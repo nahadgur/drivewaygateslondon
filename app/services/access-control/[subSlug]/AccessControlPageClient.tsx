@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { notFound } from 'next/navigation';
 import { CheckCircle, ArrowRight } from 'lucide-react';
 import { accessControlServices, getAccessControlBySlug } from '@/data/access-control';
-import { siteConfig } from '@/data/site';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { LeadFormModal } from '@/components/LeadFormModal';
@@ -20,29 +19,9 @@ export function AccessControlPageClient({ params }: { params: { subSlug: string 
   if (!service) notFound();
 
   const otherServices = accessControlServices.filter(s => s.slug !== service.slug);
-  const schema = {
-    '@context': 'https://schema.org', '@type': 'Service',
-    name: service.title, description: service.description,
-    url: `${siteConfig.url}/services/access-control/${service.slug}/`,
-    serviceType: service.title, areaServed: { '@type': 'City', name: 'London', addressCountry: 'GB' },
-    provider: { '@type': 'LocalBusiness', name: siteConfig.name, url: siteConfig.url },
-  };
-
-
-  const faqSchema = service.faqs && service.faqs.length > 0 ? {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: service.faqs.map((faq: { question: string; answer: string }) => ({
-      '@type': 'Question',
-      name: faq.question,
-      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
-    })),
-  } : null;
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
       <main>

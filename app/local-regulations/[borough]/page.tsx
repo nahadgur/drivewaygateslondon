@@ -34,5 +34,47 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default function BoroughPlanningPage({ params }: Props) {
   const borough = getBoroughBySlug(params.borough);
   if (!borough) notFound();
-  return <BoroughPageClient params={params} />;
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: `Driveway Gate Planning Permission in ${borough.name} — What You Need to Know`,
+    description: `Complete guide to driveway gate planning rules in ${borough.name}. Conservation areas, Article 4 directions, permitted development rights.`,
+    url: `${siteConfig.url}/local-regulations/${borough.slug}/`,
+    datePublished: '2025-01-01',
+    dateModified: '2025-01-01',
+    image: {
+      '@type': 'ImageObject',
+      url: `${siteConfig.url}/og-image.jpg`,
+      width: 1200,
+      height: 630,
+    },
+    author: {
+      '@type': 'Organization',
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: siteConfig.name,
+      url: siteConfig.url,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${siteConfig.url}/android-chrome-512x512.png`,
+        width: 512,
+        height: 512,
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${siteConfig.url}/local-regulations/${borough.slug}/`,
+    },
+  };
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <BoroughPageClient params={params} />
+    </>
+  );
 }

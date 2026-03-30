@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { MapPin, ArrowRight, CheckCircle, Clock, Shield, Star } from 'lucide-react';
 import { services } from '@/data/services';
 import { getCityBySlug } from '@/data/locations';
-import { FAQS_SERVICES, FAQS_LOCATION, siteConfig } from '@/data/site';
+import { FAQS_SERVICES, FAQS_LOCATION } from '@/data/site';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
@@ -22,18 +22,8 @@ export function CityPageClient({ params }: { params: { city: string } }) {
   const cityName = getCityBySlug(params.city);
   if (!cityName) notFound();
 
-  const schema = {
-    '@context': 'https://schema.org', '@type': 'LocalBusiness',
-    name: `${siteConfig.name} — ${cityName}`,
-    description: `Find vetted driveway gate installers in ${cityName}, London. Compare free quotes for electric sliding gates, swing gates, wooden gates, metal gates, and automation.`,
-    url: `${siteConfig.url}/location/${params.city}/`,
-    address: { '@type': 'PostalAddress', addressLocality: cityName, addressRegion: 'London', addressCountry: 'GB' },
-    areaServed: { '@type': 'City', name: cityName, addressCountry: 'GB' },
-  };
-
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
       <main>

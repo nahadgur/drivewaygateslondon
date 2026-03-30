@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getServiceBySlug } from '@/data/services';
-import { siteConfig } from '@/data/site';
+import { siteConfig, FAQS_SERVICES } from '@/data/site';
 import { ServicePageClient } from './ServicePageClient';
 
 interface Props { params: { serviceSlug: string } }
@@ -34,5 +34,34 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default function ServicePage({ params }: Props) {
   const service = getServiceBySlug(params.serviceSlug);
   if (!service) notFound();
-  return <ServicePageClient params={params} />;
+
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: `${service.title} in London`,
+    description: service.description,
+    url: `${siteConfig.url}/services/${service.slug}/`,
+    serviceType: service.title,
+    areaServed: { '@type': 'AdministrativeArea', name: 'London', addressCountry: 'GB' },
+    provider: { '@type': 'LocalBusiness', name: siteConfig.name, url: siteConfig.url },
+  };
+
+  const combinedFaqs = [...(service.faqs || []), ...FAQS_SERVICES];
+  const faqSchema = combinedFaqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: combinedFaqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+    })),
+  } : null;
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
+      <ServicePageClient params={params} />
+    </>
+  );
 }

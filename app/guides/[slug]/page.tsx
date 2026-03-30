@@ -33,5 +33,58 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default function GuidePage({ params }: Props) {
   const guide = getGuideBySlug(params.slug);
   if (!guide) notFound();
-  return <GuidePageClient params={params} />;
+
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: guide.title,
+    description: guide.metaDescription,
+    url: `${siteConfig.url}/guides/${guide.slug}/`,
+    datePublished: guide.publishDate,
+    dateModified: guide.publishDate,
+    image: {
+      '@type': 'ImageObject',
+      url: guide.featuredImage,
+      width: 1200,
+      height: 630,
+    },
+    author: {
+      '@type': 'Organization',
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: siteConfig.name,
+      url: siteConfig.url,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${siteConfig.url}/android-chrome-512x512.png`,
+        width: 512,
+        height: 512,
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${siteConfig.url}/guides/${guide.slug}/`,
+    },
+  };
+
+  const faqSchema = guide.faqs && guide.faqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: guide.faqs.map((faq: { question: string; answer: string }) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+    })),
+  } : null;
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
+      <GuidePageClient params={params} />
+    </>
+  );
 }

@@ -34,5 +34,34 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default function CityPage({ params }: Props) {
   const cityName = getCityBySlug(params.city);
   if (!cityName) notFound();
-  return <CityPageClient params={params} />;
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: siteConfig.name,
+    description: `Find vetted driveway gate installers in ${cityName}, London. Compare free quotes for electric sliding gates, swing gates, wooden gates, metal gates, and automation.`,
+    url: `${siteConfig.url}/location/${params.city}/`,
+    image: {
+      '@type': 'ImageObject',
+      url: `${siteConfig.url}/og-image.jpg`,
+      width: 1200,
+      height: 630,
+    },
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: cityName,
+      addressRegion: 'London',
+      addressCountry: 'GB',
+    },
+    areaServed: { '@type': 'City', name: cityName, addressCountry: 'GB' },
+    priceRange: '££',
+    openingHours: 'Mo-Su 08:00-20:00',
+  };
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <CityPageClient params={params} />
+    </>
+  );
 }
