@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, MapPin, ChevronDown, Shield, FileText, Building2, Camera, Hash, Phone, Zap } from 'lucide-react';
+import { Menu, X, MapPin, ChevronDown, Shield, FileText, Building2, Camera, Hash, Phone, Zap, BookOpen } from 'lucide-react';
 import { services } from '@/data/services';
 
 interface HeaderProps {
@@ -139,6 +139,10 @@ export function Header({ onOpenModal }: HeaderProps) {
                 <FileText className="w-3.5 h-3.5" /> Planning
               </Link>
 
+              <Link href="/guides/" className="flex items-center gap-1 px-3 py-2 text-sm text-gray-600 hover:text-brand-600 font-medium rounded-lg hover:bg-brand-50 transition-colors">
+                <BookOpen className="w-3.5 h-3.5" /> Guides
+              </Link>
+
               <Link href="/blog/" className="px-3 py-2 text-sm text-gray-600 hover:text-brand-600 font-medium rounded-lg hover:bg-brand-50 transition-colors">
                 Blog
               </Link>
@@ -211,6 +215,7 @@ export function Header({ onOpenModal }: HeaderProps) {
 
               <Link href="/location/" className="block px-3 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-lg">Locations</Link>
               <Link href="/local-regulations/" className="block px-3 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-lg">Planning Guides</Link>
+              <Link href="/guides/" className="block px-3 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-lg">Gate Guides</Link>
               <Link href="/blog/" className="block px-3 py-3 text-base font-medium text-gray-700 hover:bg-gray-50 rounded-lg">Blog</Link>
 
               <div className="pt-4 px-3">

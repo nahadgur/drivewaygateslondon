@@ -4,7 +4,7 @@ import { LOCATIONS, toSlug } from '@/data/locations';
 import { blogArticles } from '@/data/blog';
 import { accessControlServices } from '@/data/access-control';
 import { boroughRegulations } from '@/data/regulations';
-import { commercialServices } from '@/data/commercial';
+import { guides } from '@/data/guides';
 import { siteConfig } from '@/data/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -84,6 +84,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
+  // Guides hub + individual guides
+  const guidesHub: MetadataRoute.Sitemap = [
+    { url: `${base}/guides/`, lastModified: now, changeFrequency: 'weekly' as const, priority: 0.85 },
+  ];
+  const guidePages: MetadataRoute.Sitemap = guides.map(g => ({
+    url: `${base}/guides/${g.slug}/`,
+    lastModified: new Date(g.publishDate),
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }));
+
   return [
     ...staticPages,
     ...servicePages,
@@ -93,5 +104,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...accessControlPages,
     ...regulationPages,
     ...commercialPages,
+    ...guidesHub,
+    ...guidePages,
   ];
 }

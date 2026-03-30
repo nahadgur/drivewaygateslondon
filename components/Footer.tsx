@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { MapPin, Shield, Building2, FileText } from 'lucide-react';
+import { MapPin, Shield, Building2, FileText, BookOpen } from 'lucide-react';
 import { services } from '@/data/services';
 import { siteConfig } from '@/data/site';
 
@@ -112,11 +112,23 @@ export function Footer() {
             <h4 className="text-white font-semibold mb-3 text-sm uppercase tracking-wider flex items-center gap-1.5">
               <FileText className="w-3.5 h-3.5 text-brand-400" /> Planning Guides
             </h4>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-sm mb-6">
               {PLANNING_BOROUGHS.map(l => (
                 <li key={l.href}><Link href={l.href} className="hover:text-brand-400 transition-colors">{l.label}</Link></li>
               ))}
               <li><Link href="/local-regulations/" className="hover:text-brand-400 transition-colors font-medium">All boroughs →</Link></li>
+            </ul>
+
+            <h4 className="text-white font-semibold mb-3 text-sm uppercase tracking-wider flex items-center gap-1.5">
+              <BookOpen className="w-3.5 h-3.5 text-brand-400" /> Gate Guides
+            </h4>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/guides/driveway-gate-costs-london/"         className="hover:text-brand-400 transition-colors">Gate Costs London</Link></li>
+              <li><Link href="/guides/swing-vs-sliding-gates/"              className="hover:text-brand-400 transition-colors">Swing vs Sliding Gates</Link></li>
+              <li><Link href="/guides/wood-vs-aluminium-gates/"             className="hover:text-brand-400 transition-colors">Wood vs Aluminium Gates</Link></li>
+              <li><Link href="/guides/how-to-manually-open-electric-gate/"  className="hover:text-brand-400 transition-colors">Manual Gate Release</Link></li>
+              <li><Link href="/guides/uk-gate-safety-laws/"                 className="hover:text-brand-400 transition-colors">UK Gate Safety Laws</Link></li>
+              <li><Link href="/guides/"                                     className="hover:text-brand-400 transition-colors font-medium">All guides →</Link></li>
             </ul>
           </div>
 
@@ -130,6 +142,7 @@ export function Footer() {
             <Link href="/services/"           className="hover:text-gray-300">Gate Types</Link>
             <Link href="/services/access-control/" className="hover:text-gray-300">Access Control</Link>
             <Link href="/commercial/"         className="hover:text-gray-300">Commercial</Link>
+            <Link href="/guides/"             className="hover:text-gray-300">Guides</Link>
             <Link href="/local-regulations/"  className="hover:text-gray-300">Planning</Link>
             <Link href="/location/"           className="hover:text-gray-300">Locations</Link>
           </div>
