@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { services } from '@/data/services';
+import { commercialServices } from '@/data/commercial';
 import { LOCATIONS, toSlug } from '@/data/locations';
 import { blogArticles } from '@/data/blog';
 import { accessControlServices } from '@/data/access-control';
