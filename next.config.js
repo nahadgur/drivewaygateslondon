@@ -40,6 +40,7 @@ const nextConfig = {
       { source: '/blog/the-total-cost-of-owning-an-automated-gate-in-london-in-2026/', destination: '/blog/automated-gate-total-cost-london/', permanent: true },
       { source: '/blog/why-your-gate-motor-is-humming-but-not-moving/', destination: '/blog/gate-motor-humming-not-moving/', permanent: true },
       // Guide slug redirects
+      { source: '/guides/uk-gate-safety-laws/', destination: '/guides/uk-electric-gate-safety-laws/', permanent: true },
       { source: '/guides/driveway-gate-costs-london/', destination: '/guides/electric-driveway-gates-cost-london/', permanent: true },
       { source: '/guides/wood-vs-aluminium-gates/', destination: '/guides/aluminium-vs-wooden-driveway-gates/', permanent: true },
       { source: '/guides/gate-motor-humming-fix/', destination: '/guides/electric-gate-motor-humming-but-not-moving/', permanent: true },
