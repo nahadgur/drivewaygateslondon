@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
-import { MapPin, Search } from 'lucide-react';
+import { Search } from 'lucide-react';
 import { LOCATIONS, toSlug } from '@/data/locations';
 import { FAQS_LOCATION } from '@/data/site';
 import { Header } from '@/components/Header';
@@ -29,7 +29,7 @@ export default function LocationIndexPage() {
     <>
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
-      <main className="flex-grow">
+      <main>
         <Hero
           title="Find Gate Installers in Your Area"
           subtitle="Access London's most trusted network of driveway gate specialists. Vetted for experience, verified for quality."
@@ -37,38 +37,30 @@ export default function LocationIndexPage() {
           onOpenModal={() => setIsModalOpen(true)}
         />
 
-        <section className="section-padding">
+        <section className="py-16 md:py-24">
           <div className="container-width">
             {/* Search */}
-            <div className="max-w-xl mx-auto mb-12">
+            <div className="max-w-lg mb-12">
+              <div className="craft-label">Search</div>
               <div className="relative">
-                <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
-                <input
-                  type="text"
-                  placeholder="Search your area or borough..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full pl-12 pr-4 py-4 rounded-xl border border-gray-200 bg-gray-50 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition"
-                />
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-brand-400 w-4 h-4" />
+                <input type="text" placeholder="Search your area or borough..."
+                  value={searchQuery} onChange={e => setSearchQuery(e.target.value)}
+                  className="w-full pl-11 pr-4 py-3 border-2 border-brand-200 bg-brand-50 text-brand-900 text-sm focus:outline-none focus:border-brand-500 transition" />
               </div>
             </div>
 
-            {/* Regions + City Grids */}
-            <div className="space-y-12">
+            {/* Regions */}
+            <div className="space-y-14">
               {Object.entries(filteredLocations).map(([region, cities]) => (
                 <div key={region}>
-                  <h2 className="text-2xl font-display font-bold text-gray-900 mb-6">{region}</h2>
-                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                  <div className="craft-label">{region}</div>
+                  <h2 className="font-syne font-bold text-lg uppercase tracking-tight text-brand-900 mb-5">{region}</h2>
+                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 border-2 border-brand-900 bg-brand-200 gap-[1px]">
                     {cities.map(city => (
-                      <Link
-                        key={city}
-                        href={`/location/${toSlug(city)}/`}
-                        className="group block bg-gray-50 hover:bg-brand-50 border border-gray-100 hover:border-brand-200 rounded-xl p-4 transition-all"
-                      >
-                        <div className="flex items-center gap-2">
-                          <MapPin className="w-4 h-4 text-brand-500 flex-shrink-0" />
-                          <span className="font-medium text-gray-700 group-hover:text-brand-700 text-sm">{city}</span>
-                        </div>
+                      <Link key={city} href={`/location/${toSlug(city)}/`} className="loc-chip">
+                        <span className="w-1.5 h-1.5 rounded-full bg-brand-500 flex-shrink-0" />
+                        {city}
                       </Link>
                     ))}
                   </div>
@@ -78,9 +70,9 @@ export default function LocationIndexPage() {
           </div>
         </section>
 
-        <section className="section-padding bg-gray-50">
+        <section className="py-16 bg-brand-100 border-y-2 border-brand-200">
           <div className="container-width max-w-3xl">
-            <FAQ faqs={FAQS_LOCATION} />
+            <FAQ faqs={FAQS_LOCATION} title="Location FAQs" />
           </div>
         </section>
       </main>

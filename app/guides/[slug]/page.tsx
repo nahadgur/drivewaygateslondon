@@ -20,114 +20,86 @@ const PILLAR_ICON: Record<GuidePillar, React.ReactNode> = {
   'Safety & Compliance':           <ShieldCheck className="w-4 h-4" />,
 };
 
-const PILLAR_COLOR: Record<GuidePillar, string> = {
-  'Pricing & Costs':               'bg-emerald-50 text-emerald-700 border-emerald-200',
-  'Comparison & Buying':           'bg-sky-50 text-sky-700 border-sky-200',
-  'Maintenance & Troubleshooting': 'bg-amber-50 text-amber-700 border-amber-200',
-  'Safety & Compliance':           'bg-rose-50 text-rose-700 border-rose-200',
-};
-
 export default function GuidePage({ params }: { params: { slug: string } }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const guide = getGuideBySlug(params.slug);
   if (!guide) notFound();
 
-  const relatedService = guide.relatedServiceSlug
-    ? services.find(s => s.slug === guide.relatedServiceSlug)
-    : null;
-
-  const relatedGuides = (guide.relatedGuides ?? [])
-    .map(slug => guides.find(g => g.slug === slug))
-    .filter(Boolean) as typeof guides;
+  const relatedService = guide.relatedServiceSlug ? services.find(s => s.slug === guide.relatedServiceSlug) : null;
+  const relatedGuides  = (guide.relatedGuides ?? []).map(slug => guides.find(g => g.slug === slug)).filter(Boolean) as typeof guides;
 
   const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: guide.title,
-    description: guide.metaDescription,
+    '@context': 'https://schema.org', '@type': 'Article',
+    headline: guide.title, description: guide.metaDescription,
     url: `${siteConfig.url}/guides/${guide.slug}/`,
     datePublished: guide.publishDate,
     publisher: { '@type': 'Organization', name: siteConfig.name, url: siteConfig.url },
     image: guide.featuredImage,
   };
 
-  // Build TOC from sections
-  const hasSections = guide.sections.length > 0;
-
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
-      <main className="flex-grow">
-
+      <main>
         {/* Hero */}
-        <div className="relative h-[360px] md:h-[440px] overflow-hidden">
+        <div className="relative h-[360px] md:h-[440px] overflow-hidden border-b-[3px] border-brand-900">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={guide.featuredImage} alt={guide.title} className="w-full h-full object-cover" loading="eager" />
-          <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/40 to-transparent" />
+          <img src={guide.featuredImage} alt={guide.title} className="w-full h-full object-cover" style={{ filter: 'saturate(.7)' }} loading="eager" />
+          <div className="absolute inset-0 bg-gradient-to-t from-brand-950/95 via-brand-950/50 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 container-width pb-10">
-            <Link href="/guides/" className="inline-flex items-center gap-1 text-brand-300 text-xs font-bold uppercase tracking-wider mb-4 hover:text-brand-200 transition-colors">
+            <Link href="/guides/" className="inline-flex items-center gap-1 font-syne font-bold text-[10px] tracking-[.15em] uppercase text-brand-400 mb-4 hover:text-brand-200 transition-colors">
               <ArrowLeft className="w-3 h-3" /> Back to guides
             </Link>
             <div className="flex items-center gap-3 mb-4 flex-wrap">
-              <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold uppercase border ${PILLAR_COLOR[guide.pillar]}`}>
-                {PILLAR_ICON[guide.pillar]}
-                {guide.pillar}
+              <span className="inline-flex items-center gap-1.5 border border-brand-500/30 bg-brand-500/10 px-3 py-1 font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-400">
+                {PILLAR_ICON[guide.pillar]} {guide.pillar}
               </span>
-              <span className="flex items-center gap-1 text-gray-300 text-xs">
+              <span className="flex items-center gap-1 font-syne font-bold text-[10px] tracking-[.08em] uppercase text-brand-400">
                 <Clock className="w-3 h-3" /> {guide.readingMinutes} min read
               </span>
             </div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white max-w-4xl leading-tight">
+            <h1 className="font-syne font-extrabold uppercase tracking-tight text-white max-w-4xl leading-tight"
+              style={{ fontSize: 'clamp(24px, 4vw, 44px)', letterSpacing: '-.02em' }}>
               {guide.title}
             </h1>
           </div>
         </div>
 
-        {/* Body */}
         <div className="container-width py-12 md:py-16">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-
-            {/* Main content */}
             <article className="lg:col-span-2">
-              <Breadcrumbs items={[
-                { label: 'Guides', href: '/guides/' },
-                { label: guide.pillar, href: `/guides/?pillar=${encodeURIComponent(guide.pillar)}` },
-                { label: guide.title },
-              ]} />
+              <Breadcrumbs items={[{ label: 'Guides', href: '/guides/' }, { label: guide.pillar }, { label: guide.title }]} />
 
-              {/* Intro */}
               {guide.intro && (
-                <p className="text-lg text-gray-600 leading-relaxed mt-6 mb-8 pb-8 border-b border-gray-100">
+                <p className="text-brand-700 leading-relaxed mt-6 mb-8 pb-8 border-b-2 border-brand-200" style={{ fontSize: '16px' }}>
                   {guide.intro}
                 </p>
               )}
 
-              {/* Table of Contents */}
-              {hasSections && (
-                <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 mb-10">
-                  <div className="flex items-center gap-2 mb-4">
-                    <BookOpen className="w-4 h-4 text-brand-500" />
-                    <span className="font-bold text-gray-900 text-sm">In this guide</span>
+              {/* TOC */}
+              {guide.sections.length > 0 && (
+                <div className="border-2 border-brand-900 mb-10">
+                  <div className="bg-brand-900 px-5 py-3 flex items-center gap-2">
+                    <BookOpen className="w-3.5 h-3.5 text-brand-400" />
+                    <span className="font-syne font-bold text-[9.5px] tracking-[.18em] uppercase text-brand-400">In This Guide</span>
                   </div>
-                  <ol className="space-y-2">
+                  <ol className="p-5 space-y-2">
                     {guide.sections.map((section, i) => (
                       <li key={i}>
-                        <a
-                          href={`#section-${i}`}
-                          className="flex items-start gap-2 text-sm text-brand-600 hover:text-brand-800 hover:underline underline-offset-2 transition-colors"
-                        >
-                          <span className="font-bold text-gray-400 flex-shrink-0 w-5">{i + 1}.</span>
+                        <a href={`#section-${i}`}
+                          className="flex items-start gap-2.5 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-600 hover:text-brand-500 transition-colors">
+                          <span className="text-brand-400 flex-shrink-0 w-5">{i + 1}.</span>
                           {section.heading}
                         </a>
                       </li>
                     ))}
                     {guide.faqs.length > 0 && (
                       <li>
-                        <a href="#faqs" className="flex items-start gap-2 text-sm text-brand-600 hover:text-brand-800 hover:underline underline-offset-2 transition-colors">
-                          <span className="font-bold text-gray-400 flex-shrink-0 w-5">{guide.sections.length + 1}.</span>
-                          Frequently Asked Questions
+                        <a href="#faqs" className="flex items-start gap-2.5 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-600 hover:text-brand-500 transition-colors">
+                          <span className="text-brand-400 flex-shrink-0 w-5">{guide.sections.length + 1}.</span>
+                          FAQs
                         </a>
                       </li>
                     )}
@@ -138,54 +110,39 @@ export default function GuidePage({ params }: { params: { slug: string } }) {
               {/* Sections */}
               {guide.sections.map((section, i) => (
                 <div key={i} id={`section-${i}`} className="mb-12 scroll-mt-28">
-                  <h2 className="text-2xl md:text-3xl font-display font-bold text-gray-900 mb-5">
+                  <h2 className="font-syne font-extrabold uppercase tracking-tight text-brand-900 mb-5 border-b-2 border-brand-200 pb-3"
+                    style={{ fontSize: 'clamp(18px, 2vw, 26px)', letterSpacing: '-.02em' }}>
                     {section.heading}
                   </h2>
                   {section.body.split('\n\n').map((para, j) => (
-                    <p
-                      key={j}
-                      className="text-gray-600 leading-relaxed mb-5 text-base [&_a]:text-brand-600 [&_a]:underline [&_a]:underline-offset-2 [&_a:hover]:text-brand-800"
-                      dangerouslySetInnerHTML={{ __html: para }}
-                    />
+                    <p key={j} className="text-brand-600 leading-relaxed mb-5 text-sm [&_a]:text-brand-500 [&_a]:underline [&_a]:underline-offset-2 [&_a:hover]:text-brand-700"
+                      dangerouslySetInnerHTML={{ __html: para }} />
                   ))}
                 </div>
               ))}
 
-              {/* FAQs */}
               {guide.faqs.length > 0 && (
-                <div id="faqs" className="scroll-mt-28 mt-12 pt-10 border-t border-gray-100">
-                  <h2 className="text-2xl font-display font-bold text-gray-900 mb-6">
-                    Frequently Asked Questions
-                  </h2>
-                  <FAQ faqs={guide.faqs} />
+                <div id="faqs" className="scroll-mt-28 mt-12 pt-10 border-t-2 border-brand-200">
+                  <FAQ faqs={guide.faqs} title="Frequently Asked Questions" />
                 </div>
               )}
 
-              {/* Related guides */}
               {relatedGuides.length > 0 && (
-                <div className="mt-12 pt-10 border-t border-gray-100">
-                  <h3 className="text-lg font-display font-bold text-gray-900 mb-5">Related guides</h3>
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div className="mt-12 pt-10 border-t-2 border-brand-200">
+                  <div className="craft-label">Related Guides</div>
+                  <div className="grid grid-cols-1 sm:grid-cols-3 border-2 border-brand-900 bg-brand-900 gap-[2px]">
                     {relatedGuides.map(g => (
-                      <Link
-                        key={g.slug}
-                        href={`/guides/${g.slug}/`}
-                        className="group flex flex-col rounded-xl border border-gray-100 overflow-hidden hover:shadow-md hover:border-brand-200 transition-all bg-white"
-                      >
-                        <div className="h-28 overflow-hidden">
+                      <Link key={g.slug} href={`/guides/${g.slug}/`}
+                        className="group bg-brand-50 hover:bg-brand-100 flex flex-col transition-colors overflow-hidden">
+                        <div className="h-28 overflow-hidden border-b-2 border-brand-900">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img
-                            src={g.featuredImage}
-                            alt={g.title}
+                          <img src={g.featuredImage} alt={g.title}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                            loading="lazy"
-                          />
+                            style={{ filter: 'saturate(.8)' }} loading="lazy" />
                         </div>
                         <div className="p-4 flex-grow">
-                          <p className="text-xs font-bold text-gray-900 group-hover:text-brand-600 transition-colors leading-snug line-clamp-2 mb-2">
-                            {g.title}
-                          </p>
-                          <span className="text-brand-600 text-xs font-bold flex items-center gap-1">
+                          <p className="font-syne font-bold text-[11px] uppercase tracking-tight text-brand-900 group-hover:text-brand-500 transition-colors leading-snug line-clamp-2 mb-2">{g.title}</p>
+                          <span className="font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-500 flex items-center gap-1">
                             Read <ArrowRight className="w-3 h-3" />
                           </span>
                         </div>
@@ -198,69 +155,45 @@ export default function GuidePage({ params }: { params: { slug: string } }) {
 
             {/* Sidebar */}
             <aside className="lg:col-span-1">
-              <div className="sticky top-28 space-y-6">
-
-                {/* Lead CTA */}
-                <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-brand-500 mb-2">Free Matching Service</p>
-                  <h3 className="text-lg font-display font-bold text-gray-900 mb-2 leading-snug">
-                    Ready to get gate quotes?
-                  </h3>
-                  <p className="text-gray-500 text-sm mb-5">
-                    Compare up to 3 vetted London installers — free, no obligation.
-                  </p>
-                  <button onClick={() => setIsModalOpen(true)} className="block w-full btn-primary text-center text-sm">
-                    Request a Free Call Back →
-                  </button>
-                  <p className="text-center text-xs text-gray-400 mt-3">
-                    Call back within 2 hours · No spam
-                  </p>
+              <div className="sticky top-28 space-y-4">
+                <div className="border-2 border-brand-900 p-6 bg-brand-50">
+                  <div className="craft-label">Free Matching Service</div>
+                  <h3 className="font-syne font-bold text-sm uppercase tracking-tight text-brand-900 mb-2">Ready to Get Gate Quotes?</h3>
+                  <p className="text-brand-600 text-sm mb-5">Compare up to 3 vetted London installers — free, no obligation.</p>
+                  <button onClick={() => setIsModalOpen(true)} className="btn-primary w-full justify-center">Request a Free Call Back</button>
+                  <p className="text-center text-xs text-brand-500 mt-3">Within 2 hours · No spam</p>
                 </div>
 
-                {/* Contextual service CTA */}
                 {relatedService && (
-                  <div className="bg-brand-900 p-6 rounded-2xl border border-brand-700">
-                    <p className="text-[10px] font-bold uppercase tracking-widest text-brand-400 mb-2">Relevant Service</p>
-                    <h3 className="text-base font-display font-bold text-white mb-2 leading-snug">
-                      {relatedService.title}
-                    </h3>
-                    <p className="text-brand-200 text-xs leading-relaxed mb-5">
-                      {relatedService.description}
-                    </p>
-                    <Link
-                      href={`/services/${relatedService.slug}/`}
-                      className="inline-flex items-center gap-2 w-full justify-center px-4 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-400 text-white font-bold text-sm transition-all"
-                    >
+                  <div className="bg-brand-900 p-6 border-2 border-brand-700">
+                    <div className="craft-label" style={{ color: 'var(--brand-500)' }}>Relevant Service</div>
+                    <h3 className="font-syne font-bold text-sm uppercase tracking-tight text-white mb-2">{relatedService.title}</h3>
+                    <p className="text-brand-300 text-xs leading-relaxed mb-5">{relatedService.description}</p>
+                    <Link href={`/services/${relatedService.slug}/`}
+                      className="btn-gold w-full justify-center inline-flex items-center gap-2">
                       See {relatedService.title} <ArrowRight className="w-3.5 h-3.5" />
                     </Link>
                   </div>
                 )}
 
-                {/* All guides link */}
-                <div className="bg-gray-50 p-5 rounded-2xl border border-gray-100">
-                  <p className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">Browse All Guides</p>
-                  <div className="space-y-2">
+                <div className="border-2 border-brand-200 p-5 bg-brand-50">
+                  <div className="craft-label">All Guides</div>
+                  <div className="space-y-1">
                     {guides.filter(g => g.slug !== guide.slug).slice(0, 6).map(g => (
-                      <Link
-                        key={g.slug}
-                        href={`/guides/${g.slug}/`}
-                        className="block text-sm text-brand-600 hover:text-brand-800 hover:underline underline-offset-2 transition-colors leading-snug"
-                      >
+                      <Link key={g.slug} href={`/guides/${g.slug}/`}
+                        className="block py-2 border-b border-brand-100 last:border-0 font-syne font-bold text-[11px] tracking-[.03em] uppercase text-brand-600 hover:text-brand-500 transition-colors leading-snug">
                         {g.title}
                       </Link>
                     ))}
                   </div>
-                  <Link href="/guides/" className="inline-flex items-center gap-1 text-xs text-brand-600 font-bold mt-4 hover:underline">
+                  <Link href="/guides/" className="inline-flex items-center gap-1 font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-500 mt-4 hover:text-brand-700">
                     View all guides <ArrowRight className="w-3 h-3" />
                   </Link>
                 </div>
-
               </div>
             </aside>
-
           </div>
         </div>
-
       </main>
       <Footer />
     </>
