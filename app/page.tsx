@@ -73,7 +73,7 @@ export default function HomePage() {
         <Hero
           title="London's Most Trusted Driveway Gate Installers, Compared"
           subtitle="We vet every installer so you do not have to. Get matched with experienced, fully insured gate specialists near you. Free site survey, free quotes, zero cost to use our service."
-          image="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1170&auto=format&fit=crop"
+          image="/images/gates/gate-wrought-iron-open-misty-morning-manor.png"
           onOpenModal={open}
         />
 

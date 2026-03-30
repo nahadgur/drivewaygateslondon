@@ -20,7 +20,7 @@ export const services: Service[] = [
     title: 'Electric Sliding Gates',
     slug: 'electric-sliding-gates',
     description: 'Space-saving automated gates that slide horizontally along your boundary wall. Perfect for driveways where a swinging gate would eat into parking space.',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=1170&auto=format&fit=crop',
+    image: '/images/gates/gate-aluminium-sliding-modern-dark-brick.png',
     icon: 'Zap',
     color: 'amber',
     faqs: [
@@ -34,7 +34,7 @@ export const services: Service[] = [
     title: 'Electric Swing Gates',
     slug: 'electric-swing-gates',
     description: 'Classic double or single swing gates with electric automation. The most popular choice for London driveways with enough clearance in front of or behind the gate.',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1170&auto=format&fit=crop',
+    image: '/images/gates/gate-aluminium-swing-open-luxury-garden.png',
     icon: 'Shield',
     color: 'emerald',
     faqs: [
@@ -48,7 +48,7 @@ export const services: Service[] = [
     title: 'Wooden Driveway Gates',
     slug: 'wooden-driveway-gates',
     description: 'Handcrafted timber gates that bring warmth and character to your property. Available in hardwoods like iroko and oak, or treated softwoods for a more affordable option.',
-    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1170&auto=format&fit=crop',
+    image: '/images/gates/gate-wooden-oak-swing-cottage-garden.png',
     icon: 'Sparkles',
     color: 'amber',
     faqs: [
@@ -62,7 +62,7 @@ export const services: Service[] = [
     title: 'Metal Driveway Gates',
     slug: 'metal-driveway-gates',
     description: 'Wrought iron, steel, and aluminium gates ranging from traditional ornate designs to sleek contemporary styles. Built to last and available in any colour.',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1170&auto=format&fit=crop',
+    image: '/images/gates/gate-wrought-iron-ornate-daytime-manor.png',
     icon: 'Globe',
     color: 'sky',
     faqs: [
@@ -76,7 +76,7 @@ export const services: Service[] = [
     title: 'Automated Gate Systems',
     slug: 'automated-gate-systems',
     description: 'Full automation packages including motors, intercoms, keypads, remote controls, and smart home integration. Upgrade an existing gate or include with a new installation.',
-    image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1170&auto=format&fit=crop',
+    image: '/images/gates/gate-automation-intercom-evening-lighting.png',
     icon: 'Medal',
     color: 'indigo',
     faqs: [
@@ -90,7 +90,7 @@ export const services: Service[] = [
     title: 'Gate Repair and Maintenance',
     slug: 'gate-repair-and-maintenance',
     description: 'Keep your gates running smoothly with regular servicing, or fix problems fast with same-day repair callouts across London. Motors, hinges, intercoms, and safety systems.',
-    image: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1170&auto=format&fit=crop',
+    image: '/images/gates/gate-swing-open-night-stone-pillars-drive.png',
     icon: 'Users',
     color: 'rose',
     faqs: [
@@ -105,7 +105,7 @@ export const services: Service[] = [
     title: 'Gate Automation (Retrofit)',
     slug: 'gate-automation-kits',
     description: 'Already have manual gates? Add motors, intercoms, and smart access without replacing the gate itself. Retrofit automation works on most timber and metal swing or sliding gates.',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=1170&auto=format&fit=crop',
+    image: '/images/gates/gate-aluminium-sliding-modern-dark-brick-2.png',
     icon: 'Zap',
     color: 'indigo',
     faqs: [
@@ -119,7 +119,7 @@ export const services: Service[] = [
     title: 'Commercial Gates',
     slug: 'commercial-gates',
     description: 'Heavy-duty security gates for schools, industrial estates, office parks, car parks, and commercial premises across London. CCTV integration, access control, and LPS 1175 rated options.',
-    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=1170&auto=format&fit=crop',
+    image: '/images/gates/gate-wrought-iron-aerial-gold-trim-estate.png',
     icon: 'Shield',
     color: 'sky',
     faqs: [
@@ -134,7 +134,7 @@ export const services: Service[] = [
     title: 'Aluminium Driveway Gates',
     slug: 'aluminium-driveway-gates',
     description: 'Lightweight, rust-proof aluminium gates in any RAL colour. The fastest-growing gate material in London — zero maintenance, sharp modern aesthetics, and 25-year powder coat guarantees.',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=1170&auto=format&fit=crop',
+    image: '/images/gates/gate-aluminium-sliding-vertical-bar-modern.png',
     icon: 'Sparkles',
     color: 'sky',
     faqs: [
@@ -148,7 +148,7 @@ export const services: Service[] = [
     title: 'Composite Driveway Gates',
     slug: 'composite-driveway-gates',
     description: 'The fastest-growing gate material in London. Composite gates give you the authentic timber look without rot, warping, or annual maintenance. Ideal for homeowners who want wood aesthetics with zero upkeep.',
-    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1170&auto=format&fit=crop',
+    image: '/images/gates/gate-aluminium-swing-open-contemporary-mansion.png',
     icon: 'Globe',
     color: 'amber',
     faqs: [
@@ -162,7 +162,7 @@ export const services: Service[] = [
     title: 'Hardwood Driveway Gates',
     slug: 'hardwood-driveway-gates',
     description: 'Premium iroko, European oak, and Accoya gates for heritage homes, conservation areas, and affluent London properties. Hand-crafted to match your property\'s character, with 25-year material guarantees.',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1170&auto=format&fit=crop',
+    image: '/images/gates/gate-wooden-oak-swing-cottage-flowers.png',
     icon: 'Medal',
     color: 'amber',
     faqs: [
@@ -176,7 +176,7 @@ export const services: Service[] = [
     title: 'Wrought Iron Gates',
     slug: 'wrought-iron-gates',
     description: 'Traditional hand-forged wrought iron gates for London period homes, heritage properties, and conservation areas. Ornate scrollwork, fleur-de-lis finials, and bespoke designs that last generations.',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1170&auto=format&fit=crop',
+    image: '/images/gates/gate-wrought-iron-open-manor-spring-gardens.png',
     icon: 'Shield',
     color: 'sky',
     faqs: [
@@ -190,7 +190,7 @@ export const services: Service[] = [
     title: 'Pedestrian and Side Gates',
     slug: 'pedestrian-side-gates',
     description: 'Matching pedestrian gates, side access gates, and wicket gates for London properties. Secure foot access without opening the main driveway gate — available in all materials and with optional automation.',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1170&auto=format&fit=crop',
+    image: '/images/gates/gate-wrought-iron-open-golden-hour-curved-drive.png',
     icon: 'Users',
     color: 'emerald',
     faqs: [

@@ -20,7 +20,7 @@ export default function ServicesIndexPage() {
         <Hero
           title="Driveway Gate Types for London Homes"
           subtitle="From electric sliding gates to traditional hardwood swing gates, find the right option for your property and get matched with a specialist installer."
-          image="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2000&auto=format&fit=crop"
+          image="/images/gates/gate-aluminium-sliding-vertical-bar-stone-pillars.png"
           showCta={false} showTrust={false}
         />
 

@@ -33,7 +33,7 @@ export default function BlogIndexPage() {
         <section className="bg-brand-950 border-b-[3px] border-brand-900 relative overflow-hidden">
           <div className="absolute inset-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2000&auto=format&fit=crop"
+            <img src="/images/gates/gate-hero-wrought-iron-sunset-cobblestone.png"
               alt="" className="w-full h-full object-cover opacity-10" style={{ filter: 'saturate(.5)' }} loading="eager" />
           </div>
           <div className="container-width py-16 md:py-24 relative z-10">

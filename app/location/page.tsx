@@ -33,7 +33,7 @@ export default function LocationIndexPage() {
         <Hero
           title="Find Gate Installers in Your Area"
           subtitle="Access London's most trusted network of driveway gate specialists. Vetted for experience, verified for quality."
-          image="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=2000&auto=format&fit=crop"
+          image="/images/gates/gate-wrought-iron-open-spring-avenue.png"
           onOpenModal={() => setIsModalOpen(true)}
         />
 
