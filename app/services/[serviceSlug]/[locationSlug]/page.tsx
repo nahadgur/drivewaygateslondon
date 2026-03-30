@@ -5,7 +5,8 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { CheckCircle, MapPin, Star, Clock, Shield, Award, Users } from 'lucide-react';
 import { services, getServiceBySlug } from '@/data/services';
-import { LOCATIONS, getCityBySlug } from '@/data/locations';
+import { LOCATIONS, getCityBySlug, toSlug } from '@/data/locations';
+import { siteConfig } from '@/data/site';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { HeroLeadForm } from '@/components/HeroLeadForm';
@@ -40,8 +41,46 @@ export default function ServiceLocationPage({ params }: { params: { serviceSlug:
     'Full commissioning, safety testing, and handover with remotes and manual release training',
   ];
 
+  const pageUrl = `${siteConfig.url}/services/${params.serviceSlug}/${params.locationSlug}/`;
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: `${service.title} in ${cityName}`,
+    description: service.description,
+    url: pageUrl,
+    serviceType: service.title,
+    areaServed: {
+      '@type': 'City',
+      name: cityName,
+      addressCountry: 'GB',
+    },
+    provider: {
+      '@type': 'LocalBusiness',
+      name: siteConfig.name,
+      url: siteConfig.url,
+      telephone: '+442081234567',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: cityName,
+        addressRegion: 'London',
+        addressCountry: 'GB',
+      },
+    },
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'GBP',
+      description: 'Free site survey and no-obligation quote',
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
       <main className="flex-grow">

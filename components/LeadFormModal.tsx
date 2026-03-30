@@ -38,11 +38,13 @@ export function LeadFormModal({ isOpen, onClose }: LeadFormModalProps) {
     setIsSubmitting(true);
     try {
       const form = e.currentTarget;
-      const fullName = (form.elements[0] as HTMLInputElement).value;
-      const email = (form.elements[1] as HTMLInputElement).value;
-      const location = (form.elements[2] as HTMLInputElement).value;
+      const phone    = (form.elements[0] as HTMLInputElement).value;
+      const fullName = (form.elements[1] as HTMLInputElement).value;
+      const email    = (form.elements[2] as HTMLInputElement).value;
+      const location = (form.elements[3] as HTMLInputElement).value;
 
       const payload = {
+        phone,
         fullName,
         email,
         location,
@@ -116,20 +118,21 @@ export function LeadFormModal({ isOpen, onClose }: LeadFormModalProps) {
               </div>
 
               <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-                <input required type="text" placeholder="Full name" className={inputClass} />
-                <input required type="email" placeholder="Email address" className={inputClass} />
-                <input required type="text" placeholder="Your London area or postcode" className={inputClass} />
+                <input required type="tel" placeholder="Your phone number *" className={inputClass} autoComplete="tel" />
+                <input required type="text" placeholder="Full name *" className={inputClass} />
+                <input required type="email" placeholder="Email address *" className={inputClass} />
+                <input required type="text" placeholder="Your London area or postcode *" className={inputClass} />
 
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-brand-500 hover:bg-brand-600 disabled:opacity-60 text-white font-semibold py-3 px-6 rounded-xl transition-colors text-sm mt-1"
+                  className="w-full bg-brand-500 hover:bg-brand-600 active:scale-[0.98] disabled:opacity-60 text-white font-bold py-3.5 px-6 rounded-xl transition-all text-base mt-1 shadow-md shadow-brand-500/20"
                 >
-                  {isSubmitting ? 'Sending...' : 'Check Availability'}
+                  {isSubmitting ? 'Sending…' : 'Request a Free Call Back →'}
                 </button>
 
-                <p className="text-center text-xs text-gray-400 mt-1">
-                  Free service. No obligation. No spam.
+                <p className="text-center text-xs text-gray-500 leading-relaxed">
+                  We typically call back within <strong className="text-gray-700">2 hours</strong> · 100% free, no obligation
                 </p>
               </form>
             </>
