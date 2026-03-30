@@ -37,7 +37,7 @@ export const guides: Guide[] = [
     excerpt: 'A full breakdown of what electric driveway gates cost in London in 2026 — from basic timber swing gates to fully automated aluminium sliding systems — including installation, automation, and hidden London costs.',
     readingMinutes: 9,
     publishDate: '2026-01-10',
-    featuredImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=1170&auto=format&fit=crop',
+    featuredImage: '/images/gates/gate-aluminium-sliding-modern-dark-brick.png',
     intro: 'Electric driveway gates are one of the highest-impact upgrades a London homeowner can make — but prices vary enormously depending on material, mechanism, automation system, and the specific challenges of your site. This guide gives you a clear, honest picture of what automated gate installation prices look like in 2026, with no fluff.',
     sections: [
       {
@@ -76,7 +76,7 @@ export const guides: Guide[] = [
     excerpt: 'Electric gate running costs are far lower than most homeowners expect — but the full annual picture includes electricity, servicing, and occasional repairs. Here is what you will actually pay.',
     readingMinutes: 7,
     publishDate: '2026-01-17',
-    featuredImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1170&auto=format&fit=crop',
+    featuredImage: '/images/gates/gate-automation-intercom-evening-lighting.png',
     intro: 'One of the most common questions we hear from London homeowners considering an automated gate is how much it will add to their electricity bill. The answer is almost always: less than you think. Modern 24V gate motors are among the most efficient electrical devices in any household. This guide breaks down the real electric gate running costs so you can budget with confidence.',
     sections: [
       {
@@ -115,7 +115,7 @@ export const guides: Guide[] = [
     excerpt: 'Already have manual gates and want to add motors? Here is a clear breakdown of gate automation kit installation prices in London — covering underground motors, ram-arm systems, and the site requirements that affect the final cost.',
     readingMinutes: 6,
     publishDate: '2026-01-24',
-    featuredImage: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1170&auto=format&fit=crop',
+    featuredImage: '/images/gates/gate-aluminium-sliding-modern-dark-brick-2.png',
     intro: 'Retrofitting automation to existing manual driveway gates is one of the most popular gate upgrade projects in London. It avoids the cost and disruption of replacing structurally sound gates entirely, and modern motors can be fitted to almost any gate type — timber, steel, or wrought iron — provided the gate and its hanging hardware meet the minimum structural requirements.',
     sections: [
       {
@@ -150,7 +150,7 @@ export const guides: Guide[] = [
     excerpt: 'Timber looks warmer. Aluminium lasts longer with zero maintenance. This guide gives you the full, honest comparison of aluminium vs wooden driveway gates so you can make the right call for your London property.',
     readingMinutes: 8,
     publishDate: '2026-01-31',
-    featuredImage: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1170&auto=format&fit=crop',
+    featuredImage: '/images/gates/gate-wooden-oak-swing-cottage-garden.png',
     intro: 'The choice between aluminium and timber is the single most debated material decision in the London driveway gate market. Both materials have genuine strengths, and the right answer depends on your property style, how much time you want to spend on maintenance, and what your budget looks like over a 10-year horizon rather than just today.',
     sections: [
       {
@@ -185,7 +185,7 @@ export const guides: Guide[] = [
     excerpt: 'Swing gate or sliding gate? The answer depends on your driveway length, slope, available wall space, and budget. This guide covers every practical variable so you can make the right decision for your London property.',
     readingMinutes: 8,
     publishDate: '2026-02-07',
-    featuredImage: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1170&auto=format&fit=crop',
+    featuredImage: '/images/gates/gate-aluminium-swing-open-luxury-garden.png',
     intro: 'The choice between swing and sliding gates is the single most important decision in a driveway gate project, and it is determined almost entirely by the physical characteristics of your driveway — not by aesthetic preference. This guide walks through every practical variable.',
     sections: [
       {
@@ -220,7 +220,7 @@ export const guides: Guide[] = [
     excerpt: 'Video, audio, GSM, or keypad — there are more intercom options than ever for London driveway gates. This guide compares the main systems so you can choose the right access control for your property and lifestyle.',
     readingMinutes: 8,
     publishDate: '2026-02-14',
-    featuredImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=1170&auto=format&fit=crop',
+    featuredImage: '/images/gates/gate-swing-open-night-gold-lighting-drive.png',
     intro: 'An automated gate without a good intercom is only half a solution. The intercom system determines how you, your family, and your visitors interact with the gate every single day. This guide compares the main options for London residential properties in 2026.',
     sections: [
       {
@@ -255,7 +255,7 @@ export const guides: Guide[] = [
     excerpt: 'An electric gate motor that hums but will not move is one of the most common gate failures in London. Here are the three most likely causes — and how to tell whether it is something you can fix yourself or a job for an engineer.',
     readingMinutes: 6,
     publishDate: '2026-02-21',
-    featuredImage: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1170&auto=format&fit=crop',
+    featuredImage: '/images/gates/gate-wrought-iron-ornate-daytime-manor.png',
     intro: 'A humming sound from your gate motor when you press the remote is a symptom you should not ignore — and you certainly should not keep pressing the button hoping it will eventually move. A motor that is trying to run but cannot is drawing current into a stalled coil, which generates heat and can cause permanent damage if allowed to continue.',
     sections: [
       {
@@ -290,7 +290,7 @@ export const guides: Guide[] = [
     excerpt: 'Power cut or motor failure — every automated gate has a manual release. This step-by-step guide covers how to find and use it for both swing gates and sliding gates, and what to do if it will not operate.',
     readingMinutes: 5,
     publishDate: '2026-02-28',
-    featuredImage: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1170&auto=format&fit=crop',
+    featuredImage: '/images/gates/gate-swing-open-night-stone-pillars-drive.png',
     intro: 'Every automated driveway gate installed to UK standards includes a manual release mechanism. This is a legal requirement under BS EN 12453 — not an optional extra. The manual release allows you to open and close the gate by hand when the power is off or the motor fails.',
     sections: [
       {
@@ -325,7 +325,7 @@ export const guides: Guide[] = [
     excerpt: 'London winters are damp and cold — and that combination is hard on gate motors, tracks, hinges, and timber finishes. This maintenance checklist covers what to do before the cold hits and what to watch for during it.',
     readingMinutes: 7,
     publishDate: '2026-03-07',
-    featuredImage: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=1170&auto=format&fit=crop',
+    featuredImage: '/images/gates/gate-wrought-iron-open-misty-morning-manor.png',
     intro: 'Winter is the season that separates properly maintained gate systems from neglected ones. In London, the combination of intermittent frost, persistent damp, and sudden temperature drops creates specific failure patterns that are almost entirely preventable with the right preparation.',
     sections: [
       {
@@ -360,7 +360,7 @@ export const guides: Guide[] = [
     excerpt: 'Automated gates are classified as machinery under UK law. That means they come with legal obligations for installers, and ongoing responsibilities for homeowners. This guide explains the UK electric gate safety laws in plain English.',
     readingMinutes: 9,
     publishDate: '2026-03-14',
-    featuredImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=1170&auto=format&fit=crop',
+    featuredImage: '/images/gates/gate-wrought-iron-gold-crest-stately-home.png',
     intro: 'Are electric gates legal? Yes — but only when they are designed, installed, and maintained to the specific safety standards that UK law requires. A gate installed without proper safety testing, without CE or UKCA marking, or by an installer unfamiliar with the relevant directives is not merely a safety risk — it is a potential source of personal liability for the homeowner.',
     sections: [
       {
@@ -395,7 +395,7 @@ export const guides: Guide[] = [
     excerpt: 'Force testing is a legal requirement for every automated gate installation in the UK. If your installer did not do it, your gate is not legally compliant. Here is what the test involves and why it matters.',
     readingMinutes: 6,
     publishDate: '2026-03-21',
-    featuredImage: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?q=80&w=1170&auto=format&fit=crop',
+    featuredImage: '/images/gates/gate-wrought-iron-closeup-scrollwork-detail.png',
     intro: 'Electric gate force testing is the process of measuring the forces a moving gate exerts at its leading edge, closing edge, and hinge zone to confirm they fall within the limits set by BS EN 12445. It is a legal requirement under the Supply of Machinery (Safety) Regulations 2008, and an installation without documented test results is not a compliant installation.',
     sections: [
       {
@@ -430,7 +430,7 @@ export const guides: Guide[] = [
     excerpt: 'Photocells, safety edges, and ground loops are the three main electric gate safety devices — but they work differently and protect against different risks. Understanding what each one does helps you check whether your installation is adequately protected.',
     readingMinutes: 7,
     publishDate: '2026-03-28',
-    featuredImage: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1170&auto=format&fit=crop',
+    featuredImage: '/images/gates/gate-wrought-iron-aerial-gold-trim-estate.png',
     intro: 'The safety of an automated gate is only as good as the safety devices protecting its risk zones. BS EN 12453 requires that every relevant risk zone of an automated gate be addressed through appropriate safety measures. This guide explains all three principal hardware solutions so you can assess whether your current installation is properly protected.',
     sections: [
       {
