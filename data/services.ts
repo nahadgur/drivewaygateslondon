@@ -98,7 +98,7 @@ export const services: Service[] = [
       { question: "My gate is making a grinding noise. What should I do?", answer: "A grinding noise usually indicates debris in the track (for sliding gates), worn motor gears, or misaligned hinges. Stop using the gate on auto mode until an engineer inspects it, as forcing a misaligned gate can damage the motor. Use the manual release to open and close it in the meantime. Most London engineers can attend within 24 to 48 hours." },
       { question: "How much does a gate repair callout cost?", answer: "Most London gate engineers charge a callout fee of £80 to £150 depending on the area, plus parts and labour. Common repairs like motor replacement, sensor realignment, or intercom fixes typically cost £200 to £600 all in. For older systems where parts are discontinued, upgrading the motor unit may be more cost-effective than sourcing rare spares." },
     ],
-  },,
+  },
 
   {
     id: 'gate-automation-kits',
@@ -127,7 +127,7 @@ export const services: Service[] = [
       { question: "Do commercial gates need different planning permission to residential ones?", answer: "Generally yes. Commercial gate installations often require a formal planning application, particularly where the gate affects vehicular access from a public highway, changes the appearance of a listed building or conservation area, or exceeds 2 metres in height. Our network includes installers who handle the planning process on your behalf and are experienced with local authority requirements across all London boroughs." },
       { question: "What access control options are available for commercial sites?", answer: "Commercial sites typically use a combination of access control systems: proximity card or fob readers, PIN keypads, biometric readers, ANPR (automatic number plate recognition) for vehicle access, video intercoms with remote door release, and integration with site-wide CCTV and security management software. We can specify and install standalone systems or fully integrated solutions linked to existing on-site infrastructure." },
     ],
-  },,
+  },
 
   {
     id: 'aluminium-gates',
@@ -161,7 +161,7 @@ export const services: Service[] = [
     id: 'hardwood-gates',
     title: 'Hardwood Driveway Gates',
     slug: 'hardwood-driveway-gates',
-    description: 'Premium iroko, European oak, and Accoya gates for heritage homes, conservation areas, and affluent London properties. Hand-crafted to match your property's character, with 25-year material guarantees.',
+    description: 'Premium iroko, European oak, and Accoya gates for heritage homes, conservation areas, and affluent London properties. Hand-crafted to match your property\'s character, with 25-year material guarantees.',
     image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1170&auto=format&fit=crop',
     icon: 'Medal',
     color: 'amber',

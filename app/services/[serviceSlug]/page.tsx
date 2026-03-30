@@ -179,7 +179,7 @@ const serviceContent: Record<string, { intro: string[]; benefits: { title: strin
       { title: 'Testing and Safety Check', desc: 'After the repair, the full system is tested including motor travel limits, safety sensor responses, and all access controls.' },
       { title: 'Service Report', desc: 'You receive a written report of the work done, any parts replaced, and recommendations for ongoing maintenance to prevent future issues.' },
     ],
-  },,
+  },
 
   'aluminium-gates': {
     intro: [
