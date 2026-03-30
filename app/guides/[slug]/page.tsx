@@ -142,9 +142,11 @@ export default function GuidePage({ params }: { params: { slug: string } }) {
                     {section.heading}
                   </h2>
                   {section.body.split('\n\n').map((para, j) => (
-                    <p key={j} className="text-gray-600 leading-relaxed mb-5 text-base">
-                      {para}
-                    </p>
+                    <p
+                      key={j}
+                      className="text-gray-600 leading-relaxed mb-5 text-base [&_a]:text-brand-600 [&_a]:underline [&_a]:underline-offset-2 [&_a:hover]:text-brand-800"
+                      dangerouslySetInnerHTML={{ __html: para }}
+                    />
                   ))}
                 </div>
               ))}
