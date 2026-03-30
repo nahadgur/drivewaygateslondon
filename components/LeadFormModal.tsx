@@ -8,12 +8,29 @@ interface LeadFormModalProps {
   onClose: () => void;
 }
 
+const GATE_TYPES = [
+  'Electric Sliding Gates',
+  'Electric Swing Gates',
+  'Wooden Driveway Gates',
+  'Metal / Wrought Iron Gates',
+  'Aluminium Gates',
+  'Composite Gates',
+  'Hardwood Gates',
+  'Automated Gate Systems',
+  'Gate Automation (Retrofit)',
+  'Pedestrian / Side Gates',
+  'Commercial Gates',
+  'Access Control System',
+  'Gate Repair and Maintenance',
+  'Not sure yet',
+];
+
 const GOOGLE_SCRIPT_URL =
   'https://script.google.com/macros/s/AKfycbwIkSKA8qGfLjJ3e_lUUJp5U0oNZLo51wpZtXvdvNSaPXNyynWrdtN-ZcoYql3hcAjy/exec';
 
 export function LeadFormModal({ isOpen, onClose }: LeadFormModalProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
+  const [isSuccess, setIsSuccess]       = useState(false);
   const [shouldRender, setShouldRender] = useState(isOpen);
   const [animationState, setAnimationState] = useState<'idle' | 'entering' | 'exiting'>('idle');
 
@@ -37,16 +54,18 @@ export function LeadFormModal({ isOpen, onClose }: LeadFormModalProps) {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      const form = e.currentTarget;
-      const phone    = (form.elements[0] as HTMLInputElement).value;
-      const fullName = (form.elements[1] as HTMLInputElement).value;
-      const email    = (form.elements[2] as HTMLInputElement).value;
-      const location = (form.elements[3] as HTMLInputElement).value;
+      const form      = e.currentTarget;
+      const phone     = (form.elements[0] as HTMLInputElement).value;
+      const fullName  = (form.elements[1] as HTMLInputElement).value;
+      const email     = (form.elements[2] as HTMLInputElement).value;
+      const treatment = (form.elements[3] as HTMLSelectElement).value;
+      const location  = (form.elements[4] as HTMLInputElement).value;
 
       const payload = {
         phone,
         fullName,
         email,
+        treatment,
         location,
         page: window.location.href,
         source: 'Driveway Gates London',
@@ -121,6 +140,12 @@ export function LeadFormModal({ isOpen, onClose }: LeadFormModalProps) {
                 <input required type="tel" placeholder="Your phone number *" className={inputClass} autoComplete="tel" />
                 <input required type="text" placeholder="Full name *" className={inputClass} />
                 <input required type="email" placeholder="Email address *" className={inputClass} />
+                <select required className={inputClass + ' appearance-none cursor-pointer'}>
+                  <option value="" disabled selected>What type of gate? *</option>
+                  {GATE_TYPES.map(t => (
+                    <option key={t} value={t}>{t}</option>
+                  ))}
+                </select>
                 <input required type="text" placeholder="Your London area or postcode *" className={inputClass} />
 
                 <button
