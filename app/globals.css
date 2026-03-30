@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap');
 
 :root {
-  --brand-50: #F7F5F0;
+  --brand-50:  #F7F5F0;
   --brand-100: #EDE8DC;
   --brand-200: #DDD4C0;
   --brand-300: #C9BA9C;
@@ -19,58 +19,115 @@
 }
 
 @layer base {
+  html { scroll-behavior: smooth; }
+
   body {
-    @apply font-body text-gray-800 antialiased;
+    @apply font-body text-brand-900 antialiased bg-brand-50;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display;
+    @apply font-syne font-bold;
   }
 }
 
 @layer components {
+  /* Layout */
   .container-width {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-12;
   }
-
   .section-padding {
     @apply py-16 md:py-24;
   }
 
-  .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 bg-brand-500 hover:bg-brand-600 active:bg-brand-700 text-white font-bold py-3 px-6 rounded-xl transition-all shadow-sm hover:shadow-md;
+  /* Craftsman section label */
+  .craft-label {
+    @apply font-syne font-bold text-[10px] tracking-[.22em] uppercase text-brand-500 mb-3;
   }
 
+  /* Craftsman heading */
+  .craft-h2 {
+    @apply font-syne font-extrabold uppercase tracking-tight text-brand-900 leading-[1.04];
+    font-size: clamp(26px, 3.5vw, 44px);
+    letter-spacing: -.02em;
+  }
+
+  /* Ruled borders */
+  .ruled-top    { @apply border-t-2 border-brand-900; }
+  .ruled-bottom { @apply border-b-2 border-brand-900; }
+  .ruled-border { @apply border-2 border-brand-900; }
+
+  /* Buttons */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2
+           bg-brand-900 hover:bg-brand-500 active:bg-brand-700
+           text-brand-50 font-syne font-bold
+           py-3 px-6 text-xs tracking-[.1em] uppercase
+           transition-colors duration-150;
+  }
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-gray-800 font-bold py-3 px-6 rounded-xl border-2 border-gray-200 hover:border-brand-300 transition-all;
+    @apply inline-flex items-center justify-center gap-2
+           bg-transparent hover:bg-brand-900 hover:text-brand-50
+           text-brand-800 font-syne font-bold
+           py-3 px-6 text-xs tracking-[.1em] uppercase
+           border-2 border-brand-800
+           transition-all duration-150;
+  }
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2
+           bg-brand-500 hover:bg-brand-600 active:bg-brand-700
+           text-white font-syne font-bold
+           py-3 px-6 text-xs tracking-[.1em] uppercase
+           transition-colors duration-150;
+  }
+
+  /* Trust bar item */
+  .trust-icon-box {
+    @apply w-10 h-10 border border-brand-500/30 flex items-center justify-center flex-shrink-0 text-brand-400;
+  }
+
+  /* Service card */
+  .svc-card {
+    @apply bg-brand-50 overflow-hidden transition-colors duration-150 hover:bg-brand-100;
+  }
+
+  /* Testimonial card */
+  .testi-card {
+    @apply bg-brand-50 p-7;
+  }
+
+  /* FAQ item */
+  .faq-item {
+    @apply border-b-2 border-brand-200;
+  }
+
+  /* Location chip */
+  .loc-chip {
+    @apply bg-brand-50 py-3 px-4
+           font-syne font-bold text-[11px] tracking-[.05em] uppercase
+           text-brand-800 transition-all duration-150
+           hover:bg-brand-900 hover:text-brand-50
+           flex items-center gap-2;
   }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  .text-balance { text-wrap: balance; }
 }
+
+/* Ticker animation */
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-ticker { animation: ticker 28s linear infinite; }
 
 /* Modal animations */
-@keyframes backdrop-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-@keyframes backdrop-out {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-@keyframes modal-in {
-  from { opacity: 0; transform: scale(0.95) translateY(10px); }
-  to { opacity: 1; transform: scale(1) translateY(0); }
-}
-@keyframes modal-out {
-  from { opacity: 1; transform: scale(1) translateY(0); }
-  to { opacity: 0; transform: scale(0.95) translateY(10px); }
-}
+@keyframes backdrop-in  { from { opacity: 0; } to { opacity: 1; } }
+@keyframes backdrop-out { from { opacity: 1; } to { opacity: 0; } }
+@keyframes modal-in     { from { opacity: 0; transform: scale(.9) translateY(20px); } to { opacity: 1; transform: scale(1) translateY(0); } }
+@keyframes modal-out    { from { opacity: 1; transform: scale(1) translateY(0); }    to { opacity: 0; transform: scale(.9) translateY(20px); } }
 
-.animate-backdrop-in { animation: backdrop-in 0.2s ease-out forwards; }
-.animate-backdrop-out { animation: backdrop-out 0.2s ease-in forwards; }
-.animate-modal-in { animation: modal-in 0.3s ease-out forwards; }
-.animate-modal-out { animation: modal-out 0.2s ease-in forwards; }
+.animate-backdrop-in  { animation: backdrop-in  .3s ease-out; }
+.animate-backdrop-out { animation: backdrop-out .3s ease-in; }
+.animate-modal-in     { animation: modal-in     .3s ease-out; }
+.animate-modal-out    { animation: modal-out    .3s ease-in; }

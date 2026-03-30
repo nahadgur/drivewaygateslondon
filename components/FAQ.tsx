@@ -1,29 +1,40 @@
 'use client';
 
 import { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
 
 type FAQItem = { question: string; answer: string };
 
-export function FAQ({ faqs, title = "Frequently Asked Questions" }: { faqs: FAQItem[]; title?: string }) {
+export function FAQ({ faqs, title = 'Frequently Asked Questions' }: { faqs: FAQItem[]; title?: string }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
-
 
   return (
     <section>
-      <h2 className="text-2xl md:text-3xl font-display font-bold text-gray-900 mb-6">{title}</h2>
-      <div className="space-y-3">
+      <h2
+        className="font-syne font-extrabold uppercase tracking-tight text-brand-900 mb-8"
+        style={{ fontSize: 'clamp(22px, 2.8vw, 36px)', letterSpacing: '-.02em', lineHeight: 1.04 }}
+      >
+        {title}
+      </h2>
+      <div>
         {faqs.map((faq, i) => (
-          <div key={i} className="bg-white border border-gray-200 rounded-xl overflow-hidden">
+          <div key={i} className="faq-item">
             <button
               onClick={() => setOpenIndex(openIndex === i ? null : i)}
-              className="w-full flex items-center justify-between px-6 py-4 text-left font-semibold text-gray-900 hover:bg-gray-50 transition-colors"
+              className="w-full flex items-start justify-between gap-5 py-5 text-left bg-transparent border-none cursor-pointer"
             >
-              <span className="pr-4">{faq.question}</span>
-              <ChevronDown className={`w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-200 ${openIndex === i ? 'rotate-180' : ''}`} />
+              <span className="font-syne font-bold text-sm tracking-[.02em] text-brand-900 leading-snug">
+                {faq.question}
+              </span>
+              <span className={`
+                flex-shrink-0 w-6 h-6 border-2 border-brand-400 flex items-center justify-center
+                font-syne font-bold text-sm text-brand-500 mt-0.5 transition-all duration-200
+                ${openIndex === i ? 'bg-brand-900 border-brand-900 text-white rotate-45' : ''}
+              `}>
+                +
+              </span>
             </button>
             {openIndex === i && (
-              <div className="px-6 pb-5 text-gray-600 leading-relaxed border-t border-gray-100 pt-4">
+              <div className="pb-5 text-sm text-brand-600 leading-relaxed max-w-2xl">
                 {faq.answer}
               </div>
             )}
