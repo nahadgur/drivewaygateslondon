@@ -22,10 +22,10 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans:    ['DM Sans',  'system-ui', 'sans-serif'],
-        body:    ['DM Sans',  'system-ui', 'sans-serif'],
-        display: ['Fraunces', 'Georgia',   'serif'],
-        syne:    ['Syne',     'system-ui', 'sans-serif'],
+        sans:    ['var(--font-dm-sans)',  'system-ui', 'sans-serif'],
+        body:    ['var(--font-dm-sans)',  'system-ui', 'sans-serif'],
+        display: ['var(--font-fraunces)', 'Georgia',   'serif'],
+        syne:    ['var(--font-syne)',     'system-ui', 'sans-serif'],
       },
       keyframes: {
         'ticker': {

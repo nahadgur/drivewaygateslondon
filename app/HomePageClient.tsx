@@ -12,7 +12,8 @@ import { Hero } from '@/components/Hero';
 import { TrustBadges } from '@/components/TrustBadges';
 import { Testimonials } from '@/components/Testimonials';
 import { FAQ } from '@/components/FAQ';
-import { LeadFormModal } from '@/components/LeadFormModal';
+import dynamic from 'next/dynamic';
+const LeadFormModal = dynamic(() => import('@/components/LeadFormModal').then(m => m.LeadFormModal), { ssr: false });
 import { HOMEPAGE_FAQS as homepageFaqs } from '@/data/site';
 
 const topAreas = ['Barnet', 'Richmond', 'Wimbledon', 'Bromley', 'Ealing', 'Hampstead', 'Kensington', 'Chiswick', 'Croydon', 'Harrow', 'Ilford', 'Kingston upon Thames'];

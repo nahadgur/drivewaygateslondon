@@ -6,7 +6,8 @@ import { ArrowRight, Shield, Camera, Hash, Phone, Smartphone } from 'lucide-reac
 import { accessControlServices } from '@/data/access-control';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { LeadFormModal } from '@/components/LeadFormModal';
+import dynamic from 'next/dynamic';
+const LeadFormModal = dynamic(() => import('@/components/LeadFormModal').then(m => m.LeadFormModal), { ssr: false });
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { TrustBadges } from '@/components/TrustBadges';
 

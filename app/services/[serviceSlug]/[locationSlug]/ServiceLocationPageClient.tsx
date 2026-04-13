@@ -11,7 +11,8 @@ import { Footer } from '@/components/Footer';
 import { FAQ } from '@/components/FAQ';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { Testimonials } from '@/components/Testimonials';
-import { LeadFormModal } from '@/components/LeadFormModal';
+import dynamic from 'next/dynamic';
+const LeadFormModal = dynamic(() => import('@/components/LeadFormModal').then(m => m.LeadFormModal), { ssr: false });
 import { PricingSection } from '@/components/PricingSection';
 import { NearbyAreasGrid } from '@/components/NearbyAreasGrid';
 

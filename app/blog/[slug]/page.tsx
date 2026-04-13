@@ -1,10 +1,16 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getArticleBySlug } from '@/data/blog';
+import { blogArticles, getArticleBySlug } from '@/data/blog';
+import { services } from '@/data/services';
 import { siteConfig } from '@/data/site';
 import { BlogArticlePageClient } from './BlogArticlePageClient';
+import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 interface Props { params: { slug: string } }
+
+export function generateStaticParams() {
+  return blogArticles.map(a => ({ slug: a.slug }));
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = getArticleBySlug(params.slug);
@@ -23,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'article',
       siteName: siteConfig.name,
       locale: 'en_GB',
-      images: [{ url: article.featuredImage, width: 1200, height: 630, alt: article.title }],
+      images: [{ url: article.featuredImage.startsWith('http') ? article.featuredImage : `${siteConfig.url}${article.featuredImage}`, width: 1200, height: 630, alt: article.title }],
       publishedTime: article.publishDate,
     },
     twitter: { card: 'summary_large_image', title: article.title, description: article.metaDescription },
@@ -44,7 +50,7 @@ export default function BlogArticlePage({ params }: Props) {
     dateModified: article.publishDate,
     image: {
       '@type': 'ImageObject',
-      url: article.featuredImage,
+      url: article.featuredImage.startsWith('http') ? article.featuredImage : `${siteConfig.url}${article.featuredImage}`,
       width: 1200,
       height: 630,
     },
@@ -70,10 +76,32 @@ export default function BlogArticlePage({ params }: Props) {
     },
   };
 
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Blog', href: '/blog/' },
+    { name: article.title, href: `/blog/${article.slug}/` },
+  ]);
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <BlogArticlePageClient params={params} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <BlogArticlePageClient
+        article={article}
+        relatedService={article.relatedServiceSlug ? services.find(s => s.slug === article.relatedServiceSlug) ?? null : null}
+        bottomRelated={blogArticles
+          .filter(a => a.slug !== article.slug)
+          .sort((a, b) => {
+            if (a.category === article.category && b.category !== article.category) return -1;
+            if (b.category === article.category && a.category !== article.category) return 1;
+            return new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime();
+          })
+          .slice(0, 3)
+          .map(a => ({ slug: a.slug, title: a.title, category: a.category, featuredImage: a.featuredImage }))}
+        serviceList={services.map(s => ({ slug: s.slug, title: s.title }))}
+        articleImageMap={Object.fromEntries(
+          blogArticles.map(a => [a.slug, a.featuredImage])
+        )}
+      />
     </>
   );
 }

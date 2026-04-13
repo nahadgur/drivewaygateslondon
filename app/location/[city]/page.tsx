@@ -1,10 +1,15 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getCityBySlug } from '@/data/locations';
+import { LOCATIONS, toSlug, getCityBySlug } from '@/data/locations';
 import { siteConfig } from '@/data/site';
 import { CityPageClient } from './CityPageClient';
+import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 interface Props { params: { city: string } }
+
+export function generateStaticParams() {
+  return Object.values(LOCATIONS).flat().map(city => ({ city: toSlug(city) }));
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cityName = getCityBySlug(params.city);
@@ -58,9 +63,15 @@ export default function CityPage({ params }: Props) {
     openingHours: 'Mo-Su 08:00-20:00',
   };
 
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Locations', href: '/location/' },
+    { name: cityName, href: `/location/${params.city}/` },
+  ]);
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <CityPageClient params={params} />
     </>
   );

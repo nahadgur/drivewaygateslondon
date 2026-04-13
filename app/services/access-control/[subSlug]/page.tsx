@@ -1,10 +1,15 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getAccessControlBySlug } from '@/data/access-control';
+import { accessControlServices, getAccessControlBySlug } from '@/data/access-control';
 import { siteConfig } from '@/data/site';
 import { AccessControlPageClient } from './AccessControlPageClient';
+import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 interface Props { params: { subSlug: string } }
+
+export function generateStaticParams() {
+  return accessControlServices.map(s => ({ subSlug: s.slug }));
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = getAccessControlBySlug(params.subSlug);
@@ -56,10 +61,17 @@ export default function AccessControlPage({ params }: Props) {
     })),
   } : null;
 
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Services', href: '/services/' },
+    { name: 'Access Control', href: '/services/access-control/' },
+    { name: service.title, href: `/services/access-control/${service.slug}/` },
+  ]);
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <AccessControlPageClient params={params} />
     </>
   );

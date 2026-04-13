@@ -9,7 +9,8 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/Hero';
 import { FAQ } from '@/components/FAQ';
-import { LeadFormModal } from '@/components/LeadFormModal';
+import dynamic from 'next/dynamic';
+const LeadFormModal = dynamic(() => import('@/components/LeadFormModal').then(m => m.LeadFormModal), { ssr: false });
 
 export default function LocationIndexPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);

@@ -8,106 +8,108 @@ import { boroughRegulations } from '@/data/regulations';
 import { guides } from '@/data/guides';
 import { siteConfig } from '@/data/site';
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const base = siteConfig.url;
-  const allCities = Object.values(LOCATIONS).flat();
-  const now = new Date();
+// Exclude 'commercial-gates' — it lives at /commercial/, not /services/commercial-gates/
+const residentialServices = services.filter(s => s.slug !== 'commercial-gates');
+const allCities = Object.values(LOCATIONS).flat();
 
-  // Exclude 'commercial-gates' — it lives at /commercial/, not /services/commercial-gates/
-  const residentialServices = services.filter(s => s.slug !== 'commercial-gates');
-
-  // ── Static hub pages ──────────────────────────────────────────────────────
-  const staticPages: MetadataRoute.Sitemap = [
-    { url: `${base}/`,                         lastModified: now, changeFrequency: 'weekly',  priority: 1.0 },
-    { url: `${base}/services/`,                lastModified: now, changeFrequency: 'weekly',  priority: 0.9 },
-    { url: `${base}/location/`,               lastModified: now, changeFrequency: 'weekly',  priority: 0.9 },
-    { url: `${base}/commercial/`,             lastModified: now, changeFrequency: 'weekly',  priority: 0.8 },
-    { url: `${base}/guides/`,                 lastModified: now, changeFrequency: 'weekly',  priority: 0.85 },
-    { url: `${base}/blog/`,                   lastModified: now, changeFrequency: 'daily',   priority: 0.8 },
-    { url: `${base}/services/access-control/`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${base}/local-regulations/`,      lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+// ── Sitemap index: id 0 = core pages, ids 1–N = one per residential service ──
+export async function generateSitemaps() {
+  return [
+    { id: 0 }, // static + blog + guides + locations + regulations + commercial + access-control
+    ...residentialServices.map((_, i) => ({ id: i + 1 })),
   ];
+}
 
-  // ── Service pages (/services/electric-sliding-gates/ etc) ─────────────────
-  const servicePages: MetadataRoute.Sitemap = residentialServices.map(s => ({
-    url: `${base}/services/${s.slug}/`,
-    lastModified: now,
-    changeFrequency: 'weekly' as const,
-    priority: 0.85,
-  }));
+// Fixed date for pages that don't change often (services, locations, regulations)
+// Update this when content on these template pages is materially changed
+const CONTENT_LAST_UPDATED = new Date('2026-03-30');
 
-  // ── Access control pages ───────────────────────────────────────────────────
-  const accessControlPages: MetadataRoute.Sitemap = accessControlServices.map(s => ({
-    url: `${base}/services/access-control/${s.slug}/`,
-    lastModified: now,
-    changeFrequency: 'monthly' as const,
-    priority: 0.75,
-  }));
+export default function sitemap({ id }: { id: number }): MetadataRoute.Sitemap {
+  const base = siteConfig.url;
 
-  // ── Commercial pages ───────────────────────────────────────────────────────
-  const commercialPages: MetadataRoute.Sitemap = commercialServices.map(s => ({
-    url: `${base}/commercial/${s.slug}/`,
-    lastModified: now,
-    changeFrequency: 'monthly' as const,
-    priority: 0.75,
-  }));
+  // ── Sitemap 0: all non-programmatic pages ─────────────────────────────────
+  if (id === 0) {
+    const staticPages: MetadataRoute.Sitemap = [
+      { url: `${base}/`,                          lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'weekly',  priority: 1.0 },
+      { url: `${base}/services/`,                 lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'weekly',  priority: 0.9 },
+      { url: `${base}/location/`,                 lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'weekly',  priority: 0.9 },
+      { url: `${base}/commercial/`,               lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'weekly',  priority: 0.8 },
+      { url: `${base}/guides/`,                   lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'weekly',  priority: 0.85 },
+      { url: `${base}/blog/`,                     lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'daily',   priority: 0.8 },
+      { url: `${base}/services/access-control/`,  lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'weekly',  priority: 0.8 },
+      { url: `${base}/local-regulations/`,        lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'monthly', priority: 0.8 },
+    ];
 
-  // ── City location pages (/location/barnet/ etc) ────────────────────────────
-  const locationPages: MetadataRoute.Sitemap = allCities.map(city => ({
-    url: `${base}/location/${toSlug(city)}/`,
-    lastModified: now,
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-  }));
+    const servicePages: MetadataRoute.Sitemap = residentialServices.map(s => ({
+      url: `${base}/services/${s.slug}/`,
+      lastModified: CONTENT_LAST_UPDATED,
+      changeFrequency: 'weekly' as const,
+      priority: 0.85,
+    }));
 
-  // ── Borough planning pages ─────────────────────────────────────────────────
-  const regulationPages: MetadataRoute.Sitemap = boroughRegulations.map(b => ({
-    url: `${base}/local-regulations/${b.slug}/`,
-    lastModified: now,
-    changeFrequency: 'monthly' as const,
-    priority: 0.75,
-  }));
+    const accessControlPages: MetadataRoute.Sitemap = accessControlServices.map(s => ({
+      url: `${base}/services/access-control/${s.slug}/`,
+      lastModified: CONTENT_LAST_UPDATED,
+      changeFrequency: 'monthly' as const,
+      priority: 0.75,
+    }));
 
-  // ── Guide pages ────────────────────────────────────────────────────────────
-  const guidePages: MetadataRoute.Sitemap = guides.map(g => ({
-    url: `${base}/guides/${g.slug}/`,
-    lastModified: new Date(g.publishDate),
-    changeFrequency: 'monthly' as const,
-    priority: 0.8,
-  }));
+    const commercialPages: MetadataRoute.Sitemap = commercialServices.map(s => ({
+      url: `${base}/commercial/${s.slug}/`,
+      lastModified: CONTENT_LAST_UPDATED,
+      changeFrequency: 'monthly' as const,
+      priority: 0.75,
+    }));
 
-  // ── Blog pages ─────────────────────────────────────────────────────────────
-  const blogPages: MetadataRoute.Sitemap = blogArticles.map(a => ({
-    url: `${base}/blog/${a.slug}/`,
-    lastModified: new Date(a.publishDate),
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-  }));
+    const locationPages: MetadataRoute.Sitemap = allCities.map(city => ({
+      url: `${base}/location/${toSlug(city)}/`,
+      lastModified: CONTENT_LAST_UPDATED,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    }));
 
-  // ── Service × Location pages (/services/electric-sliding-gates/barnet/ etc)
-  // These are the programmatic SEO core — 12 services × 114 cities = 1,368 pages
-  const serviceLocationPages: MetadataRoute.Sitemap = [];
-  for (const service of residentialServices) {
-    for (const city of allCities) {
-      serviceLocationPages.push({
-        url: `${base}/services/${service.slug}/${toSlug(city)}/`,
-        lastModified: now,
-        changeFrequency: 'monthly' as const,
-        priority: 0.65,
-      });
-    }
+    const regulationPages: MetadataRoute.Sitemap = boroughRegulations.map(b => ({
+      url: `${base}/local-regulations/${b.slug}/`,
+      lastModified: CONTENT_LAST_UPDATED,
+      changeFrequency: 'monthly' as const,
+      priority: 0.75,
+    }));
+
+    const guidePages: MetadataRoute.Sitemap = guides.map(g => ({
+      url: `${base}/guides/${g.slug}/`,
+      lastModified: new Date(g.publishDate),
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    }));
+
+    const blogPages: MetadataRoute.Sitemap = blogArticles.map(a => ({
+      url: `${base}/blog/${a.slug}/`,
+      lastModified: new Date(a.publishDate),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    }));
+
+    return [
+      ...staticPages,
+      ...servicePages,
+      ...accessControlPages,
+      ...commercialPages,
+      ...locationPages,
+      ...regulationPages,
+      ...guidePages,
+      ...blogPages,
+    ];
   }
 
-  return [
-    ...staticPages,          //    8 pages
-    ...servicePages,          //   12 pages
-    ...accessControlPages,    //    4 pages
-    ...commercialPages,       //    4 pages
-    ...locationPages,         //  114 pages
-    ...regulationPages,       //   27 pages
-    ...guidePages,            //   12 pages
-    ...blogPages,             //   29 pages
-    ...serviceLocationPages,  // 1,368 pages
-    // TOTAL: 1,578 pages
-  ];
+  // ── Sitemaps 1–N: service × location pages (one sitemap per service) ──────
+  const serviceIndex = id - 1;
+  const service = residentialServices[serviceIndex];
+  if (!service) return [];
+
+  return allCities.map(city => ({
+    url: `${base}/services/${service.slug}/${toSlug(city)}/`,
+    lastModified: CONTENT_LAST_UPDATED,
+    changeFrequency: 'monthly' as const,
+    priority: 0.65,
+  }));
 }

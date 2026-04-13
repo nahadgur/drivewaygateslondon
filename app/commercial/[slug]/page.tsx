@@ -1,10 +1,15 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getCommercialBySlug } from '@/data/commercial';
+import { commercialServices, getCommercialBySlug } from '@/data/commercial';
 import { siteConfig } from '@/data/site';
 import { CommercialPageClient } from './CommercialPageClient';
+import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 interface Props { params: { slug: string } }
+
+export function generateStaticParams() {
+  return commercialServices.map(s => ({ slug: s.slug }));
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = getCommercialBySlug(params.slug);
@@ -56,10 +61,16 @@ export default function CommercialServicePage({ params }: Props) {
     })),
   } : null;
 
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Commercial', href: '/commercial/' },
+    { name: service.title, href: `/commercial/${service.slug}/` },
+  ]);
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <CommercialPageClient params={params} />
     </>
   );

@@ -6,7 +6,8 @@ import { ArrowRight, Building2, Shield, Truck, School, ParkingSquare } from 'luc
 import { commercialServices } from '@/data/commercial';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { LeadFormModal } from '@/components/LeadFormModal';
+import dynamic from 'next/dynamic';
+const LeadFormModal = dynamic(() => import('@/components/LeadFormModal').then(m => m.LeadFormModal), { ssr: false });
 import { TrustBadges } from '@/components/TrustBadges';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 

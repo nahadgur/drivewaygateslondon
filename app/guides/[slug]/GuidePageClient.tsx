@@ -2,13 +2,15 @@
 
 import { useState } from 'react';
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Clock, ArrowLeft, ArrowRight, BookOpen, ShieldCheck, PoundSterling, BarChart3, Wrench } from 'lucide-react';
 import { guides, getGuideBySlug, type GuidePillar } from '@/data/guides';
 import { services } from '@/data/services';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { LeadFormModal } from '@/components/LeadFormModal';
+import dynamic from 'next/dynamic';
+const LeadFormModal = dynamic(() => import('@/components/LeadFormModal').then(m => m.LeadFormModal), { ssr: false });
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { FAQ } from '@/components/FAQ';
 
@@ -34,8 +36,8 @@ export function GuidePageClient({ params }: { params: { slug: string } }) {
       <main>
         {/* Hero */}
         <div className="relative h-[360px] md:h-[440px] overflow-hidden border-b-[3px] border-brand-900">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={guide.featuredImage} alt={guide.title} className="w-full h-full object-cover" style={{ filter: 'saturate(.7)' }} loading="eager" />
+          <Image src={guide.featuredImage} alt={guide.title} fill className="object-cover" style={{ filter: 'saturate(.7)' }} priority
+            sizes="100vw" />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-950/95 via-brand-950/50 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 container-width pb-10">
             <Link href="/guides/" className="inline-flex items-center gap-1 font-syne font-bold text-[10px] tracking-[.15em] uppercase text-brand-400 mb-4 hover:text-brand-200 transition-colors">

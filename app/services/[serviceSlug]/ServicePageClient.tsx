@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
 import Link from 'next/link';
 import { MapPin, Clock, Shield, Star, Search, CheckCircle, ArrowRight, ChevronDown } from 'lucide-react';
 import { services, getServiceBySlug } from '@/data/services';
@@ -13,7 +14,8 @@ import { TrustBadges } from '@/components/TrustBadges';
 import { Testimonials } from '@/components/Testimonials';
 import { FAQ } from '@/components/FAQ';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
-import { LeadFormModal } from '@/components/LeadFormModal';
+import dynamic from 'next/dynamic';
+const LeadFormModal = dynamic(() => import('@/components/LeadFormModal').then(m => m.LeadFormModal), { ssr: false });
 import { PricingSection } from '@/components/PricingSection';
 
 /* ── Inline content data (unchanged from original) ── */
@@ -89,10 +91,10 @@ export function ServicePageClient({ params }: { params: { serviceSlug: string } 
 
           {/* Image side */}
           <div className="relative overflow-hidden bg-brand-200 min-h-[280px] lg:min-h-0">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={service.image} alt={service.title}
-              className="w-full h-full object-cover"
-              style={{ filter: 'saturate(.85)' }} loading="eager" />
+            <Image src={service.image} alt={service.title}
+              fill className="object-cover"
+              style={{ filter: 'saturate(.85)' }} priority
+              sizes="(max-width: 1024px) 100vw, 480px" />
             <div className="absolute top-0 left-0 bg-brand-900 px-4 py-2 font-syne font-bold text-[9.5px] tracking-[.2em] uppercase text-brand-400">
               Featured Install
             </div>

@@ -1,0 +1,22 @@
+{
+  "/api/indexnow/route": "app/api/indexnow/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap/[__metadata_id__]/route": "app/sitemap/[__metadata_id__]/route.js",
+  "/page": "app/page.js",
+  "/commercial/page": "app/commercial/page.js",
+  "/commercial/[slug]/page": "app/commercial/[slug]/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/blog/[slug]/page": "app/blog/[slug]/page.js",
+  "/local-regulations/page": "app/local-regulations/page.js",
+  "/local-regulations/[borough]/page": "app/local-regulations/[borough]/page.js",
+  "/guides/page": "app/guides/page.js",
+  "/guides/[slug]/page": "app/guides/[slug]/page.js",
+  "/services/page": "app/services/page.js",
+  "/services/[serviceSlug]/page": "app/services/[serviceSlug]/page.js",
+  "/services/[serviceSlug]/[locationSlug]/page": "app/services/[serviceSlug]/[locationSlug]/page.js",
+  "/location/page": "app/location/page.js",
+  "/location/[city]/page": "app/location/[city]/page.js",
+  "/services/access-control/page": "app/services/access-control/page.js",
+  "/services/access-control/[subSlug]/page": "app/services/access-control/[subSlug]/page.js"
+}

@@ -3,8 +3,27 @@
 
 import type { Metadata } from 'next';
 import Script from 'next/script';
+import { DM_Sans, Syne, Fraunces } from 'next/font/google';
 import './globals.css';
 import { siteConfig } from '@/data/site';
+
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  variable: '--font-dm-sans',
+  display: 'swap',
+});
+
+const syne = Syne({
+  subsets: ['latin'],
+  variable: '--font-syne',
+  display: 'swap',
+});
+
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  variable: '--font-fraunces',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -50,6 +69,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     name: siteConfig.name,
     alternateName: siteConfig.tagline,
     url: siteConfig.url,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: `${siteConfig.url}/services/?q={search_term_string}`,
+      },
+      "query-input": "required name=search_term_string",
+    },
   };
 
   const organizationSchema = {
@@ -65,10 +92,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     },
     description: siteConfig.description,
     areaServed: { "@type": "City", name: "London", addressCountry: "GB" },
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "customer service",
+      availableLanguage: "English",
+      areaServed: "GB",
+    },
+    knowsAbout: [
+      "Driveway gate installation",
+      "Electric sliding gates",
+      "Electric swing gates",
+      "Gate automation",
+      "Gate repair and maintenance",
+      "Access control systems",
+    ],
   };
 
   return (
-    <html lang="en-GB">
+    <html lang="en-GB" className={`${dmSans.variable} ${syne.variable} ${fraunces.variable}`}>
       <head>
         <script
           type="application/ld+json"

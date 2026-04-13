@@ -1,10 +1,15 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getServiceBySlug } from '@/data/services';
+import { services, getServiceBySlug } from '@/data/services';
 import { siteConfig, FAQS_SERVICES } from '@/data/site';
 import { ServicePageClient } from './ServicePageClient';
+import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 interface Props { params: { serviceSlug: string } }
+
+export function generateStaticParams() {
+  return services.filter(s => s.slug !== 'commercial-gates').map(s => ({ serviceSlug: s.slug }));
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = getServiceBySlug(params.serviceSlug);
@@ -57,10 +62,16 @@ export default function ServicePage({ params }: Props) {
     })),
   } : null;
 
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Services', href: '/services/' },
+    { name: service.title, href: `/services/${service.slug}/` },
+  ]);
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <ServicePageClient params={params} />
     </>
   );

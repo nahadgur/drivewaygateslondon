@@ -8,7 +8,8 @@ import { boroughRegulations, getBoroughBySlug } from '@/data/regulations';
 import { services } from '@/data/services';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { LeadFormModal } from '@/components/LeadFormModal';
+import dynamic from 'next/dynamic';
+const LeadFormModal = dynamic(() => import('@/components/LeadFormModal').then(m => m.LeadFormModal), { ssr: false });
 import { Breadcrumbs } from '@/components/Breadcrumbs';
 
 export function BoroughPageClient({ params }: { params: { borough: string } }) {

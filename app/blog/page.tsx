@@ -6,7 +6,8 @@ import { ArrowRight, Calendar, Search } from 'lucide-react';
 import { blogArticles } from '@/data/blog';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { LeadFormModal } from '@/components/LeadFormModal';
+import dynamic from 'next/dynamic';
+const LeadFormModal = dynamic(() => import('@/components/LeadFormModal').then(m => m.LeadFormModal), { ssr: false });
 
 const CATEGORIES = ['All', ...Array.from(new Set(blogArticles.map(a => a.category))).sort()];
 

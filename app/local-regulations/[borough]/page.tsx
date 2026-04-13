@@ -1,10 +1,15 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getBoroughBySlug } from '@/data/regulations';
+import { boroughRegulations, getBoroughBySlug } from '@/data/regulations';
 import { siteConfig } from '@/data/site';
 import { BoroughPageClient } from './BoroughPageClient';
+import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 interface Props { params: { borough: string } }
+
+export function generateStaticParams() {
+  return boroughRegulations.map(b => ({ borough: b.slug }));
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const borough = getBoroughBySlug(params.borough);
@@ -71,9 +76,15 @@ export default function BoroughPlanningPage({ params }: Props) {
     },
   };
 
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Local Regulations', href: '/local-regulations/' },
+    { name: borough.name, href: `/local-regulations/${borough.slug}/` },
+  ]);
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <BoroughPageClient params={params} />
     </>
   );

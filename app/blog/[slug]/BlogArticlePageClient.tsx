@@ -1,14 +1,22 @@
 'use client';
 
 import React, { useState } from 'react';
-import { notFound } from 'next/navigation';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Calendar, ArrowLeft, ArrowRight, ExternalLink, MapPin } from 'lucide-react';
-import { blogArticles, getArticleBySlug, type ContentBlock } from '@/data/blog';
-import { services } from '@/data/services';
+import type { BlogArticle, ContentBlock } from '@/data/blog';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { LeadFormModal } from '@/components/LeadFormModal';
+import dynamic from 'next/dynamic';
+const LeadFormModal = dynamic(() => import('@/components/LeadFormModal').then(m => m.LeadFormModal), { ssr: false });
+
+interface BlogArticlePageClientProps {
+  article: BlogArticle;
+  relatedService: { slug: string; title: string; description: string } | null;
+  bottomRelated: { slug: string; title: string; category: string; featuredImage: string }[];
+  serviceList: { slug: string; title: string }[];
+  articleImageMap: Record<string, string>;
+}
 
 /* ── Inline CTA ── */
 function BlogCtaBanner({ onOpenModal }: { onOpenModal: () => void }) {
@@ -33,7 +41,7 @@ function BlogCtaBanner({ onOpenModal }: { onOpenModal: () => void }) {
 }
 
 /* ── Content renderer ── */
-function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOpenModal: () => void }) {
+function ContentRenderer({ blocks, onOpenModal, articleImageMap }: { blocks: ContentBlock[]; onOpenModal: () => void; articleImageMap: Record<string, string> }) {
   const imageQueue: { [h2Index: number]: { src: string; alt: string }[] } = {};
   let h2Count = 0;
   let currentH2Index = -1;
@@ -149,14 +157,14 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
                 <div className="craft-label">Related Articles</div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 border-2 border-brand-900 bg-brand-900 gap-[2px] mt-4">
                   {(block.articles ?? []).map(a => {
-                    const fullArticle = blogArticles.find(art => art.slug === a.slug);
+                    const featuredImage = a.image || articleImageMap[a.slug];
                     return (
                       <Link key={a.slug} href={`/blog/${a.slug}/`}
                         className="group bg-brand-50 hover:bg-brand-100 flex flex-col transition-colors overflow-hidden">
-                        {fullArticle?.featuredImage && (
+                        {featuredImage && (
                           <div className="relative h-32 overflow-hidden border-b-2 border-brand-900">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src={fullArticle.featuredImage} alt={a.title}
+                            <img src={featuredImage} alt={a.title}
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                               style={{ filter: 'saturate(.8)' }} loading="lazy" />
                           </div>
@@ -187,21 +195,9 @@ function ContentRenderer({ blocks, onOpenModal }: { blocks: ContentBlock[]; onOp
   );
 }
 
-export function BlogArticlePageClient({ params }: { params: { slug: string } }) {
+export function BlogArticlePageClient({ article, relatedService, bottomRelated, serviceList, articleImageMap }: BlogArticlePageClientProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const article = getArticleBySlug(params.slug);
-  if (!article) notFound();
-
-  const relatedService = article.relatedServiceSlug ? services.find(s => s.slug === article.relatedServiceSlug) : null;
   const furtherReading = article.content.filter(b => b.type === 'external-link');
-  const bottomRelated  = blogArticles
-    .filter(a => a.slug !== article.slug)
-    .sort((a, b) => {
-      if (a.category === article.category && b.category !== article.category) return -1;
-      if (b.category === article.category && a.category !== article.category) return 1;
-      return new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime();
-    })
-    .slice(0, 3);
 
   return (
     <>
@@ -211,9 +207,9 @@ export function BlogArticlePageClient({ params }: { params: { slug: string } }) 
 
         {/* Hero */}
         <div className="relative h-[380px] md:h-[480px] overflow-hidden border-b-[3px] border-brand-900">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={article.featuredImage} alt={article.title}
-            className="w-full h-full object-cover" style={{ filter: 'saturate(.7)' }} loading="eager" />
+          <Image src={article.featuredImage} alt={article.title}
+            fill className="object-cover" style={{ filter: 'saturate(.7)' }} priority
+            sizes="100vw" />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-950/95 via-brand-950/50 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 container-width pb-10">
             <Link href="/blog/" className="inline-flex items-center gap-1 font-syne font-bold text-[10px] tracking-[.15em] uppercase text-brand-400 mb-4 hover:text-brand-200 transition-colors">
@@ -240,7 +236,7 @@ export function BlogArticlePageClient({ params }: { params: { slug: string } }) 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
 
             <article className="lg:col-span-2">
-              <ContentRenderer blocks={article.content} onOpenModal={() => setIsModalOpen(true)} />
+              <ContentRenderer blocks={article.content} onOpenModal={() => setIsModalOpen(true)} articleImageMap={articleImageMap} />
             </article>
 
             {/* Sidebar */}
@@ -269,7 +265,7 @@ export function BlogArticlePageClient({ params }: { params: { slug: string } }) 
                 <div className="border-2 border-brand-200 p-5 bg-brand-50">
                   <div className="craft-label">Our Services</div>
                   <ul className="space-y-1">
-                    {services.map(service => (
+                    {serviceList.map(service => (
                       <li key={service.slug}>
                         <Link href={`/services/${service.slug}/`}
                           className="block py-2 border-b border-brand-100 last:border-0 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-600 hover:text-brand-500 transition-colors">

@@ -1,11 +1,20 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getServiceBySlug } from '@/data/services';
-import { getCityBySlug } from '@/data/locations';
+import { services, getServiceBySlug } from '@/data/services';
+import { LOCATIONS, toSlug, getCityBySlug } from '@/data/locations';
 import { siteConfig } from '@/data/site';
 import { ServiceLocationPageClient } from './ServiceLocationPageClient';
+import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 interface Props { params: { serviceSlug: string; locationSlug: string } }
+
+export function generateStaticParams() {
+  const allCities = Object.values(LOCATIONS).flat();
+  const residentialServices = services.filter(s => s.slug !== 'commercial-gates');
+  return residentialServices.flatMap(s =>
+    allCities.map(city => ({ serviceSlug: s.slug, locationSlug: toSlug(city) }))
+  );
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service  = getServiceBySlug(params.serviceSlug);
@@ -59,10 +68,17 @@ export default function ServiceLocationPage({ params }: Props) {
     })),
   } : null;
 
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Services', href: '/services/' },
+    { name: service.title, href: `/services/${params.serviceSlug}/` },
+    { name: cityName, href: `/services/${params.serviceSlug}/${params.locationSlug}/` },
+  ]);
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <ServiceLocationPageClient params={params} />
     </>
   );

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 interface HeroProps {
@@ -68,13 +69,14 @@ export function Hero({ title, subtitle, image, showCta = true, showTrust = true,
 
       {/* Image side */}
       <div className="relative overflow-hidden bg-brand-200 min-h-[280px] lg:min-h-0">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+        <Image
           src={image}
           alt=""
-          className="w-full h-full object-cover"
+          fill
+          className="object-cover"
           style={{ filter: 'saturate(.85)' }}
-          loading="eager"
+          priority
+          sizes="(max-width: 1024px) 100vw, 480px"
         />
         {/* Label */}
         <div className="absolute top-0 left-0 bg-brand-900 px-4 py-2 font-syne font-bold text-[9.5px] tracking-[.2em] uppercase text-brand-400">

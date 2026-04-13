@@ -1,10 +1,15 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { getGuideBySlug } from '@/data/guides';
+import { guides, getGuideBySlug } from '@/data/guides';
 import { siteConfig } from '@/data/site';
 import { GuidePageClient } from './GuidePageClient';
+import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 interface Props { params: { slug: string } }
+
+export function generateStaticParams() {
+  return guides.map(g => ({ slug: g.slug }));
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const guide = getGuideBySlug(params.slug);
@@ -23,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'article',
       siteName: siteConfig.name,
       locale: 'en_GB',
-      images: [{ url: guide.featuredImage, width: 1200, height: 630, alt: guide.title }],
+      images: [{ url: guide.featuredImage.startsWith('http') ? guide.featuredImage : `${siteConfig.url}${guide.featuredImage}`, width: 1200, height: 630, alt: guide.title }],
       publishedTime: guide.publishDate,
     },
     twitter: { card: 'summary_large_image', title: guide.title, description: guide.metaDescription },
@@ -44,7 +49,7 @@ export default function GuidePage({ params }: Props) {
     dateModified: guide.publishDate,
     image: {
       '@type': 'ImageObject',
-      url: guide.featuredImage,
+      url: guide.featuredImage.startsWith('http') ? guide.featuredImage : `${siteConfig.url}${guide.featuredImage}`,
       width: 1200,
       height: 630,
     },
@@ -80,10 +85,16 @@ export default function GuidePage({ params }: Props) {
     })),
   } : null;
 
+  const breadcrumbSchema = buildBreadcrumbSchema([
+    { name: 'Guides', href: '/guides/' },
+    { name: guide.title, href: `/guides/${guide.slug}/` },
+  ]);
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <GuidePageClient params={params} />
     </>
   );
