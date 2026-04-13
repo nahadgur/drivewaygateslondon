@@ -38,7 +38,11 @@
       "Bash(find \"/Users/nealdougan/drivewaygateslondon/public/images\" -type f -exec file {} \\\\;)",
       "Bash(file \"/Users/nealdougan/drivewaygateslondon/public/images/gates\"/*)",
       "Bash(node -e \"try { require\\('next/font/google'\\); console.log\\('OK'\\); } catch\\(e\\) { console.log\\(e.message\\); }\")",
-      "Bash(node -e \"const f = require\\('/Users/nealdougan/drivewaygateslondon/node_modules/next/font/google/index.js'\\); console.log\\(typeof f.Fraunces\\)\")"
+      "Bash(node -e \"const f = require\\('/Users/nealdougan/drivewaygateslondon/node_modules/next/font/google/index.js'\\); console.log\\(typeof f.Fraunces\\)\")",
+      "Bash(node -e ':*)",
+      "Bash(cat)",
+      "Read(//tmp/**)",
+      "Bash(npx tsx -e ':*)"
     ]
   }
 }
