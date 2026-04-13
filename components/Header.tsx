@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { X, ChevronDown, Shield, FileText, Building2, Camera, Hash, Phone, Zap, BookOpen } from 'lucide-react';
@@ -34,16 +34,60 @@ const RESIDENTIAL_SERVICES = services.filter(s => s.slug !== 'commercial-gates')
 export function Header({ onOpenModal }: HeaderProps) {
   const [mobileOpen, setMobileOpen]       = useState(false);
   const [mobileSection, setMobileSection] = useState<string | null>(null);
+  const [openDropdown, setOpenDropdown]   = useState<string | null>(null);
+  const navRef = useRef<HTMLElement>(null);
   const pathname = usePathname();
 
-  useEffect(() => { setMobileOpen(false); setMobileSection(null); }, [pathname]);
+  useEffect(() => { setMobileOpen(false); setMobileSection(null); setOpenDropdown(null); }, [pathname]);
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? 'hidden' : '';
     return () => { document.body.style.overflow = ''; };
   }, [mobileOpen]);
 
+  // Close desktop dropdown on click outside
+  useEffect(() => {
+    if (!openDropdown) return;
+    const handleClick = (e: MouseEvent) => {
+      if (navRef.current && !navRef.current.contains(e.target as Node)) setOpenDropdown(null);
+    };
+    document.addEventListener('mousedown', handleClick);
+    return () => document.removeEventListener('mousedown', handleClick);
+  }, [openDropdown]);
+
+  // Close desktop dropdown on Escape
+  useEffect(() => {
+    if (!openDropdown) return;
+    const handleKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpenDropdown(null); };
+    document.addEventListener('keydown', handleKey);
+    return () => document.removeEventListener('keydown', handleKey);
+  }, [openDropdown]);
+
+  const toggleDropdown = useCallback((key: string) =>
+    setOpenDropdown(prev => (prev === key ? null : key)), []);
+
   const toggleSection = (key: string) =>
     setMobileSection(prev => (prev === key ? null : key));
+
+  const dropdownPanelClass = (key: string) =>
+    `absolute top-full left-0 bg-brand-50 border-2 border-brand-900 shadow-xl z-50 transition-all ${
+      openDropdown === key
+        ? 'opacity-100 visible translate-y-0'
+        : 'opacity-0 invisible translate-y-1'
+    }`;
+
+  const isActive = (href: string) => pathname === href || pathname.startsWith(href.replace(/\/$/, '') + '/');
+
+  const navLinkClass = (href: string) =>
+    `px-3.5 py-3 font-syne font-bold text-[12px] tracking-[.06em] uppercase border-r border-brand-200 transition-colors ${
+      isActive(href)
+        ? 'bg-brand-900 text-brand-50'
+        : 'text-brand-800 hover:bg-brand-900 hover:text-brand-50'
+    }`;
+
+  const mobileNavClass = (href: string) =>
+    `py-4 font-syne font-bold text-lg border-b border-brand-800/60 transition-colors ${
+      isActive(href) ? 'text-brand-500' : 'text-brand-100 hover:text-brand-400'
+    }`;
 
   return (
     <>
@@ -75,13 +119,20 @@ export function Header({ onOpenModal }: HeaderProps) {
             </Link>
 
             {/* Desktop nav */}
-            <nav className="hidden lg:flex items-center">
+            <nav ref={navRef} className="hidden lg:flex items-center">
               {/* Gate Types dropdown */}
-              <div className="relative group">
-                <Link href="/services/" className="flex items-center gap-1 px-3.5 py-3 font-syne font-bold text-[12px] tracking-[.06em] uppercase text-brand-800 border-r border-brand-200 hover:bg-brand-900 hover:text-brand-50 transition-colors">
-                  Gate Types <ChevronDown className="w-3 h-3" />
-                </Link>
-                <div className="absolute top-full left-0 w-[480px] bg-brand-50 border-2 border-brand-900 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all translate-y-1 group-hover:translate-y-0 z-50 p-4">
+              <div className="relative"
+                onMouseEnter={() => setOpenDropdown('services')}
+                onMouseLeave={() => setOpenDropdown(null)}>
+                <button
+                  onClick={() => toggleDropdown('services')}
+                  aria-expanded={openDropdown === 'services'}
+                  aria-haspopup="true"
+                  className={navLinkClass('/services/') + ' flex items-center gap-1'}
+                >
+                  Gate Types <ChevronDown className={`w-3 h-3 transition-transform ${openDropdown === 'services' ? 'rotate-180' : ''}`} />
+                </button>
+                <div className={dropdownPanelClass('services') + ' w-[480px] p-4'}>
                   <div className="grid grid-cols-2 gap-0.5">
                     {RESIDENTIAL_SERVICES.map(s => (
                       <Link key={s.id} href={`/services/${s.slug}/`}
@@ -99,11 +150,18 @@ export function Header({ onOpenModal }: HeaderProps) {
               </div>
 
               {/* Access Control dropdown */}
-              <div className="relative group">
-                <button className="flex items-center gap-1 px-3.5 py-3 font-syne font-bold text-[12px] tracking-[.06em] uppercase text-brand-800 border-r border-brand-200 hover:bg-brand-900 hover:text-brand-50 transition-colors">
-                  <Shield className="w-3 h-3" /> Access <ChevronDown className="w-3 h-3" />
+              <div className="relative"
+                onMouseEnter={() => setOpenDropdown('access')}
+                onMouseLeave={() => setOpenDropdown(null)}>
+                <button
+                  onClick={() => toggleDropdown('access')}
+                  aria-expanded={openDropdown === 'access'}
+                  aria-haspopup="true"
+                  className={navLinkClass('/services/access-control/') + ' flex items-center gap-1'}
+                >
+                  <Shield className="w-3 h-3" /> Access <ChevronDown className={`w-3 h-3 transition-transform ${openDropdown === 'access' ? 'rotate-180' : ''}`} />
                 </button>
-                <div className="absolute top-full left-0 w-56 bg-brand-50 border-2 border-brand-900 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all translate-y-1 group-hover:translate-y-0 z-50 p-2">
+                <div className={dropdownPanelClass('access') + ' w-56 p-2'}>
                   <Link href="/services/access-control/" className="block px-3 py-2.5 font-syne font-bold text-[11px] tracking-[.06em] uppercase text-brand-500 hover:bg-brand-900 hover:text-brand-50 transition-colors mb-1">
                     All Access Control →
                   </Link>
@@ -118,11 +176,18 @@ export function Header({ onOpenModal }: HeaderProps) {
               </div>
 
               {/* Commercial dropdown */}
-              <div className="relative group">
-                <button className="flex items-center gap-1 px-3.5 py-3 font-syne font-bold text-[12px] tracking-[.06em] uppercase text-brand-800 border-r border-brand-200 hover:bg-brand-900 hover:text-brand-50 transition-colors">
-                  <Building2 className="w-3 h-3" /> Commercial <ChevronDown className="w-3 h-3" />
+              <div className="relative"
+                onMouseEnter={() => setOpenDropdown('commercial')}
+                onMouseLeave={() => setOpenDropdown(null)}>
+                <button
+                  onClick={() => toggleDropdown('commercial')}
+                  aria-expanded={openDropdown === 'commercial'}
+                  aria-haspopup="true"
+                  className={navLinkClass('/commercial/') + ' flex items-center gap-1'}
+                >
+                  <Building2 className="w-3 h-3" /> Commercial <ChevronDown className={`w-3 h-3 transition-transform ${openDropdown === 'commercial' ? 'rotate-180' : ''}`} />
                 </button>
-                <div className="absolute top-full left-0 w-56 bg-brand-50 border-2 border-brand-900 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all translate-y-1 group-hover:translate-y-0 z-50 p-2">
+                <div className={dropdownPanelClass('commercial') + ' w-56 p-2'}>
                   <Link href="/commercial/" className="block px-3 py-2.5 font-syne font-bold text-[11px] tracking-[.06em] uppercase text-brand-500 hover:bg-brand-900 hover:text-brand-50 transition-colors mb-1">
                     All Commercial →
                   </Link>
@@ -135,16 +200,16 @@ export function Header({ onOpenModal }: HeaderProps) {
                 </div>
               </div>
 
-              <Link href="/location/" className="px-3.5 py-3 font-syne font-bold text-[12px] tracking-[.06em] uppercase text-brand-800 border-r border-brand-200 hover:bg-brand-900 hover:text-brand-50 transition-colors">
+              <Link href="/location/" className={navLinkClass('/location/')} aria-current={isActive('/location/') ? 'page' : undefined}>
                 Locations
               </Link>
-              <Link href="/local-regulations/" className="flex items-center gap-1 px-3.5 py-3 font-syne font-bold text-[12px] tracking-[.06em] uppercase text-brand-800 border-r border-brand-200 hover:bg-brand-900 hover:text-brand-50 transition-colors">
+              <Link href="/local-regulations/" className={navLinkClass('/local-regulations/') + ' flex items-center gap-1'} aria-current={isActive('/local-regulations/') ? 'page' : undefined}>
                 <FileText className="w-3 h-3" /> Planning
               </Link>
-              <Link href="/guides/" className="flex items-center gap-1 px-3.5 py-3 font-syne font-bold text-[12px] tracking-[.06em] uppercase text-brand-800 border-r border-brand-200 hover:bg-brand-900 hover:text-brand-50 transition-colors">
+              <Link href="/guides/" className={navLinkClass('/guides/') + ' flex items-center gap-1'} aria-current={isActive('/guides/') ? 'page' : undefined}>
                 <BookOpen className="w-3 h-3" /> Guides
               </Link>
-              <Link href="/blog/" className="px-3.5 py-3 font-syne font-bold text-[12px] tracking-[.06em] uppercase text-brand-800 border-r border-brand-200 hover:bg-brand-900 hover:text-brand-50 transition-colors">
+              <Link href="/blog/" className={navLinkClass('/blog/')} aria-current={isActive('/blog/') ? 'page' : undefined}>
                 Blog
               </Link>
 
@@ -183,7 +248,7 @@ export function Header({ onOpenModal }: HeaderProps) {
           <nav className="px-6 py-6 flex flex-col">
             {/* Gate Types */}
             <div className="border-b border-brand-800/60">
-              <button onClick={() => toggleSection('services')} className="w-full flex items-center justify-between py-4 font-syne font-bold text-lg text-brand-100 text-left">
+              <button onClick={() => toggleSection('services')} className={`w-full flex items-center justify-between py-4 font-syne font-bold text-lg text-left ${isActive('/services/') ? 'text-brand-500' : 'text-brand-100'}`}>
                 Gate Types
                 <ChevronDown className={`w-5 h-5 text-brand-500 transition-transform ${mobileSection === 'services' ? 'rotate-180' : ''}`} />
               </button>
@@ -201,7 +266,7 @@ export function Header({ onOpenModal }: HeaderProps) {
 
             {/* Access Control */}
             <div className="border-b border-brand-800/60">
-              <button onClick={() => toggleSection('access')} className="w-full flex items-center justify-between py-4 font-syne font-bold text-lg text-brand-100 text-left">
+              <button onClick={() => toggleSection('access')} className={`w-full flex items-center justify-between py-4 font-syne font-bold text-lg text-left ${isActive('/services/access-control/') ? 'text-brand-500' : 'text-brand-100'}`}>
                 Access Control
                 <ChevronDown className={`w-5 h-5 text-brand-500 transition-transform ${mobileSection === 'access' ? 'rotate-180' : ''}`} />
               </button>
@@ -219,7 +284,7 @@ export function Header({ onOpenModal }: HeaderProps) {
 
             {/* Commercial */}
             <div className="border-b border-brand-800/60">
-              <button onClick={() => toggleSection('commercial')} className="w-full flex items-center justify-between py-4 font-syne font-bold text-lg text-brand-100 text-left">
+              <button onClick={() => toggleSection('commercial')} className={`w-full flex items-center justify-between py-4 font-syne font-bold text-lg text-left ${isActive('/commercial/') ? 'text-brand-500' : 'text-brand-100'}`}>
                 Commercial
                 <ChevronDown className={`w-5 h-5 text-brand-500 transition-transform ${mobileSection === 'commercial' ? 'rotate-180' : ''}`} />
               </button>
@@ -235,10 +300,10 @@ export function Header({ onOpenModal }: HeaderProps) {
               )}
             </div>
 
-            <Link href="/location/"          className="py-4 font-syne font-bold text-lg text-brand-100 border-b border-brand-800/60 hover:text-brand-400 transition-colors">Locations</Link>
-            <Link href="/local-regulations/" className="py-4 font-syne font-bold text-lg text-brand-100 border-b border-brand-800/60 hover:text-brand-400 transition-colors">Planning Guides</Link>
-            <Link href="/guides/"            className="py-4 font-syne font-bold text-lg text-brand-100 border-b border-brand-800/60 hover:text-brand-400 transition-colors">Gate Guides</Link>
-            <Link href="/blog/"              className="py-4 font-syne font-bold text-lg text-brand-100 border-b border-brand-800/60 hover:text-brand-400 transition-colors">Blog</Link>
+            <Link href="/location/"          className={mobileNavClass('/location/')} aria-current={isActive('/location/') ? 'page' : undefined}>Locations</Link>
+            <Link href="/local-regulations/" className={mobileNavClass('/local-regulations/')} aria-current={isActive('/local-regulations/') ? 'page' : undefined}>Planning Guides</Link>
+            <Link href="/guides/"            className={mobileNavClass('/guides/')} aria-current={isActive('/guides/') ? 'page' : undefined}>Gate Guides</Link>
+            <Link href="/blog/"              className={mobileNavClass('/blog/')} aria-current={isActive('/blog/') ? 'page' : undefined}>Blog</Link>
 
             <button
               onClick={() => { onOpenModal?.(); setMobileOpen(false); }}

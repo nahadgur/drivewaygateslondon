@@ -33,7 +33,7 @@ export default function GuidesHubPage() {
             <Breadcrumbs items={[{ label: 'Guides' }]} />
             <div className="max-w-3xl mt-6">
               <h1 className="font-syne font-extrabold uppercase tracking-tight text-white mb-5"
-                style={{ fontSize: 'clamp(28px, 4vw, 52px)', lineHeight: 1.02, letterSpacing: '-.02em' }}>
+                style={{ fontSize: 'clamp(24px, 4vw, 40px)', lineHeight: 1.02, letterSpacing: '-.02em' }}>
                 The Complete Driveway<br /><span className="text-brand-500">Gate Guide Hub</span>
               </h1>
               <p className="text-brand-300 text-lg leading-relaxed">

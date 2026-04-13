@@ -225,7 +225,7 @@ export function BlogArticlePageClient({ article, relatedService, bottomRelated, 
               </span>
             </div>
             <h1 className="font-syne font-extrabold uppercase tracking-tight text-white max-w-4xl leading-tight"
-              style={{ fontSize: 'clamp(22px, 3.5vw, 42px)', letterSpacing: '-.02em' }}>
+              style={{ fontSize: 'clamp(24px, 4vw, 40px)', letterSpacing: '-.02em' }}>
               {article.title}
             </h1>
           </div>

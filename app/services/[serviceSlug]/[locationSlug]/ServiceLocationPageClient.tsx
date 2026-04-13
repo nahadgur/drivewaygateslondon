@@ -42,7 +42,7 @@ export function ServiceLocationPageClient({ params }: { params: { serviceSlug: s
               <MapPin className="w-3 h-3" /> Vetted Installers in {cityName}
             </div>
             <h1 className="font-syne font-extrabold uppercase tracking-tight text-brand-900 mb-5"
-              style={{ fontSize: 'clamp(26px, 3.8vw, 50px)', lineHeight: 1.02, letterSpacing: '-.025em' }}>
+              style={{ fontSize: 'clamp(24px, 4vw, 40px)', lineHeight: 1.02, letterSpacing: '-.025em' }}>
               {service.title} in {cityName}
             </h1>
             <p className="text-brand-700 mb-10 max-w-lg leading-relaxed" style={{ fontSize: 'clamp(15px, 1.5vw, 17px)' }}>

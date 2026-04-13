@@ -20,7 +20,7 @@ export function Hero({ title, subtitle, image, showCta = true, showTrust = true,
 
         <h1
           className="font-syne font-extrabold uppercase tracking-tight text-brand-900 mb-5"
-          style={{ fontSize: 'clamp(30px, 4.5vw, 60px)', lineHeight: 1.02, letterSpacing: '-.025em' }}
+          style={{ fontSize: 'clamp(24px, 4vw, 40px)', lineHeight: 1.02, letterSpacing: '-.025em' }}
         >
           {title.split(',')[0]}
           {title.includes(',') && (
@@ -71,7 +71,7 @@ export function Hero({ title, subtitle, image, showCta = true, showTrust = true,
       <div className="relative overflow-hidden bg-brand-200 min-h-[280px] lg:min-h-0">
         <Image
           src={image}
-          alt=""
+          alt={title}
           fill
           className="object-cover"
           style={{ filter: 'saturate(.85)' }}

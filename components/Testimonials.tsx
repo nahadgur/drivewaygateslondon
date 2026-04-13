@@ -10,8 +10,8 @@ export function Testimonials({ limit = 3, className }: { limit?: number; classNa
     )}>
       {items.map(t => (
         <div key={t.id} className="testi-card">
-          <div className="text-brand-500 text-sm tracking-[1.5px] mb-3">
-            {'★'.repeat(t.rating)}
+          <div className="text-brand-500 text-sm tracking-[1.5px] mb-3" role="img" aria-label={`${t.rating} out of 5 stars`}>
+            <span aria-hidden="true">{'★'.repeat(t.rating)}</span>
           </div>
           <p className="text-brand-700 text-sm leading-relaxed italic mb-5">
             &ldquo;{t.text}&rdquo;

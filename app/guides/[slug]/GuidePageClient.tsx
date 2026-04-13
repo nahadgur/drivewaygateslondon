@@ -52,7 +52,7 @@ export function GuidePageClient({ params }: { params: { slug: string } }) {
               </span>
             </div>
             <h1 className="font-syne font-extrabold uppercase tracking-tight text-white max-w-4xl leading-tight"
-              style={{ fontSize: 'clamp(24px, 4vw, 44px)', letterSpacing: '-.02em' }}>
+              style={{ fontSize: 'clamp(24px, 4vw, 40px)', letterSpacing: '-.02em' }}>
               {guide.title}
             </h1>
           </div>

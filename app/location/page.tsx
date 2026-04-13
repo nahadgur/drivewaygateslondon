@@ -32,7 +32,7 @@ export default function LocationIndexPage() {
       <Header onOpenModal={() => setIsModalOpen(true)} />
       <main>
         <Hero
-          title="Find Gate Installers in Your Area"
+          title="Find Driveway Gate Installers in Your Area"
           subtitle="Access London's most trusted network of driveway gate specialists. Vetted for experience, verified for quality."
           image="/images/gates/gate-wrought-iron-open-spring-avenue.png"
           onOpenModal={() => setIsModalOpen(true)}
@@ -46,6 +46,7 @@ export default function LocationIndexPage() {
               <div className="relative">
                 <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-brand-400 w-4 h-4" />
                 <input type="text" placeholder="Search your area or borough..."
+                  aria-label="Search London areas"
                   value={searchQuery} onChange={e => setSearchQuery(e.target.value)}
                   className="w-full pl-11 pr-4 py-3 border-2 border-brand-200 bg-brand-50 text-brand-900 text-sm focus:outline-none focus:border-brand-500 transition" />
               </div>
@@ -53,20 +54,37 @@ export default function LocationIndexPage() {
 
             {/* Regions */}
             <div className="space-y-14">
-              {Object.entries(filteredLocations).map(([region, cities]) => (
-                <div key={region}>
-                  <div className="craft-label">{region}</div>
-                  <h2 className="font-syne font-bold text-lg uppercase tracking-tight text-brand-900 mb-5">{region}</h2>
-                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 border-2 border-brand-900 bg-brand-200 gap-[1px]">
-                    {cities.map(city => (
-                      <Link key={city} href={`/location/${toSlug(city)}/`} className="loc-chip">
-                        <span className="w-1.5 h-1.5 rounded-full bg-brand-500 flex-shrink-0" />
-                        {city}
-                      </Link>
-                    ))}
+              {Object.entries(filteredLocations).length > 0 ? (
+                Object.entries(filteredLocations).map(([region, cities]) => (
+                  <div key={region}>
+                    <div className="craft-label">{region}</div>
+                    <h2 className="font-syne font-bold text-lg uppercase tracking-tight text-brand-900 mb-5">{region}</h2>
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 border-2 border-brand-900 bg-brand-200 gap-[1px]">
+                      {cities.map(city => (
+                        <Link key={city} href={`/location/${toSlug(city)}/`} className="loc-chip">
+                          <span className="w-1.5 h-1.5 rounded-full bg-brand-500 flex-shrink-0" />
+                          {city}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
+                ))
+              ) : (
+                <div className="border-2 border-brand-200 bg-brand-50 px-8 py-12 text-center">
+                  <p className="font-syne font-bold text-sm uppercase tracking-tight text-brand-900 mb-2">
+                    No areas match &ldquo;{searchQuery}&rdquo;
+                  </p>
+                  <p className="text-brand-600 text-sm mb-5">
+                    We cover all 32 London boroughs and 114 areas. Try a different search term or browse all locations.
+                  </p>
+                  <button
+                    onClick={() => setSearchQuery('')}
+                    className="btn-secondary !text-[11px] !py-2.5 !px-6"
+                  >
+                    Clear search
+                  </button>
                 </div>
-              ))}
+              )}
             </div>
           </div>
         </section>

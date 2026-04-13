@@ -163,15 +163,12 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="py-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-[12px] text-brand-700">
+        <div className="py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-[12px] text-brand-700">
           <p>&copy; {new Date().getFullYear()} {siteConfig.name}. Matching service — not a gate installer.</p>
-          <div className="flex gap-5">
-            <Link href="/sitemap.xml"              className="hover:text-brand-400 transition-colors">Sitemap</Link>
-            <Link href="/services/"                className="hover:text-brand-400 transition-colors">Gate Types</Link>
-            <Link href="/services/access-control/" className="hover:text-brand-400 transition-colors">Access Control</Link>
-            <Link href="/commercial/"              className="hover:text-brand-400 transition-colors">Commercial</Link>
-            <Link href="/guides/"                  className="hover:text-brand-400 transition-colors">Guides</Link>
-            <Link href="/location/"                className="hover:text-brand-400 transition-colors">Locations</Link>
+          <div className="flex flex-wrap justify-center gap-x-5 gap-y-2">
+            <Link href="/privacy-policy/"  className="hover:text-brand-400 transition-colors">Privacy Policy</Link>
+            <Link href="/terms/"           className="hover:text-brand-400 transition-colors">Terms of Service</Link>
+            <Link href="/sitemap.xml"      className="hover:text-brand-400 transition-colors">Sitemap</Link>
           </div>
         </div>
       </div>

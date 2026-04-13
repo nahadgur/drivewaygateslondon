@@ -65,7 +65,7 @@ export function ServicePageClient({ params }: { params: { serviceSlug: string } 
               <Breadcrumbs items={[{ label: 'Gate Types', href: '/services/' }, { label: service.title }]} />
             </div>
             <h1 className="font-syne font-extrabold uppercase tracking-tight text-brand-900 mb-5"
-              style={{ fontSize: 'clamp(28px, 4vw, 54px)', lineHeight: 1.02, letterSpacing: '-.025em' }}>
+              style={{ fontSize: 'clamp(24px, 4vw, 40px)', lineHeight: 1.02, letterSpacing: '-.025em' }}>
               {service.title}
             </h1>
             <p className="text-brand-700 mb-10 max-w-lg leading-relaxed" style={{ fontSize: 'clamp(15px, 1.5vw, 17px)' }}>
@@ -161,6 +161,7 @@ export function ServicePageClient({ params }: { params: { serviceSlug: string } 
                   <div className="relative">
                     <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-brand-400 w-4 h-4" />
                     <input type="text" placeholder="Search your area..."
+                      aria-label="Search London areas"
                       value={searchQuery}
                       onChange={e => { setSearchQuery(e.target.value); if (!showLocations) setShowLocations(true); }}
                       className="w-full pl-11 pr-4 py-3 border-2 border-brand-200 bg-brand-50 text-brand-900 text-sm focus:outline-none focus:border-brand-500 transition" />
@@ -168,20 +169,37 @@ export function ServicePageClient({ params }: { params: { serviceSlug: string } 
                 </div>
                 {showLocations && (
                   <div className="space-y-8 pb-4">
-                    {Object.entries(filteredLocations).map(([region, cities]) => (
-                      <div key={region}>
-                        <h3 className="font-syne font-bold text-[11px] tracking-[.12em] uppercase text-brand-600 mb-3">{region}</h3>
-                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 border-2 border-brand-900 bg-brand-200 gap-[1px]">
-                          {cities.map(city => (
-                            <Link key={city} href={`/services/${service.slug}/${toSlug(city)}/`}
-                              className="bg-brand-50 px-3 py-2 font-syne font-bold text-[11px] tracking-[.03em] uppercase text-brand-700 hover:bg-brand-900 hover:text-brand-50 transition-colors flex items-center gap-1.5">
-                              <MapPin className="w-2.5 h-2.5 text-brand-500 flex-shrink-0" />
-                              <span className="truncate">{city}</span>
-                            </Link>
-                          ))}
+                    {Object.entries(filteredLocations).length > 0 ? (
+                      Object.entries(filteredLocations).map(([region, cities]) => (
+                        <div key={region}>
+                          <h3 className="font-syne font-bold text-[11px] tracking-[.12em] uppercase text-brand-600 mb-3">{region}</h3>
+                          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 border-2 border-brand-900 bg-brand-200 gap-[1px]">
+                            {cities.map(city => (
+                              <Link key={city} href={`/services/${service.slug}/${toSlug(city)}/`}
+                                className="bg-brand-50 px-3 py-2 font-syne font-bold text-[11px] tracking-[.03em] uppercase text-brand-700 hover:bg-brand-900 hover:text-brand-50 transition-colors flex items-center gap-1.5">
+                                <MapPin className="w-2.5 h-2.5 text-brand-500 flex-shrink-0" />
+                                <span className="truncate">{city}</span>
+                              </Link>
+                            ))}
+                          </div>
                         </div>
+                      ))
+                    ) : (
+                      <div className="border-2 border-brand-200 bg-brand-50 px-6 py-8 text-center">
+                        <p className="font-syne font-bold text-sm uppercase tracking-tight text-brand-900 mb-2">
+                          No areas match &ldquo;{searchQuery}&rdquo;
+                        </p>
+                        <p className="text-brand-600 text-sm mb-5">
+                          We cover all of Greater London. Try a different search term or browse all areas.
+                        </p>
+                        <button
+                          onClick={() => setSearchQuery('')}
+                          className="btn-secondary !text-[11px] !py-2.5 !px-6"
+                        >
+                          Clear search
+                        </button>
                       </div>
-                    ))}
+                    )}
                   </div>
                 )}
                 {!showLocations && (

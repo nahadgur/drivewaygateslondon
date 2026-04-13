@@ -39,7 +39,7 @@ export function CommercialPageClient({ params }: { params: { slug: string } }) {
                   <Building2 className="w-3 h-3" /> Commercial Gate Systems
                 </div>
                 <h1 className="font-syne font-extrabold uppercase tracking-tight text-white mb-5"
-                  style={{ fontSize: 'clamp(26px, 4vw, 50px)', lineHeight: 1.02, letterSpacing: '-.02em' }}>
+                  style={{ fontSize: 'clamp(24px, 4vw, 40px)', lineHeight: 1.02, letterSpacing: '-.02em' }}>
                   {service.title}
                 </h1>
                 <p className="text-brand-300 text-lg leading-relaxed mb-8">{service.description}</p>

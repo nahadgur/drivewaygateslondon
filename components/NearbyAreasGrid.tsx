@@ -1,8 +1,10 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { ChevronDown } from 'lucide-react';
 import { getNearbyAreas } from '@/data/nearby-areas';
+import { toSlug, getCityBySlug } from '@/data/locations';
 
 interface NearbyAreasGridProps {
   cityName: string; serviceSlug?: string; serviceName?: string; initialVisible?: number;
@@ -31,12 +33,29 @@ export function NearbyAreasGrid({ cityName, serviceSlug, serviceName, initialVis
       <p className="text-brand-600 text-sm mb-6 leading-relaxed">{description}</p>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 border-2 border-brand-900 bg-brand-200 gap-[1px]">
-        {visibleAreas.map(area => (
-          <div key={area}
-            className="bg-brand-50 px-3 py-2.5 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-800 hover:bg-brand-900 hover:text-brand-50 transition-colors cursor-default">
-            {serviceName ? area : `Gates ${area}`}
-          </div>
-        ))}
+        {visibleAreas.map(area => {
+          const hasPage = !!getCityBySlug(toSlug(area));
+          const label = serviceName ? area : `Gates ${area}`;
+
+          if (hasPage) {
+            const href = serviceSlug
+              ? `/services/${serviceSlug}/${toSlug(area)}/`
+              : `/location/${toSlug(area)}/`;
+            return (
+              <Link key={area} href={href}
+                className="bg-brand-50 px-3 py-2.5 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-800 hover:bg-brand-900 hover:text-brand-50 transition-colors">
+                {label}
+              </Link>
+            );
+          }
+
+          return (
+            <div key={area}
+              className="bg-brand-50 px-3 py-2.5 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-600">
+              {label}
+            </div>
+          );
+        })}
       </div>
 
       {hiddenCount > 0 && !showAll && (

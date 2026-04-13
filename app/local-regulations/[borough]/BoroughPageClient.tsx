@@ -37,7 +37,7 @@ export function BoroughPageClient({ params }: { params: { borough: string } }) {
                 <MapPin className="w-3 h-3" /> {borough.name} Planning Guide
               </div>
               <h1 className="font-syne font-extrabold uppercase tracking-tight text-white mb-4"
-                style={{ fontSize: 'clamp(26px, 4vw, 50px)', lineHeight: 1.02, letterSpacing: '-.02em' }}>
+                style={{ fontSize: 'clamp(24px, 4vw, 40px)', lineHeight: 1.02, letterSpacing: '-.02em' }}>
                 Driveway Gate Planning in <span className="text-brand-500">{borough.name}</span>
               </h1>
               <p className="text-brand-300 text-lg leading-relaxed">{borough.intro}</p>

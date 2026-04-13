@@ -39,7 +39,7 @@ export function CityPageClient({ params }: { params: { city: string } }) {
                   <MapPin className="w-3 h-3" /> Vetted Gate Installers in {cityName}
                 </div>
                 <h1 className="font-syne font-extrabold uppercase tracking-tight text-white mb-5"
-                  style={{ fontSize: 'clamp(28px, 4vw, 52px)', lineHeight: 1.02, letterSpacing: '-.02em' }}>
+                  style={{ fontSize: 'clamp(24px, 4vw, 40px)', lineHeight: 1.02, letterSpacing: '-.02em' }}>
                   Driveway Gates in <span className="text-brand-500">{cityName}</span>
                 </h1>
                 <p className="text-brand-300 text-lg leading-relaxed">

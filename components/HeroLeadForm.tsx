@@ -24,6 +24,7 @@ const GOOGLE_SCRIPT_URL =
 export function HeroLeadForm({ city, service }: HeroLeadFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess]       = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     fullName: '', phone: '', email: '',
     location: city || '', treatment: service || '',
@@ -35,6 +36,7 @@ export function HeroLeadForm({ city, service }: HeroLeadFormProps) {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setErrorMessage(null);
     try {
       const payload = { ...formData, location: formData.location || city || '',
         treatment: formData.treatment || service || '',
@@ -47,10 +49,11 @@ export function HeroLeadForm({ city, service }: HeroLeadFormProps) {
       setIsSubmitting(false); setIsSuccess(true);
     } catch (err) {
       console.error(err); setIsSubmitting(false);
-      alert('Something went wrong. Please try again.');
+      setErrorMessage('Something went wrong. Please check your details and try again.');
     }
   };
 
+  const labelClass = 'block text-xs font-bold text-brand-600 mb-1';
   const inputClass = 'w-full px-4 py-3 border-2 border-brand-200 bg-brand-50 text-brand-900 placeholder-brand-400 text-sm focus:outline-none focus:border-brand-500 transition font-body';
 
   if (isSuccess) {
@@ -79,24 +82,50 @@ export function HeroLeadForm({ city, service }: HeroLeadFormProps) {
       </div>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-        <div className="relative">
-          <Phone className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-brand-500 pointer-events-none" />
-          <input required name="phone" type="tel" value={formData.phone} onChange={handleChange}
-            placeholder="Your phone number *"
-            className={inputClass + ' pl-10 text-base font-semibold'} autoComplete="tel" />
+        {errorMessage && (
+          <div role="alert" className="flex items-start gap-3 border-2 border-red-300 bg-red-50 px-4 py-3">
+            <span className="text-red-500 text-lg leading-none mt-0.5 font-bold">!</span>
+            <div className="flex-1">
+              <p className="text-red-800 text-sm font-medium">{errorMessage}</p>
+            </div>
+            <button type="button" onClick={() => setErrorMessage(null)} className="text-red-400 hover:text-red-600 transition-colors" aria-label="Dismiss error">
+              <span className="text-lg leading-none">&times;</span>
+            </button>
+          </div>
+        )}
+        <div>
+          <label htmlFor="hero-phone" className={labelClass}>Phone number <span className="text-red-400">*</span></label>
+          <div className="relative">
+            <Phone className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-brand-500 pointer-events-none" />
+            <input id="hero-phone" required name="phone" type="tel" value={formData.phone} onChange={handleChange}
+              placeholder="e.g. 07700 900123"
+              className={inputClass + ' pl-10 text-base font-semibold'} autoComplete="tel" />
+          </div>
         </div>
-        <input required name="fullName" type="text" value={formData.fullName} onChange={handleChange}
-          placeholder="Full Name *" className={inputClass} />
-        <input required name="email" type="email" value={formData.email} onChange={handleChange}
-          placeholder="Email Address *" className={inputClass} />
-        <select required name="treatment" value={formData.treatment} onChange={handleChange}
-          className={inputClass + ' appearance-none cursor-pointer'}>
-          <option value="" disabled>What type of gate? *</option>
-          {GATE_TYPES.map(t => <option key={t} value={t}>{t}</option>)}
-        </select>
+        <div>
+          <label htmlFor="hero-name" className={labelClass}>Full name <span className="text-red-400">*</span></label>
+          <input id="hero-name" required name="fullName" type="text" value={formData.fullName} onChange={handleChange}
+            placeholder="e.g. James Patterson" className={inputClass} autoComplete="name" />
+        </div>
+        <div>
+          <label htmlFor="hero-email" className={labelClass}>Email address <span className="text-red-400">*</span></label>
+          <input id="hero-email" required name="email" type="email" value={formData.email} onChange={handleChange}
+            placeholder="e.g. james@example.com" className={inputClass} autoComplete="email" />
+        </div>
+        <div>
+          <label htmlFor="hero-gate-type" className={labelClass}>Type of gate <span className="text-red-400">*</span></label>
+          <select id="hero-gate-type" required name="treatment" value={formData.treatment} onChange={handleChange}
+            className={inputClass + ' appearance-none cursor-pointer'}>
+            <option value="" disabled>Select a gate type</option>
+            {GATE_TYPES.map(t => <option key={t} value={t}>{t}</option>)}
+          </select>
+        </div>
         {!city && (
-          <input required name="location" type="text" value={formData.location} onChange={handleChange}
-            placeholder="Your London area or postcode *" className={inputClass} />
+          <div>
+            <label htmlFor="hero-location" className={labelClass}>Your area or postcode <span className="text-red-400">*</span></label>
+            <input id="hero-location" required name="location" type="text" value={formData.location} onChange={handleChange}
+              placeholder="e.g. Barnet or N11" className={inputClass} />
+          </div>
         )}
         <button disabled={isSubmitting} type="submit"
           className="w-full bg-brand-900 hover:bg-brand-500 disabled:opacity-60 text-brand-50 font-syne font-bold py-3.5 px-6 transition-colors text-sm tracking-[.1em] uppercase mt-1">

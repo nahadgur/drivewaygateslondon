@@ -36,7 +36,7 @@ export function AccessControlPageClient({ params }: { params: { subSlug: string 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mt-6">
               <div>
                 <h1 className="font-syne font-extrabold uppercase tracking-tight text-white mb-5"
-                  style={{ fontSize: 'clamp(26px, 4vw, 50px)', lineHeight: 1.02, letterSpacing: '-.02em' }}>
+                  style={{ fontSize: 'clamp(24px, 4vw, 40px)', lineHeight: 1.02, letterSpacing: '-.02em' }}>
                   {service.title}
                 </h1>
                 <p className="text-brand-300 text-lg leading-relaxed mb-8">{service.description}</p>
