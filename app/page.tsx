@@ -23,32 +23,35 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  const localBusinessSchema = {
+  const referralServiceSchema = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    name: siteConfig.name,
+    '@type': 'Service',
+    '@id': `${siteConfig.url}/#referral-service`,
+    serviceType: 'Driveway gate installer referral service',
+    name: `${siteConfig.name} — Vetted Gate Installer Referrals`,
+    description: 'Free referral service that matches London homeowners with vetted, independent driveway gate installers. We do not install gates ourselves.',
     url: siteConfig.url,
-    description: siteConfig.description,
-    logo: {
-      '@type': 'ImageObject',
-      url: `${siteConfig.url}/android-chrome-512x512.png`,
-      width: 512,
-      height: 512,
-    },
-    image: {
-      '@type': 'ImageObject',
-      url: `${siteConfig.url}/og-image.jpg`,
-      width: 1200,
-      height: 630,
-    },
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'London',
-      addressCountry: 'GB',
-    },
     areaServed: { '@type': 'City', name: 'London', addressCountry: 'GB' },
-    priceRange: '££',
-    openingHours: 'Mo-Su 08:00-20:00',
+    provider: {
+      '@type': 'Organization',
+      '@id': `${siteConfig.url}/#organization`,
+      name: siteConfig.name,
+      url: siteConfig.url,
+      logo: `${siteConfig.url}/android-chrome-512x512.png`,
+    },
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'GBP',
+      description: 'Free matching service — no obligation, no fee to the homeowner.',
+      availability: 'https://schema.org/InStock',
+    },
+    hoursAvailable: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+      opens: '08:00',
+      closes: '20:00',
+    },
   };
 
   const faqSchema = {
@@ -63,7 +66,7 @@ export default function HomePage() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(referralServiceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <HomePageClient />
     </>

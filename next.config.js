@@ -24,6 +24,13 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Force canonical host: non-www → www (single 308 hop, HTTPS)
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'drivewaygateslondon.co.uk' }],
+        destination: 'https://www.drivewaygateslondon.co.uk/:path*',
+        permanent: true,
+      },
       { source: '/blog/bi-fold-vs-sliding-gates-and-which-system-works-best-for-short-london-driveways/', destination: '/blog/bi-fold-vs-sliding-gates-london/', permanent: true },
       { source: '/blog/the-no-swing-solution-and-how-telescopic-gates-save-space-in-tight-front-gardens/', destination: '/blog/telescopic-gates-space-saving-london/', permanent: true },
       { source: '/blog/sloping-driveways-and-how-to-install-automated-gates-on-uneven-london-terrain/', destination: '/blog/automated-gates-sloping-driveways-london/', permanent: true },

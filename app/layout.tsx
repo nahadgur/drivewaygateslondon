@@ -82,6 +82,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": `${siteConfig.url}/#organization`,
     name: siteConfig.name,
     url: siteConfig.url,
     logo: {
@@ -90,11 +91,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       width: 512,
       height: 512,
     },
-    description: siteConfig.description,
+    description: "Free referral service that matches London homeowners with vetted, independent driveway gate installers. We do not install gates ourselves.",
     areaServed: { "@type": "City", name: "London", addressCountry: "GB" },
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",
+      email: "hello@drivewaygateslondon.co.uk",
+      url: `${siteConfig.url}/contact/`,
       availableLanguage: "English",
       areaServed: "GB",
     },

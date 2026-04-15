@@ -42,25 +42,29 @@ export default function CityPage({ params }: Props) {
 
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    name: siteConfig.name,
-    description: `Find vetted driveway gate installers in ${cityName}, London. Compare free quotes for electric sliding gates, swing gates, wooden gates, metal gates, and automation.`,
+    '@type': 'Service',
+    serviceType: 'Driveway gate installer referral service',
+    name: `Driveway Gate Installer Referrals in ${cityName}`,
+    description: `Free referral service matching homeowners in ${cityName}, London with vetted, independent driveway gate installers. We do not install gates ourselves.`,
     url: `${siteConfig.url}/location/${params.city}/`,
-    image: {
-      '@type': 'ImageObject',
-      url: `${siteConfig.url}/og-image.jpg`,
-      width: 1200,
-      height: 630,
+    image: `${siteConfig.url}/og-image.jpg`,
+    areaServed: {
+      '@type': 'City',
+      name: cityName,
+      containedInPlace: { '@type': 'City', name: 'London', addressCountry: 'GB' },
     },
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: cityName,
-      addressRegion: 'London',
-      addressCountry: 'GB',
+    provider: {
+      '@type': 'Organization',
+      '@id': `${siteConfig.url}/#organization`,
+      name: siteConfig.name,
+      url: siteConfig.url,
     },
-    areaServed: { '@type': 'City', name: cityName, addressCountry: 'GB' },
-    priceRange: '££',
-    openingHours: 'Mo-Su 08:00-20:00',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'GBP',
+      description: 'Free matching service — no obligation, no fee to the homeowner.',
+    },
   };
 
   const breadcrumbSchema = buildBreadcrumbSchema([

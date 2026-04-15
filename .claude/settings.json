@@ -48,7 +48,27 @@
       "Bash(sed -i '' \"s/clamp\\(28px, 4vw, 52px\\)/clamp\\(24px, 4vw, 40px\\)/g\" app/guides/page.tsx)",
       "Bash(sed -i '' \"s/clamp\\(28px, 4vw, 52px\\)/clamp\\(24px, 4vw, 40px\\)/g\" app/blog/page.tsx)",
       "Bash(sed -i '' \"s/clamp\\(26px, 3.8vw, 50px\\)/clamp\\(24px, 4vw, 40px\\)/g\" \"app/services/[serviceSlug]/[locationSlug]/ServiceLocationPageClient.tsx\")",
-      "Bash(grep -r \"className\\\\|aria-label\\\\|alt=\" /Users/nealdougan/drivewaygateslondon/components/*.tsx)"
+      "Bash(grep -r \"className\\\\|aria-label\\\\|alt=\" /Users/nealdougan/drivewaygateslondon/components/*.tsx)",
+      "Bash(curl -s -o /tmp/dgl_homepage.html -w \"%{http_code}|%{redirect_url}|%{ssl_verify_result}|%{time_total}\" \"https://www.drivewaygateslondon.co.uk/\")",
+      "Bash(curl -s -o /tmp/dgl_robots.txt \"https://www.drivewaygateslondon.co.uk/robots.txt\")",
+      "Bash(curl -sI \"https://www.drivewaygateslondon.co.uk/\")",
+      "Read(//private/tmp/**)",
+      "Bash(curl -s \"https://www.drivewaygateslondon.co.uk/sitemap.xml\")",
+      "Bash(curl -sI \"http://drivewaygateslondon.co.uk/\")",
+      "Bash(python scripts/pagespeed_check.py https://www.drivewaygateslondon.co.uk/ --json)",
+      "Bash(python scripts/crux_history.py https://www.drivewaygateslondon.co.uk/ --json)",
+      "Bash(curl -sIL \"http://drivewaygateslondon.co.uk/\")",
+      "Bash(curl -sI \"https://drivewaygateslondon.co.uk/\")",
+      "Bash(curl -s \"https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https://www.drivewaygateslondon.co.uk/&strategy=mobile\")",
+      "Bash(curl -s \"https://www.drivewaygateslondon.co.uk/\")",
+      "Bash(curl -s -o /dev/null -w \"TTFB: %{time_starttransfer}s\\\\nTotal: %{time_total}s\\\\nSize: %{size_download} bytes\\\\nHTTP: %{http_code}\\\\n\" \"https://www.drivewaygateslondon.co.uk/\")",
+      "Bash(curl -s -o /dev/null -w \"Hero image size: %{size_download} bytes, HTTP: %{http_code}\\\\n\" \"https://www.drivewaygateslondon.co.uk/images/gates/gate-wrought-iron-open-misty-morning-manor.png\")",
+      "Bash(curl -s -o /dev/null -w \"Optimized hero size: %{size_download} bytes, content-type: %{content_type}\\\\n\" \"https://www.drivewaygateslondon.co.uk/_next/image/?url=%2Fimages%2Fgates%2Fgate-wrought-iron-open-misty-morning-manor.png&w=1200&q=75\")",
+      "Bash(curl -s -o /dev/null -w '__TRACKED_VAR__: %{size_download} bytes\\\\n' https://www.drivewaygateslondon.co.uk/images/gates/__TRACKED_VAR__.png)",
+      "Bash(npx tsc:*)",
+      "Bash(curl -sI https://www.drivewaygateslondon.co.uk/sitemap.xml)",
+      "Bash(curl -sI https://drivewaygateslondon.co.uk/)",
+      "Bash(curl -sI http://drivewaygateslondon.co.uk/)"
     ]
   }
 }
