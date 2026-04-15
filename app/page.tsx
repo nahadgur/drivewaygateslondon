@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { siteConfig, HOMEPAGE_FAQS } from '@/data/site';
+import { LONDON_BOROUGHS, LONDON_GEO } from '@/data/boroughs';
 import { HomePageClient } from './HomePageClient';
 
 export const metadata: Metadata = {
@@ -31,7 +32,19 @@ export default function HomePage() {
     name: `${siteConfig.name} — Vetted Gate Installer Referrals`,
     description: 'Free referral service that matches London homeowners with vetted, independent driveway gate installers. We do not install gates ourselves.',
     url: siteConfig.url,
-    areaServed: { '@type': 'City', name: 'London', addressCountry: 'GB' },
+    areaServed: [
+      { '@type': 'City', name: 'London', addressCountry: 'GB' },
+      ...LONDON_BOROUGHS.map(borough => ({
+        '@type': 'AdministrativeArea' as const,
+        name: borough,
+        containedInPlace: { '@type': 'City', name: 'London', addressCountry: 'GB' },
+      })),
+    ],
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: LONDON_GEO.latitude,
+      longitude: LONDON_GEO.longitude,
+    },
     provider: {
       '@type': 'Organization',
       '@id': `${siteConfig.url}/#organization`,

@@ -80,14 +80,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const guidePages: MetadataRoute.Sitemap = guides.map(g => ({
     url: `${base}/guides/${g.slug}/`,
-    lastModified: new Date(g.publishDate),
+    lastModified: new Date(g.updatedDate ?? g.publishDate),
     changeFrequency: 'monthly' as const,
     priority: 0.6,
   }));
 
   const blogPages: MetadataRoute.Sitemap = blogArticles.map(a => ({
     url: `${base}/blog/${a.slug}/`,
-    lastModified: new Date(a.publishDate),
+    lastModified: new Date(a.updatedDate ?? a.publishDate),
     changeFrequency: 'monthly' as const,
     priority: 0.6,
   }));

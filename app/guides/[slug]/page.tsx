@@ -46,7 +46,7 @@ export default function GuidePage({ params }: Props) {
     description: guide.metaDescription,
     url: `${siteConfig.url}/guides/${guide.slug}/`,
     datePublished: guide.publishDate,
-    dateModified: guide.publishDate,
+    dateModified: guide.updatedDate ?? guide.publishDate,
     image: {
       '@type': 'ImageObject',
       url: guide.featuredImage.startsWith('http') ? guide.featuredImage : `${siteConfig.url}${guide.featuredImage}`,

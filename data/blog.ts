@@ -18,6 +18,7 @@ export interface BlogArticle {
   metaDescription: string;
   category: string;
   publishDate: string;
+  updatedDate?: string;
   featuredImage: string;
   excerpt: string;
   relatedServiceSlug?: string;

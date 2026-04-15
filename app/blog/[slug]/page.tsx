@@ -47,7 +47,7 @@ export default function BlogArticlePage({ params }: Props) {
     description: article.metaDescription,
     url: `${siteConfig.url}/blog/${article.slug}/`,
     datePublished: article.publishDate,
-    dateModified: article.publishDate,
+    dateModified: article.updatedDate ?? article.publishDate,
     image: {
       '@type': 'ImageObject',
       url: article.featuredImage.startsWith('http') ? article.featuredImage : `${siteConfig.url}${article.featuredImage}`,

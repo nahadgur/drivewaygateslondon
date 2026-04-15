@@ -6,6 +6,7 @@ import Script from 'next/script';
 import { DM_Sans, Syne, Fraunces } from 'next/font/google';
 import './globals.css';
 import { siteConfig } from '@/data/site';
+import { LONDON_BOROUGHS } from '@/data/boroughs';
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
@@ -92,7 +93,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       height: 512,
     },
     description: "Free referral service that matches London homeowners with vetted, independent driveway gate installers. We do not install gates ourselves.",
-    areaServed: { "@type": "City", name: "London", addressCountry: "GB" },
+    areaServed: [
+      { "@type": "City", name: "London", addressCountry: "GB" },
+      ...LONDON_BOROUGHS.map(borough => ({
+        "@type": "AdministrativeArea",
+        name: borough,
+        containedInPlace: { "@type": "City", name: "London", addressCountry: "GB" },
+      })),
+    ],
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",

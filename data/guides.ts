@@ -18,6 +18,7 @@ export interface Guide {
   excerpt: string;
   readingMinutes: number;
   publishDate: string;
+  updatedDate?: string;
   featuredImage: string;
   intro: string;
   sections: GuideSection[];
