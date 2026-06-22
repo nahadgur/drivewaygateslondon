@@ -10,6 +10,30 @@ import { Footer } from '@/components/Footer';
 import dynamic from 'next/dynamic';
 const LeadFormModal = dynamic(() => import('@/components/LeadFormModal').then(m => m.LeadFormModal), { ssr: false });
 
+/* ── Inline markdown-link parser: [text](url) rendered inline in prose.
+   Internal (root-relative) links use next/link; external links open in a new tab.
+   Backward-compatible: plain text with no [..](..) is returned unchanged. ── */
+function renderInline(text: string): React.ReactNode[] {
+  const out: React.ReactNode[] = [];
+  const re = /\[([^\]]+)\]\(([^)]+)\)/g;
+  let last = 0;
+  let m: RegExpExecArray | null;
+  let k = 0;
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) out.push(text.slice(last, m.index));
+    const label = m[1];
+    const href = m[2];
+    if (href.startsWith('/')) {
+      out.push(<Link key={`il-${k++}`} href={href} className="text-brand-600 underline underline-offset-2 hover:text-brand-500 transition-colors">{label}</Link>);
+    } else {
+      out.push(<a key={`il-${k++}`} href={href} target="_blank" rel="noopener noreferrer" className="text-brand-600 underline underline-offset-2 hover:text-brand-500 transition-colors">{label}</a>);
+    }
+    last = re.lastIndex;
+  }
+  if (last < text.length) out.push(text.slice(last));
+  return out;
+}
+
 interface BlogArticlePageClientProps {
   article: BlogArticle;
   relatedService: { slug: string; title: string; description: string } | null;
@@ -101,7 +125,7 @@ function ContentRenderer({ blocks, onOpenModal, articleImageMap }: { blocks: Con
 
           case 'p':
             elements.push(
-              <p key={i} className="text-brand-700 leading-relaxed mb-5 text-sm">{block.text}</p>
+              <p key={i} className="text-brand-700 leading-relaxed mb-5 text-sm">{renderInline(block.text ?? '')}</p>
             );
             break;
 
@@ -111,7 +135,7 @@ function ContentRenderer({ blocks, onOpenModal, articleImageMap }: { blocks: Con
                 {(block.items ?? []).map((item, j) => (
                   <li key={j} className="flex items-start gap-3 text-sm text-brand-700">
                     <span className="text-brand-500 font-bold flex-shrink-0 mt-0.5">→</span>
-                    {item}
+                    {renderInline(item)}
                   </li>
                 ))}
               </ul>
