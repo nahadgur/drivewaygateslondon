@@ -98,8 +98,8 @@ function ContentRenderer({ blocks, onOpenModal, articleImageMap }: { blocks: Con
         switch (block.type) {
           case 'h2':
             elements.push(
-              <h2 key={i} className="font-syne font-extrabold uppercase tracking-tight text-brand-900 mt-10 mb-5 border-b-2 border-brand-200 pb-3"
-                style={{ fontSize: 'clamp(18px, 2.2vw, 26px)', letterSpacing: '-.02em' }}>
+              <h2 key={i} className="font-syne font-bold tracking-tight text-brand-900 mt-10 mb-5 border-b-2 border-brand-200 pb-3"
+                style={{ fontSize: 'clamp(18px, 2.2vw, 26px)', letterSpacing: '-.01em' }}>
                 {block.text}
               </h2>
             );
@@ -117,7 +117,7 @@ function ContentRenderer({ blocks, onOpenModal, articleImageMap }: { blocks: Con
 
           case 'h3':
             elements.push(
-              <h3 key={i} className="font-syne font-bold text-[14px] tracking-[.04em] uppercase text-brand-900 mt-8 mb-3">
+              <h3 key={i} className="font-syne font-bold text-[15px] tracking-tight text-brand-900 mt-8 mb-3">
                 {block.text}
               </h3>
             );
@@ -248,8 +248,8 @@ export function BlogArticlePageClient({ article, relatedService, bottomRelated, 
                 {new Date(article.publishDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
               </span>
             </div>
-            <h1 className="font-syne font-extrabold uppercase tracking-tight text-white max-w-4xl leading-tight"
-              style={{ fontSize: 'clamp(24px, 4vw, 40px)', letterSpacing: '-.02em' }}>
+            <h1 className="font-syne font-bold tracking-tight text-white max-w-4xl leading-tight"
+              style={{ fontSize: 'clamp(24px, 4vw, 38px)', letterSpacing: '-.01em' }}>
               {article.title}
             </h1>
           </div>
