@@ -230,8 +230,8 @@ export const serviceRelatedContent: Record<string, { guides: string[]; posts: st
     posts: ['solar-powered-gate-automation-london', 'smart-gate-integration-ring-nest-control4', 'automated-gate-total-cost-london'],
   },
   'gate-repair-and-maintenance': {
-    guides: ['winter-gate-maintenance', 'electric-gate-motor-humming-but-not-moving', 'how-to-manually-open-electric-gate'],
-    posts: ['annual-gate-service-checklist-london', 'wrought-iron-gate-restoration-london'],
+    guides: ['winter-gate-maintenance', 'how-to-manually-open-electric-gate'],
+    posts: ['gate-motor-humming-not-moving', 'annual-gate-service-checklist-london', 'wrought-iron-gate-restoration-london'],
   },
   'gate-automation-kits': {
     guides: ['automation-kit-installation-prices', 'electric-gate-running-costs'],

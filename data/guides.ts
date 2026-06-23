@@ -248,41 +248,6 @@ export const guides: Guide[] = [
   },
 
   {
-    slug: 'electric-gate-motor-humming-but-not-moving',
-    title: 'Why Your Electric Gate is Humming But Not Moving (And How to Fix It)',
-    metaTitle: 'Electric Gate Motor Humming But Not Moving? | Quick Fixes',
-    metaDescription: 'Is your electric gate motor humming but not moving? Discover the top reasons why and how to safely troubleshoot the issue.',
-    pillar: 'Maintenance & Troubleshooting',
-    excerpt: 'An electric gate motor that hums but will not move is one of the most common gate failures in London. Here are the three most likely causes — and how to tell whether it is something you can fix yourself or a job for an engineer.',
-    readingMinutes: 6,
-    publishDate: '2026-02-21',
-    featuredImage: '/images/gates/gate-wrought-iron-ornate-daytime-manor.png',
-    intro: 'A humming sound from your gate motor when you press the remote is a symptom you should not ignore — and you certainly should not keep pressing the button hoping it will eventually move. A motor that is trying to run but cannot is drawing current into a stalled coil, which generates heat and can cause permanent damage if allowed to continue.',
-    sections: [
-      {
-        heading: 'Safety First: What to Do Before Anything Else',
-        body: `Before investigating the cause of the humming, take these immediate safety steps.\n\nStop triggering the motor. Every time you press the remote and the motor hums without moving, you are pushing current through a stalled motor. This heats the windings and can accelerate damage to both the motor and the control board. Put the remote down.\n\nUse the manual release. Every automated gate has a <a href="/guides/how-to-manually-open-electric-gate/">manual release mechanism</a> — a key-operated release that disconnects the motor from the gate and allows it to be pushed open by hand. Use this to operate the gate manually until the fault is diagnosed and resolved.\n\nThe <a href="https://www.dhfonline.org.uk/" target="_blank" rel="noopener noreferrer">Door &amp; Hardware Federation</a> recommends that any powered gate showing unusual operational behaviour be taken out of automated service until it has been inspected by a competent engineer.`,
-      },
-      {
-        heading: 'The Three Most Common Causes',
-        body: `Once you have the gate operating manually and the motor is no longer being triggered, you can investigate the cause. These three faults account for the large majority of humming motor call-outs our engineers attend.\n\n<strong>1. A physical obstruction in the gate travel path.</strong> The motor is running but something is stopping the gate from moving. Stones and debris in a sliding gate track, a branch or overgrown shrub against a swing gate leaf, frost-swollen timber gates binding against a stop post, or accumulated mud at the base of a sliding gate are all common culprits. Walk the full gate travel path and check for anything physical. Clear any obstruction, release and re-engage the motor, and test operation.\n\n<strong>2. A blown motor start capacitor.</strong> Capacitors provide the initial burst of current needed to start the motor rotating. When a capacitor fails, the motor receives power but cannot generate the initial torque needed to begin moving. This produces exactly the humming-with-no-movement symptom. Capacitor replacement is a straightforward repair and costs £80 to £150 including the part.\n\n<strong>3. Seized or extremely stiff hinges on swing gates.</strong> If the gate hinges have seized through corrosion, lack of lubrication, or physical impact, the motor cannot overcome the static friction needed to start gate travel. This is <a href="/guides/winter-gate-maintenance/">particularly common after a cold snap in London</a>. Lubricating the hinge pins with a penetrating oil and manually working the gate through its full swing before re-engaging the motor often resolves this.`,
-      },
-      {
-        heading: 'When to Call a Professional',
-        body: `Some causes of the humming-without-movement fault require professional diagnosis and repair. Call a gate engineer rather than continuing to investigate yourself if the gate was moving normally and then stopped suddenly with no obvious external cause, if you can see or smell evidence of burning around the motor housing, or if the fault recurs after clearing an obstruction.\n\nAlso call a professional if the manual release will not operate or the gate cannot be moved by hand. A gate that cannot be moved manually at all suggests a seized drive mechanism or a jammed motor that requires engineering assessment.\n\nFor <a href="/services/gate-repair-and-maintenance/">electric gate repairs in London</a>, our network covers all boroughs with engineers who attend most call-outs within 24 to 48 hours. Stop struggling with a heavy gate — leave your phone number in the form above and a London repair engineer will call you back immediately.`,
-      },
-    ],
-    faqs: [
-      { question: 'Why is my electric gate humming but not opening?', answer: 'The most common causes are a physical obstruction in the gate travel path, a blown motor start capacitor, or seized hinges. Check the full gate path for debris or obstructions first. If none are found, a failed capacitor or seized mechanism requires a professional engineer.' },
-      { question: 'Can I fix a humming gate motor myself?', answer: 'Clearing physical obstructions is safe to do yourself after engaging the manual release. Lubricating stiff hinges with penetrating oil is also DIY-appropriate. Capacitor replacement and any electrical repair inside the motor housing should be carried out by a competent gate engineer.' },
-      { question: 'How much does it cost to repair a humming gate motor in London?', answer: 'A capacitor replacement typically costs £80 to £150 including the part and labour. A new motor if the existing one has burned out costs £250 to £500 fitted. Control board replacement costs £150 to £350.' },
-      { question: 'Is it safe to keep using my gate if the motor hums but still moves slowly?', answer: 'No. A motor that is running but struggling to move the gate is under abnormal load. Continued use risks burning out the motor coil. Engage the manual release and operate the gate by hand until the fault has been diagnosed and repaired.' },
-    ],
-    relatedServiceSlug: 'gate-repair-and-maintenance',
-    relatedGuides: ['how-to-manually-open-electric-gate', 'winter-gate-maintenance'],
-  },
-
-  {
     slug: 'how-to-manually-open-electric-gate',
     title: 'How to Manually Open an Electric Gate During a Power Cut',
     metaTitle: 'How to Manually Open an Electric Gate (During Power Cuts)',
@@ -296,7 +261,7 @@ export const guides: Guide[] = [
     sections: [
       {
         heading: "Before You Start: Check if It's a Local or Area Power Cut",
-        body: `Before reaching for the manual release key, quickly confirm whether the power cut is affecting just your gate or a wider area. Check that your property has power by looking at indoor lights or trying a socket. If the property has power but the gate does not respond, the fault is likely a tripped circuit breaker for the gate supply, a blown fuse, or a <a href="/guides/electric-gate-motor-humming-but-not-moving/">motor fault</a> rather than a general power cut.\n\nIf your property has no power, check whether the cut is local or area-wide. <a href="https://www.ukpowernetworks.co.uk/" target="_blank" rel="noopener noreferrer">UK Power Networks</a> operates the electricity distribution network for London and the South East and maintains a real-time outage map on their website.\n\nIf the power cut is confirmed as an area outage, the manual release is your only option for gate operation until power is restored. Your gate should have a battery backup unit fitted — try the remote before using the manual release.`,
+        body: `Before reaching for the manual release key, quickly confirm whether the power cut is affecting just your gate or a wider area. Check that your property has power by looking at indoor lights or trying a socket. If the property has power but the gate does not respond, the fault is likely a tripped circuit breaker for the gate supply, a blown fuse, or a <a href="/blog/gate-motor-humming-not-moving/">motor fault</a> rather than a general power cut.\n\nIf your property has no power, check whether the cut is local or area-wide. <a href="https://www.ukpowernetworks.co.uk/" target="_blank" rel="noopener noreferrer">UK Power Networks</a> operates the electricity distribution network for London and the South East and maintains a real-time outage map on their website.\n\nIf the power cut is confirmed as an area outage, the manual release is your only option for gate operation until power is restored. Your gate should have a battery backup unit fitted — try the remote before using the manual release.`,
       },
       {
         heading: 'How to Manually Release a Ram-Arm Motor',
@@ -314,7 +279,7 @@ export const guides: Guide[] = [
       { question: 'My manual release will not turn — what should I do?', answer: 'Do not force it. Apply a penetrating lubricant to the barrel and allow it to work for five minutes before trying again. If it still will not turn, call a gate engineer — forcing a seized mechanism risks breaking the release entirely.' },
     ],
     relatedServiceSlug: 'gate-repair-and-maintenance',
-    relatedGuides: ['electric-gate-motor-humming-but-not-moving', 'winter-gate-maintenance'],
+    relatedGuides: ['winter-gate-maintenance'],
   },
 
   {
@@ -331,7 +296,7 @@ export const guides: Guide[] = [
     sections: [
       {
         heading: 'Why Cold Weather Is Hard on Gate Motors and Hydraulic Systems',
-        body: `Gate motors and their associated hydraulic systems are sensitive to temperature in ways that most homeowners do not realise until a failure occurs. Hydraulic gate motors — common on older underground systems and some commercial installations — use hydraulic fluid to generate the force that moves the gate. As temperatures drop toward and below freezing, that fluid thickens. A fluid rated for operation to minus 15 degrees C that has not been changed in five years may begin to thicken at plus 5 degrees C, because degraded hydraulic fluid loses its cold-weather additives over time.\n\nModern 24V DC gate motors do not use hydraulic fluid, but they are not immune to cold. The lubricating grease in the motor gearbox thickens at low temperatures, increasing the load the motor must overcome on every cycle.\n\nThe <a href="https://www.metoffice.gov.uk/" target="_blank" rel="noopener noreferrer">Met Office</a> issues severe weather warnings for London that specifically flag conditions — heavy frost, freezing fog, and rapid temperature drops — that create elevated risk of <a href="/guides/electric-gate-motor-humming-but-not-moving/">gate system failures</a>. Checking their site before a cold snap gives you time to prepare your gate system.`,
+        body: `Gate motors and their associated hydraulic systems are sensitive to temperature in ways that most homeowners do not realise until a failure occurs. Hydraulic gate motors — common on older underground systems and some commercial installations — use hydraulic fluid to generate the force that moves the gate. As temperatures drop toward and below freezing, that fluid thickens. A fluid rated for operation to minus 15 degrees C that has not been changed in five years may begin to thicken at plus 5 degrees C, because degraded hydraulic fluid loses its cold-weather additives over time.\n\nModern 24V DC gate motors do not use hydraulic fluid, but they are not immune to cold. The lubricating grease in the motor gearbox thickens at low temperatures, increasing the load the motor must overcome on every cycle.\n\nThe <a href="https://www.metoffice.gov.uk/" target="_blank" rel="noopener noreferrer">Met Office</a> issues severe weather warnings for London that specifically flag conditions — heavy frost, freezing fog, and rapid temperature drops — that create elevated risk of <a href="/blog/gate-motor-humming-not-moving/">gate system failures</a>. Checking their site before a cold snap gives you time to prepare your gate system.`,
       },
       {
         heading: 'Lubricating Hinges, Racks, and Tracks Correctly',
@@ -349,7 +314,7 @@ export const guides: Guide[] = [
       { question: 'How often should electric gates be serviced in London?', answer: 'Once per year minimum, ideally in autumn before the cold weather arrives. An annual service costs £120 to £200 in London and prevents the majority of cold-weather failures.' },
     ],
     relatedServiceSlug: 'gate-repair-and-maintenance',
-    relatedGuides: ['electric-gate-motor-humming-but-not-moving', 'electric-gate-running-costs'],
+    relatedGuides: ['electric-gate-running-costs'],
   },
 
   {

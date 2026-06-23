@@ -77,17 +77,18 @@ const nextConfig = {
       { source: '/blog/the-annual-service-checklist-for-preventing-gate-failure-during-a-london-freeze/', destination: '/blog/annual-gate-service-checklist-london/', permanent: true },
       { source: '/blog/how-to-budget-for-driveway-gate-installation-electricity-and-servicing-in-london/', destination: '/blog/driveway-gate-installation-costs-london/', permanent: true },
       { source: '/blog/the-total-cost-of-owning-an-automated-gate-in-london-in-2026/', destination: '/blog/automated-gate-total-cost-london/', permanent: true },
-      { source: '/blog/why-your-gate-motor-is-humming-but-not-moving/', destination: '/guides/electric-gate-motor-humming-but-not-moving/', permanent: true },
+      { source: '/blog/why-your-gate-motor-is-humming-but-not-moving/', destination: '/blog/gate-motor-humming-not-moving/', permanent: true },
       // De-duplication: retired blog posts whose head term the /guides tier owns (2026-06-23)
       { source: '/blog/gate-force-testing-legal-requirements/', destination: '/guides/force-testing-explained/', permanent: true },
       { source: '/blog/gate-safety-photocells-vs-safety-ribs/', destination: '/guides/photocells-vs-safety-edges/', permanent: true },
       { source: '/blog/manual-gate-release-power-cut/', destination: '/guides/how-to-manually-open-electric-gate/', permanent: true },
-      { source: '/blog/gate-motor-humming-not-moving/', destination: '/guides/electric-gate-motor-humming-but-not-moving/', permanent: true },
+      // motor-humming: the BLOG is the proven canonical (22 clicks, pos 7.6 in GSC), so the guide folds into it
+      { source: '/guides/electric-gate-motor-humming-but-not-moving/', destination: '/blog/gate-motor-humming-not-moving/', permanent: true },
       // Guide slug redirects
       { source: '/guides/uk-gate-safety-laws/', destination: '/guides/uk-electric-gate-safety-laws/', permanent: true },
       { source: '/guides/driveway-gate-costs-london/', destination: '/guides/electric-driveway-gates-cost-london/', permanent: true },
       { source: '/guides/wood-vs-aluminium-gates/', destination: '/guides/aluminium-vs-wooden-driveway-gates/', permanent: true },
-      { source: '/guides/gate-motor-humming-fix/', destination: '/guides/electric-gate-motor-humming-but-not-moving/', permanent: true },
+      { source: '/guides/gate-motor-humming-fix/', destination: '/blog/gate-motor-humming-not-moving/', permanent: true },
     ];
   },
 };
