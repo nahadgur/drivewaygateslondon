@@ -2,31 +2,12 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { CheckCircle, X } from 'lucide-react';
+import { GATE_TYPES, GOOGLE_SCRIPT_URL } from '@/data/leadForm';
 
 interface LeadFormModalProps {
   isOpen: boolean;
   onClose: () => void;
 }
-
-const GATE_TYPES = [
-  'Electric Sliding Gates',
-  'Electric Swing Gates',
-  'Wooden Driveway Gates',
-  'Metal / Wrought Iron Gates',
-  'Aluminium Gates',
-  'Composite Gates',
-  'Hardwood Gates',
-  'Automated Gate Systems',
-  'Gate Automation (Retrofit)',
-  'Pedestrian / Side Gates',
-  'Commercial Gates',
-  'Access Control System',
-  'Gate Repair and Maintenance',
-  'Not sure yet',
-];
-
-const GOOGLE_SCRIPT_URL =
-  'https://script.google.com/macros/s/AKfycbwIkSKA8qGfLjJ3e_lUUJp5U0oNZLo51wpZtXvdvNSaPXNyynWrdtN-ZcoYql3hcAjy/exec';
 
 export function LeadFormModal({ isOpen, onClose }: LeadFormModalProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);

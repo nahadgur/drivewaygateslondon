@@ -15,6 +15,7 @@ import dynamic from 'next/dynamic';
 const LeadFormModal = dynamic(() => import('@/components/LeadFormModal').then(m => m.LeadFormModal), { ssr: false });
 import { PricingSection } from '@/components/PricingSection';
 import { NearbyAreasGrid } from '@/components/NearbyAreasGrid';
+import { HeroLeadForm, gateTypeForSlug } from '@/components/HeroLeadForm';
 
 export function ServiceLocationPageClient({ params }: { params: { serviceSlug: string; locationSlug: string } }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -66,24 +67,10 @@ export function ServiceLocationPageClient({ params }: { params: { serviceSlug: s
             </div>
           </div>
 
-          {/* Image side */}
-          <div className="relative overflow-hidden bg-brand-200 min-h-[280px] lg:min-h-0">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={service.image} alt={`${service.title} in ${cityName}`}
-              className="w-full h-full object-cover"
-              style={{ filter: 'saturate(.85)' }} loading="eager" />
-            <div className="absolute top-0 left-0 bg-brand-900 px-4 py-2 font-syne font-bold text-[9.5px] tracking-[.2em] uppercase text-brand-400">
-              {cityName} Install
-            </div>
-            <div className="absolute bottom-0 left-0 right-0 bg-brand-900 px-5 py-4 flex flex-wrap gap-4">
-              {[['500+', 'Installations'], ['4.9★', 'Rated'], ['32', 'Boroughs'], ['Free', 'Survey']].map(([n, l]) => (
-                <div key={l} className="flex items-center gap-2">
-                  <span className="w-1 h-1 rounded-full bg-brand-500" />
-                  <span className="text-brand-300 text-[11.5px] font-body">
-                    <strong className="text-brand-200">{n}</strong> {l}
-                  </span>
-                </div>
-              ))}
+          {/* Lead form side — above-the-fold inline form on desktop */}
+          <div className="flex items-center justify-center bg-brand-100 px-6 py-10 lg:px-8 lg:py-12 min-h-[280px] lg:min-h-0">
+            <div className="w-full max-w-md">
+              <HeroLeadForm city={cityName} service={gateTypeForSlug(service.slug)} />
             </div>
           </div>
         </section>

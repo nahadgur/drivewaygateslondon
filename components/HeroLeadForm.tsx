@@ -2,14 +2,9 @@
 
 import { useState } from 'react';
 import { CheckCircle, ShieldCheck, Clock, Award, Phone } from 'lucide-react';
+import { GATE_TYPES, GOOGLE_SCRIPT_URL } from '@/data/leadForm';
 
 interface HeroLeadFormProps { city?: string; service?: string; }
-
-const GATE_TYPES = [
-  'Electric Sliding Gates','Electric Swing Gates','Wooden Driveway Gates',
-  'Metal Driveway Gates','Automated Gate Systems','Gate Automation (Retrofit)',
-  'Commercial Gates','Gate Repair and Maintenance',
-];
 
 const TRUST_BADGES = [
   { icon: Phone,       label: 'Call back within 2 hours' },
@@ -18,8 +13,23 @@ const TRUST_BADGES = [
   { icon: Clock,       label: 'Free no-obligation survey' },
 ];
 
-const GOOGLE_SCRIPT_URL =
-  'https://script.google.com/macros/s/AKfycbwIkSKA8qGfLjJ3e_lUUJp5U0oNZLo51wpZtXvdvNSaPXNyynWrdtN-ZcoYql3hcAjy/exec';
+// Resolve a service slug to its matching gate-type option so the dropdown pre-fills.
+const SLUG_TO_GATE_TYPE: Record<string, string> = {
+  'electric-sliding-gates': 'Electric Sliding Gates',
+  'electric-swing-gates': 'Electric Swing Gates',
+  'wooden-driveway-gates': 'Wooden Driveway Gates',
+  'metal-driveway-gates': 'Metal / Wrought Iron Gates',
+  'automated-gate-systems': 'Automated Gate Systems',
+  'gate-repair-and-maintenance': 'Gate Repair and Maintenance',
+  'gate-automation-kits': 'Gate Automation (Retrofit)',
+  'commercial-gates': 'Commercial Gates',
+  'aluminium-driveway-gates': 'Aluminium Gates',
+  'composite-driveway-gates': 'Composite Gates',
+  'hardwood-driveway-gates': 'Hardwood Gates',
+  'wrought-iron-gates': 'Metal / Wrought Iron Gates',
+  'pedestrian-side-gates': 'Pedestrian / Side Gates',
+};
+export const gateTypeForSlug = (slug?: string): string => (slug ? SLUG_TO_GATE_TYPE[slug] ?? '' : '');
 
 export function HeroLeadForm({ city, service }: HeroLeadFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
