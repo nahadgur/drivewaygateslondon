@@ -5,7 +5,9 @@ import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { MapPin, Clock, Shield, Star, Search, CheckCircle, ArrowRight, ChevronDown } from 'lucide-react';
-import { services, getServiceBySlug } from '@/data/services';
+import { services, getServiceBySlug, serviceRelatedContent } from '@/data/services';
+import { guides } from '@/data/guides';
+import { blogArticles } from '@/data/blog';
 import { LOCATIONS, toSlug } from '@/data/locations';
 import { FAQS_SERVICES } from '@/data/site';
 import { Header } from '@/components/Header';
@@ -36,6 +38,19 @@ export function ServicePageClient({ params }: { params: { serviceSlug: string } 
 
   const content = serviceContent[service.id] || serviceContent['electric-swing'];
   const relatedServices = services.filter(s => s.id !== service.id);
+
+  // Silo down-links: resolve this pillar's curated guides + blog spokes to render cards.
+  const related = serviceRelatedContent[service.slug];
+  const relatedGuides = (related?.guides ?? [])
+    .map(slug => guides.find(g => g.slug === slug))
+    .filter((g): g is NonNullable<typeof g> => Boolean(g));
+  const relatedPosts = (related?.posts ?? [])
+    .map(slug => blogArticles.find(b => b.slug === slug))
+    .filter((b): b is NonNullable<typeof b> => Boolean(b));
+  const relatedReading = [
+    ...relatedGuides.map(g => ({ href: `/guides/${g.slug}/`, title: g.title, image: g.featuredImage, label: 'Guide' })),
+    ...relatedPosts.map(b => ({ href: `/blog/${b.slug}/`, title: b.title, image: b.featuredImage, label: b.category })),
+  ];
 
   const filteredLocations = useMemo(() => {
     if (!searchQuery) return LOCATIONS;
@@ -295,6 +310,40 @@ export function ServicePageClient({ params }: { params: { serviceSlug: string } 
             </aside>
           </div>
         </div>
+
+        {relatedReading.length > 0 && (
+          <section className="py-16 bg-brand-100 border-t-2 border-brand-200">
+            <div className="container-width">
+              <div className="craft-label">Guides &amp; Articles</div>
+              <h2 className="craft-h2 mb-8">Guides and articles on {service.title.toLowerCase()}</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 border-2 border-brand-900 bg-brand-900 gap-[2px]">
+                {relatedReading.map(item => (
+                  <Link key={item.href} href={item.href}
+                    className="group bg-brand-50 hover:bg-brand-100 flex flex-col transition-colors overflow-hidden">
+                    <div className="relative h-40 overflow-hidden border-b-2 border-brand-900">
+                      {item.image
+                        // eslint-disable-next-line @next/next/no-img-element
+                        ? <img src={item.image} alt={item.title}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                            style={{ filter: 'saturate(.8)' }} loading="lazy" />
+                        : <div className="w-full h-full bg-brand-200" />
+                      }
+                      <div className="absolute top-0 left-0 bg-brand-900 px-3 py-1.5 font-syne font-bold text-[9px] tracking-[.16em] uppercase text-brand-400">
+                        {item.label}
+                      </div>
+                    </div>
+                    <div className="p-5 flex-1 flex flex-col">
+                      <h3 className="font-display text-lg text-brand-900 leading-snug group-hover:text-brand-600 transition-colors">{item.title}</h3>
+                      <span className="mt-auto pt-3 inline-flex items-center gap-1 font-syne font-bold text-[10px] tracking-[.15em] uppercase text-brand-400 group-hover:text-brand-600 transition-colors">
+                        Read <ArrowRight className="w-3 h-3" />
+                      </span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
       </main>
       <Footer />
     </>

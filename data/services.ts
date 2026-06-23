@@ -203,3 +203,62 @@ export const services: Service[] = [
 
 export const getAllServiceSlugs = (): string[] => services.map(s => s.slug);
 export const getServiceBySlug = (slug: string): Service | undefined => services.find(s => s.slug === slug);
+
+/* Curated down-links from each service pillar to its supporting guides and blog
+   spokes (the silo "DOWN" links). Keyed by service slug. Slugs reference
+   data/guides.ts and data/blog.ts; rendered as a "Guides and articles" block on
+   each service page. */
+export const serviceRelatedContent: Record<string, { guides: string[]; posts: string[] }> = {
+  'electric-sliding-gates': {
+    guides: ['swing-vs-sliding-gates', 'electric-driveway-gates-cost-london'],
+    posts: ['bi-fold-vs-sliding-gates-london', 'telescopic-gates-space-saving-london', 'automated-gates-sloping-driveways-london'],
+  },
+  'electric-swing-gates': {
+    guides: ['swing-vs-sliding-gates', 'electric-driveway-gates-cost-london'],
+    posts: ['outward-swinging-gates-uk-rules', 'underground-gate-motors-london', 'driveway-gate-property-value-london'],
+  },
+  'wooden-driveway-gates': {
+    guides: ['aluminium-vs-wooden-driveway-gates'],
+    posts: ['accoya-wood-gates-london', 'heritage-gate-finishes-victorian-homes', 'driveway-gates-noise-reduction-london'],
+  },
+  'metal-driveway-gates': {
+    guides: ['aluminium-vs-wooden-driveway-gates'],
+    posts: ['aluminium-vs-timber-gates-london', 'minimalist-steel-slat-gates-london', 'anthracite-grey-gate-trends-london'],
+  },
+  'automated-gate-systems': {
+    guides: ['automation-kit-installation-prices', 'electric-gate-running-costs', 'best-intercom-systems'],
+    posts: ['solar-powered-gate-automation-london', 'smart-gate-integration-ring-nest-control4', 'automated-gate-total-cost-london'],
+  },
+  'gate-repair-and-maintenance': {
+    guides: ['winter-gate-maintenance', 'electric-gate-motor-humming-but-not-moving', 'how-to-manually-open-electric-gate'],
+    posts: ['annual-gate-service-checklist-london', 'wrought-iron-gate-restoration-london'],
+  },
+  'gate-automation-kits': {
+    guides: ['automation-kit-installation-prices', 'electric-gate-running-costs'],
+    posts: ['gsm-gate-openers-london', 'solar-powered-gate-automation-london'],
+  },
+  'commercial-gates': {
+    guides: ['uk-electric-gate-safety-laws', 'force-testing-explained'],
+    posts: ['anpr-gate-entry-london', 'automated-gate-home-insurance', 'video-intercom-comelit-vs-hikvision'],
+  },
+  'aluminium-driveway-gates': {
+    guides: ['aluminium-vs-wooden-driveway-gates'],
+    posts: ['aluminium-vs-timber-gates-london', 'minimalist-steel-slat-gates-london', 'anthracite-grey-gate-trends-london'],
+  },
+  'composite-driveway-gates': {
+    guides: ['aluminium-vs-wooden-driveway-gates'],
+    posts: ['accoya-wood-gates-london', 'aluminium-vs-timber-gates-london', 'driveway-gates-noise-reduction-london'],
+  },
+  'hardwood-driveway-gates': {
+    guides: ['aluminium-vs-wooden-driveway-gates'],
+    posts: ['accoya-wood-gates-london', 'heritage-gate-finishes-victorian-homes', 'driveway-gates-noise-reduction-london'],
+  },
+  'wrought-iron-gates': {
+    guides: ['aluminium-vs-wooden-driveway-gates'],
+    posts: ['wrought-iron-gate-restoration-london', 'conservation-area-gate-planning-london', 'heritage-gate-finishes-victorian-homes'],
+  },
+  'pedestrian-side-gates': {
+    guides: ['best-intercom-systems', 'photocells-vs-safety-edges'],
+    posts: ['gsm-gate-openers-london', 'video-intercom-comelit-vs-hikvision'],
+  },
+};
