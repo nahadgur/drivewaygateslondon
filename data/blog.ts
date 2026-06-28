@@ -3686,7 +3686,6 @@ export const blogArticles: BlogArticle[] = [
       { type: 'h2', text: "Keep the safety side right while you do it" },
       { type: 'p', text: "Whatever you choose, remember that letting a stranger walk through a powered gate puts a person inside its movement zone. A gate that admits deliveries must still meet the force and obstacle-detection requirements that apply to automated gates, so photocells and safe-edge protection are not optional extras when couriers use the entrance daily. The trade body guidance from the [Door and Hardware Federation on powered gate safety](https://www.dhfonline.org.uk/) sets out what a compliant installation looks like, and the regulator's overview of [the law on automated gates and impact protection](https://www.hse.gov.uk/work-equipment-machinery/gates.htm) explains the duties that sit behind it." },
       { type: 'p', text: "If you are weighing up which combination fits your driveway and how to wire delivery access into a safe, automated setup, our team can talk it through and quote against your actual layout. Send us your gate type and the kind of deliveries you get, and we will tell you the cleanest way to let them in." },
-      { type: 'p', text: "Related reading on smart gate access for London homes: our comparison of Comelit and Hikvision video intercoms (Smart & Security), our guide to GSM gate openers (Smart & Security), and our explainer on ANPR gate entry for hands-free vehicle access (Smart & Security)." },
     ]
   },
 ];

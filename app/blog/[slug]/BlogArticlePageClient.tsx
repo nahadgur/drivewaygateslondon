@@ -37,7 +37,6 @@ function renderInline(text: string): React.ReactNode[] {
 interface BlogArticlePageClientProps {
   article: BlogArticle;
   relatedService: { slug: string; title: string; description: string } | null;
-  bottomRelated: { slug: string; title: string; category: string; featuredImage: string }[];
   serviceList: { slug: string; title: string }[];
   articleImageMap: Record<string, string>;
 }
@@ -219,7 +218,7 @@ function ContentRenderer({ blocks, onOpenModal, articleImageMap }: { blocks: Con
   );
 }
 
-export function BlogArticlePageClient({ article, relatedService, bottomRelated, serviceList, articleImageMap }: BlogArticlePageClientProps) {
+export function BlogArticlePageClient({ article, relatedService, serviceList, articleImageMap }: BlogArticlePageClientProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const furtherReading = article.content.filter(b => b.type === 'external-link');
 
@@ -322,43 +321,6 @@ export function BlogArticlePageClient({ article, relatedService, bottomRelated, 
             </aside>
           </div>
         </div>
-
-        {/* Bottom related */}
-        {bottomRelated.length > 0 && (
-          <section className="py-16 bg-brand-100 border-t-2 border-brand-200">
-            <div className="container-width">
-              <div className="craft-label">More Articles</div>
-              <h2 className="craft-h2 mb-8">More articles you might like</h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 border-2 border-brand-900 bg-brand-900 gap-[2px]">
-                {bottomRelated.map(a => (
-                  <Link key={a.slug} href={`/blog/${a.slug}/`}
-                    className="group bg-brand-50 hover:bg-brand-100 flex flex-col transition-colors overflow-hidden">
-                    <div className="relative h-40 overflow-hidden border-b-2 border-brand-900">
-                      {a.featuredImage
-                        // eslint-disable-next-line @next/next/no-img-element
-                        ? <img src={a.featuredImage} alt={a.title}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                            style={{ filter: 'saturate(.8)' }} loading="lazy" />
-                        : <div className="w-full h-full bg-brand-200" />
-                      }
-                      <div className="absolute top-0 left-0 bg-brand-900 px-3 py-1.5 font-syne font-bold text-[9px] tracking-[.16em] uppercase text-brand-400">
-                        {a.category}
-                      </div>
-                    </div>
-                    <div className="p-5 flex-grow flex flex-col">
-                      <h3 className="font-syne font-bold text-[12.5px] uppercase tracking-tight text-brand-900 group-hover:text-brand-500 transition-colors mb-2 leading-snug">
-                        {a.title}
-                      </h3>
-                      <span className="font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-500 flex items-center gap-1 mt-auto pt-2">
-                        Read article <ArrowRight className="w-3 h-3" />
-                      </span>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
       </main>
       <Footer />
     </>

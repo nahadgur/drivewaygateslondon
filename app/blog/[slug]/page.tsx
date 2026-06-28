@@ -88,15 +88,6 @@ export default function BlogArticlePage({ params }: Props) {
       <BlogArticlePageClient
         article={article}
         relatedService={article.relatedServiceSlug ? services.find(s => s.slug === article.relatedServiceSlug) ?? null : null}
-        bottomRelated={blogArticles
-          .filter(a => a.slug !== article.slug)
-          .sort((a, b) => {
-            if (a.category === article.category && b.category !== article.category) return -1;
-            if (b.category === article.category && a.category !== article.category) return 1;
-            return new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime();
-          })
-          .slice(0, 3)
-          .map(a => ({ slug: a.slug, title: a.title, category: a.category, featuredImage: a.featuredImage }))}
         serviceList={services.map(s => ({ slug: s.slug, title: s.title }))}
         articleImageMap={Object.fromEntries(
           blogArticles.map(a => [a.slug, a.featuredImage])
