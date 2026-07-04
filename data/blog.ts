@@ -3734,7 +3734,6 @@ export const blogArticles: BlogArticle[] = [
   },
   {
     slug: 'front-garden-paving-suds-london',
-    draft: true,
     relatedServiceSlug: 'automated-gate-systems',
     title: 'Front Garden Paving, SUDS and the Permeable Rule Before You Fit a London Gate',
     metaTitle: 'Front Garden Paving and SUDS Rules | London Gates',
