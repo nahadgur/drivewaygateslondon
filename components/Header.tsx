@@ -110,7 +110,9 @@ export function Header({ onOpenModal }: HeaderProps) {
 
             {/* Logo */}
             <Link href="/" className="flex-shrink-0 leading-none">
-              <span className="font-syne font-extrabold text-[17px] tracking-tight text-brand-900">
+              {/* Fluid size: Syne extrabold renders ~22px of width per 1px of font size for this
+                  string, so a fixed 17px logo is 374px wide and overflows every phone. */}
+              <span className="font-syne font-extrabold text-[clamp(11px,3.4vw,17px)] tracking-tight text-brand-900">
                 DRIVEWAY<span className="text-brand-500">GATES</span>.LONDON
               </span>
               <span className="block font-syne font-bold text-[9px] tracking-[.14em] uppercase text-brand-500 mt-0.5">
@@ -237,7 +239,7 @@ export function Header({ onOpenModal }: HeaderProps) {
         <div className="lg:hidden fixed inset-0 z-50 bg-brand-950 overflow-y-auto">
           {/* Close */}
           <div className="flex items-center justify-between px-6 py-5 border-b border-brand-800">
-            <span className="font-syne font-extrabold text-[15px] text-brand-50 tracking-tight">
+            <span className="font-syne font-extrabold text-[clamp(11px,3.4vw,15px)] text-brand-50 tracking-tight">
               DRIVEWAY<span className="text-brand-500">GATES</span>.LONDON
             </span>
             <button onClick={() => setMobileOpen(false)} className="p-2 text-brand-400 hover:text-brand-50 transition-colors">

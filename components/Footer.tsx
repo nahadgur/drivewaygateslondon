@@ -49,7 +49,7 @@ export function Footer() {
 
           {/* Brand — spans 2 cols */}
           <div className="lg:col-span-2">
-            <div className="font-syne font-extrabold text-[16px] text-white tracking-tight mb-3">
+            <div className="font-syne font-extrabold text-[clamp(12px,3.6vw,16px)] text-white tracking-tight mb-3">
               DRIVEWAY<span className="text-brand-500">GATES</span>.LONDON
             </div>
             <p className="text-[13px] text-brand-500 leading-relaxed mb-4 font-light">
