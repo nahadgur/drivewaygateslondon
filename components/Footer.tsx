@@ -163,7 +163,7 @@ export function Footer() {
           <p>&copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
           <div className="flex flex-wrap justify-center gap-x-5 gap-y-2">
             <Link href="/contact/"         className="hover:text-brand-400 transition-colors">Contact</Link>
-            <Link href="/privacy-policy/"  className="hover:text-brand-400 transition-colors">Privacy Policy</Link>
+            <Link href="/privacy/"         className="hover:text-brand-400 transition-colors">Privacy Policy</Link>
             <Link href="/terms/"           className="hover:text-brand-400 transition-colors">Terms of Service</Link>
             <Link href="/sitemap.xml"      className="hover:text-brand-400 transition-colors">Sitemap</Link>
           </div>

@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next';
 import { services } from '@/data/services';
 import { commercialServices } from '@/data/commercial';
 import { LOCATIONS, toSlug } from '@/data/locations';
-import { blogArticles } from '@/data/blog';
+import { publishedArticles } from '@/data/blog';
 import { accessControlServices } from '@/data/access-control';
 import { boroughRegulations } from '@/data/regulations';
 import { guides } from '@/data/guides';
@@ -41,6 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/services/access-control/`, lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/local-regulations/`,       lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/contact/`,                 lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'yearly',  priority: 0.6 },
+    { url: `${base}/privacy/`,                 lastModified: new Date('2026-07-16'), changeFrequency: 'yearly', priority: 0.3 },
   ];
 
   const servicePages: MetadataRoute.Sitemap = residentialServices.map(s => ({
@@ -85,7 +86,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  const blogPages: MetadataRoute.Sitemap = blogArticles.map(a => ({
+  const blogPages: MetadataRoute.Sitemap = publishedArticles.map(a => ({
     url: `${base}/blog/${a.slug}/`,
     lastModified: new Date(a.updatedDate ?? a.publishDate),
     changeFrequency: 'monthly' as const,
