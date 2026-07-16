@@ -64,7 +64,7 @@ export function HeroLeadForm({ city, service }: HeroLeadFormProps) {
   };
 
   const labelClass = 'block text-xs font-bold text-brand-600 mb-1';
-  const inputClass = 'w-full px-4 py-3 border-2 border-brand-200 bg-brand-50 text-brand-900 placeholder-brand-400 text-sm focus:outline-none focus:border-brand-500 transition font-body';
+  const inputClass = 'w-full px-4 py-3 border-2 border-brand-200 bg-brand-50 text-brand-900 placeholder-brand-400 text-base focus:outline-none focus:border-brand-500 transition font-body';
 
   if (isSuccess) {
     return (
