@@ -100,7 +100,7 @@ export default function CommercialHubPage() {
             <div>
               <div className="craft-label" style={{ color: 'var(--brand-500)' }}>Get a Quote</div>
               <h2 className="craft-h2 text-white">Get a Commercial Gate Quote</h2>
-              <p className="text-brand-400 text-sm mt-3 max-w-md">Tell us about your site. We will match you with a London commercial gate installer experienced with your type of premises.</p>
+              <p className="text-brand-400 text-sm mt-3 max-w-md">Tell us about your site. We install commercial gate systems across London and will advise on the right specification for your premises.</p>
             </div>
             <button onClick={() => setIsModalOpen(true)} className="btn-gold flex-shrink-0">Request a Commercial Quote</button>
           </div>

@@ -26,7 +26,7 @@ const COMMERCIAL_LINKS = [
 
 const TICKER_ITEMS = [
   'AUTOMATED GATES', 'SWING GATES', 'SLIDING GATES', 'BI-FOLD GATES',
-  'ACCESS CONTROL', 'FREE SITE SURVEY', 'ALL LONDON BOROUGHS', '4.9 STAR RATED',
+  'ACCESS CONTROL', 'FREE SITE SURVEY', 'ALL LONDON BOROUGHS', 'WRITTEN FIXED QUOTES',
 ];
 
 const RESIDENTIAL_SERVICES = services.filter(s => s.slug !== 'commercial-gates');
@@ -114,7 +114,7 @@ export function Header({ onOpenModal }: HeaderProps) {
                 DRIVEWAY<span className="text-brand-500">GATES</span>.LONDON
               </span>
               <span className="block font-syne font-bold text-[9px] tracking-[.14em] uppercase text-brand-500 mt-0.5">
-                Specialist Matching Service
+                Supply & Installation, London
               </span>
             </Link>
 
@@ -214,7 +214,7 @@ export function Header({ onOpenModal }: HeaderProps) {
               </Link>
 
               <button onClick={onOpenModal} className="ml-4 btn-primary text-[11px] !py-2.5 !px-5">
-                Get Free Quotes
+                Get a Free Quote
               </button>
             </nav>
 
@@ -309,7 +309,7 @@ export function Header({ onOpenModal }: HeaderProps) {
               onClick={() => { onOpenModal?.(); setMobileOpen(false); }}
               className="mt-8 btn-gold text-sm !py-4 w-full justify-center"
             >
-              Get Free Quotes
+              Get a Free Quote
             </button>
           </nav>
         </div>

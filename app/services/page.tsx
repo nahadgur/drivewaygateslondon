@@ -20,7 +20,7 @@ export default function ServicesIndexPage() {
       <main>
         <Hero
           title="Driveway Gate Types for London Homes"
-          subtitle="From electric sliding gates to traditional hardwood swing gates, find the right option for your property and get matched with a specialist installer."
+          subtitle="From electric sliding gates to traditional hardwood swing gates, find the right option for your property. We design, supply and install every gate ourselves."
           image="/images/gates/gate-aluminium-sliding-vertical-bar-stone-pillars.png"
           showCta={false} showTrust={false}
         />
@@ -45,7 +45,7 @@ export default function ServicesIndexPage() {
                     </h2>
                     <p className="text-sm text-brand-600 mb-4 line-clamp-2 leading-relaxed">{service.description}</p>
                     <span className="font-syne font-bold text-[11px] tracking-[.1em] uppercase text-brand-500 flex items-center gap-1">
-                      Find installers <ArrowRight className="w-3 h-3" />
+                      Learn more <ArrowRight className="w-3 h-3" />
                     </span>
                   </div>
                 </Link>
@@ -58,11 +58,11 @@ export default function ServicesIndexPage() {
         <section className="bg-brand-900 py-20">
           <div className="container-width flex flex-col md:flex-row md:items-center md:justify-between gap-8">
             <div>
-              <div className="craft-label" style={{ color: 'var(--brand-500)' }}>Free Service</div>
+              <div className="craft-label" style={{ color: 'var(--brand-500)' }}>Free Advice</div>
               <h2 className="craft-h2 text-white">Not Sure Which Gate<br /><span className="text-brand-500">Is Right for You?</span></h2>
-              <p className="text-brand-400 text-sm mt-3 max-w-md">Tell us about your property and we will match you with an installer who can advise and quote — free and no obligation.</p>
+              <p className="text-brand-400 text-sm mt-3 max-w-md">Tell us about your property and we will advise on the best option and quote. Free site survey, no obligation.</p>
             </div>
-            <button onClick={() => setIsModalOpen(true)} className="btn-gold flex-shrink-0">Get Free Quotes</button>
+            <button onClick={() => setIsModalOpen(true)} className="btn-gold flex-shrink-0">Get a Free Quote</button>
           </div>
         </section>
       </main>

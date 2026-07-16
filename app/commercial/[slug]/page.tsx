@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!service) return {};
 
   const title = `${service.title} in London | Commercial Gate Specialists`;
-  const description = `${service.description} Vetted commercial gate installers across London. Free site survey and no-obligation quote.`;
+  const description = `${service.description} Commercial gate installation across London. Free site survey and written quote, no obligation.`;
   const url = `${siteConfig.url}/commercial/${service.slug}/`;
 
   return {

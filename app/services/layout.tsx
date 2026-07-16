@@ -3,11 +3,11 @@ import { siteConfig } from '@/data/site';
 
 export const metadata: Metadata = {
   title: 'Driveway Gate Types for London Homes | All Gate Specialists',
-  description: 'Browse every type of driveway gate available in London — electric sliding, swing, wooden, metal, bi-fold, and automated systems. Find vetted installers and get free quotes.',
+  description: 'Browse every type of driveway gate we install in London: electric sliding, swing, wooden, metal, bi-fold, and automated systems. Free site survey and written quote.',
   alternates: { canonical: `${siteConfig.url}/services/` },
   openGraph: {
     title: 'Driveway Gate Types for London Homes',
-    description: 'Browse every type of driveway gate available in London. Find vetted installers and get free quotes.',
+    description: 'Browse every type of driveway gate we install in London. Free site survey and written quote.',
     url: `${siteConfig.url}/services/`,
     type: 'website',
     siteName: siteConfig.name,

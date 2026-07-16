@@ -2,11 +2,11 @@
 // app/layout.tsx is already server-side - update it with better OG image + SearchAction
 
 import type { Metadata } from 'next';
-import Script from 'next/script';
 import { DM_Sans, Syne, Fraunces } from 'next/font/google';
 import './globals.css';
 import { siteConfig } from '@/data/site';
 import { LONDON_BOROUGHS } from '@/data/boroughs';
+import { ConsentBanner } from '@/components/ConsentBanner';
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
@@ -29,7 +29,7 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Driveway Gates London | Vetted Gate Installers, Free Quotes",
+    default: "Driveway Gates London | Supply & Installation, Free Quotes",
     template: `%s | Driveway Gates London`,
   },
   description: siteConfig.description,
@@ -50,14 +50,14 @@ export const metadata: Metadata = {
     type: "website",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: "Driveway Gates London | Vetted Gate Installers, Free Quotes",
+    title: "Driveway Gates London | Supply & Installation, Free Quotes",
     description: siteConfig.description,
     locale: "en_GB",
     images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: siteConfig.name }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Driveway Gates London | Vetted Gate Installers, Free Quotes",
+    title: "Driveway Gates London | Supply & Installation, Free Quotes",
     description: siteConfig.description,
     images: ["/og-image.jpg"],
   },
@@ -92,7 +92,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       width: 512,
       height: 512,
     },
-    description: "Free referral service that matches London homeowners with vetted, independent driveway gate installers. We do not install gates ourselves.",
+    description: "Design, supply and installation of driveway gates across London, including electric and automated systems, wooden and metal gates, repairs and servicing.",
     areaServed: [
       { "@type": "City", name: "London", addressCountry: "GB" },
       ...LONDON_BOROUGHS.map(borough => ({
@@ -132,19 +132,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="min-h-screen flex flex-col">
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-F4ZHZBYKEL"
-          strategy="afterInteractive"
-        />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-F4ZHZBYKEL');
-          `}
-        </Script>
+        {/* GA4 is loaded inside ConsentBanner only after the visitor opts in (UK PECR) */}
         {children}
+        <ConsentBanner />
       </body>
     </html>
   );

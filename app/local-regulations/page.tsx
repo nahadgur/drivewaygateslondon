@@ -106,11 +106,11 @@ export default function LocalRegulationsHub() {
         <section className="bg-brand-900 py-20">
           <div className="container-width flex flex-col md:flex-row items-center justify-between gap-8">
             <div>
-              <div className="craft-label" style={{ color: 'var(--brand-500)' }}>Find an Installer</div>
-              <h2 className="craft-h2 text-white">Need a Gate Installer Who Knows Your Borough?</h2>
-              <p className="text-brand-400 text-sm mt-3 max-w-md">Our vetted London installers know the local planning rules inside out. They will advise on permitted development and guide you through any application process.</p>
+              <div className="craft-label" style={{ color: 'var(--brand-500)' }}>Get a Quote</div>
+              <h2 className="craft-h2 text-white">Need a Gate Team That Knows Your Borough?</h2>
+              <p className="text-brand-400 text-sm mt-3 max-w-md">We know the local planning rules inside out. We will advise on permitted development and guide you through any application process.</p>
             </div>
-            <button onClick={() => setIsModalOpen(true)} className="btn-gold flex-shrink-0">Find a Local Installer</button>
+            <button onClick={() => setIsModalOpen(true)} className="btn-gold flex-shrink-0">Get a Free Quote</button>
           </div>
         </section>
       </main>

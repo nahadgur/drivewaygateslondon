@@ -83,7 +83,7 @@ export function AccessControlPageClient({ params }: { params: { subSlug: string 
                 <div className="border-2 border-brand-900 p-6 bg-brand-50">
                   <div className="craft-label">Free Quote</div>
                   <h3 className="font-syne font-bold text-sm uppercase tracking-tight text-brand-900 mb-3">Get a Free Quote</h3>
-                  <p className="text-brand-600 text-sm mb-5">Compare vetted London installers — no obligation.</p>
+                  <p className="text-brand-600 text-sm mb-5">Free site survey and written quote, no obligation.</p>
                   <button onClick={() => setIsModalOpen(true)} className="btn-primary w-full justify-center">Request a Call Back</button>
                   <p className="text-center text-xs text-brand-500 mt-3">Within 2 hours · 100% free</p>
                 </div>
@@ -110,7 +110,7 @@ export function AccessControlPageClient({ params }: { params: { subSlug: string 
             <div>
               <div className="craft-label" style={{ color: 'var(--brand-500)' }}>Get Started</div>
               <h2 className="craft-h2 text-white">Ready to Add {service.title}?</h2>
-              <p className="text-brand-400 text-sm mt-3 max-w-md">Get matched with a vetted London installer who specialises in gate access control systems.</p>
+              <p className="text-brand-400 text-sm mt-3 max-w-md">We install gate access control systems across London. Free site survey and written quote.</p>
             </div>
             <button onClick={() => setIsModalOpen(true)} className="btn-gold flex-shrink-0 inline-flex items-center gap-2">
               Request a Free Call Back <ArrowRight className="w-4 h-4" />

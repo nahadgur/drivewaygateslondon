@@ -4,7 +4,7 @@ import { ContactPageClient } from './ContactPageClient';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 const title = 'Contact Driveway Gates London | Get a Free Quote';
-const description = 'Contact Driveway Gates London to be matched with a vetted gate installer near you. Fill out the form — a local installer calls you back, typically within 2 hours. Free, no obligation.';
+const description = 'Contact Driveway Gates London about gate installation near you. Fill out the form and we call you back within 24 hours to arrange a free site survey and written quote. No obligation.';
 const url = `${siteConfig.url}/contact/`;
 
 export const metadata: Metadata = {

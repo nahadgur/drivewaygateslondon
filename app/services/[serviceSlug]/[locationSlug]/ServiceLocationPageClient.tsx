@@ -10,7 +10,6 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FAQ } from '@/components/FAQ';
 import { Breadcrumbs } from '@/components/Breadcrumbs';
-import { Testimonials } from '@/components/Testimonials';
 import dynamic from 'next/dynamic';
 const LeadFormModal = dynamic(() => import('@/components/LeadFormModal').then(m => m.LeadFormModal), { ssr: false });
 import { PricingSection } from '@/components/PricingSection';
@@ -40,25 +39,25 @@ export function ServiceLocationPageClient({ params }: { params: { serviceSlug: s
               <Breadcrumbs items={[{ label: 'Gate Types', href: '/services/' }, { label: service.title, href: `/services/${service.slug}/` }, { label: cityName }]} />
             </div>
             <div className="inline-flex items-center gap-2 mb-3 w-fit border border-brand-300 bg-brand-100 px-3 py-1 font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-600">
-              <MapPin className="w-3 h-3" /> Vetted Installers in {cityName}
+              <MapPin className="w-3 h-3" /> Installation in {cityName}
             </div>
             <h1 className="font-syne font-extrabold uppercase tracking-tight text-brand-900 mb-5"
               style={{ fontSize: 'clamp(24px, 4vw, 40px)', lineHeight: 1.02, letterSpacing: '-.025em' }}>
               {service.title} in {cityName}
             </h1>
             <p className="text-brand-700 mb-10 max-w-lg leading-relaxed" style={{ fontSize: 'clamp(15px, 1.5vw, 17px)' }}>
-              Get matched with {cityName}&apos;s most experienced installers. Free site survey, free quotes, up to 3 options at no cost.
+              We design, supply and install {service.title.toLowerCase()} in {cityName}. Fill in the short form, we call you back within 24 hours to arrange a free site survey, then you get a written fixed quote.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mb-10">
               <button onClick={() => setIsModalOpen(true)} className="btn-primary !text-[12px] !py-3.5 !px-7">
-                Get Free Quotes
+                Get a Free Quote
               </button>
               <Link href={`/services/${service.slug}/`} className="btn-secondary !text-[12px] !py-3.5 !px-7">
                 About {service.title}
               </Link>
             </div>
             <div className="flex flex-wrap gap-x-8 gap-y-3">
-              {[`Specialists in ${cityName}`, 'Compare up to 3 quotes', '50+ installs per installer'].map(item => (
+              {[`We install in ${cityName}`, 'Free site survey', 'Written fixed quote'].map(item => (
                 <div key={item} className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-brand-500" />
                   <span className="font-syne font-bold text-[11px] tracking-[.08em] uppercase text-brand-600">{item}</span>
@@ -79,10 +78,10 @@ export function ServiceLocationPageClient({ params }: { params: { serviceSlug: s
           {/* Benefits */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 border-2 border-brand-900 bg-brand-200 gap-[1px] mb-16">
             {[
-              { icon: <Award className="w-5 h-5" />, title: 'Verified Specialists', desc: `Every ${cityName} installer has 50+ completed residential projects.` },
-              { icon: <Clock className="w-5 h-5" />, title: 'Survey Within a Week', desc: `Most ${cityName} installers offer slots within 7 days.` },
-              { icon: <Shield className="w-5 h-5" />, title: 'Insured & Warranted', desc: 'Every installer carries public liability cover and written warranties.' },
-              { icon: <Users className="w-5 h-5" />, title: 'Matched to Your Project', desc: `Installers with specific experience with your gate type in ${cityName}.` },
+              { icon: <Award className="w-5 h-5" />, title: 'Gate Specialists', desc: `We design, supply and install driveway gates ourselves. It is all we do.` },
+              { icon: <Clock className="w-5 h-5" />, title: 'Survey Within a Week', desc: `We can usually book a free site survey in ${cityName} within 7 days.` },
+              { icon: <Shield className="w-5 h-5" />, title: 'Insured & Warranted', desc: 'We carry public liability cover and every job comes with a written warranty.' },
+              { icon: <Users className="w-5 h-5" />, title: 'Local Knowledge', desc: `We install your gate type across ${cityName} and know the local site conditions.` },
             ].map((b, i) => (
               <div key={i} className="bg-brand-50 p-6">
                 <div className="border border-brand-400/30 w-10 h-10 flex items-center justify-center text-brand-500 mb-3">{b.icon}</div>
@@ -99,8 +98,8 @@ export function ServiceLocationPageClient({ params }: { params: { serviceSlug: s
                 <div className="craft-label">Overview</div>
                 <h2 className="craft-h2 mb-4">What to Expect From {service.title} in {cityName}</h2>
                 <div className="space-y-4 text-brand-700 leading-relaxed text-sm">
-                  <p>{service.title} are one of the most commonly requested gate types among {cityName} homeowners. Our vetted installers understand the specific challenges that {cityName} properties present — from tight access to sloped driveways, period property restrictions, and London clay ground conditions.</p>
-                  <p>{cityName} homeowners also benefit from working with installers who know the local planning rules. Most driveway gates fall under permitted development, but some London boroughs have additional guidelines. Our {cityName} installers handle these routinely and will flag any issues during the survey.</p>
+                  <p>{service.title} are one of the most commonly requested gate types among {cityName} homeowners. We understand the specific challenges that {cityName} properties present, from tight access to sloped driveways, period property restrictions, and London clay ground conditions.</p>
+                  <p>{cityName} homeowners also benefit from working with a team that knows the local planning rules. Most driveway gates fall under permitted development, but some London boroughs have additional guidelines. We handle these routinely and will flag any issues during the survey.</p>
                 </div>
               </section>
 
@@ -111,9 +110,9 @@ export function ServiceLocationPageClient({ params }: { params: { serviceSlug: s
                 <h2 className="craft-h2 mb-6">How {service.title} Installation Works in {cityName}</h2>
                 <div className="border-2 border-brand-900 bg-brand-200 gap-[1px] flex flex-col">
                   {[
-                    `Book a free site survey at a vetted ${cityName} installer through our matching form`,
-                    'Your installer visits, measures up, discusses design and material options, and checks ground conditions',
-                    'You receive a detailed written quote with a clear cost breakdown and timeline',
+                    `Fill in the short form and we call you back within 24 hours to book a free site survey in ${cityName}`,
+                    'We visit, measure up, discuss design and material options, and check ground conditions',
+                    'You receive a detailed written fixed quote with a clear cost breakdown and timeline',
                     'Once approved, the gate is designed, fabricated, and delivered to site',
                     'Installation takes 2 to 4 days: groundwork, gate fitting, automation, and finishing',
                     'Full commissioning, safety testing, and handover with remotes and manual release training',
@@ -130,12 +129,12 @@ export function ServiceLocationPageClient({ params }: { params: { serviceSlug: s
 
               <section className="mb-12">
                 <div className="craft-label">Why Us</div>
-                <h2 className="craft-h2 mb-4">Why Get {service.title} in {cityName} Through Us?</h2>
+                <h2 className="craft-h2 mb-4">Why Choose Us for {service.title} in {cityName}?</h2>
                 <div className="space-y-2">
                   {[
-                    `Every ${cityName} installer has been independently verified for experience, insurance, and warranty standards`,
-                    'You get a free site survey with a detailed written quote before any commitment',
-                    `${cityName} installers offer flexible scheduling including evenings and weekends`,
+                    'We design, supply and install every gate ourselves, fully insured with a written warranty',
+                    'You get a free site survey with a detailed written fixed quote before any commitment',
+                    'We offer flexible scheduling including evenings and weekends',
                     'Aftercare, warranties, and ongoing maintenance support are included as standard',
                   ].map((point, i) => (
                     <div key={i} className="flex items-start gap-3 border-b-2 border-brand-100 py-3 last:border-b-0">
@@ -152,11 +151,6 @@ export function ServiceLocationPageClient({ params }: { params: { serviceSlug: s
                 </div>
               )}
 
-              <section className="mb-12">
-                <div className="craft-label">Reviews</div>
-                <h2 className="craft-h2 mb-6">What Homeowners Are Saying</h2>
-                <Testimonials limit={2} />
-              </section>
             </div>
 
             {/* Sidebar */}
@@ -189,7 +183,7 @@ export function ServiceLocationPageClient({ params }: { params: { serviceSlug: s
                 <div className="bg-brand-900 p-6 border-2 border-brand-700">
                   <div className="font-display text-3xl text-brand-400">From £99/month</div>
                   <p className="text-brand-300 text-sm mt-1 mb-4">0% finance available. Spread the cost over 6 to 36 months.</p>
-                  <button onClick={() => setIsModalOpen(true)} className="btn-gold w-full justify-center">Get Free Quotes</button>
+                  <button onClick={() => setIsModalOpen(true)} className="btn-gold w-full justify-center">Get a Free Quote</button>
                 </div>
               </div>
             </aside>

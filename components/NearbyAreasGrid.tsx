@@ -23,8 +23,8 @@ export function NearbyAreasGrid({ cityName, serviceSlug, serviceName, initialVis
     : `Areas We Cover Around ${cityName}`;
 
   const description = serviceName
-    ? `Looking for ${serviceName.toLowerCase()} near ${cityName}? Our vetted installers serve homeowners across ${cityName} and the surrounding areas listed below.`
-    : `Our driveway gate installers in ${cityName} serve homeowners from across the wider London area. If you live in any of the neighbourhoods or nearby areas listed below, you are within reach of expert gate installation.`;
+    ? `Looking for ${serviceName.toLowerCase()} near ${cityName}? We serve homeowners across ${cityName} and the surrounding areas listed below.`
+    : `We install driveway gates for homeowners across ${cityName} and the wider London area. If you live in any of the neighbourhoods or nearby areas listed below, you are within reach of expert gate installation.`;
 
   return (
     <section className="mb-16">
@@ -74,8 +74,8 @@ export function NearbyAreasGrid({ cityName, serviceSlug, serviceName, initialVis
       <p className="mt-5 text-xs text-brand-500 leading-relaxed max-w-2xl">
         Homeowners from {areas.slice(0, 5).join(', ')}, and surrounding areas around {cityName} use our service regularly.{' '}
         {serviceName
-          ? `If you need ${serviceName.toLowerCase()} near ${cityName}, our vetted installers can arrange a free site survey including evenings and weekends.`
-          : `All partner installers are experienced, fully insured, and offer flexible appointment times.`}
+          ? `If you need ${serviceName.toLowerCase()} near ${cityName}, we can arrange a free site survey, including evenings and weekends.`
+          : `Our team is experienced, fully insured, and offers flexible appointment times.`}
       </p>
     </section>
   );

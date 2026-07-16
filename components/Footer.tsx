@@ -53,12 +53,8 @@ export function Footer() {
               DRIVEWAY<span className="text-brand-500">GATES</span>.LONDON
             </div>
             <p className="text-[13px] text-brand-500 leading-relaxed mb-4 font-light">
-              Independent matching service connecting London homeowners and businesses with vetted,
-              experienced gate installers across every borough.
-            </p>
-            <p className="text-[11.5px] text-brand-700 italic border-l-2 border-brand-800 pl-3 leading-relaxed">
-              We are a referral service. We connect you with independent gate installers.
-              We do not carry out installations ourselves.
+              We design, supply and install driveway gates for homeowners and businesses
+              across every London borough.
             </p>
           </div>
 
@@ -164,7 +160,7 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-[12px] text-brand-700">
-          <p>&copy; {new Date().getFullYear()} {siteConfig.name}. Matching service — not a gate installer.</p>
+          <p>&copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
           <div className="flex flex-wrap justify-center gap-x-5 gap-y-2">
             <Link href="/contact/"         className="hover:text-brand-400 transition-colors">Contact</Link>
             <Link href="/privacy-policy/"  className="hover:text-brand-400 transition-colors">Privacy Policy</Link>

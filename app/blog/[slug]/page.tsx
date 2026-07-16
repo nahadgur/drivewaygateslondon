@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { blogArticles, getArticleBySlug } from '@/data/blog';
+import { publishedArticles, getArticleBySlug } from '@/data/blog';
 import { services } from '@/data/services';
 import { siteConfig } from '@/data/site';
 import { BlogArticlePageClient } from './BlogArticlePageClient';
@@ -9,7 +9,7 @@ import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 interface Props { params: { slug: string } }
 
 export function generateStaticParams() {
-  return blogArticles.map(a => ({ slug: a.slug }));
+  return publishedArticles.map(a => ({ slug: a.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -90,7 +90,7 @@ export default function BlogArticlePage({ params }: Props) {
         relatedService={article.relatedServiceSlug ? services.find(s => s.slug === article.relatedServiceSlug) ?? null : null}
         serviceList={services.map(s => ({ slug: s.slug, title: s.title }))}
         articleImageMap={Object.fromEntries(
-          blogArticles.map(a => [a.slug, a.featuredImage])
+          publishedArticles.map(a => [a.slug, a.featuredImage])
         )}
       />
     </>

@@ -10,7 +10,6 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/Hero';
 import { TrustBadges } from '@/components/TrustBadges';
-import { Testimonials } from '@/components/Testimonials';
 import { FAQ } from '@/components/FAQ';
 import dynamic from 'next/dynamic';
 const LeadFormModal = dynamic(() => import('@/components/LeadFormModal').then(m => m.LeadFormModal), { ssr: false });
@@ -63,9 +62,15 @@ export function HomePageClient() {
 
         {/* ── Hero ── */}
         <Hero
-          title="London's Most Trusted Driveway Gate Installers, Compared"
-          subtitle="We vet every installer so you do not have to. Get matched with experienced, fully insured gate specialists near you. Free site survey, free quotes, zero cost to use our service."
+          title="Driveway Gates, Designed, Supplied & Installed Across London"
+          subtitle="Electric and manual driveway gates for London homes. We handle the survey, the groundwork, the automation, and the finished gates as one job, with a written fixed quote before any work starts."
           image="/images/gates/gate-wrought-iron-open-misty-morning-manor.png"
+          highlights={[
+            'Electric & automated gates',
+            'Wooden, metal & composite designs',
+            'Automation for existing gates',
+            'Gate repairs & servicing',
+          ]}
           onOpenModal={open}
         />
 
@@ -77,7 +82,7 @@ export function HomePageClient() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             {/* Left copy */}
             <div>
-              <div className="craft-label">About Our Service</div>
+              <div className="craft-label">What We Do</div>
               <h2 className="craft-h2 mb-6">
                 Secure Your London Property<br />
                 With the Right Gates
@@ -89,22 +94,22 @@ export function HomePageClient() {
               <div className="space-y-4 text-brand-700 leading-relaxed" style={{ fontSize: '15.5px' }}>
                 <p>Driveway gates are one of the most effective upgrades you can make to a London property. They add a layer of security that deters opportunistic intruders, keep children and pets safely within the boundary, and create a strong first impression that adds real value to your home.</p>
                 <p>The London market has grown significantly, driven by rising property values and homeowner demand for security and kerb appeal. Automation is now the norm — most homeowners opt for electric operation with intercom and remote control access.</p>
-                <p>Here is the part most homeowners miss: <strong className="text-brand-900 font-bold">not all gate installers are equal.</strong> The difference between an experienced specialist and a general builder is enormous. We only list installers who have completed 50 or more residential gate installations.</p>
+                <p>Here is the part most homeowners miss: <strong className="text-brand-900 font-bold">not all gate installers are equal.</strong> The difference between a specialist and a general builder shows up in the hinge alignment, the motor spec, and the safety compliance. Gates are all we do. We design, supply and install them, and we stand behind the finished job.</p>
               </div>
-              <button onClick={open} className="btn-primary mt-8">Get Free Quotes</button>
+              <button onClick={open} className="btn-primary mt-8">Get a Free Quote</button>
             </div>
 
             {/* Right: standards box + free box */}
             <div>
               <div className="ruled-border">
                 <div className="bg-brand-900 px-5 py-3 font-syne font-bold text-[9.5px] tracking-[.2em] uppercase text-brand-400">
-                  Our Installer Standards — Who Makes the Network
+                  Our Standards, On Every Job
                 </div>
                 {[
-                  'Minimum 50 residential gate installations',
+                  'Full site survey before we quote',
                   'Current public liability insurance',
                   'Written warranty on gates & automation',
-                  'Verified customer reviews on file',
+                  'Written fixed quote, itemised line by line',
                   'UK Machinery Directive safety compliance',
                 ].map((item, i, arr) => (
                   <div key={i} className={`flex items-center gap-3 px-5 py-4 text-sm text-brand-700 ${i < arr.length - 1 ? 'border-b border-brand-200' : ''}`}>
@@ -116,10 +121,10 @@ export function HomePageClient() {
               <div className="bg-brand-500 px-6 py-6 mt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div>
                   <div className="font-display text-5xl text-white leading-none">Free</div>
-                  <div className="text-sm text-white/75 mt-1">Our service costs you nothing at any stage</div>
+                  <div className="text-sm text-white/75 mt-1">Site survey and written quote, no obligation</div>
                 </div>
                 <button onClick={open} className="bg-white text-brand-700 font-syne font-bold text-xs tracking-[.1em] uppercase px-6 py-3 hover:bg-brand-50 transition-colors flex-shrink-0">
-                  Get Quotes
+                  Book a Survey
                 </button>
               </div>
             </div>
@@ -159,7 +164,7 @@ export function HomePageClient() {
             title={<>What London Homeowners<br />Actually Pay for Driveway Gates</>}
           />
           <p className="text-brand-700 mb-8 max-w-2xl" style={{ fontSize: '15.5px' }}>
-            Every project is different, but these are the price ranges you will see from experienced installers across London. As the capital, prices sit at the upper end nationally.
+            Every project is different, but these are the price ranges our customers typically pay across London. As the capital, prices sit at the upper end nationally.
           </p>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse text-sm">
@@ -253,10 +258,10 @@ export function HomePageClient() {
                   <div className="flex items-center justify-between pt-3 border-t-2 border-brand-200">
                     <Link href={`/services/${service.slug}/`}
                       className="font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-500 flex items-center hover:text-brand-700 transition-colors">
-                      Find installers <ArrowRight className="w-3 h-3 ml-1" />
+                      Learn more <ArrowRight className="w-3 h-3 ml-1" />
                     </Link>
                     <button onClick={open} className="bg-brand-900 hover:bg-brand-500 text-brand-50 font-syne font-bold text-[10px] tracking-[.08em] uppercase py-1.5 px-3 transition-colors">
-                      Get 3 Quotes
+                      Get a Quote
                     </button>
                   </div>
                 </div>
@@ -273,9 +278,9 @@ export function HomePageClient() {
           />
           <div className="grid grid-cols-1 md:grid-cols-3 border-2 border-brand-900 bg-brand-200 gap-[1px]">
             {[
-              { n: '01', title: 'Tell Us What You Need', desc: 'Fill in a 60-second form with your London area, the type of gate you want, and your rough budget. We only share your details with installers we match you with — nobody else.' },
-              { n: '02', title: 'We Find Your Best Options', desc: 'We filter our network of vetted London installers by gate type, distance, availability, and customer ratings. You get the best 2 to 3 matches for your project — not a generic list.' },
-              { n: '03', title: 'Installers Arrange Free Surveys', desc: 'Matched installers contact you within 24 hours to arrange a free site survey. Every survey includes full measurements, a design consultation, and a written quote. No obligation to proceed.' },
+              { n: '01', title: 'Tell Us What You Need', desc: 'Fill in a 60-second form with your London area, the type of gate you want, and your rough budget. Your details stay with us and are only used to arrange your survey.' },
+              { n: '02', title: 'We Arrange a Free Site Survey', desc: 'We call you back within 24 hours to book a survey at a time that suits you. We measure up, talk through designs and automation options, and answer planning questions on the spot.' },
+              { n: '03', title: 'You Get a Written Fixed Quote', desc: 'After the survey you receive an itemised written quote covering the gates, groundwork, automation, and commissioning. No obligation to proceed, and the price we quote is the price you pay.' },
             ].map(({ n, title, desc }) => (
               <div key={n} className="bg-brand-50 p-8 md:p-10">
                 <div className="font-display text-7xl text-brand-200 leading-none mb-4">{n}</div>
@@ -287,12 +292,12 @@ export function HomePageClient() {
 
           <div className="bg-brand-900 px-8 py-7 mt-0.5 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>
-              <div className="font-syne font-bold text-[9px] tracking-[.18em] uppercase text-brand-500 mb-2">Why This Service Exists</div>
+              <div className="font-syne font-bold text-[9px] tracking-[.18em] uppercase text-brand-500 mb-2">Why Homeowners Choose Us</div>
               <p className="text-sm text-brand-300 leading-relaxed max-w-lg">
-                Finding a good gate installer in London is harder than it should be. Search results are clogged with generic directories and companies that subcontract everything. We have done that legwork for every installer in our network so you do not have to.
+                Finding a good gate installer in London is harder than it should be. Search results are clogged with generic directories and firms that subcontract everything. We keep it simple: one specialist team that surveys, designs, supplies, installs, and stands behind the finished gates.
               </p>
             </div>
-            <button onClick={open} className="btn-gold flex-shrink-0">Get Free Quotes</button>
+            <button onClick={open} className="btn-gold flex-shrink-0">Get a Free Quote</button>
           </div>
         </Section>
 
@@ -329,38 +334,15 @@ export function HomePageClient() {
             </div>
           </div>
           <p className="text-brand-700 mt-6 text-sm leading-relaxed max-w-4xl">
-            The upfront cost difference between manual and automated gates is typically £1,200 to £3,000. For most London homeowners, that extra investment pays for itself in daily convenience, added property value, and improved security. If budget is tight, many of our installers offer manual gates with pre-wired posts so you can add automation later without digging everything up.
+            The upfront cost difference between manual and automated gates is typically £1,200 to £3,000. For most London homeowners, that extra investment pays for itself in daily convenience, added property value, and improved security. If budget is tight, we can fit manual gates with pre-wired posts so you can add automation later without digging everything up.
           </p>
-        </Section>
-
-        {/* ── Testimonials ── */}
-        <Section>
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
-            <div>
-              <div className="craft-label">Customer Reviews</div>
-              <h2 className="craft-h2">What London Homeowners Say</h2>
-              <p className="text-brand-600 text-sm mt-2">Real experiences from people who used our free matching service.</p>
-            </div>
-            <button onClick={open} className="btn-primary self-start md:self-auto whitespace-nowrap">Get Matched Free</button>
-          </div>
-          <Testimonials limit={3} />
-          <div className="bg-brand-900 px-7 py-5 mt-0.5 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-5">
-              <span className="font-display text-5xl text-white leading-none">4.9</span>
-              <div>
-                <div className="text-brand-500 text-lg tracking-[2px]">★★★★★</div>
-                <div className="font-syne font-bold text-[10px] tracking-[.14em] uppercase text-brand-400 mt-0.5">200+ Verified Reviews</div>
-              </div>
-            </div>
-            <button onClick={open} className="btn-gold">Get Matched Free</button>
-          </div>
         </Section>
 
         {/* ── Locations ── */}
         <Section className="bg-brand-100 border-y-2 border-brand-200">
           <SectionHead
             label="Coverage"
-            title={<>Find Gate Installers in<br />Your Part of London</>}
+            title={<>Driveway Gate Installation in<br />Your Part of London</>}
           />
           <p className="text-brand-600 text-sm mb-8 max-w-2xl">
             We cover every London borough and surrounding area. Each location page shows which gate types are popular locally, what homeowners pay, and how to book a free site survey.
@@ -394,14 +376,14 @@ export function HomePageClient() {
               <div className="max-w-xl">
                 <div className="craft-label" style={{ color: 'var(--brand-500)' }}>Get Started — Free</div>
                 <h2 className="craft-h2 text-white mb-4">
-                  Your Perfect Driveway Gates<br />Start With the{' '}
-                  <span className="text-brand-500">Right Installer.</span>
+                  Your Perfect Driveway Gates<br />Start With a{' '}
+                  <span className="text-brand-500">Free Site Survey.</span>
                 </h2>
                 <p className="text-brand-400 text-sm leading-relaxed">
-                  Fill in our 60-second form and let London&apos;s top gate installers come to you. Free quotes, free site surveys, zero strings attached.
+                  Fill in our 60-second form and we will call you back to book a free survey. Written fixed quote, no obligation, no strings attached.
                 </p>
                 <div className="flex flex-wrap gap-4 mt-5 text-xs text-brand-600">
-                  {['Always 100% free', '50+ installs per installer', 'Full insurance guaranteed'].map(item => (
+                  {['Free site survey', 'Written fixed quotes', 'Fully insured'].map(item => (
                     <div key={item} className="flex items-center gap-1.5">
                       <CheckCircle className="w-3.5 h-3.5 text-brand-500" /> {item}
                     </div>
@@ -409,7 +391,7 @@ export function HomePageClient() {
                 </div>
               </div>
               <div className="flex flex-col gap-3 flex-shrink-0">
-                <button onClick={open} className="btn-gold !text-sm !py-4 !px-10">Compare Installers Free</button>
+                <button onClick={open} className="btn-gold !text-sm !py-4 !px-10">Book a Free Survey</button>
                 <Link href="/services/"
                   className="btn-secondary !border-brand-500/40 !text-brand-400 hover:!bg-brand-800 hover:!text-brand-50 !text-sm !py-4 !px-10 text-center">
                   Browse Gate Types

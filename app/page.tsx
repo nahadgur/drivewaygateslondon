@@ -4,12 +4,12 @@ import { LONDON_BOROUGHS, LONDON_GEO } from '@/data/boroughs';
 import { HomePageClient } from './HomePageClient';
 
 export const metadata: Metadata = {
-  title: "Driveway Gates London | Vetted Gate Installers, Free Quotes",
-  description: "Find vetted, experienced driveway gate installers across London. Compare quotes for electric sliding gates, swing gates, wooden gates, metal gates, automation, and repairs. Free site survey, free service.",
+  title: "Driveway Gates London | Supply & Installation, Free Quotes",
+  description: "Driveway gate design, supply and installation across London. Electric sliding gates, swing gates, wooden gates, metal gates, automation, and repairs. Free site survey and written quote.",
   alternates: { canonical: siteConfig.url },
   openGraph: {
-    title: "Driveway Gates London | Vetted Gate Installers, Free Quotes",
-    description: "Find vetted, experienced driveway gate installers across London. Free site survey, free quotes.",
+    title: "Driveway Gates London | Supply & Installation, Free Quotes",
+    description: "Driveway gate design, supply and installation across London. Free site survey and written quote.",
     url: siteConfig.url,
     type: 'website',
     siteName: siteConfig.name,
@@ -18,19 +18,19 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Driveway Gates London | Vetted Gate Installers, Free Quotes",
-    description: "Find vetted, experienced driveway gate installers across London. Free site survey, free quotes.",
+    title: "Driveway Gates London | Supply & Installation, Free Quotes",
+    description: "Driveway gate design, supply and installation across London. Free site survey and written quote.",
   },
 };
 
 export default function HomePage() {
-  const referralServiceSchema = {
+  const installationServiceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    '@id': `${siteConfig.url}/#referral-service`,
-    serviceType: 'Driveway gate installer referral service',
-    name: `${siteConfig.name} — Vetted Gate Installer Referrals`,
-    description: 'Free referral service that matches London homeowners with vetted, independent driveway gate installers. We do not install gates ourselves.',
+    '@id': `${siteConfig.url}/#installation-service`,
+    serviceType: 'Driveway gate installation',
+    name: `${siteConfig.name} — Driveway Gate Supply & Installation`,
+    description: 'Design, supply and installation of driveway gates across London, including electric and automated systems, wooden and metal gates, gate automation retrofits, repairs and servicing.',
     url: siteConfig.url,
     areaServed: [
       { '@type': 'City', name: 'London', addressCountry: 'GB' },
@@ -56,7 +56,7 @@ export default function HomePage() {
       '@type': 'Offer',
       price: '0',
       priceCurrency: 'GBP',
-      description: 'Free matching service — no obligation, no fee to the homeowner.',
+      description: 'Free site survey and written quote. No obligation.',
       availability: 'https://schema.org/InStock',
     },
     hoursAvailable: {
@@ -79,7 +79,7 @@ export default function HomePage() {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(referralServiceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(installationServiceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <HomePageClient />
     </>

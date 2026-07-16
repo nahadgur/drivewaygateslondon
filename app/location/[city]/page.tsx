@@ -15,8 +15,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cityName = getCityBySlug(params.city);
   if (!cityName) return {};
 
-  const title = `Driveway Gates in ${cityName} | Vetted Installers, Free Quotes`;
-  const description = `Find vetted driveway gate installers in ${cityName}, London. Every installer has 50+ completed residential projects. Free site survey, free quotes for electric, wooden, and metal gates.`;
+  const title = `Driveway Gates in ${cityName} | Installation, Free Quotes`;
+  const description = `Driveway gate installation in ${cityName}, London. We design, supply and install electric, wooden, and metal gates. Free site survey and written quote.`;
   const url = `${siteConfig.url}/location/${params.city}/`;
 
   return {
@@ -43,9 +43,9 @@ export default function CityPage({ params }: Props) {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    serviceType: 'Driveway gate installer referral service',
-    name: `Driveway Gate Installer Referrals in ${cityName}`,
-    description: `Free referral service matching homeowners in ${cityName}, London with vetted, independent driveway gate installers. We do not install gates ourselves.`,
+    serviceType: 'Driveway gate installation',
+    name: `Driveway Gate Installation in ${cityName}`,
+    description: `Design, supply and installation of driveway gates in ${cityName}, London. Electric, wooden, and metal gates with free site surveys and written quotes.`,
     url: `${siteConfig.url}/location/${params.city}/`,
     image: `${siteConfig.url}/og-image.jpg`,
     areaServed: {
@@ -63,7 +63,7 @@ export default function CityPage({ params }: Props) {
       '@type': 'Offer',
       price: '0',
       priceCurrency: 'GBP',
-      description: 'Free matching service — no obligation, no fee to the homeowner.',
+      description: 'Free site survey and written quote, no obligation.',
     },
   };
 

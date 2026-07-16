@@ -8,8 +8,8 @@ interface HeroLeadFormProps { city?: string; service?: string; }
 
 const TRUST_BADGES = [
   { icon: Phone,       label: 'Call back within 2 hours' },
-  { icon: ShieldCheck, label: 'Fully insured installers' },
-  { icon: Award,       label: '50+ installs each' },
+  { icon: ShieldCheck, label: 'Fully insured team' },
+  { icon: Award,       label: 'Written fixed quotes' },
   { icon: Clock,       label: 'Free no-obligation survey' },
 ];
 
@@ -74,7 +74,7 @@ export function HeroLeadForm({ city, service }: HeroLeadFormProps) {
         </div>
         <h3 className="font-syne font-extrabold text-xl uppercase tracking-tight text-brand-900">Request Received!</h3>
         <p className="text-brand-600 text-sm max-w-xs">
-          A vetted installer{city ? ` in ${city}` : ''} will call you back shortly — typically within 2 hours.
+          We will call you back{city ? ` about your ${city} project` : ''} shortly, typically within 2 hours.
         </p>
       </div>
     );
@@ -84,11 +84,11 @@ export function HeroLeadForm({ city, service }: HeroLeadFormProps) {
     <div className="bg-brand-50 border-2 border-brand-900 p-6 md:p-8">
       {/* Header */}
       <div className="mb-5 border-b-2 border-brand-200 pb-5">
-        <div className="font-syne font-bold text-[9px] tracking-[.2em] uppercase text-brand-500 mb-2">Free Matching Service</div>
+        <div className="font-syne font-bold text-[9px] tracking-[.2em] uppercase text-brand-500 mb-2">Free Site Survey</div>
         <h3 className="font-syne font-extrabold text-xl uppercase tracking-tight text-brand-900 leading-tight">
           Get a Fast Quote{city ? ` in ${city}` : ''}
         </h3>
-        <p className="text-brand-600 text-sm mt-1">Tell us your number — a vetted local installer calls you back.</p>
+        <p className="text-brand-600 text-sm mt-1">Tell us your number and we will call you back.</p>
       </div>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">

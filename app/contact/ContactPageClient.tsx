@@ -7,14 +7,14 @@ import { HeroLeadForm } from '@/components/HeroLeadForm';
 
 const WHAT_HAPPENS = [
   { n: '01', title: 'You share your details', desc: 'Tell us your phone number, the type of gate you are after, and your area or postcode. Takes under a minute.' },
-  { n: '02', title: 'We match you to a vetted installer', desc: 'We connect you with an independent installer in our London network who specialises in your gate type and covers your area.' },
-  { n: '03', title: 'You get a free call back', desc: 'A vetted local installer calls you back — typically within 2 hours during business hours — to discuss your project and arrange a free site survey.' },
+  { n: '02', title: 'We call you back', desc: 'One of our team calls you back within 24 hours to discuss your project and arrange a free site survey at a time that suits you.' },
+  { n: '03', title: 'Free survey, written quote', desc: 'We visit your property, measure up, and talk through design and material options. You then receive a written fixed quote with no hidden costs.' },
 ];
 
 const ASSURANCES = [
-  { icon: ShieldCheck, title: 'Vetted installers only', desc: 'Every installer in our network has at least 50 completed residential installations and full public liability insurance.' },
-  { icon: Clock,       title: 'Fast response',         desc: 'Typical call-back time is under 2 hours during working hours (Monday to Sunday, 8am to 8pm).' },
-  { icon: CheckCircle, title: 'Free, no obligation',   desc: 'Our matching service is free. You only pay if you choose to go ahead with the installer after a quote and site survey.' },
+  { icon: ShieldCheck, title: 'We install ourselves', desc: 'We design, supply and install every gate with our own team, and we carry full public liability insurance.' },
+  { icon: Clock,       title: 'Fast response',         desc: 'We call you back within 24 hours (Monday to Sunday, 8am to 8pm).' },
+  { icon: CheckCircle, title: 'Free, no obligation',   desc: 'The site survey and written quote are free. You only pay if you choose to go ahead with the installation.' },
 ];
 
 export function ContactPageClient() {
@@ -29,10 +29,10 @@ export function ContactPageClient() {
             <div className="max-w-3xl">
               <div className="font-syne font-bold text-[10px] tracking-[.25em] uppercase text-brand-300 mb-4">Contact</div>
               <h1 className="font-syne font-extrabold text-4xl md:text-6xl uppercase tracking-tight leading-[1.05] mb-6">
-                Get in touch — we'll match you with a vetted installer
+                Get in touch about your driveway gates
               </h1>
               <p className="text-lg md:text-xl text-brand-200 leading-relaxed">
-                Driveway Gates London is a free referral service. Share your details below and a vetted local gate installer calls you back, typically within 2 hours. No pressure, no obligation.
+                We design, supply and install driveway gates across London. Share your details below and we call you back within 24 hours to arrange a free site survey. No pressure, no obligation.
               </p>
             </div>
           </div>

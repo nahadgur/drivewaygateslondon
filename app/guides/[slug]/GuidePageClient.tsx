@@ -148,9 +148,9 @@ export function GuidePageClient({ params }: { params: { slug: string } }) {
             <aside className="lg:col-span-1">
               <div className="sticky top-28 space-y-4">
                 <div className="border-2 border-brand-900 p-6 bg-brand-50">
-                  <div className="craft-label">Free Matching Service</div>
-                  <h3 className="font-syne font-bold text-sm uppercase tracking-tight text-brand-900 mb-2">Ready to Get Gate Quotes?</h3>
-                  <p className="text-brand-600 text-sm mb-5">Compare up to 3 vetted London installers — free, no obligation.</p>
+                  <div className="craft-label">Free Quote</div>
+                  <h3 className="font-syne font-bold text-sm uppercase tracking-tight text-brand-900 mb-2">Ready to Get a Gate Quote?</h3>
+                  <p className="text-brand-600 text-sm mb-5">Free site survey and written quote from our London team. No obligation.</p>
                   <button onClick={() => setIsModalOpen(true)} className="btn-primary w-full justify-center">Request a Free Call Back</button>
                   <p className="text-center text-xs text-brand-500 mt-3">Within 2 hours · No spam</p>
                 </div>

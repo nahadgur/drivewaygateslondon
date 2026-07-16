@@ -3,11 +3,11 @@ import { siteConfig } from '@/data/site';
 
 export const metadata: Metadata = {
   title: 'Gate Access Control Systems London | Intercoms, Keypads, ANPR',
-  description: 'Find vetted gate access control installers in London. Video intercoms, keypad entry, GSM phone openers, and ANPR systems. Free quotes from specialist engineers.',
+  description: 'Gate access control installation in London. We fit video intercoms, keypad entry, GSM phone openers, and ANPR systems. Free site survey and written quote.',
   alternates: { canonical: `${siteConfig.url}/services/access-control/` },
   openGraph: {
     title: 'Gate Access Control Systems London',
-    description: 'Video intercoms, keypad entry, GSM phone openers, and ANPR systems from vetted London specialists.',
+    description: 'We install video intercoms, keypad entry, GSM phone openers, and ANPR systems across London.',
     url: `${siteConfig.url}/services/access-control/`,
     type: 'website',
     siteName: siteConfig.name,

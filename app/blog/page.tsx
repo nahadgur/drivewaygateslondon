@@ -3,20 +3,20 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { ArrowRight, Calendar, Search } from 'lucide-react';
-import { blogArticles } from '@/data/blog';
+import { publishedArticles } from '@/data/blog';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import dynamic from 'next/dynamic';
 const LeadFormModal = dynamic(() => import('@/components/LeadFormModal').then(m => m.LeadFormModal), { ssr: false });
 
-const CATEGORIES = ['All', ...Array.from(new Set(blogArticles.map(a => a.category))).sort()];
+const CATEGORIES = ['All', ...Array.from(new Set(publishedArticles.map(a => a.category))).sort()];
 
 export default function BlogIndexPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeCategory, setActiveCategory] = useState('All');
   const [search, setSearch] = useState('');
 
-  const filtered = blogArticles
+  const filtered = publishedArticles
     .filter(a => activeCategory === 'All' || a.category === activeCategory)
     .filter(a => search.trim() === '' || a.title.toLowerCase().includes(search.toLowerCase()) || a.excerpt.toLowerCase().includes(search.toLowerCase()))
     .sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime());
@@ -166,10 +166,10 @@ export default function BlogIndexPage() {
                   style={{ fontSize: 'clamp(18px, 2.5vw, 28px)', letterSpacing: '-.02em' }}>
                   Ready to Get Quotes for Your Driveway Gates?
                 </h3>
-                <p className="text-brand-300 text-sm mt-2 max-w-md">We match London homeowners with vetted, insured gate installers. Free, no obligation.</p>
+                <p className="text-brand-300 text-sm mt-2 max-w-md">We design, supply and install driveway gates across London. Free site survey and written quote.</p>
               </div>
               <button onClick={() => setIsModalOpen(true)} className="btn-gold flex-shrink-0 inline-flex items-center gap-2">
-                Get 3 Free Quotes <ArrowRight className="w-4 h-4" />
+                Get a Free Quote <ArrowRight className="w-4 h-4" />
               </button>
             </div>
           </div>

@@ -103,10 +103,10 @@ export default function GuidesHubPage() {
             <div>
               <div className="craft-label" style={{ color: 'var(--brand-500)' }}>Ready?</div>
               <h2 className="craft-h2 text-white">Ready to Get Quotes?</h2>
-              <p className="text-brand-400 text-sm mt-3 max-w-md">When you are ready, we match you with vetted London installers — free and no obligation.</p>
+              <p className="text-brand-400 text-sm mt-3 max-w-md">When you are ready, we will arrange a free site survey and written quote. No obligation.</p>
             </div>
             <button onClick={() => setIsModalOpen(true)} className="btn-gold flex-shrink-0 inline-flex items-center gap-2">
-              Get Free Quotes <ArrowRight className="w-4 h-4" />
+              Get a Free Quote <ArrowRight className="w-4 h-4" />
             </button>
           </div>
         </section>

@@ -98,5 +98,5 @@ export const financeInfo = {
   interestFree: true,
   monthlyFrom: 99,
   spreadOver: '6 to 36 months',
-  description: 'Many of our London installers offer 0% finance on gate installations, letting you spread the cost from as little as £99 per month. Subject to status and approval.',
+  description: 'We offer 0% finance on most gate installations, letting you spread the cost from as little as £99 per month. Subject to status and approval.',
 };

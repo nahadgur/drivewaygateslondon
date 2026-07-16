@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!service) return {};
 
   const title = `${service.title} for Driveway Gates London | Installation & Quotes`;
-  const description = `${service.description} Vetted London gate access control installers. Free site survey, free quotes, no obligation.`;
+  const description = `${service.description} Gate access control installation across London. Free site survey and written quote, no obligation.`;
   const url = `${siteConfig.url}/services/access-control/${service.slug}/`;
 
   return {

@@ -15,8 +15,8 @@ export function PricingSection({ cityName, serviceId, serviceName }: PricingSect
     : 'Driveway Gate Pricing Guide';
 
   const intro = cityName
-    ? `Driveway gate prices in ${cityName} vary depending on the gate type, material, and level of automation. Below are typical costs from vetted installers in the ${cityName} area. All prices are in GBP and include full installation.`
-    : 'Driveway gate prices across London vary depending on the gate type, material, automation requirements, and design complexity. Below are typical costs from installers in our network. All prices are in GBP and include installation.';
+    ? `Driveway gate prices in ${cityName} vary depending on the gate type, material, and level of automation. Below are typical costs for our installations in the ${cityName} area. All prices are in GBP and include full installation.`
+    : 'Driveway gate prices across London vary depending on the gate type, material, automation requirements, and design complexity. Below are typical costs for our installations. All prices are in GBP and include installation.';
 
   return (
     <section className="mb-16">
@@ -105,7 +105,7 @@ export function PricingSection({ cityName, serviceId, serviceName }: PricingSect
 
       {cityName && (
         <p className="mt-6 text-sm text-brand-600 leading-relaxed max-w-3xl">
-          The cost of driveway gates in {cityName} depends on several factors: the material, whether you want automation, the width of your entrance, and any bespoke design requirements. London prices tend to sit at the higher end nationally, but the installers in our {cityName} network are competitively priced. Every installer offers a free site survey so you can get an accurate, itemised quote before any commitment.
+          The cost of driveway gates in {cityName} depends on several factors: the material, whether you want automation, the width of your entrance, and any bespoke design requirements. London prices tend to sit at the higher end nationally, but our {cityName} pricing is competitive. Every job starts with a free site survey so you get an accurate, itemised quote before any commitment.
         </p>
       )}
     </section>

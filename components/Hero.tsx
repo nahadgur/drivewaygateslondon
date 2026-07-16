@@ -5,12 +5,15 @@ interface HeroProps {
   title: string;
   subtitle: string;
   image: string;
+  /** Scannable "what we do" checklist rendered between the subtitle and
+      the CTAs, so the offer lands in one look on every screen size. */
+  highlights?: string[];
   showCta?: boolean;
   showTrust?: boolean;
   onOpenModal?: () => void;
 }
 
-export function Hero({ title, subtitle, image, showCta = true, showTrust = true, onOpenModal }: HeroProps) {
+export function Hero({ title, subtitle, image, highlights, showCta = true, showTrust = true, onOpenModal }: HeroProps) {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-[1fr_400px] xl:grid-cols-[1fr_480px] border-b-[3px] border-brand-900 min-h-[60vh] lg:min-h-[88vh]">
 
@@ -34,19 +37,30 @@ export function Hero({ title, subtitle, image, showCta = true, showTrust = true,
           )}
         </h1>
 
-        <p className="text-brand-700 leading-relaxed mb-10 max-w-lg" style={{ fontSize: 'clamp(15px, 1.6vw, 17px)' }}>
+        <p className="text-brand-700 leading-relaxed mb-8 max-w-lg" style={{ fontSize: 'clamp(15px, 1.6vw, 17px)' }}>
           {subtitle}
         </p>
+
+        {highlights && highlights.length > 0 && (
+          <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2.5 mb-9 max-w-lg border-l-2 border-brand-500 pl-4">
+            {highlights.map(item => (
+              <li key={item} className="flex items-start gap-2 text-[13.5px] text-brand-800 leading-snug">
+                <span aria-hidden className="text-brand-500 font-bold flex-shrink-0">✓</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        )}
 
         {showCta && (
           <div className="flex flex-col sm:flex-row gap-3 mb-10">
             {onOpenModal ? (
               <button onClick={onOpenModal} className="btn-primary !text-[12px] !py-3.5 !px-7">
-                Get Free Quotes
+                Get a Free Quote
               </button>
             ) : (
               <Link href="/services/" className="btn-primary !text-[12px] !py-3.5 !px-7">
-                Get Free Quotes
+                Get a Free Quote
               </Link>
             )}
             <Link href="/services/" className="btn-secondary !text-[12px] !py-3.5 !px-7">
@@ -57,7 +71,7 @@ export function Hero({ title, subtitle, image, showCta = true, showTrust = true,
 
         {showTrust && (
           <div className="flex flex-wrap gap-x-8 gap-y-3">
-            {['500+ Installations', 'Free Site Surveys', '4.9★ Rated'].map(item => (
+            {['Free Site Surveys', 'Written Fixed Quotes', 'Fully Insured'].map(item => (
               <div key={item} className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-brand-500" />
                 <span className="font-syne font-bold text-[11px] tracking-[.08em] uppercase text-brand-600">{item}</span>
@@ -84,7 +98,7 @@ export function Hero({ title, subtitle, image, showCta = true, showTrust = true,
         </div>
         {/* Badge strip */}
         <div className="absolute bottom-0 left-0 right-0 bg-brand-900 px-5 py-4 flex flex-wrap gap-4">
-          {[['500+', 'Installations'], ['4.9★', 'Rated'], ['32', 'Boroughs'], ['Free', 'Survey']].map(([n, l]) => (
+          {[['32', 'Boroughs Covered'], ['Free', 'Site Survey'], ['0%', 'Finance'], ['2-4', 'Day Installs']].map(([n, l]) => (
             <div key={l} className="flex items-center gap-2">
               <span className="w-1 h-1 rounded-full bg-brand-500" />
               <span className="text-brand-300 text-[11.5px] font-body">

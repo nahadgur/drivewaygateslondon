@@ -46,17 +46,17 @@ function BlogCtaBanner({ onOpenModal }: { onOpenModal: () => void }) {
   return (
     <div className="my-10 border-2 border-brand-900 bg-brand-50">
       <div className="bg-brand-900 px-5 py-3 font-syne font-bold text-[9px] tracking-[.18em] uppercase text-brand-400">
-        Free Matching Service
+        Free Site Survey
       </div>
       <div className="px-7 py-7 flex flex-col md:flex-row items-start md:items-center gap-6">
         <div className="flex-1">
           <h3 className="font-syne font-bold text-[13px] tracking-[.04em] uppercase text-brand-900 mb-1">
-            Ready to get driveway gate quotes?
+            Ready to get a driveway gate quote?
           </h3>
-          <p className="text-brand-600 text-sm">Get matched with vetted London installers — no obligation, no cost.</p>
+          <p className="text-brand-600 text-sm">We install across London. Free site survey and written quote, no obligation.</p>
         </div>
         <button onClick={onOpenModal} className="btn-gold flex-shrink-0 inline-flex items-center gap-2">
-          Get 3 Free Quotes <ArrowRight className="w-4 h-4" />
+          Get a Free Quote <ArrowRight className="w-4 h-4" />
         </button>
       </div>
     </div>
@@ -269,8 +269,8 @@ export function BlogArticlePageClient({ article, relatedService, serviceList, ar
                 <div className="border-2 border-brand-900 p-6 bg-brand-50">
                   <div className="craft-label">Free Quote</div>
                   <h3 className="font-syne font-bold text-sm uppercase tracking-tight text-brand-900 mb-3">Get your free gate quotes</h3>
-                  <p className="text-brand-600 text-sm mb-5">Compare up to 3 vetted London installers — free, no obligation.</p>
-                  <button onClick={() => setIsModalOpen(true)} className="btn-primary w-full justify-center">Find Installers</button>
+                  <p className="text-brand-600 text-sm mb-5">Free site survey and written quote from our London team. No obligation.</p>
+                  <button onClick={() => setIsModalOpen(true)} className="btn-primary w-full justify-center">Get a Free Quote</button>
                 </div>
 
                 {relatedService && (

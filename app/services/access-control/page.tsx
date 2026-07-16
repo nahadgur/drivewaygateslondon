@@ -73,9 +73,9 @@ export default function AccessControlHubPage() {
             <div>
               <div className="craft-label" style={{ color: 'var(--brand-500)' }}>Not Sure?</div>
               <h2 className="craft-h2 text-white">Not Sure Which System Is Right?</h2>
-              <p className="text-brand-400 text-sm mt-3 max-w-md">Tell us about your gate setup and we will match you with a London installer who can advise on the best access control solution.</p>
+              <p className="text-brand-400 text-sm mt-3 max-w-md">Tell us about your gate setup and we will advise on the best access control solution for your property.</p>
             </div>
-            <button onClick={() => setIsModalOpen(true)} className="btn-gold flex-shrink-0">Get Free Quotes</button>
+            <button onClick={() => setIsModalOpen(true)} className="btn-gold flex-shrink-0">Get a Free Quote</button>
           </div>
         </section>
       </main>

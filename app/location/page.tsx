@@ -32,8 +32,8 @@ export default function LocationIndexPage() {
       <Header onOpenModal={() => setIsModalOpen(true)} />
       <main>
         <Hero
-          title="Find Driveway Gate Installers in Your Area"
-          subtitle="Access London's most trusted network of driveway gate specialists. Vetted for experience, verified for quality."
+          title="Driveway Gate Installation in Your Area"
+          subtitle="We design, supply and install driveway gates across Greater London. Find your area below to see how we work near you."
           image="/images/gates/gate-wrought-iron-open-spring-avenue.png"
           onOpenModal={() => setIsModalOpen(true)}
         />

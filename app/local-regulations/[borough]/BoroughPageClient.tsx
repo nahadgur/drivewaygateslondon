@@ -137,7 +137,7 @@ export function BoroughPageClient({ params }: { params: { borough: string } }) {
               <div className="space-y-4">
                 <div className="border-2 border-brand-900 p-6 bg-brand-50">
                   <div className="craft-label">Get a Quote in {borough.name}</div>
-                  <p className="text-brand-600 text-sm mb-5">Vetted installers who know {borough.name} planning rules inside out.</p>
+                  <p className="text-brand-600 text-sm mb-5">We install across {borough.name} and know the planning rules inside out.</p>
                   <button onClick={() => setIsModalOpen(true)} className="btn-primary w-full justify-center">Request a Free Call Back</button>
                   <p className="text-center text-xs text-brand-500 mt-3">Within 2 hours · No obligation</p>
                 </div>

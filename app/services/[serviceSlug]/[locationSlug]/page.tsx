@@ -21,8 +21,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cityName = getCityBySlug(params.locationSlug);
   if (!service || !cityName) return {};
 
-  const title = `${service.title} in ${cityName} | Vetted Installers, Free Quotes`;
-  const description = `Find vetted ${service.title.toLowerCase()} specialists in ${cityName}. Every installer has 50+ completed residential projects. Free site survey, free quotes, no obligation.`;
+  const title = `${service.title} in ${cityName} | Installation, Free Quotes`;
+  const description = `${service.title} installation in ${cityName}. We design, supply and install ourselves. Free site survey and written quote, no obligation.`;
   const url = `${siteConfig.url}/services/${service.slug}/${params.locationSlug}/`;
 
   return {
