@@ -1,5 +1,7 @@
 // data/blog.ts
 
+import { blogFeaturedImages } from './featuredImages';
+
 export interface ContentBlock {
   type: string;
   text?: string;
@@ -20,6 +22,7 @@ export interface BlogArticle {
   publishDate: string;
   updatedDate?: string;
   featuredImage: string;
+  featuredImageAlt?: string;
   excerpt: string;
   relatedServiceSlug?: string;
   /** When true the article is excluded from listings, sitemap, and static
@@ -28,7 +31,7 @@ export interface BlogArticle {
   content: ContentBlock[];
 }
 
-export const blogArticles: BlogArticle[] = [
+const blogArticleEntries: BlogArticle[] = [
   {
     slug: 'bi-fold-vs-sliding-gates-london',
     relatedServiceSlug: 'electric-sliding-gates',
@@ -3877,6 +3880,17 @@ export const blogArticles: BlogArticle[] = [
     ]
   },
 ];
+
+export const blogArticles: BlogArticle[] = blogArticleEntries.map(article => {
+  const featured = blogFeaturedImages[article.slug];
+  return {
+    ...article,
+    ...(featured ? { featuredImage: featured.src, featuredImageAlt: featured.alt } : {}),
+    // Old autoblogging inline images are intentionally removed. Each article
+    // now has one relevant, high-quality featured photograph.
+    content: article.content.filter(block => block.type !== 'image'),
+  };
+});
 
 /** Live articles only (drafts excluded). Use for listings, sitemap, and routing. */
 export const publishedArticles: BlogArticle[] = blogArticles.filter(a => !a.draft);

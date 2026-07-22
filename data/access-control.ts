@@ -1,3 +1,5 @@
+import { accessControlFeaturedImages } from './featuredImages';
+
 export interface AccessControlService {
   id: string;
   slug: string;
@@ -6,12 +8,13 @@ export interface AccessControlService {
   metaDescription: string;
   description: string;
   image: string;
+  imageAlt?: string;
   intro: string[];
   benefits: { title: string; desc: string }[];
   faqs: { question: string; answer: string }[];
 }
 
-export const accessControlServices: AccessControlService[] = [
+const accessControlEntries: AccessControlService[] = [
   {
     id: 'video-intercoms',
     slug: 'video-intercoms',
@@ -113,6 +116,11 @@ export const accessControlServices: AccessControlService[] = [
     ],
   },
 ];
+
+export const accessControlServices: AccessControlService[] = accessControlEntries.map(service => {
+  const featured = accessControlFeaturedImages[service.slug];
+  return featured ? { ...service, image: featured.src, imageAlt: featured.alt } : service;
+});
 
 export function getAccessControlBySlug(slug: string): AccessControlService | undefined {
   return accessControlServices.find(s => s.slug === slug);

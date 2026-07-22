@@ -65,21 +65,14 @@ function BlogCtaBanner({ onOpenModal }: { onOpenModal: () => void }) {
 
 /* ── Content renderer ── */
 function ContentRenderer({ blocks, onOpenModal, articleImageMap }: { blocks: ContentBlock[]; onOpenModal: () => void; articleImageMap: Record<string, string> }) {
-  const imageQueue: { [h2Index: number]: { src: string; alt: string }[] } = {};
   let h2Count = 0;
-  let currentH2Index = -1;
   let ctaInsertBeforeH2 = -1;
 
   for (let i = 0; i < blocks.length; i++) {
     const block = blocks[i];
     if (block.type === 'h2') {
       h2Count++;
-      currentH2Index = i;
       if (h2Count === 2) ctaInsertBeforeH2 = i;
-    }
-    if (block.type === 'image' && currentH2Index !== -1) {
-      if (!imageQueue[currentH2Index]) imageQueue[currentH2Index] = [];
-      imageQueue[currentH2Index].push({ src: block.src ?? '', alt: block.alt ?? '' });
     }
   }
 
@@ -102,16 +95,6 @@ function ContentRenderer({ blocks, onOpenModal, articleImageMap }: { blocks: Con
                 {block.text}
               </h2>
             );
-            if (imageQueue[i]) {
-              imageQueue[i].forEach((img, imgIdx) => {
-                elements.push(
-                  <div key={`img-${i}-${imgIdx}`} className="my-6 border-2 border-brand-900 overflow-hidden aspect-[16/9]">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={img.src} alt={img.alt} className="w-full h-full object-cover" style={{ filter: 'saturate(.8)' }} loading="lazy" />
-                  </div>
-                );
-              });
-            }
             break;
 
           case 'h3':
@@ -228,13 +211,14 @@ export function BlogArticlePageClient({ article, relatedService, serviceList, ar
       <Header onOpenModal={() => setIsModalOpen(true)} />
       <main>
 
-        {/* Hero */}
-        <div className="relative h-[380px] md:h-[480px] overflow-hidden border-b-[3px] border-brand-900">
-          <Image src={article.featuredImage} alt={article.title}
-            fill className="object-cover" style={{ filter: 'saturate(.7)' }} priority
-            sizes="100vw" />
-          <div className="absolute inset-0 bg-gradient-to-t from-brand-950/95 via-brand-950/50 to-transparent" />
-          <div className="absolute bottom-0 left-0 right-0 container-width pb-10">
+        <div className="relative w-full aspect-[3/2] md:aspect-[21/9] overflow-hidden border-b-[3px] border-brand-900 bg-brand-100">
+          <Image src={article.featuredImage} alt={article.featuredImageAlt || article.title}
+            fill className="object-cover" priority sizes="100vw" />
+        </div>
+
+        {/* Article heading */}
+        <section className="bg-brand-950 border-b-[3px] border-brand-900">
+          <div className="container-width py-10 md:py-14">
             <Link href="/blog/" className="inline-flex items-center gap-1 font-syne font-bold text-[10px] tracking-[.15em] uppercase text-brand-400 mb-4 hover:text-brand-200 transition-colors">
               <ArrowLeft className="w-3 h-3" /> Back to blog
             </Link>
@@ -252,7 +236,7 @@ export function BlogArticlePageClient({ article, relatedService, serviceList, ar
               {article.title}
             </h1>
           </div>
-        </div>
+        </section>
 
         {/* Body */}
         <div className="container-width py-12 md:py-16">

@@ -29,10 +29,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'article',
       siteName: siteConfig.name,
       locale: 'en_GB',
-      images: [{ url: article.featuredImage.startsWith('http') ? article.featuredImage : `${siteConfig.url}${article.featuredImage}`, width: 1200, height: 630, alt: article.title }],
+      images: [{ url: article.featuredImage.startsWith('http') ? article.featuredImage : `${siteConfig.url}${article.featuredImage}`, width: 1536, height: 1024, alt: article.featuredImageAlt || article.title }],
       publishedTime: article.publishDate,
     },
-    twitter: { card: 'summary_large_image', title: article.title, description: article.metaDescription },
+    twitter: { card: 'summary_large_image', title: article.title, description: article.metaDescription, images: [article.featuredImage.startsWith('http') ? article.featuredImage : `${siteConfig.url}${article.featuredImage}`] },
   };
 }
 
@@ -51,8 +51,8 @@ export default function BlogArticlePage({ params }: Props) {
     image: {
       '@type': 'ImageObject',
       url: article.featuredImage.startsWith('http') ? article.featuredImage : `${siteConfig.url}${article.featuredImage}`,
-      width: 1200,
-      height: 630,
+      width: 1536,
+      height: 1024,
     },
     author: {
       '@type': 'Organization',

@@ -93,7 +93,7 @@ export default function BlogIndexPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2">
                       <div className="relative h-60 md:h-auto overflow-hidden border-b-2 md:border-b-0 md:border-r-2 border-brand-900">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src={featured.featuredImage} alt={featured.title}
+                        <img src={featured.featuredImage} alt={featured.featuredImageAlt || featured.title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                           style={{ filter: 'saturate(.8)' }} loading="lazy" />
                         <div className="absolute top-0 left-0 bg-brand-900 px-3 py-1.5 font-syne font-bold text-[9px] tracking-[.16em] uppercase text-brand-400">
@@ -129,7 +129,7 @@ export default function BlogIndexPage() {
                         className="group bg-brand-50 hover:bg-brand-100 flex flex-col transition-colors overflow-hidden">
                         <div className="relative h-44 overflow-hidden border-b-2 border-brand-900">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img src={article.featuredImage} alt={article.title}
+                          <img src={article.featuredImage} alt={article.featuredImageAlt || article.title}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                             style={{ filter: 'saturate(.8)' }} loading="lazy" />
                           <div className="absolute top-0 left-0 bg-brand-900 px-3 py-1.5 font-syne font-bold text-[9px] tracking-[.16em] uppercase text-brand-400">

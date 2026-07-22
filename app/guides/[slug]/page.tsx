@@ -28,10 +28,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'article',
       siteName: siteConfig.name,
       locale: 'en_GB',
-      images: [{ url: guide.featuredImage.startsWith('http') ? guide.featuredImage : `${siteConfig.url}${guide.featuredImage}`, width: 1200, height: 630, alt: guide.title }],
+      images: [{ url: guide.featuredImage.startsWith('http') ? guide.featuredImage : `${siteConfig.url}${guide.featuredImage}`, width: 1536, height: 1024, alt: guide.featuredImageAlt || guide.title }],
       publishedTime: guide.publishDate,
     },
-    twitter: { card: 'summary_large_image', title: guide.title, description: guide.metaDescription },
+    twitter: { card: 'summary_large_image', title: guide.title, description: guide.metaDescription, images: [guide.featuredImage.startsWith('http') ? guide.featuredImage : `${siteConfig.url}${guide.featuredImage}`] },
   };
 }
 
@@ -50,8 +50,8 @@ export default function GuidePage({ params }: Props) {
     image: {
       '@type': 'ImageObject',
       url: guide.featuredImage.startsWith('http') ? guide.featuredImage : `${siteConfig.url}${guide.featuredImage}`,
-      width: 1200,
-      height: 630,
+      width: 1536,
+      height: 1024,
     },
     author: {
       '@type': 'Organization',

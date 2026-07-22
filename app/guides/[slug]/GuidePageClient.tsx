@@ -34,12 +34,13 @@ export function GuidePageClient({ params }: { params: { slug: string } }) {
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
       <main>
-        {/* Hero */}
-        <div className="relative h-[360px] md:h-[440px] overflow-hidden border-b-[3px] border-brand-900">
-          <Image src={guide.featuredImage} alt={guide.title} fill className="object-cover" style={{ filter: 'saturate(.7)' }} priority
-            sizes="100vw" />
-          <div className="absolute inset-0 bg-gradient-to-t from-brand-950/95 via-brand-950/50 to-transparent" />
-          <div className="absolute bottom-0 left-0 right-0 container-width pb-10">
+        <div className="relative w-full aspect-[3/2] md:aspect-[21/9] overflow-hidden border-b-[3px] border-brand-900 bg-brand-100">
+          <Image src={guide.featuredImage} alt={guide.featuredImageAlt || guide.title} fill className="object-cover" priority sizes="100vw" />
+        </div>
+
+        {/* Guide heading */}
+        <section className="bg-brand-950 border-b-[3px] border-brand-900">
+          <div className="container-width py-10 md:py-14">
             <Link href="/guides/" className="inline-flex items-center gap-1 font-syne font-bold text-[10px] tracking-[.15em] uppercase text-brand-400 mb-4 hover:text-brand-200 transition-colors">
               <ArrowLeft className="w-3 h-3" /> Back to guides
             </Link>
@@ -56,7 +57,7 @@ export function GuidePageClient({ params }: { params: { slug: string } }) {
               {guide.title}
             </h1>
           </div>
-        </div>
+        </section>
 
         <div className="container-width py-12 md:py-16">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -127,7 +128,7 @@ export function GuidePageClient({ params }: { params: { slug: string } }) {
                         className="group bg-brand-50 hover:bg-brand-100 flex flex-col transition-colors overflow-hidden">
                         <div className="h-28 overflow-hidden border-b-2 border-brand-900">
                           {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img src={g.featuredImage} alt={g.title}
+                          <img src={g.featuredImage} alt={g.featuredImageAlt || g.title}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                             style={{ filter: 'saturate(.8)' }} loading="lazy" />
                         </div>

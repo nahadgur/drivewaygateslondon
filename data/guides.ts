@@ -1,3 +1,5 @@
+import { guideFeaturedImages } from './featuredImages';
+
 export type GuidePillar =
   | 'Pricing & Costs'
   | 'Comparison & Buying'
@@ -20,6 +22,7 @@ export interface Guide {
   publishDate: string;
   updatedDate?: string;
   featuredImage: string;
+  featuredImageAlt?: string;
   intro: string;
   sections: GuideSection[];
   faqs: { question: string; answer: string }[];
@@ -27,7 +30,7 @@ export interface Guide {
   relatedGuides?: string[];
 }
 
-export const guides: Guide[] = [
+const guideEntries: Guide[] = [
 
   {
     slug: 'electric-driveway-gates-cost-london',
@@ -423,6 +426,13 @@ export const guides: Guide[] = [
   },
 
 ];
+
+export const guides: Guide[] = guideEntries.map(guide => {
+  const featured = guideFeaturedImages[guide.slug];
+  return featured
+    ? { ...guide, featuredImage: featured.src, featuredImageAlt: featured.alt }
+    : guide;
+});
 
 export const GUIDE_PILLARS: GuidePillar[] = [
   'Pricing & Costs',

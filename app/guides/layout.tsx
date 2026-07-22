@@ -12,9 +12,9 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: siteConfig.name,
     locale: 'en_GB',
-    images: [{ url: `${siteConfig.url}/og-image.jpg`, width: 1200, height: 630, alt: 'Driveway Gate Guides London' }],
+    images: [{ url: `${siteConfig.url}/images/guides/electric-driveway-gates-cost-london.webp`, width: 1536, height: 1024, alt: 'London homeowner reviewing an electric driveway-gate quote with an installer' }],
   },
-  twitter: { card: 'summary_large_image', title: 'Driveway Gate Guides for London Homeowners', description: 'Expert driveway gate guides for London — pricing, comparisons, maintenance, and safety.' },
+  twitter: { card: 'summary_large_image', title: 'Driveway Gate Guides for London Homeowners', description: 'Expert driveway gate guides for London — pricing, comparisons, maintenance, and safety.', images: [`${siteConfig.url}/images/guides/electric-driveway-gates-cost-london.webp`] },
 };
 
 export default function GuidesLayout({ children }: { children: React.ReactNode }) {

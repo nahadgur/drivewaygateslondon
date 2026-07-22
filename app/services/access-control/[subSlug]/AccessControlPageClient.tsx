@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
 import { CheckCircle, ArrowRight } from 'lucide-react';
 import { accessControlServices, getAccessControlBySlug } from '@/data/access-control';
 import { Header } from '@/components/Header';
@@ -26,12 +27,12 @@ export function AccessControlPageClient({ params }: { params: { subSlug: string 
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
       <main>
-        <section className="bg-brand-950 border-b-[3px] border-brand-900 relative overflow-hidden">
-          <div className="absolute inset-0">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={service.image} alt="" className="w-full h-full object-cover opacity-10" loading="eager" />
-          </div>
-          <div className="container-width py-12 md:py-20 relative z-10">
+        <div className="relative w-full aspect-[3/2] md:aspect-[21/9] overflow-hidden border-b-[3px] border-brand-900 bg-brand-100">
+          <Image src={service.image} alt={service.imageAlt || service.title} fill priority sizes="100vw" className="object-cover" />
+        </div>
+
+        <section className="bg-brand-950 border-b-[3px] border-brand-900">
+          <div className="container-width py-12 md:py-20">
             <Breadcrumbs items={[{ label: 'Gate Types', href: '/services/' }, { label: 'Access Control', href: '/services/access-control/' }, { label: service.title }]} />
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mt-6">
               <div>

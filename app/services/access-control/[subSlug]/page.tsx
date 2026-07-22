@@ -30,9 +30,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'website',
       siteName: siteConfig.name,
       locale: 'en_GB',
-      images: [{ url: service.image.startsWith('http') ? service.image : `${siteConfig.url}${service.image}`, width: 1200, height: 630, alt: service.title }],
+      images: [{ url: service.image.startsWith('http') ? service.image : `${siteConfig.url}${service.image}`, width: 1536, height: 1024, alt: service.imageAlt || service.title }],
     },
-    twitter: { card: 'summary_large_image', title, description },
+    twitter: { card: 'summary_large_image', title, description, images: [service.image.startsWith('http') ? service.image : `${siteConfig.url}${service.image}`] },
   };
 }
 
@@ -47,6 +47,7 @@ export default function AccessControlPage({ params }: Props) {
     description: service.description,
     url: `${siteConfig.url}/services/access-control/${service.slug}/`,
     serviceType: service.title,
+    image: service.image.startsWith('http') ? service.image : `${siteConfig.url}${service.image}`,
     areaServed: { '@type': 'City', name: 'London', addressCountry: 'GB' },
     provider: { '@type': 'LocalBusiness', name: siteConfig.name, url: siteConfig.url },
   };

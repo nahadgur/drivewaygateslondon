@@ -70,7 +70,7 @@ export default function GuidesHubPage() {
                   className="group bg-brand-50 hover:bg-brand-100 flex flex-col transition-colors overflow-hidden">
                   <div className="relative h-44 overflow-hidden border-b-2 border-brand-900">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={guide.featuredImage} alt={guide.title}
+                    <img src={guide.featuredImage} alt={guide.featuredImageAlt || guide.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       style={{ filter: 'saturate(.8)' }} loading="lazy" />
                     <div className="absolute top-0 left-0 bg-brand-900 px-3 py-1.5 font-syne font-bold text-[9px] tracking-[.16em] uppercase text-brand-400 flex items-center gap-1.5">

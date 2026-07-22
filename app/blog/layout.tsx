@@ -12,9 +12,9 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: siteConfig.name,
     locale: 'en_GB',
-    images: [{ url: `${siteConfig.url}/og-image.jpg`, width: 1200, height: 630, alt: 'Driveway Gate Blog London' }],
+    images: [{ url: `${siteConfig.url}/images/blog/bi-fold-vs-sliding-gates-london.webp`, width: 1536, height: 1024, alt: 'Installer checking a compact bi-fold driveway gate at a London home' }],
   },
-  twitter: { card: 'summary_large_image', title: 'Driveway Gate Blog | London Homeowner Guides & Advice', description: 'Straight-talking driveway gate advice for London homeowners.' },
+  twitter: { card: 'summary_large_image', title: 'Driveway Gate Blog | London Homeowner Guides & Advice', description: 'Straight-talking driveway gate advice for London homeowners.', images: [`${siteConfig.url}/images/blog/bi-fold-vs-sliding-gates-london.webp`] },
 };
 
 export default function BlogLayout({ children }: { children: React.ReactNode }) {
