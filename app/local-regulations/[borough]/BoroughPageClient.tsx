@@ -26,7 +26,7 @@ export function BoroughPageClient({ params }: { params: { borough: string } }) {
     <>
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
-      <main>
+      <main id="main" tabIndex={-1} className="scroll-mt-24 outline-none">
 
         {/* Hero */}
         <section className="bg-brand-950 border-b-[3px] border-brand-900">
@@ -90,7 +90,7 @@ export function BoroughPageClient({ params }: { params: { borough: string } }) {
                   <div className="space-y-2">
                     {borough.keyRules.map((rule, i) => (
                       <div key={i} className="flex items-start gap-3 border-b-2 border-brand-100 py-4 last:border-b-0">
-                        <FileText className="w-4 h-4 text-brand-500 flex-shrink-0 mt-0.5" />
+                        <FileText className="w-4 h-4 text-brand-600 flex-shrink-0 mt-0.5" />
                         <p className="text-brand-700 text-sm leading-relaxed">{rule}</p>
                       </div>
                     ))}
@@ -111,7 +111,7 @@ export function BoroughPageClient({ params }: { params: { borough: string } }) {
                   <div className="space-y-3">
                     {borough.commonIssues.map((issue, i) => (
                       <div key={i} className="flex items-start gap-3 border-b-2 border-brand-100 py-3 last:border-b-0">
-                        <AlertCircle className="w-4 h-4 text-brand-500 flex-shrink-0 mt-0.5" />
+                        <AlertCircle className="w-4 h-4 text-brand-600 flex-shrink-0 mt-0.5" />
                         <p className="text-brand-600 text-sm leading-relaxed">{issue}</p>
                       </div>
                     ))}
@@ -139,7 +139,7 @@ export function BoroughPageClient({ params }: { params: { borough: string } }) {
                   <div className="craft-label">Get a Quote in {borough.name}</div>
                   <p className="text-brand-600 text-sm mb-5">We install across {borough.name} and know the planning rules inside out.</p>
                   <button onClick={() => setIsModalOpen(true)} className="btn-primary w-full justify-center">Request a Free Call Back</button>
-                  <p className="text-center text-xs text-brand-500 mt-3">Within 2 hours · No obligation</p>
+                  <p className="text-center text-xs text-brand-600 mt-3">Within 2 hours · No obligation</p>
                 </div>
 
                 <div className="border-2 border-brand-200 p-5 bg-brand-50">
@@ -148,7 +148,7 @@ export function BoroughPageClient({ params }: { params: { borough: string } }) {
                     {services.slice(0, 6).map(s => (
                       <li key={s.slug}>
                         <Link href={`/services/${s.slug}/`}
-                          className="block py-2 border-b border-brand-100 last:border-0 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-600 hover:text-brand-500 transition-colors">
+                          className="block py-2 border-b border-brand-100 last:border-0 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-600 hover:text-brand-900 transition-colors">
                           {s.title}
                         </Link>
                       </li>
@@ -162,7 +162,7 @@ export function BoroughPageClient({ params }: { params: { borough: string } }) {
                     {otherBoroughs.map(b => (
                       <li key={b.slug}>
                         <Link href={`/local-regulations/${b.slug}/`}
-                          className="flex items-center gap-2 py-2 border-b border-brand-100 last:border-0 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-600 hover:text-brand-500 transition-colors">
+                          className="flex items-center gap-2 py-2 border-b border-brand-100 last:border-0 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-600 hover:text-brand-900 transition-colors">
                           {b.name}
                           {b.article4Directions && (
                             <span className="font-syne font-bold text-[8px] tracking-[.08em] uppercase px-1 bg-brand-200 text-brand-700">A4</span>
@@ -171,7 +171,7 @@ export function BoroughPageClient({ params }: { params: { borough: string } }) {
                       </li>
                     ))}
                   </ul>
-                  <Link href="/local-regulations/" className="inline-flex items-center gap-1 font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-500 mt-3 hover:text-brand-700">
+                  <Link href="/local-regulations/" className="inline-flex items-center gap-1 font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-600 mt-3 hover:text-brand-900">
                     View all boroughs <ArrowRight className="w-3 h-3" />
                   </Link>
                 </div>

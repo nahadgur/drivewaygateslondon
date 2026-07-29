@@ -18,7 +18,7 @@ export default function LocalRegulationsHub() {
     <>
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
-      <main>
+      <main id="main" tabIndex={-1} className="scroll-mt-24 outline-none">
         <section className="bg-brand-950 border-b-[3px] border-brand-900">
           <div className="container-width py-16 md:py-24">
             <Breadcrumbs items={[{ label: 'London Gate Planning Guides' }]} />
@@ -94,9 +94,9 @@ export default function LocalRegulationsHub() {
                         <span className="font-syne font-bold text-[8px] tracking-[.08em] uppercase px-1.5 py-0.5 bg-brand-700 text-brand-200 group-hover:bg-brand-500">Article 4</span>
                       )}
                     </div>
-                    <span className="font-syne font-bold text-[10px] tracking-[.06em] uppercase text-brand-500 group-hover:text-brand-400">{borough.conservationAreas} conservation areas</span>
+                    <span className="font-syne font-bold text-[10px] tracking-[.06em] uppercase text-brand-600 group-hover:text-brand-300">{borough.conservationAreas} conservation areas</span>
                   </div>
-                  <ArrowRight className="w-4 h-4 text-brand-400 group-hover:text-brand-500 group-hover:translate-x-1 transition-all flex-shrink-0" />
+                  <ArrowRight className="w-4 h-4 text-brand-400 group-hover:text-brand-600 group-hover:translate-x-1 transition-all flex-shrink-0" />
                 </Link>
               ))}
             </div>
@@ -106,7 +106,7 @@ export default function LocalRegulationsHub() {
         <section className="bg-brand-900 py-20">
           <div className="container-width flex flex-col md:flex-row items-center justify-between gap-8">
             <div>
-              <div className="craft-label" style={{ color: 'var(--brand-500)' }}>Get a Quote</div>
+              <div className="craft-label text-brand-400">Get a Quote</div>
               <h2 className="craft-h2 text-white">Need a Gate Team That Knows Your Borough?</h2>
               <p className="text-brand-400 text-sm mt-3 max-w-md">We know the local planning rules inside out. We will advise on permitted development and guide you through any application process.</p>
             </div>

@@ -43,7 +43,7 @@ export function NearbyAreasGrid({ cityName, serviceSlug, serviceName, initialVis
               : `/location/${toSlug(area)}/`;
             return (
               <Link key={area} href={href}
-                className="bg-brand-50 px-3 py-2.5 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-800 hover:bg-brand-900 hover:text-brand-50 transition-colors">
+                className="bg-brand-50 flex items-center min-h-[44px] px-3 py-2.5 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-800 hover:bg-brand-900 hover:text-brand-50 transition-colors">
                 {label}
               </Link>
             );
@@ -51,7 +51,7 @@ export function NearbyAreasGrid({ cityName, serviceSlug, serviceName, initialVis
 
           return (
             <div key={area}
-              className="bg-brand-50 px-3 py-2.5 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-600">
+              className="bg-brand-50 flex items-center min-h-[44px] px-3 py-2.5 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-600">
               {label}
             </div>
           );
@@ -60,18 +60,18 @@ export function NearbyAreasGrid({ cityName, serviceSlug, serviceName, initialVis
 
       {hiddenCount > 0 && !showAll && (
         <button onClick={() => setShowAll(true)}
-          className="mt-4 flex items-center gap-2 font-syne font-bold text-[11px] tracking-[.1em] uppercase text-brand-500 hover:text-brand-700 transition-colors">
+          className="mt-4 flex items-center gap-2 font-syne font-bold text-[11px] tracking-[.1em] uppercase text-brand-600 hover:text-brand-900 transition-colors">
           Show all {areas.length} areas <ChevronDown className="w-3.5 h-3.5" />
         </button>
       )}
       {showAll && hiddenCount > 0 && (
         <button onClick={() => setShowAll(false)}
-          className="mt-4 flex items-center gap-2 font-syne font-bold text-[11px] tracking-[.1em] uppercase text-brand-500 hover:text-brand-700 transition-colors">
+          className="mt-4 flex items-center gap-2 font-syne font-bold text-[11px] tracking-[.1em] uppercase text-brand-600 hover:text-brand-900 transition-colors">
           Show fewer <ChevronDown className="w-3.5 h-3.5 rotate-180" />
         </button>
       )}
 
-      <p className="mt-5 text-xs text-brand-500 leading-relaxed max-w-2xl">
+      <p className="mt-5 text-xs text-brand-600 leading-relaxed max-w-2xl">
         Homeowners from {areas.slice(0, 5).join(', ')}, and surrounding areas around {cityName} use our service regularly.{' '}
         {serviceName
           ? `If you need ${serviceName.toLowerCase()} near ${cityName}, we can arrange a free site survey, including evenings and weekends.`

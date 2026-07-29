@@ -68,7 +68,7 @@ export function ServicePageClient({ params }: { params: { serviceSlug: string } 
     <>
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
-      <main>
+      <main id="main" tabIndex={-1} className="scroll-mt-24 outline-none">
 
         {/* Split hero — text left, image right */}
         <section className="grid grid-cols-1 lg:grid-cols-[1fr_400px] xl:grid-cols-[1fr_480px] border-b-[3px] border-brand-900 min-h-[60vh] lg:min-h-[82vh]">
@@ -135,7 +135,7 @@ export function ServicePageClient({ params }: { params: { serviceSlug: string } 
                   {content.benefits.map((b, i) => (
                     <div key={i} className="bg-brand-50 p-6 hover:bg-brand-100 transition-colors">
                       <div className="flex items-center gap-2 mb-2">
-                        <span className="text-brand-500 font-bold">✓</span>
+                        <span aria-hidden className="text-brand-600 font-bold">✓</span>
                         <h3 className="font-syne font-bold text-[12.5px] tracking-[.04em] uppercase text-brand-900">{b.title}</h3>
                       </div>
                       <p className="text-sm text-brand-600 leading-relaxed">{b.desc}</p>
@@ -152,7 +152,7 @@ export function ServicePageClient({ params }: { params: { serviceSlug: string } 
                     <h2 className="craft-h2">We Install {service.title} Across London</h2>
                   </div>
                   <button onClick={() => setShowLocations(!showLocations)}
-                    className="flex items-center gap-2 font-syne font-bold text-[11px] tracking-[.1em] uppercase text-brand-500 hover:text-brand-700 whitespace-nowrap">
+                    className="flex items-center gap-2 font-syne font-bold text-[11px] tracking-[.1em] uppercase text-brand-600 hover:text-brand-900 whitespace-nowrap">
                     {showLocations ? 'Hide locations' : `All ${totalCities}+ areas`}
                     <ChevronDown className={`w-4 h-4 transition-transform ${showLocations ? 'rotate-180' : ''}`} />
                   </button>
@@ -164,7 +164,7 @@ export function ServicePageClient({ params }: { params: { serviceSlug: string } 
                       aria-label="Search London areas"
                       value={searchQuery}
                       onChange={e => { setSearchQuery(e.target.value); if (!showLocations) setShowLocations(true); }}
-                      className="w-full pl-11 pr-4 py-3 border-2 border-brand-200 bg-brand-50 text-brand-900 text-sm focus:outline-none focus:border-brand-500 transition" />
+                      className="w-full pl-11 pr-4 py-3 border-2 border-brand-200 bg-brand-50 text-brand-900 text-base focus:outline-none focus:border-brand-500 transition" />
                   </div>
                 </div>
                 {showLocations && (
@@ -177,7 +177,7 @@ export function ServicePageClient({ params }: { params: { serviceSlug: string } 
                             {cities.map(city => (
                               <Link key={city} href={`/services/${service.slug}/${toSlug(city)}/`}
                                 className="bg-brand-50 px-3 py-2 font-syne font-bold text-[11px] tracking-[.03em] uppercase text-brand-700 hover:bg-brand-900 hover:text-brand-50 transition-colors flex items-center gap-1.5">
-                                <MapPin className="w-2.5 h-2.5 text-brand-500 flex-shrink-0" />
+                                <MapPin className="w-2.5 h-2.5 text-brand-600 flex-shrink-0" />
                                 <span className="truncate">{city}</span>
                               </Link>
                             ))}
@@ -204,7 +204,7 @@ export function ServicePageClient({ params }: { params: { serviceSlug: string } 
                 )}
                 {!showLocations && (
                   <p className="text-sm text-brand-600">
-                    Search your area above or <button onClick={() => setShowLocations(true)} className="text-brand-500 font-bold hover:underline">browse all locations</button> to see the areas we cover.
+                    Search your area above or <button onClick={() => setShowLocations(true)} className="text-brand-600 font-bold hover:underline">browse all locations</button> to see the areas we cover.
                   </p>
                 )}
               </section>
@@ -218,7 +218,7 @@ export function ServicePageClient({ params }: { params: { serviceSlug: string } 
                   <div className="bg-brand-900 px-5 py-2.5 font-syne font-bold text-[9px] tracking-[.2em] uppercase text-brand-400">Checklist</div>
                   {content.candidates.map((c, i, arr) => (
                     <div key={i} className={`flex items-start gap-3 px-5 py-4 text-sm text-brand-700 ${i < arr.length - 1 ? 'border-b border-brand-200' : ''}`}>
-                      <span className="text-brand-500 font-bold flex-shrink-0">✓</span>{c}
+                      <span aria-hidden className="text-brand-600 font-bold flex-shrink-0">✓</span>{c}
                     </div>
                   ))}
                 </div>

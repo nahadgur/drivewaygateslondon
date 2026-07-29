@@ -24,7 +24,7 @@ export default function CommercialHubPage() {
     <>
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
-      <main>
+      <main id="main" tabIndex={-1} className="scroll-mt-24 outline-none">
         <section className="bg-brand-950 border-b-[3px] border-brand-900">
           <div className="container-width py-16 md:py-24">
             <Breadcrumbs items={[{ label: 'Commercial Gate Systems' }]} />
@@ -53,20 +53,20 @@ export default function CommercialHubPage() {
               {commercialServices.map(service => (
                 <Link key={service.slug} href={`/commercial/${service.slug}/`}
                   className="group bg-brand-50 hover:bg-brand-100 p-8 transition-colors">
-                  <div className="border border-brand-400/30 w-12 h-12 flex items-center justify-center text-brand-500 mb-5 group-hover:bg-brand-900 group-hover:text-brand-400 transition-colors">
+                  <div className="border border-brand-400/30 w-12 h-12 flex items-center justify-center text-brand-600 mb-5 group-hover:bg-brand-900 group-hover:text-brand-400 transition-colors">
                     {iconMap[service.slug]}
                   </div>
-                  <h3 className="font-syne font-bold text-[13px] tracking-[.04em] uppercase text-brand-900 mb-3 group-hover:text-brand-500 transition-colors">{service.title}</h3>
+                  <h3 className="font-syne font-bold text-[13px] tracking-[.04em] uppercase text-brand-900 mb-3 group-hover:text-brand-600 transition-colors">{service.title}</h3>
                   <p className="text-brand-600 text-sm leading-relaxed mb-4">{service.description}</p>
                   <div className="mb-5">
-                    <div className="font-syne font-bold text-[9px] tracking-[.16em] uppercase text-brand-500 mb-2">Typical clients</div>
+                    <div className="font-syne font-bold text-[9px] tracking-[.16em] uppercase text-brand-600 mb-2">Typical clients</div>
                     <div className="flex flex-wrap gap-1.5">
                       {service.typicalClients.slice(0, 3).map(c => (
                         <span key={c} className="px-2 py-0.5 border border-brand-300 text-brand-600 font-syne font-bold text-[10px] tracking-[.04em] uppercase">{c}</span>
                       ))}
                     </div>
                   </div>
-                  <span className="font-syne font-bold text-[11px] tracking-[.1em] uppercase text-brand-500 flex items-center gap-1">
+                  <span className="font-syne font-bold text-[11px] tracking-[.1em] uppercase text-brand-600 flex items-center gap-1">
                     View details <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </Link>
@@ -98,7 +98,7 @@ export default function CommercialHubPage() {
         <section className="bg-brand-900 py-20">
           <div className="container-width flex flex-col md:flex-row md:items-center md:justify-between gap-8">
             <div>
-              <div className="craft-label" style={{ color: 'var(--brand-500)' }}>Get a Quote</div>
+              <div className="craft-label text-brand-400">Get a Quote</div>
               <h2 className="craft-h2 text-white">Get a Commercial Gate Quote</h2>
               <p className="text-brand-400 text-sm mt-3 max-w-md">Tell us about your site. We install commercial gate systems across London and will advise on the right specification for your premises.</p>
             </div>

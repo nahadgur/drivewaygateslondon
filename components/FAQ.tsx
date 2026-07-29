@@ -21,6 +21,7 @@ export function FAQ({ faqs, title = 'Frequently Asked Questions' }: { faqs: FAQI
           return (
             <div key={i} className="faq-item">
               <button
+                id={`faq-question-${i}`}
                 onClick={() => setOpenIndex(isOpen ? null : i)}
                 aria-expanded={isOpen}
                 aria-controls={`faq-answer-${i}`}
@@ -32,14 +33,14 @@ export function FAQ({ faqs, title = 'Frequently Asked Questions' }: { faqs: FAQI
                 <span
                   className={`flex-shrink-0 w-6 h-6 border-2 flex items-center justify-center transition-all duration-200 ${
                     isOpen
-                      ? 'bg-brand-900 border-brand-900 rotate-45'
-                      : 'border-brand-400'
+                      ? 'bg-brand-900 border-brand-900 text-white rotate-45'
+                      : 'border-brand-500 text-brand-600'
                   }`}
                   aria-hidden="true"
                 >
                   <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="4" y="0" width="2" height="10" fill={isOpen ? '#ffffff' : '#9A7D56'} />
-                    <rect x="0" y="4" width="10" height="2" fill={isOpen ? '#ffffff' : '#9A7D56'} />
+                    <rect x="4" y="0" width="2" height="10" fill="currentColor" />
+                    <rect x="0" y="4" width="10" height="2" fill="currentColor" />
                   </svg>
                 </span>
               </button>

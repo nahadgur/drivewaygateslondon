@@ -22,7 +22,7 @@ export function Breadcrumbs({ items }: { items: BreadcrumbItem[] }) {
           <li key={i} className="flex items-center gap-1">
             {i > 0 && <ChevronRight className="w-3 h-3 text-brand-600/40" />}
             {item.href
-              ? <Link href={item.href} className="font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-400 hover:text-brand-200 transition-colors">{item.label}</Link>
+              ? <Link href={item.href} className="inline-block py-1.5 font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-400 hover:text-brand-200 transition-colors">{item.label}</Link>
               : <span className="font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-200">{item.label}</span>
             }
           </li>

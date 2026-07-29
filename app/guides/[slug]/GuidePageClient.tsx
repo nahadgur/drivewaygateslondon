@@ -33,7 +33,7 @@ export function GuidePageClient({ params }: { params: { slug: string } }) {
     <>
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
-      <main>
+      <main id="main" tabIndex={-1} className="scroll-mt-24 outline-none">
         <div className="relative w-full aspect-[3/2] md:aspect-[21/9] overflow-hidden border-b-[3px] border-brand-900 bg-brand-100">
           <Image src={guide.featuredImage} alt={guide.featuredImageAlt || guide.title} fill className="object-cover" priority sizes="100vw" />
         </div>
@@ -81,7 +81,7 @@ export function GuidePageClient({ params }: { params: { slug: string } }) {
                     {guide.sections.map((section, i) => (
                       <li key={i}>
                         <a href={`#section-${i}`}
-                          className="flex items-start gap-2.5 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-600 hover:text-brand-500 transition-colors">
+                          className="flex items-start gap-2.5 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-600 hover:text-brand-900 transition-colors">
                           <span className="text-brand-400 flex-shrink-0 w-5">{i + 1}.</span>
                           {section.heading}
                         </a>
@@ -89,7 +89,7 @@ export function GuidePageClient({ params }: { params: { slug: string } }) {
                     ))}
                     {guide.faqs.length > 0 && (
                       <li>
-                        <a href="#faqs" className="flex items-start gap-2.5 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-600 hover:text-brand-500 transition-colors">
+                        <a href="#faqs" className="flex items-start gap-2.5 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-600 hover:text-brand-900 transition-colors">
                           <span className="text-brand-400 flex-shrink-0 w-5">{guide.sections.length + 1}.</span>
                           FAQs
                         </a>
@@ -107,7 +107,7 @@ export function GuidePageClient({ params }: { params: { slug: string } }) {
                     {section.heading}
                   </h2>
                   {section.body.split('\n\n').map((para, j) => (
-                    <p key={j} className="text-brand-600 leading-relaxed mb-5 text-sm [&_a]:text-brand-500 [&_a]:underline [&_a]:underline-offset-2 [&_a:hover]:text-brand-700"
+                    <p key={j} className="text-brand-600 leading-relaxed mb-5 text-sm [&_a]:text-brand-600 [&_a]:underline [&_a]:underline-offset-2 [&_a:hover]:text-brand-700"
                       dangerouslySetInnerHTML={{ __html: para }} />
                   ))}
                 </div>
@@ -133,8 +133,8 @@ export function GuidePageClient({ params }: { params: { slug: string } }) {
                             style={{ filter: 'saturate(.8)' }} loading="lazy" />
                         </div>
                         <div className="p-4 flex-grow">
-                          <p className="font-syne font-bold text-[11px] uppercase tracking-tight text-brand-900 group-hover:text-brand-500 transition-colors leading-snug line-clamp-2 mb-2">{g.title}</p>
-                          <span className="font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-500 flex items-center gap-1">
+                          <p className="font-syne font-bold text-[11px] uppercase tracking-tight text-brand-900 group-hover:text-brand-600 transition-colors leading-snug line-clamp-2 mb-2">{g.title}</p>
+                          <span className="font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-600 flex items-center gap-1">
                             Read <ArrowRight className="w-3 h-3" />
                           </span>
                         </div>
@@ -153,12 +153,12 @@ export function GuidePageClient({ params }: { params: { slug: string } }) {
                   <h3 className="font-syne font-bold text-sm uppercase tracking-tight text-brand-900 mb-2">Ready to Get a Gate Quote?</h3>
                   <p className="text-brand-600 text-sm mb-5">Free site survey and written quote from our London team. No obligation.</p>
                   <button onClick={() => setIsModalOpen(true)} className="btn-primary w-full justify-center">Request a Free Call Back</button>
-                  <p className="text-center text-xs text-brand-500 mt-3">Within 2 hours · No spam</p>
+                  <p className="text-center text-xs text-brand-600 mt-3">Within 2 hours · No spam</p>
                 </div>
 
                 {relatedService && (
                   <div className="bg-brand-900 p-6 border-2 border-brand-700">
-                    <div className="craft-label" style={{ color: 'var(--brand-500)' }}>Relevant Service</div>
+                    <div className="craft-label text-brand-400">Relevant Service</div>
                     <h3 className="font-syne font-bold text-sm uppercase tracking-tight text-white mb-2">{relatedService.title}</h3>
                     <p className="text-brand-300 text-xs leading-relaxed mb-5">{relatedService.description}</p>
                     <Link href={`/services/${relatedService.slug}/`}
@@ -173,12 +173,12 @@ export function GuidePageClient({ params }: { params: { slug: string } }) {
                   <div className="space-y-1">
                     {guides.filter(g => g.slug !== guide.slug).slice(0, 6).map(g => (
                       <Link key={g.slug} href={`/guides/${g.slug}/`}
-                        className="block py-2 border-b border-brand-100 last:border-0 font-syne font-bold text-[11px] tracking-[.03em] uppercase text-brand-600 hover:text-brand-500 transition-colors leading-snug">
+                        className="block py-2 border-b border-brand-100 last:border-0 font-syne font-bold text-[11px] tracking-[.03em] uppercase text-brand-600 hover:text-brand-900 transition-colors leading-snug">
                         {g.title}
                       </Link>
                     ))}
                   </div>
-                  <Link href="/guides/" className="inline-flex items-center gap-1 font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-500 mt-4 hover:text-brand-700">
+                  <Link href="/guides/" className="inline-flex items-center gap-1 font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-600 mt-4 hover:text-brand-900">
                     View all guides <ArrowRight className="w-3 h-3" />
                   </Link>
                 </div>

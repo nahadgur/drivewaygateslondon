@@ -26,7 +26,7 @@ export function CityPageClient({ params }: { params: { city: string } }) {
     <>
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
-      <main>
+      <main id="main" tabIndex={-1} className="scroll-mt-24 outline-none">
 
         {/* Hero */}
         <section className="bg-brand-950 border-b-[3px] border-brand-900">
@@ -78,11 +78,11 @@ export function CityPageClient({ params }: { params: { city: string } }) {
                           style={{ filter: 'saturate(.8)' }} loading="lazy" />
                       </div>
                       <div className="p-5">
-                        <h3 className="font-syne font-bold text-[12.5px] tracking-[.04em] uppercase text-brand-900 group-hover:text-brand-500 mb-1.5 transition-colors">
+                        <h3 className="font-syne font-bold text-[12.5px] tracking-[.04em] uppercase text-brand-900 group-hover:text-brand-600 mb-1.5 transition-colors">
                           {service.title} in {cityName}
                         </h3>
-                        <p className="text-xs text-brand-500 mb-3 line-clamp-2 leading-relaxed">{service.description}</p>
-                        <span className="font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-500 flex items-center gap-1">
+                        <p className="text-xs text-brand-600 mb-3 line-clamp-2 leading-relaxed">{service.description}</p>
+                        <span className="font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-600 flex items-center gap-1">
                           Get a free quote <ArrowRight className="w-2.5 h-2.5" />
                         </span>
                       </div>
@@ -152,7 +152,7 @@ export function CityPageClient({ params }: { params: { city: string } }) {
           {/* Bottom CTA */}
           <div className="bg-brand-900 p-8 md:p-12 mt-12 flex flex-col md:flex-row items-center md:justify-between gap-8">
             <div>
-              <div className="craft-label" style={{ color: 'var(--brand-500)' }}>Get Started</div>
+              <div className="craft-label text-brand-400">Get Started</div>
               <h2 className="craft-h2 text-white">Ready to Get Driveway Gates in {cityName}?</h2>
               <p className="text-brand-400 text-sm mt-2 max-w-lg">Fill in our 60-second form and we call you back within 24 hours to arrange a free site survey in {cityName}. Free survey, written fixed quote, zero obligation.</p>
             </div>

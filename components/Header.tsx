@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { X, ChevronDown, Shield, FileText, Building2, Camera, Hash, Phone, Zap, BookOpen } from 'lucide-react';
 import { services } from '@/data/services';
+import { useScrollLock } from '@/lib/useScrollLock';
 
 interface HeaderProps {
   onOpenModal?: () => void;
@@ -36,13 +37,11 @@ export function Header({ onOpenModal }: HeaderProps) {
   const [mobileSection, setMobileSection] = useState<string | null>(null);
   const [openDropdown, setOpenDropdown]   = useState<string | null>(null);
   const navRef = useRef<HTMLElement>(null);
+  const triggerRefs = useRef<Record<string, HTMLButtonElement | null>>({});
   const pathname = usePathname();
 
   useEffect(() => { setMobileOpen(false); setMobileSection(null); setOpenDropdown(null); }, [pathname]);
-  useEffect(() => {
-    document.body.style.overflow = mobileOpen ? 'hidden' : '';
-    return () => { document.body.style.overflow = ''; };
-  }, [mobileOpen]);
+  useScrollLock(mobileOpen);
 
   // Close desktop dropdown on click outside
   useEffect(() => {
@@ -54,10 +53,17 @@ export function Header({ onOpenModal }: HeaderProps) {
     return () => document.removeEventListener('mousedown', handleClick);
   }, [openDropdown]);
 
-  // Close desktop dropdown on Escape
+  // Close desktop dropdown on Escape. The panel becomes `invisible` when it
+  // closes, so focus has to be handed back to the trigger or it falls to <body>
+  // and the keyboard user loses their place in the nav.
   useEffect(() => {
     if (!openDropdown) return;
-    const handleKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpenDropdown(null); };
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key !== 'Escape') return;
+      const trigger = triggerRefs.current[openDropdown];
+      setOpenDropdown(null);
+      trigger?.focus();
+    };
     document.addEventListener('keydown', handleKey);
     return () => document.removeEventListener('keydown', handleKey);
   }, [openDropdown]);
@@ -75,7 +81,20 @@ export function Header({ onOpenModal }: HeaderProps) {
         : 'opacity-0 invisible translate-y-1'
     }`;
 
-  const isActive = (href: string) => pathname === href || pathname.startsWith(href.replace(/\/$/, '') + '/');
+  /* Nav routes that sit underneath another nav item's path and own the active
+     state for themselves. Without this, /services/access-control/anpr-systems/
+     lights up both "Gate Types" (/services/) and "Access" at once. */
+  const NESTED_NAV_ROUTES = ['/services/access-control/'];
+
+  const isActive = (href: string) => {
+    const base = href.replace(/\/$/, '');
+    if (pathname !== href && !pathname.startsWith(base + '/')) return false;
+    return !NESTED_NAV_ROUTES.some(nested =>
+      nested !== href &&
+      nested.startsWith(base + '/') &&
+      pathname.startsWith(nested.replace(/\/$/, '')),
+    );
+  };
 
   const navLinkClass = (href: string) =>
     `px-3.5 py-3 font-syne font-bold text-[12px] tracking-[.06em] uppercase border-r border-brand-200 transition-colors ${
@@ -86,7 +105,7 @@ export function Header({ onOpenModal }: HeaderProps) {
 
   const mobileNavClass = (href: string) =>
     `py-4 font-syne font-bold text-lg border-b border-brand-800/60 transition-colors ${
-      isActive(href) ? 'text-brand-500' : 'text-brand-100 hover:text-brand-400'
+      isActive(href) ? 'text-brand-400' : 'text-brand-100 hover:text-brand-400'
     }`;
 
   return (
@@ -113,9 +132,9 @@ export function Header({ onOpenModal }: HeaderProps) {
               {/* Fluid size: Syne extrabold renders ~22px of width per 1px of font size for this
                   string, so a fixed 17px logo is 374px wide and overflows every phone. */}
               <span className="font-syne font-extrabold text-[clamp(11px,3.4vw,17px)] tracking-tight text-brand-900">
-                DRIVEWAY<span className="text-brand-500">GATES</span>.LONDON
+                DRIVEWAY<span className="text-brand-600">GATES</span>.LONDON
               </span>
-              <span className="block font-syne font-bold text-[9px] tracking-[.14em] uppercase text-brand-500 mt-0.5">
+              <span className="block font-syne font-bold text-[9px] tracking-[.14em] uppercase text-brand-600 mt-0.5">
                 Supply & Installation, London
               </span>
             </Link>
@@ -127,9 +146,11 @@ export function Header({ onOpenModal }: HeaderProps) {
                 onMouseEnter={() => setOpenDropdown('services')}
                 onMouseLeave={() => setOpenDropdown(null)}>
                 <button
+                  ref={el => { triggerRefs.current['services'] = el; }}
                   onClick={() => toggleDropdown('services')}
                   aria-expanded={openDropdown === 'services'}
                   aria-haspopup="true"
+                  aria-current={isActive('/services/') ? 'page' : undefined}
                   className={navLinkClass('/services/') + ' flex items-center gap-1'}
                 >
                   Gate Types <ChevronDown className={`w-3 h-3 transition-transform ${openDropdown === 'services' ? 'rotate-180' : ''}`} />
@@ -144,7 +165,7 @@ export function Header({ onOpenModal }: HeaderProps) {
                     ))}
                   </div>
                   <div className="mt-3 pt-3 border-t-2 border-brand-200">
-                    <Link href="/services/" className="font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-500 hover:text-brand-700">
+                    <Link href="/services/" className="font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-600 hover:text-brand-900">
                       View all gate types →
                     </Link>
                   </div>
@@ -156,15 +177,17 @@ export function Header({ onOpenModal }: HeaderProps) {
                 onMouseEnter={() => setOpenDropdown('access')}
                 onMouseLeave={() => setOpenDropdown(null)}>
                 <button
+                  ref={el => { triggerRefs.current['access'] = el; }}
                   onClick={() => toggleDropdown('access')}
                   aria-expanded={openDropdown === 'access'}
                   aria-haspopup="true"
+                  aria-current={isActive('/services/access-control/') ? 'page' : undefined}
                   className={navLinkClass('/services/access-control/') + ' flex items-center gap-1'}
                 >
                   <Shield className="w-3 h-3" /> Access <ChevronDown className={`w-3 h-3 transition-transform ${openDropdown === 'access' ? 'rotate-180' : ''}`} />
                 </button>
                 <div className={dropdownPanelClass('access') + ' w-56 p-2'}>
-                  <Link href="/services/access-control/" className="block px-3 py-2.5 font-syne font-bold text-[11px] tracking-[.06em] uppercase text-brand-500 hover:bg-brand-900 hover:text-brand-50 transition-colors mb-1">
+                  <Link href="/services/access-control/" className="block px-3 py-2.5 font-syne font-bold text-[11px] tracking-[.06em] uppercase text-brand-600 hover:bg-brand-900 hover:text-brand-50 transition-colors mb-1">
                     All Access Control →
                   </Link>
                   {ACCESS_CONTROL_LINKS.map(({ label, slug, Icon }) => (
@@ -182,15 +205,17 @@ export function Header({ onOpenModal }: HeaderProps) {
                 onMouseEnter={() => setOpenDropdown('commercial')}
                 onMouseLeave={() => setOpenDropdown(null)}>
                 <button
+                  ref={el => { triggerRefs.current['commercial'] = el; }}
                   onClick={() => toggleDropdown('commercial')}
                   aria-expanded={openDropdown === 'commercial'}
                   aria-haspopup="true"
+                  aria-current={isActive('/commercial/') ? 'page' : undefined}
                   className={navLinkClass('/commercial/') + ' flex items-center gap-1'}
                 >
                   <Building2 className="w-3 h-3" /> Commercial <ChevronDown className={`w-3 h-3 transition-transform ${openDropdown === 'commercial' ? 'rotate-180' : ''}`} />
                 </button>
                 <div className={dropdownPanelClass('commercial') + ' w-56 p-2'}>
-                  <Link href="/commercial/" className="block px-3 py-2.5 font-syne font-bold text-[11px] tracking-[.06em] uppercase text-brand-500 hover:bg-brand-900 hover:text-brand-50 transition-colors mb-1">
+                  <Link href="/commercial/" className="block px-3 py-2.5 font-syne font-bold text-[11px] tracking-[.06em] uppercase text-brand-600 hover:bg-brand-900 hover:text-brand-50 transition-colors mb-1">
                     All Commercial →
                   </Link>
                   {COMMERCIAL_LINKS.map(({ label, slug }) => (
@@ -222,7 +247,7 @@ export function Header({ onOpenModal }: HeaderProps) {
 
             {/* Hamburger */}
             <button
-              className="lg:hidden flex flex-col gap-[5px] p-2 bg-transparent border-none"
+              className="lg:hidden flex flex-col items-center justify-center gap-[5px] min-w-[44px] min-h-[44px] bg-transparent border-none"
               onClick={() => setMobileOpen(o => !o)}
               aria-label="Toggle menu"
             >
@@ -236,13 +261,16 @@ export function Header({ onOpenModal }: HeaderProps) {
 
       {/* Mobile nav — full screen overlay */}
       {mobileOpen && (
-        <div className="lg:hidden fixed inset-0 z-50 bg-brand-950 overflow-y-auto">
+        <div className="lg:hidden fixed inset-0 z-50 bg-brand-950 overflow-y-auto
+          pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]
+          pl-[env(safe-area-inset-left)] pr-[env(safe-area-inset-right)]">
           {/* Close */}
           <div className="flex items-center justify-between px-6 py-5 border-b border-brand-800">
             <span className="font-syne font-extrabold text-[clamp(11px,3.4vw,15px)] text-brand-50 tracking-tight">
-              DRIVEWAY<span className="text-brand-500">GATES</span>.LONDON
+              DRIVEWAY<span className="text-brand-400">GATES</span>.LONDON
             </span>
-            <button onClick={() => setMobileOpen(false)} className="p-2 text-brand-400 hover:text-brand-50 transition-colors">
+            <button onClick={() => setMobileOpen(false)} aria-label="Close menu"
+              className="flex items-center justify-center min-w-[44px] min-h-[44px] -mr-2 text-brand-400 hover:text-brand-50 transition-colors">
               <X className="w-6 h-6" />
             </button>
           </div>
@@ -250,9 +278,9 @@ export function Header({ onOpenModal }: HeaderProps) {
           <nav className="px-6 py-6 flex flex-col">
             {/* Gate Types */}
             <div className="border-b border-brand-800/60">
-              <button onClick={() => toggleSection('services')} className={`w-full flex items-center justify-between py-4 font-syne font-bold text-lg text-left ${isActive('/services/') ? 'text-brand-500' : 'text-brand-100'}`}>
+              <button onClick={() => toggleSection('services')} className={`w-full flex items-center justify-between py-4 font-syne font-bold text-lg text-left ${isActive('/services/') ? 'text-brand-400' : 'text-brand-100'}`}>
                 Gate Types
-                <ChevronDown className={`w-5 h-5 text-brand-500 transition-transform ${mobileSection === 'services' ? 'rotate-180' : ''}`} />
+                <ChevronDown className={`w-5 h-5 text-brand-400 transition-transform ${mobileSection === 'services' ? 'rotate-180' : ''}`} />
               </button>
               {mobileSection === 'services' && (
                 <div className="pb-3 grid grid-cols-2 gap-1">
@@ -268,9 +296,9 @@ export function Header({ onOpenModal }: HeaderProps) {
 
             {/* Access Control */}
             <div className="border-b border-brand-800/60">
-              <button onClick={() => toggleSection('access')} className={`w-full flex items-center justify-between py-4 font-syne font-bold text-lg text-left ${isActive('/services/access-control/') ? 'text-brand-500' : 'text-brand-100'}`}>
+              <button onClick={() => toggleSection('access')} className={`w-full flex items-center justify-between py-4 font-syne font-bold text-lg text-left ${isActive('/services/access-control/') ? 'text-brand-400' : 'text-brand-100'}`}>
                 Access Control
-                <ChevronDown className={`w-5 h-5 text-brand-500 transition-transform ${mobileSection === 'access' ? 'rotate-180' : ''}`} />
+                <ChevronDown className={`w-5 h-5 text-brand-400 transition-transform ${mobileSection === 'access' ? 'rotate-180' : ''}`} />
               </button>
               {mobileSection === 'access' && (
                 <div className="pb-3 space-y-1">
@@ -286,9 +314,9 @@ export function Header({ onOpenModal }: HeaderProps) {
 
             {/* Commercial */}
             <div className="border-b border-brand-800/60">
-              <button onClick={() => toggleSection('commercial')} className={`w-full flex items-center justify-between py-4 font-syne font-bold text-lg text-left ${isActive('/commercial/') ? 'text-brand-500' : 'text-brand-100'}`}>
+              <button onClick={() => toggleSection('commercial')} className={`w-full flex items-center justify-between py-4 font-syne font-bold text-lg text-left ${isActive('/commercial/') ? 'text-brand-400' : 'text-brand-100'}`}>
                 Commercial
-                <ChevronDown className={`w-5 h-5 text-brand-500 transition-transform ${mobileSection === 'commercial' ? 'rotate-180' : ''}`} />
+                <ChevronDown className={`w-5 h-5 text-brand-400 transition-transform ${mobileSection === 'commercial' ? 'rotate-180' : ''}`} />
               </button>
               {mobileSection === 'commercial' && (
                 <div className="pb-3 space-y-1">

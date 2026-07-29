@@ -132,9 +132,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="min-h-screen flex flex-col">
-        {/* GA4 is loaded inside ConsentBanner only after the visitor opts in (UK PECR) */}
-        {children}
+        {/* First focusable element on every page: the header carries a ticker plus
+            ~15 nav links, so keyboard users need a way past it. */}
+        <a href="#main" className="skip-link">Skip to main content</a>
+        {/* GA4 is loaded inside ConsentBanner only after the visitor opts in (UK PECR).
+            Rendered before {children} so a keyboard user reaches Accept/Reject
+            immediately instead of tabbing the whole page to get to it. */}
         <ConsentBanner />
+        {children}
       </body>
     </html>
   );

@@ -28,7 +28,7 @@ export default function BlogIndexPage() {
     <>
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
-      <main>
+      <main id="main" tabIndex={-1} className="scroll-mt-24 outline-none">
 
         {/* Hero */}
         <section className="bg-brand-950 border-b-[3px] border-brand-900 relative overflow-hidden">
@@ -59,7 +59,7 @@ export default function BlogIndexPage() {
                 {CATEGORIES.map(cat => (
                   <button key={cat} onClick={() => setActiveCategory(cat)}
                     className={`px-5 py-4 font-syne font-bold text-[10.5px] tracking-[.1em] uppercase whitespace-nowrap border-b-2 transition-colors ${
-                      activeCategory === cat ? 'text-white border-brand-500' : 'text-brand-500 border-transparent hover:text-brand-300'
+                      activeCategory === cat ? 'text-white border-brand-500' : 'text-brand-400 border-transparent hover:text-brand-200'
                     }`}>
                     {cat}
                   </button>
@@ -67,10 +67,10 @@ export default function BlogIndexPage() {
               </div>
               {/* Search */}
               <div className="relative flex-shrink-0 border-l-2 border-brand-700/50">
-                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-brand-500" />
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-brand-400" />
                 <input type="text" placeholder="Search guides…"
                   value={search} onChange={e => setSearch(e.target.value)}
-                  className="w-full sm:w-56 pl-10 pr-4 py-4 bg-transparent text-brand-200 placeholder-brand-600 text-xs font-syne font-bold tracking-[.04em] uppercase focus:outline-none" />
+                  className="w-full sm:w-56 pl-10 pr-4 py-4 bg-transparent text-brand-200 placeholder-brand-500 text-base font-syne font-bold tracking-[.02em] uppercase focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-400" />
               </div>
             </div>
           </div>
@@ -102,17 +102,17 @@ export default function BlogIndexPage() {
                       </div>
                       <div className="p-8 md:p-10 flex flex-col justify-center">
                         <div className="craft-label mb-4">Featured Guide</div>
-                        <h2 className="font-syne font-extrabold uppercase tracking-tight text-brand-900 group-hover:text-brand-500 transition-colors leading-tight mb-4"
+                        <h2 className="font-syne font-extrabold uppercase tracking-tight text-brand-900 group-hover:text-brand-600 transition-colors leading-tight mb-4"
                           style={{ fontSize: 'clamp(20px, 2.5vw, 32px)', letterSpacing: '-.02em' }}>
                           {featured.title}
                         </h2>
                         <p className="text-brand-600 text-sm leading-relaxed mb-6 line-clamp-3">{featured.excerpt}</p>
                         <div className="flex items-center justify-between">
-                          <span className="flex items-center gap-1.5 font-syne font-bold text-[10px] tracking-[.08em] uppercase text-brand-500">
+                          <span className="flex items-center gap-1.5 font-syne font-bold text-[10px] tracking-[.08em] uppercase text-brand-600">
                             <Calendar className="w-3 h-3" />
                             {new Date(featured.publishDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
                           </span>
-                          <span className="font-syne font-bold text-[11px] tracking-[.1em] uppercase text-brand-500 flex items-center gap-1 group-hover:gap-2 transition-all">
+                          <span className="font-syne font-bold text-[11px] tracking-[.1em] uppercase text-brand-600 flex items-center gap-1 group-hover:gap-2 transition-all">
                             Read guide <ArrowRight className="w-3.5 h-3.5" />
                           </span>
                         </div>
@@ -137,16 +137,16 @@ export default function BlogIndexPage() {
                           </div>
                         </div>
                         <div className="p-5 flex-grow flex flex-col">
-                          <h3 className="font-syne font-bold text-[12.5px] tracking-tight uppercase text-brand-900 group-hover:text-brand-500 transition-colors mb-2 leading-snug line-clamp-2">
+                          <h3 className="font-syne font-bold text-[12.5px] tracking-tight uppercase text-brand-900 group-hover:text-brand-600 transition-colors mb-2 leading-snug line-clamp-2">
                             {article.title}
                           </h3>
                           <p className="text-brand-600 text-xs leading-relaxed mb-4 line-clamp-2 flex-grow">{article.excerpt}</p>
                           <div className="flex items-center justify-between pt-3 border-t-2 border-brand-200">
-                            <span className="flex items-center gap-1 font-syne font-bold text-[10px] tracking-[.06em] uppercase text-brand-500">
+                            <span className="flex items-center gap-1 font-syne font-bold text-[10px] tracking-[.06em] uppercase text-brand-600">
                               <Calendar className="w-3 h-3" />
                               {new Date(article.publishDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
                             </span>
-                            <span className="font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-500 flex items-center gap-1 group-hover:gap-1.5 transition-all">
+                            <span className="font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-600 flex items-center gap-1 group-hover:gap-1.5 transition-all">
                               Read <ArrowRight className="w-3 h-3" />
                             </span>
                           </div>
@@ -161,7 +161,7 @@ export default function BlogIndexPage() {
             {/* CTA */}
             <div className="mt-12 bg-brand-900 p-8 md:p-12 flex flex-col md:flex-row items-center md:justify-between gap-8">
               <div>
-                <div className="craft-label" style={{ color: 'var(--brand-500)' }}>Free Service</div>
+                <div className="craft-label text-brand-400">Free Service</div>
                 <h3 className="font-syne font-extrabold uppercase tracking-tight text-white"
                   style={{ fontSize: 'clamp(18px, 2.5vw, 28px)', letterSpacing: '-.02em' }}>
                   Ready to Get Quotes for Your Driveway Gates?

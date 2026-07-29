@@ -21,7 +21,7 @@ const CONTACT_EMAIL = 'hello@drivewaygateslondon.co.uk';
 function LegalH2({ n, children }: { n: string; children: React.ReactNode }) {
   return (
     <h2 className="font-syne font-bold text-xl md:text-2xl tracking-tight text-brand-950 mt-10 mb-3 flex items-baseline gap-3">
-      <span className="text-sm text-brand-500 font-semibold tracking-wider">{n}</span>
+      <span className="text-sm text-brand-600 font-semibold tracking-wider">{n}</span>
       <span>{children}</span>
     </h2>
   );
@@ -32,7 +32,7 @@ export default function PrivacyPage() {
     <>
       <Header />
 
-      <main className="flex-grow">
+      <main id="main" tabIndex={-1} className="flex-grow scroll-mt-24 outline-none">
         <section className="bg-brand-950 border-b-[3px] border-brand-900">
           <div className="container-width py-12 md:py-16">
             <Breadcrumbs items={[{ label: 'Privacy Policy' }]} />

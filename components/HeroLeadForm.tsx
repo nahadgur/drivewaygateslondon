@@ -68,11 +68,11 @@ export function HeroLeadForm({ city, service }: HeroLeadFormProps) {
 
   if (isSuccess) {
     return (
-      <div className="bg-brand-50 border-2 border-brand-900 p-8 flex flex-col items-center justify-center text-center gap-4 min-h-[380px]">
-        <div className="w-14 h-14 bg-brand-500 flex items-center justify-center">
+      <div role="status" aria-live="polite" className="bg-brand-50 border-2 border-brand-900 p-8 flex flex-col items-center justify-center text-center gap-4 min-h-[380px]">
+        <div aria-hidden className="w-14 h-14 bg-brand-600 flex items-center justify-center">
           <CheckCircle className="w-8 h-8 text-white" />
         </div>
-        <h3 className="font-syne font-extrabold text-xl uppercase tracking-tight text-brand-900">Request Received!</h3>
+        <h3 tabIndex={-1} className="font-syne font-extrabold text-xl uppercase tracking-tight text-brand-900 outline-none">Request Received!</h3>
         <p className="text-brand-600 text-sm max-w-xs">
           We will call you back{city ? ` about your ${city} project` : ''} shortly, typically within 2 hours.
         </p>
@@ -84,7 +84,7 @@ export function HeroLeadForm({ city, service }: HeroLeadFormProps) {
     <div className="bg-brand-50 border-2 border-brand-900 p-6 md:p-8">
       {/* Header */}
       <div className="mb-5 border-b-2 border-brand-200 pb-5">
-        <div className="font-syne font-bold text-[9px] tracking-[.2em] uppercase text-brand-500 mb-2">Free Site Survey</div>
+        <div className="font-syne font-bold text-[9px] tracking-[.2em] uppercase text-brand-600 mb-2">Free Site Survey</div>
         <h3 className="font-syne font-extrabold text-xl uppercase tracking-tight text-brand-900 leading-tight">
           Get a Fast Quote{city ? ` in ${city}` : ''}
         </h3>
@@ -98,7 +98,7 @@ export function HeroLeadForm({ city, service }: HeroLeadFormProps) {
             <div className="flex-1">
               <p className="text-red-800 text-sm font-medium">{errorMessage}</p>
             </div>
-            <button type="button" onClick={() => setErrorMessage(null)} className="text-red-400 hover:text-red-600 transition-colors" aria-label="Dismiss error">
+            <button type="button" onClick={() => setErrorMessage(null)} className="flex items-center justify-center min-w-[44px] min-h-[44px] -m-2 text-red-400 hover:text-red-600 transition-colors" aria-label="Dismiss error">
               <span className="text-lg leading-none">&times;</span>
             </button>
           </div>
@@ -141,7 +141,7 @@ export function HeroLeadForm({ city, service }: HeroLeadFormProps) {
           className="w-full bg-brand-900 hover:bg-brand-500 disabled:opacity-60 text-brand-50 font-syne font-bold py-3.5 px-6 transition-colors text-sm tracking-[.1em] uppercase mt-1">
           {isSubmitting ? 'Sending…' : 'Request a Free Call Back →'}
         </button>
-        <p className="text-center text-xs text-brand-500">
+        <p className="text-center text-xs text-brand-600">
           Typically within <strong className="text-brand-700">2 hours</strong> · 100% free · No obligation
         </p>
       </form>

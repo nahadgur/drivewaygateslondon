@@ -22,7 +22,7 @@ export function ContactPageClient() {
     <>
       <Header />
 
-      <main>
+      <main id="main" tabIndex={-1} className="scroll-mt-24 outline-none">
         {/* Hero */}
         <section className="bg-brand-900 text-brand-50 pt-16 pb-12 md:pt-24 md:pb-16">
           <div className="container-width">
@@ -67,7 +67,7 @@ export function ContactPageClient() {
                   <h3 className="font-syne font-bold text-sm uppercase tracking-[.15em] text-brand-900 mb-4">Prefer email?</h3>
                   <a
                     href="mailto:hello@drivewaygateslondon.co.uk"
-                    className="inline-flex items-center gap-3 text-brand-900 hover:text-brand-500 transition-colors font-semibold"
+                    className="inline-flex items-center gap-3 text-brand-900 hover:text-brand-900 transition-colors font-semibold"
                   >
                     <Mail className="w-5 h-5" />
                     hello@drivewaygateslondon.co.uk

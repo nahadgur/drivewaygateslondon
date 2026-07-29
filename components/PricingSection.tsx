@@ -40,7 +40,7 @@ export function PricingSection({ cityName, serviceId, serviceName }: PricingSect
               <tr key={tier.slug} className="border-b border-brand-200 hover:bg-brand-100 transition-colors">
                 <td className="py-4 pr-5 font-syne font-bold text-[13px] text-brand-900">{tier.treatment}</td>
                 <td className="py-4 pr-5">
-                  <span className="font-display text-[18px] text-brand-500 font-semibold">
+                  <span className="font-display text-[18px] text-brand-600 font-semibold">
                     £{tier.priceFrom.toLocaleString()} – £{tier.priceTo.toLocaleString()}
                   </span>
                 </td>
@@ -58,11 +58,11 @@ export function PricingSection({ cityName, serviceId, serviceName }: PricingSect
           <div key={tier.slug} className="bg-brand-50 border-b-2 border-brand-200 p-4 last:border-b-0">
             <div className="flex justify-between items-start mb-1">
               <span className="font-syne font-bold text-[12px] uppercase tracking-tight text-brand-900">{tier.treatment}</span>
-              <span className="font-display text-[16px] text-brand-500 font-semibold ml-3 flex-shrink-0">
+              <span className="font-display text-[16px] text-brand-600 font-semibold ml-3 flex-shrink-0">
                 £{tier.priceFrom.toLocaleString()} – £{tier.priceTo.toLocaleString()}
               </span>
             </div>
-            <div className="text-[11px] text-brand-500 font-syne">{tier.typicalDuration}</div>
+            <div className="text-[11px] text-brand-600 font-syne">{tier.typicalDuration}</div>
           </div>
         ))}
       </div>
@@ -70,7 +70,7 @@ export function PricingSection({ cityName, serviceId, serviceName }: PricingSect
       {/* Finance strip */}
       <div className="bg-brand-900 px-6 py-5 mt-0.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div>
-          <div className="font-syne font-bold text-[9px] tracking-[.18em] uppercase text-brand-500 mb-1">0% Finance Available</div>
+          <div className="font-syne font-bold text-[9px] tracking-[.18em] uppercase text-brand-400 mb-1">0% Finance Available</div>
           <div className="font-display text-3xl text-white leading-none">From £{financeInfo.monthlyFrom}/month</div>
           <div className="text-xs text-brand-400 mt-1">Over {financeInfo.spreadOver} at 0% APR</div>
         </div>
@@ -84,7 +84,7 @@ export function PricingSection({ cityName, serviceId, serviceName }: PricingSect
           <ul className="space-y-2">
             {treatmentIncludes.map((item, i) => (
               <li key={i} className="flex items-start gap-2 text-sm text-brand-700">
-                <span className="text-brand-500 font-bold flex-shrink-0 mt-0.5">✓</span>
+                <span aria-hidden className="text-brand-600 font-bold flex-shrink-0 mt-0.5">✓</span>
                 {item}
               </li>
             ))}
@@ -97,8 +97,8 @@ export function PricingSection({ cityName, serviceId, serviceName }: PricingSect
           </div>
           <p className="text-sm text-brand-600 leading-relaxed mb-3">{financeInfo.description}</p>
           <div className="bg-brand-50 border-2 border-brand-200 p-4">
-            <div className="font-display text-3xl text-brand-500 font-semibold">From £{financeInfo.monthlyFrom}/month</div>
-            <div className="text-xs text-brand-500 mt-1">Over {financeInfo.spreadOver} at 0% APR</div>
+            <div className="font-display text-3xl text-brand-600 font-semibold">From £{financeInfo.monthlyFrom}/month</div>
+            <div className="text-xs text-brand-600 mt-1">Over {financeInfo.spreadOver} at 0% APR</div>
           </div>
         </div>
       </div>

@@ -1,5 +1,8 @@
 node_modules
 
+# macOS
+.DS_Store
+
 # Build output and caches (rebuilt by Vercel on deploy)
 .next/
 out/

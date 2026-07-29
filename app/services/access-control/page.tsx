@@ -24,7 +24,7 @@ export default function AccessControlHubPage() {
     <>
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
-      <main>
+      <main id="main" tabIndex={-1} className="scroll-mt-24 outline-none">
         {/* Hero */}
         <section className="bg-brand-950 border-b-[3px] border-brand-900">
           <div className="container-width py-16 md:py-24">
@@ -54,12 +54,12 @@ export default function AccessControlHubPage() {
               {accessControlServices.map(service => (
                 <Link key={service.slug} href={`/services/access-control/${service.slug}/`}
                   className="group bg-brand-50 hover:bg-brand-100 p-8 transition-colors">
-                  <div className="border border-brand-400/30 w-12 h-12 flex items-center justify-center text-brand-500 mb-5 group-hover:bg-brand-900 group-hover:text-brand-400 transition-colors">
+                  <div className="border border-brand-400/30 w-12 h-12 flex items-center justify-center text-brand-600 mb-5 group-hover:bg-brand-900 group-hover:text-brand-400 transition-colors">
                     {iconMap[service.slug]}
                   </div>
-                  <h3 className="font-syne font-bold text-[13px] tracking-[.04em] uppercase text-brand-900 mb-3 group-hover:text-brand-500 transition-colors">{service.title}</h3>
+                  <h3 className="font-syne font-bold text-[13px] tracking-[.04em] uppercase text-brand-900 mb-3 group-hover:text-brand-600 transition-colors">{service.title}</h3>
                   <p className="text-brand-600 text-sm leading-relaxed mb-5">{service.description}</p>
-                  <span className="font-syne font-bold text-[11px] tracking-[.1em] uppercase text-brand-500 flex items-center gap-1">
+                  <span className="font-syne font-bold text-[11px] tracking-[.1em] uppercase text-brand-600 flex items-center gap-1">
                     Learn more <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </Link>
@@ -71,7 +71,7 @@ export default function AccessControlHubPage() {
         <section className="bg-brand-900 py-20">
           <div className="container-width flex flex-col md:flex-row md:items-center md:justify-between gap-8">
             <div>
-              <div className="craft-label" style={{ color: 'var(--brand-500)' }}>Not Sure?</div>
+              <div className="craft-label text-brand-400">Not Sure?</div>
               <h2 className="craft-h2 text-white">Not Sure Which System Is Right?</h2>
               <p className="text-brand-400 text-sm mt-3 max-w-md">Tell us about your gate setup and we will advise on the best access control solution for your property.</p>
             </div>

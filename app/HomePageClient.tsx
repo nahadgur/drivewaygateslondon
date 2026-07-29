@@ -58,7 +58,7 @@ export function HomePageClient() {
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={open} />
 
-      <main>
+      <main id="main" tabIndex={-1} className="scroll-mt-24 outline-none">
 
         {/* ── Hero ── */}
         <Hero
@@ -113,15 +113,15 @@ export function HomePageClient() {
                   'UK Machinery Directive safety compliance',
                 ].map((item, i, arr) => (
                   <div key={i} className={`flex items-center gap-3 px-5 py-4 text-sm text-brand-700 ${i < arr.length - 1 ? 'border-b border-brand-200' : ''}`}>
-                    <span className="text-brand-500 font-bold flex-shrink-0">✓</span>
+                    <span aria-hidden className="text-brand-500 font-bold flex-shrink-0">✓</span>
                     {item}
                   </div>
                 ))}
               </div>
-              <div className="bg-brand-500 px-6 py-6 mt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+              <div className="bg-brand-600 px-6 py-6 mt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div>
                   <div className="font-display text-5xl text-white leading-none">Free</div>
-                  <div className="text-sm text-white/75 mt-1">Site survey and written quote, no obligation</div>
+                  <div className="text-sm text-white/90 mt-1">Site survey and written quote, no obligation</div>
                 </div>
                 <button onClick={open} className="bg-white text-brand-700 font-syne font-bold text-xs tracking-[.1em] uppercase px-6 py-3 hover:bg-brand-50 transition-colors flex-shrink-0">
                   Book a Survey
@@ -149,7 +149,7 @@ export function HomePageClient() {
                   ${i < 3 ? 'lg:border-b-2' : 'lg:border-b-0'}
                 `}
               >
-                <div className="font-display text-5xl text-brand-200 leading-none mb-3">{n}</div>
+                <div className="font-display text-5xl text-brand-500 leading-none mb-3">{n}</div>
                 <div className="font-syne font-bold text-[13px] tracking-[.06em] uppercase text-brand-900 mb-2">{title}</div>
                 <p className="text-[13px] text-brand-600 leading-relaxed">{desc}</p>
               </div>
@@ -181,7 +181,7 @@ export function HomePageClient() {
                   <tr key={tier.slug} className="border-b border-brand-200 hover:bg-brand-100 transition-colors">
                     <td className="py-4 pr-5 font-syne font-bold text-[13px] text-brand-900">{tier.treatment}</td>
                     <td className="py-4 pr-5">
-                      <span className="font-display text-[18px] text-brand-500 font-semibold">
+                      <span className="font-display text-[18px] text-brand-600 font-semibold">
                         £{tier.priceFrom.toLocaleString()} – £{tier.priceTo.toLocaleString()}
                       </span>
                     </td>
@@ -196,7 +196,7 @@ export function HomePageClient() {
           {/* Finance strip */}
           <div className="bg-brand-900 px-7 py-6 mt-0.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div>
-              <div className="font-syne font-bold text-[9px] tracking-[.18em] uppercase text-brand-500 mb-1">0% Finance Available</div>
+              <div className="font-syne font-bold text-[9px] tracking-[.18em] uppercase text-brand-400 mb-1">0% Finance Available</div>
               <div className="font-display text-4xl text-white leading-none">From £{financeInfo.monthlyFrom}/month</div>
               <div className="text-xs text-brand-400 mt-1">Over {financeInfo.spreadOver} at 0% APR — subject to status</div>
             </div>
@@ -224,7 +224,7 @@ export function HomePageClient() {
               <p className="text-sm text-brand-600 leading-relaxed mb-3">{financeInfo.description}</p>
               <div className="bg-white border-2 border-brand-200 p-4">
                 <div className="font-display text-3xl text-brand-500 font-semibold">From £{financeInfo.monthlyFrom}/month</div>
-                <div className="text-xs text-brand-500 mt-1">Over {financeInfo.spreadOver} at 0% APR</div>
+                <div className="text-xs text-brand-600 mt-1">Over {financeInfo.spreadOver} at 0% APR</div>
               </div>
             </div>
           </div>
@@ -238,29 +238,37 @@ export function HomePageClient() {
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 border-2 border-brand-900 gap-[2px] bg-brand-900">
             {services.map(service => (
-              <article key={service.id} className="svc-card group">
-                <Link href={`/services/${service.slug}/`} className="block h-44 overflow-hidden border-b-2 border-brand-900">
+              /* One tab stop per card, not three. The image and "Learn more" used
+                 to be separate links to the same URL — 39 tab stops for 13
+                 destinations. They stay clickable but are taken out of the
+                 accessibility tree; the heading link is the real control and its
+                 ::after stretches over the whole card. */
+              <article key={service.id} className="svc-card group relative">
+                <Link href={`/services/${service.slug}/`} tabIndex={-1} aria-hidden="true"
+                  className="block h-44 overflow-hidden border-b-2 border-brand-900">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src={service.image} alt={service.title}
+                    src={service.image} alt=""
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     style={{ filter: 'saturate(.8)' }}
                     loading="lazy"
                   />
                 </Link>
                 <div className="p-5">
-                  <Link href={`/services/${service.slug}/`}>
-                    <h3 className="font-syne font-bold text-[13px] tracking-[.04em] uppercase text-brand-900 mb-1.5 hover:text-brand-500 transition-colors">
+                  <h3 className="font-syne font-bold text-[13px] tracking-[.04em] uppercase text-brand-900 mb-1.5">
+                    <Link href={`/services/${service.slug}/`}
+                      className="hover:text-brand-600 transition-colors before:absolute before:inset-0 before:content-['']">
                       {service.title}
-                    </h3>
-                  </Link>
+                    </Link>
+                  </h3>
                   <p className="text-brand-600 text-xs leading-relaxed mb-4 line-clamp-2">{service.description}</p>
                   <div className="flex items-center justify-between pt-3 border-t-2 border-brand-200">
-                    <Link href={`/services/${service.slug}/`}
-                      className="font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-500 flex items-center hover:text-brand-700 transition-colors">
+                    <span aria-hidden="true"
+                      className="font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-600 flex items-center group-hover:text-brand-900 transition-colors">
                       Learn more <ArrowRight className="w-3 h-3 ml-1" />
-                    </Link>
-                    <button onClick={open} className="bg-brand-900 hover:bg-brand-500 text-brand-50 font-syne font-bold text-[10px] tracking-[.08em] uppercase py-1.5 px-3 transition-colors">
+                    </span>
+                    <button onClick={open}
+                      className="relative z-10 bg-brand-900 hover:bg-brand-600 text-brand-50 font-syne font-bold text-[10px] tracking-[.08em] uppercase py-1.5 px-3 transition-colors">
                       Get a Quote
                     </button>
                   </div>
@@ -283,7 +291,7 @@ export function HomePageClient() {
               { n: '03', title: 'You Get a Written Fixed Quote', desc: 'After the survey you receive an itemised written quote covering the gates, groundwork, automation, and commissioning. No obligation to proceed, and the price we quote is the price you pay.' },
             ].map(({ n, title, desc }) => (
               <div key={n} className="bg-brand-50 p-8 md:p-10">
-                <div className="font-display text-7xl text-brand-200 leading-none mb-4">{n}</div>
+                <div className="font-display text-7xl text-brand-500 leading-none mb-4">{n}</div>
                 <h3 className="font-syne font-bold text-[13.5px] tracking-[.06em] uppercase text-brand-900 mb-3">{title}</h3>
                 <p className="text-sm text-brand-600 leading-relaxed">{desc}</p>
               </div>
@@ -292,7 +300,7 @@ export function HomePageClient() {
 
           <div className="bg-brand-900 px-8 py-7 mt-0.5 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>
-              <div className="font-syne font-bold text-[9px] tracking-[.18em] uppercase text-brand-500 mb-2">Why Homeowners Choose Us</div>
+              <div className="font-syne font-bold text-[9px] tracking-[.18em] uppercase text-brand-400 mb-2">Why Homeowners Choose Us</div>
               <p className="text-sm text-brand-300 leading-relaxed max-w-lg">
                 Finding a good gate installer in London is harder than it should be. Search results are clogged with generic directories and firms that subcontract everything. We keep it simple: one specialist team that surveys, designs, supplies, installs, and stands behind the finished gates.
               </p>
@@ -309,24 +317,24 @@ export function HomePageClient() {
           />
           <div className="grid grid-cols-1 md:grid-cols-2 border-2 border-brand-900">
             <div className="p-7 md:border-r-2 border-b-2 md:border-b-0 border-brand-200">
-              <h3 className="font-syne font-bold text-sm tracking-[.08em] uppercase text-brand-500 mb-5 flex items-center gap-2">
+              <h3 className="font-syne font-bold text-sm tracking-[.08em] uppercase text-brand-600 mb-5 flex items-center gap-2">
                 <Zap className="w-4 h-4" /> Electric Automated Gates
               </h3>
               <ul className="space-y-3">
                 {ELECTRIC_PROS.map((item, i) => (
                   <li key={i} className="flex items-start gap-2.5 text-sm text-brand-700 border-b border-brand-100 pb-3 last:border-0 last:pb-0">
-                    <span className="text-brand-500 font-bold mt-0.5 flex-shrink-0">✓</span>
+                    <span aria-hidden className="text-brand-500 font-bold mt-0.5 flex-shrink-0">✓</span>
                     {item}
                   </li>
                 ))}
               </ul>
             </div>
             <div className="p-7">
-              <h3 className="font-syne font-bold text-sm tracking-[.08em] uppercase text-brand-300 mb-5">◻ Manual (Non-Automated) Gates</h3>
+              <h3 className="font-syne font-bold text-sm tracking-[.08em] uppercase text-brand-600 mb-5">◻ Manual (Non-Automated) Gates</h3>
               <ul className="space-y-3">
                 {MANUAL_CONS.map((item, i) => (
-                  <li key={i} className="flex items-start gap-2.5 text-sm text-brand-400 border-b border-brand-100 pb-3 last:border-0 last:pb-0">
-                    <span className="text-brand-300 font-bold mt-0.5 flex-shrink-0">—</span>
+                  <li key={i} className="flex items-start gap-2.5 text-sm text-brand-700 border-b border-brand-100 pb-3 last:border-0 last:pb-0">
+                    <span aria-hidden className="text-brand-600 font-bold mt-0.5 flex-shrink-0">—</span>
                     {item}
                   </li>
                 ))}
@@ -356,8 +364,7 @@ export function HomePageClient() {
             ))}
           </div>
           <div className="mt-5">
-            <Link href="/location/" className="font-syne font-bold text-[11px] tracking-[.12em] uppercase text-brand-500 hover:text-brand-700 transition-colors">
-              Browse all 114 London areas →
+            <Link href="/location/" className="font-syne font-bold text-[11px] tracking-[.12em] uppercase text-brand-600 hover:text-brand-900 transition-colors">              Browse all 114 London areas →
             </Link>
           </div>
         </Section>
@@ -374,18 +381,18 @@ export function HomePageClient() {
           <div className="container-width py-20">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-10">
               <div className="max-w-xl">
-                <div className="craft-label" style={{ color: 'var(--brand-500)' }}>Get Started — Free</div>
+                <div className="craft-label text-brand-400">Get Started — Free</div>
                 <h2 className="craft-h2 text-white mb-4">
                   Your Perfect Driveway Gates<br />Start With a{' '}
-                  <span className="text-brand-500">Free Site Survey.</span>
+                  <span className="text-brand-400">Free Site Survey.</span>
                 </h2>
                 <p className="text-brand-400 text-sm leading-relaxed">
                   Fill in our 60-second form and we will call you back to book a free survey. Written fixed quote, no obligation, no strings attached.
                 </p>
-                <div className="flex flex-wrap gap-4 mt-5 text-xs text-brand-600">
+                <div className="flex flex-wrap gap-4 mt-5 text-xs text-brand-400">
                   {['Free site survey', 'Written fixed quotes', 'Fully insured'].map(item => (
                     <div key={item} className="flex items-center gap-1.5">
-                      <CheckCircle className="w-3.5 h-3.5 text-brand-500" /> {item}
+                      <CheckCircle className="w-3.5 h-3.5 text-brand-400" /> {item}
                     </div>
                   ))}
                 </div>
@@ -396,7 +403,7 @@ export function HomePageClient() {
                   className="btn-secondary !border-brand-500/40 !text-brand-400 hover:!bg-brand-800 hover:!text-brand-50 !text-sm !py-4 !px-10 text-center">
                   Browse Gate Types
                 </Link>
-                <span className="text-[11px] text-brand-600 text-center font-syne tracking-[.06em]">60 seconds · No obligation</span>
+                <span className="text-[11px] text-brand-300 text-center font-syne tracking-[.06em]">60 seconds · No obligation</span>
               </div>
             </div>
           </div>

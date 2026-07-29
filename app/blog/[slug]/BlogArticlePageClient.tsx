@@ -24,9 +24,9 @@ function renderInline(text: string): React.ReactNode[] {
     const label = m[1];
     const href = m[2];
     if (href.startsWith('/')) {
-      out.push(<Link key={`il-${k++}`} href={href} className="text-brand-600 underline underline-offset-2 hover:text-brand-500 transition-colors">{label}</Link>);
+      out.push(<Link key={`il-${k++}`} href={href} className="text-brand-600 underline underline-offset-2 hover:text-brand-900 transition-colors">{label}</Link>);
     } else {
-      out.push(<a key={`il-${k++}`} href={href} target="_blank" rel="noopener noreferrer" className="text-brand-600 underline underline-offset-2 hover:text-brand-500 transition-colors">{label}</a>);
+      out.push(<a key={`il-${k++}`} href={href} target="_blank" rel="noopener noreferrer" className="text-brand-600 underline underline-offset-2 hover:text-brand-900 transition-colors">{label}</a>);
     }
     last = re.lastIndex;
   }
@@ -116,7 +116,7 @@ function ContentRenderer({ blocks, onOpenModal, articleImageMap }: { blocks: Con
               <ul key={i} className="my-5 space-y-2">
                 {(block.items ?? []).map((item, j) => (
                   <li key={j} className="flex items-start gap-3 text-sm text-brand-700">
-                    <span className="text-brand-500 font-bold flex-shrink-0 mt-0.5">→</span>
+                    <span aria-hidden className="text-brand-600 font-bold flex-shrink-0 mt-0.5">→</span>
                     {renderInline(item)}
                   </li>
                 ))}
@@ -176,10 +176,10 @@ function ContentRenderer({ blocks, onOpenModal, articleImageMap }: { blocks: Con
                           </div>
                         )}
                         <div className="p-4 flex-grow flex flex-col">
-                          <h4 className="font-syne font-bold text-[11px] uppercase tracking-tight text-brand-900 group-hover:text-brand-500 transition-colors leading-snug line-clamp-2 mb-3">
+                          <h4 className="font-syne font-bold text-[11px] uppercase tracking-tight text-brand-900 group-hover:text-brand-600 transition-colors leading-snug line-clamp-2 mb-3">
                             {a.title}
                           </h4>
-                          <span className="font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-500 flex items-center gap-1 mt-auto">
+                          <span className="font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-600 flex items-center gap-1 mt-auto">
                             Read <ArrowRight className="w-3 h-3" />
                           </span>
                         </div>
@@ -209,7 +209,7 @@ export function BlogArticlePageClient({ article, relatedService, serviceList, ar
     <>
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
-      <main>
+      <main id="main" tabIndex={-1} className="scroll-mt-24 outline-none">
 
         <div className="relative w-full aspect-[3/2] md:aspect-[21/9] overflow-hidden border-b-[3px] border-brand-900 bg-brand-100">
           <Image src={article.featuredImage} alt={article.featuredImageAlt || article.title}
@@ -226,7 +226,7 @@ export function BlogArticlePageClient({ article, relatedService, serviceList, ar
               <span className="border border-brand-500/30 bg-brand-500/10 px-3 py-1 font-syne font-bold text-[9.5px] tracking-[.12em] uppercase text-brand-400">
                 {article.category}
               </span>
-              <span className="flex items-center gap-1 font-syne font-bold text-[10px] tracking-[.08em] uppercase text-brand-500">
+              <span className="flex items-center gap-1 font-syne font-bold text-[10px] tracking-[.08em] uppercase text-brand-400">
                 <Calendar className="w-3 h-3" />
                 {new Date(article.publishDate).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
               </span>
@@ -259,7 +259,7 @@ export function BlogArticlePageClient({ article, relatedService, serviceList, ar
 
                 {relatedService && (
                   <div className="bg-brand-900 p-6 border-2 border-brand-700">
-                    <div className="craft-label" style={{ color: 'var(--brand-500)' }}>Relevant Service</div>
+                    <div className="craft-label text-brand-400">Relevant Service</div>
                     <h3 className="font-syne font-bold text-sm uppercase tracking-tight text-white mb-2">{relatedService.title}</h3>
                     <p className="text-brand-300 text-xs leading-relaxed mb-5">{relatedService.description}</p>
                     <Link href={`/services/${relatedService.slug}/`}
@@ -275,7 +275,7 @@ export function BlogArticlePageClient({ article, relatedService, serviceList, ar
                     {serviceList.map(service => (
                       <li key={service.slug}>
                         <Link href={`/services/${service.slug}/`}
-                          className="block py-2 border-b border-brand-100 last:border-0 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-600 hover:text-brand-500 transition-colors">
+                          className="block py-2 border-b border-brand-100 last:border-0 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-600 hover:text-brand-900 transition-colors">
                           {service.title}
                         </Link>
                       </li>
@@ -293,7 +293,7 @@ export function BlogArticlePageClient({ article, relatedService, serviceList, ar
                       {furtherReading.map((link, i) => (
                         <li key={i}>
                           <a href={link.href ?? ''} target="_blank" rel="noopener noreferrer"
-                            className="text-xs text-brand-600 hover:text-brand-500 underline underline-offset-2 transition-colors block leading-snug">
+                            className="text-xs text-brand-600 hover:text-brand-900 underline underline-offset-2 transition-colors block leading-snug">
                             {link.source ?? link.text ?? ''}
                           </a>
                         </li>

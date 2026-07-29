@@ -2,19 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --brand-50:  #F7F5F0;
-  --brand-100: #EDE8DC;
-  --brand-200: #DDD4C0;
-  --brand-300: #C9BA9C;
-  --brand-400: #B39D78;
-  --brand-500: #9A7D56;
-  --brand-600: #7D6343;
-  --brand-700: #614B33;
-  --brand-800: #463525;
-  --brand-900: #2E231A;
-  --brand-950: #1A150D;
-}
+/* The brand ramp lives in tailwind.config.js only. A second copy used to sit
+   here as :root custom properties and had drifted from the config at every
+   step, so `var(--brand-500)` and `text-brand-500` rendered two different
+   golds side by side. Use the Tailwind tokens. */
 
 @layer base {
   html { scroll-behavior: smooth; }
@@ -25,6 +16,23 @@
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-syne font-bold;
+  }
+
+  /* One keyboard focus ring for the whole site. The UA default is nearly
+     invisible against the dark brown sections, and :focus-visible keeps it off
+     mouse users so it can be high-contrast without looking broken. The gold
+     ring reads on both polarities; the offset keeps it clear of the element. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-400 ring-offset-2 ring-offset-brand-50;
+  }
+  .bg-brand-900 :focus-visible,
+  .bg-brand-950 :focus-visible {
+    @apply ring-offset-brand-900;
+  }
+
+  /* Removes the legacy 300ms tap delay without disabling pinch-zoom. */
+  a, button, [role="button"], input, select, textarea, summary {
+    touch-action: manipulation;
   }
 }
 
@@ -37,9 +45,13 @@
     @apply py-16 md:py-24;
   }
 
-  /* Craftsman section label */
+  /* Craftsman section label.
+     brand-600 rather than brand-500: at 10px this is small text and needs
+     4.5:1, which brand-500 misses on brand-50 (4.12). On dark sections add
+     `text-brand-400` alongside — the ramp has no single step that clears
+     4.5:1 against both brand-50 and brand-950. */
   .craft-label {
-    @apply font-syne font-bold text-[10px] tracking-[.22em] uppercase text-brand-500 mb-3;
+    @apply font-syne font-bold text-[10px] tracking-[.22em] uppercase text-brand-600 mb-3;
   }
 
   /* Craftsman heading */
@@ -55,9 +67,11 @@
   .ruled-border { @apply border-2 border-brand-900; }
 
   /* Buttons */
+  /* hover was brand-500, which puts brand-50 text at 4.12:1 — the hover state
+     was the only failing part of an otherwise compliant button. */
   .btn-primary {
     @apply inline-flex items-center justify-center gap-2
-           bg-brand-900 hover:bg-brand-500 active:bg-brand-700
+           bg-brand-900 hover:bg-brand-600 active:bg-brand-700
            text-brand-50 font-syne font-bold
            py-3 px-6 text-xs tracking-[.1em] uppercase
            transition-colors duration-150;
@@ -70,9 +84,10 @@
            border-2 border-brand-800
            transition-all duration-150;
   }
+  /* brand-600 base: white on brand-500 is 4.49:1, just under AA. */
   .btn-gold {
     @apply inline-flex items-center justify-center gap-2
-           bg-brand-500 hover:bg-brand-600 active:bg-brand-700
+           bg-brand-600 hover:bg-brand-700 active:bg-brand-800
            text-white font-syne font-bold
            py-3 px-6 text-xs tracking-[.1em] uppercase
            transition-colors duration-150;
@@ -100,7 +115,7 @@
 
   /* Location chip */
   .loc-chip {
-    @apply bg-brand-50 py-3 px-4
+    @apply bg-brand-50 min-h-[44px] py-3 px-4
            font-syne font-bold text-[11px] tracking-[.05em] uppercase
            text-brand-800 transition-all duration-150
            hover:bg-brand-900 hover:text-brand-50
@@ -110,6 +125,17 @@
 
 @layer utilities {
   .text-balance { text-wrap: balance; }
+
+  /* Visible only while focused — first tab stop on every page. */
+  .skip-link {
+    @apply sr-only;
+  }
+  .skip-link:focus {
+    @apply not-sr-only fixed top-3 left-3 z-[100]
+           bg-brand-900 text-brand-50 font-syne font-bold
+           text-xs tracking-[.1em] uppercase px-5 py-3
+           outline-none ring-2 ring-brand-400 ring-offset-2 ring-offset-brand-900;
+  }
 }
 
 /* Ticker animation */
@@ -129,3 +155,24 @@
 .animate-backdrop-out { animation: backdrop-out .3s ease-in; }
 .animate-modal-in     { animation: modal-in     .3s ease-out; }
 .animate-modal-out    { animation: modal-out    .3s ease-in; }
+
+/* The ticker auto-starts, runs longer than 5s and has no pause control, so
+   under WCAG 2.2.2 it has to stop when the visitor asks for reduced motion.
+   Everything else here is decorative easing that can safely collapse. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  .animate-ticker { animation: none; }
+
+  .animate-backdrop-in,
+  .animate-backdrop-out,
+  .animate-modal-in,
+  .animate-modal-out { animation-duration: .01ms; }
+
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

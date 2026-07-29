@@ -30,7 +30,7 @@ export default function LocationIndexPage() {
     <>
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
-      <main>
+      <main id="main" tabIndex={-1} className="scroll-mt-24 outline-none">
         <Hero
           title="Driveway Gate Installation in Your Area"
           subtitle="We design, supply and install driveway gates across Greater London. Find your area below to see how we work near you."
@@ -48,7 +48,7 @@ export default function LocationIndexPage() {
                 <input type="text" placeholder="Search your area or borough..."
                   aria-label="Search London areas"
                   value={searchQuery} onChange={e => setSearchQuery(e.target.value)}
-                  className="w-full pl-11 pr-4 py-3 border-2 border-brand-200 bg-brand-50 text-brand-900 text-sm focus:outline-none focus:border-brand-500 transition" />
+                  className="w-full pl-11 pr-4 py-3 border-2 border-brand-200 bg-brand-50 text-brand-900 text-base focus:outline-none focus:border-brand-500 transition" />
               </div>
             </div>
 

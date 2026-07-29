@@ -28,7 +28,7 @@ export function ServiceLocationPageClient({ params }: { params: { serviceSlug: s
     <>
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
-      <main>
+      <main id="main" tabIndex={-1} className="scroll-mt-24 outline-none">
 
         {/* Split hero — text left, image right */}
         <section className="grid grid-cols-1 lg:grid-cols-[1fr_400px] xl:grid-cols-[1fr_480px] border-b-[3px] border-brand-900 min-h-[60vh] lg:min-h-[82vh]">
@@ -138,7 +138,7 @@ export function ServiceLocationPageClient({ params }: { params: { serviceSlug: s
                     'Aftercare, warranties, and ongoing maintenance support are included as standard',
                   ].map((point, i) => (
                     <div key={i} className="flex items-start gap-3 border-b-2 border-brand-100 py-3 last:border-b-0">
-                      <CheckCircle className="w-4 h-4 text-brand-500 flex-shrink-0 mt-0.5" />
+                      <CheckCircle className="w-4 h-4 text-brand-600 flex-shrink-0 mt-0.5" />
                       <span className="text-brand-700 text-sm">{point}</span>
                     </div>
                   ))}
@@ -173,7 +173,7 @@ export function ServiceLocationPageClient({ params }: { params: { serviceSlug: s
                     {allCities.filter(c => c !== cityName).slice(0, 5).map(city => (
                       <li key={city}>
                         <Link href={`/services/${service.slug}/${toSlug(city)}/`}
-                          className="block px-3 py-2 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-700 hover:text-brand-500 transition-colors">
+                          className="block px-3 py-2 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-700 hover:text-brand-900 transition-colors">
                           {service.title} in {city}
                         </Link>
                       </li>

@@ -26,7 +26,7 @@ export function AccessControlPageClient({ params }: { params: { subSlug: string 
     <>
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
-      <main>
+      <main id="main" tabIndex={-1} className="scroll-mt-24 outline-none">
         <div className="relative w-full aspect-[3/2] md:aspect-[21/9] overflow-hidden border-b-[3px] border-brand-900 bg-brand-100">
           <Image src={service.image} alt={service.imageAlt || service.title} fill priority sizes="100vw" className="object-cover" />
         </div>
@@ -86,7 +86,7 @@ export function AccessControlPageClient({ params }: { params: { subSlug: string 
                   <h3 className="font-syne font-bold text-sm uppercase tracking-tight text-brand-900 mb-3">Get a Free Quote</h3>
                   <p className="text-brand-600 text-sm mb-5">Free site survey and written quote, no obligation.</p>
                   <button onClick={() => setIsModalOpen(true)} className="btn-primary w-full justify-center">Request a Call Back</button>
-                  <p className="text-center text-xs text-brand-500 mt-3">Within 2 hours · 100% free</p>
+                  <p className="text-center text-xs text-brand-600 mt-3">Within 2 hours · 100% free</p>
                 </div>
                 <div className="border-2 border-brand-200 p-5 bg-brand-50">
                   <div className="craft-label">Other Systems</div>
@@ -94,7 +94,7 @@ export function AccessControlPageClient({ params }: { params: { subSlug: string 
                     {otherServices.map(s => (
                       <li key={s.slug}>
                         <Link href={`/services/access-control/${s.slug}/`}
-                          className="block py-2 border-b border-brand-100 last:border-0 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-600 hover:text-brand-500 transition-colors">
+                          className="block py-2 border-b border-brand-100 last:border-0 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-600 hover:text-brand-900 transition-colors">
                           {s.title}
                         </Link>
                       </li>
@@ -109,7 +109,7 @@ export function AccessControlPageClient({ params }: { params: { subSlug: string 
         <section className="bg-brand-900 py-20">
           <div className="container-width flex flex-col md:flex-row md:items-center md:justify-between gap-8">
             <div>
-              <div className="craft-label" style={{ color: 'var(--brand-500)' }}>Get Started</div>
+              <div className="craft-label text-brand-400">Get Started</div>
               <h2 className="craft-h2 text-white">Ready to Add {service.title}?</h2>
               <p className="text-brand-400 text-sm mt-3 max-w-md">We install gate access control systems across London. Free site survey and written quote.</p>
             </div>

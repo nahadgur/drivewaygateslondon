@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { CheckCircle, X } from 'lucide-react';
 import { GATE_TYPES, GOOGLE_SCRIPT_URL } from '@/data/leadForm';
+import { useScrollLock } from '@/lib/useScrollLock';
 
 interface LeadFormModalProps {
   isOpen: boolean;
@@ -17,6 +18,7 @@ export function LeadFormModal({ isOpen, onClose }: LeadFormModalProps) {
   const [animationState, setAnimationState] = useState<'idle' | 'entering' | 'exiting'>('idle');
   const modalRef = useRef<HTMLDivElement>(null);
   const previousFocusRef = useRef<HTMLElement | null>(null);
+  const successHeadingRef = useRef<HTMLHeadingElement>(null);
 
   // Animation state management
   useEffect(() => {
@@ -43,13 +45,8 @@ export function LeadFormModal({ isOpen, onClose }: LeadFormModalProps) {
     return () => document.removeEventListener('keydown', handleKeyDown);
   }, [isOpen, onClose]);
 
-  // Body scroll lock
-  useEffect(() => {
-    if (!isOpen) return;
-    const originalOverflow = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
-    return () => { document.body.style.overflow = originalOverflow; };
-  }, [isOpen]);
+  // Body scroll lock — shared owner, see lib/useScrollLock
+  useScrollLock(isOpen);
 
   // Auto-focus first input on open + restore focus on close
   useEffect(() => {
@@ -63,6 +60,11 @@ export function LeadFormModal({ isOpen, onClose }: LeadFormModalProps) {
       previousFocusRef.current = null;
     }
   }, [isOpen]);
+
+  // Move focus to the confirmation when the form is replaced by it.
+  useEffect(() => {
+    if (isSuccess) successHeadingRef.current?.focus();
+  }, [isSuccess]);
 
   // Focus trap — keep Tab cycling within the modal
   const handleKeyDown = useCallback((e: React.KeyboardEvent) => {
@@ -139,13 +141,13 @@ export function LeadFormModal({ isOpen, onClose }: LeadFormModalProps) {
         ref={modalRef}
         role="dialog"
         aria-modal="true"
-        aria-label="Get free gate installation quotes"
+        aria-labelledby="lead-modal-title"
         className={`relative w-full max-w-lg max-h-[calc(100dvh-2rem)] overflow-y-auto overflow-x-hidden bg-white rounded-2xl shadow-2xl
           ${animationState === 'entering' ? 'animate-modal-in' : 'animate-modal-out'}`}
       >
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-full transition-all z-10"
+          className="absolute top-2 right-2 flex items-center justify-center min-w-[44px] min-h-[44px] text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-full transition-all z-10"
           aria-label="Close modal"
         >
           <X className="w-5 h-5" />
@@ -153,15 +155,15 @@ export function LeadFormModal({ isOpen, onClose }: LeadFormModalProps) {
 
         <div className="p-5 sm:p-8">
           {isSuccess ? (
-            <div className="flex flex-col items-center text-center py-8 space-y-4">
-              <div className="w-16 h-16 bg-green-50 text-green-500 rounded-full flex items-center justify-center">
+            <div role="status" aria-live="polite" className="flex flex-col items-center text-center py-8 space-y-4">
+              <div aria-hidden className="w-16 h-16 bg-green-50 text-green-500 rounded-full flex items-center justify-center">
                 <CheckCircle className="w-10 h-10" />
               </div>
-              <h2 className="text-2xl font-display font-bold text-gray-900">Request Received!</h2>
+              <h2 id="lead-modal-title" ref={successHeadingRef} tabIndex={-1} className="text-2xl font-display font-bold text-gray-900 outline-none">Request Received!</h2>
               <p className="text-gray-600">Thanks, your request is in. We will call you back within <strong className="text-gray-800">2 hours</strong> to arrange your free site survey. Check your email for confirmation.</p>
               <button
                 onClick={() => { setIsSuccess(false); onClose(); }}
-                className="mt-2 bg-brand-500 hover:bg-brand-600 text-white font-bold py-3 px-8 rounded-xl transition-colors text-sm shadow-md shadow-brand-500/20"
+                className="mt-2 bg-brand-600 hover:bg-brand-700 text-white font-bold py-3 px-8 rounded-xl transition-colors text-sm shadow-md shadow-brand-600/20"
               >
                 Done
               </button>
@@ -172,7 +174,7 @@ export function LeadFormModal({ isOpen, onClose }: LeadFormModalProps) {
                 <span className="hidden sm:inline-block px-3 py-1 bg-brand-50 text-brand-600 text-xs font-bold uppercase tracking-wider rounded-full mb-3">
                   Free Site Survey
                 </span>
-                <h2 className="text-xl sm:text-2xl font-display font-bold text-gray-900">Book Your Free Site Survey</h2>
+                <h2 id="lead-modal-title" className="text-xl sm:text-2xl font-display font-bold text-gray-900">Book Your Free Site Survey</h2>
                 <p className="hidden sm:block text-gray-600 text-sm mt-1">Tell us about your project and we will call you back to arrange a free survey.</p>
               </div>
 
@@ -183,7 +185,7 @@ export function LeadFormModal({ isOpen, onClose }: LeadFormModalProps) {
                     <div className="flex-1">
                       <p className="text-red-800 text-sm font-medium">{errorMessage}</p>
                     </div>
-                    <button type="button" onClick={() => setErrorMessage(null)} className="text-red-400 hover:text-red-600 transition-colors p-0.5" aria-label="Dismiss error">
+                    <button type="button" onClick={() => setErrorMessage(null)} className="flex items-center justify-center min-w-[44px] min-h-[44px] -m-2 text-red-400 hover:text-red-600 transition-colors" aria-label="Dismiss error">
                       <X className="w-4 h-4" />
                     </button>
                   </div>
@@ -217,7 +219,7 @@ export function LeadFormModal({ isOpen, onClose }: LeadFormModalProps) {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-brand-500 hover:bg-brand-600 active:scale-[0.98] disabled:opacity-60 text-white font-bold py-3.5 px-6 rounded-xl transition-all text-base mt-1 shadow-md shadow-brand-500/20"
+                  className="w-full bg-brand-600 hover:bg-brand-700 active:scale-[0.98] disabled:opacity-60 text-white font-bold py-3.5 px-6 rounded-xl transition-all text-base mt-1 shadow-md shadow-brand-600/20"
                 >
                   {isSubmitting ? 'Sending…' : 'Request a Free Call Back →'}
                 </button>

@@ -25,7 +25,7 @@ export function CommercialPageClient({ params }: { params: { slug: string } }) {
     <>
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
-      <main>
+      <main id="main" tabIndex={-1} className="scroll-mt-24 outline-none">
         <section className="bg-brand-950 border-b-[3px] border-brand-900 relative overflow-hidden">
           <div className="absolute inset-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -95,7 +95,7 @@ export function CommercialPageClient({ params }: { params: { slug: string } }) {
                   <div className="craft-label">Get a Quote</div>
                   <p className="text-brand-600 text-sm mb-5">Free site survey and written quote, no obligation.</p>
                   <button onClick={() => setIsModalOpen(true)} className="btn-primary w-full justify-center">Request a Call Back</button>
-                  <p className="text-center text-xs text-brand-500 mt-3">Within 2 hours · No obligation</p>
+                  <p className="text-center text-xs text-brand-600 mt-3">Within 2 hours · No obligation</p>
                 </div>
                 <div className="border-2 border-brand-200 p-5 bg-brand-50">
                   <div className="craft-label">Other Commercial Services</div>
@@ -103,7 +103,7 @@ export function CommercialPageClient({ params }: { params: { slug: string } }) {
                     {otherServices.map(s => (
                       <li key={s.slug}>
                         <Link href={`/commercial/${s.slug}/`}
-                          className="block py-2 border-b border-brand-100 last:border-0 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-600 hover:text-brand-500">
+                          className="block py-2 border-b border-brand-100 last:border-0 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-600 hover:text-brand-900">
                           {s.title}
                         </Link>
                       </li>
@@ -118,7 +118,7 @@ export function CommercialPageClient({ params }: { params: { slug: string } }) {
         <section className="bg-brand-900 py-20">
           <div className="container-width flex flex-col md:flex-row items-center justify-between gap-8">
             <div>
-              <div className="craft-label" style={{ color: 'var(--brand-500)' }}>Get Started</div>
+              <div className="craft-label text-brand-400">Get Started</div>
               <h2 className="craft-h2 text-white">Ready to Discuss Your Commercial Project?</h2>
             </div>
             <button onClick={() => setIsModalOpen(true)} className="btn-gold flex-shrink-0 inline-flex items-center gap-2">

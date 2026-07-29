@@ -27,7 +27,7 @@ export default function GuidesHubPage() {
     <>
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
-      <main>
+      <main id="main" tabIndex={-1} className="scroll-mt-24 outline-none">
         <section className="bg-brand-950 border-b-[3px] border-brand-900">
           <div className="container-width py-16 md:py-24">
             <Breadcrumbs items={[{ label: 'Guides' }]} />
@@ -48,12 +48,12 @@ export default function GuidesHubPage() {
           <div className="container-width py-0">
             <div className="flex overflow-x-auto">
               <button onClick={() => setActive('All')}
-                className={`px-6 py-4 font-syne font-bold text-[11px] tracking-[.1em] uppercase whitespace-nowrap border-b-2 transition-colors ${active === 'All' ? 'text-white border-brand-500' : 'text-brand-500 border-transparent hover:text-brand-300'}`}>
+                className={`px-6 py-4 font-syne font-bold text-[11px] tracking-[.1em] uppercase whitespace-nowrap border-b-2 transition-colors ${active === 'All' ? 'text-white border-brand-500' : 'text-brand-400 border-transparent hover:text-brand-200'}`}>
                 All Guides ({guides.length})
               </button>
               {GUIDE_PILLARS.map(pillar => (
                 <button key={pillar} onClick={() => setActive(active === pillar ? 'All' : pillar)}
-                  className={`flex items-center gap-2 px-6 py-4 font-syne font-bold text-[11px] tracking-[.1em] uppercase whitespace-nowrap border-b-2 transition-colors ${active === pillar ? 'text-white border-brand-500' : 'text-brand-500 border-transparent hover:text-brand-300'}`}>
+                  className={`flex items-center gap-2 px-6 py-4 font-syne font-bold text-[11px] tracking-[.1em] uppercase whitespace-nowrap border-b-2 transition-colors ${active === pillar ? 'text-white border-brand-500' : 'text-brand-400 border-transparent hover:text-brand-200'}`}>
                   {PILLAR_META[pillar].icon}
                   {PILLAR_META[pillar].label} ({guides.filter(g => g.pillar === pillar).length})
                 </button>
@@ -79,15 +79,15 @@ export default function GuidesHubPage() {
                     </div>
                   </div>
                   <div className="p-5 flex flex-col flex-grow">
-                    <h3 className="font-syne font-bold text-[13px] tracking-tight uppercase text-brand-900 leading-snug mb-3 group-hover:text-brand-500 transition-colors">
+                    <h3 className="font-syne font-bold text-[13px] tracking-tight uppercase text-brand-900 leading-snug mb-3 group-hover:text-brand-600 transition-colors">
                       {guide.title}
                     </h3>
                     <p className="text-brand-600 text-xs leading-relaxed mb-4 flex-grow line-clamp-3">{guide.excerpt}</p>
                     <div className="flex items-center justify-between pt-3 border-t-2 border-brand-200">
-                      <span className="flex items-center gap-1 font-syne font-bold text-[10px] tracking-[.06em] uppercase text-brand-500">
+                      <span className="flex items-center gap-1 font-syne font-bold text-[10px] tracking-[.06em] uppercase text-brand-600">
                         <Clock className="w-3 h-3" /> {guide.readingMinutes} min
                       </span>
-                      <span className="font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-500 flex items-center gap-1 group-hover:gap-1.5 transition-all">
+                      <span className="font-syne font-bold text-[10px] tracking-[.1em] uppercase text-brand-600 flex items-center gap-1 group-hover:gap-1.5 transition-all">
                         Read <ArrowRight className="w-3 h-3" />
                       </span>
                     </div>
@@ -101,7 +101,7 @@ export default function GuidesHubPage() {
         <section className="bg-brand-900 py-20">
           <div className="container-width flex flex-col md:flex-row md:items-center md:justify-between gap-8">
             <div>
-              <div className="craft-label" style={{ color: 'var(--brand-500)' }}>Ready?</div>
+              <div className="craft-label text-brand-400">Ready?</div>
               <h2 className="craft-h2 text-white">Ready to Get Quotes?</h2>
               <p className="text-brand-400 text-sm mt-3 max-w-md">When you are ready, we will arrange a free site survey and written quote. No obligation.</p>
             </div>
