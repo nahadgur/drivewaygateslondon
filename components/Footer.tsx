@@ -37,6 +37,11 @@ const PLANNING_BOROUGHS = [
   { label: 'RBKC Planning Guide',        href: '/local-regulations/kensington-and-chelsea/' },
 ];
 
+/* Link touch targets here are `block py-1.5` on 13px text (~29px tall) rather
+   than the 44x44 used elsewhere in the app. That is deliberate: this footer
+   carries ~40 links across five columns, and 44px each roughly doubles its
+   height and pushes content off the first mobile viewport. ~29px clears the
+   WCAG 2.5.8 (AA) 24px minimum. Don't "fix" these to 44px. */
 export function Footer() {
   const residentialServices = services.filter(s => s.slug !== 'commercial-gates');
 
