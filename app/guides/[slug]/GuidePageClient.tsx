@@ -34,7 +34,7 @@ export function GuidePageClient({ params }: { params: { slug: string } }) {
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
       <main>
-        <div className="relative w-full aspect-[3/2] md:aspect-[21/9] overflow-hidden border-b-[3px] border-brand-900 bg-brand-100">
+        <div className="relative w-full aspect-[3/2] md:aspect-[21/9] max-h-[280px] md:max-h-[340px] overflow-hidden border-b-[3px] border-brand-900 bg-brand-100">
           <Image src={guide.featuredImage} alt={guide.featuredImageAlt || guide.title} fill className="object-cover" priority sizes="100vw" />
         </div>
 

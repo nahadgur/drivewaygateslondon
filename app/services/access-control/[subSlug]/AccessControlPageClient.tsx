@@ -27,7 +27,7 @@ export function AccessControlPageClient({ params }: { params: { subSlug: string 
       <LeadFormModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Header onOpenModal={() => setIsModalOpen(true)} />
       <main>
-        <div className="relative w-full aspect-[3/2] md:aspect-[21/9] overflow-hidden border-b-[3px] border-brand-900 bg-brand-100">
+        <div className="relative w-full aspect-[3/2] md:aspect-[21/9] max-h-[280px] md:max-h-[340px] overflow-hidden border-b-[3px] border-brand-900 bg-brand-100">
           <Image src={service.image} alt={service.imageAlt || service.title} fill priority sizes="100vw" className="object-cover" />
         </div>
 

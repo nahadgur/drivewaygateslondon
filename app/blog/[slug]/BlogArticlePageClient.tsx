@@ -211,7 +211,7 @@ export function BlogArticlePageClient({ article, relatedService, serviceList, ar
       <Header onOpenModal={() => setIsModalOpen(true)} />
       <main>
 
-        <div className="relative w-full aspect-[3/2] md:aspect-[21/9] overflow-hidden border-b-[3px] border-brand-900 bg-brand-100">
+        <div className="relative w-full aspect-[3/2] md:aspect-[21/9] max-h-[280px] md:max-h-[340px] overflow-hidden border-b-[3px] border-brand-900 bg-brand-100">
           <Image src={article.featuredImage} alt={article.featuredImageAlt || article.title}
             fill className="object-cover" priority sizes="100vw" />
         </div>
