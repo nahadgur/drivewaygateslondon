@@ -1,7 +1,8 @@
 'use client';
 
-import { Mail, Phone, Clock, ShieldCheck, CheckCircle } from 'lucide-react';
-import { siteConfig, phoneHref } from '@/data/site';
+import { Mail, Phone, MapPin, Clock, ShieldCheck, CheckCircle } from 'lucide-react';
+import { siteConfig, addressOneLine, phoneHref } from '@/data/site';
+import { MapEmbed } from '@/components/MapEmbed';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { HeroLeadForm } from '@/components/HeroLeadForm';
@@ -88,6 +89,16 @@ export function ContactPageClient() {
                     {siteConfig.email}
                   </a>
                   <p className="text-brand-600 text-sm mt-2">We aim to reply to email enquiries within one working day.</p>
+                </div>
+
+                <div className="mt-10 pt-8 border-t-2 border-brand-200">
+                  <h3 className="font-syne font-bold text-sm uppercase tracking-[.15em] text-brand-900 mb-4">Where we are</h3>
+                  <address className="inline-flex items-start gap-3 not-italic text-brand-900 font-semibold">
+                    <MapPin className="w-5 h-5 mt-0.5 shrink-0" />
+                    {addressOneLine}
+                  </address>
+                  <p className="text-brand-600 text-sm mt-2">Installations are carried out across Greater London, so the survey comes to you rather than the other way round.</p>
+                  <MapEmbed variant="contact" className="mt-4" />
                 </div>
               </div>
             </div>

@@ -8,6 +8,29 @@ export const siteConfig = {
   // Every phone link on the site is hidden while this is empty.
   phone: '020 3773 1310' as string,
   email: 'hello@drivewaygateslondon.co.uk',
+
+  // The office. Held in parts so the schema can emit streetAddress and
+  // postalCode separately, which is what Google reads. Use addressOneLine
+  // below wherever it is displayed, so the page and the schema can never
+  // disagree about it.
+  //
+  // This is the NAP address. If it changes, it has to change in the Google
+  // Business Profile and every directory listing on the same day, or the
+  // inconsistency costs local rankings.
+  //
+  // postcode carries the outward code only until the full one is confirmed.
+  // Everything that emits it is guarded, so a partial code is never published
+  // as though it were complete.
+  address: {
+    street: '22 Bedford Square',
+    locality: 'London',
+    outward: 'WC1B',
+    postcode: '' as string,
+  },
+
+  // Keyless Google map embed, so there is no API key to manage. Zoom 15 puts
+  // the square and its surrounding streets in frame.
+  map: { zoom: 15 },
   description: 'Driveway gate design, supply and installation across London. Electric sliding gates, swing gates, wooden and metal gates, automation, and repairs. Free site surveys and written quotes.',
   tagline: 'Driveway Gate Installation Across London',
 };
@@ -17,6 +40,14 @@ export const siteConfig = {
  * spacing, drop the trunk zero and prefix the country code. Empty while there
  * is no number, so a caller can test it exactly like siteConfig.phone.
  */
+export const addressOneLine = [
+  siteConfig.address.street,
+  siteConfig.address.locality,
+  siteConfig.address.postcode || siteConfig.address.outward,
+]
+  .filter(Boolean)
+  .join(', ');
+
 export const phoneHref = siteConfig.phone
   ? `tel:+44${siteConfig.phone.replace(/\D/g, '').replace(/^0/, '')}`
   : '';

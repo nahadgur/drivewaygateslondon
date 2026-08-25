@@ -139,6 +139,14 @@ export default function PrivacyPage() {
                 clear it at any time by deleting this site&apos;s data in your browser settings,
                 and you can block cookies entirely through your browser.
               </p>
+              <p>
+                Separately, the map on the contact page and the one in the footer are served
+                by Google Maps and load with the page rather than waiting to be asked.
+                Loading either lets Google set its own cookies and passes it your IP address,
+                whatever you chose in the banner. The footer map is fetched only once you
+                scroll down far enough to reach it. Blocking third-party content in your
+                browser stops both, and the rest of the site carries on working.
+              </p>
 
               <LegalH2 n="8">Changes to this policy</LegalH2>
               <p>

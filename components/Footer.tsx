@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { MapPin, Phone, Shield, Building2, FileText, BookOpen } from 'lucide-react';
 import { services } from '@/data/services';
-import { siteConfig, phoneHref } from '@/data/site';
+import { siteConfig, addressOneLine, phoneHref } from '@/data/site';
+import { MapEmbed } from './MapEmbed';
 
 const POPULAR_LOCATIONS = [
   { label: 'Gates in Barnet',     href: '/location/barnet/' },
@@ -160,6 +161,9 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-[12px] text-brand-700">
+          <address className="not-italic flex items-center gap-1.5">
+            <MapPin className="w-3.5 h-3.5" /> {addressOneLine}
+          </address>
           <p>&copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
           <div className="flex flex-wrap justify-center gap-x-5 gap-y-2">
             {siteConfig.phone ? (

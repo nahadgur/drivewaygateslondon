@@ -4,7 +4,7 @@
 import type { Metadata } from 'next';
 import { DM_Sans, Syne, Fraunces } from 'next/font/google';
 import './globals.css';
-import { siteConfig } from '@/data/site';
+import { siteConfig, addressOneLine } from '@/data/site';
 import { LONDON_BOROUGHS } from '@/data/boroughs';
 import { ConsentBanner } from '@/components/ConsentBanner';
 
@@ -82,7 +82,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   const organizationSchema = {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    // LocalBusiness rather than a bare Organization, because there is a real
+    // trading address behind this and a service area around it.
+    "@type": "LocalBusiness",
     "@id": `${siteConfig.url}/#organization`,
     name: siteConfig.name,
     url: siteConfig.url,
@@ -96,6 +98,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     // Emitted only while data/site.ts carries a number. Never claim a channel
     // nobody answers.
     ...(siteConfig.phone ? { telephone: siteConfig.phone } : {}),
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: siteConfig.address.street,
+      addressLocality: siteConfig.address.locality,
+      // Omitted while only the outward code is known. A partial postcode in
+      // schema is a wrong answer, not a short one.
+      ...(siteConfig.address.postcode ? { postalCode: siteConfig.address.postcode } : {}),
+      addressCountry: "GB",
+    },
     areaServed: [
       { "@type": "City", name: "London", addressCountry: "GB" },
       ...LONDON_BOROUGHS.map(borough => ({
