@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import { MapPin, Shield, Building2, FileText, BookOpen } from 'lucide-react';
+import { MapPin, Phone, Shield, Building2, FileText, BookOpen } from 'lucide-react';
 import { services } from '@/data/services';
-import { siteConfig } from '@/data/site';
+import { siteConfig, phoneHref } from '@/data/site';
 
 const POPULAR_LOCATIONS = [
   { label: 'Gates in Barnet',     href: '/location/barnet/' },
@@ -162,6 +162,11 @@ export function Footer() {
         <div className="py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-[12px] text-brand-700">
           <p>&copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
           <div className="flex flex-wrap justify-center gap-x-5 gap-y-2">
+            {siteConfig.phone ? (
+              <a href={phoneHref} className="inline-flex items-center gap-1.5 font-semibold hover:text-brand-400 transition-colors">
+                <Phone className="w-3.5 h-3.5" /> {siteConfig.phone}
+              </a>
+            ) : null}
             <Link href="/contact/"         className="hover:text-brand-400 transition-colors">Contact</Link>
             <Link href="/privacy/"         className="hover:text-brand-400 transition-colors">Privacy Policy</Link>
             <Link href="/terms/"           className="hover:text-brand-400 transition-colors">Terms of Service</Link>

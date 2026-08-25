@@ -1,6 +1,7 @@
 'use client';
 
-import { Mail, Clock, ShieldCheck, CheckCircle } from 'lucide-react';
+import { Mail, Phone, Clock, ShieldCheck, CheckCircle } from 'lucide-react';
+import { siteConfig, phoneHref } from '@/data/site';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { HeroLeadForm } from '@/components/HeroLeadForm';
@@ -63,14 +64,28 @@ export function ContactPageClient() {
                   ))}
                 </ol>
 
+                {siteConfig.phone ? (
+                  <div className="mt-10 pt-8 border-t-2 border-brand-200">
+                    <h3 className="font-syne font-bold text-sm uppercase tracking-[.15em] text-brand-900 mb-4">Rather talk it through?</h3>
+                    <a
+                      href={phoneHref}
+                      className="inline-flex items-center gap-3 text-brand-900 hover:text-brand-500 transition-colors font-semibold"
+                    >
+                      <Phone className="w-5 h-5" />
+                      {siteConfig.phone}
+                    </a>
+                    <p className="text-brand-600 text-sm mt-2">Lines are open during working hours. Outside them, the form reaches us fastest.</p>
+                  </div>
+                ) : null}
+
                 <div className="mt-10 pt-8 border-t-2 border-brand-200">
                   <h3 className="font-syne font-bold text-sm uppercase tracking-[.15em] text-brand-900 mb-4">Prefer email?</h3>
                   <a
-                    href="mailto:hello@drivewaygateslondon.co.uk"
+                    href={`mailto:${siteConfig.email}`}
                     className="inline-flex items-center gap-3 text-brand-900 hover:text-brand-500 transition-colors font-semibold"
                   >
                     <Mail className="w-5 h-5" />
-                    hello@drivewaygateslondon.co.uk
+                    {siteConfig.email}
                   </a>
                   <p className="text-brand-600 text-sm mt-2">We aim to reply to email enquiries within one working day.</p>
                 </div>

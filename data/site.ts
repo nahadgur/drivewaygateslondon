@@ -2,9 +2,24 @@ export const siteConfig = {
   name: 'Driveway Gates London',
   domain: 'drivewaygateslondon.co.uk',
   url: 'https://www.drivewaygateslondon.co.uk',
+
+  // The inbound line, in national display format. phoneHref below derives the
+  // dialled form, so the displayed number and the link can never disagree.
+  // Every phone link on the site is hidden while this is empty.
+  phone: '020 3773 1310' as string,
+  email: 'hello@drivewaygateslondon.co.uk',
   description: 'Driveway gate design, supply and installation across London. Electric sliding gates, swing gates, wooden and metal gates, automation, and repairs. Free site surveys and written quotes.',
   tagline: 'Driveway Gate Installation Across London',
 };
+
+/**
+ * The phone number as a tel: href. National format in, E.164 out: strip the
+ * spacing, drop the trunk zero and prefix the country code. Empty while there
+ * is no number, so a caller can test it exactly like siteConfig.phone.
+ */
+export const phoneHref = siteConfig.phone
+  ? `tel:+44${siteConfig.phone.replace(/\D/g, '').replace(/^0/, '')}`
+  : '';
 
 export const trustBadges = [
   {

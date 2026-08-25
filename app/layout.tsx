@@ -93,6 +93,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       height: 512,
     },
     description: "Design, supply and installation of driveway gates across London, including electric and automated systems, wooden and metal gates, repairs and servicing.",
+    // Emitted only while data/site.ts carries a number. Never claim a channel
+    // nobody answers.
+    ...(siteConfig.phone ? { telephone: siteConfig.phone } : {}),
     areaServed: [
       { "@type": "City", name: "London", addressCountry: "GB" },
       ...LONDON_BOROUGHS.map(borough => ({
@@ -104,7 +107,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",
-      email: "hello@drivewaygateslondon.co.uk",
+      email: siteConfig.email,
+      ...(siteConfig.phone ? { telephone: siteConfig.phone } : {}),
       url: `${siteConfig.url}/contact/`,
       availableLanguage: "English",
       areaServed: "GB",
