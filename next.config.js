@@ -21,6 +21,10 @@ const nextConfig = {
       "font-src 'self' data: https://fonts.gstatic.com",
       "img-src 'self' data: blob: https://images.unsplash.com https://images.pexels.com https://files.autoblogging.ai https://www.googletagmanager.com https://www.google-analytics.com",
       "connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://script.google.com https://script.googleusercontent.com https://*.vercel-insights.com",
+      // The office map is a Google Maps iframe. Without frame-src it falls back
+      // to default-src 'self' and the embed is refused, on the contact page and
+      // in the footer alike.
+      "frame-src 'self' https://www.google.com https://maps.google.com",
       "media-src 'self'",
       "manifest-src 'self'",
       "worker-src 'self' blob:",
