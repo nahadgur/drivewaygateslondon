@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { Phone } from 'lucide-react';
+import { siteConfig, phoneHref } from '@/data/site';
 
 interface HeroProps {
   title: string;
@@ -63,9 +65,18 @@ export function Hero({ title, subtitle, image, highlights, showCta = true, showT
                 Get a Free Quote
               </Link>
             )}
-            <Link href="/services/" className="btn-secondary !text-[12px] !py-3.5 !px-7">
-              View Gate Types
-            </Link>
+            {/* The pair a visitor sees first: send the form, or call. The
+                gate-type index is one scroll down and in the nav, so it does
+                not need the second slot here. */}
+            {siteConfig.phone ? (
+              <a href={phoneHref} className="btn-secondary !text-[12px] !py-3.5 !px-7 inline-flex items-center gap-2.5">
+                <Phone className="w-4 h-4 flex-shrink-0" /> {siteConfig.phone}
+              </a>
+            ) : (
+              <Link href="/services/" className="btn-secondary !text-[12px] !py-3.5 !px-7">
+                View Gate Types
+              </Link>
+            )}
           </div>
         )}
 

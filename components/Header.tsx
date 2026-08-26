@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { X, ChevronDown, Shield, FileText, Building2, Camera, Hash, Phone, Zap, BookOpen } from 'lucide-react';
 import { services } from '@/data/services';
+import { siteConfig, phoneHref } from '@/data/site';
 
 interface HeaderProps {
   onOpenModal?: () => void;
@@ -215,21 +216,41 @@ export function Header({ onOpenModal }: HeaderProps) {
                 Blog
               </Link>
 
+              {/* No phone here: the desktop bar is already at its width with
+                  eight nav items, and a number in it pushed the quote button
+                  off screen at 1440. The desktop call CTA lives in the hero,
+                  beside the quote button. */}
               <button onClick={onOpenModal} className="ml-4 btn-primary text-[11px] !py-2.5 !px-5">
                 Get a Free Quote
               </button>
             </nav>
 
-            {/* Hamburger */}
-            <button
-              className="lg:hidden flex flex-col gap-[5px] p-2 bg-transparent border-none"
-              onClick={() => setMobileOpen(o => !o)}
-              aria-label="Toggle menu"
-            >
-              <span className={`block w-6 h-0.5 bg-brand-900 transition-all duration-250 ${mobileOpen ? 'rotate-45 translate-y-[7px]' : ''}`} />
-              <span className={`block w-6 h-0.5 bg-brand-900 transition-all duration-250 ${mobileOpen ? 'opacity-0' : ''}`} />
-              <span className={`block w-6 h-0.5 bg-brand-900 transition-all duration-250 ${mobileOpen ? '-rotate-45 -translate-y-[7px]' : ''}`} />
-            </button>
+            {/* Mobile actions: the number stays reachable in one tap without
+                opening the menu. Below 640px it is the icon alone, because the
+                wordmark and the number cannot both fit on a phone. */}
+            <div className="lg:hidden flex items-center gap-2">
+              {siteConfig.phone ? (
+                <a
+                  href={phoneHref}
+                  aria-label={`Call ${siteConfig.phone}`}
+                  className="inline-flex items-center gap-2 border-2 border-brand-900 px-3 py-2 font-syne font-extrabold text-[13px] tracking-tight text-brand-900"
+                >
+                  <Phone className="w-4 h-4 flex-shrink-0" />
+                  <span className="hidden sm:inline">{siteConfig.phone}</span>
+                </a>
+              ) : null}
+
+              {/* Hamburger */}
+              <button
+                className="flex flex-col gap-[5px] p-2 bg-transparent border-none"
+                onClick={() => setMobileOpen(o => !o)}
+                aria-label="Toggle menu"
+              >
+                <span className={`block w-6 h-0.5 bg-brand-900 transition-all duration-250 ${mobileOpen ? 'rotate-45 translate-y-[7px]' : ''}`} />
+                <span className={`block w-6 h-0.5 bg-brand-900 transition-all duration-250 ${mobileOpen ? 'opacity-0' : ''}`} />
+                <span className={`block w-6 h-0.5 bg-brand-900 transition-all duration-250 ${mobileOpen ? '-rotate-45 -translate-y-[7px]' : ''}`} />
+              </button>
+            </div>
           </div>
         </div>
       </header>
@@ -313,6 +334,16 @@ export function Header({ onOpenModal }: HeaderProps) {
             >
               Get a Free Quote
             </button>
+
+            {siteConfig.phone ? (
+              <a
+                href={phoneHref}
+                onClick={() => setMobileOpen(false)}
+                className="mt-3 mb-6 inline-flex items-center justify-center gap-2.5 border-2 border-brand-700 py-4 w-full font-syne font-extrabold text-[17px] tracking-tight text-brand-100 hover:border-brand-500 transition-colors"
+              >
+                <Phone className="w-4 h-4 flex-shrink-0 text-brand-500" /> {siteConfig.phone}
+              </a>
+            ) : null}
           </nav>
         </div>
       )}

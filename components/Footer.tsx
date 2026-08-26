@@ -53,10 +53,33 @@ export function Footer() {
             <div className="font-syne font-extrabold text-[clamp(12px,3.6vw,16px)] text-white tracking-tight mb-3">
               DRIVEWAY<span className="text-brand-500">GATES</span>.LONDON
             </div>
-            <p className="text-[13px] text-brand-500 leading-relaxed mb-4 font-light">
+            <p className="text-[13px] text-brand-500 leading-relaxed mb-5 font-light">
               We design, supply and install driveway gates for homeowners and businesses
               across every London borough.
             </p>
+
+            {/* Phone and address sit together at the top of the footer rather
+                than in the legal strip, so the two things a visitor scrolls to
+                the bottom looking for are the first things they find. */}
+            {siteConfig.phone ? (
+              <a
+                href={phoneHref}
+                className="inline-flex items-center gap-3 border-2 border-brand-800 bg-brand-900 px-5 py-3.5 mb-4 font-syne font-extrabold text-[20px] tracking-tight text-white hover:border-brand-500 hover:text-brand-300 transition-colors"
+              >
+                <Phone className="w-4 h-4 flex-shrink-0 text-brand-500" />
+                {siteConfig.phone}
+              </a>
+            ) : null}
+
+            <address className="not-italic flex items-start gap-2 text-[13px] text-brand-500 font-light leading-relaxed">
+              <MapPin className="w-3.5 h-3.5 mt-0.5 flex-shrink-0" />
+              {addressOneLine}
+            </address>
+
+            {/* The map belongs with the address it shows, and the import was
+                already here waiting for it. Border toned to the dark footer
+                rather than the light contact page. */}
+            <MapEmbed variant="footer" className="mt-4 !border-brand-800" />
           </div>
 
           {/* Gate Types */}
@@ -161,16 +184,8 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="py-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-[12px] text-brand-700">
-          <address className="not-italic flex items-center gap-1.5">
-            <MapPin className="w-3.5 h-3.5" /> {addressOneLine}
-          </address>
           <p>&copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
           <div className="flex flex-wrap justify-center gap-x-5 gap-y-2">
-            {siteConfig.phone ? (
-              <a href={phoneHref} className="inline-flex items-center gap-1.5 font-semibold hover:text-brand-400 transition-colors">
-                <Phone className="w-3.5 h-3.5" /> {siteConfig.phone}
-              </a>
-            ) : null}
             <Link href="/contact/"         className="hover:text-brand-400 transition-colors">Contact</Link>
             <Link href="/privacy/"         className="hover:text-brand-400 transition-colors">Privacy Policy</Link>
             <Link href="/terms/"           className="hover:text-brand-400 transition-colors">Terms of Service</Link>
