@@ -149,5 +149,161 @@
         "text": "At handover, request a written description of the work, the fitted parts, the checks completed and any outstanding recommendations. Ask for a demonstration of the controls and the safe shutdown procedure for your installation. Keep those details with your gate records so that the next servicing contractor can see what changed. You can then judge the repair against an agreed scope rather than simply whether the gates moved when the engineer left."
       }
     ]
+  },
+  {
+    "slug": "electric-gates-open-but-wont-close",
+    "title": "Electric Gates Open but Won’t Close: Common Causes and Repair Options",
+    "metaTitle": "Electric Gates Open but Won’t Close: Repair Options",
+    "useMetaTitle": true,
+    "metaDescription": "Understand why gates can open but refuse to close, what to report to an engineer, and how to compare repairs without bypassing protective devices.",
+    "category": "Maintenance",
+    "publishDate": "2026-09-30",
+    "draft": false,
+    "featuredImage": "/showcase/assets/content/electric-gates-open-but-wont-close.webp",
+    "featuredImageAlt": "Illustrative grey slatted driveway swing gates open inward beside brick piers at a bright residential entrance.",
+    "featuredImageWidth": 1672,
+    "featuredImageHeight": 941,
+    "excerpt": "Understand why gates can open but refuse to close, what to report to an engineer, and how to compare repairs without bypassing protective devices.",
+    "relatedServiceSlug": "gate-repair-and-maintenance",
+    "content": [
+      {
+        "type": "p",
+        "text": "If your electric gates open but will not close, the fault is not necessarily the motor. The controller may be receiving an instruction to keep the entrance open, or a protective input may be preventing closure. A gate that starts closing and then reverses needs a different investigation from one that never attempts to move. The engineer needs to establish which behaviour you are seeing before recommending a repair."
+      },
+      {
+        "type": "p",
+        "text": "Stop repeated attempts to close the gates and keep people away from their movement area. Note what has already happened, then contact a competent powered-gate contractor. Do not disconnect a sensor, alter the force setting or force a gate leaf into position to secure the entrance. The appropriate repair depends on the installed equipment and the cause of the fault. If the original installer is unavailable, ask about repairing gates installed by another company when booking an assessment."
+      },
+      {
+        "type": "h2",
+        "text": "Describe exactly how the gates fail to close"
+      },
+      {
+        "type": "p",
+        "text": "When booking [electric gate repairs](/services/gate-repair-and-maintenance/), start with the sequence you observed. Say whether the gates reached their normal fully open position, whether both leaves moved and what happened when you expected them to close. Explain whether you normally press a control to close them or whether they close after a waiting period."
+      },
+      {
+        "type": "p",
+        "text": "Useful distinctions include a gate that stays silent, one that makes a sound without moving, and one that travels before stopping. If it reverses, tell the engineer whether this happened near the same position on previous occasions. Do not repeat the movement to obtain a more precise measurement or to test your theory."
+      },
+      {
+        "type": "p",
+        "text": "Also describe the practical problem. Are you unable to secure the drive, unable to use the pedestrian route or concerned that the gate could move while someone passes? Include any separate entrance you can use. This helps the contractor discuss arrangements for the visit without assuming that you can safely operate or release the gate yourself."
+      },
+      {
+        "type": "h2",
+        "text": "A safety input may be preventing closure"
+      },
+      {
+        "type": "p",
+        "text": "Photocells and other protective inputs can affect closing differently from opening. The behaviour depends on the controller and its configuration. In the [Nice A6/A700F manual (PDF)](https://www.niceforyou.com/sites/default/files/upload/manuals/a6-7_ista6_r8.pdf), for example, relevant photocell inputs can prevent closing or cause reversal, and a sustained opening command can keep a gate open. Those are model-specific examples, not a diagnosis of your installation."
+      },
+      {
+        "type": "p",
+        "text": "From outside the movement area, note anything you can already see around the entrance: a bin in the opening, vegetation near a sensor, a damaged housing or a component knocked out of position. Report the observation. Do not walk into the opening, reach through the gates or reposition a protective device to see whether closure returns."
+      },
+      {
+        "type": "p",
+        "text": "Ask the engineer whether the controller is receiving a valid safety input and what evidence identifies the fault. If a sensor needs replacement, request an explanation of why replacement is necessary and how the contractor will check its operation with the rest of the system. A repair should resolve the issue without removing the protection that the entrance needs."
+      },
+      {
+        "type": "h2",
+        "text": "The gate may be waiting for a different command"
+      },
+      {
+        "type": "p",
+        "text": "Opening successfully does not establish how the gate is meant to close. Some controllers offer different operating modes. The Nice A5 manual, for example, describes an automatic-close setting and an alternative that waits for another command. Check the user instructions supplied for your own gate; do not copy programming instructions from another model."
+      },
+      {
+        "type": "p",
+        "text": "Tell the engineer if the behaviour changed after a service, power interruption, control replacement or account change. Ask the people who manage the entrance whether anyone requested a different operating arrangement. On a shared drive, agree who can authorise changes so that a repair does not leave residents with unexpected behaviour."
+      },
+      {
+        "type": "p",
+        "text": "If remotes, a keypad and an intercom control the same entrance, describe any differences you have already noticed between them. The contractor can investigate the relevant [gate access controls](/services/access-control/) alongside the gate itself. Avoid buying another remote simply because the gate has stayed open; first establish whether a replacement remote would address the diagnosed problem."
+      },
+      {
+        "type": "h2",
+        "text": "Stopping or reversing needs a wider assessment"
+      },
+      {
+        "type": "p",
+        "text": "A leaf that starts closing and then stops gives the engineer different information from a gate that never moves. Report scraping, a change in the gap beneath the gate, visible impact damage or unusual movement at a support. For a sliding gate, describe anything you can see on the track from a safe position. These observations are reasons for inspection, not proof that a particular roller, hinge or motor has failed."
+      },
+      {
+        "type": "p",
+        "text": "HSE's [powered gate safety guidance](https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm) considers the complete installation, including its mountings, environment and response to protective devices. Ask the engineer to explain whether the behaviour follows a control input, resistance during movement or another fault. Do not accept increased closing force as an unexplained substitute for identifying the cause."
+      },
+      {
+        "type": "p",
+        "text": "If someone proposes work on a hinge, track or gate support, ask how it relates to the symptom and what further checks follow the adjustment. Where the gate operates beside a parked car, wall or pedestrian path, explain how you use that space. Give the contractor the everyday context needed to assess the proposed repair."
+      },
+      {
+        "type": "h2",
+        "text": "Report rain, electrical trips and recent damage"
+      },
+      {
+        "type": "p",
+        "text": "A fault appearing after rain deserves attention, but timing alone does not prove which part is affected. Record whether the behaviour followed wet weather, flooding near the entrance or other work around the gate. If electrical protection has tripped, tell the contractor and avoid repeated attempts to restore operation."
+      },
+      {
+        "type": "p",
+        "text": "Water ingress and damaged electrical connections can create hazards around powered gates. Keep clear of damaged equipment and leave enclosure inspection and electrical testing to a competent contractor. Do not remove an underground motor cover, open a controller box or attempt to dry internal components yourself."
+      },
+      {
+        "type": "p",
+        "text": "Ask the engineer to distinguish an affected component from the condition that allowed the problem to develop. If a quotation includes a replacement part, ask whether it also addresses any identified water-entry route, damaged cable protection or support problem. Request a written explanation of any investigation still needed before the contractor can settle the repair scope."
+      },
+      {
+        "type": "h2",
+        "text": "Give the engineer a concise fault record"
+      },
+      {
+        "type": "p",
+        "text": "Prepare a short account before the visit rather than a list of parts you suspect. Include the gate type, equipment details from existing paperwork, the last time it worked normally and any previous repair report. Say whether the current fault repeats an earlier problem and what the contractor changed on that occasion."
+      },
+      {
+        "type": "list",
+        "items": [
+          "State the gate's current position and whether a separate entrance remains available.",
+          "Describe the failed closing sequence using your previous observations.",
+          "List controls that were in use when the fault occurred, without deliberately cycling the gate again.",
+          "Record relevant weather, impact, landscaping or electrical work around the time it changed.",
+          "Attach safe, existing photographs and any fault message visible without opening equipment."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Keep entry codes and passwords out of the record. If the contractor needs administrative access, agree a separate way to provide it. For a managed property, nominate a contact who can explain the entrance's normal operation and approve the next step."
+      },
+      {
+        "type": "h2",
+        "text": "Compare repair options against the diagnosis"
+      },
+      {
+        "type": "p",
+        "text": "The repair proposal should name the identified problem and explain the work needed to address it. Ask whether the price covers investigation only or includes parts, labour, programming and checks after the work. Request clarification of VAT, return visits and any exclusions before authorising the proposal."
+      },
+      {
+        "type": "p",
+        "text": "Possible recommendations depend on what the engineer finds. Ask whether a proposed sensor replacement addresses a confirmed device fault, whether control work restores the intended operating arrangement, or whether a mechanical repair corrects a problem with gate travel. These are separate decisions; a quotation that says only “make gates close” leaves the scope unclear."
+      },
+      {
+        "type": "p",
+        "text": "If the engineer recommends replacing several components, ask why repairing the identified fault would not be suitable. Request the alternative scope where one exists, together with its limitations. You do not need an unsupported promise about years of future reliability. You need to understand what the proposed work resolves and which existing parts will remain."
+      },
+      {
+        "type": "h2",
+        "text": "Agree access arrangements and check the handover"
+      },
+      {
+        "type": "p",
+        "text": "If the gates must remain out of use while awaiting parts, ask the contractor to explain the safe arrangement for your entrance. Do not assume manual release will make a damaged or unstable gate safe to move. Follow the instructions supplied for that installation, and tell other residents that its usual operation has changed."
+      },
+      {
+        "type": "p",
+        "text": "After the repair, request a demonstration of the agreed opening and closing behaviour and an explanation of any changes to controls. Ask for a written record of the diagnosed fault, completed work and outstanding recommendations. Have the engineer explain how to stop operation safely if the problem returns, and keep those instructions with the service records. You should leave the handover knowing what caused the fault, what changed and how to use the repaired installation."
+      }
+    ]
   }
 ]
