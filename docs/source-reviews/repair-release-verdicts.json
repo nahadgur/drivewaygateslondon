@@ -1,6 +1,6 @@
 {
   "publication_date": "2026-09-30",
-  "release_authorization": "User requested push to main now; immediate separate releases replace the earlier unscheduled draft state. No scheduled automation.",
+  "release_authorization": "User requested unpublishing articles 2 and 3 on 30 September, then releasing the existing prepared articles individually on 2 and 4 October 2026 at 08:30 Europe/London.",
   "article_verdicts": [
     {
       "priority": 1,
@@ -21,5 +21,26 @@
   "linked_services": "Targeted factual corrections applied; see linked-service-corrections.json.",
   "deployment_verification": "GitHub Vercel status plus Production deployment status and canonical-site HTTP verification. Direct Vercel connector cannot access the project team (403); use GitHub Git-integration evidence instead.",
   "source_reopened": "HSE safety, responsibilities and basics; Nice A6/A700F and A5 manuals on 2026-09-30.",
-  "external_link_policy": "At most one link per external domain in each new article; source ledger remains separate."
+  "external_link_policy": "At most one link per external domain in each new article; source ledger remains separate.",
+  "rescheduled_releases": [
+    {
+      "priority": 2,
+      "slug": "electric-gates-open-but-wont-close",
+      "date": "2026-10-02",
+      "time": "08:30",
+      "timezone": "Europe/London",
+      "utc": "2026-10-02T07:30:00Z",
+      "state": "draft until scheduled release"
+    },
+    {
+      "priority": 3,
+      "slug": "electric-gates-keep-breaking-down-repair-or-replace",
+      "date": "2026-10-04",
+      "time": "08:30",
+      "timezone": "Europe/London",
+      "utc": "2026-10-04T07:30:00Z",
+      "state": "draft until scheduled release"
+    }
+  ],
+  "publication_date_note": "The original 30 September release and completed checks are historical. Current publication dates and draft visibility are in data/repair-articles.json; revalidate before each scheduled release."
 }
