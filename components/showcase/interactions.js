@@ -165,9 +165,6 @@ const entranceStatus = document.getElementById('entrance-status');
 let entranceRun = 0;
 let entranceTimer;
 let startFrame;
-let ignoreScrollUntil = 0;
-let replayFocus = false;
-const replay = document.getElementById('replay-intro');
 const stopEntrance = () => {
     entranceRun += 1;
     clearTimeout(entranceTimer);
@@ -176,15 +173,14 @@ const stopEntrance = () => {
     entrance.classList.remove('is-playing', 'is-loading');
     document.body.classList.remove('entering');
     if (document.activeElement === document.getElementById('skip-intro')) {
-        (replayFocus ? replay : document.querySelector('.nav-brand')).focus({ preventScroll: true });
+        document.querySelector('.nav-brand')?.focus({ preventScroll: true });
     }
 };
-const playEntrance = async (isReplay = false) => {
+const playEntrance = async () => {
     stopEntrance();
     if (reduceMotion.matches)
         return;
     const run = entranceRun;
-    replayFocus = isReplay;
     entrance.hidden = false;
     entrance.classList.add('is-loading');
     entranceStatus.textContent = 'Loading your entrance…';
@@ -230,14 +226,8 @@ listen(document, 'keydown', e => { if (e.key === 'Escape' || e.key === 'Tab')
     stopEntrance(); });
 listen(document, 'pointerdown', e => { if (!entrance.hidden && !entrance.contains(e.target))
     stopEntrance(); });
-listen(window, 'scroll', () => { if (performance.now() > ignoreScrollUntil)
-    stopEntrance(); }, { passive: true });
-listen(reduceMotion, 'change', () => { stopEntrance(); replay.disabled = reduceMotion.matches; replay.textContent = reduceMotion.matches ? 'Entrance disabled: reduced motion' : 'Replay the entrance ↻'; });
-listen(replay, 'click', () => { ignoreScrollUntil = performance.now() + 250; window.scrollTo({ top: 0, behavior: 'instant' }); playEntrance(true); });
-if (reduceMotion.matches) {
-    replay.disabled = true;
-    replay.textContent = 'Entrance disabled: reduced motion';
-}
+listen(window, 'scroll', stopEntrance, { passive: true });
+listen(reduceMotion, 'change', stopEntrance);
 const options = {
     "contemporary": {
         "title": "Aluminium Driveway Gates",

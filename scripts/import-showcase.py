@@ -40,6 +40,7 @@ for f in sorted(src.rglob('index.html')):
  if route=='/':
   shared['header']=re.search(r'<a class="skip-link".*?</dialog>',body[2],re.S)[0]
   shared['footerHome']=re.search(r'<footer.*?</footer>',body[2],re.S)[0]
+  shared['footerHome']=re.sub(r'<button\b[^>]*\bid="replay-intro"[^>]*>.*?</button>', '', shared['footerHome'], flags=re.S)
   shared['enquiry']=re.search(r'<div class="mobile-enquiry-bar".*?</div>',body[2],re.S)[0]
   shared['entrance']=re.search(r'(<div id="entrance".*?)(?=<div id="site-shell")',body[2],re.S)
   if shared['entrance'] is None:
