@@ -7,7 +7,7 @@ export const siteConfig = {
   // dialled form, so the displayed number and the link can never disagree.
   // Every phone link on the site is hidden while this is empty.
   phone: '020 3773 1310' as string,
-  email: 'hello@drivewaygateslondon.co.uk',
+  email: '',
 
   // The office. Held in parts so the schema can emit streetAddress and
   // postalCode separately, which is what Google reads. Use addressOneLine

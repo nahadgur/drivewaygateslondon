@@ -1,9 +1,17 @@
 // Static metadata for the root layout segment
 // app/layout.tsx is already server-side - update it with better OG image + SearchAction
 
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { DM_Sans, Syne, Fraunces } from 'next/font/google';
 import './globals.css';
+import '@/components/showcase/styles.css';
+import '@/components/showcase/subpages.css';
+import '@/components/showcase/navigation.css';
+import '@/components/showcase/hero-backgrounds.css';
+import '@/components/showcase/brand-footer.css';
+import '@/components/showcase/responsive.css';
+import '@/components/showcase/production.css';
+import { Enhancements } from '@/components/showcase/Enhancements';
 import { siteConfig, addressOneLine } from '@/data/site';
 import { LONDON_BOROUGHS } from '@/data/boroughs';
 import { ConsentBanner } from '@/components/ConsentBanner';
@@ -25,6 +33,8 @@ const fraunces = Fraunces({
   variable: '--font-fraunces',
   display: 'swap',
 });
+
+export const viewport: Viewport = { width: 'device-width', initialScale: 1, viewportFit: 'cover' };
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -118,7 +128,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer service",
-      email: siteConfig.email,
+      ...(siteConfig.email ? { email: siteConfig.email } : {}),
       ...(siteConfig.phone ? { telephone: siteConfig.phone } : {}),
       url: `${siteConfig.url}/contact/`,
       availableLanguage: "English",
@@ -146,9 +156,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
       </head>
-      <body className="min-h-screen flex flex-col">
+      <body className="min-h-screen">
         {/* GA4 is loaded inside ConsentBanner only after the visitor opts in (UK PECR) */}
         {children}
+        <Enhancements />
         <ConsentBanner />
       </body>
     </html>

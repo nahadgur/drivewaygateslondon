@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { siteConfig } from '@/data/site';
-import { ContactPageClient } from './ContactPageClient';
+import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 const title = 'Contact Driveway Gates London | Get a Free Quote';
@@ -45,7 +45,7 @@ export default function ContactPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(contactPageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <ContactPageClient />
+      <ShowcasePage route="/contact/" />
     </>
   );
 }

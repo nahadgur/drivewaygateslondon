@@ -1,0 +1,11 @@
+.header-host,.footer-host{display:contents}
+.showcase-page{min-height:100vh}
+body{display:block}
+.enquiry-error{padding:12px;border-left:3px solid #a34231;background:#fff2ec;color:#742f25!important}
+.quote-form button:disabled{opacity:.65;cursor:wait}
+.enquiry-success{min-height:300px;display:flex;flex-direction:column;justify-content:center;gap:20px}
+.quote-form .form-note a{text-decoration:underline;text-underline-offset:3px}
+.site-footer{margin-top:0}
+[aria-label="Cookie notice"]{z-index:80!important;bottom:0}
+.menu-is-open [aria-label="Cookie notice"],.entering [aria-label="Cookie notice"]{visibility:hidden}
+@media(max-width:1000px),(hover:none){body.has-mobile-enquiry [aria-label="Cookie notice"]{bottom:calc(66px + env(safe-area-inset-bottom))}}

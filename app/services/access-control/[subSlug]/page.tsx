@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { accessControlServices, getAccessControlBySlug } from '@/data/access-control';
 import { siteConfig } from '@/data/site';
-import { AccessControlPageClient } from './AccessControlPageClient';
+import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 interface Props { params: { subSlug: string } }
@@ -73,7 +73,7 @@ export default function AccessControlPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <AccessControlPageClient params={params} />
+      <ShowcasePage route={`/services/access-control/${params.subSlug}/`} />
     </>
   );
 }

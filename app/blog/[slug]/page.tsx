@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import { publishedArticles, getArticleBySlug } from '@/data/blog';
 import { services } from '@/data/services';
 import { siteConfig } from '@/data/site';
-import { BlogArticlePageClient } from './BlogArticlePageClient';
+import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 interface Props { params: { slug: string } }
@@ -85,14 +85,7 @@ export default function BlogArticlePage({ params }: Props) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <BlogArticlePageClient
-        article={article}
-        relatedService={article.relatedServiceSlug ? services.find(s => s.slug === article.relatedServiceSlug) ?? null : null}
-        serviceList={services.map(s => ({ slug: s.slug, title: s.title }))}
-        articleImageMap={Object.fromEntries(
-          publishedArticles.map(a => [a.slug, a.featuredImage])
-        )}
-      />
+      <ShowcasePage route={`/blog/${params.slug}/`} />
     </>
   );
 }

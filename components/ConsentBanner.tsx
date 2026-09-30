@@ -10,8 +10,10 @@ type Consent = 'accepted' | 'rejected' | null;
 
 function readConsent(): Consent {
   if (typeof window === 'undefined') return null;
-  const v = window.localStorage.getItem(STORAGE_KEY);
-  return v === 'accepted' || v === 'rejected' ? v : null;
+  try {
+    const v = window.localStorage.getItem(STORAGE_KEY);
+    return v === 'accepted' || v === 'rejected' ? v : null;
+  } catch { return null; }
 }
 
 function writeConsent(value: Exclude<Consent, null>) {

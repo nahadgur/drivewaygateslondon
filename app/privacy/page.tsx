@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 };
 
 const LAST_UPDATED = '16 July 2026';
-const CONTACT_EMAIL = 'hello@drivewaygateslondon.co.uk';
+
 
 // Helper to keep the H2 pattern consistent across sections.
 function LegalH2({ n, children }: { n: string; children: React.ReactNode }) {
@@ -58,8 +58,7 @@ export default function PrivacyPage() {
               <p>
                 This website, Driveway Gates London (drivewaygateslondon.co.uk), operates under
                 the trading name &apos;Driveway Gates London&apos;. We design, supply and install
-                driveway gates across Greater London. For any data protection request, email us
-                at <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> and we will respond
+                driveway gates across Greater London. For any data protection request, <Link href="/contact/">contact us using our enquiry form</Link> and we will respond
                 with a named contact.
               </p>
 
@@ -90,7 +89,7 @@ export default function PrivacyPage() {
               </ul>
               <p>
                 The lawful basis for this processing is your consent, which you give by
-                submitting the enquiry form. You can withdraw consent at any time by emailing
+                submitting the enquiry form. You can withdraw consent at any time by contacting
                 us.
               </p>
 
@@ -112,7 +111,7 @@ export default function PrivacyPage() {
                 Enquiry submissions are retained for 24 months so we can respond to follow-up
                 questions about your survey, quote, or installation. After 24 months, the data
                 is deleted from our records. You can request earlier deletion at any time by
-                emailing us.
+                contacting us.
               </p>
 
               <LegalH2 n="6">Your rights under UK GDPR</LegalH2>
@@ -126,8 +125,8 @@ export default function PrivacyPage() {
                 <li>Lodge a complaint with the Information Commissioner&apos;s Office (ico.org.uk)</li>
               </ul>
               <p>
-                To exercise any of these rights, email{' '}
-                <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. We will respond within
+                To exercise any of these rights, {' '}
+                <Link href="/contact/">contact us using our enquiry form</Link>. We will respond within
                 one month.
               </p>
 
@@ -159,7 +158,7 @@ export default function PrivacyPage() {
               <p>
                 Questions about this privacy policy or about how we handle your data:
                 <br />
-                <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+                <Link href="/contact/">contact us using our enquiry form</Link>
               </p>
 
               <div className="mt-12 pt-6 border-t border-brand-100 flex gap-6 text-[13px]">

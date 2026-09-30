@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { siteConfig, HOMEPAGE_FAQS } from '@/data/site';
 import { LONDON_BOROUGHS, LONDON_GEO } from '@/data/boroughs';
-import { HomePageClient } from './HomePageClient';
+import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 
 export const metadata: Metadata = {
   title: "Driveway Gates London | Supply & Installation, Free Quotes",
@@ -81,7 +81,7 @@ export default function HomePage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(installationServiceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <HomePageClient />
+      <ShowcasePage route="/" />
     </>
   );
 }

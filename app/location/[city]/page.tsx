@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { LOCATIONS, toSlug, getCityBySlug } from '@/data/locations';
 import { siteConfig } from '@/data/site';
-import { CityPageClient } from './CityPageClient';
+import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 interface Props { params: { city: string } }
@@ -76,7 +76,7 @@ export default function CityPage({ params }: Props) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <CityPageClient params={params} />
+      <ShowcasePage route={`/location/${params.city}/`} />
     </>
   );
 }

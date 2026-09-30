@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { services, getServiceBySlug } from '@/data/services';
 import { siteConfig, FAQS_SERVICES } from '@/data/site';
-import { ServicePageClient } from './ServicePageClient';
+import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 interface Props { params: { serviceSlug: string } }
@@ -72,7 +72,7 @@ export default function ServicePage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <ServicePageClient params={params} />
+      <ShowcasePage route={`/services/${params.serviceSlug}/`} />
     </>
   );
 }

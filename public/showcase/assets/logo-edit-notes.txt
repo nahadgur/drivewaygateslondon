@@ -1,0 +1,5 @@
+Transparent logo asset
+Built-in image_gen edit, using the original assets/logo.png as reference.
+Prompt: Preserve the existing symmetrical bronze two-leaf gate emblem and proportions; remove all white background with true alpha, recover crisp edges, keep all posts and rails visible with modest padding, and add no text, container or external shadow.
+The result is a reconstruction from the low-resolution reference.
+Web asset resized to 480px wide with alpha preserved.

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { boroughRegulations, getBoroughBySlug } from '@/data/regulations';
 import { siteConfig } from '@/data/site';
-import { BoroughPageClient } from './BoroughPageClient';
+import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 interface Props { params: { borough: string } }
@@ -85,7 +85,7 @@ export default function BoroughPlanningPage({ params }: Props) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <BoroughPageClient params={params} />
+      <ShowcasePage route={`/local-regulations/${params.borough}/`} />
     </>
   );
 }

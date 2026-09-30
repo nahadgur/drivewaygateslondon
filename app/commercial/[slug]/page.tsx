@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { commercialServices, getCommercialBySlug } from '@/data/commercial';
 import { siteConfig } from '@/data/site';
-import { CommercialPageClient } from './CommercialPageClient';
+import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 interface Props { params: { slug: string } }
@@ -71,7 +71,7 @@ export default function CommercialServicePage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <CommercialPageClient params={params} />
+      <ShowcasePage route={`/commercial/${params.slug}/`} />
     </>
   );
 }

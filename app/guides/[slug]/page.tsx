@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { guides, getGuideBySlug } from '@/data/guides';
 import { siteConfig } from '@/data/site';
-import { GuidePageClient } from './GuidePageClient';
+import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 interface Props { params: { slug: string } }
@@ -95,7 +95,7 @@ export default function GuidePage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <GuidePageClient params={params} />
+      <ShowcasePage route={`/guides/${params.slug}/`} />
     </>
   );
 }
