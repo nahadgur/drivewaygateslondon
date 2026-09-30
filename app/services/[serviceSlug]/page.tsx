@@ -51,7 +51,9 @@ export default function ServicePage({ params }: Props) {
     provider: { '@type': 'LocalBusiness', name: siteConfig.name, url: siteConfig.url },
   };
 
-  const combinedFaqs = [...(service.faqs || []), ...FAQS_SERVICES];
+  const combinedFaqs = service.reviewedFaqs
+    ? service.faqs
+    : [...(service.faqs || []), ...FAQS_SERVICES];
   const faqSchema = combinedFaqs.length > 0 ? {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',

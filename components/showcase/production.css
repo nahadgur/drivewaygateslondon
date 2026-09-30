@@ -9,3 +9,16 @@ body{display:block}
 [aria-label="Cookie notice"]{z-index:80!important;bottom:0}
 .menu-is-open [aria-label="Cookie notice"],.entering [aria-label="Cookie notice"]{visibility:hidden}
 @media(max-width:1000px),(hover:none){body.has-mobile-enquiry [aria-label="Cookie notice"]{bottom:calc(66px + env(safe-area-inset-bottom))}}
+
+/* Prepared repair articles: one meaningful hero, kept uncropped on small screens. */
+.repair-article .page-wrap{max-width:1080px}
+.repair-article .article-header{max-width:900px;margin:12px auto 26px}
+.repair-article .article-header h1{font-size:clamp(32px,4vw,54px);line-height:1.12}
+.repair-article .article-meta{display:flex;gap:16px;flex-wrap:wrap}
+.repair-article .repair-hero{margin:0 auto 36px;max-width:900px}
+.repair-article .repair-hero img{display:block;width:100%;height:auto;aspect-ratio:1672/941;object-fit:contain;border-radius:3px}
+.repair-article .repair-hero figcaption{font:12px/1.6 var(--sans);color:var(--muted);padding-top:8px}
+.repair-article .article-content{max-width:780px;margin:0 auto 48px;overflow-wrap:anywhere}
+.repair-article .article-content ul{padding-left:24px}
+.repair-article .article-content li{margin-bottom:12px}
+.repair-article .quote-band{margin-top:0}

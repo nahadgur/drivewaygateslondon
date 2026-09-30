@@ -1,0 +1,242 @@
+[
+  {
+    "article_priority": 1,
+    "claim_id": "A1",
+    "section": "Opening answer",
+    "claim_or_recommendation": "Another competent contractor may assess an existing gate; acceptance depends on the actual installation and support.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
+    "date_checked": "2026-09-30",
+    "qualification": "Editorial inference from Maintaining for safety and competence guidance, which contemplates maintenance by people other than original designers. No universal right to repair, brand support or business acceptance promise.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 1,
+    "claim_id": "A2",
+    "section": "Agree what the first inspection will cover",
+    "claim_or_recommendation": "Powered-gate safety depends on the complete system and the installation circumstances.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
+    "date_checked": "2026-09-30",
+    "qualification": "Risk assessment, competence and training; does not assert that replacing one component certifies the whole gate.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 1,
+    "claim_id": "A3",
+    "section": "Check support for the equipment you already have",
+    "claim_or_recommendation": "Component compatibility must be assessed; visual similarity is not evidence of compatibility.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
+    "date_checked": "2026-09-30",
+    "qualification": "System compatibility guidance. Article asks contractor to verify compatibility; names no interchangeable products.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 1,
+    "claim_id": "A4",
+    "section": "Missing paperwork needs a clear plan",
+    "claim_or_recommendation": "User instructions and a Declaration of Conformity are documents supplied when a completed powered gate first enters service.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/basics.htm",
+    "date_checked": "2026-09-30",
+    "qualification": "The law section. Does not say a later repair or house sale automatically requires a new declaration, or that a component manual replaces whole-system documentation.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 1,
+    "claim_id": "A5",
+    "section": "Agree the condition in which the engineer will leave the gate",
+    "claim_or_recommendation": "Those working on gates must consider safe completion and appropriate user information.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/responsibilities.htm",
+    "date_checked": "2026-09-30",
+    "qualification": "Installers and those undertaking maintenance. Instructions remain specific to the installed equipment; no generic manual-release procedure.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 1,
+    "claim_id": "A6",
+    "section": "Explain why you are changing gate companies",
+    "claim_or_recommendation": "Example description of a fault and previous controller replacement.",
+    "source_url": null,
+    "date_checked": "2026-09-30",
+    "qualification": "Illustrative wording for an enquiry, introduced as a description that might be given. Not a real customer project, diagnosis or testimonial.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 1,
+    "claim_id": "A7",
+    "section": "Information, support, quotations, warranty and handover sections",
+    "claim_or_recommendation": "Collect records, agree inspection scope, check support, obtain written prices and warranty terms, and request a handover record.",
+    "source_url": null,
+    "date_checked": "2026-09-30",
+    "qualification": "Original purchasing recommendations. No assertion of a standard fee, warranty period, repair time, universal parts availability or legal effect on existing warranties.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 2,
+    "claim_id": "B1",
+    "section": "Opening answer; safety-input section",
+    "claim_or_recommendation": "On some systems, photocell inputs can prevent closing or cause reversal; a sustained opening command can hold the gate open.",
+    "source_url": "https://www.niceforyou.com/sites/default/files/upload/manuals/a6-7_ista6_r8.pdf",
+    "date_checked": "2026-09-30",
+    "qualification": "Nice A6/A6F/A700F manual, English sections 4 and 5. Model-specific illustration from a legacy manual, not a cross-brand fault diagnosis or current recommended programming. No switch positions, terminal instructions or numerical specifications reproduced.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 2,
+    "claim_id": "B2",
+    "section": "The gate may be waiting for a different command",
+    "claim_or_recommendation": "Nice A5 offers automatic closure and a setting which waits for another command.",
+    "source_url": "https://www.niceforyou.com/sites/default/files/upload/manuals/ISTA5.4858.pdf",
+    "date_checked": "2026-09-30",
+    "qualification": "English Standard operation and Programmable functions. Legacy controller example only; reader directed to own instructions, not to copy settings.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 2,
+    "claim_id": "B3",
+    "section": "Stopping or reversing needs a wider assessment",
+    "claim_or_recommendation": "Gate assessment considers mountings, movement, environment and protective response.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
+    "date_checked": "2026-09-30",
+    "qualification": "Delivering safety and site-specific assessment sections; observation does not diagnose a failed hinge, roller or motor.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 2,
+    "claim_id": "B4",
+    "section": "Report rain, electrical trips and recent damage",
+    "claim_or_recommendation": "Water ingress and damaged electrical connections can create powered-gate hazards.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/basics.htm",
+    "date_checked": "2026-09-30",
+    "qualification": "Risks from powered gates. Rain preceding a fault does not prove water ingress or identify a failed component.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 2,
+    "claim_id": "B5",
+    "section": "Opening and access arrangements",
+    "claim_or_recommendation": "Keep clear of faulty machinery and leave hazardous testing, enclosure access and intervention to competent contractors.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/basics.htm",
+    "date_checked": "2026-09-30",
+    "qualification": "Safety recommendation based on unexpected movement, entrapment, electrical and work-on-gate hazards. No live electrical, release, force-adjustment or bypass procedure.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 2,
+    "claim_id": "B6",
+    "section": "Fault records, inspection and repair comparison",
+    "claim_or_recommendation": "Give an observation-based fault history and ask the engineer to connect proposed work to a diagnosis.",
+    "source_url": null,
+    "date_checked": "2026-09-30",
+    "qualification": "Original editorial recommendations. No statistical ranking of common causes, promise of a particular fix or guaranteed inspection outcome.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 3,
+    "claim_id": "C1",
+    "section": "Ask for a condition assessment",
+    "claim_or_recommendation": "The complete gate and retained parts need assessment; a new motor alone does not settle system safety.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
+    "date_checked": "2026-09-30",
+    "qualification": "Whole-system principle. No age-based replacement rule or assertion that all existing components can be reused.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 3,
+    "claim_id": "C2",
+    "section": "Consider replacing the automation",
+    "claim_or_recommendation": "Significant modifications can require new conformity assessment.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/responsibilities.htm",
+    "date_checked": "2026-09-30",
+    "qualification": "Installers section. Conditional language retained; not all component repairs are treated as new machinery.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 3,
+    "claim_id": "C3",
+    "section": "Ask what support follows the work",
+    "claim_or_recommendation": "Powered gates need regular checks and maintenance.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/basics.htm",
+    "date_checked": "2026-09-30",
+    "qualification": "The basics for safety. No universal service frequency, warranty maintenance condition or fixed test interval.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 3,
+    "claim_id": "C4",
+    "section": "History, repair, replacement, quotation and handover sections",
+    "claim_or_recommendation": "Compare a diagnosed repair, automation replacement and complete replacement by written scope and retained equipment.",
+    "source_url": null,
+    "date_checked": "2026-09-30",
+    "qualification": "Original decision framework. No lifecycle forecast, monetary threshold, precise lifespan, repair percentage or guarantee of lower cost.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 3,
+    "claim_id": "C5",
+    "section": "Give complete replacement a defined scope",
+    "claim_or_recommendation": "Ask who will check property constraints if the design or boundary changes.",
+    "source_url": null,
+    "date_checked": "2026-09-30",
+    "qualification": "Purchasing question only, not a planning-law statement or assurance that any work is permitted.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 1,
+    "claim_id": "CTA",
+    "section": "End CTA",
+    "claim_or_recommendation": "Get a Free Quote; tell us about the gate and the work being considered.",
+    "source_url": "https://www.drivewaygateslondon.co.uk/contact/",
+    "date_checked": "2026-09-30",
+    "qualification": "CTA supplied by user in the brief; live route verified. No free repair inspection, response-time, universal acceptance or warranty promise added.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 1,
+    "claim_id": "IMAGE",
+    "section": "Featured hero",
+    "claim_or_recommendation": "Image illustrates an entrance and is not a verified customer installation.",
+    "source_url": null,
+    "date_checked": "2026-09-30",
+    "qualification": "Built-in image_gen. Prompts recorded separately; visual inspected; image is not evidence of a diagnosis, customer case or safety compliance.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 2,
+    "claim_id": "CTA",
+    "section": "End CTA",
+    "claim_or_recommendation": "Get a Free Quote; tell us about the gate and the work being considered.",
+    "source_url": "https://www.drivewaygateslondon.co.uk/contact/",
+    "date_checked": "2026-09-30",
+    "qualification": "CTA supplied by user in the brief; live route verified. No free repair inspection, response-time, universal acceptance or warranty promise added.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 2,
+    "claim_id": "IMAGE",
+    "section": "Featured hero",
+    "claim_or_recommendation": "Image illustrates an entrance and is not a verified customer installation.",
+    "source_url": null,
+    "date_checked": "2026-09-30",
+    "qualification": "Built-in image_gen. Prompts recorded separately; visual inspected; image is not evidence of a diagnosis, customer case or safety compliance.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 3,
+    "claim_id": "CTA",
+    "section": "End CTA",
+    "claim_or_recommendation": "Get a Free Quote; tell us about the gate and the work being considered.",
+    "source_url": "https://www.drivewaygateslondon.co.uk/contact/",
+    "date_checked": "2026-09-30",
+    "qualification": "CTA supplied by user in the brief; live route verified. No free repair inspection, response-time, universal acceptance or warranty promise added.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 3,
+    "claim_id": "IMAGE",
+    "section": "Featured hero",
+    "claim_or_recommendation": "Image illustrates an entrance and is not a verified customer installation.",
+    "source_url": null,
+    "date_checked": "2026-09-30",
+    "qualification": "Built-in image_gen. Prompts recorded separately; visual inspected; image is not evidence of a diagnosis, customer case or safety compliance.",
+    "calculation": "None"
+  }
+]

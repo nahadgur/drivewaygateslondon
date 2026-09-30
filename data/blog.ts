@@ -1,6 +1,7 @@
 // data/blog.ts
 
 import { blogFeaturedImages } from './featuredImages';
+import preparedRepairArticles from './repair-articles.json';
 
 export interface ContentBlock {
   type: string;
@@ -17,12 +18,16 @@ export interface BlogArticle {
   slug: string;
   title: string;
   metaTitle: string;
+  /** Opt in to a bespoke HTML title without changing existing indexed titles. */
+  useMetaTitle?: boolean;
   metaDescription: string;
   category: string;
   publishDate: string;
   updatedDate?: string;
   featuredImage: string;
   featuredImageAlt?: string;
+  featuredImageWidth?: number;
+  featuredImageHeight?: number;
   excerpt: string;
   relatedServiceSlug?: string;
   /** When true the article is excluded from listings, sitemap, and static
@@ -32,6 +37,7 @@ export interface BlogArticle {
 }
 
 const blogArticleEntries: BlogArticle[] = [
+  ...preparedRepairArticles,
   {
     slug: 'bi-fold-vs-sliding-gates-london',
     relatedServiceSlug: 'electric-sliding-gates',

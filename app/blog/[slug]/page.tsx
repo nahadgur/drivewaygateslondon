@@ -19,7 +19,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const url = `${siteConfig.url}/blog/${article.slug}/`;
 
   return {
-    title: `${article.title} | Driveway Gates London`,
+    title: article.useMetaTitle
+      ? { absolute: article.metaTitle }
+      : `${article.title} | Driveway Gates London`,
     description: article.metaDescription,
     alternates: { canonical: url },
     openGraph: {
@@ -29,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'article',
       siteName: siteConfig.name,
       locale: 'en_GB',
-      images: [{ url: article.featuredImage.startsWith('http') ? article.featuredImage : `${siteConfig.url}${article.featuredImage}`, width: 1536, height: 1024, alt: article.featuredImageAlt || article.title }],
+      images: [{ url: article.featuredImage.startsWith('http') ? article.featuredImage : `${siteConfig.url}${article.featuredImage}`, width: article.featuredImageWidth ?? 1536, height: article.featuredImageHeight ?? 1024, alt: article.featuredImageAlt || article.title }],
       publishedTime: article.publishDate,
     },
     twitter: { card: 'summary_large_image', title: article.title, description: article.metaDescription, images: [article.featuredImage.startsWith('http') ? article.featuredImage : `${siteConfig.url}${article.featuredImage}`] },
@@ -51,8 +53,8 @@ export default function BlogArticlePage({ params }: Props) {
     image: {
       '@type': 'ImageObject',
       url: article.featuredImage.startsWith('http') ? article.featuredImage : `${siteConfig.url}${article.featuredImage}`,
-      width: 1536,
-      height: 1024,
+      width: article.featuredImageWidth ?? 1536,
+      height: article.featuredImageHeight ?? 1024,
     },
     author: {
       '@type': 'Organization',

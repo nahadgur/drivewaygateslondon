@@ -1,0 +1,15 @@
+{
+  "publication_date": "2026-09-30",
+  "release_authorization": "User requested push to main now; immediate separate releases replace the earlier unscheduled draft state. No scheduled automation.",
+  "article_verdicts": [
+    {
+      "priority": 1,
+      "verdict": "PASS",
+      "checks": "Source review; link and word-count checks; production build and TypeScript; desktop/mobile; mocked form failure/retry/success."
+    }
+  ],
+  "linked_services": "Targeted factual corrections applied; see linked-service-corrections.json.",
+  "deployment_verification": "GitHub Vercel status plus Production deployment status and canonical-site HTTP verification. Direct Vercel connector cannot access the project team (403); use GitHub Git-integration evidence instead.",
+  "source_reopened": "HSE safety, responsibilities and basics; Nice A6/A700F and A5 manuals on 2026-09-30.",
+  "external_link_policy": "At most one link per external domain in each new article; source ledger remains separate."
+}

@@ -1,0 +1,16 @@
+{
+  "date_checked": "2026-09-30",
+  "scope": "Only the four service destinations linked by the new repair articles. Unverified numeric prices, timing, warranty and compatibility promises removed; existing form and phone flow retained. Removed advice cards on three service pages that linked to unreviewed older technical articles. Other legacy pages are outside this release.",
+  "sources": [
+    "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
+    "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/basics.htm"
+  ],
+  "claims": "Complete-system assessment, site-specific protective measures, competent intervention and installation-specific maintenance supported by HSE. Prices, scope, warranty and product compatibility are questions for a quotation, not assertions of business policy.",
+  "pages": [
+    "gate-repair-and-maintenance",
+    "gate-automation-kits",
+    "automated-gate-systems",
+    "access-control"
+  ],
+  "verdict": "PASS WITH FIXES; targeted factual corrections applied to source, snapshots and service FAQ schema."
+}

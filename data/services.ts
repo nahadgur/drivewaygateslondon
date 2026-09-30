@@ -12,6 +12,8 @@ export interface Service {
   icon: string;
   color: string;
   faqs: FAQ[];
+  /** Reviewed FAQs replace the legacy generic FAQ claims for this service. */
+  reviewedFaqs?: boolean;
 }
 
 export const services: Service[] = [
@@ -75,44 +77,110 @@ export const services: Service[] = [
     id: 'automated-systems',
     title: 'Automated Gate Systems',
     slug: 'automated-gate-systems',
-    description: 'Full automation packages including motors, intercoms, keypads, remote controls, and smart home integration. Upgrade an existing gate or include with a new installation.',
+    description: "Plan an automated driveway gate system in London, including gates, motors, controls and site-specific protective measures. Compare new installations and suitable upgrades after assessment.",
     image: '/images/gates/gate-automation-intercom-evening-lighting.png',
     icon: 'Medal',
     color: 'indigo',
+    reviewedFaqs: true,
     faqs: [
-      { question: "Can I automate my existing driveway gates?", answer: "In most cases, yes. If your existing gates are structurally sound and properly hung, a motor system can be retrofitted. We check the gate weight, condition, and hinge alignment during the free site survey. Wooden gates sometimes need hinge upgrades to handle the motor load, and older wrought iron gates may need reinforcing, but these are straightforward fixes." },
-      { question: "What happens if there is a power cut?", answer: "Every automated gate system we install includes a manual release key so you can open the gates by hand during a power failure. Many systems also include battery backup that keeps the gate running for 20 to 50 cycles after the mains goes down. Solar-powered options are also available for properties where mains connection is difficult." },
-      { question: "Can I control my gate from my phone?", answer: "Yes. Most modern gate motors are compatible with Wi-Fi modules or smart home systems. You can open your gate remotely via an app, set schedules, receive alerts when the gate opens, and integrate with Ring, Google Home, or Amazon Alexa. We set up the smart connectivity as part of the automation package." },
-    ],
+      {
+            "question": "Can I automate existing driveway gates?",
+            "answer": "Existing gates may be suitable, subject to assessment of their condition, supports, movement and the surrounding entrance. Ask the installer to identify required changes and explain how retained components fit into the proposed system."
+      },
+      {
+            "question": "What happens during a power cut?",
+            "answer": "The arrangements depend on the installed system. Ask for its specific shutdown and access instructions and a demonstration at handover. If battery backup is proposed, request the manufacturer specification for that equipment and operating conditions; do not assume a universal number of cycles."
+      },
+      {
+            "question": "Can I control the gates from my phone?",
+            "answer": "Phone or app control depends on the controller, access equipment and available connectivity. Ask the installer to confirm compatibility, account administration and any ongoing network or subscription costs for the proposed products."
+      },
+      {
+            "question": "How much will the work cost?",
+            "answer": "Request an itemised quotation after the installation has been assessed. Ask which parts, labour, electrical work, access controls and making-good work it includes. Agree any inspection charge and the process for approving additional work before booking."
+      },
+      {
+            "question": "How long will the work take?",
+            "answer": "Ask for a schedule based on the surveyed entrance, the proposed work and confirmed parts availability. Agree how you will manage access if the gates cannot return to service during the first visit."
+      },
+      {
+            "question": "What warranty applies?",
+            "answer": "Request the written warranty terms for the quoted equipment and workmanship before accepting. Check the duration, exclusions, attendance charges and any servicing conditions. Retained equipment may have different cover from newly fitted parts."
+      }
+],
   },
   {
     id: 'gate-repair',
     title: 'Gate Repair and Maintenance',
     slug: 'gate-repair-and-maintenance',
-    description: 'Keep your gates running smoothly with regular servicing, or fix problems fast with same-day repair callouts across London. Motors, hinges, intercoms, and safety systems.',
+    description: "Electric gate fault diagnosis, repairs and maintenance in London. Discuss the fault, existing equipment and inspection scope before arranging work.",
     image: '/images/gates/gate-swing-open-night-stone-pillars-drive.png',
     icon: 'Users',
     color: 'rose',
+    reviewedFaqs: true,
     faqs: [
-      { question: "How often should driveway gates be serviced?", answer: "We recommend a full service every 12 months. This covers motor lubrication, safety sensor testing, hinge adjustment, track cleaning for sliding gates, intercom checks, and a general structural inspection. Annual servicing catches small problems before they become expensive repairs and keeps your manufacturer warranty valid." },
-      { question: "My gate is making a grinding noise. What should I do?", answer: "A grinding noise usually indicates debris in the track (for sliding gates), worn motor gears, or misaligned hinges. Stop using the gate on auto mode until an engineer inspects it, as forcing a misaligned gate can damage the motor. Use the manual release to open and close it in the meantime. Most London engineers can attend within 24 to 48 hours." },
-      { question: "How much does a gate repair callout cost?", answer: "Most London gate engineers charge a callout fee of £80 to £150 depending on the area, plus parts and labour. Common repairs like motor replacement, sensor realignment, or intercom fixes typically cost £200 to £600 all in. For older systems where parts are discontinued, upgrading the motor unit may be more cost-effective than sourcing rare spares." },
-    ],
+      {
+            "question": "How often should driveway gates be serviced?",
+            "answer": "Follow the maintenance and inspection schedule for the installed system, taking account of its use, condition and environment. Ask a competent contractor to confirm the appropriate tasks and intervals. Keep service records and check the actual warranty conditions rather than assuming a fixed interval guarantees cover."
+      },
+      {
+            "question": "My gate is making a grinding noise. What should I do?",
+            "answer": "Stop using the faulty gate and keep people clear of its movement area. Describe the sound and behaviour to a competent gate contractor. Do not force the gate, open electrical enclosures or attempt a generic manual-release procedure; obtain instructions specific to the installation and its condition."
+      },
+      {
+            "question": "Can another company repair my gates?",
+            "answer": "A competent contractor may be able to assess equipment installed by another company. Acceptance depends on the installation, available records, parts support and the work required. Supply those details when enquiring and agree the inspection scope before booking."
+      },
+      {
+            "question": "How much will the work cost?",
+            "answer": "Request an itemised quotation after the installation has been assessed. Ask which parts, labour, electrical work, access controls and making-good work it includes. Agree any inspection charge and the process for approving additional work before booking."
+      },
+      {
+            "question": "How long will the work take?",
+            "answer": "Ask for a schedule based on the surveyed entrance, the proposed work and confirmed parts availability. Agree how you will manage access if the gates cannot return to service during the first visit."
+      },
+      {
+            "question": "What warranty applies?",
+            "answer": "Request the written warranty terms for the quoted equipment and workmanship before accepting. Check the duration, exclusions, attendance charges and any servicing conditions. Retained equipment may have different cover from newly fitted parts."
+      }
+],
   },
 
   {
     id: 'gate-automation-kits',
     title: 'Gate Automation (Retrofit)',
     slug: 'gate-automation-kits',
-    description: 'Already have manual gates? Add motors, intercoms, and smart access without replacing the gate itself. Retrofit automation works on most timber and metal swing or sliding gates.',
+    description: "Explore automation for existing driveway gates in London. A site assessment determines whether the gates, supports and surrounding layout are suitable for powered operation.",
     image: '/images/gates/gate-aluminium-sliding-modern-dark-brick-2.png',
     icon: 'Zap',
     color: 'indigo',
+    reviewedFaqs: true,
     faqs: [
-      { question: "Can any manual gate be automated?", answer: "Most structurally sound manual gates can be retrofitted with automation. We check the gate weight, hinge condition, and overall structural integrity during the free site survey. Timber gates sometimes need hinge upgrades to handle the load, and very heavy wrought iron gates may need reinforcing, but these are straightforward jobs. If your gates are rotten, badly warped, or corroded beyond repair, replacement is usually the better route." },
-      { question: "What does a retrofit automation kit include?", answer: "A typical retrofit package includes the gate motor or motors (swing arm, underground, or sliding rack-and-pinion depending on your gate type), safety photocells, a control board, remotes, and a manual emergency release key. We also offer add-ons including video intercoms, GSM openers for phone control, keypads, and smart home integration with systems like Ring, Google Home, and Control4." },
-      { question: "How much does it cost to automate existing gates in London?", answer: "Retrofit automation for a standard pair of residential swing gates in London typically costs between £1,200 and £2,500 all in, depending on motor type, gate weight, and any additional access control you want. Sliding gate automation with a rack-and-pinion motor generally runs £1,500 to £3,000. Underground motors cost more than ram-arm systems but give a cleaner aesthetic. We give you a written fixed quote after a free site survey." },
-    ],
+      {
+            "question": "Can any manual gate be automated?",
+            "answer": "Suitability requires a site-specific assessment of the gates, supports, movement and surrounding layout. A motor cannot compensate for defective structures or an unsuitable design. Ask the installer to explain any repair, alteration or replacement needed before automation."
+      },
+      {
+            "question": "What should the automation quotation include?",
+            "answer": "Ask for the proposed motors, controls, access equipment and protective measures, together with necessary electrical and structural work. The specification should explain compatibility and the assessment of the complete powered gate. A standard kit or a pair of photocells alone does not establish that the finished installation is safe."
+      },
+      {
+            "question": "Can I retain my existing intercom?",
+            "answer": "Ask the installer to check the intercom model and its compatibility with the proposed controller. Establish which functions can be retained, what needs replacing and who will manage programming or account access."
+      },
+      {
+            "question": "How much will the work cost?",
+            "answer": "Request an itemised quotation after the installation has been assessed. Ask which parts, labour, electrical work, access controls and making-good work it includes. Agree any inspection charge and the process for approving additional work before booking."
+      },
+      {
+            "question": "How long will the work take?",
+            "answer": "Ask for a schedule based on the surveyed entrance, the proposed work and confirmed parts availability. Agree how you will manage access if the gates cannot return to service during the first visit."
+      },
+      {
+            "question": "What warranty applies?",
+            "answer": "Request the written warranty terms for the quoted equipment and workmanship before accepting. Check the duration, exclusions, attendance charges and any servicing conditions. Retained equipment may have different cover from newly fitted parts."
+      }
+],
   },
   {
     id: 'commercial-gates',

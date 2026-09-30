@@ -18,6 +18,18 @@ The production contact page renders `EnquiryForm.tsx`, using the established end
 
 The approved page-body snapshots are versioned content. When changing source `data/*.ts`, update the corresponding snapshot and metadata together. `python scripts/import-showcase.py /path/to/showcase` reimports a reviewed static design's templates, styles and assets. It does not replace the production form or route modules.
 
+The three prepared repair articles use `data/repair-articles.json` for article data and
+`data/showcase/repair-articles.json` for reviewed page snapshots. `ShowcasePage`
+renders their snapshots and adds their blog cards only when the article is in
+`publishedArticles`. A `draft: true` article has no public route, blog card or sitemap
+entry. Leave its publication date empty until the release date is agreed.
+Their `publicationLinks` become anchors only when the destination is published;
+earlier releases retain plain text. The header date comes from `publishDate`.
+`useMetaTitle` opts these articles into their chosen SEO titles without rewriting
+the HTML titles of existing articles. Hero and social metadata share one WebP asset.
+The shared navigation and enquiry controls are unchanged; each new article snapshot
+contains one hero and one end quote CTA, with no sidebar quote or related-reading block.
+
 ## Checks
 
 Run `npm ci`, `npx tsc --noEmit`, and `npm run build`. Verify mobile and desktop navigation, filters, the entrance and the contact form. Intercept the Google Apps Script request when testing submission; do not send test leads to the live endpoint. Confirm error/retry handling as well as success. Keep `noindex,nofollow` and preview-only notices out of production pages.
