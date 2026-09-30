@@ -11,6 +11,7 @@ import '@/components/showcase/hero-backgrounds.css';
 import '@/components/showcase/brand-footer.css';
 import '@/components/showcase/responsive.css';
 import '@/components/showcase/production.css';
+import '@/components/showcase/article-typography.css';
 import { Enhancements } from '@/components/showcase/Enhancements';
 import { siteConfig, addressOneLine } from '@/data/site';
 import { LONDON_BOROUGHS } from '@/data/boroughs';

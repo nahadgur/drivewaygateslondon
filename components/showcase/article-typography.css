@@ -1,0 +1,35 @@
+/* Editorial HTML only: navigation, forms and cards keep their own styling. */
+.article-content :is(strong,b){font-weight:700;color:var(--dark,#18211e)}
+.article-content :is(em,i){font-style:italic}
+.article-content a :is(strong,b){color:inherit}
+.article-content :is(h4,h5,h6){font-family:var(--sans,Arial,sans-serif);font-weight:700;line-height:1.4;letter-spacing:0;margin:1.6em 0 .7em;color:var(--dark,#18211e)}
+.article-content h4{font-size:1.15em}
+.article-content :is(h5,h6){font-size:1em}
+
+/* Restore native markers removed by the global CSS reset. Native numbering
+   preserves ol start/reversed and li value, including multi-line list items. */
+.article-content :is(ul,ol){margin:0 0 1.5em;padding-inline-start:1.6em;list-style-position:outside;color:#49534b}
+.article-content ul{list-style-type:disc}
+.article-content ul ul{list-style-type:circle}
+.article-content ul ul ul{list-style-type:square}
+.article-content ol{list-style-type:decimal}
+.article-content ol ol{list-style-type:lower-alpha}
+.article-content ol ol ol{list-style-type:lower-roman}
+.article-content li{display:list-item;padding:0 0 0 .3em;margin:.65em 0}
+.article-content li::marker{color:var(--green,#1d4233);font-weight:700}
+.article-content li>:is(ul,ol){margin:.55em 0 .75em}
+.article-content li>p{margin:.4em 0}
+
+.article-content blockquote{margin:1.6em 0;padding:clamp(18px,3vw,28px);border-inline-start:4px solid var(--green,#1d4233);border-radius:0 4px 4px 0;background:var(--sage,#e7eade);color:var(--green,#1d4233)}
+.article-content blockquote p{font-family:var(--serif,Georgia,serif);font-size:clamp(19px,2vw,23px);line-height:1.55;color:inherit;margin:0 0 .8em}
+.article-content blockquote :is(cite,footer){display:block;font-family:var(--sans,Arial,sans-serif);font-size:.85em;font-style:normal;line-height:1.6;color:#49534b;margin-top:.9em}
+.article-content blockquote>:last-child{margin-bottom:0}
+.article-content blockquote blockquote{padding:16px;margin:1em 0;background:var(--paper,#faf9f5)}
+
+.article-content hr{border:0;border-top:1px solid var(--line,#d5d9ce);margin:2em 0}
+.article-content dl{margin:0 0 1.5em}
+.article-content dt{font-weight:700;color:var(--dark,#18211e);margin-top:1em}
+.article-content dd{margin:.35em 0 1em 1.25em;color:#49534b}
+.article-content :not(pre)>code{font-family:ui-monospace,monospace;font-size:.88em;background:var(--cream,#f1eee5);padding:.15em .35em;border-radius:3px;overflow-wrap:anywhere}
+.article-content pre{max-width:100%;overflow-x:auto;padding:18px;background:var(--cream,#f1eee5);border:1px solid var(--line,#d5d9ce);border-radius:4px;margin:1.5em 0;font-size:.88em;line-height:1.65}
+.article-content pre code{font-family:ui-monospace,monospace;white-space:pre;overflow-wrap:normal}

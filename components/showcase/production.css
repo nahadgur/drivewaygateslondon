@@ -19,6 +19,4 @@ body{display:block}
 .repair-article .repair-hero img{display:block;width:100%;height:auto;aspect-ratio:1672/941;object-fit:contain;border-radius:3px}
 .repair-article .repair-hero figcaption{font:12px/1.6 var(--sans);color:var(--muted);padding-top:8px}
 .repair-article .article-content{max-width:780px;margin:0 auto 48px;overflow-wrap:anywhere}
-.repair-article .article-content ul{padding-left:24px}
-.repair-article .article-content li{margin-bottom:12px}
 .repair-article .quote-band{margin-top:0}
