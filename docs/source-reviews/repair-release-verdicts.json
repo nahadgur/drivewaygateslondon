@@ -11,6 +11,11 @@
       "priority": 2,
       "verdict": "PASS",
       "checks": "Source review; 1406 body words; link, metadata, canonical and sitemap checks; production build and TypeScript; desktop/mobile; quote and mocked form checks."
+    },
+    {
+      "priority": 3,
+      "verdict": "PASS",
+      "checks": "Source review; 1477 body words; link, metadata, canonical and sitemap checks; production build and TypeScript; desktop/mobile; quote and mocked form checks. Cross-links between all three published articles verified."
     }
   ],
   "linked_services": "Targeted factual corrections applied; see linked-service-corrections.json.",
