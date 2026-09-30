@@ -18,14 +18,12 @@ export const siteConfig = {
   // Business Profile and every directory listing on the same day, or the
   // inconsistency costs local rankings.
   //
-  // postcode carries the outward code only until the full one is confirmed.
-  // Everything that emits it is guarded, so a partial code is never published
-  // as though it were complete.
+  // Full office postcode confirmed by the business owner.
   address: {
     street: '22 Bedford Square',
     locality: 'London',
     outward: 'WC1B',
-    postcode: '' as string,
+    postcode: 'WC1B 3HH' as string,
   },
 
   // Keyless Google map embed, so there is no API key to manage. Zoom 15 puts

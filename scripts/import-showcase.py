@@ -15,6 +15,8 @@ for name in css:
  text=(src/name).read_text(encoding='utf8').replace("url('assets/","url('/showcase/assets/")
  (comp/name).write_text(text,encoding='utf8')
 def convert(html,route):
+ html=re.sub(r'WC1B(?![A-Z0-9]|(?: |%20)3HH)', 'WC1B 3HH', html)
+ html=re.sub(r'((?:href|src)="https://www.google.com/maps[^\"]*)', lambda m:m[0].replace('WC1B 3HH','WC1B%203HH'), html)
  def url(value):
   value=unescape(value);p=urlsplit(value)
   if p.scheme in ['tel','mailto','data'] or p.netloc and p.netloc not in ['www.drivewaygateslondon.co.uk','drivewaygateslondon.co.uk']:return value
