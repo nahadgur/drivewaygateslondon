@@ -232,7 +232,7 @@ const options = {
     "contemporary": {
         "title": "Aluminium Driveway Gates",
         "text": "Lightweight, rust-proof aluminium gates in any RAL colour. The fastest-growing gate material in London: zero maintenance, sharp modern aesthetics, and 25-year powder coat guarantees.",
-        "image": "assets/aluminium.webp",
+        "image": "/showcase/assets/aluminium.webp",
         "alt": "Aluminium Driveway Gates",
         "link": "services/aluminium-driveway-gates/",
         "cta": "Learn more"
@@ -240,7 +240,7 @@ const options = {
     "character": {
         "title": "Wooden Driveway Gates",
         "text": "Handcrafted timber gates that bring warmth and character to your property. Available in hardwoods like iroko and oak, or treated softwoods for a more affordable option.",
-        "image": "assets/timber.webp",
+        "image": "/showcase/assets/timber.webp",
         "alt": "Wooden Driveway Gates",
         "link": "services/wooden-driveway-gates/",
         "cta": "Learn more"
@@ -248,13 +248,14 @@ const options = {
     "space": {
         "title": "Electric Sliding Gates",
         "text": "Space-saving automated gates that slide horizontally along your boundary wall. Perfect for driveways where a swinging gate would eat into parking space.",
-        "image": "assets/sliding.webp",
+        "image": "/showcase/assets/sliding.webp",
         "alt": "Electric Sliding Gates",
         "link": "services/electric-sliding-gates/",
         "cta": "Learn more"
     }
 };
-document.querySelectorAll('.preference').forEach(button => listen(button, 'click', () => {
+document.querySelectorAll('.preference').forEach(button => {
+  const select = () => {
     const option = options[button.dataset.style];
     document.querySelectorAll('.preference').forEach(b => { const selected = b === button; b.classList.toggle('active', selected); b.setAttribute('aria-pressed', String(selected)); });
     const image = document.getElementById('inspiration-image');
@@ -266,7 +267,11 @@ document.querySelectorAll('.preference').forEach(button => listen(button, 'click
     const link = document.getElementById('preference-link');
     link.href = '/' + option.link;
     link.textContent = option.cta + ' ↗';
-}));
+  };
+  listen(button, 'click', select);
+  listen(button, 'focus', select);
+  listen(button, 'pointerenter', event => { if (event.pointerType !== 'touch') select(); });
+});
 cleanups.push(stopEntrance);
 
 })();
