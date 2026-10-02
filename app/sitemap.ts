@@ -34,20 +34,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const hubs: MetadataRoute.Sitemap = [
     { url: `${base}/about/`, lastModified: new Date('2026-09-30'), changeFrequency: 'yearly', priority: 0.6 },
-    { url: `${base}/services/`,                lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/services/`,                lastModified: new Date('2026-10-02'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/location/`,                lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${base}/commercial/`,              lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${base}/guides/`,                  lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${base}/blog/`,                    lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'weekly',  priority: 0.8 },
+    { url: `${base}/commercial/`,              lastModified: new Date('2026-10-02'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/guides/`,                  lastModified: new Date('2026-10-02'), changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/blog/`,                    lastModified: new Date('2026-10-02'), changeFrequency: 'weekly',  priority: 0.8 },
     { url: `${base}/services/access-control/`, lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/local-regulations/`,       lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/contact/`,                 lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'yearly',  priority: 0.6 },
-    { url: `${base}/privacy/`,                 lastModified: new Date('2026-07-16'), changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${base}/privacy/`,                 lastModified: new Date('2026-10-02'), changeFrequency: 'yearly', priority: 0.3 },
   ];
 
   const servicePages: MetadataRoute.Sitemap = residentialServices.map(s => ({
     url: `${base}/services/${s.slug}/`,
-    lastModified: CONTENT_LAST_UPDATED,
+    lastModified: s.updatedDate ? new Date(s.updatedDate) : CONTENT_LAST_UPDATED,
     changeFrequency: 'monthly' as const,
     priority: 0.6,
   }));
@@ -61,7 +61,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const commercialPages: MetadataRoute.Sitemap = commercialServices.map(s => ({
     url: `${base}/commercial/${s.slug}/`,
-    lastModified: CONTENT_LAST_UPDATED,
+    lastModified: s.updatedDate ? new Date(s.updatedDate) : CONTENT_LAST_UPDATED,
     changeFrequency: 'yearly' as const,
     priority: 0.6,
   }));
@@ -97,7 +97,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const serviceLocationPages: MetadataRoute.Sitemap = residentialServices.flatMap(service =>
     allCities.map(city => ({
       url: `${base}/services/${service.slug}/${toSlug(city)}/`,
-      lastModified: CONTENT_LAST_UPDATED,
+      lastModified: service.updatedDate ? new Date(service.updatedDate) : CONTENT_LAST_UPDATED,
       changeFrequency: 'yearly' as const,
       priority: 0.4,
     }))

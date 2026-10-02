@@ -14,6 +14,7 @@ export interface Service {
   faqs: FAQ[];
   /** Reviewed FAQs replace the legacy generic FAQ claims for this service. */
   reviewedFaqs?: boolean;
+  updatedDate?: string;
 }
 
 export const services: Service[] = [
@@ -183,90 +184,164 @@ export const services: Service[] = [
 ],
   },
   {
-    id: 'commercial-gates',
-    title: 'Commercial Gates',
-    slug: 'commercial-gates',
-    description: 'Heavy-duty security gates for schools, industrial estates, office parks, car parks, and commercial premises across London. CCTV integration, access control, and LPS 1175 rated options.',
-    image: '/images/gates/gate-wrought-iron-aerial-gold-trim-estate.png',
-    icon: 'Shield',
-    color: 'sky',
-    faqs: [
-      { question: "What types of commercial gate do you cover?", answer: "We cover the full range of commercial gate types: heavy-duty sliding security gates, bi-folding speed gates, rising arm barriers, full-height turnstiles, and traffic boom barriers. For industrial and warehousing sites we also handle vehicle access barriers rated for HGV traffic. All commercial gates are installed to BS EN 13241 and BS 8300 standards where applicable." },
-      { question: "Do commercial gates need different planning permission to residential ones?", answer: "Generally yes. Commercial gate installations often require a formal planning application, particularly where the gate affects vehicular access from a public highway, changes the appearance of a listed building or conservation area, or exceeds 2 metres in height. We handle the planning process on your behalf and are experienced with local authority requirements across all London boroughs." },
-      { question: "What access control options are available for commercial sites?", answer: "Commercial sites typically use a combination of access control systems: proximity card or fob readers, PIN keypads, biometric readers, ANPR (automatic number plate recognition) for vehicle access, video intercoms with remote door release, and integration with site-wide CCTV and security management software. We can specify and install standalone systems or fully integrated solutions linked to existing on-site infrastructure." },
-    ],
-  },
+  "id": "commercial-gates",
+  "title": "Commercial Gates",
+  "slug": "commercial-gates",
+  "description": "Commercial gate and access-control installation in London. Plan vehicle movement, pedestrian access, operating frequency and maintenance around how your site works.",
+  "image": "/images/gates/gate-wrought-iron-aerial-gold-trim-estate.png",
+  "icon": "Shield",
+  "color": "sky",
+  "faqs": [
+    {
+      "question": "How do I choose a commercial gate system?",
+      "answer": "Assess the vehicles, pedestrians, operating frequency, security needs, site layout and access arrangements together. Specify the equipment after that assessment rather than choosing by opening width alone."
+    },
+    {
+      "question": "Can you include access controls?",
+      "answer": "Discuss the required intercom, keypad, phone-entry or number-plate system alongside the gate. Confirm compatibility, power, connectivity and any subscription or administration requirements in the quotation."
+    },
+    {
+      "question": "Who looks after the gate once installed?",
+      "answer": "Agree a responsible person, handover records and maintenance arrangements before completion. Workplace gate owners and those responsible for the premises should understand their responsibilities and fault-reporting procedure."
+    }
+  ],
+  "reviewedFaqs": true,
+  "updatedDate": "2026-10-02"
+},
 
   {
-    id: 'aluminium-gates',
-    title: 'Aluminium Driveway Gates',
-    slug: 'aluminium-driveway-gates',
-    description: 'Lightweight, rust-proof aluminium gates in any RAL colour. The fastest-growing gate material in London — zero maintenance, sharp modern aesthetics, and 25-year powder coat guarantees.',
-    image: '/images/gates/gate-aluminium-sliding-vertical-bar-modern.png',
-    icon: 'Sparkles',
-    color: 'sky',
-    faqs: [
-      { question: "Why are aluminium gates becoming so popular in London?", answer: "Aluminium does not rust, never needs repainting, and is light enough for large gates to run on smaller, quieter motors. The powder coat finish is baked on at the factory and typically carries a 25-year guarantee. In London, where damp weather and pollution accelerate corrosion on steel and iron, aluminium has become the go-to for homeowners who want a premium gate without any maintenance burden." },
-      { question: "Are aluminium gates as strong as steel?", answer: "For residential applications, yes. Modern aluminium gate profiles use hollow sections with internal reinforcement that match the rigidity of equivalent mild steel designs. The weight saving means less stress on hinges and motors, which actually increases the long-term reliability of the whole system. For very large commercial gates, steel is still preferable, but for residential driveways up to 6 metres wide, aluminium is perfectly adequate." },
-      { question: "What colours are available for aluminium gates?", answer: "Any RAL colour. The standard palette runs to over 200 shades, but custom RAL matches are also available. The most popular choices in London currently are Anthracite Grey (RAL 7016), Jet Black (RAL 9005), and Slate Grey (RAL 7015). Dual-tone finishes, where the outer face is a different colour to the inner face, are also increasingly popular and add no significant cost." },
-    ],
-  },
+  "id": "aluminium-gates",
+  "title": "Aluminium Driveway Gates",
+  "slug": "aluminium-driveway-gates",
+  "description": "Aluminium driveway gates designed, supplied and installed across London. Choose a finish and opening layout with the specification, installation scope and aftercare confirmed in writing.",
+  "image": "/images/gates/gate-aluminium-sliding-vertical-bar-modern.png",
+  "icon": "Sparkles",
+  "color": "sky",
+  "faqs": [
+    {
+      "question": "Are aluminium gates maintenance-free?",
+      "answer": "No. Follow the manufacturer’s cleaning instructions and check the finish, fittings and moving parts. Automated gates also need maintenance appropriate to the installed system and its use."
+    },
+    {
+      "question": "Can I choose any colour?",
+      "answer": "Colour and finish availability depends on the selected manufacturer and range. Ask for a sample, colour reference, lead time and written finish specification before ordering."
+    },
+    {
+      "question": "Do aluminium gates have a 25-year guarantee?",
+      "answer": "There is no universal 25-year guarantee for aluminium gates. Product, coating, hardware, automation and installation cover can differ. The written quotation should identify the terms that apply to your chosen system."
+    },
+    {
+      "question": "Are aluminium gates suitable for a windy driveway?",
+      "answer": "Suitability depends on the gate size, amount of solid infill, supports, exposure and operating system. Ask the installer to assess the whole entrance before choosing the design."
+    }
+  ],
+  "reviewedFaqs": true,
+  "updatedDate": "2026-10-02"
+},
   {
-    id: 'composite-gates',
-    title: 'Composite Driveway Gates',
-    slug: 'composite-driveway-gates',
-    description: 'The fastest-growing gate material in London. Composite gates give you the authentic timber look without rot, warping, or annual maintenance. Ideal for homeowners who want wood aesthetics with zero upkeep.',
-    image: '/images/gates/gate-aluminium-swing-open-contemporary-mansion.png',
-    icon: 'Globe',
-    color: 'amber',
-    faqs: [
-      { question: "What exactly is a composite gate?", answer: "Composite gates use a structural aluminium or galvanised steel frame clad in composite boarding — a mixture of wood fibre and polymer that looks and feels like real timber but does not absorb moisture, rot, warp, or require annual treatment. The boards slot into the frame and are available in various wood-effect finishes including oak, mahogany, and driftwood grey. The result is a gate that looks like a bespoke hardwood design but needs nothing more than an occasional wash." },
-      { question: "How long do composite gates last?", answer: "The structural frame is galvanised steel or aluminium, so it will outlast the house. The composite cladding typically comes with a 15 to 25 year warranty from the manufacturer against rot, splitting, and colour fade. In London's climate, composite outperforms both untreated softwood and many hardwoods when it comes to long-term durability with zero maintenance." },
-      { question: "Are composite gates suitable for automation?", answer: "Yes, and they are well-suited to it. Because composite gates use a metal structural frame, the motor mounts are solid and the gate weight is predictable. The composite cladding does not swell in wet weather, which eliminates one of the most common automation problems with traditional timber gates. We specify the motor to the gate weight and design during the free site survey." },
-    ],
-  },
+  "id": "composite-gates",
+  "title": "Composite Driveway Gates",
+  "slug": "composite-driveway-gates",
+  "description": "Composite driveway gates supplied and fitted in London. Compare board finishes, frame construction, opening options and the upkeep your chosen product needs.",
+  "image": "/images/gates/gate-aluminium-swing-open-contemporary-mansion.png",
+  "icon": "Globe",
+  "color": "amber",
+  "faqs": [
+    {
+      "question": "Do composite gates need maintenance?",
+      "answer": "Yes. Follow the board manufacturer’s care instructions and maintain the frame, hinges, locks and any automation. The required work depends on the specified product and site conditions."
+    },
+    {
+      "question": "Can a composite gate be automated?",
+      "answer": "It may be suitable after assessment of the complete gate, its supports, movement, wind exposure and surrounding entrance. Compatibility cannot be established from the board material alone."
+    },
+    {
+      "question": "How much do composite gates cost supplied and fitted?",
+      "answer": "The price depends on the measured opening, boards, frame, finish, support work and manual or automated operation. Request an itemised site-specific quotation with VAT and exclusions stated."
+    },
+    {
+      "question": "What warranty comes with a composite gate?",
+      "answer": "The quoted products and installation determine the terms. Ask for the cover, exclusions, maintenance conditions and claims contact for each part of the system before ordering."
+    }
+  ],
+  "reviewedFaqs": true,
+  "updatedDate": "2026-10-02"
+},
   {
-    id: 'hardwood-gates',
-    title: 'Hardwood Driveway Gates',
-    slug: 'hardwood-driveway-gates',
-    description: 'Premium iroko, European oak, and Accoya gates for heritage homes, conservation areas, and affluent London properties. Hand-crafted to match your property\'s character, with 25-year material guarantees.',
-    image: '/images/gates/gate-wooden-oak-swing-cottage-flowers.png',
-    icon: 'Medal',
-    color: 'amber',
-    faqs: [
-      { question: "What is the best hardwood for London driveway gates?", answer: "Iroko is the most popular choice for London. It is naturally oily, resists moisture without heavy treatment, and does not warp easily in the damp-dry cycles of a London year. European oak is the premium alternative — it weathers to a beautiful silver-grey if left untreated, or can be oiled to maintain its golden colour. Accoya, a modified radiata pine with a 50-year above-ground guarantee, is the best choice for those who want maximum lifespan with the lowest maintenance burden." },
-      { question: "Will my local council approve hardwood gates in a conservation area?", answer: "Generally yes, and in many cases hardwood gates are preferred over metal alternatives in conservation areas because they maintain the historic character of the streetscape. The key factors councils assess are the height, the boundary treatment, and whether the design is sympathetic to the property and surrounding buildings. We work regularly in London conservation areas and can advise on designs that meet local planning guidelines without needing formal permission." },
-      { question: "How do hardwood gates need to be maintained in London?", answer: "Iroko and oak gates should be oiled or re-stained every 12 to 24 months depending on aspect and exposure. South-facing gates in exposed positions will need attention more frequently. Accoya gates need treatment every 3 to 5 years due to the modified wood's superior dimensional stability. Annual hinge greasing and checking of automation components should be done regardless of timber type. We offer maintenance contracts covering both woodwork and automation." },
-    ],
-  },
+  "id": "hardwood-gates",
+  "title": "Hardwood Driveway Gates",
+  "slug": "hardwood-driveway-gates",
+  "description": "Hardwood driveway gates for London homes, with the timber, construction, finish and installation details agreed for your entrance.",
+  "image": "/images/gates/gate-wooden-oak-swing-cottage-flowers.png",
+  "icon": "Medal",
+  "color": "amber",
+  "faqs": [
+    {
+      "question": "How long will a hardwood gate last?",
+      "answer": "Species, construction, exposure, finish and maintenance all affect its condition over time. Ask for the specified timber and written warranty; we do not promise one lifespan for every hardwood gate."
+    },
+    {
+      "question": "Can hardwood gates be automated?",
+      "answer": "A suitable system requires assessment of the gate, supports, weight, movement and surrounding entrance. Ask for the proposed equipment and any structural changes in the quotation."
+    },
+    {
+      "question": "Will I need to stain the gates every year?",
+      "answer": "Use the care schedule for the selected timber and coating. Inspect the finish and follow that guidance rather than assuming the same annual schedule applies to every product."
+    }
+  ],
+  "reviewedFaqs": true,
+  "updatedDate": "2026-10-02"
+},
   {
-    id: 'wrought-iron-gates',
-    title: 'Wrought Iron Gates',
-    slug: 'wrought-iron-gates',
-    description: 'Traditional hand-forged wrought iron gates for London period homes, heritage properties, and conservation areas. Ornate scrollwork, fleur-de-lis finials, and bespoke designs that last generations.',
-    image: '/images/gates/gate-wrought-iron-open-manor-spring-gardens.png',
-    icon: 'Shield',
-    color: 'sky',
-    faqs: [
-      { question: "What is the difference between wrought iron and mild steel gates?", answer: "True wrought iron is hand-forged by a blacksmith and has a fibrous, slag-inclusive structure that is more resistant to rust and fracture than cast iron. Mild steel is the modern equivalent used by most fabricators — it is rolled or pressed into sections and welded. For decorative driveway gates, most of what is called wrought iron today is actually mild steel, which is perfectly fine for the purpose. Genuine hand-forged wrought iron is available but commands a significant premium and is mainly used for restoration of historic properties." },
-      { question: "How do wrought iron gates hold up against London weather?", answer: "All ferrous metal gates will rust without proper protection. The standard London specification is hot-dip galvanising followed by epoxy primer and polyester powder coat. This system provides a minimum 20-year corrosion protection guarantee and is the only appropriate treatment for gates in London's damp, polluted urban environment. Cheaper gates use zinc spray primers which fail within 5 to 10 years. We specify the correct protective system as part of every written quote." },
-      { question: "Can I get a bespoke design to match my Victorian property?", answer: "Absolutely, and this is where wrought iron gates excel. London's Victorian housing stock is perfectly complemented by ornate railings, scroll work, and period details that no other material can replicate authentically. Our fabricators can match existing railings, reproduce period patterns from photographs, or design entirely new gates that are sympathetic to the property's character. We provide detailed CAD drawings or 3D renders before fabrication begins." },
-    ],
-  },
+  "id": "wrought-iron-gates",
+  "title": "Wrought Iron Gates",
+  "slug": "wrought-iron-gates",
+  "description": "Traditional-style metal driveway gates in London, with the actual metal, decorative details, protective finish and opening system specified in your quote.",
+  "image": "/images/gates/gate-wrought-iron-open-manor-spring-gardens.png",
+  "icon": "Shield",
+  "color": "sky",
+  "faqs": [
+    {
+      "question": "Are new wrought-iron-style gates made from wrought iron?",
+      "answer": "The name can describe an appearance. Ask the fabricator to identify the actual material and construction in writing, especially when comparing a new gate with an older iron gate."
+    },
+    {
+      "question": "Can you assess an existing metal gate for repair?",
+      "answer": "We offer gate repairs and maintenance. Share photographs and the problem you have noticed so we can discuss an assessment. The condition of the gate and supports determines the options."
+    },
+    {
+      "question": "Does a protective coating remove the need for upkeep?",
+      "answer": "No. Follow the coating supplier’s care instructions, inspect for damage and arrange appropriate repairs and system maintenance."
+    }
+  ],
+  "reviewedFaqs": true,
+  "updatedDate": "2026-10-02"
+},
   {
-    id: 'pedestrian-side-gates',
-    title: 'Pedestrian and Side Gates',
-    slug: 'pedestrian-side-gates',
-    description: 'Matching pedestrian gates, side access gates, and wicket gates for London properties. Secure foot access without opening the main driveway gate — available in all materials and with optional automation.',
-    image: '/images/gates/gate-wrought-iron-open-golden-hour-curved-drive.png',
-    icon: 'Users',
-    color: 'emerald',
-    faqs: [
-      { question: "What is the difference between a pedestrian gate and a wicket gate?", answer: "A pedestrian gate is a standalone single gate installed in a separate opening — usually alongside the main driveway gate — specifically for foot access. A wicket gate is a smaller gate built into one leaf of the main driveway gate itself, allowing people to walk through without opening the full gate. Both serve the same purpose; the right choice depends on your boundary layout and how much of the main gate leaf you want to use for the cut-out." },
-      { question: "Can a side gate be automated separately from the main gate?", answer: "Yes. Pedestrian gates can be fitted with their own compact motor, keypad, or intercom system and operated completely independently of the main driveway gate. This is ideal for properties where a family member may need regular foot access while the main gate is closed. The two systems can also be integrated so the same remote or intercom can open either gate depending on which button is pressed." },
-      { question: "What heights and materials are available for London side gates?", answer: "Side gates for London properties typically run from 1.5 metres to 2 metres high — above 2 metres usually requires planning permission. We offer side gates in all the same materials as main driveway gates: aluminium, mild steel, wrought iron, hardwood, and composite. Matching the side gate material and finish to the main gate creates a cohesive boundary design that significantly improves kerb appeal and property value." },
-    ],
-  },
+  "id": "pedestrian-side-gates",
+  "title": "Pedestrian and Side Gates",
+  "slug": "pedestrian-side-gates",
+  "description": "Pedestrian and side gates for London properties. Plan a usable walking route with the opening, lock, privacy and fitting details suited to your entrance.",
+  "image": "/images/gates/gate-wrought-iron-open-golden-hour-curved-drive.png",
+  "icon": "Users",
+  "color": "emerald",
+  "faqs": [
+    {
+      "question": "Can the pedestrian gate match my driveway gate?",
+      "answer": "Discuss the material, finish, infill and visible fittings together. Matching options depend on the chosen range and the space available for the pedestrian entrance."
+    },
+    {
+      "question": "Can I use an intercom or keypad with a side gate?",
+      "answer": "It depends on the lock, access-control equipment, power supply and exit arrangements. Confirm the proposed components and failure behaviour before ordering."
+    },
+    {
+      "question": "What width should a pedestrian gate be?",
+      "answer": "Start with the people and equipment using the route, then assess the clear opening after fitting, approach space and threshold. Ask the installer to confirm suitability for your site and any applicable requirements."
+    }
+  ],
+  "reviewedFaqs": true,
+  "updatedDate": "2026-10-02"
+},
 ];
 
 export const getAllServiceSlugs = (): string[] => services.map(s => s.slug);
@@ -294,8 +369,8 @@ export const serviceRelatedContent: Record<string, { guides: string[]; posts: st
     posts: ['aluminium-vs-timber-gates-london', 'minimalist-steel-slat-gates-london', 'anthracite-grey-gate-trends-london'],
   },
   'automated-gate-systems': {
-    guides: ['automation-kit-installation-prices', 'electric-gate-running-costs', 'best-intercom-systems'],
-    posts: ['solar-powered-gate-automation-london', 'smart-gate-integration-ring-nest-control4', 'automated-gate-total-cost-london'],
+    guides: ['electric-driveway-gates-cost-london', 'automation-kit-installation-prices', 'electric-gate-running-costs', 'best-intercom-systems'],
+    posts: ['solar-powered-gate-automation-london', 'smart-gate-integration-ring-nest-control4'],
   },
   'gate-repair-and-maintenance': {
     guides: ['winter-gate-maintenance', 'how-to-manually-open-electric-gate'],

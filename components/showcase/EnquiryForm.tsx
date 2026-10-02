@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { GOOGLE_SCRIPT_URL, GATE_TYPES } from '@/data/leadForm';
 import { gateTypeForSlug } from '@/components/HeroLeadForm';
+import { trackEnquiry } from '@/lib/analytics';
 
 export function EnquiryForm() {
   const [values, setValues] = useState({ fullName: '', phone: '', email: '', location: '', treatment: 'Not sure yet' });
@@ -37,6 +38,7 @@ export function EnquiryForm() {
       let data: { ok?: boolean; error?: string } = {};
       try { data = JSON.parse(text); } catch { /* The existing endpoint can return plain text. */ }
       if (data.ok === false) throw new Error(data.error || 'Submission failed');
+      trackEnquiry('contact_enquiry');
       setState('success');
     } catch {
       setError('We could not send your enquiry. Please try again or call 020 3773 1310.');

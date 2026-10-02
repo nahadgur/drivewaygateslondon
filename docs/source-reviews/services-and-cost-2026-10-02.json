@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-02",
+  "scope": [
+    "composite-driveway-gates",
+    "aluminium-driveway-gates",
+    "hardwood-driveway-gates",
+    "wrought-iron-gates",
+    "pedestrian-side-gates",
+    "commercial-gates",
+    "electric-driveway-gates-cost-london",
+    "industrial-security-gates",
+    "school-gate-systems",
+    "car-park-barriers",
+    "heavy-duty-sliding-gates"
+  ],
+  "businessEvidence": "Owner confirmed general service offering and founding story. No product list, actual quotation or warranty schedule supplied for this batch. User instructed proceeding without these and skipping a real enquiry submission.",
+  "editorialDecisions": [
+    "Removed universal maintenance-free, lifespan, finish guarantee, strength equivalence and fastest-growing claims from reviewed service copy, FAQs and their shared descriptions.",
+    "Retained existing service URLs and images; images remain illustrative. No fabricated projects, customers or product partnerships.",
+    "Quotes must identify actual materials, installation scope, exclusions and warranty conditions.",
+    "Two overlapping cost blogs consolidate into the established guide. Manufacturer pricing is not presented as a London installed average.",
+    "Six main service pages and four commercial subpages reviewed, including directory descriptions. Other legacy service-location prose, prices and older guides remain outside this batch.",
+    "Removed unsupported commercial emergency response promises, named security ratings and specific school-system integrations. Any required rating, integration or support agreement must be confirmed for the actual proposal."
+  ],
+  "sources": [
+    {
+      "url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
+      "use": "Complete-system assessment, site-specific safety and safe installation context."
+    },
+    {
+      "url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/responsibilities.htm",
+      "use": "Commercial gate owner/responsible person duties and maintenance context."
+    },
+    {
+      "url": "https://aligates.co.uk/warranty/",
+      "use": "Example that gate structure and coating guarantees have specific terms; no claim that the business supplies this brand."
+    },
+    {
+      "url": "https://www.jacksons-fencing.co.uk/guarantees",
+      "use": "Example that timber, steel and automation guarantees differ; no transfer of these guarantees to this business."
+    },
+    {
+      "url": "https://www.accoya.com/uk/other-applications/wooden-gates/",
+      "use": "Modified-wood distinction and product-specific care. No universal warranty or lifespan claim."
+    },
+    {
+      "url": "https://www.gov.uk/vat-builders",
+      "use": "Most home building work standard-rated with exceptions; actual supplier VAT status and quote treatment must be confirmed."
+    },
+    {
+      "url": "https://developers.google.com/search/docs/crawling-indexing/301-redirects",
+      "use": "Permanent server-side redirects to the relevant consolidated guide."
+    },
+    {
+      "url": "https://developers.google.com/analytics/devguides/collection/ga4/reference/events",
+      "use": "generate_lead for enquiry submissions; phone_click is a separate custom event."
+    }
+  ],
+  "review": "Editorial source review only. No claim that a gate engineer has approved the new copy."
+}

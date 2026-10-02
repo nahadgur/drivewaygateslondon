@@ -33,43 +33,77 @@ export interface Guide {
 const guideEntries: Guide[] = [
 
   {
-    slug: 'electric-driveway-gates-cost-london',
-    title: 'The True Cost of Electric Driveway Gates in London (2026 Guide)',
-    metaTitle: 'Electric Driveway Gates Cost London | 2026 Price Guide',
-    metaDescription: 'Wondering how much electric driveway gates cost in London? Read our 2026 pricing guide covering materials, automation kits, and running costs.',
-    pillar: 'Pricing & Costs',
-    excerpt: 'A full breakdown of what electric driveway gates cost in London in 2026 — from basic timber swing gates to fully automated aluminium sliding systems — including installation, automation, and hidden London costs.',
-    readingMinutes: 9,
-    publishDate: '2026-01-10',
-    featuredImage: '/images/gates/gate-aluminium-sliding-modern-dark-brick.png',
-    intro: 'Electric driveway gates are one of the highest-impact upgrades a London homeowner can make — but prices vary enormously depending on material, mechanism, automation system, and the specific challenges of your site. This guide gives you a clear, honest picture of what automated gate installation prices look like in 2026, with no fluff.',
-    sections: [
-      {
-        heading: 'Average Base Costs by Gate Material',
-        body: `The gate itself — before any automation — is where you first encounter a significant price split. Timber swing gates are the most affordable entry point, with a pair of treated softwood gates for a standard 3.5-metre driveway starting from around £800 to £1,400 supply-only. Hardwood options in iroko or European oak start from £1,500 and can reach £4,000 or more for bespoke joinery.\n\nAluminium gates occupy the mid-to-premium range and are increasingly the material of choice for London driveways. A standard aluminium sliding or swing gate for a 4-metre opening typically costs £1,800 to £3,500 supply-only, with premium powder-coated finishes in RAL colours adding little to the price. The key advantage — beyond aesthetics — is that aluminium requires no ongoing treatment, making the lifetime cost considerably lower than timber.\n\nMild steel and wrought iron gates sit at the premium end of the market, particularly when bespoke ornate designs are involved. Fabricated steel gates for a London period property can range from £2,500 to £8,000 or more supply-only, depending on the complexity of the scrollwork and finishing specification. If you are comparing specific materials in detail, our guide to <a href="/guides/aluminium-vs-wooden-driveway-gates/">aluminium vs wooden driveway gates</a> covers the trade-offs in depth.\n\nFor properties across London, getting material selection right for your specific street, planning constraints, and property style is the essential first step, and it is exactly what we advise on during the free site survey. Our <a href="/services/wooden-driveway-gates/">wooden driveway gates in London</a> page covers the timber options we supply and install in more depth.`,
-      },
-      {
-        heading: 'The Cost of Automation Kits',
-        body: `Automation adds significantly to the total, but the type of motor system you choose has a large impact on both the upfront cost and the visual result. There are three main motor types for residential gates in London.\n\nUnderground motors are the premium choice for swing gates. Mounted beneath the gate post cap and completely invisible when the gate is closed, they cost between £600 and £1,200 per motor for a quality unit from brands such as FAAC or CAME. A pair of underground motors for double swing gates therefore adds £1,200 to £2,400 to your installation — before fitting labour.\n\nRam-arm motors are the more affordable swing gate option. They mount on the back of the gate leaf and post, are visible when the gate is open, and cost between £300 and £700 per motor for a reputable branded unit. Labour to fit a set of ram-arm motors is typically £300 to £600, making this the most budget-friendly automation route for swing gates.\n\nSliding gate motors use a rack-and-pinion drive system running along the bottom of the gate. A quality sliding gate motor for a residential property costs £500 to £900 for the unit alone, with installation adding a further £400 to £800 depending on track length and groundwork requirements. The total <a href="/blog/driveway-gate-installation-costs-london/">automated gate installation prices</a> for a sliding system — gate, motor, track, and labour — typically start from £3,500 and can reach £8,000 or more for premium materials and wide openings.`,
-      },
-      {
-        heading: 'Hidden Costs Specific to London Properties',
-        body: `London properties come with installation challenges that are not always apparent from a quote based on photographs alone. These hidden costs can add substantially to the final bill if they are not identified at the survey stage.\n\nGroundworks are the most common source of budget overruns. Old concrete, rubble, buried drainage pipes, and cable runs beneath the driveway surface are all common in London properties and can require breaking out and reinstating. Groundwork day rates for skilled tradespeople in London sit at the upper end of national averages — platforms like <a href="https://www.checkatrade.com/" target="_blank" rel="noopener noreferrer">Checkatrade</a> show London electricians and groundworkers regularly charging £300 to £500 per day, compared to £200 to £350 elsewhere in the UK.\n\nElectrical routing is another frequent addition. If the gate post is more than 10 metres from the property's consumer unit, a dedicated armoured cable run is required. In London properties where the cable must run under a path, patio, or driveway, the cost of routing and reinstating the surface can add £400 to £1,200 to the electrical element alone.\n\nPlanning and conservation area work adds time and sometimes professional fees. Properties in conservation areas or subject to Article 4 directions may require a planning application before any gate installation. Application fees and any required planning consultant input add to the overall project cost.`,
-      },
-      {
-        heading: 'What a Realistic Total Looks Like in 2026',
-        body: `Bringing together gate supply, automation, and installation, here are realistic budget ranges for common project types in London in 2026.\n\nA pair of mid-range aluminium swing gates (3.5-metre opening) with ram-arm motors, basic intercom, and standard installation on a straightforward site: £4,500 to £6,500 fully fitted.\n\nA premium hardwood or mild steel swing gate pair with underground motors, video intercom, and keypad entry: £7,000 to £12,000 depending on gate design complexity.\n\nAn aluminium sliding gate system (4-metre opening) with rack-and-pinion motor, GSM intercom, and safety sensors on a site with minimal groundwork: £5,500 to £9,000 fully fitted.\n\nEvery London driveway is different. Ground conditions, access, power supply routing, planning constraints, and the specific property style all affect the final cost. The most accurate price you will get is from a free, no-obligation site survey, where we measure up, assess the ground conditions, and provide a written fixed quote. Enter your phone number in the form above and we will call you back within 24 hours to arrange yours.`,
-      },
-    ],
-    faqs: [
-      { question: 'How much do electric driveway gates cost in London on average?', answer: 'A fully automated driveway gate installation in London typically costs between £4,500 and £10,000 for a standard residential property. Budget projects using softwood gates and surface-mounted motors can come in below £4,000, while premium bespoke installations with wrought iron, underground motors, and full access control can exceed £20,000.' },
-      { question: 'Are aluminium gates cheaper than wooden gates in London?', answer: 'On initial supply cost, aluminium and good-quality hardwood gates are broadly comparable. However, aluminium gates have a significantly lower lifetime cost because they require no annual treatment, oiling, or repainting. Over a 10-year period, the maintenance cost of hardwood gates in London can add several hundred pounds per year.' },
-      { question: 'Do I need planning permission for electric gates in London?', answer: 'Gates under 1 metre tall adjacent to a highway, or under 2 metres elsewhere, are generally permitted development. However, London has a high concentration of conservation areas and Article 4 directions that override this. Always check with your local planning authority before installation.' },
-      { question: 'How long does an electric gate installation take in London?', answer: 'A standard residential electric gate installation takes 2 to 4 days from start to finish. Complex sites, bespoke gates, or properties requiring planning consent will take longer.' },
-    ],
-    relatedServiceSlug: 'electric-sliding-gates',
-    relatedGuides: ['electric-gate-running-costs', 'automation-kit-installation-prices', 'aluminium-vs-wooden-driveway-gates'],
-  },
+  "slug": "electric-driveway-gates-cost-london",
+  "title": "Electric Driveway Gate Costs in London",
+  "metaTitle": "Electric Driveway Gates Cost London | Installed Quote Guide",
+  "metaDescription": "Compare electric gate installation costs in London: gate supply, groundworks, power, controls, VAT and ongoing maintenance, with an itemised quote checklist.",
+  "pillar": "Pricing & Costs",
+  "excerpt": "Compare the full cost of an electric driveway gate, from supply and groundworks to power, access controls and ongoing care.",
+  "readingMinutes": 8,
+  "publishDate": "2026-01-10",
+  "featuredImage": "/images/guides/electric-driveway-gates-cost-london.webp",
+  "intro": "The cost of electric driveway gates depends on the entrance as well as the gate. A supply-only price leaves out work such as supports, electrical supply and installation. To set a useful budget, ask for a measured survey and an itemised quotation covering the complete job.",
+  "sections": [
+    {
+      "heading": "Start with the complete installed cost",
+      "body": "<p>A gate advertised at a particular price may include only the leaves or sliding panel. A motor-kit price may cover the motor and controller without the work needed to make the complete installation suitable for your site. Before comparing totals, establish whether each quotation covers the same opening, materials and work.</p><p>There is no single installed price that applies to every London driveway. Width and height, ground conditions, access for the installation team, existing pillars, the power route and your chosen entry controls can change the scope. A useful quotation identifies those items and states what remains subject to inspection.</p><p>For a new powered entrance, discuss <a href=\"/services/automated-gate-systems/\">a complete automated gate installation</a>. For gates you intend to keep, start with <a href=\"/services/gate-automation-kits/\">an assessment for automating existing gates</a>. The two projects need different quotations.</p>"
+    },
+    {
+      "heading": "The items to include in your quotation",
+      "body": "<div class=\"table-scroll\" role=\"region\" aria-label=\"Gate quotation checklist\" tabindex=\"0\"><table><thead><tr><th>Part of the job</th><th>Ask the quotation to identify</th></tr></thead><tbody><tr><td>Gate supply</td><td>Dimensions, material, construction, finish, delivery and fittings.</td></tr><tr><td>Supports and groundworks</td><td>Posts or pillar alterations, foundations, track or other support work, drainage and removal of waste.</td></tr><tr><td>Automation</td><td>Motor and controller models, installation, system-specific protective measures and commissioning.</td></tr><tr><td>Electrical work</td><td>Supply assessment, cable route, required work and who provides the relevant test records.</td></tr><tr><td>Access controls</td><td>Remotes, intercom, keypad or phone entry, connectivity and ongoing charges.</td></tr><tr><td>Finishing and handover</td><td>Reinstatement of paving or planting, removal of old equipment, user instructions and demonstration.</td></tr><tr><td>Price and terms</td><td>VAT treatment, exclusions, allowances, payment stages, warranty and maintenance conditions.</td></tr></tbody></table></div><p>Ask who supplies each item and who takes responsibility for the assembled installation. If separate trades are involved, agree the handover between them before work starts.</p>"
+    },
+    {
+      "heading": "How gate material and opening layout affect the price",
+      "body": "<p>Compare the specified product rather than assuming one material will always cost less. <a href=\"/services/aluminium-driveway-gates/\">Aluminium gates</a> vary in profile construction and finish. <a href=\"/services/composite-driveway-gates/\">Composite gates</a> need a defined board-and-frame specification. With <a href=\"/services/hardwood-driveway-gates/\">hardwood gates</a>, the timber, joinery and coating affect the work and future care.</p><p>Bespoke dimensions and decorative fabrication can change the cost of a gate. Request the drawing and finish reference that match the price. Include the posts, hinges, locks and visible hardware in the comparison.</p><p>Swing and sliding layouts involve different support and movement arrangements. A sliding quotation needs the proposed track or cantilever support and space along the boundary. A swing quotation needs adequate movement space and suitable supports. Let the measured layout guide the choice, then compare the cost of suitable options.</p>"
+    },
+    {
+      "heading": "Groundworks, electrical supply and making good",
+      "body": "<p>Ask the surveyor to trace the proposed power route and identify the surfaces that need to be lifted. A short route across a planted border and a route beneath finished paving involve different work. Agree who reinstates those surfaces and whether the quote includes matching materials or an allowance.</p><p>Existing pillars and foundations may need investigation before the installer can confirm that they are suitable. Discuss access for equipment, waste removal and any arrangements affecting neighbours or a shared driveway. Request a process for agreeing extra work if the team finds an issue after excavation.</p><p>Check planning or other permissions before committing to the work. Ask the relevant local authority about your particular boundary where restrictions may apply, and include any application or professional costs in your own budget. A contractor’s gate quotation does not automatically include these expenses.</p>"
+    },
+    {
+      "heading": "New installation and retrofit: two different scopes",
+      "body": "<p>The following are scope comparisons, not completed projects or quoted prices.</p><h3>A new gate and automated entrance</h3><p>Compare gate supply, new or adapted supports, groundworks, power, motors, controls and finishing as one project. Ask which parts of the work the named contractor will complete and which require another trade. A low gate-supply figure does not establish the final installed total.</p><h3>Automation added to existing gates</h3><p>Ask the installer to assess the condition, movement and supports of the retained gates before pricing the motors. Repairs, altered hinges, new supports or other changes may be needed. The quotation should say which parts remain, which change and how the completed system will be assessed and handed over.</p><p>HSE’s <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm\" target=\"_blank\" rel=\"noopener noreferrer\">powered-gate safety guidance</a> explains why the gate, equipment and site need consideration together. Keep protective measures and commissioning in the scope when comparing prices.</p>"
+    },
+    {
+      "heading": "VAT, exclusions and payment stages",
+      "body": "<p>Ask for the amount payable, whether it includes VAT and the basis for any exception. GOV.UK states that <a href=\"https://www.gov.uk/vat-builders\" target=\"_blank\" rel=\"noopener noreferrer\">most building work on homes attracts the standard 20% rate</a>, with exceptions. That does not establish the VAT status of an individual supplier or the treatment of your project; get both confirmed on the quotation.</p><p>Check whether quoted sums are fixed items or allowances that can change once details are known. Ask the contractor to list exclusions such as power work, old-gate disposal, replacement paving, permits or subscriptions. Agree how variations need your approval.</p><p>Keep the payment schedule with the specification. Confirm what each stage covers, the expected lead time and the arrangements if the scope or delivery date changes. If you consider finance from any provider, compare the total repayable and fees; this guide does not assume that gate finance is available from us.</p>"
+    },
+    {
+      "heading": "Budget for ownership as well as installation",
+      "body": "<p>Keep separate lines for electricity, servicing, connectivity subscriptions and repairs. Ask for the installed equipment’s maintenance instructions and the proposed service scope. Visit charges, replacement parts and labour outside a service agreement can affect your later spending.</p><p>For electricity, obtain the standby power, operating demand and expected usage for the proposed equipment. Energy in kWh equals power in watts divided by 1,000, multiplied by hours of use. Calculate standby and active use separately and apply your own tariff without counting the same operating time twice. Include intercoms and other powered accessories if their demand is separate.</p><p>For a chosen ownership period, add installation, electricity, service visits, subscription charges and any repair allowances. Treat repair allowances as your planning assumptions rather than predictions. There is no reliable single annual cost for all gate systems.</p><p>Ask what each warranty covers, whether it includes labour and the conditions for making a claim. Gate material, coating, motors and workmanship may have different terms. Do not assume insurance discounts, resale gains or savings from a new system; check any relevant policy with your insurer and compare actual quotations. If an existing system is unreliable, request a <a href=\"/services/gate-repair-and-maintenance/\">repair assessment</a> before deciding to replace it.</p>"
+    },
+    {
+      "heading": "Prepare an enquiry that helps us quote",
+      "body": "<p>Send your area or postcode, photographs from both sides of the entrance and a description of how you want to use it. Include approximate dimensions if you have them, the current gate type, any known power supply and whether you want a pedestrian entrance. A survey is still needed to establish the final specification.</p><p>Tell us which matters most to you: privacy, appearance, vehicle access or easier daily use. Mention a budget if you have one so we can discuss the scope before developing a proposal.</p><p><a href=\"/contact/\">Request a gate quotation</a> and ask for the items above in writing. Keep the quotation, drawing, agreed changes, handover documents and maintenance instructions together for future reference.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How much do electric driveway gates cost installed in London?",
+      "answer": "The total depends on the measured entrance, gate specification, supports, groundworks, power and controls. Ask for a site-specific itemised quotation. A gate-only or motor-kit price is not a complete installed price."
+    },
+    {
+      "question": "Is automating existing gates cheaper than replacing them?",
+      "answer": "It depends on what can be retained. An assessment may identify repairs or changes to the gate and supports before automation. Compare a written retrofit scope with a replacement quotation rather than assuming that keeping the leaves makes the whole job cheaper."
+    },
+    {
+      "question": "Should the quote include VAT?",
+      "answer": "Ask the supplier to state whether VAT applies, the rate used and the final amount payable. Do not compare a VAT-exclusive figure with an inclusive total."
+    },
+    {
+      "question": "What ongoing costs should I allow for?",
+      "answer": "Allow for electricity, maintenance, any connectivity subscriptions and repairs outside warranty or service cover. Use the proposed equipment details, your tariff and written service terms instead of a generic annual estimate."
+    },
+    {
+      "question": "Can you give a price from photographs?",
+      "answer": "Photographs and approximate dimensions help us understand the enquiry. The measured opening, supports, power route and proposed scope still need assessment before a final quotation."
+    }
+  ],
+  "relatedServiceSlug": "automated-gate-systems",
+  "relatedGuides": [],
+  "featuredImageAlt": "London homeowner reviewing an electric driveway-gate quote with an installer",
+  "updatedDate": "2026-10-02"
+},
 
   {
     slug: 'electric-gate-running-costs',
@@ -93,7 +127,7 @@ const guideEntries: Guide[] = [
       },
       {
         heading: 'Annual Servicing and Maintenance Costs',
-        body: `Electricity is the smallest element of the <a href="/blog/automated-gate-total-cost-london/">true annual running cost of an electric gate</a>. The more significant ongoing cost is servicing.\n\nA professional annual service from a London gate engineer typically costs between £120 and £200 for a standard residential system. This covers motor lubrication, safety sensor testing and calibration, hinge adjustment and greasing, track cleaning for sliding gates, intercom function test, battery backup check, and a general structural inspection. Skipping the annual service risks voiding manufacturer warranties and turning small problems into expensive failures.\n\nOver a 10-year period, a realistic total running cost budget for a London residential automated gate — electricity, annual servicing, and occasional minor repairs — is £2,000 to £3,500. Spread over the decade, that is £200 to £350 per year.`,
+        body: `Electricity is the smallest element of the <a href="/guides/electric-driveway-gates-cost-london/">true annual running cost of an electric gate</a>. The more significant ongoing cost is servicing.\n\nA professional annual service from a London gate engineer typically costs between £120 and £200 for a standard residential system. This covers motor lubrication, safety sensor testing and calibration, hinge adjustment and greasing, track cleaning for sliding gates, intercom function test, battery backup check, and a general structural inspection. Skipping the annual service risks voiding manufacturer warranties and turning small problems into expensive failures.\n\nOver a 10-year period, a realistic total running cost budget for a London residential automated gate — electricity, annual servicing, and occasional minor repairs — is £2,000 to £3,500. Spread over the decade, that is £200 to £350 per year.`,
       },
       {
         heading: 'How Modern 24V Systems Compare to Older Motors',
@@ -132,7 +166,7 @@ const guideEntries: Guide[] = [
       },
       {
         heading: 'Underground Motor Costs',
-        body: `Underground motors are the premium option for swing gates. Mounted in a waterproof housing beneath the gate post cap, they are completely invisible when the gate is closed — only the gate itself is visible, with no external motor housings or arm linkages.\n\nThe cost premium over ram-arm systems reflects the hardware quality and the additional installation work. A pair of underground motors from a quality manufacturer typically costs £2,200 to £3,800 for supply and installation, depending on the motor specification and any groundwork required.\n\nA site survey is mandatory before any retrofit automation project is quoted. Retrofitting electric gates <a href="/blog/driveway-gate-installation-costs-london/">cost estimates</a> provided without a site visit are unreliable — ground conditions, cable routing distances, gate weight, and hinge condition all materially affect the final price. Leave your phone number in the form above and our team will arrange a fast callback to discuss your specific project and book a free survey.`,
+        body: `Underground motors are the premium option for swing gates. Mounted in a waterproof housing beneath the gate post cap, they are completely invisible when the gate is closed — only the gate itself is visible, with no external motor housings or arm linkages.\n\nThe cost premium over ram-arm systems reflects the hardware quality and the additional installation work. A pair of underground motors from a quality manufacturer typically costs £2,200 to £3,800 for supply and installation, depending on the motor specification and any groundwork required.\n\nA site survey is mandatory before any retrofit automation project is quoted. Retrofitting electric gates <a href="/guides/electric-driveway-gates-cost-london/">cost estimates</a> provided without a site visit are unreliable — ground conditions, cable routing distances, gate weight, and hinge condition all materially affect the final price. Leave your phone number in the form above and our team will arrange a fast callback to discuss your specific project and book a free survey.`,
       },
     ],
     faqs: [

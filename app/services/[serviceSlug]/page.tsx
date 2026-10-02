@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!service) return {};
 
   const title = `${service.title} in London | Installation, Free Quotes`;
-  const description = `${service.title} installation across London. We design, supply and install ourselves. Free site survey and written quote, no obligation.`;
+  const description = service.reviewedFaqs ? service.description : `${service.title} installation across London. We design, supply and install ourselves. Free site survey and written quote, no obligation.`;
   const url = `${siteConfig.url}/services/${service.slug}/`;
 
   return {

@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const url = `${siteConfig.url}/guides/${guide.slug}/`;
 
   return {
-    title: `${guide.title} | Driveway Gates London`,
+    title: params.slug === 'electric-driveway-gates-cost-london' ? guide.metaTitle : `${guide.title} | Driveway Gates London`,
     description: guide.metaDescription,
     alternates: { canonical: url },
     openGraph: {
@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale: 'en_GB',
       images: [{ url: guide.featuredImage.startsWith('http') ? guide.featuredImage : `${siteConfig.url}${guide.featuredImage}`, width: 1536, height: 1024, alt: guide.featuredImageAlt || guide.title }],
       publishedTime: guide.publishDate,
+      modifiedTime: guide.updatedDate ?? guide.publishDate,
     },
     twitter: { card: 'summary_large_image', title: guide.title, description: guide.metaDescription, images: [guide.featuredImage.startsWith('http') ? guide.featuredImage : `${siteConfig.url}${guide.featuredImage}`] },
   };

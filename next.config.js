@@ -46,6 +46,9 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Consolidated installed-cost and ownership advice, 2 October 2026.
+      { source: '/blog/automated-gate-total-cost-london/', destination: '/guides/electric-driveway-gates-cost-london/', permanent: true },
+      { source: '/blog/driveway-gate-installation-costs-london/', destination: '/guides/electric-driveway-gates-cost-london/', permanent: true },
       // Force canonical host: non-www → www (single 308 hop, HTTPS)
       {
         source: '/:path*',
@@ -79,8 +82,8 @@ const nextConfig = {
       { source: '/blog/safety-photocells-vs-safety-ribs-and-which-gate-safety-tech-protects-kids-and-pets-better/', destination: '/guides/photocells-vs-safety-edges/', permanent: true },
       { source: '/blog/how-to-manually-open-an-electric-gate-during-a-power-cut/', destination: '/guides/how-to-manually-open-electric-gate/', permanent: true },
       { source: '/blog/the-annual-service-checklist-for-preventing-gate-failure-during-a-london-freeze/', destination: '/blog/annual-gate-service-checklist-london/', permanent: true },
-      { source: '/blog/how-to-budget-for-driveway-gate-installation-electricity-and-servicing-in-london/', destination: '/blog/driveway-gate-installation-costs-london/', permanent: true },
-      { source: '/blog/the-total-cost-of-owning-an-automated-gate-in-london-in-2026/', destination: '/blog/automated-gate-total-cost-london/', permanent: true },
+      { source: '/blog/how-to-budget-for-driveway-gate-installation-electricity-and-servicing-in-london/', destination: '/guides/electric-driveway-gates-cost-london/', permanent: true },
+      { source: '/blog/the-total-cost-of-owning-an-automated-gate-in-london-in-2026/', destination: '/guides/electric-driveway-gates-cost-london/', permanent: true },
       { source: '/blog/why-your-gate-motor-is-humming-but-not-moving/', destination: '/blog/gate-motor-humming-not-moving/', permanent: true },
       // De-duplication: retired blog posts whose head term the /guides tier owns (2026-06-23)
       { source: '/blog/gate-force-testing-legal-requirements/', destination: '/guides/force-testing-explained/', permanent: true },

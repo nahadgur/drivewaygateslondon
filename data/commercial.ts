@@ -10,113 +10,226 @@ export interface CommercialService {
   benefits: { title: string; desc: string }[];
   faqs: { question: string; answer: string }[];
   typicalClients: string[];
+  updatedDate?: string;
 }
 
 export const commercialServices: CommercialService[] = [
   {
-    id: 'industrial-security-gates',
-    slug: 'industrial-security-gates',
-    title: 'Industrial Security Gates',
-    metaTitle: 'Industrial Security Gates London | Heavy-Duty Sliding & Swing Gates',
-    metaDescription: 'Heavy-duty industrial security gates for London warehouses, factories, and distribution centres. LPS 1175 rated options, CCTV integration, and 24-hour emergency service.',
-    description: 'Heavy-duty automated security gates for warehouses, factories, distribution centres, and industrial estates across London. LPS 1175 rated options available for high-security sites.',
-    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=1170&auto=format&fit=crop',
-    typicalClients: ['Warehouses and distribution centres', 'Manufacturing facilities', 'Industrial estates', 'Transport and logistics depots', 'Recycling and waste management sites'],
-    intro: [
-      "Industrial security gates are a fundamentally different product from residential driveway gates. The loading is heavier, the duty cycle is higher, the security requirement is stricter, and the consequences of failure are more significant. A gate on a distribution centre may open and close 200 times a day with vehicles weighing 30 tonnes passing through. The engineering specification for that application has nothing in common with a residential swing gate.",
-      "We specialise in heavy-duty automated gate systems for industrial environments. Systems range from cantilever sliding gates rated for maximum vehicle weight to bi-folding speed gates designed for high-frequency use. Anti-climb and anti-ram specifications are available for sites requiring SBD (Secured by Design) compliance or LPS 1175 security rating.",
-      "All commercial installations are preceded by a detailed site survey that assesses traffic volume, vehicle weights, access control requirements, security threat level, power supply, and any planning or highway authority constraints. The installation is specified to last the design life of the building with minimal downtime, and all systems include 24-hour emergency callout coverage as standard.",
-    ],
-    benefits: [
-      { title: 'Heavy Vehicle Rated', desc: 'Gates specified for HGV, LGV, and articulated lorry access. Track, motor, and structure all rated for the maximum vehicle weight on your site.' },
-      { title: 'LPS 1175 Security Rating', desc: 'For sites requiring certified security ratings, we install gates tested and rated under the Loss Prevention Standard 1175 attack resistance specification.' },
-      { title: 'High Duty Cycle Motors', desc: 'Industrial motors rated for 200+ operations per day with continuous duty ratings. Not the residential-grade motors that would fail within weeks on a commercial site.' },
-      { title: '24-Hour Emergency Callout', desc: 'A failed gate on an industrial site is a security emergency. All commercial installations include an emergency callout contract with guaranteed response times.' },
-    ],
-    faqs: [
-      { question: "What size opening can industrial security gates cover?", answer: "Industrial sliding gates can be engineered for openings from 4 metres to 20 metres or more. Bi-folding gates are available up to 12 metres. For very wide openings, multiple gate leaves can be used in a tandem configuration. The motor specification, track engineering, and structural posts all scale to the opening width and vehicle loading requirements." },
-      { question: "What is LPS 1175 certification for gates?", answer: "LPS 1175 is the Loss Prevention Standard published by the British Standards Institution that grades physical security products by their resistance to attack using tools available to a burglar. Gates are rated from SR1 (basic attack resistance) to SR8 (sustained attack with heavy tools). For industrial sites in London, SR2 to SR4 is typical for perimeter gates, with higher ratings specified for secure compound entrances." },
-      { question: "How long does a commercial gate installation take?", answer: "A typical industrial gate installation takes 3 to 7 days depending on the size of the opening, the ground conditions, and the complexity of the access control system. Large multi-gate projects may take 2 to 3 weeks. We can phase installations to minimise disruption to site operations, including weekend and out-of-hours working where required." },
-    ],
-  },
+  "updatedDate": "2026-10-02",
+  "id": "industrial-security-gates",
+  "slug": "industrial-security-gates",
+  "title": "Industrial Security Gates",
+  "metaTitle": "Industrial Security Gates London | Heavy-Duty Sliding & Swing Gates",
+  "metaDescription": "Industrial gate systems for London sites. Discuss vehicle access, operating frequency, security requirements and aftercare before specifying equipment.",
+  "description": "Industrial gate systems for London sites. Discuss vehicle access, operating frequency, security requirements and aftercare before specifying equipment.",
+  "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=1170&auto=format&fit=crop",
+  "typicalClients": [
+    "Warehouses and distribution centres",
+    "Manufacturing facilities",
+    "Industrial estates",
+    "Transport and logistics depots",
+    "Recycling and waste management sites"
+  ],
+  "intro": [
+    "Start with the site requirements: vehicle types, busiest arrival periods, clear opening, security objectives and routes for people on foot. Include delivery drivers and contractors who may not know the site.",
+    "Discuss the gate layout and access controls together. Existing ground conditions, supports, power and the space for vehicles to wait can affect the installation scope. A site survey should establish which arrangements are suitable before you order equipment.",
+    "If your brief requires a tested security rating or a named certification, ask for evidence for the exact proposed product and configuration. Do not treat the appearance of a gate or a general supplier claim as proof of that requirement."
+  ],
+  "benefits": [
+    {
+      "title": "Vehicle movement",
+      "desc": "Assess the approach, turning room and clear opening for the vehicles using the entrance."
+    },
+    {
+      "title": "Operating demand",
+      "desc": "Give the installer the expected frequency and busiest periods so they can select equipment for the proposed duty."
+    },
+    {
+      "title": "Access control",
+      "desc": "Agree how staff, visitors and delivery drivers gain entry and who manages permissions."
+    },
+    {
+      "title": "Aftercare",
+      "desc": "Request written maintenance, fault-response and call-out terms. No response time applies unless it is agreed in the service contract."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can you quote for a gate with a specified security rating?",
+      "answer": "Share the requirement with the enquiry. The proposed product and configuration need supporting evidence, and availability must be confirmed before a quotation promises a particular rating."
+    },
+    {
+      "question": "Is emergency call-out cover included?",
+      "answer": "Ask for the available support arrangements, charges and response terms in writing. Installation does not establish an automatic emergency-service agreement."
+    },
+    {
+      "question": "What should we prepare for the survey?",
+      "answer": "Provide the site layout, vehicle types, operating hours, access requirements and any known constraints. Identify who will approve the specification and look after the system after handover."
+    }
+  ]
+},
   {
-    id: 'school-gate-systems',
-    slug: 'school-gate-systems',
-    title: 'School Gate Systems',
-    metaTitle: 'School Gate Systems London | Automated Security Gates for Schools',
-    metaDescription: 'Automated gate systems for London primary schools, secondary schools, and academies. DfE Secured by Design compliant, pedestrian safety certified, with CCTV and intercom integration.',
-    description: 'Automated school entrance gates designed around child safety, safeguarding requirements, and Secured by Design compliance. Used by London primary schools, secondary schools, and multi-academy trusts.',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=1170&auto=format&fit=crop',
-    typicalClients: ['Primary schools', 'Secondary schools and academies', 'Special educational needs schools', 'Multi-academy trusts', 'Independent schools and colleges'],
-    intro: [
-      "School gate systems in London have become a specialist area of installation that requires understanding of safeguarding policies, Secured by Design (SBD) compliance, DfE guidance on school security, and the specific challenges of managing pedestrian flow at school drop-off and collection times. A school gate is not simply a commercial gate at lower height — it is a system designed around the specific patterns and vulnerabilities of a school environment.",
-      "The key design requirements for school gates differ from commercial applications in several ways. Pedestrian safety certification is mandatory for any gate that could contact a child. Safety forces must meet BS EN 12453 requirements, and safety edges or photocell systems must prevent gate movement when a child is in the path of travel. Manual override must be accessible to all staff without tools. And the access control system must support the school's safeguarding protocols — typically video intercom with internal release only.",
-      "We specialise in educational premises and are familiar with the planning, procurement, and compliance requirements of school projects. All school gate systems we install meet Secured by Design Gold standard where specified and are certificated under the FAAC, BFT, or CAME safety compliance programmes.",
-    ],
-    benefits: [
-      { title: 'Child Safety Certified', desc: 'All gates meet BS EN 12453 pedestrian safety requirements with force-limiting motors, safety edges, and photocell systems that prevent closure on contact.' },
-      { title: 'Secured by Design Compliant', desc: 'School gate systems can be specified to SBD Gold standard, aligned with DfE guidance on school security and the requirements of most multi-academy trust procurement frameworks.' },
-      { title: 'Safeguarding-Compatible Access Control', desc: 'Video intercom with internal-only release, visitor management integration, and audit trail logging support the school\'s safeguarding policies and unwanted visitor prevention.' },
-      { title: 'Managed Drop-Off Traffic Flow', desc: 'Timed automation allows gates to open automatically at start and end of school day, then secure automatically once flow has cleared, reducing staff burden and improving safety.' },
-    ],
-    faqs: [
-      { question: "What safety standards apply to school automated gates?", answer: "School automated gates must comply with BS EN 12453 (Safety in Use of Powered Doors) and BS EN 12445 (Force Measurement). The motor must limit the impact force to below 400N, and the system must include safety edges or photocells that detect obstruction and reverse the gate before contact. Annual safety inspections are mandatory and must be documented. We provide certification documentation as part of every school gate installation." },
-      { question: "Can school gates be integrated with the existing CCTV system?", answer: "Yes. Modern school gate intercom systems have standard video output connections and IP camera interfaces that integrate directly into existing CCTV recording systems. The gate camera feed can be displayed on existing monitors in the school office and recorded to the existing NVR. Integration with visitor management systems such as CPOMS, Inventry, and Entrances is also available." },
-      { question: "What is the procurement route for school gate systems?", answer: "State schools and academies typically procure through the School Buying Hub frameworks, Crown Commercial Service agreements, or local authority procurement frameworks. Independent schools can procure directly. We work with clients through all procurement routes and can provide the documentation, certifications, and insurance certificates required for framework compliance." },
-    ],
-  },
+  "updatedDate": "2026-10-02",
+  "id": "school-gate-systems",
+  "slug": "school-gate-systems",
+  "title": "School Gate Systems",
+  "metaTitle": "School Gate Systems London | Automated Security Gates for Schools",
+  "metaDescription": "School entrance gate planning and installation in London, with vehicle movement, pedestrian access and day-to-day management considered together.",
+  "description": "School entrance gate planning and installation in London, with vehicle movement, pedestrian access and day-to-day management considered together.",
+  "image": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=1170&auto=format&fit=crop",
+  "typicalClients": [
+    "Primary schools",
+    "Secondary schools and academies",
+    "Special educational needs schools",
+    "Multi-academy trusts",
+    "Independent schools and colleges"
+  ],
+  "intro": [
+    "School entrances serve pupils, parents, staff and deliveries at different times of day. Discuss the arrival and collection periods, walking routes, visitor checks and vehicle access with the people who manage the site.",
+    "The installer needs to assess the entrance and foreseeable users before proposing equipment and protective measures. A list of sensors or a general claim of compliance does not establish that a particular installation is suitable.",
+    "Agree the handover with the school’s responsible person: user instructions, operating arrangements, records, training and the process for reporting faults. Confirm maintenance and any support contract in writing."
+  ],
+  "benefits": [
+    {
+      "title": "Pedestrian routes",
+      "desc": "Consider children and adults approaching on foot alongside vehicles and delivery access."
+    },
+    {
+      "title": "Controlled entry",
+      "desc": "Define who approves visitors and how staff manage opening and closing during the school day."
+    },
+    {
+      "title": "Compatibility checks",
+      "desc": "Confirm intercom, CCTV or visitor-system compatibility against the actual proposed equipment before including it in the scope."
+    },
+    {
+      "title": "Procurement documents",
+      "desc": "Share the school’s procurement and insurance requirements at enquiry stage so availability of the required documentation can be checked."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can the gate connect to our existing visitor or CCTV system?",
+      "answer": "Compatibility needs to be checked using the existing and proposed equipment details. Do not assume that a named software product or recorder can integrate with any gate controller."
+    },
+    {
+      "question": "How often should school gates be serviced?",
+      "answer": "Agree maintenance based on the installed equipment, instructions, use and risk assessment. Ask the responsible contractor to document the schedule and the checks required between visits."
+    },
+    {
+      "question": "What happens if the gate develops a fault?",
+      "answer": "Follow the agreed site procedure and the installation-specific instructions. Identify who can take the system out of use and arrange competent assessment; confirm any response commitment separately in the support terms."
+    }
+  ]
+},
   {
-    id: 'car-park-barriers',
-    slug: 'car-park-barriers',
-    title: 'Car Park Barriers and Access Control',
-    metaTitle: 'Car Park Barriers London | Automated Barrier Systems for London Car Parks',
-    metaDescription: 'Automated car park barriers for London offices, retail parks, residential blocks, and commercial premises. ANPR, ticket systems, pay-on-foot integration.',
-    description: 'Automated car park barrier systems for London office blocks, retail premises, residential developments, and public car parks. ANPR, ticket and pay-on-foot systems, and remote management platforms.',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1170&auto=format&fit=crop',
-    typicalClients: ['Office buildings with employee parking', 'Retail parks and shopping centres', 'Residential developments with basement parking', 'NHS and healthcare sites', 'Airports and transport hubs'],
-    intro: [
-      "Car park barrier systems are one of the most commercially diverse categories in access control. The system for a 20-space office car park has completely different requirements from a 500-space retail park or a 2,000-space airport remote facility. Common to all of them is the need for reliable hardware, intuitive user experience, manageable ongoing costs, and a support contract that prevents revenue loss through downtime.",
-      "In London, car park access control has evolved significantly with the growth of ANPR technology. Recognising that physical tickets and barriers are a pain point for users and a maintenance burden for operators, most new London installations now use barrier-free ANPR systems — cameras recognise authorised plates on entry and exit and raise a barrier or open a gate automatically. Pay-on-foot kiosks or online payment links handle visitor payments. The result is faster throughput, fewer mechanical failures, and lower staffing requirements.",
-      "We design and install the full range of car park access systems, from simple single-barrier entry points for small office car parks to multi-lane installations with ANPR, LPR enforcement cameras, pay stations, and centralised remote management platforms. We specify the right system for the site size, budget, and operational model during the site survey.",
-    ],
-    benefits: [
-      { title: 'ANPR Integration', desc: 'Hands-free plate recognition for registered users. No tickets, no remotes, no fobs. The camera reads the plate and the barrier opens automatically.' },
-      { title: 'Revenue Management Systems', desc: 'Pay-on-foot kiosks, online pre-booking, and mobile payment integration. Full reporting on occupancy, dwell time, and revenue by period.' },
-      { title: 'Remote Management', desc: 'Monitor occupancy, override barriers, grant guest access, and review incident footage from a web dashboard. No on-site management staff required for routine operation.' },
-      { title: 'Anti-Tailgating Systems', desc: 'Traffic lights, treadle plates, and camera analytics prevent two vehicles entering on one authorisation. Essential for residential and secure facility car parks.' },
-    ],
-    faqs: [
-      { question: "What is the difference between a rising arm barrier and a full-height security gate for car parks?", answer: "A rising arm barrier controls access by raising and lowering a horizontal arm across the lane. It is the standard solution for managed car parks where speed of throughput is important and the risk of hostile vehicle incursion is low. A full-height security gate or vehicle security barrier provides physical resistance to forced entry and is rated for ramming resistance. It is appropriate for high-security sites like government buildings, data centres, and critical infrastructure rather than standard commercial car parks." },
-      { question: "How does pay-on-foot work with ANPR barriers?", answer: "On entry, the ANPR camera reads the vehicle plate and stamps the entry time. On payment at the kiosk, the user enters their plate number, pays the calculated fee, and receives a grace period (typically 15 minutes) to exit. On exit, the exit camera reads the plate again, verifies payment, and raises the barrier. Enforcement cameras photograph any vehicles that exit without payment for civil debt recovery." },
-      { question: "Can I integrate a new barrier system with my existing building access control?", answer: "In most cases yes. Modern car park management platforms have API integrations with major building access control systems including Lenel, Honeywell Pro-Watch, Paxton, and others. The car park system can reference the same credential database as the building access system, so an employee's fob or plate automatically grants access to both. Integration removes the need to manage two separate access databases." },
-    ],
-  },
+  "updatedDate": "2026-10-02",
+  "id": "car-park-barriers",
+  "slug": "car-park-barriers",
+  "title": "Car Park Barriers and Access Control",
+  "metaTitle": "Car Park Barriers London | Automated Barrier Systems for London Car Parks",
+  "metaDescription": "Car-park barriers and entry controls for London premises. Plan vehicle flow, visitor access and support arrangements around the site.",
+  "description": "Car-park barriers and entry controls for London premises. Plan vehicle flow, visitor access and support arrangements around the site.",
+  "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1170&auto=format&fit=crop",
+  "typicalClients": [
+    "Office buildings with employee parking",
+    "Retail parks and shopping centres",
+    "Residential developments with basement parking",
+    "NHS and healthcare sites",
+    "Airports and transport hubs"
+  ],
+  "intro": [
+    "A barrier can manage vehicle entry to a car park, but the layout also needs to account for people on foot, cyclists and drivers who stop to request access. Review the approach, waiting space and exit route before choosing a product.",
+    "Discuss whether staff, residents, visitors or paying customers use the car park. Decide who grants access and how authorised people enter when a credential or connection fails. Include deliveries and any shared entrances in the brief.",
+    "Identify the proposed controller, reader or intercom in the quotation. ANPR, ticketing and payment integrations depend on the selected systems and connectivity. Confirm subscriptions, administration and data-handling responsibilities before ordering."
+  ],
+  "benefits": [
+    {
+      "title": "Traffic flow",
+      "desc": "Assess opening demand, waiting space and the effect of queues on the entrance and surrounding roads."
+    },
+    {
+      "title": "Visitor access",
+      "desc": "Choose a process for visitors and deliveries that the people managing the site can operate."
+    },
+    {
+      "title": "Equipment scope",
+      "desc": "Specify the barrier, supports, power, protective measures and entry controls as a complete installation."
+    },
+    {
+      "title": "Ongoing costs",
+      "desc": "Compare service charges, connectivity fees, replacement credentials and support terms as well as installation cost."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Does a barrier provide the same security as a closed gate?",
+      "answer": "A barrier controls vehicle passage but may leave access around or beneath it. Define the site’s security requirement before deciding whether a barrier, gate or combined arrangement is suitable."
+    },
+    {
+      "question": "Can you include number-plate recognition?",
+      "answer": "Discuss the desired use and provide the site layout. Equipment compatibility, visibility, connectivity and permission management need checking before the proposed scope is confirmed."
+    },
+    {
+      "question": "What should a barrier quotation include?",
+      "answer": "Ask for the equipment specification, groundworks, power, access controls, commissioning, handover and making good, with VAT, exclusions and ongoing charges stated."
+    }
+  ]
+},
   {
-    id: 'heavy-duty-sliding-gates',
-    slug: 'heavy-duty-sliding-gates',
-    title: 'Heavy-Duty Commercial Sliding Gates',
-    metaTitle: 'Heavy-Duty Commercial Sliding Gates London | Large Openings, HGV Rated',
-    metaDescription: 'Large-opening commercial sliding gates for London business premises. HGV-rated track systems, cantilever options, and high duty-cycle motors for frequent operation.',
-    description: 'Large-opening commercial sliding gates for London business premises requiring HGV access, wide clearances, or high-frequency operation. Cantilever and tracked systems rated for heavy vehicle passage.',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1170&auto=format&fit=crop',
-    typicalClients: ['Builders merchants and trade counters', 'Commercial vehicle depots', 'Food distribution and cold store facilities', 'Recycling and waste transfer stations', 'NHS supply chain and hospital service yards'],
-    intro: [
-      "Heavy-duty commercial sliding gates are the standard perimeter access solution for London business premises that require wide openings, HGV access, or high-frequency operation. A residential sliding gate motor might be rated for 20 operations per day. A commercial motor on a busy depot gate needs to handle 200 or more cycles in the same period, in all weather, without failure.",
-      "The engineering of a commercial sliding gate system starts with the ground track or cantilever specification. For HGV sites, the track must be engineered to support the wheel loading of heavy vehicles running over the gate threshold at operational speed. Cantilever systems, which suspend the gate without a ground track, are preferred for sites where the threshold must be kept completely clear — common in food distribution and logistics applications where fork-lift clearance is critical.",
-      "Motor specification follows from the duty cycle and gate weight. Commercial motors from FAAC, BFT, and CAME are rated for continuous operation in heavy-duty applications. They include thermal cut-out protection, integrated obstacle detection, and battery backup as standard. Soft-start and soft-stop programming extends the mechanical lifespan and reduces wear on gate bearings and track components.",
-    ],
-    benefits: [
-      { title: 'HGV Rated Track Engineering', desc: 'Track and foundation systems rated for lorry wheel loading at operational speeds. No ground movement, no track deformation, no gate alignment problems caused by heavy vehicle passage.' },
-      { title: 'Cantilever Options', desc: 'Trackless cantilever systems keep the threshold completely clear — essential for fork-lift, pallet truck, and HGV clearance requirements in logistics and food environments.' },
-      { title: 'High Duty Cycle Motors', desc: 'Commercial motors rated for 200+ cycles per day with continuous duty ratings. Thermal protection, battery backup, and integrated diagnostic systems as standard.' },
-      { title: 'Wide Opening Coverage', desc: 'Commercial sliding gates can cover openings from 5 metres to 20 metres. Multiple motor configurations for very wide gates ensure smooth, balanced operation across the full travel.' },
-    ],
-    faqs: [
-      { question: "What opening width can a commercial sliding gate cover?", answer: "Commercial sliding gates are routinely installed at openings between 5 and 12 metres for single-motor configurations. Twin-motor tandem systems can cover openings up to 20 metres or more. The gate is fabricated as a single leaf that slides clear of the opening on one side, which means you need clear space equal to the opening width plus a buffer zone alongside the gate for it to retract into." },
-      { question: "How is the track engineered for HGV access?", answer: "The track is set into a concrete beam foundation that is engineered to distribute the wheel loading from fully laden HGVs across a large surface area. Track profiles for commercial applications are heavier gauge than residential systems and are designed for minimal deflection under load. The track installation is typically done by a groundworks contractor to the gate manufacturer's specification, followed by the gate erection and automation commissioning." },
-      { question: "What maintenance does a commercial sliding gate need?", answer: "Commercial sliding gates should be serviced every 6 months rather than the annual schedule appropriate for residential systems. Service items include motor lubrication, gear and rack inspection, track cleaning and debris clearance, bearing replacement as needed, safety sensor calibration, and control board diagnostics. A service contract with a guaranteed response time for emergency callouts is strongly recommended for any commercial site." },
-    ],
-  },
+  "updatedDate": "2026-10-02",
+  "id": "heavy-duty-sliding-gates",
+  "slug": "heavy-duty-sliding-gates",
+  "title": "Heavy-Duty Commercial Sliding Gates",
+  "metaTitle": "Heavy-Duty Commercial Sliding Gates London | Large Openings, HGV Rated",
+  "metaDescription": "Commercial sliding gate installation in London. Assess the opening, side space, supports and operating demand for your business entrance.",
+  "description": "Commercial sliding gate installation in London. Assess the opening, side space, supports and operating demand for your business entrance.",
+  "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1170&auto=format&fit=crop",
+  "typicalClients": [
+    "Builders merchants and trade counters",
+    "Commercial vehicle depots",
+    "Food distribution and cold store facilities",
+    "Recycling and waste transfer stations",
+    "NHS supply chain and hospital service yards"
+  ],
+  "intro": [
+    "A commercial sliding gate needs space beyond the vehicle opening for its movement and support arrangement. Check the full travel area, nearby fencing, pedestrian routes and access for maintenance before choosing the gate.",
+    "Tracked and cantilever arrangements have different groundworks and support requirements. Ask for a proposed layout showing the opening, gate travel and supports. A cantilever design does not remove the need for sufficient space alongside the entrance.",
+    "Provide the anticipated operating frequency and peak periods. The designer should assess the gate, drive system and protective measures together for the site. Ask for the actual equipment limits rather than assuming that the label heavy-duty promises a fixed number of operations."
+  ],
+  "benefits": [
+    {
+      "title": "Measured layout",
+      "desc": "Confirm the usable vehicle opening and the space needed for movement and supports."
+    },
+    {
+      "title": "Groundwork scope",
+      "desc": "Identify foundations, track if applicable, drainage, access to power and reinstatement work."
+    },
+    {
+      "title": "Site use",
+      "desc": "Include vehicle types, operating demand, people on foot and the way visitors request entry."
+    },
+    {
+      "title": "Handover and maintenance",
+      "desc": "Agree user instructions, inspection arrangements and the procedure for a fault before the system enters use."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is a cantilever gate suitable for any commercial entrance?",
+      "answer": "No. Suitability depends on the available side space, supports, ground conditions, opening and site use. Ask for a measured design that identifies the proposed arrangement."
+    },
+    {
+      "question": "How many times per day can the gate operate?",
+      "answer": "The selected equipment and operating conditions determine its limits. Give the installer your busiest expected periods and ask for confirmation that the proposed system suits that demand."
+    },
+    {
+      "question": "Can an existing commercial sliding gate be upgraded?",
+      "answer": "An assessment is needed to identify what can be retained and what needs changing. Condition, supports, movement, controls and site-specific risks all affect the proposed work."
+    }
+  ]
+},
 ];
 
 export function getCommercialBySlug(slug: string): CommercialService | undefined {

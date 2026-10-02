@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-02",
+  "survivor": "/guides/electric-driveway-gates-cost-london/",
+  "retired": [
+    "/blog/automated-gate-total-cost-london/",
+    "/blog/driveway-gate-installation-costs-london/"
+  ],
+  "baseline": [
+    {
+      "URL": "https://www.drivewaygateslondon.co.uk/blog/automated-gate-total-cost-london/",
+      "Action": "Merge candidate",
+      "Proposed target": "https://www.drivewaygateslondon.co.uk/guides/electric-driveway-gates-cost-london/",
+      "Clicks": 1,
+      "Impressions": 1280,
+      "Position": 19.06,
+      "In sitemap": true,
+      "Live sample status": 200,
+      "Reason": "1 click, 1,280 impressions. Move the ownership-cost section into the established cost hub, linking to the running-cost guide."
+    },
+    {
+      "URL": "https://www.drivewaygateslondon.co.uk/blog/driveway-gate-installation-costs-london/",
+      "Action": "Merge candidate",
+      "Proposed target": "https://www.drivewaygateslondon.co.uk/guides/electric-driveway-gates-cost-london/",
+      "Clicks": 1,
+      "Impressions": 141,
+      "Position": 12.46,
+      "In sitemap": true,
+      "Live sample status": 200,
+      "Reason": "1 click, 141 impressions. Consolidate installed-price intent into the guide with 35 clicks."
+    },
+    {
+      "URL": "https://www.drivewaygateslondon.co.uk/guides/electric-driveway-gates-cost-london/",
+      "Action": "Keep / improve",
+      "Proposed target": "",
+      "Clicks": 35,
+      "Impressions": 11438,
+      "Position": 11.02,
+      "In sitemap": true,
+      "Live sample status": 200,
+      "Reason": "Main cost hub. Absorb both budget/ownership articles; show evidence for costs and quote inclusions."
+    }
+  ],
+  "retainedTopics": [
+    "supply versus installed scope",
+    "London site access and reinstatement",
+    "electricity calculation and tariffs",
+    "servicing, repairs and subscriptions",
+    "warranties, VAT, payment and variation terms"
+  ],
+  "removedClaims": [
+    "unsupported London price averages",
+    "unverified grants, insurance discounts and resale returns",
+    "universal servicing intervals and product warranties",
+    "implied available finance"
+  ],
+  "limitations": "No actual customer quote or backlink/assisted-lead export supplied. Original content is recoverable in Git. These two overlapping URLs permanently redirect to the equivalent expanded cost guide; no hard deletion or homepage redirect."
+}

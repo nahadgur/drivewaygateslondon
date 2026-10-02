@@ -1,6 +1,6 @@
 # Approved showcase integration
 
-The reviewed design is rendered by `components/showcase/ShowcasePage.tsx` as server-side HTML. The 211 templates in `data/showcase/pages.json` contain repository-owned, reviewed content only. They must never contain user-supplied HTML. No template JSON is imported by a client component.
+The reviewed design is rendered by `components/showcase/ShowcasePage.tsx` as server-side HTML. The 210 templates in `data/showcase/pages.json` contain repository-owned, reviewed content only. They must never contain user-supplied HTML. No template JSON is imported by a client component.
 
 Existing route modules retain metadata, canonicals, structured data, not-found checks, redirects and static parameters. The existing service-by-location routes and privacy page keep their body content and use the new shared header/footer. No new service-by-location pages were added.
 
@@ -37,3 +37,11 @@ Run `npm ci`, `npx tsc --noEmit`, and `npm run build`. Verify mobile and desktop
 With the production server running, run `node scripts/verify-showcase.mjs http://localhost:3000` to verify template destinations and local assets against the build. Existing on-demand routes are checked over HTTP.
 
 Validated on 30 September 2026: production build and TypeScript passed; all 211 reviewed URLs returned HTTP 200; 5,469 internal links/assets passed validation. Browser checks covered 320, 390, 768 and 1440 pixel widths across eight representative routes, mobile menu focus, search/filtering, entrance completion/replay/skip, and mocked form success, failure and retry. No test enquiry was sent to the live endpoint.
+
+## Service and cost review, 2 October 2026
+
+Six main service pages and four commercial pages now use reviewed copy. `data/service-content.json` and `data/commercial-content.json` preserve that editorial copy; they are not imported into the client bundle. When editing, keep those records, the corresponding `data/*.ts` descriptions and FAQs, and `data/showcase/pages.json` snapshots in sync. The cost guide body and FAQs live in `data/guides.ts` and its reviewed snapshot. The source-review records explain removed claims and the two cost-blog merges.
+
+The retired cost-blog URLs and their legacy aliases redirect directly to the cost guide through `next.config.js`. Do not reintroduce them into cards, internal links or the sitemap. The enquiry event contract, consent handling and remaining account-side setup are documented in `docs/enquiry-measurement.md`. A real submission/delivery test remains deferred by the owner.
+
+Validated on 2 October 2026: production build and type checks passed; 210 templates and 5,357 internal links/assets passed the route-manifest check. Browser checks covered all 11 revised content pages at 320, 390, 768 and 1440 pixels, FAQ/schema agreement, canonicals, four direct 308 redirects, sitemap/listing cleanup, and consent-gated form/phone analytics. Mocked HTTP and application failures produced no lead events; successful retries produced one. No real form submission or Analytics event was sent.

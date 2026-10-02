@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+import { trackEnquiry } from '@/lib/analytics';
 import { CheckCircle, ShieldCheck, Clock, Award, Phone } from 'lucide-react';
 import { GATE_TYPES, GOOGLE_SCRIPT_URL } from '@/data/leadForm';
 
@@ -32,6 +33,7 @@ const SLUG_TO_GATE_TYPE: Record<string, string> = {
 export const gateTypeForSlug = (slug?: string): string => (slug ? SLUG_TO_GATE_TYPE[slug] ?? '' : '');
 
 export function HeroLeadForm({ city, service }: HeroLeadFormProps) {
+  const sending = useRef(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess]       = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
@@ -45,6 +47,8 @@ export function HeroLeadForm({ city, service }: HeroLeadFormProps) {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (sending.current) return;
+    sending.current = true;
     setIsSubmitting(true);
     setErrorMessage(null);
     try {
@@ -52,14 +56,18 @@ export function HeroLeadForm({ city, service }: HeroLeadFormProps) {
         treatment: formData.treatment || service || '',
         page: window.location.href, source: 'Driveway Gates London' };
       const res  = await fetch(GOOGLE_SCRIPT_URL, { method: 'POST', body: JSON.stringify(payload) });
+      if (!res.ok) throw new Error('Submission failed');
       const text = await res.text();
       let data: { ok?: boolean; error?: string } = {};
       try { data = JSON.parse(text); } catch {}
       if (data?.ok === false) throw new Error(data.error || 'Submission failed');
+      trackEnquiry('hero_enquiry');
       setIsSubmitting(false); setIsSuccess(true);
     } catch (err) {
       console.error(err); setIsSubmitting(false);
       setErrorMessage('Something went wrong. Please check your details and try again.');
+    } finally {
+      sending.current = false;
     }
   };
 

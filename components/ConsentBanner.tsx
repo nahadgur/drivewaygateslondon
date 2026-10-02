@@ -3,9 +3,10 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Script from 'next/script';
+import { CONSENT_KEY, GA_ID, setAnalyticsConsent } from '@/lib/analytics';
+import { AnalyticsEvents } from '@/components/AnalyticsEvents';
 
-const GA_ID = 'G-F4ZHZBYKEL';
-const STORAGE_KEY = 'cookie-consent-v1';
+const STORAGE_KEY = CONSENT_KEY;
 type Consent = 'accepted' | 'rejected' | null;
 
 function readConsent(): Consent {
@@ -34,35 +35,32 @@ export function ConsentBanner() {
 
   useEffect(() => {
     setMounted(true);
-    setConsent(readConsent());
+    const saved = readConsent();
+    setAnalyticsConsent(saved);
+    setConsent(saved);
   }, []);
 
   const accept = () => {
+    setAnalyticsConsent('accepted');
     writeConsent('accepted');
     setConsent('accepted');
   };
 
   const reject = () => {
+    setAnalyticsConsent('rejected');
     writeConsent('rejected');
     setConsent('rejected');
   };
 
   return (
     <>
+      <AnalyticsEvents />
       {consent === 'accepted' && (
         <>
           <Script
             src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
             strategy="afterInteractive"
           />
-          <Script id="gtag-init" strategy="afterInteractive">
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${GA_ID}', { anonymize_ip: true });
-            `}
-          </Script>
         </>
       )}
 

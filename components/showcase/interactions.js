@@ -231,7 +231,7 @@ listen(reduceMotion, 'change', stopEntrance);
 const options = {
     "contemporary": {
         "title": "Aluminium Driveway Gates",
-        "text": "Lightweight, rust-proof aluminium gates in any RAL colour. The fastest-growing gate material in London: zero maintenance, sharp modern aesthetics, and 25-year powder coat guarantees.",
+        "text": "Aluminium driveway gates designed, supplied and installed across London. Choose a finish and opening layout with the specification, installation scope and aftercare confirmed in writing.",
         "image": "/showcase/assets/aluminium.webp",
         "alt": "Aluminium Driveway Gates",
         "link": "services/aluminium-driveway-gates/",

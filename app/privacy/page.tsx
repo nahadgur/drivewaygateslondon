@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-const LAST_UPDATED = '16 July 2026';
+const LAST_UPDATED = '2 October 2026';
 
 
 // Helper to keep the H2 pattern consistent across sections.
@@ -75,7 +75,10 @@ export default function PrivacyPage() {
               <p>
                 If you accept analytics cookies, we also collect standard analytics data through
                 Google Analytics, including anonymised IP address, browser type, device type,
-                pages visited, referral source, and session duration. Analytics data is used to
+                pages visited, referral source, session duration, successful enquiry submissions
+                and clicks on our phone links. Our enquiry and phone-click events do not include
+                your name, email address, phone number, postcode or message. A phone-link click
+                does not tell us whether a call connected. Analytics data is used to
                 understand site traffic in aggregate and is not used to identify individual
                 users.
               </p>
