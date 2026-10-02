@@ -39,10 +39,10 @@ export function HeroLeadForm({ city, service }: HeroLeadFormProps) {
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     fullName: '', phone: '', email: '',
-    location: city || '', treatment: service || '',
+    location: city || '', treatment: service || '', message: '',
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) =>
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -145,6 +145,11 @@ export function HeroLeadForm({ city, service }: HeroLeadFormProps) {
               placeholder="e.g. Barnet or N11" className={inputClass} />
           </div>
         )}
+        <div>
+          <label htmlFor="hero-message" className={labelClass}>Message <span className="font-normal text-brand-400">(optional)</span></label>
+          <textarea id="hero-message" name="message" rows={3} maxLength={1000} value={formData.message} onChange={handleChange}
+            placeholder="Gate width, access, timing or anything else useful" className={inputClass + ' resize-y'} />
+        </div>
         <button disabled={isSubmitting} type="submit"
           className="w-full bg-brand-900 hover:bg-brand-500 disabled:opacity-60 text-brand-50 font-syne font-bold py-3.5 px-6 transition-colors text-sm tracking-[.1em] uppercase mt-1">
           {isSubmitting ? 'Sending…' : 'Request a Free Call Back →'}

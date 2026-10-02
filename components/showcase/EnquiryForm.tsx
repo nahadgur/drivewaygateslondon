@@ -8,7 +8,7 @@ import { trackEnquiry } from '@/lib/analytics';
 export function EnquiryForm({ initialArea = '', initialService, formId = 'contact_enquiry' }: {
   initialArea?: string; initialService?: string; formId?: 'contact_enquiry' | 'hero_enquiry';
 } = {}) {
-  const [values, setValues] = useState({ fullName: '', phone: '', email: '', location: initialArea, treatment: gateTypeForSlug(initialService) || 'Not sure yet' });
+  const [values, setValues] = useState({ fullName: '', phone: '', email: '', location: initialArea, treatment: gateTypeForSlug(initialService) || 'Not sure yet', message: '' });
   const [state, setState] = useState<'ready' | 'sending' | 'success'>('ready');
   const [error, setError] = useState('');
   const sending = useRef(false);
@@ -21,7 +21,7 @@ export function EnquiryForm({ initialArea = '', initialService, formId = 'contac
     return () => request.current?.abort();
   }, [initialArea, initialService]);
   useEffect(() => { if (state === 'success') result.current?.focus(); }, [state]);
-  function change(event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) {
+  function change(event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) {
     setValues(current => ({ ...current, [event.target.name]: event.target.value }));
   }
   async function submit(event: React.FormEvent<HTMLFormElement>) {
@@ -60,6 +60,7 @@ export function EnquiryForm({ initialArea = '', initialService, formId = 'contac
     <label>Email address<input name="email" type="email" autoComplete="email" required value={values.email} onChange={change} /></label>
     <label>Area or postcode<input name="location" autoComplete="postal-code" required value={values.location} onChange={change} /></label>
     <label>Gate type<select name="treatment" value={values.treatment} onChange={change}>{GATE_TYPES.map(value => <option key={value}>{value}</option>)}</select></label>
+    <label>Message (optional)<textarea name="message" rows={3} maxLength={1000} placeholder="Gate width, access, timing or anything else useful" value={values.message} onChange={change} /></label>
     {error && <p className="enquiry-error" role="alert">{error}</p>}
     <button className="button" disabled={state === 'sending'} type="submit">{state === 'sending' ? 'Sending…' : 'Request a Free Call Back'} <span aria-hidden="true">→</span></button>
     <p className="form-note">By submitting, you agree that we can contact you about your enquiry. <a href="/privacy/">Privacy Policy</a></p>

@@ -26,3 +26,5 @@ body{display:block}
 .reviewed-service .service-reading section{scroll-margin-top:160px}
 .reviewed-cost .table-scroll{max-width:100%;overflow-x:auto}
 .reviewed-cost .table-scroll table{min-width:560px}
+.quote-form input,.quote-form select,.quote-form textarea{font-size:16px}
+.quote-form textarea{resize:vertical;min-height:88px;line-height:1.5}
