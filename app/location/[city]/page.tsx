@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { LOCATIONS, toSlug, getCityBySlug } from '@/data/locations';
-import { siteConfig } from '@/data/site';
+import { siteConfig, organizationRef } from '@/data/site';
 import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
@@ -53,12 +53,7 @@ export default function CityPage({ params }: Props) {
       name: cityName,
       containedInPlace: { '@type': 'City', name: 'London', addressCountry: 'GB' },
     },
-    provider: {
-      '@type': 'Organization',
-      '@id': `${siteConfig.url}/#organization`,
-      name: siteConfig.name,
-      url: siteConfig.url,
-    },
+    provider: organizationRef,
     offers: {
       '@type': 'Offer',
       price: '0',

@@ -36,9 +36,3 @@ export const LONDON_BOROUGHS: string[] = [
   'Wandsworth',
   'Westminster',
 ];
-
-// Central London centroid (approximate — Charing Cross), 5-decimal precision.
-export const LONDON_GEO = {
-  latitude: 51.50735,
-  longitude: -0.12776,
-} as const;

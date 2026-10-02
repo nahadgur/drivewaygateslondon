@@ -7,7 +7,7 @@ export const siteConfig = {
   // dialled form, so the displayed number and the link can never disagree.
   // Every phone link on the site is hidden while this is empty.
   phone: '020 3773 1310' as string,
-  email: '',
+  email: 'hello@drivewaygateslondon.co.uk',
 
   // The office. Held in parts so the schema can emit streetAddress and
   // postalCode separately, which is what Google reads. Use addressOneLine
@@ -26,12 +26,39 @@ export const siteConfig = {
     postcode: 'WC1B 3HH' as string,
   },
 
+  // Centroid of the office postcode (postcodes.io, WC1B 3HH). This is where the
+  // office is, not where the work happens: the service area is areaServed.
+  geo: { latitude: 51.51929, longitude: -0.13095 },
+
+  // When the phone is answered. The schema reads these, so the hours on the
+  // page and the hours Google sees can never disagree.
+  hours: {
+    days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+    opens: '08:00',
+    closes: '20:00',
+  },
+
   // Keyless Google map embed, so there is no API key to manage. Zoom 15 puts
   // the square and its surrounding streets in frame.
   map: { zoom: 15 },
   description: 'Driveway gate design, supply and installation across London. Electric sliding gates, swing gates, wooden and metal gates, automation, and repairs. Free site surveys and written quotes.',
   tagline: 'Driveway Gate Installation Across London',
 };
+
+/**
+ * The one business entity. layout.tsx emits the full LocalBusiness node under
+ * this @id on every page, so anything that names the business in schema
+ * (provider, author, publisher) uses organizationRef and resolves to that node
+ * instead of declaring a second, thinner business beside it.
+ */
+export const ORGANIZATION_ID = `${siteConfig.url}/#organization`;
+
+export const organizationRef = {
+  '@type': 'LocalBusiness',
+  '@id': ORGANIZATION_ID,
+  name: siteConfig.name,
+  url: siteConfig.url,
+} as const;
 
 /**
  * The phone number as a tel: href. National format in, E.164 out: strip the

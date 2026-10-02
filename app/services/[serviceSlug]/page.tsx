@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { services, getServiceBySlug } from '@/data/services';
-import { siteConfig, FAQS_SERVICES } from '@/data/site';
+import { siteConfig, FAQS_SERVICES, organizationRef } from '@/data/site';
 import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
@@ -48,7 +48,7 @@ export default function ServicePage({ params }: Props) {
     url: `${siteConfig.url}/services/${service.slug}/`,
     serviceType: service.title,
     areaServed: { '@type': 'AdministrativeArea', name: 'London', addressCountry: 'GB' },
-    provider: { '@type': 'LocalBusiness', name: siteConfig.name, url: siteConfig.url },
+    provider: organizationRef,
   };
 
   const combinedFaqs = service.reviewedFaqs

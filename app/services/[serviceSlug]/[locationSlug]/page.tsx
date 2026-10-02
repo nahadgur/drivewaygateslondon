@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { services, getServiceBySlug } from '@/data/services';
 import { LOCATIONS, toSlug, getCityBySlug } from '@/data/locations';
-import { siteConfig } from '@/data/site';
+import { siteConfig, organizationRef } from '@/data/site';
 import { ServiceAreaPage } from '@/components/showcase/ServiceAreaPage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
@@ -55,7 +55,7 @@ export default function ServiceLocationPage({ params }: Props) {
     url: `${siteConfig.url}/services/${params.serviceSlug}/${params.locationSlug}/`,
     serviceType: service.title,
     areaServed: { '@type': 'City', name: cityName, addressCountry: 'GB' },
-    provider: { '@type': 'LocalBusiness', name: siteConfig.name, url: siteConfig.url },
+    provider: organizationRef,
   };
 
   const faqSchema = service.faqs && service.faqs.length > 0 ? {

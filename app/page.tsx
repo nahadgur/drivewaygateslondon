@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
-import { siteConfig, HOMEPAGE_FAQS } from '@/data/site';
-import { LONDON_BOROUGHS, LONDON_GEO } from '@/data/boroughs';
+import { siteConfig, HOMEPAGE_FAQS, organizationRef } from '@/data/site';
+import { LONDON_BOROUGHS } from '@/data/boroughs';
 import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 
 export const metadata: Metadata = {
@@ -40,18 +40,7 @@ export default function HomePage() {
         containedInPlace: { '@type': 'City', name: 'London', addressCountry: 'GB' },
       })),
     ],
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: LONDON_GEO.latitude,
-      longitude: LONDON_GEO.longitude,
-    },
-    provider: {
-      '@type': 'Organization',
-      '@id': `${siteConfig.url}/#organization`,
-      name: siteConfig.name,
-      url: siteConfig.url,
-      logo: `${siteConfig.url}/android-chrome-512x512.png`,
-    },
+    provider: organizationRef,
     offers: {
       '@type': 'Offer',
       price: '0',
@@ -61,9 +50,9 @@ export default function HomePage() {
     },
     hoursAvailable: {
       '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-      opens: '08:00',
-      closes: '20:00',
+      dayOfWeek: siteConfig.hours.days,
+      opens: siteConfig.hours.opens,
+      closes: siteConfig.hours.closes,
     },
   };
 

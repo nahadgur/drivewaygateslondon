@@ -14,7 +14,7 @@ import '@/components/showcase/production.css';
 import '@/components/showcase/article-typography.css';
 import '@/components/showcase/service-area.css';
 import { Enhancements } from '@/components/showcase/Enhancements';
-import { siteConfig, addressOneLine } from '@/data/site';
+import { siteConfig, addressOneLine, ORGANIZATION_ID } from '@/data/site';
 import { LONDON_BOROUGHS } from '@/data/boroughs';
 import { ConsentBanner } from '@/components/ConsentBanner';
 
@@ -97,7 +97,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     // LocalBusiness rather than a bare Organization, because there is a real
     // trading address behind this and a service area around it.
     "@type": "LocalBusiness",
-    "@id": `${siteConfig.url}/#organization`,
+    "@id": ORGANIZATION_ID,
     name: siteConfig.name,
     url: siteConfig.url,
     logo: {
@@ -107,9 +107,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       height: 512,
     },
     description: "Design, supply and installation of driveway gates across London, including electric and automated systems, wooden and metal gates, repairs and servicing.",
+    image: `${siteConfig.url}/og-image.jpg`,
     // Emitted only while data/site.ts carries a number. Never claim a channel
     // nobody answers.
     ...(siteConfig.phone ? { telephone: siteConfig.phone } : {}),
+    ...(siteConfig.email ? { email: siteConfig.email } : {}),
     address: {
       "@type": "PostalAddress",
       streetAddress: siteConfig.address.street,
@@ -118,6 +120,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       // schema is a wrong answer, not a short one.
       ...(siteConfig.address.postcode ? { postalCode: siteConfig.address.postcode } : {}),
       addressCountry: "GB",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: siteConfig.geo.latitude,
+      longitude: siteConfig.geo.longitude,
+    },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: siteConfig.hours.days,
+      opens: siteConfig.hours.opens,
+      closes: siteConfig.hours.closes,
     },
     areaServed: [
       { "@type": "City", name: "London", addressCountry: "GB" },

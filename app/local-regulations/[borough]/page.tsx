@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { boroughRegulations, getBoroughBySlug } from '@/data/regulations';
-import { siteConfig } from '@/data/site';
+import { siteConfig, organizationRef } from '@/data/site';
 import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
@@ -54,15 +54,9 @@ export default function BoroughPlanningPage({ params }: Props) {
       width: 1200,
       height: 630,
     },
-    author: {
-      '@type': 'Organization',
-      name: siteConfig.name,
-      url: siteConfig.url,
-    },
+    author: organizationRef,
     publisher: {
-      '@type': 'Organization',
-      name: siteConfig.name,
-      url: siteConfig.url,
+      ...organizationRef,
       logo: {
         '@type': 'ImageObject',
         url: `${siteConfig.url}/android-chrome-512x512.png`,

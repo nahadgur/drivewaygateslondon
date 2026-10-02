@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { accessControlServices, getAccessControlBySlug } from '@/data/access-control';
-import { siteConfig } from '@/data/site';
+import { siteConfig, organizationRef } from '@/data/site';
 import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
@@ -49,7 +49,7 @@ export default function AccessControlPage({ params }: Props) {
     serviceType: service.title,
     image: service.image.startsWith('http') ? service.image : `${siteConfig.url}${service.image}`,
     areaServed: { '@type': 'City', name: 'London', addressCountry: 'GB' },
-    provider: { '@type': 'LocalBusiness', name: siteConfig.name, url: siteConfig.url },
+    provider: organizationRef,
   };
 
   const faqSchema = service.faqs && service.faqs.length > 0 ? {

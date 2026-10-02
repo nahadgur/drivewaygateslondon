@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { commercialServices, getCommercialBySlug } from '@/data/commercial';
-import { siteConfig } from '@/data/site';
+import { siteConfig, organizationRef } from '@/data/site';
 import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
@@ -48,7 +48,7 @@ export default function CommercialServicePage({ params }: Props) {
     url: `${siteConfig.url}/commercial/${service.slug}/`,
     serviceType: service.title,
     areaServed: { '@type': 'City', name: 'London', addressCountry: 'GB' },
-    provider: { '@type': 'LocalBusiness', name: siteConfig.name, url: siteConfig.url },
+    provider: organizationRef,
   };
 
   const faqSchema = service.faqs && service.faqs.length > 0 ? {

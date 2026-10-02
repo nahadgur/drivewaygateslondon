@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { publishedArticles, getArticleBySlug } from '@/data/blog';
 import { services } from '@/data/services';
-import { siteConfig } from '@/data/site';
+import { siteConfig, organizationRef } from '@/data/site';
 import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
@@ -57,15 +57,9 @@ export default function BlogArticlePage({ params }: Props) {
       width: article.featuredImageWidth ?? 1536,
       height: article.featuredImageHeight ?? 1024,
     },
-    author: {
-      '@type': 'Organization',
-      name: siteConfig.name,
-      url: siteConfig.url,
-    },
+    author: organizationRef,
     publisher: {
-      '@type': 'Organization',
-      name: siteConfig.name,
-      url: siteConfig.url,
+      ...organizationRef,
       logo: {
         '@type': 'ImageObject',
         url: `${siteConfig.url}/android-chrome-512x512.png`,

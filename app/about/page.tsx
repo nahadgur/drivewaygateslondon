@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { ShowcasePage } from '@/components/showcase/ShowcasePage';
-import { siteConfig } from '@/data/site';
+import { siteConfig, organizationRef } from '@/data/site';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 const title = 'About Driveway Gates London';
@@ -23,9 +23,7 @@ export default function AboutPage() {
     description,
     url,
     mainEntity: {
-      '@type': 'Organization',
-      name: siteConfig.name,
-      url: siteConfig.url,
+      ...organizationRef,
       foundingDate: '2025',
       founder: [{ '@type': 'Person', name: 'Ben' }, { '@type': 'Person', name: 'Jack' }],
     },
