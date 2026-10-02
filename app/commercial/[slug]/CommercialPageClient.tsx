@@ -95,7 +95,7 @@ export function CommercialPageClient({ params }: { params: { slug: string } }) {
                   <div className="craft-label">Get a Quote</div>
                   <p className="text-brand-600 text-sm mb-5">Free site survey and written quote, no obligation.</p>
                   <button onClick={() => setIsModalOpen(true)} className="btn-primary w-full justify-center">Request a Call Back</button>
-                  <p className="text-center text-xs text-brand-500 mt-3">Within 2 hours · No obligation</p>
+                  <p className="text-center text-xs text-brand-500 mt-3">Discuss your project · No obligation</p>
                 </div>
                 <div className="border-2 border-brand-200 p-5 bg-brand-50">
                   <div className="craft-label">Other Commercial Services</div>

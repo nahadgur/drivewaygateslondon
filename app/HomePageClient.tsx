@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, MapPin, Shield, Sparkles, Calendar, Globe, Users, CreditCard, Zap } from 'lucide-react';
 import { services } from '@/data/services';
 import { toSlug } from '@/data/locations';
-import { pricingTiers, financeInfo, treatmentIncludes } from '@/data/pricing';
+import { PricingSection } from '@/components/PricingSection';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/Hero';
@@ -157,78 +157,7 @@ export function HomePageClient() {
           </div>
         </Section>
 
-        {/* ── Pricing ── */}
-        <Section>
-          <SectionHead
-            label="Pricing Guide 2026"
-            title={<>What London Homeowners<br />Actually Pay for Driveway Gates</>}
-          />
-          <p className="text-brand-700 mb-8 max-w-2xl" style={{ fontSize: '15.5px' }}>
-            Every project is different, but these are the price ranges our customers typically pay across London. As the capital, prices sit at the upper end nationally.
-          </p>
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse text-sm">
-              <thead>
-                <tr className="border-b-[3px] border-brand-900">
-                  <th className="py-3 pr-5 text-left font-syne font-bold text-[9.5px] tracking-[.16em] uppercase text-brand-600">Gate Type</th>
-                  <th className="py-3 pr-5 text-left font-syne font-bold text-[9.5px] tracking-[.16em] uppercase text-brand-600">Price Range</th>
-                  <th className="py-3 pr-5 text-left font-syne font-bold text-[9.5px] tracking-[.16em] uppercase text-brand-600 hidden md:table-cell">Install Time</th>
-                  <th className="py-3 text-left font-syne font-bold text-[9.5px] tracking-[.16em] uppercase text-brand-600 hidden lg:table-cell">Includes</th>
-                </tr>
-              </thead>
-              <tbody>
-                {pricingTiers.map((tier, i) => (
-                  <tr key={tier.slug} className="border-b border-brand-200 hover:bg-brand-100 transition-colors">
-                    <td className="py-4 pr-5 font-syne font-bold text-[13px] text-brand-900">{tier.treatment}</td>
-                    <td className="py-4 pr-5">
-                      <span className="font-display text-[18px] text-brand-500 font-semibold">
-                        £{tier.priceFrom.toLocaleString()} – £{tier.priceTo.toLocaleString()}
-                      </span>
-                    </td>
-                    <td className="py-4 pr-5 text-brand-700 hidden md:table-cell">{tier.typicalDuration}</td>
-                    <td className="py-4 text-brand-600 text-xs hidden lg:table-cell">{tier.alignerSets}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-
-          {/* Finance strip */}
-          <div className="bg-brand-900 px-7 py-6 mt-0.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <div>
-              <div className="font-syne font-bold text-[9px] tracking-[.18em] uppercase text-brand-500 mb-1">0% Finance Available</div>
-              <div className="font-display text-4xl text-white leading-none">From £{financeInfo.monthlyFrom}/month</div>
-              <div className="text-xs text-brand-400 mt-1">Over {financeInfo.spreadOver} at 0% APR — subject to status</div>
-            </div>
-            <button onClick={open} className="btn-gold flex-shrink-0">Get Your Free Quote</button>
-          </div>
-
-          {/* Includes */}
-          <div className="grid md:grid-cols-2 gap-6 mt-6">
-            <div className="border-2 border-brand-200 p-6">
-              <div className="font-syne font-bold text-[10px] tracking-[.16em] uppercase text-brand-700 mb-4">Every Quote Includes</div>
-              <ul className="space-y-2">
-                {treatmentIncludes.map((item, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-brand-700">
-                    <CheckCircle className="w-3.5 h-3.5 text-brand-500 flex-shrink-0 mt-0.5" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-brand-50 border-2 border-brand-200 p-6">
-              <div className="flex items-center gap-2 mb-3">
-                <CreditCard className="w-4 h-4 text-brand-600" />
-                <div className="font-syne font-bold text-[10px] tracking-[.16em] uppercase text-brand-700">Spread the Cost at 0%</div>
-              </div>
-              <p className="text-sm text-brand-600 leading-relaxed mb-3">{financeInfo.description}</p>
-              <div className="bg-white border-2 border-brand-200 p-4">
-                <div className="font-display text-3xl text-brand-500 font-semibold">From £{financeInfo.monthlyFrom}/month</div>
-                <div className="text-xs text-brand-500 mt-1">Over {financeInfo.spreadOver} at 0% APR</div>
-              </div>
-            </div>
-          </div>
-        </Section>
+        <Section><PricingSection /></Section>
 
         {/* ── Gate Types / Services ── */}
         <Section className="bg-brand-100 border-y-2 border-brand-200">

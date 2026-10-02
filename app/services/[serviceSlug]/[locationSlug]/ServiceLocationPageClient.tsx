@@ -46,7 +46,7 @@ export function ServiceLocationPageClient({ params }: { params: { serviceSlug: s
               {service.title} in {cityName}
             </h1>
             <p className="text-brand-700 mb-10 max-w-lg leading-relaxed" style={{ fontSize: 'clamp(15px, 1.5vw, 17px)' }}>
-              We design, supply and install {service.title.toLowerCase()} in {cityName}. Fill in the short form, we call you back within 24 hours to arrange a free site survey, then you get a written fixed quote.
+              We design, supply and install {service.title.toLowerCase()} in {cityName}. Fill in the short form, we call you back to arrange a free site survey, then you get a written fixed quote.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mb-10">
               <button onClick={() => setIsModalOpen(true)} className="btn-primary !text-[12px] !py-3.5 !px-7">
@@ -79,9 +79,9 @@ export function ServiceLocationPageClient({ params }: { params: { serviceSlug: s
           <div className="grid md:grid-cols-2 lg:grid-cols-4 border-2 border-brand-900 bg-brand-200 gap-[1px] mb-16">
             {[
               { icon: <Award className="w-5 h-5" />, title: 'Gate Specialists', desc: `We design, supply and install driveway gates ourselves. It is all we do.` },
-              { icon: <Clock className="w-5 h-5" />, title: 'Survey Within a Week', desc: `We can usually book a free site survey in ${cityName} within 7 days.` },
-              { icon: <Shield className="w-5 h-5" />, title: 'Insured & Warranted', desc: 'We carry public liability cover and every job comes with a written warranty.' },
-              { icon: <Users className="w-5 h-5" />, title: 'Local Knowledge', desc: `We install your gate type across ${cityName} and know the local site conditions.` },
+              { icon: <Clock className="w-5 h-5" />, title: 'Site Survey', desc: `Send your postcode and project details to arrange a survey in ${cityName}.` },
+              { icon: <Shield className="w-5 h-5" />, title: 'Written Terms', desc: 'Confirm the installation scope, insurance details and applicable warranty terms before ordering.' },
+              { icon: <Users className="w-5 h-5" />, title: 'Local Knowledge', desc: `The survey checks the entrance, access and conditions at your property.` },
             ].map((b, i) => (
               <div key={i} className="bg-brand-50 p-6">
                 <div className="border border-brand-400/30 w-10 h-10 flex items-center justify-center text-brand-500 mb-3">{b.icon}</div>
@@ -98,8 +98,8 @@ export function ServiceLocationPageClient({ params }: { params: { serviceSlug: s
                 <div className="craft-label">Overview</div>
                 <h2 className="craft-h2 mb-4">What to Expect From {service.title} in {cityName}</h2>
                 <div className="space-y-4 text-brand-700 leading-relaxed text-sm">
-                  <p>{service.title} are one of the most commonly requested gate types among {cityName} homeowners. We understand the specific challenges that {cityName} properties present, from tight access to sloped driveways, period property restrictions, and London clay ground conditions.</p>
-                  <p>{cityName} homeowners also benefit from working with a team that knows the local planning rules. Most driveway gates fall under permitted development, but some London boroughs have additional guidelines. We handle these routinely and will flag any issues during the survey.</p>
+                  <p>{service.title} need a layout suited to your {cityName} property. The survey should check movement space, supports, ground conditions, parking and pedestrian access.</p>
+                  <p>Check planning and highway requirements for the actual property with the relevant authority before ordering. Ask the quotation to identify any specialist work, permissions or appointments required.</p>
                 </div>
               </section>
 
@@ -110,11 +110,11 @@ export function ServiceLocationPageClient({ params }: { params: { serviceSlug: s
                 <h2 className="craft-h2 mb-6">How {service.title} Installation Works in {cityName}</h2>
                 <div className="border-2 border-brand-900 bg-brand-200 gap-[1px] flex flex-col">
                   {[
-                    `Fill in the short form and we call you back within 24 hours to book a free site survey in ${cityName}`,
+                    `Fill in the short form and we call you back to book a free site survey in ${cityName}`,
                     'We visit, measure up, discuss design and material options, and check ground conditions',
                     'You receive a detailed written fixed quote with a clear cost breakdown and timeline',
                     'Once approved, the gate is designed, fabricated, and delivered to site',
-                    'Installation takes 2 to 4 days: groundwork, gate fitting, automation, and finishing',
+                    'Agree a programme for the quoted groundworks, gate fitting, automation and finishing',
                     'Full commissioning, safety testing, and handover with remotes and manual release training',
                   ].map((step, i) => (
                     <div key={i} className="bg-brand-50 p-5 flex gap-4">
@@ -132,10 +132,10 @@ export function ServiceLocationPageClient({ params }: { params: { serviceSlug: s
                 <h2 className="craft-h2 mb-4">Why Choose Us for {service.title} in {cityName}?</h2>
                 <div className="space-y-2">
                   {[
-                    'We design, supply and install every gate ourselves, fully insured with a written warranty',
+                    'Discuss design, supply and installation in one written scope',
                     'You get a free site survey with a detailed written fixed quote before any commitment',
-                    'We offer flexible scheduling including evenings and weekends',
-                    'Aftercare, warranties, and ongoing maintenance support are included as standard',
+                    'Agree appointment and installation arrangements before booking',
+                    'Confirm aftercare, maintenance charges and applicable warranty terms in writing',
                   ].map((point, i) => (
                     <div key={i} className="flex items-start gap-3 border-b-2 border-brand-100 py-3 last:border-b-0">
                       <CheckCircle className="w-4 h-4 text-brand-500 flex-shrink-0 mt-0.5" />
@@ -181,8 +181,8 @@ export function ServiceLocationPageClient({ params }: { params: { serviceSlug: s
                   </ul>
                 </div>
                 <div className="bg-brand-900 p-6 border-2 border-brand-700">
-                  <div className="font-display text-3xl text-brand-400">From £99/month</div>
-                  <p className="text-brand-300 text-sm mt-1 mb-4">0% finance available. Spread the cost over 6 to 36 months.</p>
+                  <div className="font-display text-3xl text-brand-400">Compare your quotation</div>
+                  <p className="text-brand-300 text-sm mt-1 mb-4">Check the complete scope, exclusions and payment terms before accepting.</p>
                   <button onClick={() => setIsModalOpen(true)} className="btn-gold w-full justify-center">Get a Free Quote</button>
                 </div>
               </div>

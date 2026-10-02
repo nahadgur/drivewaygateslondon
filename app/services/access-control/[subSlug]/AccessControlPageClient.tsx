@@ -86,7 +86,7 @@ export function AccessControlPageClient({ params }: { params: { subSlug: string 
                   <h3 className="font-syne font-bold text-sm uppercase tracking-tight text-brand-900 mb-3">Get a Free Quote</h3>
                   <p className="text-brand-600 text-sm mb-5">Free site survey and written quote, no obligation.</p>
                   <button onClick={() => setIsModalOpen(true)} className="btn-primary w-full justify-center">Request a Call Back</button>
-                  <p className="text-center text-xs text-brand-500 mt-3">Within 2 hours · 100% free</p>
+                  <p className="text-center text-xs text-brand-500 mt-3">Discuss your project · 100% free</p>
                 </div>
                 <div className="border-2 border-brand-200 p-5 bg-brand-50">
                   <div className="craft-label">Other Systems</div>

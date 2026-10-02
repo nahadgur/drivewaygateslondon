@@ -285,39 +285,65 @@ const guideEntries: Guide[] = [
   },
 
   {
-    slug: 'how-to-manually-open-electric-gate',
-    title: 'How to Manually Open an Electric Gate During a Power Cut',
-    metaTitle: 'How to Manually Open an Electric Gate (During Power Cuts)',
-    metaDescription: 'Power cut in London? Learn exactly how to manually open your electric gate using the manual release key. Step-by-step emergency guide.',
-    pillar: 'Maintenance & Troubleshooting',
-    excerpt: 'Power cut or motor failure — every automated gate has a manual release. This step-by-step guide covers how to find and use it for both swing gates and sliding gates, and what to do if it will not operate.',
-    readingMinutes: 5,
-    publishDate: '2026-02-28',
-    featuredImage: '/images/gates/gate-swing-open-night-stone-pillars-drive.png',
-    intro: 'Every automated driveway gate installed to UK standards includes a manual release mechanism. This is a legal requirement under BS EN 12453 — not an optional extra. The manual release allows you to open and close the gate by hand when the power is off or the motor fails.',
-    sections: [
-      {
-        heading: "Before You Start: Check if It's a Local or Area Power Cut",
-        body: `Before reaching for the manual release key, quickly confirm whether the power cut is affecting just your gate or a wider area. Check that your property has power by looking at indoor lights or trying a socket. If the property has power but the gate does not respond, the fault is likely a tripped circuit breaker for the gate supply, a blown fuse, or a <a href="/blog/gate-motor-humming-not-moving/">motor fault</a> rather than a general power cut.\n\nIf your property has no power, check whether the cut is local or area-wide. <a href="https://www.ukpowernetworks.co.uk/" target="_blank" rel="noopener noreferrer">UK Power Networks</a> operates the electricity distribution network for London and the South East and maintains a real-time outage map on their website.\n\nIf the power cut is confirmed as an area outage, the manual release is your only option for gate operation until power is restored. Your gate should have a battery backup unit fitted — try the remote before using the manual release.`,
-      },
-      {
-        heading: 'How to Manually Release a Ram-Arm Motor',
-        body: `Ram-arm motors — the type with visible motor arms mounted on the back of the gate and post — have the simplest manual release mechanism. The process for most major brands (FAAC, CAME, BFT, Nice) is as follows.\n\nLocate the manual release point on the motor body. On most ram-arm motors, this is a key barrel or lever on the side of the motor housing, typically covered by a weatherproof cap. The manual release key should have been supplied with the gate system at installation.\n\nInsert the key and turn it to the released position — usually a quarter or half turn. You will feel or hear a click as the motor disengages from the drive mechanism. The gate leaf is now free to be pushed by hand. When power is restored, return the key to the engaged position before using the remote.`,
-      },
-      {
-        heading: 'How to Manually Release an Underground Motor',
-        body: `Underground motors are mounted beneath the gate post cap. The key barrel is typically located on the top of the post cap or on the side of the motor housing just below ground level, accessible through a small cover plate.\n\nInsert the electric gate manual release key into the barrel and turn as indicated. The gate should immediately become free to be pushed by hand. For sliding gates, the manual release is usually located on the motor casing itself. Check that the track is clear of debris before pushing.\n\nIf the manual release key will not turn, if the gate cannot be moved by hand after releasing the motor, or if the release mechanism appears damaged, do not force it. This situation requires an engineer immediately — contact us for <a href="/services/gate-repair-and-maintenance/">emergency electric gate repair in London</a> by leaving your phone number in the form above and our team will arrange rapid assistance.`,
-      },
-    ],
-    faqs: [
-      { question: 'Where is the manual release on my electric gate?', answer: 'For ram-arm motors, the manual release is a key barrel or lever on the motor housing itself, usually covered by a small weatherproof cap. For underground motors, it is accessed via a cover plate on the top of the post cap. You should have been shown the location and given the release key at handover.' },
-      { question: 'What do I do if I have lost the manual release key?', answer: 'Contact us or the motor manufacturer with your motor model details. Most manufacturers can supply replacement keys. We can also supply and fit a replacement key barrel if the original is damaged.' },
-      { question: 'Will my electric gate work during a power cut?', answer: 'If a battery backup unit was installed, it will continue to power the motor for 20 to 50 cycles after mains power fails. After the battery is exhausted, or if no battery backup is fitted, the gate must be operated using the manual release.' },
-      { question: 'My manual release will not turn — what should I do?', answer: 'Do not force it. Apply a penetrating lubricant to the barrel and allow it to work for five minutes before trying again. If it still will not turn, call a gate engineer — forcing a seized mechanism risks breaking the release entirely.' },
-    ],
-    relatedServiceSlug: 'gate-repair-and-maintenance',
-    relatedGuides: ['winter-gate-maintenance'],
-  },
+  "slug": "how-to-manually-open-electric-gate",
+  "title": "How to Manually Open an Electric Gate During a Power Cut",
+  "metaTitle": "How to Manually Open an Electric Gate During a Power Cut | Driveway Gates London",
+  "metaDescription": "Find the correct manual-release instructions for your gate and understand when to stop and ask for help instead of forcing it open.",
+  "pillar": "Maintenance & Troubleshooting",
+  "excerpt": "Find the correct manual-release instructions for your gate and understand when to stop and ask for help instead of forcing it open.",
+  "readingMinutes": 3,
+  "publishDate": "2026-02-28",
+  "featuredImage": "/images/guides/how-to-manually-open-electric-gate.webp",
+  "intro": "Find the correct manual-release instructions for your gate and understand when to stop and ask for help instead of forcing it open.",
+  "sections": [
+    {
+      "heading": "Start with the instructions supplied for your gate",
+      "body": "<p>Manual release arrangements differ between operators. Find the user instructions for your installed system and the release training provided at handover. Check the model from records or an identification label only where you can see it safely.</p><p>This guide cannot supply a universal key direction, cover-opening sequence or release position. If the instructions or key are missing, contact the installer or a competent gate engineer before attempting to release the mechanism.</p>"
+    },
+    {
+      "heading": "Check whether releasing it could allow uncontrolled movement",
+      "body": "<p>Keep people, pets and vehicles away from the gate’s movement area. A gate freed from its drive may move because of a slope, wind or its own weight. Damage to hinges, supports or running gear can make manual movement unsafe.</p><p>Do not release a leaning, derailed, damaged or unstable gate. If you cannot control and secure it using the supplied instructions, keep clear and seek assistance. If someone is trapped or faces immediate danger, call the emergency services.</p>"
+    },
+    {
+      "heading": "Locate the release without dismantling the operator",
+      "body": "<p>A surface-mounted operator may have a release on its housing. An underground swing-gate system may use a release arrangement near the gate or foundation box. A sliding system may have a release associated with its operator. The exact location and access method depend on the product.</p><p>Use the manufacturer’s diagram for your model. Do not open electrical enclosures, remove guards or disconnect drive components to search for a release. A key from another system may not fit or operate it correctly.</p>"
+    },
+    {
+      "heading": "Follow the model-specific isolation and release sequence",
+      "body": "<p>Follow the supplied instructions for isolating power and preventing automatic operation before release. A mains power cut does not establish that every part is unpowered: the installation may have a backup battery or another supply.</p><p>Only operate the release and move the gate if the instructions and conditions allow you to do so safely. Use the specified method of holding or securing it. Do not force a seized key, lever or gate. Stop if movement is uneven, unexpectedly heavy or uncontrolled.</p>"
+    },
+    {
+      "heading": "Before returning to automatic operation",
+      "body": "<p>Use the manufacturer’s instructions for securing the gate, re-engaging the drive and restoring operation. Keep the movement area clear. If the original problem was a mechanical fault rather than a power cut, restoring the supply does not resolve it.</p><p>If you are unsure whether the mechanism has re-engaged or the gate behaves differently, stop using it and arrange an assessment. Do not bypass sensors or repeatedly trigger the motor to make it reconnect.</p>"
+    },
+    {
+      "heading": "Prepare for the next power interruption",
+      "body": "<p>Keep the correct key accessible to authorised users and store the instructions where they can be found. Ask the installer to demonstrate release and explain when it must not be attempted. Agree how people can use the entrance during a fault.</p><p>Backup capacity depends on the product, battery condition, accessories and use. Ask for the actual specification rather than a fixed cycle count. For a stuck mechanism, request <a href=\"/services/gate-repair-and-maintenance/\">gate repair assistance</a>. See <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/responsibilities.htm\" target=\"_blank\" rel=\"noopener noreferrer\">HSE guidance on responsibilities</a> for user information and release arrangements.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Where is the manual release on my gate?",
+      "answer": "Check the user instructions for the exact operator. Surface, underground and sliding systems can have different release arrangements. Do not dismantle equipment to look for one."
+    },
+    {
+      "question": "What if I have lost the release key?",
+      "answer": "Contact the installer or a gate engineer with the safely obtained equipment details. Do not force the lock or assume that another model’s key is suitable."
+    },
+    {
+      "question": "Will the gate work during a power cut?",
+      "answer": "Only if the installed system has a suitable backup arrangement and it can support the required use. Runtime varies; check the actual specification and condition."
+    },
+    {
+      "question": "The gate is hard to move after release. Should I push harder?",
+      "answer": "No. Stop, keep the area clear and ask for assistance. Resistance or uncontrolled movement can indicate a mechanical or structural problem."
+    }
+  ],
+  "relatedServiceSlug": "gate-repair-and-maintenance",
+  "relatedGuides": [],
+  "featuredImageAlt": "Homeowner using the manual release on an electric sliding-gate motor",
+  "updatedDate": "2026-10-02"
+},
 
   {
     slug: 'winter-gate-maintenance',
@@ -355,109 +381,175 @@ const guideEntries: Guide[] = [
   },
 
   {
-    slug: 'uk-electric-gate-safety-laws',
-    title: 'UK Electric Gate Safety Laws: What London Homeowners Need to Know',
-    metaTitle: "UK Electric Gate Safety Laws | London Homeowner's Guide",
-    metaDescription: 'Ensure your driveway gates are legal and safe. Learn about UK electric gate safety laws, HSE directives, and liability for London homes.',
-    pillar: 'Safety & Compliance',
-    excerpt: 'Automated gates are classified as machinery under UK law. That means they come with legal obligations for installers, and ongoing responsibilities for homeowners. This guide explains what the UK electric gate safety laws actually require.',
-    readingMinutes: 9,
-    publishDate: '2026-03-14',
-    featuredImage: '/images/gates/gate-wrought-iron-gold-crest-stately-home.png',
-    intro: 'Are electric gates legal? Yes — but only when they are designed, installed, and maintained to the specific safety standards that UK law requires. A gate installed without proper safety testing, without CE or UKCA marking, or by an installer unfamiliar with the relevant directives is not merely a safety risk — it is a potential source of personal liability for the homeowner.',
-    sections: [
-      {
-        heading: 'How UK Law Classifies Automated Gates',
-        body: `Automated driveway gates are classified as machinery under the Supply of Machinery (Safety) Regulations 2008 — the UK equivalent of the EU Machinery Directive. This classification has significant implications. As machinery, automated gates must be designed and built to meet specific essential health and safety requirements, and the installer who places the completed gate system into service is classified as the manufacturer of that machinery for legal purposes.\n\nThe practical result is that a gate installer in the UK cannot simply hang a gate, fit a motor, and hand the keys over. They are legally obligated to conduct a risk assessment, design out or guard against each identified risk using appropriate safety devices, <a href="/guides/force-testing-explained/">test the gate to BS EN 12453 and BS EN 12445</a>, produce a technical file documenting the risk assessment and test results, and issue a Declaration of Conformity.\n\nThe <a href="https://www.hse.gov.uk/" target="_blank" rel="noopener noreferrer">Health and Safety Executive</a> provides guidance on automated gate safety under their broader machinery safety framework, and has investigated fatalities and serious injuries caused by non-compliant gate installations. Their position is unambiguous: a gate that injures someone is a machinery incident.`,
-      },
-      {
-        heading: 'Homeowner vs Installer Liability: Who Is Responsible?',
-        body: `The question of liability in the event of a gate-related injury is frequently misunderstood by homeowners. The installer bears primary responsibility for the safety of the installation at the point it is handed over. If the gate was installed without proper safety devices, was not force-tested, or was not accompanied by a Declaration of Conformity, the installer has not fulfilled their legal obligations.\n\nHomeowner liability arises in two specific circumstances. First, if the homeowner modifies the gate system after installation in a way that compromises safety — <a href="/guides/photocells-vs-safety-edges/">removing photocell beams</a>, bypassing safety functions, or increasing motor speed beyond tested limits. Second, if the homeowner fails to maintain the gate system to the point where a safety device stops functioning and they do not address the failure.\n\nFor <a href="/services/automated-gate-systems/">fully compliant electric gates in London</a>, every installation we carry out is accompanied by a full Declaration of Conformity, force test documentation, and a maintenance schedule.`,
-      },
-      {
-        heading: 'CE Marking, UKCA Marking, and What They Mean for Your Gate',
-        body: `Prior to the UK departure from the EU, all automated gate motors sold in the UK were required to carry CE marking. Since 1 January 2023, new machinery and electrical products placed on the UK market must carry UKCA (UK Conformity Assessed) marking instead.\n\nFor homeowners, the practical implication is straightforward: any new gate motor, control board, or intercom system installed after January 2023 should carry UKCA marking. For the gate installation as a completed system, the installer issues a Declaration of Conformity confirming that the system meets the Supply of Machinery (Safety) Regulations 2008.\n\nIf your gate was installed more than five years ago and you have no documentation of force testing or a Declaration of Conformity, a compliance check is strongly advisable. Leave your phone number in the form above and we will call you back within 24 hours to discuss a compliance audit or a new compliant installation for your property.`,
-      },
-    ],
-    faqs: [
-      { question: 'Are electric gates legal in the UK?', answer: 'Yes, electric gates are legal in the UK when they are designed, installed, and maintained to the required safety standards. The key requirements are a site-specific risk assessment, appropriate safety devices, force testing to BS EN 12445, and a Declaration of Conformity issued by the installer.' },
-      { question: 'What happens if my electric gate injures someone?', answer: 'The installer bears primary responsibility if the installation was not properly risk-assessed, equipped with safety devices, or force-tested. Homeowner liability arises if the gate was modified after installation in a way that compromised safety, or if a known safety device failure was not rectified.' },
-      { question: 'What is a Declaration of Conformity for an electric gate?', answer: 'A Declaration of Conformity is the legal document issued by the installer confirming that the completed gate installation meets the Supply of Machinery (Safety) Regulations 2008 and the relevant harmonised standards. You should receive one at installation handover and keep it with your property documents.' },
-      { question: 'Does my electric gate need to be tested every year?', answer: 'Annual safety testing is not a statutory requirement for residential installations in England and Wales, but it is strongly recommended. Safety devices degrade over time, and documented annual safety checks protect homeowners from liability in the event of an incident.' },
-    ],
-    relatedServiceSlug: 'automated-gate-systems',
-    relatedGuides: ['force-testing-explained', 'photocells-vs-safety-edges'],
-  },
+  "slug": "uk-electric-gate-safety-laws",
+  "title": "UK Electric Gate Safety: Responsibilities and Handover",
+  "metaTitle": "UK Electric Gate Safety: Responsibilities and Handover | Driveway Gates London",
+  "metaDescription": "Understand installer responsibilities, conformity documents and the difference between private-home and workplace gate maintenance duties.",
+  "pillar": "Safety & Compliance",
+  "excerpt": "Understand installer responsibilities, conformity documents and the difference between private-home and workplace gate maintenance duties.",
+  "readingMinutes": 3,
+  "publishDate": "2026-03-14",
+  "featuredImage": "/images/guides/uk-electric-gate-safety-laws.webp",
+  "intro": "Understand installer responsibilities, conformity documents and the difference between private-home and workplace gate maintenance duties.",
+  "sections": [
+    {
+      "heading": "The completed entrance matters",
+      "body": "<p>A powered gate is a machine. Its safety depends on the assembled gate, supports, drive, controls, protective measures and surroundings. A marked motor or a list of fitted sensors does not by itself demonstrate that the complete installation is safe.</p><p>A site assessment should consider the people who can encounter the gate, including visitors and children, and the places where movement could cause injury. The proposal and handover should explain how the identified risks are addressed.</p>"
+    },
+    {
+      "heading": "Installer and manufacturer responsibilities",
+      "body": "<p>HSE explains that the person assembling a powered gate from components can become the manufacturer of the completed machine. Converting an existing manual gate to power operation can also create these responsibilities.</p><p>Ask who will take responsibility for the completed installation. Request the Declaration of Conformity, user instructions and the recommended maintenance and safety checks at handover. A component manual or motor receipt is not a substitute for the documents for the assembled gate.</p>"
+    },
+    {
+      "heading": "CE and UKCA marking in Great Britain",
+      "body": "<p>Do not rely on the claim that CE marking stopped being accepted for gate equipment in January 2023. Current government guidance describes CE recognition alongside or in place of UKCA for relevant product regimes in Great Britain. The applicable rules depend on the product and market.</p><p>Ask the supplier to identify the conformity route and documents for the equipment and completed installation. See <a href=\"https://www.gov.uk/guidance/placing-ukca-or-ce-marked-products-on-the-market-in-great-britain\" target=\"_blank\" rel=\"noopener noreferrer\">GOV.UK guidance on UKCA or CE marked products</a>. Northern Ireland has separate arrangements.</p>"
+    },
+    {
+      "heading": "Private homes, workplaces and landlords",
+      "body": "<p>HSE distinguishes private domestic owners from people responsible for gates at work or as part of a work activity. Its guidance says health and safety law does not apply to owners of gates on privately owned domestic premises, while recommending regular checks. This does not remove product or installer obligations, or a householder’s potential liability for harm or damage.</p><p>Commercial owners, employers, landlords and managing agents can have duties to keep gates safe. If your entrance serves rented property, a shared development or a business, establish who is responsible for its operation, maintenance and records. Do not use advice for a single private home as the complete answer for those settings.</p>"
+    },
+    {
+      "heading": "Testing, maintenance and changes",
+      "body": "<p>The installer needs to assess and check the completed system before handover. Where force limitation forms part of the protection, its performance needs suitable verification. Read our <a href=\"/guides/force-testing-explained/\">force-testing explanation</a> for what a homeowner should ask.</p><p>Follow the installation’s instructions and maintenance recommendations. Do not assume that one annual visit or a generic device list proves continuing safety. Report damage, unexpected movement or failed protective functions and seek competent help. Significant modifications may require a new conformity assessment; straightforward servicing is not automatically the same situation.</p>"
+    },
+    {
+      "heading": "A practical handover checklist",
+      "body": "<p>Ask for the gate and equipment identification, operating instructions, manual-release training, isolation information, conformity documents and the recommended checking arrangements. Keep the responsible company’s contact details and agree what to do if a fault makes the entrance unsafe.</p><p>For an existing installation with missing records, request a <a href=\"/services/gate-repair-and-maintenance/\">gate assessment</a>. Agree what the visit can establish rather than expect a certificate from photographs. Source: <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/responsibilities.htm\" target=\"_blank\" rel=\"noopener noreferrer\">HSE guidance on responsibilities</a>.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is UKCA the only acceptable marking for gate equipment in Great Britain?",
+      "answer": "No blanket statement applies to every product. Current government guidance recognises CE alongside or in place of UKCA for relevant regimes. Ask the supplier to confirm the applicable route and documentation."
+    },
+    {
+      "question": "Must a private homeowner have an annual gate test by law?",
+      "answer": "HSE distinguishes private domestic ownership from work and landlord responsibilities and recommends regular checks for domestic gates. Follow the installation instructions and obtain advice for your actual circumstances rather than assuming a universal annual legal rule."
+    },
+    {
+      "question": "What should I receive at handover?",
+      "answer": "Request the completed system’s conformity documents, user instructions, operating and release training, and recommendations for maintenance and safety checks."
+    }
+  ],
+  "relatedServiceSlug": "automated-gate-systems",
+  "relatedGuides": [],
+  "featuredImageAlt": "Gate installer explaining a completed safety inspection to a homeowner",
+  "updatedDate": "2026-10-02"
+},
 
   {
-    slug: 'force-testing-explained',
-    title: "Electric Gate Force Testing: What It Is and Why It's the Law",
-    metaTitle: 'Electric Gate Force Testing Explained | UK Law',
-    metaDescription: 'What is gate force testing and why is it legally required in the UK? Learn how we ensure your automated gates are safe and compliant.',
-    pillar: 'Safety & Compliance',
-    excerpt: 'Force testing is a legal requirement for every automated gate installation in the UK. If your installer did not do it, your gate is not legally compliant. Here is what the test involves and why it matters.',
-    readingMinutes: 6,
-    publishDate: '2026-03-21',
-    featuredImage: '/images/gates/gate-wrought-iron-closeup-scrollwork-detail.png',
-    intro: 'Electric gate force testing is the process of measuring the forces a moving gate exerts at its leading edge, closing edge, and hinge zone to confirm they fall within the limits set by BS EN 12445. It is a legal requirement under the Supply of Machinery (Safety) Regulations 2008, and an installation without documented test results is not a compliant installation.',
-    sections: [
-      {
-        heading: 'What Force Testing Measures: Crushing, Shearing, and Impact',
-        body: `An automated gate is, mechanically, a large moving object driven by a motor. When it encounters a person in its travel path, it exerts forces that can cause injury. <a href="/guides/uk-electric-gate-safety-laws/">UK law requires that those forces be measured and limited</a> — not assumed to be safe because the motor is a particular wattage.\n\nBS EN 12445 defines three categories of hazardous force. Crushing force is the static force the gate continues to exert when it has closed against an obstruction and the motor is still running. The legal limit at the main closing edge is 400 Newtons — approximately the force of 40 kg of weight pressing continuously. At secondary closing edges (such as the hinge side of a swing gate), the limit is 150 Newtons.\n\nImpact force is the dynamic force exerted by the moving gate when it first makes contact with an obstruction. The legal limit for dynamic impact force is 1,400 Newtons at the leading edge. Shearing force applies at hinge points and pivot zones, managed through design or by fitting <a href="/guides/photocells-vs-safety-edges/">pressure-sensitive edges</a>.\n\nFor professional <a href="/services/gate-repair-and-maintenance/">safety testing and maintenance in London</a>, every compliance check we carry out includes measurement of all applicable force categories at every risk zone of your specific gate installation.`,
-      },
-      {
-        heading: 'How Engineers Test Gates: The Impact Testing Equipment',
-        body: `Electric gate force testing is carried out using calibrated electronic force measurement equipment — commonly referred to as an impact tester. The instrument contains a load cell that measures force in Newtons, a data logger that records peak dynamic impact force and sustained static force, and a display showing the engineer the readings in real time.\n\nAt each risk zone, the impact tester is positioned at heights of 0.5 metres and 1.0 metre above ground — the two reference heights specified in BS EN 12445. The gate is operated through a full close cycle, and the instrument records the peak dynamic force at the moment of contact and the sustained static force after the motor continues to run against the tester.\n\nIf measured forces exceed the legal limits, the engineer adjusts the motor force limitation settings and retests until the forces are within specification. The <a href="https://www.dhfonline.org.uk/" target="_blank" rel="noopener noreferrer">Door &amp; Hardware Federation</a> trains and certifies gate engineers in BS EN 12445 testing procedures and maintains a list of accredited practitioners.`,
-      },
-      {
-        heading: 'When Testing Is Required and Why Annual Checks Matter',
-        body: `Electric gate force testing is required at two distinct points: on initial installation and following any modification to the gate or its drive system that could affect the forces generated. On initial installation, testing is mandatory. The Declaration of Conformity issued by the installer must reference the force test results.\n\nAnnual testing is not a statutory requirement for residential gates, but it is strongly recommended. Gate force settings drift over time as motor components wear. A gate that tested within limits at installation may exceed them three years later if the motor's internal brake has degraded.\n\nIf your gate was installed without force test documentation, or if it is more than three years old and has never had a formal safety audit, leave your phone number in the form above and we will call you back within 24 hours to discuss a compliance test for your installation.`,
-      },
-    ],
-    faqs: [
-      { question: 'Is gate force testing a legal requirement in the UK?', answer: 'Yes. Force testing to BS EN 12445 is required on every automated gate installation under the Supply of Machinery (Safety) Regulations 2008. The installer must document the test results and reference them in the Declaration of Conformity.' },
-      { question: 'What force limits apply to electric driveway gates?', answer: 'The closing leading edge must not exert a dynamic impact force exceeding 1,400 Newtons or a sustained static crushing force exceeding 400 Newtons. At secondary closing edges and hinge zones, the static force limit is 150 Newtons.' },
-      { question: 'How do I know if my gate has been force tested?', answer: 'You should have received a Declaration of Conformity from your installer at handover, which references the force test results. If you do not have this document, ask your installer for a copy. If one cannot be produced, your installation has not been documented as compliant.' },
-      { question: 'Who can carry out gate force testing in London?', answer: 'Force testing must be carried out by a competent person with appropriate calibrated equipment and knowledge of BS EN 12445. Gate engineers trained and accredited by the Door and Hardware Federation are formally assessed in this methodology.' },
-    ],
-    relatedServiceSlug: 'automated-gate-systems',
-    relatedGuides: ['uk-electric-gate-safety-laws', 'photocells-vs-safety-edges'],
-  },
+  "slug": "force-testing-explained",
+  "title": "Electric Gate Force Testing: What Homeowners Should Ask",
+  "metaTitle": "Electric Gate Force Testing: What Homeowners Should Ask | Driveway Gates London",
+  "metaDescription": "Understand what force testing can show, how it fits into a gate safety assessment and which records to request from a competent engineer.",
+  "pillar": "Safety & Compliance",
+  "excerpt": "Understand what force testing can show, how it fits into a gate safety assessment and which records to request from a competent engineer.",
+  "readingMinutes": 3,
+  "publishDate": "2026-03-21",
+  "featuredImage": "/images/guides/force-testing-explained.webp",
+  "intro": "Understand what force testing can show, how it fits into a gate safety assessment and which records to request from a competent engineer.",
+  "sections": [
+    {
+      "heading": "What force testing measures",
+      "body": "<p>Force testing measures forces produced when a moving gate encounters a test instrument under specified conditions. An engineer uses the results to assess the relevant protection and to establish a record for later checks. A person pushing against the gate cannot provide an equivalent measurement.</p><p>The appropriate procedure depends on the gate, its movement and the protective approach used. This guide explains the questions to ask; it does not provide a test procedure or a set of universal pass values.</p>"
+    },
+    {
+      "heading": "Where testing fits into the safety assessment",
+      "body": "<p>Force limitation is one possible part of a gate’s protective measures. Where the installation relies on it, the installer needs to verify its performance. Other risks can require different measures, and an acceptable reading at one test point does not establish that the whole entrance is safe.</p><p>The assessment also needs to consider trapping and shearing areas, access to moving parts, the people using the entrance and foreseeable behaviour. Read our <a href=\"/guides/photocells-vs-safety-edges/\">guide to photocells, edges and loops</a> to understand why devices have different roles.</p>"
+    },
+    {
+      "heading": "Why one force number is not enough",
+      "body": "<p>Force limits and test methods relate to defined conditions, positions and time periods. Presenting a number as a continuous safe pressure, or assuming the same value applies at every edge, loses that context. Do not use a simplified web table to approve an installation.</p><p>Ask the engineer which current standard or other technical approach supports the assessment, which risks the tests address and how the results will be recorded. They should have the competence and equipment for the work. Changes to force or sensitivity settings should not be a homeowner troubleshooting step.</p>"
+    },
+    {
+      "heading": "What to request in the report",
+      "body": "<p>Ask the report to identify the entrance and equipment, the date and person doing the work, the checks undertaken, any limitations, findings and required actions. Where force tests are relevant, request the recorded results and their assessment in context.</p><p>Keep these records with the user instructions and handover documents. A statement that the gate opens and closes is not a substitute for a safety assessment. If an unsafe condition is identified, ask how the entrance should be kept out of use and what must happen before it can operate again.</p>"
+    },
+    {
+      "heading": "When to arrange an assessment",
+      "body": "<p>Arrange advice after damage, unexpected movement, a suspected failure of a protective function or a change to the gate or drive. Follow the checking arrangements specified for your system. The requirements for a business or rented property may differ from those of a privately owned domestic entrance.</p><p>See our <a href=\"/guides/uk-electric-gate-safety-laws/\">responsibilities guide</a>. Avoid treating a fixed annual date as either a complete safety guarantee or a universal statutory requirement for all private homeowners.</p>"
+    },
+    {
+      "heading": "Leave adjustments and powered tests to a competent person",
+      "body": "<p>Do not test the closing force with your body, a pet, a vehicle or improvised objects. Keep people clear if you suspect a fault and follow the supplied instructions for taking the gate out of use, provided that can be done safely.</p><p>Request a <a href=\"/services/gate-repair-and-maintenance/\">gate assessment</a> and agree the inspection scope before booking. Sources: <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm\" target=\"_blank\" rel=\"noopener noreferrer\">HSE guidance on powered-gate safety</a> and <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/responsibilities.htm\" target=\"_blank\" rel=\"noopener noreferrer\">HSE guidance on responsibilities</a>.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Does one passing force reading mean the gate is safe?",
+      "answer": "No. A reading relates to particular conditions and locations. The complete entrance and its other hazards and protective measures still need assessment."
+    },
+    {
+      "question": "Can I test a gate by pushing against it?",
+      "answer": "No. Do not use a person or improvised obstruction as a force-test instrument. Ask a competent engineer to carry out the appropriate assessment with suitable equipment."
+    },
+    {
+      "question": "Do all powered gates use the same protection and test procedure?",
+      "answer": "No. The gate, environment, foreseeable users and protective approach determine what must be assessed and verified. Where force limitation is used, its performance needs suitable verification."
+    }
+  ],
+  "relatedServiceSlug": "automated-gate-systems",
+  "relatedGuides": [],
+  "featuredImageAlt": "Technician carrying out a calibrated force test on an electric gate",
+  "updatedDate": "2026-10-02"
+},
 
   {
-    slug: 'photocells-vs-safety-edges',
-    title: 'Gate Safety Hardware Explained: Photocells, Edges, and Loops',
-    metaTitle: 'Photocells vs Safety Edges | Electric Gate Safety Tech',
-    metaDescription: 'Understand the difference between photocells, safety edges, and ground loops. Ensure your London driveway gates protect children and pets.',
-    pillar: 'Safety & Compliance',
-    excerpt: 'Photocells, safety edges, and ground loops are the three main electric gate safety devices — but they work differently and protect against different risks. Understanding what each one does helps you check whether your installation is adequately protected.',
-    readingMinutes: 7,
-    publishDate: '2026-03-28',
-    featuredImage: '/images/gates/gate-wrought-iron-aerial-gold-trim-estate.png',
-    intro: 'The safety of an automated gate is only as good as the safety devices protecting its risk zones. BS EN 12453 requires that every relevant risk zone of an automated gate be addressed through appropriate safety measures. This guide explains all three principal hardware solutions so you can assess whether your current installation is properly protected.',
-    sections: [
-      {
-        heading: 'Infrared Photocells: The Invisible Beam Safety System',
-        body: `Infrared photocells are the most common electric gate safety devices on London residential installations. They work by projecting an invisible infrared beam between a transmitter unit on one gate post and a receiver unit on the opposite post.\n\nWhen the beam is broken — by a person, pet, vehicle, or any other object passing through the gate opening during gate travel — the control board receives a signal and immediately stops and reverses the gate. Photocells are excellent at detecting objects in the main gate opening. Their limitation is that they only protect the plane of the beam — an object crouching below a single beam height, or positioned in the hinge zone rather than in the main opening, may not be detected.\n\nFor residential swing gates, photocells are typically installed at a height of 0.5 metres — the height at which a child or pet is most likely to be present. A second beam at 1.0 metre adds protection at an adult mid-torso level. Both heights are referenced in <a href="/guides/uk-electric-gate-safety-laws/">BS EN 12453 as the positions at which safety must be demonstrated</a>.`,
-      },
-      {
-        heading: 'Resistive Safety Edges: Contact-Based Protection at the Closing Edge',
-        body: `Safety edges address a risk zone that photocells cannot protect: the closing edge of the gate itself. A resistive safety edge is a rubber or foam-encapsulated strip fitted along the closing edge of the gate leaf. Inside the strip is an electrical contact. When the edge makes contact with any object and is compressed, the contact closes, sending a signal to the control board. The gate immediately stops and reverses.\n\nSafety edges are particularly important for the secondary closing edge of double swing gates — the point where the two leaves meet in the centre. This is a <a href="/guides/force-testing-explained/">shearing and crushing risk zone</a> that a main photocell beam typically cannot protect.\n\nThe <a href="https://gate-safe.org/" target="_blank" rel="noopener noreferrer">Gate Safe</a> charity — the UK's leading authority on automated gate safety — specifically highlights safety edges as an essential complement to photocells on residential installations, noting that photocell-only installations leave the closing edge risk zone unaddressed.`,
-      },
-      {
-        heading: 'Ground Loops: Vehicle Detection to Prevent Gate Closure on a Car',
-        body: `Ground loops are a vehicle detection technology that is standard on commercial gate installations and increasingly specified on high-end London residential properties. A ground loop is a loop of wire embedded in the driveway surface. When a vehicle is present over the loop, its metal mass induces a change in the loop electrical inductance, which the detector unit reads as a vehicle presence signal.\n\nThe principal safety function is to prevent the gate from closing on a vehicle that is still in the gate opening. Ground loops also serve an access control function: they can be configured to trigger the gate to open automatically when a vehicle approaches, eliminating the need to use a remote to exit.\n\nFor <a href="/services/automated-gate-systems/">secure gate installations in London</a>, our engineers assess the risk profile of every site and specify the combination of photocells, safety edges, and loop detectors appropriate to the gate type and usage pattern.\n\nIf your existing electric gates were installed without safety edges, without photocells at both 0.5 metre and 1.0 metre heights, or without a ground loop on an automatic-close system, a safety hardware upgrade should be a priority. Leave your phone number in the form above and our team will arrange a fast callback to assess your current installation and quote for any necessary upgrades.`,
-      },
-    ],
-    faqs: [
-      { question: 'Are photocells enough to make my electric gate safe?', answer: 'Photocells are necessary but not sufficient on their own for most residential gate installations. They protect the main gate opening but do not address the closing edge risk zone. Gate Safe and BS EN 12453 both indicate that safety edges should be fitted at the leading closing edge in addition to photocells for comprehensive protection.' },
-      { question: 'What is the difference between a photocell and a safety edge?', answer: 'A photocell detects obstructions in the main gate opening using an infrared beam — it prevents the gate from starting to close if something is in the opening. A safety edge detects contact at the closing edge — it stops and reverses the gate the moment the edge touches anything. They protect different risk zones and work best in combination.' },
-      { question: 'Do I need a ground loop on my driveway gate?', answer: 'Ground loops are mandatory for commercial automatic-close systems and strongly recommended for residential installations where the gate closes on a timer. They prevent the gate from closing on a vehicle still in the opening.' },
-      { question: 'How do I know if my safety photocells are working correctly?', answer: 'With the gate set to close, deliberately interrupt the photocell beam during the closing cycle by placing your hand or a stick between the transmitter and receiver. The gate should immediately stop and reverse. If it continues to close, the photocell is not correctly configured or has failed.' },
-    ],
-    relatedServiceSlug: 'automated-gate-systems',
-    relatedGuides: ['uk-electric-gate-safety-laws', 'force-testing-explained'],
-  },
+  "slug": "photocells-vs-safety-edges",
+  "title": "Gate Safety Devices: Photocells, Safety Edges and Loops",
+  "metaTitle": "Gate Safety Devices: Photocells, Safety Edges and Loops | Driveway Gates London",
+  "metaDescription": "Understand the different roles and limits of gate photocells, safety edges and vehicle loops, and why the whole entrance needs assessment.",
+  "pillar": "Safety & Compliance",
+  "excerpt": "Understand the different roles and limits of gate photocells, safety edges and vehicle loops, and why the whole entrance needs assessment.",
+  "readingMinutes": 3,
+  "publishDate": "2026-03-28",
+  "featuredImage": "/images/guides/photocells-vs-safety-edges.webp",
+  "intro": "Understand the different roles and limits of gate photocells, safety edges and vehicle loops, and why the whole entrance needs assessment.",
+  "sections": [
+    {
+      "heading": "Start with the hazards at the entrance",
+      "body": "<p>Safety devices perform different functions. A gate can have several devices fitted and still present an unaddressed trapping or crushing risk. The installer needs to assess the complete gate, its movement, nearby structures and the people who may encounter it.</p><p>Ask the proposal to explain the risks identified and how the design addresses them. Do not treat a shopping list of sensors as a substitute for that assessment.</p>"
+    },
+    {
+      "heading": "What photocells can detect",
+      "body": "<p>A photocell arrangement detects interruption of a beam or detection path. The area it covers depends on its design and positioning. A single beam does not detect every person or object anywhere around the gate.</p><p>The control system’s response depends on the equipment and configuration. Do not assume every beam interruption always causes the same stop or reversal in every operating direction. Ask the installer to explain the intended response and user checks.</p>"
+    },
+    {
+      "heading": "What safety edges do",
+      "body": "<p>A suitable safety edge can detect contact along the area it protects and signal the control system. Selection, positioning, compatibility and the response of the complete system matter. Fitting an edge to one part of a gate does not establish protection at every other trapping point.</p><p>Ask which hazards the edges address and how their function will be verified. Damaged, loose or disconnected protection needs competent attention. Do not defeat a device to keep using the gate.</p>"
+    },
+    {
+      "heading": "What vehicle loops do",
+      "body": "<p>An inductive loop detects a change caused by a suitable vehicle within its detection area. Depending on the design, it may form part of an access-control or vehicle-presence arrangement.</p><p>Do not rely on a vehicle loop to detect a pedestrian or provide all necessary protection. The installer must consider people on foot, cyclists, visitors and others alongside vehicle use. A convenient opening trigger and a safety function are not automatically interchangeable.</p>"
+    },
+    {
+      "heading": "Positioning and testing must suit the system",
+      "body": "<p>There is no mounting height or device combination in this article that can approve every entrance. Gate geometry, surroundings, users and operating arrangements affect the specification. A competent installer needs to verify the proposed protective measures before handover.</p><p>Where force limitation is part of the protection, suitable verification is needed. Read our <a href=\"/guides/force-testing-explained/\">force-testing guide</a> rather than attempting a test with your body or an improvised obstacle.</p>"
+    },
+    {
+      "heading": "What owners should do when something changes",
+      "body": "<p>Follow the user instructions for routine checks and cleaning. Report visible damage, unexpected movement or a suspected failure of protection. Keep people clear and follow isolation instructions where you can do so safely.</p><p>Have a competent person assess faults and changes, including changes to the surrounding entrance. Keep records and ask when the gate can return to use. See <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm\" target=\"_blank\" rel=\"noopener noreferrer\">HSE guidance on powered-gate safety</a>, or request a <a href=\"/services/gate-repair-and-maintenance/\">gate assessment</a>.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Will photocells detect everyone around a gate?",
+      "answer": "No. Detection is limited to the arrangement’s coverage and operating conditions. Other hazards and people outside that area still need to be considered in the assessment."
+    },
+    {
+      "question": "Can a vehicle loop replace pedestrian protection?",
+      "answer": "Do not assume that it can. A loop’s vehicle-detection function does not establish protection for people on foot. The complete entrance needs an appropriate safety assessment."
+    },
+    {
+      "question": "Can I bypass a faulty sensor temporarily?",
+      "answer": "No. Stop using the affected system and obtain competent assistance. A bypass can remove protection that the installation relies on."
+    }
+  ],
+  "relatedServiceSlug": "automated-gate-systems",
+  "relatedGuides": [],
+  "featuredImageAlt": "Installer showing gate photocells and safety edging to a homeowner",
+  "updatedDate": "2026-10-02"
+},
 
 ];
 

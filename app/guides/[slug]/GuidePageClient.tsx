@@ -153,7 +153,7 @@ export function GuidePageClient({ params }: { params: { slug: string } }) {
                   <h3 className="font-syne font-bold text-sm uppercase tracking-tight text-brand-900 mb-2">Ready to Get a Gate Quote?</h3>
                   <p className="text-brand-600 text-sm mb-5">Free site survey and written quote from our London team. No obligation.</p>
                   <button onClick={() => setIsModalOpen(true)} className="btn-primary w-full justify-center">Request a Free Call Back</button>
-                  <p className="text-center text-xs text-brand-500 mt-3">Within 2 hours · No spam</p>
+                  <p className="text-center text-xs text-brand-500 mt-3">Discuss your project · No spam</p>
                 </div>
 
                 {relatedService && (

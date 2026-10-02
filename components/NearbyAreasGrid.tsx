@@ -75,7 +75,7 @@ export function NearbyAreasGrid({ cityName, serviceSlug, serviceName, initialVis
         Homeowners from {areas.slice(0, 5).join(', ')}, and surrounding areas around {cityName} use our service regularly.{' '}
         {serviceName
           ? `If you need ${serviceName.toLowerCase()} near ${cityName}, we can arrange a free site survey, including evenings and weekends.`
-          : `Our team is experienced, fully insured, and offers flexible appointment times.`}
+          : `Send your postcode and project details to confirm coverage and appointment arrangements.`}
       </p>
     </section>
   );

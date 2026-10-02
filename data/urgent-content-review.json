@@ -1,0 +1,366 @@
+{
+  "gate-motor-humming-not-moving": {
+    "kind": "blog",
+    "title": "Why Your Gate Motor Is Humming but Not Moving",
+    "description": "A humming gate motor needs diagnosis. Learn what you can observe safely, when to stop using the gate and what to tell a repair engineer.",
+    "sections": [
+      [
+        "Stop repeated attempts to open the gate",
+        "<p>If the motor hums but the gate does not move, stop pressing the remote or entry control. The sound does not identify one particular fault, and repeated attempts can place further strain on the system. Keep people and vehicles clear of the gate and its movement area.</p><p>If there is smoke, a burning smell, damaged wiring, a leaning gate or unexpected movement, stop using the entrance. Use the isolation arrangements in your user instructions only if you can reach and operate them safely. Do not open electrical covers or approach damaged equipment. Contact an engineer; if someone is trapped or there is immediate danger, call the emergency services.</p>"
+      ],
+      [
+        "What can cause a humming gate motor?",
+        "<p>An obstruction, a mechanical problem, a drive fault or an electrical supply/control problem can prevent movement. A damaged hinge, wheel or running gear can change the load on the motor. Some motor designs also have components that can fail while the motor still makes a noise.</p><p>An engineer needs the actual equipment details and an assessment of the complete entrance to distinguish these causes. Motor voltage, capacitor requirements and diagnostic readings vary by system. A generic internet voltage figure or replacement part is not a reliable diagnosis.</p>"
+      ],
+      [
+        "Useful observations without dismantling anything",
+        "<p>From a safe position, note whether one leaf or both are affected, whether the problem happens when opening or closing, and which normal user control you tried. Record when the problem started and whether a power interruption, vehicle impact or recent work preceded it. Do not recreate an unsafe movement to obtain a video.</p><p>Look for visible debris in a track, a displaced gate or a damaged fitting without entering a trapping zone or touching moving parts. If the system has a user display, note the message according to its instructions. These observations help the engineer plan a visit; they are not a reason to remove guards or test exposed terminals.</p>"
+      ],
+      [
+        "Manual release is specific to your system",
+        "<p>Follow the supplied user instructions and handover training if you need to use manual release. A released gate can move under wind, gravity or its own weight. Do not release a damaged or unstable gate, or try to push a gate that resists movement.</p><p>If you do not know how to control and secure it, keep the area clear and ask for assistance. Our <a href=\"/guides/how-to-manually-open-electric-gate/\">manual-release guide</a> explains what information to check before acting. Never bypass a safety device to get the entrance working.</p>"
+      ],
+      [
+        "What to ask the repair engineer",
+        "<p>Send your postcode, a description of the fault and any safely accessible model details. Share maintenance records and photographs of the entrance taken from a safe position. Mention whether the gate is stuck open or closed and whether it affects access to the property.</p><p>Ask what the diagnostic visit covers, what it costs and how further work will be approved. The findings should explain the cause, any wider safety concern, the proposed repair and how the system will be checked before being returned to use. Electrical testing, capacitor work, control adjustments and powered movement tests belong with a competent person.</p><p>Request <a href=\"/services/gate-repair-and-maintenance/\">gate repair and maintenance</a>, or read our advice on <a href=\"/blog/repair-electric-gates-installed-by-another-company/\">changing gate repair companies</a> if records or support are missing.</p>"
+      ],
+      [
+        "After the repair",
+        "<p>Keep the diagnosis, parts information and service records with the gate instructions. Ask the engineer to explain any changed operating arrangements and the recommended maintenance for your equipment. Confirm the repair warranty in writing rather than assuming it matches the original installation cover.</p><p>Source: <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/responsibilities.htm\" target=\"_blank\" rel=\"noopener noreferrer\">HSE guidance on responsibilities</a>. A humming noise alone does not establish whether a repair or replacement is needed.</p>"
+      ]
+    ],
+    "faqs": [
+      [
+        "Can I keep trying the remote?",
+        "Stop repeated attempts when the motor runs or hums without moving the gate. Keep clear and arrange assessment rather than trying to force operation."
+      ],
+      [
+        "Does humming mean the capacitor has failed?",
+        "Not necessarily. Causes vary with the motor and installation. A competent engineer needs to diagnose the fault; do not open the motor or replace electrical parts from a generic online suggestion."
+      ],
+      [
+        "Can you assess gates installed by another company?",
+        "Send the equipment details and fault description so we can discuss an assessment. Confirm the visit scope and charges before booking."
+      ]
+    ]
+  },
+  "uk-electric-gate-safety-laws": {
+    "kind": "guide",
+    "title": "UK Electric Gate Safety: Responsibilities and Handover",
+    "description": "Understand installer responsibilities, conformity documents and the difference between private-home and workplace gate maintenance duties.",
+    "sections": [
+      [
+        "The completed entrance matters",
+        "<p>A powered gate is a machine. Its safety depends on the assembled gate, supports, drive, controls, protective measures and surroundings. A marked motor or a list of fitted sensors does not by itself demonstrate that the complete installation is safe.</p><p>A site assessment should consider the people who can encounter the gate, including visitors and children, and the places where movement could cause injury. The proposal and handover should explain how the identified risks are addressed.</p>"
+      ],
+      [
+        "Installer and manufacturer responsibilities",
+        "<p>HSE explains that the person assembling a powered gate from components can become the manufacturer of the completed machine. Converting an existing manual gate to power operation can also create these responsibilities.</p><p>Ask who will take responsibility for the completed installation. Request the Declaration of Conformity, user instructions and the recommended maintenance and safety checks at handover. A component manual or motor receipt is not a substitute for the documents for the assembled gate.</p>"
+      ],
+      [
+        "CE and UKCA marking in Great Britain",
+        "<p>Do not rely on the claim that CE marking stopped being accepted for gate equipment in January 2023. Current government guidance describes CE recognition alongside or in place of UKCA for relevant product regimes in Great Britain. The applicable rules depend on the product and market.</p><p>Ask the supplier to identify the conformity route and documents for the equipment and completed installation. See <a href=\"https://www.gov.uk/guidance/placing-ukca-or-ce-marked-products-on-the-market-in-great-britain\" target=\"_blank\" rel=\"noopener noreferrer\">GOV.UK guidance on UKCA or CE marked products</a>. Northern Ireland has separate arrangements.</p>"
+      ],
+      [
+        "Private homes, workplaces and landlords",
+        "<p>HSE distinguishes private domestic owners from people responsible for gates at work or as part of a work activity. Its guidance says health and safety law does not apply to owners of gates on privately owned domestic premises, while recommending regular checks. This does not remove product or installer obligations, or a householder’s potential liability for harm or damage.</p><p>Commercial owners, employers, landlords and managing agents can have duties to keep gates safe. If your entrance serves rented property, a shared development or a business, establish who is responsible for its operation, maintenance and records. Do not use advice for a single private home as the complete answer for those settings.</p>"
+      ],
+      [
+        "Testing, maintenance and changes",
+        "<p>The installer needs to assess and check the completed system before handover. Where force limitation forms part of the protection, its performance needs suitable verification. Read our <a href=\"/guides/force-testing-explained/\">force-testing explanation</a> for what a homeowner should ask.</p><p>Follow the installation’s instructions and maintenance recommendations. Do not assume that one annual visit or a generic device list proves continuing safety. Report damage, unexpected movement or failed protective functions and seek competent help. Significant modifications may require a new conformity assessment; straightforward servicing is not automatically the same situation.</p>"
+      ],
+      [
+        "A practical handover checklist",
+        "<p>Ask for the gate and equipment identification, operating instructions, manual-release training, isolation information, conformity documents and the recommended checking arrangements. Keep the responsible company’s contact details and agree what to do if a fault makes the entrance unsafe.</p><p>For an existing installation with missing records, request a <a href=\"/services/gate-repair-and-maintenance/\">gate assessment</a>. Agree what the visit can establish rather than expect a certificate from photographs. Source: <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/responsibilities.htm\" target=\"_blank\" rel=\"noopener noreferrer\">HSE guidance on responsibilities</a>.</p>"
+      ]
+    ],
+    "faqs": [
+      [
+        "Is UKCA the only acceptable marking for gate equipment in Great Britain?",
+        "No blanket statement applies to every product. Current government guidance recognises CE alongside or in place of UKCA for relevant regimes. Ask the supplier to confirm the applicable route and documentation."
+      ],
+      [
+        "Must a private homeowner have an annual gate test by law?",
+        "HSE distinguishes private domestic ownership from work and landlord responsibilities and recommends regular checks for domestic gates. Follow the installation instructions and obtain advice for your actual circumstances rather than assuming a universal annual legal rule."
+      ],
+      [
+        "What should I receive at handover?",
+        "Request the completed system’s conformity documents, user instructions, operating and release training, and recommendations for maintenance and safety checks."
+      ]
+    ]
+  },
+  "force-testing-explained": {
+    "kind": "guide",
+    "title": "Electric Gate Force Testing: What Homeowners Should Ask",
+    "description": "Understand what force testing can show, how it fits into a gate safety assessment and which records to request from a competent engineer.",
+    "sections": [
+      [
+        "What force testing measures",
+        "<p>Force testing measures forces produced when a moving gate encounters a test instrument under specified conditions. An engineer uses the results to assess the relevant protection and to establish a record for later checks. A person pushing against the gate cannot provide an equivalent measurement.</p><p>The appropriate procedure depends on the gate, its movement and the protective approach used. This guide explains the questions to ask; it does not provide a test procedure or a set of universal pass values.</p>"
+      ],
+      [
+        "Where testing fits into the safety assessment",
+        "<p>Force limitation is one possible part of a gate’s protective measures. Where the installation relies on it, the installer needs to verify its performance. Other risks can require different measures, and an acceptable reading at one test point does not establish that the whole entrance is safe.</p><p>The assessment also needs to consider trapping and shearing areas, access to moving parts, the people using the entrance and foreseeable behaviour. Read our <a href=\"/guides/photocells-vs-safety-edges/\">guide to photocells, edges and loops</a> to understand why devices have different roles.</p>"
+      ],
+      [
+        "Why one force number is not enough",
+        "<p>Force limits and test methods relate to defined conditions, positions and time periods. Presenting a number as a continuous safe pressure, or assuming the same value applies at every edge, loses that context. Do not use a simplified web table to approve an installation.</p><p>Ask the engineer which current standard or other technical approach supports the assessment, which risks the tests address and how the results will be recorded. They should have the competence and equipment for the work. Changes to force or sensitivity settings should not be a homeowner troubleshooting step.</p>"
+      ],
+      [
+        "What to request in the report",
+        "<p>Ask the report to identify the entrance and equipment, the date and person doing the work, the checks undertaken, any limitations, findings and required actions. Where force tests are relevant, request the recorded results and their assessment in context.</p><p>Keep these records with the user instructions and handover documents. A statement that the gate opens and closes is not a substitute for a safety assessment. If an unsafe condition is identified, ask how the entrance should be kept out of use and what must happen before it can operate again.</p>"
+      ],
+      [
+        "When to arrange an assessment",
+        "<p>Arrange advice after damage, unexpected movement, a suspected failure of a protective function or a change to the gate or drive. Follow the checking arrangements specified for your system. The requirements for a business or rented property may differ from those of a privately owned domestic entrance.</p><p>See our <a href=\"/guides/uk-electric-gate-safety-laws/\">responsibilities guide</a>. Avoid treating a fixed annual date as either a complete safety guarantee or a universal statutory requirement for all private homeowners.</p>"
+      ],
+      [
+        "Leave adjustments and powered tests to a competent person",
+        "<p>Do not test the closing force with your body, a pet, a vehicle or improvised objects. Keep people clear if you suspect a fault and follow the supplied instructions for taking the gate out of use, provided that can be done safely.</p><p>Request a <a href=\"/services/gate-repair-and-maintenance/\">gate assessment</a> and agree the inspection scope before booking. Sources: <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm\" target=\"_blank\" rel=\"noopener noreferrer\">HSE guidance on powered-gate safety</a> and <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/responsibilities.htm\" target=\"_blank\" rel=\"noopener noreferrer\">HSE guidance on responsibilities</a>.</p>"
+      ]
+    ],
+    "faqs": [
+      [
+        "Does one passing force reading mean the gate is safe?",
+        "No. A reading relates to particular conditions and locations. The complete entrance and its other hazards and protective measures still need assessment."
+      ],
+      [
+        "Can I test a gate by pushing against it?",
+        "No. Do not use a person or improvised obstruction as a force-test instrument. Ask a competent engineer to carry out the appropriate assessment with suitable equipment."
+      ],
+      [
+        "Do all powered gates use the same protection and test procedure?",
+        "No. The gate, environment, foreseeable users and protective approach determine what must be assessed and verified. Where force limitation is used, its performance needs suitable verification."
+      ]
+    ]
+  },
+  "how-to-manually-open-electric-gate": {
+    "kind": "guide",
+    "title": "How to Manually Open an Electric Gate During a Power Cut",
+    "description": "Find the correct manual-release instructions for your gate and understand when to stop and ask for help instead of forcing it open.",
+    "sections": [
+      [
+        "Start with the instructions supplied for your gate",
+        "<p>Manual release arrangements differ between operators. Find the user instructions for your installed system and the release training provided at handover. Check the model from records or an identification label only where you can see it safely.</p><p>This guide cannot supply a universal key direction, cover-opening sequence or release position. If the instructions or key are missing, contact the installer or a competent gate engineer before attempting to release the mechanism.</p>"
+      ],
+      [
+        "Check whether releasing it could allow uncontrolled movement",
+        "<p>Keep people, pets and vehicles away from the gate’s movement area. A gate freed from its drive may move because of a slope, wind or its own weight. Damage to hinges, supports or running gear can make manual movement unsafe.</p><p>Do not release a leaning, derailed, damaged or unstable gate. If you cannot control and secure it using the supplied instructions, keep clear and seek assistance. If someone is trapped or faces immediate danger, call the emergency services.</p>"
+      ],
+      [
+        "Locate the release without dismantling the operator",
+        "<p>A surface-mounted operator may have a release on its housing. An underground swing-gate system may use a release arrangement near the gate or foundation box. A sliding system may have a release associated with its operator. The exact location and access method depend on the product.</p><p>Use the manufacturer’s diagram for your model. Do not open electrical enclosures, remove guards or disconnect drive components to search for a release. A key from another system may not fit or operate it correctly.</p>"
+      ],
+      [
+        "Follow the model-specific isolation and release sequence",
+        "<p>Follow the supplied instructions for isolating power and preventing automatic operation before release. A mains power cut does not establish that every part is unpowered: the installation may have a backup battery or another supply.</p><p>Only operate the release and move the gate if the instructions and conditions allow you to do so safely. Use the specified method of holding or securing it. Do not force a seized key, lever or gate. Stop if movement is uneven, unexpectedly heavy or uncontrolled.</p>"
+      ],
+      [
+        "Before returning to automatic operation",
+        "<p>Use the manufacturer’s instructions for securing the gate, re-engaging the drive and restoring operation. Keep the movement area clear. If the original problem was a mechanical fault rather than a power cut, restoring the supply does not resolve it.</p><p>If you are unsure whether the mechanism has re-engaged or the gate behaves differently, stop using it and arrange an assessment. Do not bypass sensors or repeatedly trigger the motor to make it reconnect.</p>"
+      ],
+      [
+        "Prepare for the next power interruption",
+        "<p>Keep the correct key accessible to authorised users and store the instructions where they can be found. Ask the installer to demonstrate release and explain when it must not be attempted. Agree how people can use the entrance during a fault.</p><p>Backup capacity depends on the product, battery condition, accessories and use. Ask for the actual specification rather than a fixed cycle count. For a stuck mechanism, request <a href=\"/services/gate-repair-and-maintenance/\">gate repair assistance</a>. See <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/responsibilities.htm\" target=\"_blank\" rel=\"noopener noreferrer\">HSE guidance on responsibilities</a> for user information and release arrangements.</p>"
+      ]
+    ],
+    "faqs": [
+      [
+        "Where is the manual release on my gate?",
+        "Check the user instructions for the exact operator. Surface, underground and sliding systems can have different release arrangements. Do not dismantle equipment to look for one."
+      ],
+      [
+        "What if I have lost the release key?",
+        "Contact the installer or a gate engineer with the safely obtained equipment details. Do not force the lock or assume that another model’s key is suitable."
+      ],
+      [
+        "Will the gate work during a power cut?",
+        "Only if the installed system has a suitable backup arrangement and it can support the required use. Runtime varies; check the actual specification and condition."
+      ],
+      [
+        "The gate is hard to move after release. Should I push harder?",
+        "No. Stop, keep the area clear and ask for assistance. Resistance or uncontrolled movement can indicate a mechanical or structural problem."
+      ]
+    ]
+  },
+  "photocells-vs-safety-edges": {
+    "kind": "guide",
+    "title": "Gate Safety Devices: Photocells, Safety Edges and Loops",
+    "description": "Understand the different roles and limits of gate photocells, safety edges and vehicle loops, and why the whole entrance needs assessment.",
+    "sections": [
+      [
+        "Start with the hazards at the entrance",
+        "<p>Safety devices perform different functions. A gate can have several devices fitted and still present an unaddressed trapping or crushing risk. The installer needs to assess the complete gate, its movement, nearby structures and the people who may encounter it.</p><p>Ask the proposal to explain the risks identified and how the design addresses them. Do not treat a shopping list of sensors as a substitute for that assessment.</p>"
+      ],
+      [
+        "What photocells can detect",
+        "<p>A photocell arrangement detects interruption of a beam or detection path. The area it covers depends on its design and positioning. A single beam does not detect every person or object anywhere around the gate.</p><p>The control system’s response depends on the equipment and configuration. Do not assume every beam interruption always causes the same stop or reversal in every operating direction. Ask the installer to explain the intended response and user checks.</p>"
+      ],
+      [
+        "What safety edges do",
+        "<p>A suitable safety edge can detect contact along the area it protects and signal the control system. Selection, positioning, compatibility and the response of the complete system matter. Fitting an edge to one part of a gate does not establish protection at every other trapping point.</p><p>Ask which hazards the edges address and how their function will be verified. Damaged, loose or disconnected protection needs competent attention. Do not defeat a device to keep using the gate.</p>"
+      ],
+      [
+        "What vehicle loops do",
+        "<p>An inductive loop detects a change caused by a suitable vehicle within its detection area. Depending on the design, it may form part of an access-control or vehicle-presence arrangement.</p><p>Do not rely on a vehicle loop to detect a pedestrian or provide all necessary protection. The installer must consider people on foot, cyclists, visitors and others alongside vehicle use. A convenient opening trigger and a safety function are not automatically interchangeable.</p>"
+      ],
+      [
+        "Positioning and testing must suit the system",
+        "<p>There is no mounting height or device combination in this article that can approve every entrance. Gate geometry, surroundings, users and operating arrangements affect the specification. A competent installer needs to verify the proposed protective measures before handover.</p><p>Where force limitation is part of the protection, suitable verification is needed. Read our <a href=\"/guides/force-testing-explained/\">force-testing guide</a> rather than attempting a test with your body or an improvised obstacle.</p>"
+      ],
+      [
+        "What owners should do when something changes",
+        "<p>Follow the user instructions for routine checks and cleaning. Report visible damage, unexpected movement or a suspected failure of protection. Keep people clear and follow isolation instructions where you can do so safely.</p><p>Have a competent person assess faults and changes, including changes to the surrounding entrance. Keep records and ask when the gate can return to use. See <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm\" target=\"_blank\" rel=\"noopener noreferrer\">HSE guidance on powered-gate safety</a>, or request a <a href=\"/services/gate-repair-and-maintenance/\">gate assessment</a>.</p>"
+      ]
+    ],
+    "faqs": [
+      [
+        "Will photocells detect everyone around a gate?",
+        "No. Detection is limited to the arrangement’s coverage and operating conditions. Other hazards and people outside that area still need to be considered in the assessment."
+      ],
+      [
+        "Can a vehicle loop replace pedestrian protection?",
+        "Do not assume that it can. A loop’s vehicle-detection function does not establish protection for people on foot. The complete entrance needs an appropriate safety assessment."
+      ],
+      [
+        "Can I bypass a faulty sensor temporarily?",
+        "No. Stop using the affected system and obtain competent assistance. A bypass can remove protection that the installation relies on."
+      ]
+    ]
+  },
+  "annual-gate-service-checklist-london": {
+    "kind": "blog",
+    "title": "Winter Gate Service Checklist for London Homeowners",
+    "description": "Prepare for a gate service with safe observations, equipment records and clear questions about drainage, protective measures and aftercare.",
+    "sections": [
+      [
+        "Prepare the records before the visit",
+        "<p>Gather the user instructions, equipment details, previous service reports and any repair or warranty records. Note changes since the last visit: unusual noise, slower movement, interruptions, visible damage or water collecting near the entrance.</p><p>Tell the contractor if the gate is unsafe or access is obstructed when booking. Do not operate a faulty gate to demonstrate a problem. Agree the visit scope, charges and how additional work will be authorised before the engineer attends.</p>"
+      ],
+      [
+        "What you can observe from a safe position",
+        "<p>Look for visible damage, loose-looking fittings, debris or standing water without entering a movement or trapping area. Note whether water gathers around an underground operator or along the gate track after rain. Photographs taken from a safe position can help explain a recurring issue.</p><p>Carry out only the routine tasks described for users in your installation instructions. Do not remove covers, lift a gate, reach into mechanisms or handle exposed electrical parts. Cleaning or lubrication products and access arrangements vary by equipment.</p>"
+      ],
+      [
+        "Discuss winter exposure and drainage",
+        "<p>Explain whether the entrance is exposed to wind, leaves, road debris or surface water. Ask the engineer to assess drainage concerns and the manufacturer’s care requirements for the actual equipment.</p><p>A general weather forecast does not establish that a motor will fail or that a particular lubricant is suitable. Avoid changing oils, grease or settings on the basis of a generic winter checklist. The proposal should address the site and product instructions.</p>"
+      ],
+      [
+        "Agree the engineer’s inspection and verification",
+        "<p>Ask which structural, mechanical, electrical and protective functions the visit will cover, and what lies outside the booked scope. The engineer should have the competence and equipment needed for the work.</p><p>Powered checks, force measurements and adjustments to protective functions need the appropriate assessment and procedure. Do not use online pass values, improvised blocks or a remote-control range target as proof of safety. Our <a href=\"/guides/force-testing-explained/\">force-testing guide</a> explains what records to request.</p>"
+      ],
+      [
+        "Check arrangements for a fault or power cut",
+        "<p>Ask the engineer to confirm the user instructions for isolation and manual release, including when release would be unsafe. Make sure authorised users know where the instructions and correct key are kept.</p><p>If backup power is installed, ask how its condition and capability should be checked. Do not assume every gate has backup power or a battery guarantees a fixed number of movements. See the <a href=\"/guides/how-to-manually-open-electric-gate/\">manual-release guide</a>.</p>"
+      ],
+      [
+        "Keep the report and next steps",
+        "<p>The report should identify what was inspected, findings, limitations and any work required before continued use. Agree follow-up repairs and obtain the relevant warranty terms in writing. Ask for a checking and maintenance schedule suited to the installation and its use.</p><p>One visit does not guarantee faults cannot develop during winter. If a new problem appears, stop using the system where necessary and seek advice. Request <a href=\"/services/gate-repair-and-maintenance/\">gate maintenance</a> and read <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/responsibilities.htm\" target=\"_blank\" rel=\"noopener noreferrer\">HSE guidance on responsibilities</a>.</p>"
+      ]
+    ],
+    "faqs": [
+      [
+        "Can I adjust the motor force if cold weather slows the gate?",
+        "Do not alter force or safety settings as a homeowner workaround. Stop repeated attempts and have a competent person investigate the cause."
+      ],
+      [
+        "Does every gate need the same annual service?",
+        "No. The equipment instructions, site conditions, usage and applicable responsibilities determine the maintenance and checks required. Agree an appropriate schedule for your system."
+      ],
+      [
+        "Should I buy a particular winter lubricant?",
+        "Use only the care products and methods specified for the equipment, or obtain advice from a competent engineer. A generic lubricant recommendation may not suit your installation."
+      ]
+    ]
+  },
+  "automated-gates-sloping-driveways-london": {
+    "kind": "blog",
+    "title": "Automated Gates on Sloping Driveways in London",
+    "description": "Compare the questions a survey must resolve on a sloping driveway, including movement space, supports, drainage and safe manual operation.",
+    "sections": [
+      [
+        "Measure the slope where the gate will move",
+        "<p>A driveway can rise or fall across the entrance, along the drive, or both. The survey needs to establish the actual levels, movement area, boundary position and where vehicles and people will wait. A photograph or one gradient figure cannot establish a suitable design.</p><p>Tell the installer about drainage problems, previous ground movement and any changes planned to paving or parking. These details can affect the gate layout and the order of the work.</p>"
+      ],
+      [
+        "Questions for a swing-gate layout",
+        "<p>A swing gate needs clearance through its full movement. If the ground rises behind the entrance, the leaf may meet the surface or leave a changing gap. The assessment should consider the hinge arrangement, supports, parked vehicles and risks created by the movement.</p><p>Do not assume a rising hinge or a more powerful motor resolves the problem. Ask the installer to explain the proposed geometry and protective measures. Compare <a href=\"/services/electric-swing-gates/\">electric swing-gate options</a> after the site constraints are understood.</p>"
+      ],
+      [
+        "Questions for a sliding layout",
+        "<p>A sliding gate requires a suitable travel path and room beside the opening. Tracked, cantilever and multi-panel arrangements have different support and space requirements. The survey should assess levels, drainage, foundations and the surroundings along that path.</p><p>A sliding design is not automatically suitable merely because a driveway slopes. Request a drawing showing movement and clearances. Discuss <a href=\"/services/electric-sliding-gates/\">sliding-gate installation</a> with the actual site measurements.</p>"
+      ],
+      [
+        "Plan for manual release and uncontrolled movement",
+        "<p>Gravity or wind can move a gate when it is freed from its drive. The design must account for safe operation and the circumstances in which manual release is used. Ask how the gate is controlled and secured, and which situations require an engineer.</p><p>Keep people and vehicles clear of a gate that moves unexpectedly. Do not disengage a damaged or unstable gate to see whether it rolls or swings. Follow the installed system’s user instructions; a generic release sequence cannot account for your slope.</p>"
+      ],
+      [
+        "Supports, groundworks and permissions",
+        "<p>Foundation dimensions, reinforcement and drainage need to suit the proposed gate and site. Do not use a standard depth, rebar spacing or weight threshold from a web article as the construction design. The contractor should identify any specialist structural or ground advice needed.</p><p>Check applicable planning and highway constraints before ordering. Gate width alone does not provide a universal planning-permission test. Consult <a href=\"https://www.planningportal.co.uk/permission/common-projects/fences-gates-and-garden-walls/planning-permission/\" target=\"_blank\" rel=\"noopener noreferrer\">Planning Portal guidance on gates and boundaries</a> and the authority responsible for the property.</p>"
+      ],
+      [
+        "What to request with the quote",
+        "<p>Ask for the gate layout, material, supports, drive, protective measures, drainage, electrical work and surface reinstatement to be identified. Confirm work required from other trades and the checks, documents and training included at handover.</p><p>Use our <a href=\"/guides/electric-driveway-gates-cost-london/\">installed-cost checklist</a> to compare scope, then <a href=\"/contact/\">request a survey</a>. The safety basis is a site-specific assessment; see <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm\" target=\"_blank\" rel=\"noopener noreferrer\">HSE guidance on powered-gate safety</a>.</p>"
+      ]
+    ],
+    "faqs": [
+      [
+        "Can a sloping driveway have electric gates?",
+        "A suitable arrangement may be possible, but it depends on measured levels, space, supports, movement and the safety assessment. A survey should establish the options."
+      ],
+      [
+        "Are sliding gates always the answer on a slope?",
+        "No. The travel path, side space, support arrangement and surroundings still need assessment. Compare actual layouts rather than choosing from the gradient alone."
+      ],
+      [
+        "Can stronger motors compensate for a poor layout?",
+        "Do not treat motor power as a substitute for suitable geometry, supports and protective measures. The complete system needs assessment."
+      ]
+    ]
+  },
+  "tree-protection-orders-gate-installation": {
+    "kind": "blog",
+    "title": "Tree Preservation Orders and Driveway Gate Groundworks",
+    "description": "Check protected-tree constraints before planning gate posts, foundations, drainage or cable routes near front-garden trees.",
+    "sections": [
+      [
+        "Check the tree and proposed work before excavation",
+        "<p>Gate posts, foundations, tracks, drainage and cable routes can affect nearby trees as well as the entrance. Start by identifying the trees and discussing the proposed work with the local planning authority and a competent arboricultural adviser where needed.</p><p>Check Tree Preservation Orders, conservation-area status and relevant conditions on existing planning permissions. Do not assume permission for a gate authorises all work affecting a tree.</p>"
+      ],
+      [
+        "What a Tree Preservation Order can restrict",
+        "<p>A Tree Preservation Order protects specified trees, groups or woodlands. Government guidance identifies prohibited activities without the authority’s written consent, including cutting down, topping, lopping, uprooting, wilful damage and destruction. It also explains that cutting roots can require consent.</p><p>The work, exemptions and procedure need checking for the actual circumstances. Consult <a href=\"https://www.gov.uk/guidance/tree-preservation-orders-and-trees-in-conservation-areas\" target=\"_blank\" rel=\"noopener noreferrer\">GOV.UK guidance on protected trees</a> and the relevant local authority before carrying out work.</p>"
+      ],
+      [
+        "Conservation-area trees need a separate check",
+        "<p>A tree can be subject to conservation-area controls even where it is not covered by a Tree Preservation Order. Notification requirements and exceptions depend on the circumstances. Ask the council which process applies and allow for it before agreeing a start date.</p><p>A borough label or generic website statement cannot confirm the status of your tree. Keep the authority’s response, any consent and its conditions with the project records.</p>"
+      ],
+      [
+        "Give the adviser the full entrance layout",
+        "<p>Show the proposed gate, supports, motor or track, power cable, drainage and paving changes. Include temporary construction access, storage and vehicle movements. An excavation outside the visible canopy is not automatically clear of roots.</p><p>Ask the arboricultural adviser and gate contractor to coordinate the required protection area, access restrictions and construction method. Do not substitute a simple trunk-distance formula or a permitted percentage of root loss for that assessment.</p>"
+      ],
+      [
+        "Agree the method and responsibilities in writing",
+        "<p>The proposal should identify who will obtain information or consent, which work is permitted, the protection arrangements and any supervision required. Where the layout needs to change to avoid harm, update the gate drawings and quotation before construction.</p><p>This article does not prescribe air-spading pressures, root barriers or a universal foundation detail. Those choices need site-specific advice. Do not cut exposed roots or alter the agreed method to keep a gate job moving; stop the affected work and obtain advice.</p>"
+      ],
+      [
+        "Prepare the enquiry and compare the scope",
+        "<p>Send the property location, photographs from accessible positions and a description of the entrance work you want. Share tree reports, council responses and existing plans if you have them. Ask which specialist work falls within the gate quotation and which needs a separate appointment.</p><p>Our <a href=\"/guides/electric-driveway-gates-cost-london/\">gate quotation checklist</a> helps identify exclusions. <a href=\"/contact/\">Discuss the gate project</a> before commissioning equipment that may not fit the agreed protected-tree layout.</p>"
+      ]
+    ],
+    "faqs": [
+      [
+        "Does a gate project need checks for nearby tree roots?",
+        "Yes. Foundations, tracks, cables, drainage and construction access can affect roots. Check protected status and obtain competent advice for the proposed work before excavation."
+      ],
+      [
+        "Does gate planning permission automatically allow root cutting?",
+        "Do not assume that it does. Ask the local authority which permissions, tree consents, conditions or notifications apply to the actual work."
+      ],
+      [
+        "Can I use a standard distance from the trunk for the gate post?",
+        "A generic distance is not a site design. Ask the relevant adviser and contractor to establish the protection and construction arrangements for the tree and entrance."
+      ]
+    ]
+  }
+}

@@ -9,13 +9,13 @@ import { HeroLeadForm } from '@/components/HeroLeadForm';
 
 const WHAT_HAPPENS = [
   { n: '01', title: 'You share your details', desc: 'Tell us your phone number, the type of gate you are after, and your area or postcode. Takes under a minute.' },
-  { n: '02', title: 'We call you back', desc: 'One of our team calls you back within 24 hours to discuss your project and arrange a free site survey at a time that suits you.' },
+  { n: '02', title: 'We call you back', desc: 'One of our team calls you back to discuss your project and arrange a free site survey at a time that suits you.' },
   { n: '03', title: 'Free survey, written quote', desc: 'We visit your property, measure up, and talk through design and material options. You then receive a written fixed quote with no hidden costs.' },
 ];
 
 const ASSURANCES = [
   { icon: ShieldCheck, title: 'We install ourselves', desc: 'We design, supply and install every gate with our own team, and we carry full public liability insurance.' },
-  { icon: Clock,       title: 'Fast response',         desc: 'We call you back within 24 hours (Monday to Sunday, 8am to 8pm).' },
+  { icon: Clock,       title: 'Fast response',         desc: 'We call you back to discuss your enquiry.' },
   { icon: CheckCircle, title: 'Free, no obligation',   desc: 'The site survey and written quote are free. You only pay if you choose to go ahead with the installation.' },
 ];
 
@@ -34,7 +34,7 @@ export function ContactPageClient() {
                 Get in touch about your driveway gates
               </h1>
               <p className="text-lg md:text-xl text-brand-200 leading-relaxed">
-                We design, supply and install driveway gates across London. Share your details below and we call you back within 24 hours to arrange a free site survey. No pressure, no obligation.
+                We design, supply and install driveway gates across London. Share your details below and we call you back to arrange a free site survey. No pressure, no obligation.
               </p>
             </div>
           </div>

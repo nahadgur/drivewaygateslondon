@@ -8,8 +8,8 @@ import { GATE_TYPES, GOOGLE_SCRIPT_URL } from '@/data/leadForm';
 interface HeroLeadFormProps { city?: string; service?: string; }
 
 const TRUST_BADGES = [
-  { icon: Phone,       label: 'Call back within 2 hours' },
-  { icon: ShieldCheck, label: 'Fully insured team' },
+  { icon: Phone,       label: 'Discuss your project' },
+  { icon: ShieldCheck, label: 'Written installation scope' },
   { icon: Award,       label: 'Written fixed quotes' },
   { icon: Clock,       label: 'Free no-obligation survey' },
 ];
@@ -82,7 +82,7 @@ export function HeroLeadForm({ city, service }: HeroLeadFormProps) {
         </div>
         <h3 className="font-syne font-extrabold text-xl uppercase tracking-tight text-brand-900">Request Received!</h3>
         <p className="text-brand-600 text-sm max-w-xs">
-          We will call you back{city ? ` about your ${city} project` : ''} shortly, typically within 2 hours.
+          We will call you back{city ? ` about your ${city} project` : ''} to discuss the next steps.
         </p>
       </div>
     );
@@ -150,7 +150,7 @@ export function HeroLeadForm({ city, service }: HeroLeadFormProps) {
           {isSubmitting ? 'Sending…' : 'Request a Free Call Back →'}
         </button>
         <p className="text-center text-xs text-brand-500">
-          Typically within <strong className="text-brand-700">2 hours</strong> · 100% free · No obligation
+          Send your project details · No obligation
         </p>
       </form>
 

@@ -12,6 +12,7 @@ const residentialServices = services.filter(s => s.slug !== 'commercial-gates');
 const allCities = Object.values(LOCATIONS).flat();
 
 const CONTENT_LAST_UPDATED = new Date('2026-03-30');
+const SHARED_CONTENT_UPDATED = new Date('2026-10-02');
 
 // ── Priority scheme ────────────────────────────────────────────────────────────
 // 1.0  — Primary page (homepage)
@@ -29,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url;
 
   const homepage: MetadataRoute.Sitemap = [
-    { url: `${base}/`, lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'weekly', priority: 1.0 },
+    { url: `${base}/`, lastModified: SHARED_CONTENT_UPDATED, changeFrequency: 'weekly', priority: 1.0 },
   ];
 
   const hubs: MetadataRoute.Sitemap = [
@@ -41,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/blog/`,                    lastModified: new Date('2026-10-02'), changeFrequency: 'weekly',  priority: 0.8 },
     { url: `${base}/services/access-control/`, lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/local-regulations/`,       lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${base}/contact/`,                 lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'yearly',  priority: 0.6 },
+    { url: `${base}/contact/`,                 lastModified: SHARED_CONTENT_UPDATED, changeFrequency: 'yearly',  priority: 0.6 },
     { url: `${base}/privacy/`,                 lastModified: new Date('2026-10-02'), changeFrequency: 'yearly', priority: 0.3 },
   ];
 
@@ -68,7 +69,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const locationPages: MetadataRoute.Sitemap = allCities.map(city => ({
     url: `${base}/location/${toSlug(city)}/`,
-    lastModified: CONTENT_LAST_UPDATED,
+    lastModified: SHARED_CONTENT_UPDATED,
     changeFrequency: 'yearly' as const,
     priority: 0.6,
   }));
@@ -97,7 +98,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const serviceLocationPages: MetadataRoute.Sitemap = residentialServices.flatMap(service =>
     allCities.map(city => ({
       url: `${base}/services/${service.slug}/${toSlug(city)}/`,
-      lastModified: service.updatedDate ? new Date(service.updatedDate) : CONTENT_LAST_UPDATED,
+      lastModified: SHARED_CONTENT_UPDATED,
       changeFrequency: 'yearly' as const,
       priority: 0.4,
     }))

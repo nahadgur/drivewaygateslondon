@@ -33,6 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale: 'en_GB',
       images: [{ url: article.featuredImage.startsWith('http') ? article.featuredImage : `${siteConfig.url}${article.featuredImage}`, width: article.featuredImageWidth ?? 1536, height: article.featuredImageHeight ?? 1024, alt: article.featuredImageAlt || article.title }],
       publishedTime: article.publishDate,
+      modifiedTime: article.updatedDate ?? article.publishDate,
     },
     twitter: { card: 'summary_large_image', title: article.title, description: article.metaDescription, images: [article.featuredImage.startsWith('http') ? article.featuredImage : `${siteConfig.url}${article.featuredImage}`] },
   };

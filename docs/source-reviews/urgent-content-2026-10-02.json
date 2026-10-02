@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-02",
+  "scope": "Approved first urgent correction batch: shared business promises and eight P0 articles. Existing URLs retained.",
+  "articles": [
+    "gate-motor-humming-not-moving",
+    "uk-electric-gate-safety-laws",
+    "force-testing-explained",
+    "how-to-manually-open-electric-gate",
+    "photocells-vs-safety-edges",
+    "annual-gate-service-checklist-london",
+    "automated-gates-sloping-driveways-london",
+    "tree-protection-orders-gate-installation"
+  ],
+  "decisions": [
+    "Removed unsupported numerical pricing and finance offers from the shared pricing data/components. Replaced them with an itemised quotation checklist.",
+    "Removed time guarantees and unsupported cover promises from active lead forms, contact metadata, home/location snapshots and the service-location template. Updated shared FAQs and their schema sources.",
+    "Removed generic electrical repair, capacitor replacement, force/sensor adjustment and excavation recipes from the eight reviewed articles.",
+    "Replaced blanket conformity/legal claims with current primary-source context; retained original publication dates and set substantive update dates.",
+    "The annual winter checklist has been corrected at its current URL. Its proposed merge waits for the winter guide rewrite; no redirects or bulk location-page removals in this batch.",
+    "No owner product/warranty/price evidence was invented. No claim that an engineer has reviewed or certified the editorial work."
+  ],
+  "sources": [
+    "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
+    "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/responsibilities.htm",
+    "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/basics.htm",
+    "https://www.gov.uk/guidance/placing-ukca-or-ce-marked-products-on-the-market-in-great-britain",
+    "https://www.gov.uk/guidance/tree-preservation-orders-and-trees-in-conservation-areas",
+    "https://www.planningportal.co.uk/permission/common-projects/fences-gates-and-garden-walls/planning-permission/"
+  ],
+  "remaining": [
+    "P1 article and product-page corrections in older-content-review-2026-10-02.html, including the running-cost arithmetic, irrelevant underground-motor article and borough planning data.",
+    "Four proposed merges and evidence-led location retention decisions.",
+    "Owner confirmation of products/terms; GA4 reporting verification and real enquiry-delivery test remain separate."
+  ]
+}
