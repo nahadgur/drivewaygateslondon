@@ -3,7 +3,6 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import { Breadcrumbs } from '@/components/Breadcrumbs';
 import { siteConfig } from '@/data/site';
 
 export const metadata: Metadata = {
@@ -20,39 +19,27 @@ const LAST_UPDATED = '2 October 2026';
 // Helper to keep the H2 pattern consistent across sections.
 function LegalH2({ n, children }: { n: string; children: React.ReactNode }) {
   return (
-    <h2 className="font-syne font-bold text-xl md:text-2xl tracking-tight text-brand-950 mt-10 mb-3 flex items-baseline gap-3">
-      <span className="text-sm text-brand-500 font-semibold tracking-wider">{n}</span>
-      <span>{children}</span>
+    <h2>
+      {n}. {children}
     </h2>
   );
 }
 
 export default function PrivacyPage() {
   return (
-    <>
+    <div id="top" className="showcase-page subpage tone-forest privacy-page">
       <Header />
 
-      <main className="flex-grow">
-        <section className="bg-brand-950 border-b-[3px] border-brand-900">
-          <div className="container-width py-12 md:py-16">
-            <Breadcrumbs items={[{ label: 'Privacy Policy' }]} />
-            <div className="max-w-3xl mt-6">
-              <h1
-                className="font-syne font-extrabold uppercase tracking-tight text-white mb-4"
-                style={{ fontSize: 'clamp(24px, 4vw, 40px)', lineHeight: 1.02, letterSpacing: '-.02em' }}
-              >
-                Privacy <span className="text-brand-500">Policy</span>
-              </h1>
-              <p className="text-brand-300 text-sm uppercase tracking-wider">
-                Last updated: {LAST_UPDATED}
-              </p>
-            </div>
-          </div>
-        </section>
+      <main id="main">
+        <div className="page-wrap"><section className="sub-hero">
+          <img className="hero-backdrop" src="/showcase/assets/content/gate-aluminium-sliding-modern-dark-brick-553aa55.webp" alt="" aria-hidden="true" width={1200} height={800} fetchPriority="high" />
+          <nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span aria-current="page">Privacy Policy</span></nav>
+          <h1>Privacy Policy</h1><p className="lead">Last updated: {LAST_UPDATED}</p>
+        </section></div>
 
-        <section className="bg-white">
-          <div className="container-width py-10 md:py-14">
-            <div className="max-w-3xl text-[15px] leading-relaxed text-brand-900 space-y-4 [&_p]:mb-0 [&_a]:text-brand-600 [&_a]:underline hover:[&_a]:text-brand-800">
+        <section className="page-wrap">
+          <div className="legal-content">
+            <div>
 
               <LegalH2 n="1">Who we are</LegalH2>
               <p>
@@ -174,6 +161,6 @@ export default function PrivacyPage() {
       </main>
 
       <Footer />
-    </>
+    </div>
   );
 }

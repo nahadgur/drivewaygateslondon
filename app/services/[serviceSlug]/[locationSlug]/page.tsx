@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import { services, getServiceBySlug } from '@/data/services';
 import { LOCATIONS, toSlug, getCityBySlug } from '@/data/locations';
 import { siteConfig } from '@/data/site';
-import { ServiceLocationPageClient } from './ServiceLocationPageClient';
+import { ServiceAreaPage } from '@/components/showcase/ServiceAreaPage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 interface Props { params: { serviceSlug: string; locationSlug: string } }
@@ -79,7 +79,7 @@ export default function ServiceLocationPage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <ServiceLocationPageClient params={params} />
+      <ServiceAreaPage service={service} cityName={cityName} locationSlug={params.locationSlug} />
     </>
   );
 }

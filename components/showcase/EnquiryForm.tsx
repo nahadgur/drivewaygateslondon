@@ -5,8 +5,10 @@ import { GOOGLE_SCRIPT_URL, GATE_TYPES } from '@/data/leadForm';
 import { gateTypeForSlug } from '@/components/HeroLeadForm';
 import { trackEnquiry } from '@/lib/analytics';
 
-export function EnquiryForm() {
-  const [values, setValues] = useState({ fullName: '', phone: '', email: '', location: '', treatment: 'Not sure yet' });
+export function EnquiryForm({ initialArea = '', initialService, formId = 'contact_enquiry' }: {
+  initialArea?: string; initialService?: string; formId?: 'contact_enquiry' | 'hero_enquiry';
+} = {}) {
+  const [values, setValues] = useState({ fullName: '', phone: '', email: '', location: initialArea, treatment: gateTypeForSlug(initialService) || 'Not sure yet' });
   const [state, setState] = useState<'ready' | 'sending' | 'success'>('ready');
   const [error, setError] = useState('');
   const sending = useRef(false);
@@ -14,10 +16,10 @@ export function EnquiryForm() {
   const result = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    const treatment = gateTypeForSlug(params.get('gate') || undefined);
-    setValues(current => ({ ...current, location: params.get('area') || '', treatment: GATE_TYPES.includes(treatment) ? treatment : 'Not sure yet' }));
+    const treatment = gateTypeForSlug(params.get('gate') || initialService);
+    setValues(current => ({ ...current, location: params.get('area') || initialArea, treatment: GATE_TYPES.includes(treatment) ? treatment : 'Not sure yet' }));
     return () => request.current?.abort();
-  }, []);
+  }, [initialArea, initialService]);
   useEffect(() => { if (state === 'success') result.current?.focus(); }, [state]);
   function change(event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) {
     setValues(current => ({ ...current, [event.target.name]: event.target.value }));
@@ -38,7 +40,7 @@ export function EnquiryForm() {
       let data: { ok?: boolean; error?: string } = {};
       try { data = JSON.parse(text); } catch { /* The existing endpoint can return plain text. */ }
       if (data.ok === false) throw new Error(data.error || 'Submission failed');
-      trackEnquiry('contact_enquiry');
+      trackEnquiry(formId);
       setState('success');
     } catch {
       setError('We could not send your enquiry. Please try again or call 020 3773 1310.');
