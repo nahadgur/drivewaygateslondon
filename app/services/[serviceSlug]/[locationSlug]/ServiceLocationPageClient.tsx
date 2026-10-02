@@ -161,9 +161,9 @@ export function ServiceLocationPageClient({ params }: { params: { serviceSlug: s
                   <ul className="space-y-1 mb-6">
                     {services.filter(s => s.id !== service.id).map(s => (
                       <li key={s.id}>
-                        <Link href={`/services/${s.slug}/${params.locationSlug}/`}
+                        <Link href={s.slug === 'commercial-gates' ? '/commercial/' : `/services/${s.slug}/${params.locationSlug}/`}
                           className="block px-3 py-2.5 border-b border-brand-100 font-syne font-bold text-[11px] tracking-[.04em] uppercase text-brand-700 hover:bg-brand-900 hover:text-brand-50 transition-colors">
-                          {s.title} in {cityName}
+                          {s.slug === 'commercial-gates' ? 'Commercial gate services' : `${s.title} in ${cityName}`}
                         </Link>
                       </li>
                     ))}

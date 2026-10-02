@@ -27,7 +27,7 @@ for(const html of [...Object.values(pages).map(page=>Object.values(page).join('\
   const href=match[1].replaceAll('&amp;','&');
   if(!href.startsWith('/')||href.startsWith('//'))continue;
   const pathname=decodeURIComponent(new URL(href,'https://www.drivewaygateslondon.co.uk').pathname);
-  if(pathname.startsWith('/showcase/assets/')){if(!existsSync(resolve(root,'public','.'+pathname)))failures.push(pathname);}
+  if(pathname.startsWith('/showcase/assets/') || pathname.startsWith('/images/')){if(!existsSync(resolve(root,'public','.'+pathname)))failures.push(pathname);}
   else if(!known.has(pathname.replace(/\/$/,'')||'/'))failures.push(pathname);
   checked++;
  }

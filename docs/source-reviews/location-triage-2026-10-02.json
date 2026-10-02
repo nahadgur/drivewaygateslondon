@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-02",
+  "period": "28 June to 27 September 2026",
+  "method": "Editorial triage, not a Google rule: protect any recorded clicks; improve zero-click URLs with average position at or above the top 20 or at least 100 impressions; otherwise assess observed zero-click URLs for consolidation. Missing rows stay unknown. No location redirect or indexability change was applied.",
+  "counts": {
+    "Evidence missing": 905,
+    "Improve visible page": 375,
+    "Consolidation candidate": 247,
+    "Protect traffic": 69
+  },
+  "applied": "No location redirects or indexability changes. Commercial links in the matrix point to the commercial directory.",
+  "next": "Verify current page/query trends, enquiries and referring links before selecting a limited consolidation batch. Most generic location pages have no row in this export; do not infer zero traffic."
+}

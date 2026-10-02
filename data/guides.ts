@@ -106,183 +106,229 @@ const guideEntries: Guide[] = [
 },
 
   {
-    slug: 'electric-gate-running-costs',
-    title: 'How Much Electricity Does an Automated Gate Actually Use?',
-    metaTitle: 'Electric Gate Running Costs UK | 2026 Energy Guide',
-    metaDescription: 'Worried about energy bills? Discover the true running costs of electric gates in London, including standby electricity, servicing, and repairs.',
-    pillar: 'Pricing & Costs',
-    excerpt: 'Electric gate running costs are far lower than most homeowners expect — but the full annual picture includes electricity, servicing, and occasional repairs. Here is what you will actually pay.',
-    readingMinutes: 7,
-    publishDate: '2026-01-17',
-    featuredImage: '/images/gates/gate-automation-intercom-evening-lighting.png',
-    intro: 'One of the most common questions we hear from London homeowners considering an automated gate is how much it will add to their electricity bill. The answer is almost always: less than you think. Modern 24V gate motors are among the most efficient electrical devices in any household. This guide breaks down the real electric gate running costs so you can budget with confidence.',
-    sections: [
-      {
-        heading: 'Standby Power vs Active Cycle Consumption',
-        body: `An automated gate motor draws power in two very different modes. In standby — which is the vast majority of its operating life — a modern 24V residential gate motor consumes between 3 and 8 watts. This is comparable to an LED bulb and represents the power required to keep the control board active, the safety sensors live, and the system ready to receive a command.\n\nDuring an active opening or closing cycle, power consumption rises to between 60 and 150 watts for a typical single motor, lasting for the 10 to 20 seconds the gate takes to complete its travel. A pair of motors on a double swing gate draws proportionally more during the cycle, but the cycle duration is the same.\n\nOlder 230V AC motors — common on gates installed before 2015 — consume significantly more in both modes. Standby consumption on older units can reach 20 to 40 watts, and cycle consumption can exceed 300 watts per motor. If your gate was installed more than a decade ago, upgrading to a modern 24V DC system may be worth considering purely on energy efficiency grounds — our <a href="/services/automated-gate-systems/">automated gate installations in London</a> team can advise on what a system upgrade involves.`,
-      },
-      {
-        heading: 'What Electric Gates Actually Add to Your Monthly Electricity Bill',
-        body: `Let us do the maths for a typical London household with a modern 24V gate system opening and closing around 10 times per day — a reasonable assumption for a family home.\n\nStandby consumption: 5 watts x 24 hours x 365 days = 43.8 kWh per year. Active cycle consumption: 100 watts average x 20 seconds per cycle x 10 cycles per day x 365 days = 20.3 kWh per year. Total annual consumption: approximately 64 kWh.\n\nAt the current UK electricity unit rate — the <a href="https://energysavingtrust.org.uk/" target="_blank" rel="noopener noreferrer">Energy Saving Trust</a> reports the typical UK rate at around 24p per kWh as of 2026 — that works out to roughly £15 to £16 per year. Less than £1.50 per month.\n\nFor properties with a battery backup unit fitted alongside the motor — which stores charge and powers the gate during power cuts — add a small additional draw for the trickle-charging circuit, typically 1 to 3 watts constant. This adds no more than £2 to £3 per year to the running cost.`,
-      },
-      {
-        heading: 'Annual Servicing and Maintenance Costs',
-        body: `Electricity is the smallest element of the <a href="/guides/electric-driveway-gates-cost-london/">true annual running cost of an electric gate</a>. The more significant ongoing cost is servicing.\n\nA professional annual service from a London gate engineer typically costs between £120 and £200 for a standard residential system. This covers motor lubrication, safety sensor testing and calibration, hinge adjustment and greasing, track cleaning for sliding gates, intercom function test, battery backup check, and a general structural inspection. Skipping the annual service risks voiding manufacturer warranties and turning small problems into expensive failures.\n\nOver a 10-year period, a realistic total running cost budget for a London residential automated gate — electricity, annual servicing, and occasional minor repairs — is £2,000 to £3,500. Spread over the decade, that is £200 to £350 per year.`,
-      },
-      {
-        heading: 'How Modern 24V Systems Compare to Older Motors',
-        body: `If you have an older gate system installed before 2015, motor technology has advanced considerably. Modern 24V brushless DC motors are more energy-efficient, quieter, smoother, and significantly more reliable than the 230V AC motors that dominated the market a decade ago.\n\nThe efficiency gain translates directly to running costs: a modern system might cost £16 per year in electricity where an older 230V system on the same gate costs £45 to £60. Over 10 years, that is a saving of £300 to £450 in electricity alone, before accounting for the reduced repair frequency of modern motor technology.\n\nMany London homeowners with older gate systems are surprised to discover that a full motor and control board upgrade — fitting a modern 24V system to existing gates — costs far less than replacing the gate itself. If your current system is noisy, slow, or unreliable, this is often the most cost-effective route. Drop your phone number in the form above and our team will call back to discuss whether an upgrade makes financial sense for your system.`,
-      },
-    ],
-    faqs: [
-      { question: 'How much electricity does an electric gate use per year?', answer: 'A modern 24V residential gate motor uses approximately 60 to 70 kWh per year for a typical London household with around 10 gate cycles per day. At current UK electricity rates of around 24p per kWh, this works out to roughly £15 to £17 per year — well under £2 per month.' },
-      { question: 'Does leaving the gate on standby use a lot of electricity?', answer: 'No. A modern gate motor in standby draws only 3 to 8 watts — comparable to a low-energy LED bulb. Even on standby continuously for a year, the cost would be under £10 at current electricity rates.' },
-      { question: 'How often should electric gates be serviced?', answer: 'Once per year for residential systems. A standard annual service covers motor lubrication, safety sensor testing, hinge adjustment, intercom checks, and battery backup verification. It typically takes an hour and costs £120 to £200 in London.' },
-      { question: 'Is it worth upgrading from an old 230V gate motor to a new 24V system?', answer: 'Usually yes, if the existing gate structure is sound. Modern 24V motors are more efficient, quieter, smoother, and more reliable. The upgrade typically costs £800 to £1,800 depending on gate type, and the energy and repair savings often recover this within 5 to 7 years.' },
-    ],
-    relatedServiceSlug: 'gate-repair-and-maintenance',
-    relatedGuides: ['electric-driveway-gates-cost-london', 'automation-kit-installation-prices', 'winter-gate-maintenance'],
-  },
+  "slug": "electric-gate-running-costs",
+  "title": "Electric Gate Running Costs: Calculate Your Electricity Use",
+  "metaTitle": "Electric Gate Running Costs: Calculate Your Electricity Use | Driveway Gates London",
+  "metaDescription": "Estimate annual gate electricity use from movement time, standby demand and your own electricity tariff.",
+  "pillar": "Pricing & Costs",
+  "excerpt": "Estimate annual gate electricity use from movement time, standby demand and your own electricity tariff.",
+  "readingMinutes": 2,
+  "publishDate": "2026-01-17",
+  "featuredImage": "/images/guides/electric-gate-running-costs.webp",
+  "intro": "Estimate annual gate electricity use from movement time, standby demand and your own electricity tariff.",
+  "sections": [
+    {
+      "heading": "Measure two different loads",
+      "body": "<p>A gate uses electricity while moving and may also draw power while waiting. The controller, intercom, access receiver, network equipment and battery charger can contribute to that waiting load. Motor output ratings alone do not give the electricity drawn by the complete entrance.</p><p>Ask for measured input power or manufacturer consumption figures for the specified equipment. For two motors, use the combined demand. Record the total powered movement time for opening and closing, rather than treating an opening as a complete cycle.</p>"
+    },
+    {
+      "heading": "A worked example with explicit units",
+      "body": "<p>This is an illustration, not a typical installation or a current tariff quote. Assume the complete system draws 100 W while moving and 5 W while idle. It makes ten complete cycles per day, each with 20 seconds of total powered movement.</p><p>Annual movement time = 20 × 10 × 365 ÷ 3,600 = 20.28 hours. Movement electricity = 0.100 kW × 20.28 hours = 2.03 kWh.</p><p>A 365-day year contains 8,760 hours. Idle time = 8,760 − 20.28 = 8,739.72 hours. Idle electricity = 0.005 kW × 8,739.72 hours = 43.70 kWh. Total electricity = 45.73 kWh. At an example tariff of £0.30 per kWh, that is £13.72 per year.</p>"
+    },
+    {
+      "heading": "Adapt the calculation to your gate",
+      "body": "<p>Use annual kWh = (moving watts × moving hours + idle watts × idle hours) ÷ 1,000. Multiply the result by your unit tariff in pounds per kWh. Use 8,784 hours for a leap year.</p><p>The example treats moving power as the whole system demand during movement, so it subtracts movement time from idle time. If your motor figure is an additional load above a separately measured continuous baseline, calculate that baseline over the whole year instead. Do not count the same load twice.</p><p>If a cycle takes 40 seconds instead of 20, change the movement time before calculating both parts. Heaters, lighting and accessories that switch separately need their own power-and-time calculations.</p>"
+    },
+    {
+      "heading": "Electricity is only part of ownership cost",
+      "body": "<p>SIM plans, cloud subscriptions, servicing, replacement batteries and repairs are separate costs. Ask which apply to the proposed equipment and whether VAT is included. An existing household electricity standing charge is not usually an additional gate cost; a separate metered supply could introduce one.</p><p>Keep electricity estimates separate from maintenance budgets when using our <a href=\"/guides/electric-driveway-gates-cost-london/\">installed gate cost guide</a>. For a retrofit, compare the work described in our <a href=\"/guides/automation-kit-installation-prices/\">automation quotation guide</a>.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is 100 W for 20 seconds, ten times a day, 20.3 kWh per year?",
+      "answer": "No. Under those assumptions it is about 2.03 kWh per year. Standby and other equipment must be calculated separately."
+    },
+    {
+      "question": "Is the example my likely bill?",
+      "answer": "No. Replace the sample power, operating time and tariff with figures for your own system."
+    }
+  ],
+  "relatedServiceSlug": "gate-repair-and-maintenance",
+  "relatedGuides": [],
+  "featuredImageAlt": "Electrician measuring the power draw of an automated driveway-gate motor",
+  "updatedDate": "2026-10-02"
+},
 
   {
-    slug: 'automation-kit-installation-prices',
-    title: 'The Cost of Adding Automation to Existing Driveway Gates',
-    metaTitle: 'Gate Automation Kit Installation Prices | London',
-    metaDescription: 'Want to automate your existing manual gates? Learn the installation prices for underground and ram gate automation kits in London.',
-    pillar: 'Pricing & Costs',
-    excerpt: 'Already have manual gates and want to add motors? Here is a clear breakdown of gate automation kit installation prices in London — covering underground motors, ram-arm systems, and the site requirements that affect the final cost.',
-    readingMinutes: 6,
-    publishDate: '2026-01-24',
-    featuredImage: '/images/gates/gate-aluminium-sliding-modern-dark-brick-2.png',
-    intro: 'Retrofitting automation to existing manual driveway gates is one of the most popular gate upgrade projects in London. It avoids the cost and disruption of replacing structurally sound gates entirely, and modern motors can be fitted to almost any gate type — timber, steel, or wrought iron — provided the gate and its hanging hardware meet the minimum structural requirements.',
-    sections: [
-      {
-        heading: 'Can Your Existing Gates Be Automated?',
-        body: `Before any motor is specified, a site survey must establish whether your existing gates are suitable for automation. This is not a formality — it directly determines whether a retrofit is viable, and if so, which motor system is appropriate.\n\nThe critical factors are gate weight, hinge condition, and structural integrity. A pair of timber swing gates for a standard 3.5-metre opening typically weighs 80 to 150 kg total. Most modern residential swing gate motors can handle up to 300 kg per leaf, so weight is rarely the limiting factor for standard residential timber gates. Heavy bespoke wrought iron or steel gates are a different matter — very heavy designs may require commercial-grade motors or structural reinforcement of the posts.\n\nHinge condition matters because automation puts a continuous rotational load on hinges that manual operation does not. Worn, corroded, or loose hinges will fail quickly under motor load. Most retrofit projects include hinge replacement or upgrade as part of the specification. If you need <a href="/services/gate-automation-kits/">gate upgrades and maintenance in London</a>, we assess hinges as part of every survey.`,
-      },
-      {
-        heading: 'Surface-Mounted Ram-Arm Motor Costs',
-        body: `Ram-arm motors are the most affordable and straightforward automation option for swing gates. They mount on the back of the gate leaf and post, are visible when the gate is open, and require no excavation or groundwork beyond an electrical connection.\n\nFor supply and installation of a quality branded ram-arm motor system — from manufacturers such as <a href="https://www.bft-automation.com/en_GB/" target="_blank" rel="noopener noreferrer">BFT Automation</a>, CAME, or FAAC — expect to pay £1,200 to £2,200 for a pair of motors on double swing gates, fully installed and commissioned. This includes the control board, safety photocells, two remote controls, and basic programming.\n\nAdd-ons that most homeowners include at the same time: a basic audio intercom (£150 to £300), a GSM opener for phone-based gate control (£200 to £400), or a video intercom with smartphone app integration (£350 to £700 fitted). These are most cost-effectively added at the same time as the motor installation since the cable runs are already open.`,
-      },
-      {
-        heading: 'Underground Motor Costs',
-        body: `Underground motors are the premium option for swing gates. Mounted in a waterproof housing beneath the gate post cap, they are completely invisible when the gate is closed — only the gate itself is visible, with no external motor housings or arm linkages.\n\nThe cost premium over ram-arm systems reflects the hardware quality and the additional installation work. A pair of underground motors from a quality manufacturer typically costs £2,200 to £3,800 for supply and installation, depending on the motor specification and any groundwork required.\n\nA site survey is mandatory before any retrofit automation project is quoted. Retrofitting electric gates <a href="/guides/electric-driveway-gates-cost-london/">cost estimates</a> provided without a site visit are unreliable — ground conditions, cable routing distances, gate weight, and hinge condition all materially affect the final price. Leave your phone number in the form above and our team will arrange a fast callback to discuss your specific project and book a free survey.`,
-      },
-    ],
-    faqs: [
-      { question: 'How much does it cost to automate existing gates in London?', answer: 'Retrofitting a pair of existing swing gates with ram-arm motors, safety photocells, and remotes in London typically costs £1,200 to £2,200 fully installed. Underground motor systems cost £2,200 to £3,800 for the same gate configuration. Adding a video intercom at the same time typically adds £350 to £700.' },
-      { question: 'Can any manual gate be automated?', answer: 'Most structurally sound manual gates can be automated. We assess gate weight, hinge condition, post integrity, and the available space for the motor system during the free site survey. Gates that are rotten, heavily corroded, or poorly hung will need repair or replacement before automation is practical.' },
-      { question: 'Do I need planning permission to add automation to existing gates?', answer: 'Adding a motor to existing gates does not normally require planning permission — the gate already exists and its height and position are unchanged. Always check with your local planning authority if you are in a conservation area.' },
-      { question: 'How long does a gate automation retrofit take?', answer: 'A standard retrofit — two motors, photocells, intercom, and remotes on an existing pair of swing gates — is a job we typically complete in one day.' },
-    ],
-    relatedServiceSlug: 'gate-automation-kits',
-    relatedGuides: ['electric-driveway-gates-cost-london', 'electric-gate-running-costs'],
-  },
+  "slug": "automation-kit-installation-prices",
+  "title": "The Cost of Automating Existing Driveway Gates",
+  "metaTitle": "The Cost of Automating Existing Driveway Gates | Driveway Gates London",
+  "metaDescription": "Build a retrofit budget that includes the gate assessment, supports, power, controls and completed-system checks.",
+  "pillar": "Pricing & Costs",
+  "excerpt": "Build a retrofit budget that includes the gate assessment, supports, power, controls and completed-system checks.",
+  "readingMinutes": 2,
+  "publishDate": "2026-01-24",
+  "featuredImage": "/images/guides/automation-kit-installation-prices.webp",
+  "intro": "Build a retrofit budget that includes the gate assessment, supports, power, controls and completed-system checks.",
+  "sections": [
+    {
+      "heading": "Check whether the existing gate can be automated",
+      "body": "<p>Start with the gate and supports, before choosing a motor kit. The survey should assess condition, hinges or running gear, movement, dimensions, exposure to wind and hazards around the opening. A manual gate that can be pushed by hand is not automatically ready for powered operation.</p><p>Ask whether the proposal needs repairs, altered supports, a different opening arrangement or replacement leaves. Include that work in the comparison with a new gate.</p>"
+    },
+    {
+      "heading": "Separate the quotation into work packages",
+      "body": "<p>Request separate descriptions for gate repairs, motor and controls, power supply, cable routes, groundworks and surface reinstatement. Include access equipment, protective measures and any work by other trades.</p><p>Record VAT, removal and disposal, appointments, permissions and exclusions. A kit price covers a different scope from an installed and checked entrance. The cheapest motor listing cannot establish the completed project cost.</p>"
+    },
+    {
+      "heading": "Specify operation and handover",
+      "body": "<p>Explain how often the gate operates, who uses it and whether you need pedestrian access, delivery entry or an intercom. Ask for the proposed product models and the basis for choosing them.</p><p>The quotation should identify completed-system checks, documentation, user instruction and manual-release training. Confirm maintenance, repair support and the separate equipment and installation warranty terms in writing.</p>"
+    },
+    {
+      "heading": "Compare retrofit and replacement",
+      "body": "<p>If repair and alteration costs are substantial, request a replacement option with equivalent appearance and controls. Compare the complete scope, disruption and upkeep rather than assuming retrofit must be cheaper.</p><p>Use the <a href=\"/guides/electric-driveway-gates-cost-london/\">installed gate cost guide</a> alongside our <a href=\"/services/gate-automation-kits/\">gate automation service</a>. Send photographs, approximate dimensions and known faults when you <a href=\"/contact/\">discuss your entrance</a>.</p><p>Further reading: <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm\">HSE guidance on complete-system assessment</a>.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can you give a fixed retrofit price from a motor model?",
+      "answer": "A motor model does not identify the repairs, power, groundworks or protective measures needed. A site assessment establishes the complete scope."
+    },
+    {
+      "question": "Can I keep my existing controls?",
+      "answer": "Compatibility and condition need checking against the proposed equipment. Identify retained parts and any limitations in the quotation."
+    }
+  ],
+  "relatedServiceSlug": "gate-automation-kits",
+  "relatedGuides": [],
+  "featuredImageAlt": "Engineers retrofitting automation to existing timber driveway gates",
+  "updatedDate": "2026-10-02"
+},
 
   {
-    slug: 'aluminium-vs-wooden-driveway-gates',
-    title: 'Aluminium vs. Wooden Driveway Gates: Which is Best for Your London Home?',
-    metaTitle: "Aluminium vs Wooden Driveway Gates | London Buyer's Guide",
-    metaDescription: 'Choosing between aluminium and wooden driveway gates for your London home? Compare durability, maintenance, security, and costs.',
-    pillar: 'Comparison & Buying',
-    excerpt: 'Timber looks warmer. Aluminium lasts longer with zero maintenance. This guide gives you the full, honest comparison of aluminium vs wooden driveway gates so you can make the right call for your London property.',
-    readingMinutes: 8,
-    publishDate: '2026-01-31',
-    featuredImage: '/images/gates/gate-wooden-oak-swing-cottage-garden.png',
-    intro: 'The choice between aluminium and timber is the single most debated material decision in the London driveway gate market. Both materials have genuine strengths, and the right answer depends on your property style, how much time you want to spend on maintenance, and what your budget looks like over a 10-year horizon rather than just today.',
-    sections: [
-      {
-        heading: 'The Classic Appeal of Hardwood Gates and What London Weather Does to Them',
-        body: `Hardwood driveway gates have an authenticity that no manufactured material fully replicates. The grain, the warmth, the weight of a well-made oak or iroko gate closing is genuinely different from the click of an aluminium panel. For period London properties — Victorian terraces, Edwardian semis, Georgian townhouses — a quality hardwood gate is architecturally appropriate in a way that aluminium often is not.\n\nThe practical question is what London's climate does to that hardwood over time. London's combination of damp winters, intermittent frost, and significant diurnal temperature variation is genuinely hard on timber. Untreated or under-maintained hardwood gates will check, crack at the joints, and begin to warp within three to five years. Gate leaves that warp enough to bind on the frame or drag on the ground are a common repair call-out.\n\nFor properties where hardwood is the right choice — conservation areas, period homes, heritage settings — consider <a href="/blog/accoya-wood-gates-london/">premium modified timbers</a>. <a href="https://www.accoya.com/" target="_blank" rel="noopener noreferrer">Accoya</a> is a chemically modified radiata pine that is dimensionally extremely stable, carries a 50-year above-ground guarantee, and needs treatment only every three to five years. Our <a href="/services/wooden-driveway-gates/">bespoke wooden gates in London</a> include iroko, oak, and Accoya as standard options.`,
-      },
-      {
-        heading: 'The Rise of Aluminium: Lightweight, Rust-Free, Zero Maintenance',
-        body: `Aluminium driveway gates have moved from a niche product to the <a href="/blog/aluminium-vs-timber-gates-london/">dominant residential gate material in London</a> over the past seven years. The reasons are compelling. Aluminium does not rust. It does not warp. It does not need annual treatment. The powder coat finish is baked on at the factory and carries a manufacturer guarantee of 20 to 25 years.\n\nFor a London homeowner who wants a gate that looks excellent, performs reliably, and requires nothing beyond an occasional wash, aluminium is the straightforward answer. Low maintenance driveway gates in London — genuinely low maintenance — means aluminium.\n\nDesign options in aluminium have expanded considerably. Flat-face full-privacy panels, horizontal slat designs, vertical bar styles, and wood-effect textured finishes are all available. The wood-effect finishes — embossed surface texturing combined with RAL colours in oak, mahogany, or walnut — are increasingly popular for homeowners who want the warmth of timber aesthetics with the durability of aluminium.`,
-      },
-      {
-        heading: 'Security and Lifespan: How the Two Materials Compare',
-        body: `Both aluminium and hardwood gates provide equivalent security for residential applications when properly hung and fitted. The security of a gate is determined primarily by its locking hardware, hinge specification, post foundation, and motor dead-lock function — not by the material of the gate itself.\n\nFor lifespan, aluminium is the clear winner on a maintained basis. A quality aluminium gate with a 25-year powder coat guarantee should last 40 years or more without structural degradation. A hardwood gate — assuming excellent maintenance — might reach 25 to 30 years for premium iroko, or 15 to 20 years for good-quality oak.\n\nIf you are still unsure which material suits your specific property, design vision, and budget, our team can advise. Enter your phone number in the form above and one of our installation specialists will call back to discuss the options for your specific situation.`,
-      },
-    ],
-    faqs: [
-      { question: 'Are aluminium gates as strong as wooden gates?', answer: 'Yes. Modern aluminium gate profiles use hollow sections with internal reinforcement that match the rigidity of equivalent timber designs for residential applications. For security purposes, the hinge specification, locking hardware, and motor dead-lock function matter far more than the gate material itself.' },
-      { question: 'How often do wooden gates need treating in London?', answer: 'Most hardwood gate manufacturers recommend oiling or re-staining every 12 to 24 months for London properties. Premium modified timbers such as Accoya need treatment only every three to five years.' },
-      { question: 'Do aluminium gates look as good as wooden gates?', answer: 'Modern aluminium gates with wood-effect powder coat finishes are visually very close to real timber at normal viewing distances. For contemporary architectural styles, aluminium is often the superior aesthetic choice. For traditional period properties in conservation areas, authentic hardwood may be preferred by planning authorities.' },
-      { question: 'Which is cheaper — aluminium or wooden gates?', answer: 'On initial supply cost, mid-range aluminium and good-quality hardwood gates are broadly comparable. Over a 10-year period, aluminium is typically cheaper when maintenance costs are included, as it requires no oiling, staining, or repainting.' },
-    ],
-    relatedServiceSlug: 'aluminium-driveway-gates',
-    relatedGuides: ['swing-vs-sliding-gates', 'electric-driveway-gates-cost-london'],
-  },
+  "slug": "aluminium-vs-wooden-driveway-gates",
+  "title": "Aluminium vs Wooden Driveway Gates",
+  "metaTitle": "Aluminium vs Wooden Driveway Gates | Driveway Gates London",
+  "metaDescription": "Compare timber, painted aluminium and wood-effect finishes by appearance, construction, upkeep and complete installation scope.",
+  "pillar": "Comparison & Buying",
+  "excerpt": "Compare timber, painted aluminium and wood-effect finishes by appearance, construction, upkeep and complete installation scope.",
+  "readingMinutes": 2,
+  "publishDate": "2026-01-31",
+  "featuredImage": "/images/guides/aluminium-vs-wooden-driveway-gates.webp",
+  "intro": "Compare timber, painted aluminium and wood-effect finishes by appearance, construction, upkeep and complete installation scope.",
+  "sections": [
+    {
+      "heading": "Compare samples at your property",
+      "body": "<p>Timber has natural grain and variation; painted aluminium gives a more uniform surface. Wood-effect aluminium offers a printed or applied timber appearance, but grain repetition, edges and the rear face can look different from real wood.</p><p>View samples beside your brickwork in daylight and shade. Ask to see the finish on a corner, joint and reverse face, rather than choosing from a small photograph. Check how the posts, pedestrian gate and fencing will match.</p>"
+    },
+    {
+      "heading": "Look beyond the face of the gate",
+      "body": "<p>For timber, ask for the species or modified-wood product, board construction, frame joints and finish specification. For aluminium, ask about the frame, infill, joints, coating and repair options. The material name alone does not establish stiffness, durability or suitability for automation.</p><p>Solid boards and open bars create different privacy and wind-exposure conditions. Discuss weight, dimensions, supports and movement with the installer. Compare the complete gate design instead of assuming that one material will suit every opening.</p>"
+    },
+    {
+      "heading": "Plan the upkeep you will accept",
+      "body": "<p>Timber coatings need care appropriate to the species, exposure and selected finish. Ask how to recognise when attention is due and whether you want the wood to retain its original colour. Aluminium still needs the specified cleaning, coating checks and maintenance of its fittings.</p><p>Separate the timber or coating warranty from the gate fabrication, installation and automation terms. Ask about exclusions, maintenance records and labour charges. A raw-material warranty does not promise that the complete gate will remain unchanged for that period.</p>"
+    },
+    {
+      "heading": "Compare equivalent quotations",
+      "body": "<p>Put the same opening dimensions, infill, finish, supports, automation and access controls into both quotations. Include removal of the old entrance, power, groundworks, VAT and reinstatement. This gives you a useful comparison without relying on a universal lifespan or percentage saving.</p><p>Explore <a href=\"/services/wooden-driveway-gates/\">wooden driveway gates</a> and <a href=\"/services/aluminium-driveway-gates/\">aluminium gates</a>. For modified timber, read our <a href=\"/blog/accoya-wood-gates-london/\">Accoya guide</a> and ask for the proposed product terms. Then <a href=\"/contact/\">discuss your entrance</a>.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is aluminium maintenance-free?",
+      "answer": "No. Follow the cleaning and inspection instructions for the finish, hardware and automation."
+    },
+    {
+      "question": "Does wood-effect aluminium look identical to timber?",
+      "answer": "Compare full-size samples, joints and both faces in your own lighting. Finish systems differ and appearance is a personal choice."
+    }
+  ],
+  "relatedServiceSlug": "aluminium-driveway-gates",
+  "relatedGuides": [],
+  "featuredImageAlt": "Homeowner comparing aluminium and wooden driveway-gate finishes",
+  "updatedDate": "2026-10-02"
+},
 
   {
-    slug: 'swing-vs-sliding-gates',
-    title: "Swing vs. Sliding Gates: The Ultimate Buyer's Guide",
-    metaTitle: 'Swing vs Sliding Gates | Which is Best for London Driveways?',
-    metaDescription: 'Short on space? Find out whether swing gates or sliding gates are better for your London property based on driveway size, slope, and security.',
-    pillar: 'Comparison & Buying',
-    excerpt: 'Swing gate or sliding gate? The answer depends on your driveway length, slope, available wall space, and budget. This guide covers every practical variable so you can make the right decision for your London property.',
-    readingMinutes: 8,
-    publishDate: '2026-02-07',
-    featuredImage: '/images/gates/gate-aluminium-swing-open-luxury-garden.png',
-    intro: 'The choice between swing and sliding gates is the single most important decision in a driveway gate project, and it is determined almost entirely by the physical characteristics of your driveway — not by aesthetic preference. This guide walks through every practical variable.',
-    sections: [
-      {
-        heading: 'Space Requirements: Why London Driveways Often Favour Sliding',
-        body: `The defining constraint for swing gates is clearance. A pair of swing gates opening inward onto a 3.5-metre driveway require each gate leaf to swing through a 90-degree arc — meaning the car on the driveway must be parked at least 3.5 metres back from the gate line for the gates to open fully. On a standard London terrace or semi-detached property with a 4 to 6 metre driveway, this can make swing gates impractical without precise parking discipline.\n\nSliding gates eliminate this problem entirely. A sliding gate moves laterally along the boundary wall or fence, opening a full-width passage <a href="/blog/telescopic-gates-space-saving-london/">without encroaching on the driveway space</a> at all. The trade-off is that you need clear, unobstructed wall space equal to the gate width alongside the opening.\n\nFor short London driveways, sliding is often the only viable mechanised option. The <a href="https://www.planningportal.co.uk/" target="_blank" rel="noopener noreferrer">UK Planning Portal</a> notes that many urban permitted development properties have restricted frontage dimensions that make swing gate clearance impractical. If you are considering <a href="/services/electric-sliding-gates/">electric sliding gates in London</a>, our team can assess whether your boundary wall configuration is suitable.`,
-      },
-      {
-        heading: 'Wind Resistance: A Factor Many London Homeowners Overlook',
-        body: `Wind loading is a genuine practical consideration for solid-panel driveway gates in London, and it affects swing and sliding designs very differently.\n\nA pair of solid swing gates on a corner plot or exposed position acts precisely as a sail when wind hits the panels broadside. The wind force is transmitted directly through the gate leaf to the hinges and posts. On a fully open gate in a 40 mph gust, the loading on hinge pins and post bases is substantial. Poorly specified posts or under-rated hinges will show the damage within one or two winters.\n\nSliding gates experience wind loading differently. When open, the gate is retracted along the boundary wall, where it is partially sheltered. When closed, wind loading is transmitted to the gate guide, track, and motor — systems designed to handle the loading in their rated specification. A well-specified sliding gate system is generally more resistant to wind damage than equivalent swing gates.`,
-      },
-      {
-        heading: 'Slope, Cost, and the Final Decision',
-        body: `Driveway slope is the third major variable. Swing gates opening inward on a driveway that slopes downward from the road must clear the rising driveway surface as they open. Swing gates with articulated arm motors can compensate for gradient better than underground motors.\n\nSliding gates have their own gradient challenge: the ground track must be level even if the driveway surface is not. Cantilever sliding systems — which suspend the gate above the ground without a surface track — eliminate this requirement entirely.\n\nOn cost, swing gates are consistently less expensive to install than sliding gates for equivalent openings. The absence of a ground track, simpler motor mounting, and lower groundwork requirements all contribute to a swing gate installation typically costing £800 to £2,000 less than a sliding gate of the same material and quality.\n\nA free site survey is the quickest route to a definitive recommendation. We will measure, assess, and advise on the right system for your specific driveway. Leave your number in the form above and we will arrange a survey at your convenience.`,
-      },
-    ],
-    faqs: [
-      { question: 'Can swing gates open outward onto the pavement in London?', answer: 'Generally no. UK regulations prevent gates from opening outward over a public footpath or highway. Swing gates on London residential properties almost always open inward. If inward opening is not possible due to driveway geometry, sliding gates or bi-folding gates are the practical alternative.' },
-      { question: 'How much wall space do I need for a sliding gate?', answer: 'For a tracked sliding gate, you need clear wall or fence space equal to the gate width plus approximately 500mm on one side of the opening. For a 4-metre gate, that means approximately 4.5 metres of unobstructed boundary.' },
-      { question: 'Are sliding gates more secure than swing gates?', answer: 'Both types offer equivalent security when properly specified. Sliding gates have one advantage: they cannot be forced inward by a vehicle ramming from outside, as the gate must travel laterally rather than hinging.' },
-      { question: 'Which type of gate is cheaper to automate?', answer: 'Swing gates are generally less expensive to automate than sliding gates. A pair of swing gates with ram-arm motors typically costs £1,200 to £2,200 to automate. A sliding gate with rack-and-pinion motor and track typically costs £1,500 to £2,800, plus any groundwork for the track bed.' },
-    ],
-    relatedServiceSlug: 'electric-swing-gates',
-    relatedGuides: ['aluminium-vs-wooden-driveway-gates', 'electric-driveway-gates-cost-london'],
-  },
+  "slug": "swing-vs-sliding-gates",
+  "title": "Swing vs Sliding Driveway Gates",
+  "metaTitle": "Swing vs Sliding Driveway Gates | Driveway Gates London",
+  "metaDescription": "Compare parking clearance, side space, slopes and everyday access before choosing how your driveway gate opens.",
+  "pillar": "Comparison & Buying",
+  "excerpt": "Compare parking clearance, side space, slopes and everyday access before choosing how your driveway gate opens.",
+  "readingMinutes": 2,
+  "publishDate": "2026-02-07",
+  "featuredImage": "/images/guides/swing-vs-sliding-gates.webp",
+  "intro": "Compare parking clearance, side space, slopes and everyday access before choosing how your driveway gate opens.",
+  "sections": [
+    {
+      "heading": "Measure the space each leaf occupies",
+      "body": "<p>A swing leaf travels around its hinge. For an illustrative pair of equal leaves across a 3.5 m opening, each leaf is about 1.75 m wide before allowing for gaps and fittings. Its free edge traces an arc with roughly that radius, rather than the full 3.5 m opening width.</p><p>That arithmetic is not a safe parking distance. Hinge position, opening angle, vehicle shape, pedestrian routes and protective clearances determine the usable space. Ask for a scaled plan showing the gate in motion and your car parked.</p><figure><img src=\"/images/guides/swing-clearance-example.svg\" alt=\"Illustrative plan: two approximately 1.75 metre swing leaves across a 3.5 metre opening, with each leaf sweeping its own arc.\" width=\"720\" height=\"340\" loading=\"lazy\" style=\"width:100%;height:auto\"><figcaption>Illustration only. Not a site design or a minimum safe clearance.</figcaption></figure>"
+    },
+    {
+      "heading": "Allow for the full sliding arrangement",
+      "body": "<p>A sliding gate moves beside the entrance. The gate needs room along that path, including its supporting arrangement and safe separation from walls, fences and people. Cantilever designs have a supporting tail; tracked and multi-panel systems have different space requirements.</p><p>A car may be able to park beyond the sliding path, but the survey still needs to consider turning, waiting and pedestrian access. Read about <a href=\"/blog/telescopic-gates-space-saving-london/\">telescopic options</a> if side space is limited.</p>"
+    },
+    {
+      "heading": "Slopes and drainage can change the choice",
+      "body": "<p>A rising driveway can obstruct a swing leaf. A sliding layout also needs a suitable travel path, supports and drainage. Neither layout becomes suitable simply by adding a stronger motor.</p><p>Share measured levels and any flooding history with the installer. Our <a href=\"/blog/automated-gates-sloping-driveways-london/\">sloping-driveway guide</a> explains the questions to resolve before ordering.</p>"
+    },
+    {
+      "heading": "Choose around daily use",
+      "body": "<p>Consider where visitors stop, how pedestrians enter, and how bins and deliveries pass the gate. Ask how you will operate the entrance during a power cut and what maintenance access the design needs.</p><p>Compare <a href=\"/services/electric-swing-gates/\">swing-gate installation</a> with <a href=\"/services/electric-sliding-gates/\">sliding-gate installation</a> using the same design and access requirements. Groundworks and the complete specification determine cost; there is no fixed percentage difference that applies to every site.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Does a pair of gates need the entire opening width behind it?",
+      "answer": "Each leaf has its own swept arc. Use the actual leaf dimensions and a site drawing that also accounts for vehicles, people and protective clearances."
+    },
+    {
+      "question": "Which is better for a short driveway?",
+      "answer": "A sliding or folding design may help, but side space, supports, gradient and safe movement still need assessment."
+    }
+  ],
+  "relatedServiceSlug": "electric-swing-gates",
+  "relatedGuides": [],
+  "featuredImageAlt": "Gate surveyor explaining a sliding-gate layout on a short London driveway",
+  "updatedDate": "2026-10-02"
+},
 
   {
-    slug: 'best-intercom-systems',
-    title: 'The Best Intercom Systems for Electric Driveway Gates',
-    metaTitle: 'Best Intercom Systems for Electric Gates | 2026 Guide',
-    metaDescription: 'Compare the best video, GSM, and keypad intercom systems for London driveway gates. Secure your home with smart access control.',
-    pillar: 'Comparison & Buying',
-    excerpt: 'Video, audio, GSM, or keypad — there are more intercom options than ever for London driveway gates. This guide compares the main systems so you can choose the right access control for your property and lifestyle.',
-    readingMinutes: 8,
-    publishDate: '2026-02-14',
-    featuredImage: '/images/gates/gate-swing-open-night-gold-lighting-drive.png',
-    intro: 'An automated gate without a good intercom is only half a solution. The intercom system determines how you, your family, and your visitors interact with the gate every single day. This guide compares the main options for London residential properties in 2026.',
-    sections: [
-      {
-        heading: 'Video vs Audio-Only Intercoms',
-        body: `Audio-only intercoms were the standard for residential gate installations throughout the 1990s and 2000s. They remain a viable budget option today, with basic wired audio intercom systems available from £100 to £200 supply and fit. You hear the visitor, they hear you, you press a button to open the gate.\n\nThe limitation is obvious: you cannot see who is at your gate. Video intercoms have dropped dramatically in price and now represent the clear value choice at any budget above £300 for supply and installation. A basic wired video intercom with a gate-side camera, an indoor monitor with colour display, and gate release button costs £250 to £500 fitted. Mid-range systems with HD cameras, night vision, and motion detection start from £400 to £700 fitted.\n\nFor <a href="/services/automated-gate-systems/">secure gate installations in London</a>, video intercoms have become the default specification — the question is now which system type, not whether to include video.`,
-      },
-      {
-        heading: 'GSM Intercoms vs Hardwired Systems',
-        body: `A <a href="/blog/gsm-gate-openers-london/">GSM gate intercom</a> uses a SIM card and the mobile network to connect gate visitors to your smartphone, wherever you are in the world. The caller presses the gate button, your phone rings with a notification or call, and you answer it to see the camera feed and press a button on your phone screen to open the gate. No hardwired connection between the gate post and the house is required beyond power to the gate post unit.\n\nHardwired systems connect the gate camera and button to an indoor monitor via a dedicated cable. They are independent of any network, mobile signal, or internet connection. If the power is on and the cable is intact, the system works.\n\nThe best of both approaches is a combined system: a hardwired video intercom for indoor use at home, paired with a GSM module that routes calls to smartphones when the indoor monitor is not answered. This is increasingly the standard specification for London residential properties and costs £500 to £900 fitted for a quality combined system.`,
-      },
-      {
-        heading: 'Smart Home Integration: Ring, Google Home, and Control4',
-        body: `Smart home integration has become a significant consideration for London homeowners who are already using smart home platforms. <a href="https://en-uk.ring.com/" target="_blank" rel="noopener noreferrer">Ring</a> Video Doorbell products include gate-specific models designed to mount at gate posts and integrate with the Ring app ecosystem. If you already use Ring cameras or doorbells, a Ring gate intercom offers seamless integration.\n\nFor Google Home users, several intercom manufacturers offer Google Assistant integration, allowing voice commands to check who is at the gate and open it via a connected speaker. Control4 and other dedicated smart home automation platforms support deep integration with commercial-grade gate intercom systems.\n\nAccess control can be upgraded at any time — you do not need to install the full intercom system at the same time as the gate if budget is a constraint. Leave your phone number in the form above and we will call you back within 24 hours to discuss which intercom system suits your gate setup and smart home platform.`,
-      },
-    ],
-    faqs: [
-      { question: 'What is the best intercom system for an electric gate in London?', answer: 'For most London homeowners, a combined hardwired video intercom with GSM backup offers the best of both worlds — reliable indoor answering when at home, with smartphone app access when away. Brands such as Comelit, Hikvision, and Urmet all produce quality systems in this category.' },
-      { question: 'Can I add an intercom to an existing electric gate?', answer: 'Yes. Intercoms can be retrofitted to any existing automated gate. We connect the intercom control board to the gate motor relay input. A power supply at the gate post is required. Most retrofits are completed in a day.' },
-      { question: 'Do I need WiFi at my gate post for a smart intercom?', answer: 'Not necessarily. GSM-based systems use the mobile network rather than WiFi, so they only require a power supply and a mobile signal at the gate post.' },
-      { question: 'How much does a video intercom cost to install on a gate in London?', answer: 'A basic wired video intercom costs £250 to £500 fitted. Mid-range systems with HD camera and night vision cost £400 to £700 fitted. Combined hardwired and GSM smart systems cost £500 to £900 fitted.' },
-    ],
-    relatedServiceSlug: 'automated-gate-systems',
-    relatedGuides: ['swing-vs-sliding-gates', 'automation-kit-installation-prices'],
-  },
+  "slug": "best-intercom-systems",
+  "title": "Choosing an Intercom for Your Driveway Gate",
+  "metaTitle": "Choosing an Intercom for Your Driveway Gate | Driveway Gates London",
+  "metaDescription": "Compare wired, network and mobile intercom options around visitor calls, gate release and ongoing account costs.",
+  "pillar": "Comparison & Buying",
+  "excerpt": "Compare wired, network and mobile intercom options around visitor calls, gate release and ongoing account costs.",
+  "readingMinutes": 2,
+  "publishDate": "2026-02-14",
+  "featuredImage": "/images/guides/best-intercom-systems.webp",
+  "intro": "Compare wired, network and mobile intercom options around visitor calls, gate release and ongoing account costs.",
+  "sections": [
+    {
+      "heading": "Decide where you want to answer visitors",
+      "body": "<p>List who should receive a call and whether they need an indoor monitor, phone calls, an app or a combination. Include anyone who does not use a smartphone. Decide what happens if nobody answers and how a visitor can leave a delivery.</p><p>Ask for a demonstration of the actual sequence: call, identify the visitor, grant entry and confirm that the gate has finished moving. Seeing a video does not necessarily mean the app reports the gate’s physical position.</p>"
+    },
+    {
+      "heading": "Compare the connection paths",
+      "body": "<p>A wired indoor system can suit a household that wants a dedicated answering point. An IP system needs the specified network and power arrangements. A mobile-network intercom needs suitable coverage, device support and a compatible SIM plan.</p><p>Test the connection at the proposed gate position. A strong indoor Wi-Fi signal or a phone signal from another network does not prove the intercom will work there. Discuss what remains available during a broadband, mobile-service or power failure.</p>"
+    },
+    {
+      "heading": "Get the exact equipment and account terms",
+      "body": "<p>Request model numbers, the proposed release interface, supported monitors and app requirements. Confirm recording options, retention, subscriptions, SIM charges and which account owns the system. Ask how to remove a former resident or contractor.</p><p>Product families contain different devices. Compare named configurations rather than assuming a brand guarantees compatibility. Our <a href=\"/blog/video-intercom-comelit-vs-hikvision/\">Comelit and Hikvision comparison</a> shows why the component list matters.</p>"
+    },
+    {
+      "heading": "Plan installation and support",
+      "body": "<p>Include cable routes, power, camera position, lighting, accessibility and weather exposure in the survey. Confirm who commissions the connection to the gate controller and checks operation of the complete entrance.</p><p>Compare <a href=\"/services/access-control/video-intercoms/\">video intercoms</a> and <a href=\"/services/access-control/gsm-phone-entry/\">phone entry</a>. For an existing smart-home setup, use our <a href=\"/blog/smart-gate-integration-ring-nest-control4/\">integration checklist</a>. Check <a href=\"https://www.ofcom.org.uk/phones-and-broadband/coverage-and-speeds/3g-switch-off\">Ofcom’s network-retirement guidance</a> before buying mobile-network equipment.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Which brand is best?",
+      "answer": "Compare the proposed models against your wiring, visitor workflow, network, account costs and support requirements. A brand ranking cannot establish compatibility."
+    },
+    {
+      "question": "Does an app continue working during a power cut?",
+      "answer": "That depends on backup power for the gate, intercom and network equipment, as well as the service connection. Ask for the actual failure arrangements."
+    }
+  ],
+  "relatedServiceSlug": "automated-gate-systems",
+  "relatedGuides": [],
+  "featuredImageAlt": "Installer showing a homeowner several driveway-gate intercom systems",
+  "updatedDate": "2026-10-02"
+},
 
   {
   "slug": "how-to-manually-open-electric-gate",
@@ -346,39 +392,49 @@ const guideEntries: Guide[] = [
 },
 
   {
-    slug: 'winter-gate-maintenance',
-    title: 'The Ultimate Winter Maintenance Guide for Electric Gates',
-    metaTitle: 'Winter Gate Maintenance | Protect Electric Gates in Freezes',
-    metaDescription: 'Stop your electric gates from freezing or breaking down this winter. Follow our expert winter maintenance checklist for London homeowners.',
-    pillar: 'Maintenance & Troubleshooting',
-    excerpt: 'London winters are damp and cold — and that combination is hard on gate motors, tracks, hinges, and timber finishes. This maintenance checklist covers what to do before the cold hits and what to watch for during it.',
-    readingMinutes: 7,
-    publishDate: '2026-03-07',
-    featuredImage: '/images/gates/gate-wrought-iron-open-misty-morning-manor.png',
-    intro: 'Winter is the season that separates properly maintained gate systems from neglected ones. In London, the combination of intermittent frost, persistent damp, and sudden temperature drops creates specific failure patterns that are almost entirely preventable with the right preparation.',
-    sections: [
-      {
-        heading: 'Why Cold Weather Is Hard on Gate Motors and Hydraulic Systems',
-        body: `Gate motors and their associated hydraulic systems are sensitive to temperature in ways that most homeowners do not realise until a failure occurs. Hydraulic gate motors — common on older underground systems and some commercial installations — use hydraulic fluid to generate the force that moves the gate. As temperatures drop toward and below freezing, that fluid thickens. A fluid rated for operation to minus 15 degrees C that has not been changed in five years may begin to thicken at plus 5 degrees C, because degraded hydraulic fluid loses its cold-weather additives over time.\n\nModern 24V DC gate motors do not use hydraulic fluid, but they are not immune to cold. The lubricating grease in the motor gearbox thickens at low temperatures, increasing the load the motor must overcome on every cycle.\n\nThe <a href="https://www.metoffice.gov.uk/" target="_blank" rel="noopener noreferrer">Met Office</a> issues severe weather warnings for London that specifically flag conditions — heavy frost, freezing fog, and rapid temperature drops — that create elevated risk of <a href="/blog/gate-motor-humming-not-moving/">gate system failures</a>. Checking their site before a cold snap gives you time to prepare your gate system.`,
-      },
-      {
-        heading: 'Lubricating Hinges, Racks, and Tracks Correctly',
-        body: `The most important and most neglected aspect of winter gate maintenance is lubrication. For swing gate hinges, use a lithium-based grease rated for temperatures down to at least minus 20 degrees C. Spray lubricants are convenient but evaporate quickly — a proper grease applied with a brush to each hinge pin, working it into the barrel, will last through an entire winter and beyond.\n\nFor sliding gate racks and pinions, use a dedicated rack grease rather than a general-purpose spray. Rack grease is formulated to stay in place on a horizontal surface at low temperatures, where lighter lubricants run off. Apply it along the full length of the rack with a brush, then cycle the gate through two or three full open-close cycles to distribute it into the pinion teeth.\n\nFor sliding gate bottom wheels and track, clean the track thoroughly first — compacted grit, leaf debris, and mud all hold moisture that accelerates ice formation. After cleaning, a thin application of silicone spray along the track channel reduces ice adhesion. For professional <a href="/services/gate-repair-and-maintenance/">gate servicing in London</a>, our engineers carry a full range of winter-grade lubricants and apply them to manufacturer specification.`,
-      },
-      {
-        heading: 'Checking Underground Motor Boxes for Drainage and Ice Risk',
-        body: `Underground gate motors live in a cavity below the gate post — which, in a London winter with persistent rain followed by a freeze, is a potential ice trap. Water pooling in the motor cavity and then freezing expands against the motor housing, seals, and cable entry points.\n\nCheck the drainage of every underground motor box at least once before winter. Lift the cover and inspect the base of the cavity. There should be no standing water. Most well-installed motor boxes include a drain point at the base — check that it is clear and unobstructed. If you find standing water, bail it out and identify the ingress source.\n\nWinter engineer call-outs in London command a premium — overtime rates, extended travel times, and the disruption of an inoperable gate in freezing conditions all combine to make January the most expensive month for gate repairs. A preventative <a href="/blog/annual-gate-service-checklist-london/">winter service</a> booked now costs far less. Leave your phone number in the form above and our team will arrange a fast callback to book you in before the cold arrives.`,
-      },
-    ],
-    faqs: [
-      { question: 'Why does my electric gate slow down or stop in cold weather?', answer: 'Cold thickens the lubricating grease in the motor gearbox and on the gate drive components, increasing the resistance the motor must overcome. If the gate also has stiff hinges or debris in the track, the combined resistance can exceed the motor output. Correct lubrication with winter-grade grease before the cold sets in prevents this in the majority of cases.' },
-      { question: 'Can frost damage my gate motor permanently?', answer: 'Frost damage to gate motors is most common in underground motor installations where water has pooled in the motor cavity. Freezing water expands and can crack the motor housing, damage seals, and corrode the control board. Annual inspection and drainage checks before winter prevent most frost-related motor damage.' },
-      { question: 'What lubricant should I use on my electric gate in winter?', answer: 'Use a lithium-based grease rated to at least minus 20 degrees C on hinge pins and pivot points. Use a dedicated rack grease on sliding gate racks. Silicone spray is suitable for sliding gate tracks and rubber seals. Avoid WD-40 or general-purpose light oils on structural moving parts.' },
-      { question: 'How often should electric gates be serviced in London?', answer: 'Once per year minimum, ideally in autumn before the cold weather arrives. An annual service costs £120 to £200 in London and prevents the majority of cold-weather failures.' },
-    ],
-    relatedServiceSlug: 'gate-repair-and-maintenance',
-    relatedGuides: ['electric-gate-running-costs'],
-  },
+  "slug": "winter-gate-maintenance",
+  "title": "Winter Gate Maintenance for London Homes",
+  "metaTitle": "Winter Gate Maintenance for London Homes | Driveway Gates London",
+  "metaDescription": "Prepare your entrance for wet and cold weather with safe observations, the right service records and a clear fault plan.",
+  "pillar": "Maintenance & Troubleshooting",
+  "excerpt": "Prepare your entrance for wet and cold weather with safe observations, the right service records and a clear fault plan.",
+  "readingMinutes": 2,
+  "publishDate": "2026-03-07",
+  "featuredImage": "/images/guides/winter-gate-maintenance.webp",
+  "intro": "Prepare your entrance for wet and cold weather with safe observations, the right service records and a clear fault plan.",
+  "sections": [
+    {
+      "heading": "Check the entrance before colder weather",
+      "body": "<p>From outside the movement area, look for damaged fittings, a leaning leaf, unusual gaps, standing water or debris near tracks and drains. Note changes in noise or movement during normal use. Do not repeat a faulty movement to investigate it.</p><p>Keep the gate instructions, service records and installer contact details together. Arrange an assessment before winter if the gate scrapes, hesitates or behaves differently. Tell the engineer about flooding, impact damage or recent paving work.</p>"
+    },
+    {
+      "heading": "Keep homeowner care within the instructions",
+      "body": "<p>Carry out only the cleaning and care described for your installed system, using its stated isolation arrangements. Keep hands clear of hinges, rollers and trapping points. Do not remove electrical covers, change force settings or bypass sensors.</p><p>Lubricant type and application points depend on the equipment. Adding oil or grease to an unsuitable part can create problems. Ice, compacted debris and water in a motor enclosure need assessment; do not use force or improvised heat to restore operation.</p>"
+    },
+    {
+      "heading": "What to discuss at a service visit",
+      "body": "<p>Ask the engineer to inspect the mechanical condition, supports, drainage, cabling and protective measures relevant to your entrance. Discuss how weather exposure and use affect the maintenance schedule. Request a record of findings, remedial work and checks before return to use.</p><p>Confirm the visit charge and what it covers before booking. Ask how parts or additional work will be authorised. A seasonal checklist cannot replace the maintenance instructions or an assessment of the complete system.</p>"
+    },
+    {
+      "heading": "Prepare for a power cut or breakdown",
+      "body": "<p>Check that you have the correct user instructions and release key, and understand how the gate would be controlled and secured. Wind and gravity can move a released gate. Battery backup, where fitted, needs its own maintenance and capacity checks.</p><p>Read our <a href=\"/guides/how-to-manually-open-electric-gate/\">manual-release guide</a> before an emergency. If the motor hums without moving, stop repeated attempts and use our <a href=\"/blog/gate-motor-humming-not-moving/\">fault information checklist</a> when requesting <a href=\"/services/gate-repair-and-maintenance/\">a repair assessment</a>.</p><p>Further reading: <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm\">HSE powered-gate safety and maintenance guidance</a>.</p>"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Should every gate be serviced once a year?",
+      "answer": "Follow the system instructions and an engineer’s assessment of use, condition and exposure. A calendar interval alone does not establish that a gate is safe."
+    },
+    {
+      "question": "Can I increase the motor force in cold weather?",
+      "answer": "Do not change safety or force settings to overcome a fault. Stop using a gate that struggles and arrange assessment."
+    }
+  ],
+  "relatedServiceSlug": "gate-repair-and-maintenance",
+  "relatedGuides": [],
+  "featuredImageAlt": "Engineer clearing wet leaves from a sliding-gate track in winter",
+  "updatedDate": "2026-10-02"
+},
 
   {
   "slug": "uk-electric-gate-safety-laws",

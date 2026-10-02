@@ -46,6 +46,11 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Reviewed topic consolidation, 2 October 2026.
+      { source: '/blog/annual-gate-service-checklist-london/', destination: '/guides/winter-gate-maintenance/', permanent: true },
+      { source: '/blog/aluminium-vs-timber-gates-london/', destination: '/guides/aluminium-vs-wooden-driveway-gates/', permanent: true },
+      { source: '/blog/anpr-gate-entry-london/', destination: '/services/access-control/anpr-systems/', permanent: true },
+      { source: '/blog/heritage-gate-finishes-victorian-homes/', destination: '/blog/wrought-iron-gate-restoration-london/', permanent: true },
       // Consolidated installed-cost and ownership advice, 2 October 2026.
       { source: '/blog/automated-gate-total-cost-london/', destination: '/guides/electric-driveway-gates-cost-london/', permanent: true },
       { source: '/blog/driveway-gate-installation-costs-london/', destination: '/guides/electric-driveway-gates-cost-london/', permanent: true },
@@ -63,14 +68,14 @@ const nextConfig = {
       { source: '/blog/underground-motors-and-why-discreet-automation-is-the-best-choice-for-period-london-homes/', destination: '/blog/underground-gate-motors-london/', permanent: true },
       { source: '/blog/article-4-directions-and-whether-you-need-planning-permission-for-a-new-gate-in-london/', destination: '/blog/article-4-directions-gate-planning-permission/', permanent: true },
       { source: '/blog/conservation-area-compliance-and-how-to-design-wrought-iron-gates-that-meet-council-standards/', destination: '/blog/conservation-area-gate-planning-london/', permanent: true },
-      { source: '/blog/heritage-grade-finishes-and-how-to-balance-modern-automation-with-victorian-aesthetics/', destination: '/blog/heritage-gate-finishes-victorian-homes/', permanent: true },
+      { source: '/blog/heritage-grade-finishes-and-how-to-balance-modern-automation-with-victorian-aesthetics/', destination: '/blog/wrought-iron-gate-restoration-london/', permanent: true },
       { source: '/blog/tree-protection-orders-and-how-gate-groundworks-can-affect-front-garden-trees/', destination: '/blog/tree-protection-orders-gate-installation/', permanent: true },
       { source: '/blog/smart-entry-in-2026-and-how-to-integrate-your-driveway-gate-with-ring-nest-and-control4/', destination: '/blog/smart-gate-integration-ring-nest-control4/', permanent: true },
       { source: '/blog/video-intercom-showdown-and-whether-comelit-or-hikvision-is-better-for-london-homes/', destination: '/blog/video-intercom-comelit-vs-hikvision/', permanent: true },
       { source: '/blog/gsm-gate-openers-and-why-you-should-be-able-to-open-your-london-gate-from-anywhere/', destination: '/blog/gsm-gate-openers-london/', permanent: true },
-      { source: '/blog/automatic-number-plate-recognition-and-whether-your-driveway-is-ready-for-hands-free-entry/', destination: '/blog/anpr-gate-entry-london/', permanent: true },
+      { source: '/blog/automatic-number-plate-recognition-and-whether-your-driveway-is-ready-for-hands-free-entry/', destination: '/services/access-control/anpr-systems/', permanent: true },
       { source: '/blog/solar-powered-gate-automation-and-whether-london-gets-enough-sun-for-it-to-work-well/', destination: '/blog/solar-powered-gate-automation-london/', permanent: true },
-      { source: '/blog/aluminium-vs-timber-gates-and-why-londoners-are-choosing-wood-effect-metal/', destination: '/blog/aluminium-vs-timber-gates-london/', permanent: true },
+      { source: '/blog/aluminium-vs-timber-gates-and-why-londoners-are-choosing-wood-effect-metal/', destination: '/guides/aluminium-vs-wooden-driveway-gates/', permanent: true },
       { source: '/blog/why-anthracite-grey-still-dominates-london-driveway-gate-trends-in-2026/', destination: '/blog/anthracite-grey-gate-trends-london/', permanent: true },
       { source: '/blog/accoya-wood-gates-and-how-to-stop-timber-gates-warping-in-damp-london-winters/', destination: '/blog/accoya-wood-gates-london/', permanent: true },
       { source: '/blog/minimalist-steel-slat-gates-and-why-private-contemporary-designs-are-growing-in-london/', destination: '/blog/minimalist-steel-slat-gates-london/', permanent: true },
@@ -81,7 +86,7 @@ const nextConfig = {
       { source: '/blog/force-testing-explained-and-why-your-gate-installer-must-legally-test-impact-power/', destination: '/guides/force-testing-explained/', permanent: true },
       { source: '/blog/safety-photocells-vs-safety-ribs-and-which-gate-safety-tech-protects-kids-and-pets-better/', destination: '/guides/photocells-vs-safety-edges/', permanent: true },
       { source: '/blog/how-to-manually-open-an-electric-gate-during-a-power-cut/', destination: '/guides/how-to-manually-open-electric-gate/', permanent: true },
-      { source: '/blog/the-annual-service-checklist-for-preventing-gate-failure-during-a-london-freeze/', destination: '/blog/annual-gate-service-checklist-london/', permanent: true },
+      { source: '/blog/the-annual-service-checklist-for-preventing-gate-failure-during-a-london-freeze/', destination: '/guides/winter-gate-maintenance/', permanent: true },
       { source: '/blog/how-to-budget-for-driveway-gate-installation-electricity-and-servicing-in-london/', destination: '/guides/electric-driveway-gates-cost-london/', permanent: true },
       { source: '/blog/the-total-cost-of-owning-an-automated-gate-in-london-in-2026/', destination: '/guides/electric-driveway-gates-cost-london/', permanent: true },
       { source: '/blog/why-your-gate-motor-is-humming-but-not-moving/', destination: '/blog/gate-motor-humming-not-moving/', permanent: true },

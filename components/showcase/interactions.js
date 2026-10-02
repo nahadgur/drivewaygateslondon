@@ -239,7 +239,7 @@ const options = {
     },
     "character": {
         "title": "Wooden Driveway Gates",
-        "text": "Handcrafted timber gates that bring warmth and character to your property. Available in hardwoods like iroko and oak, or treated softwoods for a more affordable option.",
+        "text": "Timber driveway gates for London homes, with the species, construction, finish and upkeep agreed before ordering.",
         "image": "/showcase/assets/timber.webp",
         "alt": "Wooden Driveway Gates",
         "link": "services/wooden-driveway-gates/",
@@ -247,7 +247,7 @@ const options = {
     },
     "space": {
         "title": "Electric Sliding Gates",
-        "text": "Space-saving automated gates that slide horizontally along your boundary wall. Perfect for driveways where a swinging gate would eat into parking space.",
+        "text": "Electric sliding gates designed around your London driveway, side space, supports and access requirements.",
         "image": "/showcase/assets/sliding.webp",
         "alt": "Electric Sliding Gates",
         "link": "services/electric-sliding-gates/",

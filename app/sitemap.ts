@@ -40,8 +40,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/commercial/`,              lastModified: new Date('2026-10-02'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/guides/`,                  lastModified: new Date('2026-10-02'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/blog/`,                    lastModified: new Date('2026-10-02'), changeFrequency: 'weekly',  priority: 0.8 },
-    { url: `${base}/services/access-control/`, lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${base}/local-regulations/`,       lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/services/access-control/`, lastModified: SHARED_CONTENT_UPDATED, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/local-regulations/`,       lastModified: SHARED_CONTENT_UPDATED, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/contact/`,                 lastModified: SHARED_CONTENT_UPDATED, changeFrequency: 'yearly',  priority: 0.6 },
     { url: `${base}/privacy/`,                 lastModified: new Date('2026-10-02'), changeFrequency: 'yearly', priority: 0.3 },
   ];
@@ -55,7 +55,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const accessControlPages: MetadataRoute.Sitemap = accessControlServices.map(s => ({
     url: `${base}/services/access-control/${s.slug}/`,
-    lastModified: CONTENT_LAST_UPDATED,
+    lastModified: s.updatedDate ? new Date(s.updatedDate) : CONTENT_LAST_UPDATED,
     changeFrequency: 'yearly' as const,
     priority: 0.6,
   }));
@@ -76,7 +76,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const regulationPages: MetadataRoute.Sitemap = boroughRegulations.map(b => ({
     url: `${base}/local-regulations/${b.slug}/`,
-    lastModified: CONTENT_LAST_UPDATED,
+    lastModified: new Date(b.reviewedDate),
     changeFrequency: 'yearly' as const,
     priority: 0.6,
   }));

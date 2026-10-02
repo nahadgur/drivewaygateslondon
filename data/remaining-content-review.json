@@ -1,0 +1,949 @@
+{
+  "electric-gate-running-costs": {
+    "kind": "guide",
+    "title": "Electric Gate Running Costs: Calculate Your Electricity Use",
+    "description": "Estimate annual gate electricity use from movement time, standby demand and your own electricity tariff.",
+    "sections": [
+      [
+        "Measure two different loads",
+        "<p>A gate uses electricity while moving and may also draw power while waiting. The controller, intercom, access receiver, network equipment and battery charger can contribute to that waiting load. Motor output ratings alone do not give the electricity drawn by the complete entrance.</p><p>Ask for measured input power or manufacturer consumption figures for the specified equipment. For two motors, use the combined demand. Record the total powered movement time for opening and closing, rather than treating an opening as a complete cycle.</p>"
+      ],
+      [
+        "A worked example with explicit units",
+        "<p>This is an illustration, not a typical installation or a current tariff quote. Assume the complete system draws 100 W while moving and 5 W while idle. It makes ten complete cycles per day, each with 20 seconds of total powered movement.</p><p>Annual movement time = 20 × 10 × 365 ÷ 3,600 = 20.28 hours. Movement electricity = 0.100 kW × 20.28 hours = 2.03 kWh.</p><p>A 365-day year contains 8,760 hours. Idle time = 8,760 − 20.28 = 8,739.72 hours. Idle electricity = 0.005 kW × 8,739.72 hours = 43.70 kWh. Total electricity = 45.73 kWh. At an example tariff of £0.30 per kWh, that is £13.72 per year.</p>"
+      ],
+      [
+        "Adapt the calculation to your gate",
+        "<p>Use annual kWh = (moving watts × moving hours + idle watts × idle hours) ÷ 1,000. Multiply the result by your unit tariff in pounds per kWh. Use 8,784 hours for a leap year.</p><p>The example treats moving power as the whole system demand during movement, so it subtracts movement time from idle time. If your motor figure is an additional load above a separately measured continuous baseline, calculate that baseline over the whole year instead. Do not count the same load twice.</p><p>If a cycle takes 40 seconds instead of 20, change the movement time before calculating both parts. Heaters, lighting and accessories that switch separately need their own power-and-time calculations.</p>"
+      ],
+      [
+        "Electricity is only part of ownership cost",
+        "<p>SIM plans, cloud subscriptions, servicing, replacement batteries and repairs are separate costs. Ask which apply to the proposed equipment and whether VAT is included. An existing household electricity standing charge is not usually an additional gate cost; a separate metered supply could introduce one.</p><p>Keep electricity estimates separate from maintenance budgets when using our <a href=\"/guides/electric-driveway-gates-cost-london/\">installed gate cost guide</a>. For a retrofit, compare the work described in our <a href=\"/guides/automation-kit-installation-prices/\">automation quotation guide</a>.</p>"
+      ]
+    ],
+    "faqs": [
+      [
+        "Is 100 W for 20 seconds, ten times a day, 20.3 kWh per year?",
+        "No. Under those assumptions it is about 2.03 kWh per year. Standby and other equipment must be calculated separately."
+      ],
+      [
+        "Is the example my likely bill?",
+        "No. Replace the sample power, operating time and tariff with figures for your own system."
+      ]
+    ]
+  },
+  "winter-gate-maintenance": {
+    "kind": "guide",
+    "title": "Winter Gate Maintenance for London Homes",
+    "description": "Prepare your entrance for wet and cold weather with safe observations, the right service records and a clear fault plan.",
+    "sections": [
+      [
+        "Check the entrance before colder weather",
+        "<p>From outside the movement area, look for damaged fittings, a leaning leaf, unusual gaps, standing water or debris near tracks and drains. Note changes in noise or movement during normal use. Do not repeat a faulty movement to investigate it.</p><p>Keep the gate instructions, service records and installer contact details together. Arrange an assessment before winter if the gate scrapes, hesitates or behaves differently. Tell the engineer about flooding, impact damage or recent paving work.</p>"
+      ],
+      [
+        "Keep homeowner care within the instructions",
+        "<p>Carry out only the cleaning and care described for your installed system, using its stated isolation arrangements. Keep hands clear of hinges, rollers and trapping points. Do not remove electrical covers, change force settings or bypass sensors.</p><p>Lubricant type and application points depend on the equipment. Adding oil or grease to an unsuitable part can create problems. Ice, compacted debris and water in a motor enclosure need assessment; do not use force or improvised heat to restore operation.</p>"
+      ],
+      [
+        "What to discuss at a service visit",
+        "<p>Ask the engineer to inspect the mechanical condition, supports, drainage, cabling and protective measures relevant to your entrance. Discuss how weather exposure and use affect the maintenance schedule. Request a record of findings, remedial work and checks before return to use.</p><p>Confirm the visit charge and what it covers before booking. Ask how parts or additional work will be authorised. A seasonal checklist cannot replace the maintenance instructions or an assessment of the complete system.</p>"
+      ],
+      [
+        "Prepare for a power cut or breakdown",
+        "<p>Check that you have the correct user instructions and release key, and understand how the gate would be controlled and secured. Wind and gravity can move a released gate. Battery backup, where fitted, needs its own maintenance and capacity checks.</p><p>Read our <a href=\"/guides/how-to-manually-open-electric-gate/\">manual-release guide</a> before an emergency. If the motor hums without moving, stop repeated attempts and use our <a href=\"/blog/gate-motor-humming-not-moving/\">fault information checklist</a> when requesting <a href=\"/services/gate-repair-and-maintenance/\">a repair assessment</a>.</p><p>Further reading: <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm\">HSE powered-gate safety and maintenance guidance</a>.</p>"
+      ]
+    ],
+    "faqs": [
+      [
+        "Should every gate be serviced once a year?",
+        "Follow the system instructions and an engineer’s assessment of use, condition and exposure. A calendar interval alone does not establish that a gate is safe."
+      ],
+      [
+        "Can I increase the motor force in cold weather?",
+        "Do not change safety or force settings to overcome a fault. Stop using a gate that struggles and arrange assessment."
+      ]
+    ]
+  },
+  "aluminium-vs-wooden-driveway-gates": {
+    "kind": "guide",
+    "title": "Aluminium vs Wooden Driveway Gates",
+    "description": "Compare timber, painted aluminium and wood-effect finishes by appearance, construction, upkeep and complete installation scope.",
+    "sections": [
+      [
+        "Compare samples at your property",
+        "<p>Timber has natural grain and variation; painted aluminium gives a more uniform surface. Wood-effect aluminium offers a printed or applied timber appearance, but grain repetition, edges and the rear face can look different from real wood.</p><p>View samples beside your brickwork in daylight and shade. Ask to see the finish on a corner, joint and reverse face, rather than choosing from a small photograph. Check how the posts, pedestrian gate and fencing will match.</p>"
+      ],
+      [
+        "Look beyond the face of the gate",
+        "<p>For timber, ask for the species or modified-wood product, board construction, frame joints and finish specification. For aluminium, ask about the frame, infill, joints, coating and repair options. The material name alone does not establish stiffness, durability or suitability for automation.</p><p>Solid boards and open bars create different privacy and wind-exposure conditions. Discuss weight, dimensions, supports and movement with the installer. Compare the complete gate design instead of assuming that one material will suit every opening.</p>"
+      ],
+      [
+        "Plan the upkeep you will accept",
+        "<p>Timber coatings need care appropriate to the species, exposure and selected finish. Ask how to recognise when attention is due and whether you want the wood to retain its original colour. Aluminium still needs the specified cleaning, coating checks and maintenance of its fittings.</p><p>Separate the timber or coating warranty from the gate fabrication, installation and automation terms. Ask about exclusions, maintenance records and labour charges. A raw-material warranty does not promise that the complete gate will remain unchanged for that period.</p>"
+      ],
+      [
+        "Compare equivalent quotations",
+        "<p>Put the same opening dimensions, infill, finish, supports, automation and access controls into both quotations. Include removal of the old entrance, power, groundworks, VAT and reinstatement. This gives you a useful comparison without relying on a universal lifespan or percentage saving.</p><p>Explore <a href=\"/services/wooden-driveway-gates/\">wooden driveway gates</a> and <a href=\"/services/aluminium-driveway-gates/\">aluminium gates</a>. For modified timber, read our <a href=\"/blog/accoya-wood-gates-london/\">Accoya guide</a> and ask for the proposed product terms. Then <a href=\"/contact/\">discuss your entrance</a>.</p>"
+      ]
+    ],
+    "faqs": [
+      [
+        "Is aluminium maintenance-free?",
+        "No. Follow the cleaning and inspection instructions for the finish, hardware and automation."
+      ],
+      [
+        "Does wood-effect aluminium look identical to timber?",
+        "Compare full-size samples, joints and both faces in your own lighting. Finish systems differ and appearance is a personal choice."
+      ]
+    ]
+  },
+  "swing-vs-sliding-gates": {
+    "kind": "guide",
+    "title": "Swing vs Sliding Driveway Gates",
+    "description": "Compare parking clearance, side space, slopes and everyday access before choosing how your driveway gate opens.",
+    "sections": [
+      [
+        "Measure the space each leaf occupies",
+        "<p>A swing leaf travels around its hinge. For an illustrative pair of equal leaves across a 3.5 m opening, each leaf is about 1.75 m wide before allowing for gaps and fittings. Its free edge traces an arc with roughly that radius, rather than the full 3.5 m opening width.</p><p>That arithmetic is not a safe parking distance. Hinge position, opening angle, vehicle shape, pedestrian routes and protective clearances determine the usable space. Ask for a scaled plan showing the gate in motion and your car parked.</p><figure><img src=\"/images/guides/swing-clearance-example.svg\" alt=\"Illustrative plan: two approximately 1.75 metre swing leaves across a 3.5 metre opening, with each leaf sweeping its own arc.\" width=\"720\" height=\"340\" loading=\"lazy\" style=\"width:100%;height:auto\"><figcaption>Illustration only. Not a site design or a minimum safe clearance.</figcaption></figure>"
+      ],
+      [
+        "Allow for the full sliding arrangement",
+        "<p>A sliding gate moves beside the entrance. The gate needs room along that path, including its supporting arrangement and safe separation from walls, fences and people. Cantilever designs have a supporting tail; tracked and multi-panel systems have different space requirements.</p><p>A car may be able to park beyond the sliding path, but the survey still needs to consider turning, waiting and pedestrian access. Read about <a href=\"/blog/telescopic-gates-space-saving-london/\">telescopic options</a> if side space is limited.</p>"
+      ],
+      [
+        "Slopes and drainage can change the choice",
+        "<p>A rising driveway can obstruct a swing leaf. A sliding layout also needs a suitable travel path, supports and drainage. Neither layout becomes suitable simply by adding a stronger motor.</p><p>Share measured levels and any flooding history with the installer. Our <a href=\"/blog/automated-gates-sloping-driveways-london/\">sloping-driveway guide</a> explains the questions to resolve before ordering.</p>"
+      ],
+      [
+        "Choose around daily use",
+        "<p>Consider where visitors stop, how pedestrians enter, and how bins and deliveries pass the gate. Ask how you will operate the entrance during a power cut and what maintenance access the design needs.</p><p>Compare <a href=\"/services/electric-swing-gates/\">swing-gate installation</a> with <a href=\"/services/electric-sliding-gates/\">sliding-gate installation</a> using the same design and access requirements. Groundworks and the complete specification determine cost; there is no fixed percentage difference that applies to every site.</p>"
+      ]
+    ],
+    "faqs": [
+      [
+        "Does a pair of gates need the entire opening width behind it?",
+        "Each leaf has its own swept arc. Use the actual leaf dimensions and a site drawing that also accounts for vehicles, people and protective clearances."
+      ],
+      [
+        "Which is better for a short driveway?",
+        "A sliding or folding design may help, but side space, supports, gradient and safe movement still need assessment."
+      ]
+    ]
+  },
+  "automation-kit-installation-prices": {
+    "kind": "guide",
+    "title": "The Cost of Automating Existing Driveway Gates",
+    "description": "Build a retrofit budget that includes the gate assessment, supports, power, controls and completed-system checks.",
+    "sections": [
+      [
+        "Check whether the existing gate can be automated",
+        "<p>Start with the gate and supports, before choosing a motor kit. The survey should assess condition, hinges or running gear, movement, dimensions, exposure to wind and hazards around the opening. A manual gate that can be pushed by hand is not automatically ready for powered operation.</p><p>Ask whether the proposal needs repairs, altered supports, a different opening arrangement or replacement leaves. Include that work in the comparison with a new gate.</p>"
+      ],
+      [
+        "Separate the quotation into work packages",
+        "<p>Request separate descriptions for gate repairs, motor and controls, power supply, cable routes, groundworks and surface reinstatement. Include access equipment, protective measures and any work by other trades.</p><p>Record VAT, removal and disposal, appointments, permissions and exclusions. A kit price covers a different scope from an installed and checked entrance. The cheapest motor listing cannot establish the completed project cost.</p>"
+      ],
+      [
+        "Specify operation and handover",
+        "<p>Explain how often the gate operates, who uses it and whether you need pedestrian access, delivery entry or an intercom. Ask for the proposed product models and the basis for choosing them.</p><p>The quotation should identify completed-system checks, documentation, user instruction and manual-release training. Confirm maintenance, repair support and the separate equipment and installation warranty terms in writing.</p>"
+      ],
+      [
+        "Compare retrofit and replacement",
+        "<p>If repair and alteration costs are substantial, request a replacement option with equivalent appearance and controls. Compare the complete scope, disruption and upkeep rather than assuming retrofit must be cheaper.</p><p>Use the <a href=\"/guides/electric-driveway-gates-cost-london/\">installed gate cost guide</a> alongside our <a href=\"/services/gate-automation-kits/\">gate automation service</a>. Send photographs, approximate dimensions and known faults when you <a href=\"/contact/\">discuss your entrance</a>.</p><p>Further reading: <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm\">HSE guidance on complete-system assessment</a>.</p>"
+      ]
+    ],
+    "faqs": [
+      [
+        "Can you give a fixed retrofit price from a motor model?",
+        "A motor model does not identify the repairs, power, groundworks or protective measures needed. A site assessment establishes the complete scope."
+      ],
+      [
+        "Can I keep my existing controls?",
+        "Compatibility and condition need checking against the proposed equipment. Identify retained parts and any limitations in the quotation."
+      ]
+    ]
+  },
+  "best-intercom-systems": {
+    "kind": "guide",
+    "title": "Choosing an Intercom for Your Driveway Gate",
+    "description": "Compare wired, network and mobile intercom options around visitor calls, gate release and ongoing account costs.",
+    "sections": [
+      [
+        "Decide where you want to answer visitors",
+        "<p>List who should receive a call and whether they need an indoor monitor, phone calls, an app or a combination. Include anyone who does not use a smartphone. Decide what happens if nobody answers and how a visitor can leave a delivery.</p><p>Ask for a demonstration of the actual sequence: call, identify the visitor, grant entry and confirm that the gate has finished moving. Seeing a video does not necessarily mean the app reports the gate’s physical position.</p>"
+      ],
+      [
+        "Compare the connection paths",
+        "<p>A wired indoor system can suit a household that wants a dedicated answering point. An IP system needs the specified network and power arrangements. A mobile-network intercom needs suitable coverage, device support and a compatible SIM plan.</p><p>Test the connection at the proposed gate position. A strong indoor Wi-Fi signal or a phone signal from another network does not prove the intercom will work there. Discuss what remains available during a broadband, mobile-service or power failure.</p>"
+      ],
+      [
+        "Get the exact equipment and account terms",
+        "<p>Request model numbers, the proposed release interface, supported monitors and app requirements. Confirm recording options, retention, subscriptions, SIM charges and which account owns the system. Ask how to remove a former resident or contractor.</p><p>Product families contain different devices. Compare named configurations rather than assuming a brand guarantees compatibility. Our <a href=\"/blog/video-intercom-comelit-vs-hikvision/\">Comelit and Hikvision comparison</a> shows why the component list matters.</p>"
+      ],
+      [
+        "Plan installation and support",
+        "<p>Include cable routes, power, camera position, lighting, accessibility and weather exposure in the survey. Confirm who commissions the connection to the gate controller and checks operation of the complete entrance.</p><p>Compare <a href=\"/services/access-control/video-intercoms/\">video intercoms</a> and <a href=\"/services/access-control/gsm-phone-entry/\">phone entry</a>. For an existing smart-home setup, use our <a href=\"/blog/smart-gate-integration-ring-nest-control4/\">integration checklist</a>. Check <a href=\"https://www.ofcom.org.uk/phones-and-broadband/coverage-and-speeds/3g-switch-off\">Ofcom’s network-retirement guidance</a> before buying mobile-network equipment.</p>"
+      ]
+    ],
+    "faqs": [
+      [
+        "Which brand is best?",
+        "Compare the proposed models against your wiring, visitor workflow, network, account costs and support requirements. A brand ranking cannot establish compatibility."
+      ],
+      [
+        "Does an app continue working during a power cut?",
+        "That depends on backup power for the gate, intercom and network equipment, as well as the service connection. Ask for the actual failure arrangements."
+      ]
+    ]
+  },
+  "gsm-gate-openers-london": {
+    "kind": "blog",
+    "title": "GSM Gate Openers: Network, SIM and Access Checks",
+    "description": "Check phone-entry compatibility, signal, SIM costs and account ownership before adding a mobile gate opener.",
+    "sections": [
+      [
+        "Separate phone entry from visitor calling",
+        "<p>Some gate controllers recognise an authorised phone number and request an opening when it calls. An intercom also lets a visitor speak to a resident. Ask which function the proposed device provides, whether it uses voice, SMS or data, and what the caller experiences.</p><p>A remote command does not confirm that the entrance is clear or the gate has opened. Discuss how the complete system manages unattended operation and how you will know whether a fault has prevented movement.</p>"
+      ],
+      [
+        "Check the device, SIM and network together",
+        "<p>Ask for the exact device model and supported network technologies. Confirm the SIM plan permits its required services and how the unit handles caller identification. A label saying 4G does not, by itself, confirm support for the voice service your network uses.</p><p>Mobile operators are retiring older networks. Check <a href=\"https://www.ofcom.org.uk/phones-and-broadband/coverage-and-speeds/3g-switch-off\">Ofcom’s current switch-off guidance</a> and obtain the equipment supplier’s migration advice. Avoid buying an older controller solely because a SIM currently connects.</p>"
+      ],
+      [
+        "Survey the signal and ongoing costs",
+        "<p>Test service at the gate position on the proposed network. Discuss the enclosure, antenna location, cable route and power supply with the installer. Nearby buildings and the installed position can affect the result.</p><p>Confirm monthly charges, call or data allowances, top-up rules and what happens if an account expires. Ask whose name holds the SIM and how the household can change numbers or recover administrator access.</p>"
+      ],
+      [
+        "Hand over access management",
+        "<p>Request a demonstration of adding and removing authorised users using the actual manual. Remove default credentials, restrict administrator access and arrange a backup entry method. Keep account recovery information with your gate records.</p><p>For installation, see <a href=\"/services/access-control/gsm-phone-entry/\">GSM phone entry</a>. Compare visitor workflows in our <a href=\"/guides/best-intercom-systems/\">intercom guide</a>. A failing controller belongs in a <a href=\"/services/gate-repair-and-maintenance/\">repair assessment</a> rather than a generic SMS reset sequence.</p>"
+      ]
+    ],
+    "faqs": [
+      [
+        "Will any UK SIM work?",
+        "No universal compatibility claim is reliable. Check the device, network, required voice/SMS/data services and tariff restrictions together."
+      ]
+    ]
+  },
+  "telescopic-gates-space-saving-london": {
+    "kind": "blog",
+    "title": "Telescopic Driveway Gates for Limited Side Space",
+    "description": "Understand overlapping sliding panels, run-back space and the measurements needed for a telescopic gate.",
+    "sections": [
+      [
+        "How overlapping panels use space",
+        "<p>A telescopic arrangement uses multiple sliding panels that overlap as they open. It can reduce the clear length needed beside an opening compared with one long leaf, but the stored panels still occupy space and need a suitable support system.</p><p>Ask for the opening width, stored width and depth, panel overlap and full travel path on a drawing. There is no single clearance factor that covers every number of panels and mechanism.</p>"
+      ],
+      [
+        "Compare tracked and supported layouts",
+        "<p>The quotation should identify how the panels run, how they connect and what foundations or tracks the arrangement needs. Check drainage, surface levels and maintenance access along the whole path.</p><p>Tell the installer about parked vehicles, meter boxes, planting and pedestrian routes beside the gate. An apparently unused strip of garden may still be needed for access or safe separation from moving parts.</p>"
+      ],
+      [
+        "Assess the gaps between panels",
+        "<p>Overlapping leaves introduce moving gaps as well as the closing edge across the entrance. The installer needs to assess reachable trapping and shearing points, surrounding fences and the way people use the driveway.</p><p>Ask how the proposal protects these areas and how the completed installation will be checked. A photocell at the front does not assess every hazard. See <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm\">HSE guidance on powered-gate design</a>.</p>"
+      ],
+      [
+        "Compare other compact arrangements",
+        "<p>Use a measured drawing to compare telescopic, <a href=\"/blog/bi-fold-vs-sliding-gates-london/\">bi-fold</a> and conventional <a href=\"/services/electric-sliding-gates/\">sliding gates</a>. Include parking and visitor waiting space, then compare groundworks, service access and manual operation.</p><p>Send approximate dimensions and photographs when you <a href=\"/contact/\">discuss your entrance</a>. The survey should establish a feasible layout before you choose a finish or motor.</p>"
+      ]
+    ],
+    "faqs": []
+  },
+  "bi-fold-vs-sliding-gates-london": {
+    "kind": "blog",
+    "title": "Bi-fold vs Sliding Gates for Short Driveways",
+    "description": "Compare folding clearance and sliding run-back space without relying on a universal opening-speed or space-saving claim.",
+    "sections": [
+      [
+        "Compare two different movement paths",
+        "<p>Bi-fold leaves fold as they swing, reducing the depth occupied by some designs compared with a single full-length swing leaf. Sliding gates move alongside the opening and need a clear path beside it. Both arrangements need supports and space for their moving parts.</p><p>For a short drive, draw the parked vehicle, its doors, the gate’s entire movement and a pedestrian route. Ask the installer to mark the dimensions of the actual mechanism rather than applying a percentage saving from another product.</p>"
+      ],
+      [
+        "Check folding joints and side space",
+        "<p>Folding designs need assessment around intermediate hinges and the area where the panels gather. Sliding designs need assessment along the run-back area and between the leaf and nearby walls or fencing.</p><p>If one sliding leaf will not fit beside the entrance, compare <a href=\"/blog/telescopic-gates-space-saving-london/\">telescopic panels</a>. More panels change the support, movement and maintenance requirements; they do not make the surrounding space irrelevant.</p>"
+      ],
+      [
+        "Include slopes and everyday access",
+        "<p>Ground levels may interfere with a folding swing path or require changes to a sliding layout. Discuss drainage, parked-car position, visitors and bins. Ask what happens during manual release, particularly on a slope.</p><p>Opening time depends on the selected equipment, travel and safe operation. Do not choose a layout on a universal two-second promise. A demonstration should show the proposed arrangement, including its stopping and closing behaviour.</p>"
+      ],
+      [
+        "Get comparable proposals",
+        "<p>Request drawings, product models, groundworks, protective measures and service arrangements for both options. Use the <a href=\"/guides/swing-vs-sliding-gates/\">swing and sliding comparison</a> for the broader layout questions, then compare the complete quotations using our <a href=\"/guides/electric-driveway-gates-cost-london/\">installed gate cost guide</a>.</p>"
+      ]
+    ],
+    "faqs": []
+  },
+  "underground-gate-motors-london": {
+    "kind": "blog",
+    "title": "Underground Gate Motors for London Driveways",
+    "description": "Compare concealed swing-gate automation by drainage, hinge geometry, maintenance access and installation scope.",
+    "sections": [
+      [
+        "What underground gate automation means",
+        "<p>An underground swing-gate operator places much of the drive assembly in a foundation box near the hinge. This can reduce the equipment visible on the leaf, which may suit an entrance where appearance matters. Covers, release arrangements and other controls can remain visible.</p><p>The operator is one part of the entrance. The installer still needs to assess the gate, hinges, supports, exposure and movement. Concealing a motor does not make an unsuitable gate ready for automation.</p>"
+      ],
+      [
+        "Drainage and access belong in the design",
+        "<p>Ask how the foundation box will drain at your property and who provides that work. Tell the installer about standing water and previous flooding. Discuss how the covers will remain accessible after paving, planting or resurfacing.</p><p>The quotation should identify excavation, foundations, cable routes, drainage and reinstatement. Ask how future maintenance or replacement can take place without unnecessary damage to the finished driveway.</p>"
+      ],
+      [
+        "Compare visible operators too",
+        "<p>An above-ground arm may involve a different set of alterations and maintenance access. Compare both options against the hinge geometry, required opening angle and appearance of the whole entrance.</p><p>Request the proposed model and its suitability assessment. Voltage alone does not tell you whether a motor uses a hydraulic mechanism or what upkeep it needs. Follow the instructions for the specified equipment.</p>"
+      ],
+      [
+        "Keep release and handover practical",
+        "<p>Ask for a demonstration of the actual manual release and how the leaf is controlled and secured afterwards. Keep the correct key and instructions accessible. Do not assume that every underground release sits in the same place.</p><p>Explore <a href=\"/services/electric-swing-gates/\">electric swing gates</a> and our <a href=\"/guides/automation-kit-installation-prices/\">retrofit quotation guide</a>. For an existing fault, arrange <a href=\"/services/gate-repair-and-maintenance/\">repair assessment</a> before opening a motor enclosure.</p>"
+      ]
+    ],
+    "faqs": []
+  },
+  "solar-powered-gate-automation-london": {
+    "kind": "blog",
+    "title": "Can Solar Power Run a Driveway Gate in London?",
+    "description": "Assess winter generation, shade, standby loads and backup arrangements before choosing solar gate automation.",
+    "sections": [
+      [
+        "Start with the complete electrical load",
+        "<p>List the motors, controller, intercom, receiver, sensors and any lighting or heaters. Record movement demand and the equipment that remains powered while the gate waits. The number of opening cycles alone cannot determine the required panel and battery.</p><p>Use measured consumption or specifications for the exact equipment. Our <a href=\"/guides/electric-gate-running-costs/\">running-cost calculation</a> separates movement from standby demand.</p>"
+      ],
+      [
+        "Design for the site and winter use",
+        "<p>Ask the designer to assess panel location, orientation, shading and seasonal generation. Trees, buildings and winter sunlight can change the available energy. An annual generation average does not establish reliable operation through a run of poor weather.</p><p>The proposal should state expected use, assumptions for low-generation periods and the battery reserve. Request a site-specific calculation rather than a generic panel, voltage and battery shopping list.</p>"
+      ],
+      [
+        "Agree the fallback before ordering",
+        "<p>Ask what happens when the battery reaches its operating limit, how you receive a warning and what access remains possible. Confirm charging arrangements, battery replacement and safe manual operation.</p><p>A solar supply does not remove the need to assess gate movement, supports or protective measures. The installer must consider the complete powered entrance and how it behaves during a power shortage.</p>"
+      ],
+      [
+        "Compare the lifetime scope",
+        "<p>Price the solar equipment, mounting, cabling, batteries, maintenance and replacement alongside a suitable mains-supply proposal. Include trenching and reinstatement for the mains option. A payback claim needs those actual costs and load assumptions.</p><p>Send the gate location, photographs and expected use when you <a href=\"/contact/\">discuss your entrance</a>. Ask for equipment availability and supported configurations in writing before purchasing a kit.</p>"
+      ]
+    ],
+    "faqs": []
+  },
+  "smart-gate-integration-ring-nest-control4": {
+    "kind": "blog",
+    "title": "Connecting Driveway Gates to Ring, Nest and Control4",
+    "description": "Check the exact access device, controller and regional support before promising smart-home gate control.",
+    "sections": [
+      [
+        "Separate visitor video from gate control",
+        "<p>A camera can show a visitor without providing a compatible command to the gate. A command can request opening without confirming the leaf’s position. Write down which functions you need: answer a visitor, grant access, see gate status or manage temporary users.</p><p>Ask the installer to identify every device, interface, app and subscription involved. Have the gate engineer assess unattended operation as part of the complete system.</p>"
+      ],
+      [
+        "Ring: check the actual access product",
+        "<p>Ring’s <a href=\"https://uk.ring.com/support/articles/q5f60/Ring-Access-Controller-Pro-Information\">Access Controller Pro information</a> describes a relay-triggered access device. That does not establish that a Ring doorbell alone will control your gate, or that a particular product and service are supported for your UK installation.</p><p>Use Ring’s <a href=\"https://ring.com/gb/en/support/articles/xwk4u/Ring-Intercom-Support\">Intercom compatibility guidance</a> for an existing intercom, then confirm the exact gate-side interface and regional availability before ordering.</p>"
+      ],
+      [
+        "Nest: do not infer gate compatibility",
+        "<p>Google’s <a href=\"https://support.google.com/googlehome/answer/9247132?hl=en\">Nest doorbell compatibility guidance</a> warns that integrated intercom and gate-control systems typically do not work with the doorbell. A separate video feed should not be described as a supported gate-opening integration.</p><p>If an installer proposes an additional controller, request its manufacturer-supported connection, account requirements and failure behaviour. Do not rely on a future Matter or mobile-network feature promise.</p>"
+      ],
+      [
+        "Control4: specify the complete system",
+        "<p>Control4 documents <a href=\"https://www.control4.com/solutions/products/door-stations\">video door stations</a> for visitor communication. Ask the integrator for the proposed door station, controller, software requirements and configured gate-control function. Record any licence or remote-access charges.</p><p>Before handover, demonstrate visitor calls, authorised release, access removal and recovery after connection loss. Compare the resulting scope with a dedicated <a href=\"/guides/best-intercom-systems/\">gate intercom</a>. These examples are compatibility checks, not a statement that Driveway Gates London supplies each brand.</p>"
+      ]
+    ],
+    "faqs": []
+  },
+  "video-intercom-comelit-vs-hikvision": {
+    "kind": "blog",
+    "title": "Comelit vs Hikvision Gate Intercoms: Compare the Actual System",
+    "description": "Compare documented intercom components, wiring and account requirements instead of choosing a brand by unsupported rankings.",
+    "sections": [
+      [
+        "Compare a complete visitor workflow",
+        "<p>Start with where the call should ring, whether you need video on a phone or indoor screen, and how you will grant access. Include more than one resident and a fallback for someone without an app.</p><p>Request the outdoor station, indoor unit, power supply, network equipment and gate-release interface in each quotation. A monitor and a door station perform different roles and are not direct substitutes.</p>"
+      ],
+      [
+        "A documented Comelit example",
+        "<p>Comelit identifies the <a href=\"https://pro.comelitgroup.com/en-ie/product/6741w\">6741W Mini Wi-Fi monitor</a> as a component for Simplebus 2 video-entry systems. Its <a href=\"https://comelitgroup.com/comelit-app-smart-registration/\">app registration guidance</a> names compatible devices. Confirm the complete outdoor-station and interface arrangement for a gate installation.</p><p>This gives an existing Simplebus household a specific configuration to investigate. It does not prove compatibility with an unrelated controller or establish the full system cost.</p>"
+      ],
+      [
+        "A documented Hikvision example",
+        "<p>Hikvision’s <a href=\"https://www.hikvision.com/content/dam/hikvision/products/S000000001/S000000083/S000000129/S000000131/OFR002275/M000058902/Data_Sheet/DS-KV6113-WPE1C-Video-Intercom-Villa-Door-Station_Datasheet_20231019.pdf\">DS-KV6113-WPE1(C) datasheet</a> describes a villa door station with a 2 MP camera, standard PoE and Hik-Connect support. Use the exact model suffix when comparing specifications.</p><p>Ask which indoor station or other components the proposed setup needs, how calls and recording work with the chosen firmware, and how the gate connection will be commissioned. The datasheet is not a promise about every Hikvision model.</p>"
+      ],
+      [
+        "Choose on support and ownership",
+        "<p>Compare the demonstration, cable routes, ongoing charges, account ownership and the process for removing users. Confirm recording and privacy arrangements for your actual entrance. No intercom brand makes every installation automatically compliant.</p><p>Ask the supplier to confirm availability, supported updates and warranty terms. These product examples are not an endorsement, price offer or confirmation that we supply either configuration. Use our <a href=\"/guides/best-intercom-systems/\">intercom checklist</a> when discussing <a href=\"/services/access-control/video-intercoms/\">video-entry installation</a>.</p>"
+      ]
+    ],
+    "faqs": []
+  },
+  "article-4-directions-gate-planning-permission": {
+    "kind": "blog",
+    "title": "Article 4 Directions and Driveway Gate Planning Permission",
+    "description": "Check the mapped property and the rights withdrawn by a direction before changing your front boundary.",
+    "sections": [
+      [
+        "Read the direction for the address",
+        "<p>An Article 4 direction removes specified permitted development rights in a defined area or at specified properties. Its existence somewhere in a borough does not establish the rules for your gate. Obtain the actual direction, map, schedule and effective date from the planning authority.</p><p>Check whether the withdrawn rights cover the proposed boundary work. Camden’s <a href=\"https://www.camden.gov.uk/article-4-directions1\">Article 4 directory</a> separates different kinds of directions and links to the relevant records; use your own authority’s equivalent.</p>"
+      ],
+      [
+        "Check other controls separately",
+        "<p>Conservation-area designation, listed status and conditions on earlier planning permissions are separate checks. The position beside a highway and the proposed height can also affect the gate proposal. A neighbour’s replacement gate is not proof that your work is permitted.</p><p>Start with the <a href=\"/local-regulations/\">council planning directory</a> and <a href=\"https://www.planningportal.co.uk/permission/common-projects/fences-gates-and-garden-walls/planning-permission/\">general gate planning guidance</a>. Ask the authority which information it needs for your address.</p>"
+      ],
+      [
+        "Prepare a clear enquiry",
+        "<p>Provide a site plan, photographs of the existing boundary and a drawing of the proposed gate, pillars and opening direction. Include dimensions, materials and any excavation, paving or access changes.</p><p>Ask whether a formal application, consent or certificate is appropriate. Retain the written response and any conditions with the quotation. Set the installation programme after the required checks.</p>"
+      ]
+    ],
+    "faqs": []
+  },
+  "conservation-area-gate-planning-london": {
+    "kind": "blog",
+    "title": "Designing Driveway Gates in a Conservation Area",
+    "description": "Use the actual conservation appraisal and property constraints to plan changes to a historic front boundary.",
+    "sections": [
+      [
+        "Identify what gives the boundary its character",
+        "<p>Photograph the existing gate, railings, piers and adjacent frontage. Note original details you want to retain and damage that needs repair. Find the council’s conservation-area appraisal or management guidance for the actual address.</p><p>Avoid assuming that all period homes need the same metalwork, colour or dimensions. A new gate should be discussed in the context of that boundary and the applicable planning controls.</p>"
+      ],
+      [
+        "Separate design choices from permission",
+        "<p>Check conservation designation, any Article 4 direction, listed status and existing conditions. Demolition or alteration of a boundary can raise a different question from adding automation. Ask the planning authority to identify the process for the complete proposal.</p><p>Our <a href=\"/blog/article-4-directions-gate-planning-permission/\">Article 4 guide</a> explains how to read a direction. Use the <a href=\"/local-regulations/\">council directory</a> to locate the responsible authority.</p>"
+      ],
+      [
+        "Consider repair before replacement",
+        "<p>Ask a suitable metalworker or joiner to assess the existing gate and supports. Retaining sound fabric may be an option, but condition and safe operation must guide the proposal. Compare repair, replacement and automation as separate pieces of work.</p><p>Our <a href=\"/blog/wrought-iron-gate-restoration-london/\">metal-gate restoration guide</a> covers material identification and finish questions. Do not remove historic features before the necessary advice or consent.</p>"
+      ],
+      [
+        "Show the complete proposed entrance",
+        "<p>Drawings should show gate proportions, infill, pillars, finish and opening path. Include visible controls, cable routes, drainage and groundworks. A concealed motor still needs foundations and maintenance access.</p><p>Agree who obtains permissions and which approved details govern fabrication. Compare the quotation against those drawings before ordering.</p><p>Further reading: <a href=\"https://www.planningportal.co.uk/permission/common-projects/fences-gates-and-garden-walls/planning-permission/\">Planning Portal gate and boundary guidance</a>.</p>"
+      ]
+    ],
+    "faqs": []
+  },
+  "outward-swinging-gates-uk-rules": {
+    "kind": "blog",
+    "title": "Can Driveway Gates Open Outwards in London?",
+    "description": "Check the highway boundary and the gate’s full movement before choosing an outward-opening layout.",
+    "sections": [
+      [
+        "Establish where the highway ends",
+        "<p>An outward-opening gate can project beyond the property into a pavement or road. The visible edge of paving does not necessarily establish the legal highway boundary. Show the proposed swept path to the highway authority before choosing the layout.</p><p>Section 153 of the <a href=\"https://www.legislation.gov.uk/ukpga/1980/66/section/153\">Highways Act 1980</a> addresses doors and gates opening onto a street. Obtain advice on the actual boundary and proposal rather than relying on an invented pavement clearance or fine amount.</p>"
+      ],
+      [
+        "Planning and vehicle access are separate checks",
+        "<p>Gate height, listed status, withdrawn rights and the boundary work can affect planning requirements. A dropped kerb or vehicle crossing involves a separate highway enquiry. One approval does not settle all those matters.</p><p>Use our <a href=\"/blog/do-i-need-a-dropped-kerb-for-a-driveway-gate-london/\">dropped-kerb guide</a> and <a href=\"/local-regulations/\">council planning directory</a> to prepare the questions.</p>"
+      ],
+      [
+        "Compare layouts that fit inside the site",
+        "<p>If an inward swing conflicts with a rising driveway or a parked car, ask for a measured comparison with sliding or folding options. Include pedestrians, visitors waiting to enter and manual operation.</p><p>See the <a href=\"/guides/swing-vs-sliding-gates/\">swing versus sliding guide</a> and <a href=\"/blog/automated-gates-sloping-driveways-london/\">sloping-driveway advice</a>. Changing the motor does not resolve a boundary conflict.</p>"
+      ]
+    ],
+    "faqs": []
+  },
+  "wrought-iron-gate-restoration-london": {
+    "kind": "blog",
+    "title": "Restoring Metal Driveway Gates in London",
+    "description": "Assess the material, structure and finish before choosing repair, repainting, automation or replacement.",
+    "sections": [
+      [
+        "Identify the metal and original details",
+        "<p>A traditional appearance does not prove a gate is wrought iron. Ask a metalwork specialist to identify the material, previous repairs and the condition of leaves, hinges, fixings and supports. Photograph decorative details before work begins.</p><p>A finish can hide loss of section or damaged joints. Separate cosmetic work from structural repair in the assessment, and keep people away from a gate that is unstable.</p>"
+      ],
+      [
+        "Agree preparation and repair methods",
+        "<p>The proposed method should suit the metal, condition and existing coatings. Ask how the contractor will assess unknown old paint and manage dust, waste and nearby surfaces. Do not start abrasive stripping or heating from a generic restoration recipe.</p><p>If the boundary is listed or has conservation controls, check required advice or consent before removing fabric. Read our <a href=\"/blog/conservation-area-gate-planning-london/\">conservation-area guide</a> and record any conditions in the scope.</p>"
+      ],
+      [
+        "Choose a finish for the exterior gate",
+        "<p>Compare physical samples for colour, sheen and texture. Ask how the coating system treats joints, edges, repaired areas and the back face. Confirm which preparation and coating stages form part of the quotation.</p><p>For a period entrance, compare the gate with the railings, piers and house details. There is no universal heritage-grade finish that replaces an assessment of the actual material and conservation context. Request care instructions and written finish terms.</p>"
+      ],
+      [
+        "Assess automation separately",
+        "<p>A restored appearance does not establish suitability for powered movement. Ask for assessment of the hinges, supports, geometry, exposure and hazards around the opening before adding a drive.</p><p>Compare repair and replacement proposals with equivalent finishing and handover scope. Discuss <a href=\"/services/metal-driveway-gates/\">metal gate options</a> or <a href=\"/services/gate-repair-and-maintenance/\">gate repairs</a> using photographs and your existing service records.</p>"
+      ]
+    ],
+    "faqs": []
+  },
+  "accoya-wood-gates-london": {
+    "kind": "blog",
+    "title": "Accoya Wood for Driveway Gates",
+    "description": "Understand modified timber, gate construction, coating care and the difference between material and installation warranties.",
+    "sections": [
+      [
+        "What Accoya is",
+        "<p>Accoya starts as softwood and undergoes acetylation, a modification process. It is not a naturally occurring hardwood or a chemical-free treatment. Read the manufacturer’s <a href=\"https://www.accoya.com/faq/is-accoya-hardwood-or-softwood/\">material explanation</a> when comparing it with other timber options.</p><p>Specify the actual wood product in the quotation. The appearance of a finished gate also depends on its boards, joints, frame and coating.</p>"
+      ],
+      [
+        "Assess the finished gate",
+        "<p>Ask how the joiner has designed the gate for its width, weight and movement. Discuss the supports, fittings and exposure alongside the timber choice. Material properties alone cannot guarantee that a complete gate will never move, split or need adjustment.</p><p>View a finish sample beside the property. Decide whether you want a painted surface, visible grain or a weathered appearance, and request the care schedule for that choice.</p>"
+      ],
+      [
+        "Read each warranty separately",
+        "<p>Request the current manufacturer terms for the supplied material and the separate terms for fabrication, finish, fittings, installation and automation. Confirm what a claim covers, exclusions, records required and any labour charges.</p><p>A timber warranty does not automatically cover coatings, hinges or the workmanship of a finished gate. Check the documents linked from <a href=\"https://www.accoya.com/uk/faqs/owning-accoya/\">Accoya’s ownership guidance</a> against the proposed application.</p>"
+      ],
+      [
+        "Compare like-for-like alternatives",
+        "<p>Use the same dimensions, board layout, finish and automation scope to compare Accoya with other <a href=\"/services/wooden-driveway-gates/\">wooden gates</a>. Our <a href=\"/guides/aluminium-vs-wooden-driveway-gates/\">timber and aluminium comparison</a> includes wood-effect options. Ask for product availability and written terms before deciding.</p>"
+      ]
+    ],
+    "faqs": []
+  },
+  "driveway-gates-noise-reduction-london": {
+    "kind": "blog",
+    "title": "Will Driveway Gates Reduce Traffic Noise?",
+    "description": "Consider the complete boundary and the location of the noise before buying gates for acoustic performance.",
+    "sections": [
+      [
+        "Do not budget on an untested decibel claim",
+        "<p>A gate may change the openness of the front boundary, but its appearance and weight do not establish a particular reduction in traffic noise. Sound can reach the property around and above the entrance, through gaps and by routes unrelated to the gate.</p><p>Ask for acoustic evidence that fits the actual proposal before paying for a promised numerical improvement. A result from another property cannot establish the outcome at yours.</p>"
+      ],
+      [
+        "Assess the whole frontage",
+        "<p>Show an acoustic adviser the road, gate position, adjoining walls, ground levels and the windows or garden area you want to protect. Explain when the disturbance occurs and whether the gate would be open during those periods.</p><p>Gate, fence and planting claims cannot simply be added together into a total reduction. Consider the boundary as a whole and compare practical options for the particular source and receiving location.</p>"
+      ],
+      [
+        "Check design trade-offs",
+        "<p>A closed gate affects views, airflow and wind exposure, and must still provide a suitable entrance for people and vehicles. Ask the gate installer to coordinate any acoustic proposal with the supports, movement and protective measures.</p><p>Choose <a href=\"/services/metal-driveway-gates/\">gate materials</a> and layout for the complete entrance. If noise reduction is the main objective, obtain the acoustic assessment before ordering a gate on that promise.</p>"
+      ]
+    ],
+    "faqs": []
+  },
+  "automated-gate-home-insurance": {
+    "kind": "blog",
+    "title": "Electric Driveway Gates and Home Insurance",
+    "description": "Ask your insurer how an automated gate affects your policy instead of assuming a premium discount or automatic cover.",
+    "sections": [
+      [
+        "Ask about your own policy",
+        "<p>There is no insurance discount we can promise for adding a driveway gate. Contact your insurer or broker before relying on the gate as a policy security measure. Describe the proposed installation and any change to property access.</p><p>Ask whether you need to notify them when the work is complete and whether the policy contains conditions about operation, locking or maintenance. Request confirmation that you can keep with your policy documents.</p>"
+      ],
+      [
+        "Clarify what damage and costs are covered",
+        "<p>Ask how the policy treats the gate, motors, controls and underground services. Discuss accidental impact, storm or flood damage, electrical faults, wear, theft and the applicable excesses. These are questions for the insurer, not a list of guaranteed cover.</p><p>Check whether a damaged gate that blocks the entrance requires a particular claims process before you arrange repairs. A product warranty and an insurance policy cover different risks.</p>"
+      ],
+      [
+        "Keep useful records",
+        "<p>Retain the quotation, installed product details, invoice, handover information and service records. Take photographs of the completed entrance and record changes to the equipment.</p><p>Use our <a href=\"/guides/electric-driveway-gates-cost-london/\">installed gate cost guide</a> to keep the installed scope clear. If you need <a href=\"/services/gate-repair-and-maintenance/\">repair work</a>, agree the inspection charge and authorisation arrangements while checking any insurer requirements.</p>"
+      ]
+    ],
+    "faqs": []
+  },
+  "driveway-gate-property-value-london": {
+    "kind": "blog",
+    "title": "Do Driveway Gates Add Value to a London Home?",
+    "description": "Consider appearance, parking and upkeep without assuming a guaranteed sale-price increase.",
+    "sections": [
+      [
+        "Separate enjoyment from resale value",
+        "<p>You may want a gate for privacy, appearance or control over access. Those reasons can justify a project without assuming that a buyer will repay its cost. We do not have evidence for a fixed percentage uplift or guaranteed return on a gate installation.</p><p>Ask local estate agents or a valuer how the proposed entrance fits the property and its likely buyers. Describe the actual layout, parking space and maintenance requirements rather than asking about gates in general.</p>"
+      ],
+      [
+        "Make the entrance work well",
+        "<p>A gate should leave suitable room for parking, turning and pedestrian access. Consider visitor calls, deliveries, bins and power cuts. Buyers may ask how easily the entrance works and what it costs to maintain.</p><p>Compare designs that suit the frontage and avoid sacrificing usable parking just to fit a preferred opening style. Our <a href=\"/guides/swing-vs-sliding-gates/\">layout guide</a> explains the space checks.</p>"
+      ],
+      [
+        "Keep the project evidence",
+        "<p>Keep the permissions or relevant checks, product information, quotation, handover records and service history. Confirm whether warranties transfer and whether access accounts can be handed to a new owner.</p><p>Set the budget around the benefits you want and the <a href=\"/guides/electric-driveway-gates-cost-london/\">installed gate cost guide</a>. Treat any resale estimate as advice about your particular property, not a sales promise attached to the gate.</p>"
+      ]
+    ],
+    "faqs": []
+  },
+  "anthracite-grey-gate-trends-london": {
+    "kind": "blog",
+    "title": "Choosing Anthracite Grey for Driveway Gates",
+    "description": "Compare colour samples, sheen and surrounding materials before specifying an anthracite gate finish.",
+    "sections": [
+      [
+        "Use a physical sample",
+        "<p>Ask for the proposed coating colour reference, sheen and texture on the actual gate material. A screen image changes with display settings and lighting. Two finishes described as anthracite can look different beside brick, stone or render.</p><p>Place a sample outside in sun and shade. Check it beside existing window frames and doors rather than assuming that the same colour name guarantees a visual match.</p>"
+      ],
+      [
+        "Specify the complete entrance",
+        "<p>Include gate leaves, posts, hinges, visible motor covers and the pedestrian entrance in the finish schedule. Ask which components come from different manufacturers and whether slight variations are expected.</p><p>For a wood-effect or two-tone design, inspect the joint between finishes and the rear face. Request a drawing showing the areas to receive each finish.</p>"
+      ],
+      [
+        "Compare upkeep and repair options",
+        "<p>Ask for cleaning instructions, touch-up advice and written coating terms. Dark colour alone does not establish how much dust will show or how long the finish will last. Avoid choosing on unsourced trend or maintenance percentages.</p><p>Compare <a href=\"/services/aluminium-driveway-gates/\">aluminium</a> and <a href=\"/services/metal-driveway-gates/\">other metal gates</a> using the actual construction and coating specification. Bring your preferred sample when you <a href=\"/contact/\">discuss your entrance</a>.</p>"
+      ]
+    ],
+    "faqs": []
+  },
+  "minimalist-steel-slat-gates-london": {
+    "kind": "blog",
+    "title": "Steel Slat Driveway Gates: Privacy and Design Choices",
+    "description": "Plan slat spacing, sightlines, frame details and safe movement for a contemporary entrance.",
+    "sections": [
+      [
+        "View the gaps from more than one angle",
+        "<p>Slat width, depth and spacing change how much you can see through the gate. Ask for a sample or drawing showing views from the street, inside the garden and approaching at an angle. A straight-on photograph may hide gaps visible from elsewhere.</p><p>Balance privacy with the view needed to leave the driveway. Include the height of a seated driver and pedestrians approaching along the pavement in the design discussion.</p>"
+      ],
+      [
+        "Draw the frame and rear face",
+        "<p>Confirm the arrangement of frames, slats, joints and fixings on both sides. Ask how the pedestrian gate, posts and adjacent fencing will align. Horizontal and vertical designs can create different visual proportions, but neither orientation alone establishes structural performance.</p><p>Discuss any accessible openings or footholds as part of the entrance assessment. Decorative spacing is not a substitute for checking hazards around powered movement.</p>"
+      ],
+      [
+        "Specify structure and finish",
+        "<p>A closely boarded gate needs assessment for dimensions, exposure, supports and drive requirements. Ask the fabricator to specify the actual metal and corrosion-protection system, including treatment of joints and cut edges.</p><p>Compare the proposed finish sample and written maintenance instructions. Explore <a href=\"/services/metal-driveway-gates/\">metal gate options</a> and <a href=\"/blog/anthracite-grey-gate-trends-london/\">colour selection</a> before finalising the quotation.</p>"
+      ]
+    ],
+    "faqs": []
+  },
+  "do-i-need-a-dropped-kerb-for-a-driveway-gate-london": {
+    "kind": "blog",
+    "title": "Do You Need a Dropped Kerb for a Driveway Gate?",
+    "description": "Check vehicle-crossing approval separately from gate planning, paving and ownership permissions.",
+    "sections": [
+      [
+        "A gate does not authorise driving across a pavement",
+        "<p>If vehicles will cross a public footway to reach the property, check the vehicle-crossing requirements with the highway authority. An existing opening, gravel drive or gate is not proof that the crossing is approved.</p><p>Use the <a href=\"https://www.gov.uk/apply-dropped-kerb\">GOV.UK dropped-kerb service</a> to find the relevant council. Ask about an existing crossing as well as a proposed new or widened one.</p>"
+      ],
+      [
+        "Show the complete access arrangement",
+        "<p>Provide photographs, the property address and a plan showing the gate, parking space, road and pavement. Identify street trees, utility covers, lamps and other features near the proposed crossing.</p><p>Ask the authority for its current eligibility rules, application process, approved work arrangements and charges. Do not book pavement work on the basis of another borough’s dimensions or a generic online price.</p>"
+      ],
+      [
+        "Keep the permissions separate",
+        "<p>Check planning requirements for the gate and entrance, highway approval for the crossing, and ownership or lease restrictions. The responsible authority should confirm which processes apply to your address and road.</p><p>Paving and drainage need their own design. Read our <a href=\"/blog/front-garden-paving-suds-london/\">front-garden paving guide</a> and include approved crossover work and surface reinstatement in the <a href=\"/guides/electric-driveway-gates-cost-london/\">installed gate cost guide</a>.</p>"
+      ]
+    ],
+    "faqs": []
+  },
+  "front-garden-paving-suds-london": {
+    "kind": "blog",
+    "title": "Front Garden Paving, Drainage and Driveway Gates",
+    "description": "Coordinate the paving, water route and gate foundations before changing a front garden entrance.",
+    "sections": [
+      [
+        "Check the scope of the paving rules",
+        "<p>Planning Portal explains that traditional impermeable front-garden paving over five square metres needs planning permission where water does not run to a permeable area. Its <a href=\"https://www.planningportal.co.uk/permission/common-projects/paving-your-front-garden/\">front-garden paving guidance</a> also sets out limits and exceptions to permitted development.</p><p>Check property type, listed status, planning conditions and any Article 4 direction before assuming that a permeable surface settles the planning question. Ask the authority about the actual proposal.</p>"
+      ],
+      [
+        "Design where the water will go",
+        "<p>Tell the contractor about ponding, flooding and the current falls. Ask for the proposed surface build-up, drainage route and maintenance arrangements. A permeable top surface needs a suitable underlying design to work as intended.</p><p>Coordinate the paving with gate tracks, motor boxes, supports and cable routes. Avoid setting final paving levels before those details have been agreed.</p>"
+      ],
+      [
+        "Treat the vehicle crossing separately",
+        "<p>Changing the garden surface does not authorise driving across the public footway. Check the <a href=\"/blog/do-i-need-a-dropped-kerb-for-a-driveway-gate-london/\">dropped-kerb requirements</a> and any approval for a new or altered crossing.</p><p>Ask the quotation to distinguish paving, drainage, gate groundworks and highway work. Record who obtains each permission and who reinstates disturbed surfaces.</p>"
+      ],
+      [
+        "Keep the system maintainable",
+        "<p>Request cleaning and care instructions for the selected paving and drainage. Identify covers and access points that must remain reachable after the gate is installed.</p><p>Consult the government’s <a href=\"https://www.gov.uk/government/publications/permeable-surfacing-of-front-gardens-guidance\">permeable-surfacing guidance</a> and use the <a href=\"/guides/electric-driveway-gates-cost-london/\">installed gate cost guide</a> to compare the complete entrance scope.</p>"
+      ]
+    ],
+    "faqs": []
+  },
+  "electric-gate-parcel-delivery-access-london": {
+    "kind": "blog",
+    "title": "Parcel and Delivery Access Through Electric Gates",
+    "description": "Choose a delivery routine that works when you are home, away or unable to answer an intercom.",
+    "sections": [
+      [
+        "Choose where parcels should go",
+        "<p>Decide whether a courier should enter the driveway or leave a parcel at an accessible delivery point outside the powered gate. Give clear instructions that do not require climbing, reaching through the gate or leaving goods in its movement path.</p><p>Consider pedestrian access and the position of a parcel box before adding an entry device. A delivery routine should also work when you cannot answer a call.</p>"
+      ],
+      [
+        "Manage codes and visitor calls",
+        "<p>A keypad can offer temporary or separately managed codes if the selected product supports them. Check how codes expire and how you remove access. Avoid placing a permanent household code in public delivery notes.</p><p>A video or phone intercom lets you speak with the visitor, subject to the installed connection and app features. Notifications, recordings and remote release vary by model and account. Request a demonstration rather than assuming they are included.</p>"
+      ],
+      [
+        "Keep movement and access separate",
+        "<p>Letting a visitor in does not confirm that the gate’s path is clear. The installation needs protective measures for the actual entrance, and users need instructions on where to wait and move. Do not ask a courier to hold a powered leaf open or obstruct a sensor.</p><p>Agree an alternative for network or power failure. Keep manual release to trained users following the supplied instructions, rather than sharing a generic release sequence with delivery drivers.</p>"
+      ],
+      [
+        "Choose the equipment around the routine",
+        "<p>Compare <a href=\"/services/access-control/keypad-entry-systems/\">keypad access</a>, <a href=\"/services/access-control/video-intercoms/\">video entry</a> and <a href=\"/services/access-control/gsm-phone-entry/\">phone entry</a>. Check account ownership and recurring charges in the quotation. Our <a href=\"/guides/uk-electric-gate-safety-laws/\">gate safety guide</a> explains the handover information to request.</p>"
+      ]
+    ],
+    "faqs": []
+  },
+  "electric-sliding-gates": {
+    "kind": "service",
+    "title": "Electric Sliding Gates",
+    "description": "Electric sliding gates designed around your London driveway, side space, supports and access requirements.",
+    "sections": [
+      [
+        "Make room for the whole gate",
+        "<p>Sliding gates move alongside the entrance, which can help where a swing leaf would conflict with parked vehicles. The survey must measure the full travel path, supporting arrangement and separation from walls, fences and pedestrian areas.</p><p>Tracked, cantilever and telescopic configurations need different space. Ask for a drawing showing the clear opening, stored gate and any supporting tail. An opening-width-plus-500-mm rule does not fit every design.</p>"
+      ],
+      [
+        "Check levels, supports and drainage",
+        "<p>Tell us about slopes, standing water and work planned for the driveway. The proposed support and travel arrangement must suit the ground and gate dimensions. Include foundations, track where applicable, cable routes and surface reinstatement in the written scope.</p><p>For restricted sites, compare <a href=\"/blog/telescopic-gates-space-saving-london/\">telescopic gates</a> with the wider <a href=\"/guides/swing-vs-sliding-gates/\">swing and sliding options</a>.</p>"
+      ],
+      [
+        "Specify access and safe movement",
+        "<p>Choose the appearance, privacy and opening arrangement alongside visitor entry and pedestrian access. A powered gate needs assessment of the entire movement area, including the run-back zone. Request the proposed protective measures, checks and user instructions.</p><p>Agree manual-release arrangements, maintenance access and the actual operating sequence. Opening speed depends on the equipment and safe configuration; it is not a universal service promise.</p>"
+      ],
+      [
+        "Request a complete quotation",
+        "<p>Send your postcode, photographs and approximate opening dimensions. We can discuss a survey and the work required. Confirm products, groundworks, electrical supply, controls, VAT, exclusions and handover in writing.</p><p>Use our <a href=\"/guides/electric-driveway-gates-cost-london/\">installed gate cost guide</a> to compare proposals. Ask for the proposed lead time and the written terms for gate, finish, automation and installation before ordering.</p>"
+      ]
+    ],
+    "faqs": [
+      [
+        "How much side space does a sliding gate need?",
+        "The required space depends on the tracked, cantilever or multi-panel design, supporting structure and protective clearances. Request a drawing of the complete travel and stored position."
+      ],
+      [
+        "Can a sliding gate work on a slope?",
+        "A survey must assess the travel path, levels, drainage, supports and safe manual movement. A sloping driveway does not automatically favour a particular sliding design."
+      ],
+      [
+        "How long will installation take?",
+        "Agree a programme after the measured design and groundworks are known. Fabrication, power and reinstatement can affect the schedule."
+      ]
+    ]
+  },
+  "electric-swing-gates": {
+    "kind": "service",
+    "title": "Electric Swing Gates",
+    "description": "Single and paired electric swing gates planned around your opening, parking space and everyday access.",
+    "sections": [
+      [
+        "Plan the path of each leaf",
+        "<p>A swing gate needs space throughout its opening arc. The survey should show the actual hinge position, leaf length, parking position and pedestrian route. A pair of leaves shares the opening width, but that alone does not establish safe vehicle clearance.</p><p>Use our <a href=\"/guides/swing-vs-sliding-gates/\">layout comparison</a> to prepare for the survey. Where space is tight, compare sliding and folding alternatives before selecting the gate design.</p>"
+      ],
+      [
+        "Check gradients and boundaries",
+        "<p>Rising ground can conflict with the swing path. The installer must assess levels and the way a released leaf can move under gravity or wind. A different motor does not remove a geometry problem.</p><p>Check the highway boundary and relevant planning requirements before choosing outward operation. Read our <a href=\"/blog/outward-swinging-gates-uk-rules/\">outward-opening gate guide</a> and obtain advice for the actual property.</p>"
+      ],
+      [
+        "Choose the gate and automation together",
+        "<p>Compare material, infill, supports and exposure alongside the proposed drive. Above-ground and underground operators have different installation and maintenance requirements. Ask for the product model and the basis for the proposed arrangement.</p><p>Include access controls, protective measures, completed-system checks and manual-release training in the scope. Keep the written user and maintenance instructions after handover.</p>"
+      ],
+      [
+        "Compare the complete cost",
+        "<p>We can discuss design, supply and installation for your London property. Send photographs and approximate dimensions when you <a href=\"/contact/\">discuss your entrance</a>.</p><p>Use the <a href=\"/guides/electric-driveway-gates-cost-london/\">installed gate cost guide</a> to compare gate fabrication, supports, electrical work, groundworks and reinstatement. Confirm the timetable, exclusions and separate warranty terms before accepting.</p>"
+      ]
+    ],
+    "faqs": [
+      [
+        "Should swing gates open inward?",
+        "The site layout, boundary and highway requirements need checking. Do not let a proposed leaf sweep over a public pavement or road without resolving the legal and safety implications with the relevant authority."
+      ],
+      [
+        "What width should I choose?",
+        "Measure vehicle turning, the clear opening, supports and pedestrian use. A standard width cannot establish suitability for every driveway."
+      ],
+      [
+        "Are swing gates always cheaper than sliding gates?",
+        "Compare complete quotations for your entrance. Supports, groundworks, gate design and controls can change the relative cost."
+      ]
+    ]
+  },
+  "wooden-driveway-gates": {
+    "kind": "service",
+    "title": "Wooden Driveway Gates",
+    "description": "Timber driveway gates for London homes, with the species, construction, finish and upkeep agreed before ordering.",
+    "sections": [
+      [
+        "Choose the timber and appearance",
+        "<p>Start with a sample and a drawing of the complete gate. Compare grain, board layout, frame proportions and how the finish will look beside the house. Ask for the species or modified-wood product in the quotation.</p><p>Hardwood, softwood and modified timber describe different options, not a fixed lifespan. Availability, construction and exposure matter. Our <a href=\"/blog/accoya-wood-gates-london/\">Accoya guide</a> explains the difference between material and gate warranties.</p>"
+      ],
+      [
+        "Plan construction and automation",
+        "<p>Discuss the dimensions, joints, supports and hardware with the installer. A timber gate can be considered for automation after assessment of its condition, geometry, dimensions, exposure and surrounding hazards. Motor selection involves more than weight alone.</p><p>Confirm which work the proposal includes for hinges, posts, power and protective measures. Where you are replacing an existing gate, compare the cost of retaining or renewing the supports.</p>"
+      ],
+      [
+        "Agree the finish and care",
+        "<p>Choose whether you want a painted finish, visible grain or a changing weathered appearance. Request the coating system and care instructions for the selected timber and exposure.</p><p>Confirm the separate terms for timber, fabrication, coating, hardware and installation. A material guarantee does not automatically include repainting or call-out labour. Ask how maintenance affects those terms.</p>"
+      ],
+      [
+        "Compare your options",
+        "<p>Use our <a href=\"/guides/aluminium-vs-wooden-driveway-gates/\">wooden and aluminium comparison</a> if you are also considering wood-effect metal. Compare samples and complete scope rather than a universal durability claim.</p><p>Send your postcode, preferred design and entrance photographs to <a href=\"/contact/\">discuss your entrance</a>. We will discuss the proposed work and written quotation.</p>"
+      ]
+    ],
+    "faqs": [
+      [
+        "How long do wooden gates last?",
+        "Condition over time depends on the timber, construction, finish, exposure and care. Request the proposed product specification and terms rather than relying on a universal number of years."
+      ],
+      [
+        "Can wooden gates be automated?",
+        "Potentially, after assessment of the complete gate, supports, geometry and hazards. Motor capacity alone does not establish suitability."
+      ],
+      [
+        "Which timber should I choose?",
+        "Compare samples, construction, finish care and the written terms for the available species or modified-wood product."
+      ]
+    ]
+  },
+  "metal-driveway-gates": {
+    "kind": "service",
+    "title": "Metal Driveway Gates",
+    "description": "Compare metal driveway gate designs, fabrication and finish options for your London entrance.",
+    "sections": [
+      [
+        "Specify the actual metal",
+        "<p>A traditional iron-style appearance may use modern steel, while other designs use aluminium. Ask the quotation to identify the material, sections, joints and infill. Appearance alone does not establish what the gate is made from.</p><p>Compare open bars with a more screened design, considering the view from both sides and the surrounding frontage. Our <a href=\"/blog/minimalist-steel-slat-gates-london/\">slat-gate guide</a> covers spacing and sightlines.</p>"
+      ],
+      [
+        "Ask how the finish protects the gate",
+        "<p>Request the preparation and coating specification, including joints, edges and areas affected by fabrication. Galvanising, painting and powder coating are different processes; confirm which apply to the proposed gate.</p><p>No blanket rust-proof or maintenance-free promise replaces that specification. Ask for cleaning and inspection instructions, repair options and written coating terms. Compare physical <a href=\"/blog/anthracite-grey-gate-trends-london/\">colour samples</a> before ordering.</p>"
+      ],
+      [
+        "Match the layout to the site",
+        "<p>Choose swing or sliding operation around space, levels, supports and daily access. The dimensions and infill affect exposure and the requirements for powered movement. Include protective measures and maintenance access in the design.</p><p>If you have old metal gates, consider a <a href=\"/blog/wrought-iron-gate-restoration-london/\">restoration assessment</a> before replacement. Listed or protected boundaries need their own checks.</p>"
+      ],
+      [
+        "Compare the written scope",
+        "<p>Discuss <a href=\"/services/aluminium-driveway-gates/\">aluminium</a> or other metal options using the same opening and design requirements. The quotation should identify fabrication, supports, groundworks, controls, VAT and reinstatement.</p><p>Send your entrance photographs and postcode when you <a href=\"/contact/\">discuss your entrance</a>. Confirm products and warranty terms in writing before ordering.</p>"
+      ]
+    ],
+    "faqs": [
+      [
+        "Are all metal gates galvanised?",
+        "Do not assume so. Confirm the actual metal and preparation/coating system in the quotation."
+      ],
+      [
+        "Can you restore an existing iron-style gate?",
+        "A specialist needs to identify the material, condition and repair scope before advising whether restoration is suitable."
+      ],
+      [
+        "Are metal gates maintenance-free?",
+        "No. Follow the supplied care instructions for the finish, fittings and any automation."
+      ]
+    ]
+  },
+  "anpr-systems": {
+    "kind": "access",
+    "title": "ANPR Gate Entry Systems",
+    "description": "Number-plate entry planned around camera position, authorised vehicles, safe waiting and access-data management.",
+    "sections": [
+      [
+        "Plan the approach and fallback",
+        "<p>ANPR reads a vehicle registration and checks it against access permissions. It does not establish who is driving or prevent a second vehicle following the first. Decide where the driver waits and how entry works if a plate is not read.</p><p>Do not assume a vehicle can drive through without stopping. Camera recognition, the command to the controller and safe gate movement are separate parts of the sequence. Include visitors, deliveries and pedestrian access in the plan.</p>"
+      ],
+      [
+        "Check recognition at the actual entrance",
+        "<p>Survey camera position, approach angle, lighting, headlight glare, stopping distance and the expected plate types. Ask the supplier to demonstrate the proposed equipment under the conditions that matter at your site.</p><p>A manufacturer’s performance figure under defined test conditions is not a guarantee for every vehicle or weather condition. Agree a keypad, intercom or other authorised fallback.</p>"
+      ],
+      [
+        "Manage permissions and records",
+        "<p>Decide who can add, remove and review authorised registrations. Confirm expiry for temporary vehicles, administrator access and account recovery. Ask whether the system records images or events, where it stores them and how long it keeps them.</p><p>Where data-protection law applies, the operator must address the purpose, lawful use, notice, retention and access controls. Consult <a href=\"https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/cctv-and-video-surveillance/guidance-on-video-surveillance-including-cctv/\">ICO video-surveillance guidance</a>. A product label does not make the whole installation compliant.</p>"
+      ],
+      [
+        "Specify the complete installation",
+        "<p>Include camera and controller models, network and power, gate interface, subscriptions, commissioning and user training. Confirm ongoing support and the effect of connection or power failure.</p><p>Compare <a href=\"/services/access-control/video-intercoms/\">video entry</a> and <a href=\"/services/access-control/keypad-entry-systems/\">keypads</a> for visitors. Send your entrance layout and expected use when you <a href=\"/contact/\">discuss your entrance</a>.</p>"
+      ]
+    ],
+    "faqs": [
+      [
+        "Will ANPR read every plate?",
+        "Recognition depends on the camera, setup, approach, lighting, plate condition and supported plate formats. Test the actual proposal and agree a fallback."
+      ],
+      [
+        "Can cars enter without stopping?",
+        "Do not assume this. The design must provide a suitable approach and waiting arrangement while recognition and safe gate movement take place."
+      ],
+      [
+        "Does ANPR replace gate safety devices?",
+        "No. Permission to enter is separate from the protective measures and checks required for the powered entrance."
+      ]
+    ]
+  },
+  "video-intercoms": {
+    "kind": "access",
+    "title": "Video Intercom Systems",
+    "description": "See and speak to visitors through a video-entry system specified for your gate, network and household.",
+    "sections": [
+      [
+        "Choose where calls should ring",
+        "<p>Discuss indoor monitors, phones and the people who need to answer. Confirm whether you need live video only, recordings or gate-position feedback. These functions vary by product and configuration.</p><p>Ask to see the proposed call and release sequence, including what happens when nobody answers. Plan deliveries and pedestrian access alongside vehicle entry.</p>"
+      ],
+      [
+        "Check the site connection",
+        "<p>Survey power, cable routes, camera position, lighting and the required network connection. App access may depend on broadband or a mobile service as well as power at the entrance.</p><p>Confirm the exact interface with the gate controller. An intercom is not automatically compatible with every existing motor or control board. Changes need assessment and commissioning with the complete entrance.</p>"
+      ],
+      [
+        "Keep control of accounts and recordings",
+        "<p>Agree who owns the administrator account, how residents are added and removed, and how recovery works. Confirm subscriptions, storage, recording settings and any remote-access charges.</p><p>Position cameras with neighbouring property and the public area in mind. Ask what privacy controls apply and obtain advice on the responsibilities of the operator where needed.</p>"
+      ],
+      [
+        "Compare the specified equipment",
+        "<p>Use our <a href=\"/guides/best-intercom-systems/\">intercom buying guide</a> and <a href=\"/blog/video-intercom-comelit-vs-hikvision/\">documented product comparison</a>. Confirm offered brands and model availability in your quotation.</p><p>Send photographs and any safely accessible equipment details when you <a href=\"/contact/\">discuss your entrance</a>. Include installation, programming, user training and support in the agreed scope.</p>"
+      ]
+    ],
+    "faqs": [
+      [
+        "Can a video intercom work with my existing gate?",
+        "The installer needs to check the existing controller, wiring, condition and proposed interface. Compatibility cannot be promised from the motor brand alone."
+      ],
+      [
+        "Can I answer remotely?",
+        "Some configurations support remote calls through an app. Confirm the required connection, account, charges and failure arrangements for the specified model."
+      ],
+      [
+        "Does every system record visitors?",
+        "No. Recording, event logs, storage and subscriptions vary. Request the exact functions and privacy settings."
+      ]
+    ]
+  },
+  "gsm-phone-entry": {
+    "kind": "access",
+    "title": "GSM Phone Entry Systems",
+    "description": "Phone-based gate entry with the device, signal, SIM plan and user permissions checked for your entrance.",
+    "sections": [
+      [
+        "Decide how phone entry should work",
+        "<p>Discuss whether you want authorised callers to request opening, a visitor intercom that calls residents, or both. Ask how the proposed system identifies a caller and what happens if nobody answers.</p><p>A phone command does not confirm physical gate position. Agree how the household recognises a failed opening and how visitors obtain help.</p>"
+      ],
+      [
+        "Confirm the supported network and plan",
+        "<p>Identify the exact device and the voice, SMS or data services it needs. Check the SIM provider’s requirements, tariff and account-expiry conditions. Calls or messages should not be described as universally free.</p><p>Read <a href=\"https://www.ofcom.org.uk/phones-and-broadband/coverage-and-speeds/3g-switch-off\">Ofcom’s mobile-network retirement guidance</a> and obtain product-specific support information. The word GSM is often used for phone entry generally; confirm which network technology the proposed unit actually uses.</p>"
+      ],
+      [
+        "Survey signal and fallback access",
+        "<p>Test the proposed service at the equipment location. Plan the power supply, antenna and cable route. A phone on a different network is not a complete signal test for the installation.</p><p>Phone entry may avoid dependence on home Wi-Fi, but it still depends on its own network, equipment and power. Agree a fallback for outages and confirm any backup maintenance.</p>"
+      ],
+      [
+        "Hand over account control",
+        "<p>Record who owns the SIM and administrator account. Demonstrate adding and removing users using the supplied instructions. Confirm recurring charges and how support handles a change of phone number or ownership.</p><p>Read the <a href=\"/blog/gsm-gate-openers-london/\">phone-entry buying checklist</a> or compare <a href=\"/guides/best-intercom-systems/\">intercom options</a> before you <a href=\"/contact/\">discuss your entrance</a>.</p>"
+      ]
+    ],
+    "faqs": [
+      [
+        "Will any SIM work?",
+        "Check the model, supported network services and tariff terms together. Not every SIM or plan supports every gate device."
+      ],
+      [
+        "Is phone entry independent of power and broadband?",
+        "It may not need home broadband, but the gate and phone-entry equipment still need power and the required mobile service."
+      ],
+      [
+        "Are opening calls free?",
+        "That depends on how the product handles calls and the applicable tariffs. Confirm the charges rather than assuming a missed-call arrangement."
+      ]
+    ]
+  },
+  "keypad-entry-systems": {
+    "kind": "access",
+    "title": "Keypad Entry Systems",
+    "description": "Code-based gate access with user management, weather exposure and controller compatibility specified for your property.",
+    "sections": [
+      [
+        "Choose how you will manage codes",
+        "<p>Decide who needs permanent access and who should have temporary permission. Ask whether the selected keypad supports separate users, expiry or time windows. Those functions vary by model.</p><p>Avoid one shared code for everyone if you need to remove an individual’s access. Agree who can change settings and how you recover administrator control.</p>"
+      ],
+      [
+        "Place the keypad for its users",
+        "<p>Discuss pedestrian and driver use, reach, lighting and the position relative to moving leaves. Visitors should not need to reach through a gate or stand in its movement path to enter a code.</p><p>Confirm the enclosure rating, operating conditions and mounting requirements for the actual product. There is no single weather rating we can promise for every proposed keypad.</p>"
+      ],
+      [
+        "Check the gate connection",
+        "<p>The installer needs to assess the control interface, power, wiring and the existing gate’s condition. Code acceptance requests entry; it does not replace the protective measures needed for powered movement.</p><p>Ask what happens after repeated incorrect attempts, loss of power or a controller fault. Agree an authorised alternative for residents and visitors.</p>"
+      ],
+      [
+        "Include setup and handover",
+        "<p>Request model details, programming, instructions and written support terms. At handover, practise adding and removing a user, replacing the initial codes and recovering access.</p><p>Compare <a href=\"/services/access-control/video-intercoms/\">video entry</a> for visitors you want to speak with and our <a href=\"/blog/electric-gate-parcel-delivery-access-london/\">delivery-access guide</a> for couriers. Then <a href=\"/contact/\">discuss your entrance</a>.</p>"
+      ]
+    ],
+    "faqs": [
+      [
+        "Can delivery codes expire automatically?",
+        "Some models support expiry or time schedules. Specify that requirement and have the supplier demonstrate it before accepting the configuration."
+      ],
+      [
+        "How many users can I add?",
+        "Capacity and whether users have separate codes depend on the selected model. Confirm the limit in the product specification."
+      ],
+      [
+        "Can a keypad be fitted to an existing gate?",
+        "Compatibility, power, wiring and safe operation need assessment before installation."
+      ]
+    ]
+  }
+}

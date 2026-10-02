@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!borough) return {};
 
   const title = `Driveway Gate Planning Permission in ${borough.name} | London Planning Guide`;
-  const description = `Complete guide to driveway gate planning rules in ${borough.name}. ${borough.conservationAreas} conservation areas${borough.article4Directions ? ', Article 4 directions apply' : ''}. Understand permitted development rights before you install.`;
+  const description = `Find official resources for driveway gate planning in ${borough.name}. Check the property, proposed boundary work, conservation status and relevant directions.`;
   const url = `${siteConfig.url}/local-regulations/${borough.slug}/`;
 
   return {
@@ -43,11 +43,11 @@ export default function BoroughPlanningPage({ params }: Props) {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: `Driveway Gate Planning Permission in ${borough.name} — What You Need to Know`,
-    description: `Complete guide to driveway gate planning rules in ${borough.name}. Conservation areas, Article 4 directions, permitted development rights.`,
+    headline: `Driveway Gate Planning in ${borough.name}`,
+    description: borough.intro,
     url: `${siteConfig.url}/local-regulations/${borough.slug}/`,
     datePublished: '2025-01-01',
-    dateModified: '2025-01-01',
+    dateModified: borough.reviewedDate,
     image: {
       '@type': 'ImageObject',
       url: `${siteConfig.url}/og-image.jpg`,

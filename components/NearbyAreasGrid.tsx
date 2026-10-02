@@ -38,7 +38,7 @@ export function NearbyAreasGrid({ cityName, serviceSlug, serviceName, initialVis
           const label = serviceName ? area : `Gates ${area}`;
 
           if (hasPage) {
-            const href = serviceSlug
+            const href = serviceSlug === 'commercial-gates' ? '/commercial/' : serviceSlug
               ? `/services/${serviceSlug}/${toSlug(area)}/`
               : `/location/${toSlug(area)}/`;
             return (
@@ -72,10 +72,7 @@ export function NearbyAreasGrid({ cityName, serviceSlug, serviceName, initialVis
       )}
 
       <p className="mt-5 text-xs text-brand-500 leading-relaxed max-w-2xl">
-        Homeowners from {areas.slice(0, 5).join(', ')}, and surrounding areas around {cityName} use our service regularly.{' '}
-        {serviceName
-          ? `If you need ${serviceName.toLowerCase()} near ${cityName}, we can arrange a free site survey, including evenings and weekends.`
-          : `Send your postcode and project details to confirm coverage and appointment arrangements.`}
+        Send your postcode and project details to confirm coverage and appointment arrangements around {cityName}.
       </p>
     </section>
   );
