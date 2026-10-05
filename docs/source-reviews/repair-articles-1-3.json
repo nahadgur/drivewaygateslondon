@@ -75,7 +75,7 @@
     "section": "Opening answer; safety-input section",
     "claim_or_recommendation": "On some systems, photocell inputs can prevent closing or cause reversal; a sustained opening command can hold the gate open.",
     "source_url": "https://www.niceforyou.com/sites/default/files/upload/manuals/a6-7_ista6_r8.pdf",
-    "date_checked": "2026-09-30",
+    "date_checked": "2026-10-05",
     "qualification": "Nice A6/A6F/A700F manual, English sections 4 and 5. Model-specific illustration from a legacy manual, not a cross-brand fault diagnosis or current recommended programming. No switch positions, terminal instructions or numerical specifications reproduced.",
     "calculation": "None"
   },
@@ -85,7 +85,7 @@
     "section": "The gate may be waiting for a different command",
     "claim_or_recommendation": "Nice A5 offers automatic closure and a setting which waits for another command.",
     "source_url": "https://www.niceforyou.com/sites/default/files/upload/manuals/ISTA5.4858.pdf",
-    "date_checked": "2026-09-30",
+    "date_checked": "2026-10-05",
     "qualification": "English Standard operation and Programmable functions. Legacy controller example only; reader directed to own instructions, not to copy settings.",
     "calculation": "None"
   },
@@ -95,7 +95,7 @@
     "section": "Stopping or reversing needs a wider assessment",
     "claim_or_recommendation": "Gate assessment considers mountings, movement, environment and protective response.",
     "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
-    "date_checked": "2026-09-30",
+    "date_checked": "2026-10-05",
     "qualification": "Delivering safety and site-specific assessment sections; observation does not diagnose a failed hinge, roller or motor.",
     "calculation": "None"
   },
@@ -105,7 +105,7 @@
     "section": "Report rain, electrical trips and recent damage",
     "claim_or_recommendation": "Water ingress and damaged electrical connections can create powered-gate hazards.",
     "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/basics.htm",
-    "date_checked": "2026-09-30",
+    "date_checked": "2026-10-05",
     "qualification": "Risks from powered gates. Rain preceding a fault does not prove water ingress or identify a failed component.",
     "calculation": "None"
   },
@@ -115,7 +115,7 @@
     "section": "Opening and access arrangements",
     "claim_or_recommendation": "Keep clear of faulty machinery and leave hazardous testing, enclosure access and intervention to competent contractors.",
     "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/basics.htm",
-    "date_checked": "2026-09-30",
+    "date_checked": "2026-10-05",
     "qualification": "Safety recommendation based on unexpected movement, entrapment, electrical and work-on-gate hazards. No live electrical, release, force-adjustment or bypass procedure.",
     "calculation": "None"
   },
@@ -125,7 +125,7 @@
     "section": "Fault records, inspection and repair comparison",
     "claim_or_recommendation": "Give an observation-based fault history and ask the engineer to connect proposed work to a diagnosis.",
     "source_url": null,
-    "date_checked": "2026-09-30",
+    "date_checked": "2026-10-05",
     "qualification": "Original editorial recommendations. No statistical ranking of common causes, promise of a particular fix or guaranteed inspection outcome.",
     "calculation": "None"
   },
@@ -205,7 +205,7 @@
     "section": "End CTA",
     "claim_or_recommendation": "Get a Free Quote; tell us about the gate and the work being considered.",
     "source_url": "https://www.drivewaygateslondon.co.uk/contact/",
-    "date_checked": "2026-09-30",
+    "date_checked": "2026-10-05",
     "qualification": "CTA supplied by user in the brief; live route verified. No free repair inspection, response-time, universal acceptance or warranty promise added.",
     "calculation": "None"
   },
@@ -215,7 +215,7 @@
     "section": "Featured hero",
     "claim_or_recommendation": "Image illustrates an entrance and is not a verified customer installation.",
     "source_url": null,
-    "date_checked": "2026-09-30",
+    "date_checked": "2026-10-05",
     "qualification": "Built-in image_gen. Prompts recorded separately; visual inspected; image is not evidence of a diagnosis, customer case or safety compliance.",
     "calculation": "None"
   },

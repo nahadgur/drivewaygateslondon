@@ -1,6 +1,6 @@
 {
   "publication_date": "2026-09-30",
-  "release_authorization": "User requested unpublishing articles 2 and 3 on 30 September, then releasing the existing prepared articles individually on 2 and 4 October 2026 at 08:30 Europe/London.",
+  "release_authorization": "Following the user's Monday 5 October follow-up after the missed slots, release article 2 on 5 October and retain article 3 as a draft for Wednesday 7 October, preserving the two-day gap.",
   "article_verdicts": [
     {
       "priority": 1,
@@ -20,27 +20,45 @@
   ],
   "linked_services": "Targeted factual corrections applied; see linked-service-corrections.json.",
   "deployment_verification": "GitHub Vercel status plus Production deployment status and canonical-site HTTP verification. Direct Vercel connector cannot access the project team (403); use GitHub Git-integration evidence instead.",
-  "source_reopened": "HSE safety, responsibilities and basics; Nice A6/A700F and A5 manuals on 2026-09-30.",
+  "source_reopened": "HSE safety, responsibilities and basics; Nice A6/A700F and A5 manuals on 2026-09-30. Article 2 primary sources reopened on 2026-10-05: HSE safety and basics; Nice A6/A700F and A5 manuals. Existing claims and qualifications preserved.",
   "external_link_policy": "At most one link per external domain in each new article; source ledger remains separate.",
   "rescheduled_releases": [
     {
       "priority": 2,
       "slug": "electric-gates-open-but-wont-close",
-      "date": "2026-10-02",
-      "time": "08:30",
+      "date": "2026-10-05",
+      "time": "immediate Monday recovery",
       "timezone": "Europe/London",
-      "utc": "2026-10-02T07:30:00Z",
-      "state": "draft until scheduled release"
+      "utc": null,
+      "state": "publication enabled for 5 October; see release verification record"
     },
     {
       "priority": 3,
       "slug": "electric-gates-keep-breaking-down-repair-or-replace",
-      "date": "2026-10-04",
+      "date": "2026-10-07",
       "time": "08:30",
       "timezone": "Europe/London",
-      "utc": "2026-10-04T07:30:00Z",
+      "utc": "2026-10-07T07:30:00Z",
       "state": "draft until scheduled release"
     }
   ],
-  "publication_date_note": "The original 30 September release and completed checks are historical. Current publication dates and draft visibility are in data/repair-articles.json; revalidate before each scheduled release."
+  "publication_date_note": "The original 30 September release and completed checks are historical. Current publication dates and draft visibility are in data/repair-articles.json; revalidate before each scheduled release.",
+  "release_validation_2026_10_05": {
+    "slug": "electric-gates-open-but-wont-close",
+    "verdict": "PASS",
+    "parent_commit": "12e59b29d5bdb7a521628caf51afd76210baca59",
+    "body_words": 1406,
+    "checks": [
+      "Primary sources reopened; existing approved copy and WebP preserved",
+      "Production build including lint and TypeScript passed",
+      "Repair-article metadata, links, draft visibility, blog hub and sitemap passed",
+      "206 production templates and 5224 internal links/assets passed",
+      "Desktop 1440px and mobile 390px passed; hero loaded, no horizontal overflow, correct date and one end quote CTA",
+      "Contact failure, retry and success intercepted locally; zero real leads"
+    ],
+    "remaining_after_push": [
+      "Matching GitHub Vercel Production success",
+      "Canonical-domain page, image, links, date, metadata and sitemap checks"
+    ]
+  }
 }
