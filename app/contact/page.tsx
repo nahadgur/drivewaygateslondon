@@ -37,6 +37,7 @@ export default function ContactPage() {
     isPartOf: {
       '@type': 'WebSite',
       name: siteConfig.name,
+      alternateName: ['DrivewayGatesLondon'],
       url: siteConfig.url,
     },
   };
