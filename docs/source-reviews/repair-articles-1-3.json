@@ -135,7 +135,7 @@
     "section": "Ask for a condition assessment",
     "claim_or_recommendation": "The complete gate and retained parts need assessment; a new motor alone does not settle system safety.",
     "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
-    "date_checked": "2026-09-30",
+    "date_checked": "2026-10-08",
     "qualification": "Whole-system principle. No age-based replacement rule or assertion that all existing components can be reused.",
     "calculation": "None"
   },
@@ -145,7 +145,7 @@
     "section": "Consider replacing the automation",
     "claim_or_recommendation": "Significant modifications can require new conformity assessment.",
     "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/responsibilities.htm",
-    "date_checked": "2026-09-30",
+    "date_checked": "2026-10-08",
     "qualification": "Installers section. Conditional language retained; not all component repairs are treated as new machinery.",
     "calculation": "None"
   },
@@ -155,7 +155,7 @@
     "section": "Ask what support follows the work",
     "claim_or_recommendation": "Powered gates need regular checks and maintenance.",
     "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/basics.htm",
-    "date_checked": "2026-09-30",
+    "date_checked": "2026-10-08",
     "qualification": "The basics for safety. No universal service frequency, warranty maintenance condition or fixed test interval.",
     "calculation": "None"
   },
@@ -165,7 +165,7 @@
     "section": "History, repair, replacement, quotation and handover sections",
     "claim_or_recommendation": "Compare a diagnosed repair, automation replacement and complete replacement by written scope and retained equipment.",
     "source_url": null,
-    "date_checked": "2026-09-30",
+    "date_checked": "2026-10-08",
     "qualification": "Original decision framework. No lifecycle forecast, monetary threshold, precise lifespan, repair percentage or guarantee of lower cost.",
     "calculation": "None"
   },
@@ -175,7 +175,7 @@
     "section": "Give complete replacement a defined scope",
     "claim_or_recommendation": "Ask who will check property constraints if the design or boundary changes.",
     "source_url": null,
-    "date_checked": "2026-09-30",
+    "date_checked": "2026-10-08",
     "qualification": "Purchasing question only, not a planning-law statement or assurance that any work is permitted.",
     "calculation": "None"
   },
@@ -225,7 +225,7 @@
     "section": "End CTA",
     "claim_or_recommendation": "Get a Free Quote; tell us about the gate and the work being considered.",
     "source_url": "https://www.drivewaygateslondon.co.uk/contact/",
-    "date_checked": "2026-09-30",
+    "date_checked": "2026-10-08",
     "qualification": "CTA supplied by user in the brief; live route verified. No free repair inspection, response-time, universal acceptance or warranty promise added.",
     "calculation": "None"
   },
@@ -235,7 +235,7 @@
     "section": "Featured hero",
     "claim_or_recommendation": "Image illustrates an entrance and is not a verified customer installation.",
     "source_url": null,
-    "date_checked": "2026-09-30",
+    "date_checked": "2026-10-08",
     "qualification": "Built-in image_gen. Prompts recorded separately; visual inspected; image is not evidence of a diagnosis, customer case or safety compliance.",
     "calculation": "None"
   }

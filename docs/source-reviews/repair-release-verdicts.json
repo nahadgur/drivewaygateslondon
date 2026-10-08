@@ -1,6 +1,6 @@
 {
   "publication_date": "2026-09-30",
-  "release_authorization": "Following the user's Monday 5 October follow-up after the missed slots, release article 2 on 5 October and retain article 3 as a draft for Wednesday 7 October, preserving the two-day gap.",
+  "release_authorization": "On 8 October the user instructed using the later actual publication date rather than blocking a delayed release. Publish article 3 dated 8 October; continue with a two-day gap from actual releases.",
   "article_verdicts": [
     {
       "priority": 1,
@@ -20,7 +20,7 @@
   ],
   "linked_services": "Targeted factual corrections applied; see linked-service-corrections.json.",
   "deployment_verification": "GitHub Vercel status plus Production deployment status and canonical-site HTTP verification. Direct Vercel connector cannot access the project team (403); use GitHub Git-integration evidence instead.",
-  "source_reopened": "HSE safety, responsibilities and basics; Nice A6/A700F and A5 manuals on 2026-09-30. Article 2 primary sources reopened on 2026-10-05: HSE safety and basics; Nice A6/A700F and A5 manuals. Existing claims and qualifications preserved.",
+  "source_reopened": "HSE safety, responsibilities and basics; Nice A6/A700F and A5 manuals on 2026-09-30. Article 2 primary sources reopened on 2026-10-05: HSE safety and basics; Nice A6/A700F and A5 manuals. Existing claims and qualifications preserved. Article 3: HSE safety, responsibilities and basics reopened 2026-10-08; existing claims and qualifications retained.",
   "external_link_policy": "At most one link per external domain in each new article; source ledger remains separate.",
   "rescheduled_releases": [
     {
@@ -35,11 +35,11 @@
     {
       "priority": 3,
       "slug": "electric-gates-keep-breaking-down-repair-or-replace",
-      "date": "2026-10-07",
-      "time": "08:30",
-      "timezone": "Europe/London",
-      "utc": "2026-10-07T07:30:00Z",
-      "state": "draft until scheduled release"
+      "date": "2026-10-08",
+      "time": "actual release",
+      "timezone": "Asia/Shanghai",
+      "utc": null,
+      "state": "publication enabled; verify production after push"
     }
   ],
   "publication_date_note": "The original 30 September release and completed checks are historical. Current publication dates and draft visibility are in data/repair-articles.json; revalidate before each scheduled release.",
@@ -59,6 +59,24 @@
     "remaining_after_push": [
       "Matching GitHub Vercel Production success",
       "Canonical-domain page, image, links, date, metadata and sitemap checks"
+    ]
+  },
+  "release_validation_2026_10_08": {
+    "slug": "electric-gates-keep-breaking-down-repair-or-replace",
+    "verdict": "PASS",
+    "parent_commit": "e6e646572dd9143c4fb0236c1598fed0d6398c18",
+    "body_words": 1477,
+    "checks": [
+      "HSE primary sources reopened; approved copy and existing WebP preserved",
+      "Production build including lint and TypeScript passed",
+      "Metadata, conditional links, hub and sitemap checks passed",
+      "206 production templates and 5224 internal links/assets verified",
+      "Desktop/mobile hero, date, CTA and no-overflow checks passed",
+      "Mocked form failure/retry/success passed; no real lead sent"
+    ],
+    "remaining_after_push": [
+      "Matching Vercel Production success",
+      "Live page, links, hero, metadata and sitemap verification"
     ]
   }
 }
