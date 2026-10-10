@@ -1,0 +1,102 @@
+[
+  {
+    "article_priority": 4,
+    "claim_id": "D1",
+    "section": "Opening; structure; specification",
+    "claim_or_recommendation": "Retaining gates while changing drive equipment requires an assessment of the assembled system, supports, movement and compatibility.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
+    "date_checked": "2026-10-10",
+    "qualification": "Editorial application of HSE whole-system assessment; no guarantee that any particular gate can be retained. No product-specific suitability, weight or size claims.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 4,
+    "claim_id": "D2",
+    "section": "Structure and movement",
+    "claim_or_recommendation": "Stronger equipment is not a substitute for addressing structural defects or unsuitable movement; leave release and movement checks to someone competent.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
+    "date_checked": "2026-10-10",
+    "qualification": "HSE mounting strength, gate run-away, risk assessment and competence guidance. No DIY release instructions. Conditional warning about movement after restraint is removed.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 4,
+    "claim_id": "D3",
+    "section": "Specification and electrical provision",
+    "claim_or_recommendation": "Confirm mounting arrangements, retained electrical provision and control compatibility rather than assuming reuse.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
+    "date_checked": "2026-10-10",
+    "qualification": "HSE component compatibility, wiring protection and installation-specific risk assessment. Mounting, housing and cable topics are survey questions, not asserted work requirements or technical specifications.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 4,
+    "claim_id": "D4",
+    "section": "Protective measures",
+    "claim_or_recommendation": "Assess the full installation; existing photocells alone do not establish replacement-system safety.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
+    "date_checked": "2026-10-10",
+    "qualification": "HSE explains combined protective measures and limitations of ordinary photocells. No compliance certification or universal safety-device design prescribed.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 4,
+    "claim_id": "D5",
+    "section": "Protective measures",
+    "claim_or_recommendation": "Significant modifications can require new conformity assessment; contractor must explain responsibility and applicable documentation.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/responsibilities.htm",
+    "date_checked": "2026-10-10",
+    "qualification": "Conditional HSE installers guidance; no claim that every motor replacement creates new machinery. No specific marking regime or legal deadline asserted.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 4,
+    "claim_id": "D6",
+    "section": "Handover and maintenance",
+    "claim_or_recommendation": "Powered gates need maintenance; obtain instructions, appropriate checks and records for the completed work.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/basics.htm",
+    "date_checked": "2026-10-10",
+    "qualification": "HSE basics and maintaining safety; no fixed service interval, test value or warranty promise.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 4,
+    "claim_id": "D7",
+    "section": "Scope; access; quotations; handover",
+    "claim_or_recommendation": "Use a retained/replaced list, itemised installed quotation, variation approval, temporary access and handover checklist.",
+    "source_url": null,
+    "date_checked": "2026-10-10",
+    "qualification": "Original purchasing framework. Potential retained-leaf saving is conditional, not a quoted saving or cost forecast. No invented prices, durations, customer examples or business credentials.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 4,
+    "claim_id": "D8",
+    "section": "Other installer; access control",
+    "claim_or_recommendation": "Ask a replacement contractor to accept the installation and verify equipment and access functions.",
+    "source_url": null,
+    "date_checked": "2026-10-10",
+    "qualification": "Purchasing questions, not a promise of universal support, remote compatibility or business acceptance; linked previously reviewed service/article content checked again.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 4,
+    "claim_id": "CTA",
+    "section": "End CTA",
+    "claim_or_recommendation": "Get a Free Quote via the existing contact route.",
+    "source_url": "https://www.drivewaygateslondon.co.uk/contact/",
+    "date_checked": "2026-10-10",
+    "qualification": "User-authorised CTA; does not offer free inspection or guarantee a response time. HTTP availability and local mocked form checks required before release.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 4,
+    "claim_id": "IMAGE",
+    "section": "Hero",
+    "claim_or_recommendation": "Generated image is illustrative design inspiration, not a customer installation.",
+    "source_url": null,
+    "date_checked": "2026-10-10",
+    "qualification": "Built-in image_gen; image inspected. Natural metal swing-gate illustration, no safety compliance inference. Explicit existing site disclosure and accurate alt text retained.",
+    "calculation": "None"
+  }
+]

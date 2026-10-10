@@ -1,0 +1,40 @@
+{
+  "article_priority": 4,
+  "slug": "replace-gate-automation-without-replacing-gates",
+  "publication_date": "2026-10-10",
+  "verdict": "PASS",
+  "body_words": 1390,
+  "intent": "Scope of replacing existing drive equipment while retaining gate leaves and supports; purchase and handover decisions.",
+  "overlap_review": "Distinct from article 3 repair-versus-replace choice and the automation service page. No generic fault diagnosis or new manual-gate automation tutorial.",
+  "source_review": "Primary HSE safety, responsibilities and basics reopened 10 October 2026. Claims and conditional qualifications recorded in replace-gate-automation.json.",
+  "internal_links": "Four prose links, each target used once; one incoming conditional link in article 3 using existing wording. No unpublished targets.",
+  "external_links": "One visible HSE link; full supporting sources kept in the separate ledger.",
+  "image": {
+    "source_file": "C:\\Users\\Jerwin\\.codex\\generated_images\\01a0f227-b194-76a2-8e2e-7fd2bc856b1e\\exec-f2e5845a-2538-4881-a24b-847da3c36b3a.png",
+    "tool": "built-in image_gen",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "webp": "/showcase/assets/content/replace-gate-automation-without-replacing-gates.webp",
+    "sha256": "ac53105874b8e71bb471ba5ba6ebf07f209e6d5dc4c6c49519d4897fe70627f7",
+    "disclosure": "Illustrative design inspiration, not a verified customer installation"
+  },
+  "copy_review": "No prices, lifespan, savings percentage, measurements, warranty duration or fixed installation time. British English; original practical purchasing questions with limited scoped HSE claims.",
+  "parent_commit": "58645039e9f1a51c72a4afa6b5b1e820ef4429b2",
+  "validation": [
+    "Production build including TypeScript and lint passed after final template changes",
+    "All four prepared articles: word count, metadata, assets, conditional links, HTTP routes, hub and sitemap passed",
+    "206 production templates and 5224 internal links/assets verified",
+    "Desktop 1440px and mobile 390px: no overflow, loaded single hero, correct date and one end quote CTA",
+    "Bullets, decimal numbered list and strong emphasis passed computed-style checks; desktop full page and mobile screenshot inspected",
+    "Mocked form failure/retry/success passed; no real leads sent",
+    "All six article destinations returned direct HTTP 200",
+    "First three article data and bodies unchanged; incoming conditional link added to article 3"
+  ],
+  "layout_shift": "Hero dimensions specified; laboratory CLS not measured.",
+  "remaining_after_push": [
+    "Matching successful Vercel GitHub Production deployment",
+    "Live article, metadata, hero, links, date, CTA and sitemap"
+  ]
+}
