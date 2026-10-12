@@ -8,6 +8,7 @@ const templates = JSON.parse(readFileSync('data/showcase/repair-articles.json', 
 const reviewed = [
   ...JSON.parse(readFileSync('docs/source-reviews/repair-articles-1-3.json', 'utf8')),
   ...JSON.parse(readFileSync('docs/source-reviews/replace-gate-automation.json', 'utf8')),
+  ...JSON.parse(readFileSync('docs/source-reviews/gate-remote.json', 'utf8')),
 ];
 // Load the pure TypeScript helpers without adding a runtime dependency or runner.
 const js = ts.transpileModule(readFileSync('lib/prepared-article-links.ts', 'utf8'), {

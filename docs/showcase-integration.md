@@ -63,3 +63,19 @@ The 27 borough planning pages now contain property checks and official-resource 
 Location URLs remain live and indexable. Search Console triage is recorded in the task's location decision report; missing export rows are unknown, not zero. Check current query performance, enquiries and backlinks before any selective redirects. Commercial links generated from the service/location template now point to the commercial directory rather than promoting more commercial/location permutations.
 
 Validation: production build/type checks passed. Browser checks covered all 34 revised pages at 320, 390, 768 and 1440 pixels, all 27 council pages on mobile, hero images, canonical URLs, FAQ/schema agreement, the corrected running-cost figures, and ten direct redirects including the eight new/retargeted paths. The template verifier checked 206 templates and 5,224 internal links/assets. Service/cost and mocked enquiry-consent regressions passed. About and prepared repair-article data were preserved; no real enquiry or Analytics event was sent.
+
+## Article publication: weekdays only
+
+User instruction added 11 October 2026. Do not make an article live on Saturday or Sunday, using **Asia/Shanghai** for the weekday check. Check the actual current day immediately before any production push, merge, deployment, CMS publication or scheduled release that would make an article live, including delayed runs, retries and catch-up work.
+
+On a weekend, keep the article as a draft and defer it to the next eligible weekday slot under the existing cadence and minimum two-day calendar spacing. Never backdate, batch catch-up releases or advance the published queue for a skipped weekend. Research, drafting, audits and indexing checks may continue. This restriction overrides older daily/every-other-day publishing instructions and adds no new permission to publish. Existing draft-only and human-review restrictions still apply.
+
+Before an article release from the repository root, run `node scripts/check-article-publication-day.mjs` immediately before the production action. A nonzero result blocks publication. Recheck after any delay; a previous weekday result does not authorise a weekend retry. Retain `draft: true` while a new article awaits an eligible release. Already published articles remain live.
+
+The existing Codex automation has already been updated by the coordinating chat. Do not duplicate or rewrite its schedule as part of this policy update. Git pushes to main trigger Vercel deployment, so the check belongs before the push, not merely at the start of drafting. Any new release mechanism or schedule must inherit this rule and check the weekday again when it executes.
+
+## Remote-control article, 12 October 2026
+
+Priority 5, `electric-gate-remote-not-working`, adds 1,442 body words, a unique illustrative WebP hero, metadata, a source ledger and a PASS release review under `docs/source-reviews/gate-remote*.json`. Its three prose destinations are used once each, with conditional links to the two published articles. Article 2 gains an incoming conditional link using existing wording. All four earlier article bodies and metadata remain unchanged.
+
+Validation: production build/lint/types passed; article visibility, hub, sitemap and source-ledger checks passed; shared route/asset verification passed. Desktop/mobile checks confirmed loaded imagery, no overflow, correct date and one end quote CTA. Mocked enquiry failure/retry/success passed; no real lead was sent. The weekday gate must run immediately before the production push.

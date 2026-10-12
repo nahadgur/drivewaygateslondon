@@ -1,0 +1,38 @@
+{
+  "article_priority": 5,
+  "slug": "electric-gate-remote-not-working",
+  "publication_date": "2026-10-12",
+  "verdict": "PASS",
+  "body_words": 1442,
+  "intent": "Handset, radio receiver and command-path fault distinction; replacement compatibility and contractor briefing.",
+  "overlap_review": "Does not replace open-but-will-not-close guide; intercom communications and single-leaf faults reserved for later dedicated topics.",
+  "source_review": "Official Nice Era Flor instructions and HSE basics/safety checked 12 October 2026. Conditional recommendations scoped in gate-remote.json.",
+  "internal_links": "Three prose destinations once each, including two conditional published-article links; incoming conditional link from article 2; one end contact CTA.",
+  "external_links": "One Nice manual link and one HSE link; no repeated external domain.",
+  "image": {
+    "source_file": "C:\\Users\\Jerwin\\.codex\\generated_images\\01a0f227-b194-76a2-8e2e-7fd2bc856b1e\\exec-8352fdcf-33a5-403d-898c-b4db833316a4.png",
+    "tool": "built-in image_gen",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "webp": "/showcase/assets/content/electric-gate-remote-not-working.webp",
+    "sha256": "e3a5d646890c6e00961d8039ebdf101622e28931a04aff9904b4fd1b5873942d",
+    "disclosure": "Illustrative design inspiration, not a verified customer installation"
+  },
+  "copy_review": "British English. No numerical product specifications, invented prices or guarantees. Manufacturer example qualified; practical comparisons do not assert confirmed faults.",
+  "parent_commit": "a0ffe122e2fdb716044613dd56d160429d0e99e6",
+  "validation": [
+    "Production build, lint and TypeScript passed",
+    "All five prepared article metadata, assets, body length, conditional links and HTTP visibility/hub/sitemap passed",
+    "206 templates and 5224 internal links/assets verified; generated service-area checks passed",
+    "Desktop 1440px and mobile 390px: one loaded hero, correct date, one end CTA, no overflow; screenshots inspected",
+    "Bullets, decimal numbered list and bold emphasis computed styles passed",
+    "Mocked enquiry failure/retry/success passed; no real lead sent",
+    "First four article data and rendered bodies unchanged; article 2 incoming conditional link only"
+  ],
+  "remaining_after_push": [
+    "Matching Vercel GitHub Production deployment success",
+    "Live page, date, links, hero, canonical/social metadata, CTA and sitemap"
+  ]
+}

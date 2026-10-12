@@ -1,0 +1,92 @@
+[
+  {
+    "article_priority": 5,
+    "claim_id": "E1",
+    "section": "Opening; command path",
+    "claim_or_recommendation": "Handset response is distinct from receiver recognition and controller action.",
+    "source_url": "https://www.niceforyou.com/sites/default/files/upload/manuals/IS0101A00MM.pdf",
+    "date_checked": "2026-10-12",
+    "qualification": "Paraphrased functional distinction from receiver compatibility and button-command programming; no LED diagnostic guarantee. HSE whole-system guidance also informs controller/protective-input distinction.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 5,
+    "claim_id": "E2",
+    "section": "Safe observations",
+    "claim_or_recommendation": "Stop using dangerous gates, keep clear and use competent help; no electrical probing, bypasses or improvised release.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/basics.htm",
+    "date_checked": "2026-10-12",
+    "qualification": "HSE basics on hazards, taking dangerous equipment out of use and documented safe/emergency arrangements. No DIY repair procedures.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 5,
+    "claim_id": "E3",
+    "section": "One handset; reduced range",
+    "claim_or_recommendation": "For Era Flor, reduced range and delayed/dim indicator can indicate battery depletion; use correct battery type and polarity.",
+    "source_url": "https://www.niceforyou.com/sites/default/files/upload/manuals/IS0101A00MM.pdf",
+    "date_checked": "2026-10-12",
+    "qualification": "Explicitly limited to named model; other handsets require their own instructions. No fixed battery life, range or universal indicator diagnosis.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 5,
+    "claim_id": "E4",
+    "section": "All handsets; reduced range",
+    "claim_or_recommendation": "Differences between controls and circumstances help scope investigation; radio interference is possible.",
+    "source_url": "https://www.niceforyou.com/sites/default/files/upload/manuals/IS0101A00MM.pdf",
+    "date_checked": "2026-10-12",
+    "qualification": "Interference supported by manufacturer guidance. Comparison framework is original conditional reasoning, never a confirmed diagnosis or instruction to test an unsafe gate.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 5,
+    "claim_id": "E5",
+    "section": "Replacement; buttons",
+    "claim_or_recommendation": "Receiver/coding compatibility and command assignment must be confirmed; use model-specific memorisation instructions.",
+    "source_url": "https://www.niceforyou.com/sites/default/files/upload/manuals/IS0101A00MM.pdf",
+    "date_checked": "2026-10-12",
+    "qualification": "No universal pairing sequence, frequency-only compatibility claim or assurance of selective removal. Shared entrance and lost-handset guidance framed as questions to responsible contractor.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 5,
+    "claim_id": "E6",
+    "section": "Whole installation",
+    "claim_or_recommendation": "Gate operation depends on combined equipment, movement controls and protective measures.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
+    "date_checked": "2026-10-12",
+    "qualification": "High-level distinction only; no compliance guarantees or specific installation design.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 5,
+    "claim_id": "E7",
+    "section": "Contractor brief; scope; handover",
+    "claim_or_recommendation": "Ask for documented diagnosis, authorised access changes, itemised work and handover information.",
+    "source_url": null,
+    "date_checked": "2026-10-12",
+    "qualification": "Original purchasing framework. No invented costs, customer cases, business credentials, warranty or timing promises.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 5,
+    "claim_id": "CTA",
+    "section": "End CTA",
+    "claim_or_recommendation": "Get a Free Quote using existing contact flow.",
+    "source_url": "https://www.drivewaygateslondon.co.uk/contact/",
+    "date_checked": "2026-10-12",
+    "qualification": "Existing authorised CTA. No free inspection or response-time promise. Mocked form test only.",
+    "calculation": "None"
+  },
+  {
+    "article_priority": 5,
+    "claim_id": "IMAGE",
+    "section": "Hero",
+    "claim_or_recommendation": "Illustrative remote and gate scene.",
+    "source_url": null,
+    "date_checked": "2026-10-12",
+    "qualification": "Built-in image generation; visually inspected, accurate alt and site disclosure retained; no verified customer installation claim.",
+    "calculation": "None"
+  }
+]
