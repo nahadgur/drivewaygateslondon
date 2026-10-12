@@ -2,7 +2,7 @@
   "gate-motor-humming-not-moving": {
     "kind": "blog",
     "title": "Why Your Gate Motor Is Humming but Not Moving",
-    "description": "A humming gate motor needs diagnosis. Learn what you can observe safely, when to stop using the gate and what to tell a repair engineer.",
+    "description": "Gate motor humming but not moving? Understand possible mechanical, capacitor and control faults, safe observations and what a repair assessment should cover.",
     "sections": [
       [
         "Stop repeated attempts to open the gate",
@@ -13,6 +13,18 @@
         "<p>An obstruction, a mechanical problem, a drive fault or an electrical supply/control problem can prevent movement. A damaged hinge, wheel or running gear can change the load on the motor. Some motor designs also have components that can fail while the motor still makes a noise.</p><p>An engineer needs the actual equipment details and an assessment of the complete entrance to distinguish these causes. Motor voltage, capacitor requirements and diagnostic readings vary by system. A generic internet voltage figure or replacement part is not a reliable diagnosis.</p>"
       ],
       [
+        "Mechanical resistance: swing gates and sliding gates",
+        "<p>For a swing gate, describe any scraping at the bottom edge, a leaf sitting lower than before or an impact near a hinge or mounting. For a sliding gate, note visible debris along the track, a wheel that appears displaced or fresh scraping marks. Stay outside the movement area and do not put fingers near rollers, hinges or drive components.</p><p>These observations help the engineer decide what to inspect. They do not establish whether the obstruction caused the fault or resulted from another failure. Ask the engineer to explain the condition of the gate and supports as well as the motor. Fitting a stronger operator would not repair a distorted track or an unstable support.</p><p>Avoid applying a general-purpose spray to every moving part. Follow the maintenance instructions for the particular installation. The engineer can identify which components need cleaning, lubrication, adjustment or replacement, and whether a damaged part has affected the rest of the mechanism.</p>"
+      ],
+      [
+        "Capacitors, supply problems and the motor itself",
+        "<p>A failed capacitor is a possibility on equipment that uses one, but a humming sound cannot confirm it. Motor and control designs differ. For example, the <a href=\"https://www.faac.co.uk/productfiles/112_Manual_rad2C484.pdf\">FAAC 410 MPS instructions</a> show capacitors associated with the operators in that particular arrangement. This is not a replacement specification for another gate.</p><p>Ask the engineer to identify the installed operator and controller before recommending parts. Their investigation may need to distinguish the incoming supply, the controller output and the condition of the drive equipment. A reading taken without the relevant operating conditions can leave part of the problem unexplained.</p><p>Do not open the cabinet, probe terminals or buy a capacitor based on a photograph or generic online rating. Explain any known power interruption or electrical work, then leave measurements and component work to the competent person. If the supply protection has tripped, report that too instead of repeatedly resetting it.</p>"
+      ],
+      [
+        "Controls, end positions and a fault after several cycles",
+        "<p>Tell the engineer whether the problem started at the fully open position, at the closed position or part-way through movement. If the gate has already stopped at the same point more than once, that history is useful. Do not recreate the event for a test. Ask whether the travel settings, position detection, control inputs or mechanical movement need investigation.</p><p>If the fault appeared after several normal operations, give that sequence rather than diagnosing overheating yourself. Some operators include thermal protection, but its operation and recovery depend on the product. The manufacturer lists thermal protection for the 230 V FAAC 412, for example; that does not supply a waiting period or reset procedure for your installation.</p><p>A gate that works again later still needs an explanation if the symptom recurs. Do not increase force, alter travel limits or bypass protective devices to overcome the stop. Those changes affect how the complete entrance operates.</p>"
+      ],
+      [
         "Useful observations without dismantling anything",
         "<p>From a safe position, note whether one leaf or both are affected, whether the problem happens when opening or closing, and which normal user control you tried. Record when the problem started and whether a power interruption, vehicle impact or recent work preceded it. Do not recreate an unsafe movement to obtain a video.</p><p>Look for visible debris in a track, a displaced gate or a damaged fitting without entering a trapping zone or touching moving parts. If the system has a user display, note the message according to its instructions. These observations help the engineer plan a visit; they are not a reason to remove guards or test exposed terminals.</p>"
       ],
@@ -21,8 +33,16 @@
         "<p>Follow the supplied user instructions and handover training if you need to use manual release. A released gate can move under wind, gravity or its own weight. Do not release a damaged or unstable gate, or try to push a gate that resists movement.</p><p>If you do not know how to control and secure it, keep the area clear and ask for assistance. Our <a href=\"/guides/how-to-manually-open-electric-gate/\">manual-release guide</a> explains what information to check before acting. Never bypass a safety device to get the entrance working.</p>"
       ],
       [
+        "Describe the symptom without assuming the cause",
+        "<p>Use a short record to help the contractor distinguish the fault from other gate problems. Write down what you noticed during ordinary use, including whether the noise came from one operator or somewhere else near the entrance. A sound described as humming could be hard to locate from inside a vehicle.</p><ul><li><strong>One swing leaf stays still:</strong> identify the affected side and whether the other leaf moved normally.</li><li><strong>The gate moves a little and stops:</strong> describe where it stopped and any scraping or uneven movement you saw.</li><li><strong>The gate opens but cannot close:</strong> mention the direction-specific behaviour before assuming the drive has failed.</li><li><strong>A handset produces no response:</strong> distinguish silence from an audible motor or cabinet noise.</li></ul><p>For those last two situations, see the separate guides to <a href=\"/blog/electric-gates-open-but-wont-close/\">gates that open but will not close</a> and <a href=\"/blog/electric-gate-remote-not-working/\">remote-control faults</a>. Keep recordings you already have, but do not approach a defective mechanism to capture a better one.</p>"
+      ],
+      [
         "What to ask the repair engineer",
         "<p>Send your postcode, a description of the fault and any safely accessible model details. Share maintenance records and photographs of the entrance taken from a safe position. Mention whether the gate is stuck open or closed and whether it affects access to the property.</p><p>Ask what the diagnostic visit covers, what it costs and how further work will be approved. The findings should explain the cause, any wider safety concern, the proposed repair and how the system will be checked before being returned to use. Electrical testing, capacitor work, control adjustments and powered movement tests belong with a competent person.</p><p>Request <a href=\"/services/gate-repair-and-maintenance/\">gate repair and maintenance</a>, or read our advice on <a href=\"/blog/repair-electric-gates-installed-by-another-company/\">changing gate repair companies</a> if records or support are missing.</p>"
+      ],
+      [
+        "Repair cost: compare the diagnosis and the complete scope",
+        "<p>A quote for a capacitor, a motor or a control board is not the same as a quote to find and resolve the fault. Confirm whether the price includes the diagnostic visit, labour, parts, return visit if needed, commissioning and VAT. Ask the contractor to identify work that is essential before the entrance can be used again and any separate maintenance recommendations.</p><p>If replacement is proposed, ask what evidence supports it and which existing equipment can remain. A repeat failure deserves a review of the underlying cause, not just another identical part. Our <a href=\"/blog/electric-gates-keep-breaking-down-repair-or-replace/\">repair-or-replace guide</a> explains the wider decision. There is no reliable fixed price for the humming symptom alone; the repair scope depends on the findings.</p>"
       ],
       [
         "After the repair",
@@ -42,7 +62,8 @@
         "Can you assess gates installed by another company?",
         "Send the equipment details and fault description so we can discuss an assessment. Confirm the visit scope and charges before booking."
       ]
-    ]
+    ],
+    "updatedDate": "2026-10-12"
   },
   "uk-electric-gate-safety-laws": {
     "kind": "guide",

@@ -764,11 +764,11 @@ const blogArticleEntries: BlogArticle[] = [
   "relatedServiceSlug": "gate-automation-kits",
   "title": "GSM Gate Openers: Network, SIM and Access Checks",
   "metaTitle": "GSM Gate Openers: Network, SIM and Access Checks | Driveway Gates London",
-  "metaDescription": "Check phone-entry compatibility, signal, SIM costs and account ownership before adding a mobile gate opener.",
+  "metaDescription": "Compare GSM gate openers for London homes: SIM and 4G compatibility, signal surveys, retrofit requirements, access permissions and ongoing costs.",
   "category": "Smart & Security",
   "publishDate": "2026-03-19",
   "featuredImage": "/images/blog/gsm-gate-openers-london.webp",
-  "excerpt": "Check phone-entry compatibility, signal, SIM costs and account ownership before adding a mobile gate opener.",
+  "excerpt": "Compare GSM gate openers for London homes: SIM and 4G compatibility, signal surveys, retrofit requirements, access permissions and ongoing costs.",
   "content": [
     {
       "type": "h2",
@@ -776,11 +776,15 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Some gate controllers recognise an authorised phone number and request an opening when it calls. An intercom also lets a visitor speak to a resident. Ask which function the proposed device provides, whether it uses voice, SMS or data, and what the caller experiences."
+      "text": "<p>Some gate controllers recognise an authorised phone number and request an opening when it calls. An intercom also lets a visitor speak to a resident. Ask which function the proposed device provides, whether it uses voice, SMS or data, and what the caller experiences.</p><p>A remote command does not confirm that the entrance is clear or the gate has opened. Discuss how the complete system manages unattended operation and how you will know whether a fault has prevented movement.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "How a SIM-card gate opener differs from an intercom"
     },
     {
       "type": "p",
-      "text": "A remote command does not confirm that the entrance is clear or the gate has opened. Discuss how the complete system manages unattended operation and how you will know whether a fault has prevented movement."
+      "text": "<p>With a phone-operated gate switch, an authorised user contacts the number or service assigned to the installed device. The unit then requests an action from the gate controller. An installer needs to confirm the supported method, permissions and controller connection for the chosen model. You should not assume that dialling any gate SIM number grants access.</p><p>The <a href=\"https://www.aesglobalonline.com/i-gatedual\">AES i-Gate product information</a>, for example, describes call and SMS control of its GSM switches. Its products and app arrangements vary, so specify the exact model rather than asking for an unspecified GSM box. A gate switch does not by itself give a visitor a microphone, camera or call button.</p><p>If you want a delivery driver to call you from the gate, specify that visitor conversation separately. Decide whether you need audio or video and how you want to answer. A cellular video system may use a data connection and an app, while another unit may place an ordinary voice call. Confirm the actual call path during the quotation stage.</p>"
     },
     {
       "type": "h2",
@@ -788,11 +792,23 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Ask for the exact device model and supported network technologies. Confirm the SIM plan permits its required services and how the unit handles caller identification. A label saying 4G does not, by itself, confirm support for the voice service your network uses."
+      "text": "<p>Ask for the exact device model and supported network technologies. Confirm the SIM plan permits its required services and how the unit handles caller identification. A label saying 4G does not, by itself, confirm support for the voice service your network uses.</p><p>As checked in October 2026, Ofcom reports that UK 3G networks have switched off and that operators are preparing their 2G closures. Check <a href=\"https://www.ofcom.org.uk/phones-and-broadband/coverage-and-speeds/3g-switch-off\">Ofcom’s current switch-off guidance</a> and obtain the equipment supplier’s migration advice. Avoid buying an older controller solely because a SIM currently connects.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Signal at the entrance: check the installation position"
     },
     {
       "type": "p",
-      "text": "Mobile operators are retiring older networks. Check <a href=\"https://www.ofcom.org.uk/phones-and-broadband/coverage-and-speeds/3g-switch-off\">Ofcom’s current switch-off guidance</a> and obtain the equipment supplier’s migration advice. Avoid buying an older controller solely because a SIM currently connects."
+      "text": "<p>A postcode coverage result is a starting point for the survey, not an acceptance test for the finished installation. Ask the installer to check the proposed network at the intended unit and antenna positions. Give them the location of the gate relative to the house, boundary walls and any existing equipment enclosure.</p><p>On a London mews or recessed entrance, describe the physical layout instead of assuming that a city address guarantees coverage. The installer should explain how the antenna and cable route will suit the product. Do not run an antenna cable through a motor housing or move electrical equipment yourself to improve reception.</p><p>Agree how the team will demonstrate successful calls or commands after installation. Test the functions you bought from the places you expect to use them, under the agreed safe operating arrangements. Keep a record of any unresolved reception problem rather than accepting an occasional successful command as the whole handover.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Can phone entry be added to existing electric gates?"
+    },
+    {
+      "type": "p",
+      "text": "<p>A retrofit needs a compatibility assessment of the existing gate controller and the proposed entry device. Provide the controller details from your records and explain which remotes, keypads, intercoms or pedestrian controls you want to retain. The installer should identify the command interface and power arrangements before quoting the connection work.</p><p>Ask whether the new control will request full opening, pedestrian access or another configured action, and how that fits the current operation. A phone module does not repair an unreliable motor or make a defective entrance safe. Any wider fault needs its own assessment.</p><p>Discuss <a href=\"/services/access-control/gsm-phone-entry/\">adding GSM phone entry</a> with the equipment list and photographs taken from safe positions. Confirm who will install, configure and check the completed system. Avoid a universal wiring diagram or SMS command copied from a different product manual.</p>"
     },
     {
       "type": "h2",
@@ -800,11 +816,23 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Test service at the gate position on the proposed network. Discuss the enclosure, antenna location, cable route and power supply with the installer. Nearby buildings and the installed position can affect the result."
+      "text": "<p>Test service at the gate position on the proposed network. Discuss the enclosure, antenna location, cable route and power supply with the installer. Nearby buildings and the installed position can affect the result.</p><p>Confirm monthly charges, call or data allowances, top-up rules and what happens if an account expires. Ask whose name holds the SIM and how the household can change numbers or recover administrator access.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Purchase price, SIM charges and the cost of ownership"
     },
     {
       "type": "p",
-      "text": "Confirm monthly charges, call or data allowances, top-up rules and what happens if an account expires. Ask whose name holds the SIM and how the household can change numbers or recover administrator access."
+      "text": "<p>Compare quotations for the complete installation. List the controller or intercom, antenna, power provision, wiring, mounting, configuration and handover. If existing cable or power provision can be reused, ask the contractor to state that assumption and what happens if the survey finds it unsuitable.</p><p>Ask for the recurring charges in a separate line: SIM rental or top-ups, outgoing calls, texts, data and any app or service subscription. Establish which functions need each service. A device that uses calls for entry can have different requirements from one that sends video to an app. Neither the GSM label nor an app-store download establishes that ongoing use is free.</p><p>Keep a note of the renewal date and the person responsible for payment. For a shared entrance, agree how residents will fund the service and who can speak to the provider. You can then compare options over the same period without relying on a claimed universal saving.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Authorised users, visitors and shared-driveway access"
+    },
+    {
+      "type": "p",
+      "text": "<p>Decide who should open the gate without speaking to a resident, who should receive visitor calls and who may change permissions. These can be different groups. Ask the supplier to demonstrate the permissions on the proposed model, including how to remove a lost phone or a former resident.</p><p>If you want time-limited visitor access, verify that the particular product and configuration support it. Agree who creates that access and what happens at expiry. Do not assume that every phone opener provides temporary codes, access logs, schedules or gate-position feedback. Those are features to confirm in writing.</p><p>Keep administrator credentials separate from everyday entry arrangements. Follow the product instructions to replace default credentials where applicable, and agree an account-recovery process that the property owner or managing agent controls. Avoid leaving the entire installation tied to the private account of a departed installer.</p>"
     },
     {
       "type": "h2",
@@ -812,11 +840,15 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Request a demonstration of adding and removing authorised users using the actual manual. Remove default credentials, restrict administrator access and arrange a backup entry method. Keep account recovery information with your gate records."
+      "text": "<p>Request a demonstration of adding and removing authorised users using the actual manual. Remove default credentials, restrict administrator access and arrange a backup entry method. Keep account recovery information with your gate records.</p><p>Compare visitor workflows in our <a href=\"/guides/best-intercom-systems/\">intercom guide</a>. A failing controller belongs in a <a href=\"/services/gate-repair-and-maintenance/\">repair assessment</a> rather than a generic SMS reset sequence.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Loss of service, missed calls and handover checks"
     },
     {
       "type": "p",
-      "text": "For installation, see <a href=\"/services/access-control/gsm-phone-entry/\">GSM phone entry</a>. Compare visitor workflows in our <a href=\"/guides/best-intercom-systems/\">intercom guide</a>. A failing controller belongs in a <a href=\"/services/gate-repair-and-maintenance/\">repair assessment</a> rather than a generic SMS reset sequence."
+      "text": "<p>Ask what remains available if the mobile service fails, the SIM account expires or the gate loses power. Retained remotes or a keypad may offer another command method where the gate system remains operational; they cannot overcome every power or mechanical fault. A backup battery has a particular capacity and maintenance requirement, not a guaranteed number of days of access.</p><p>If phone entry stops working, note whether ordinary gate controls still work, which callers are affected and what the caller hears. Check the account status through the provider or responsible administrator. Give the installer that information without opening the unit or resetting its stored users. A failed call and an accepted call with no gate movement need different investigations.</p><ol><li>Demonstrate resident entry and visitor calling if both were specified.</li><li>Confirm the intended gate action and explain any status message or notification.</li><li>Demonstrate adding and removing an authorised user using the correct instructions.</li><li>Record the SIM owner, payment arrangements, model details and support contact.</li><li>Explain fallback access and the circumstances in which the entrance must remain out of use.</li></ol><p>Keep that record with the gate documentation so another authorised person can manage the system later. Review permissions when occupants or regular contractors change, rather than waiting for an access problem.</p>"
     },
     {
       "type": "h2",
@@ -829,10 +861,34 @@ const blogArticleEntries: BlogArticle[] = [
     {
       "type": "p",
       "text": "No universal compatibility claim is reliable. Check the device, network, required voice/SMS/data services and tariff restrictions together."
+    },
+    {
+      "type": "h3",
+      "text": "Do I need Wi-Fi at the gate?"
+    },
+    {
+      "type": "p",
+      "text": "A mobile-network device can use a compatible SIM service instead of a home Wi-Fi connection. Confirm the chosen model, signal, power supply and required voice or data services; other entry devices may use Wi-Fi."
+    },
+    {
+      "type": "h3",
+      "text": "Can I open the gate from abroad?"
+    },
+    {
+      "type": "p",
+      "text": "Ask the supplier and mobile provider about the chosen command method, international calling or roaming restrictions and charges. Remote access also depends on the installed system being operational and suitable for unattended commands."
+    },
+    {
+      "type": "h3",
+      "text": "Does a GSM opener include video calling?"
+    },
+    {
+      "type": "p",
+      "text": "Not necessarily. A phone-operated switch, an audio intercom and a cellular video intercom provide different functions. Specify visitor calling and video if you need them."
     }
   ],
   "featuredImageAlt": "Technician installing a cellular phone module in a gate control cabinet",
-  "updatedDate": "2026-10-02",
+  "updatedDate": "2026-10-12",
   "useMetaTitle": true
 },
 
@@ -1345,11 +1401,11 @@ const blogArticleEntries: BlogArticle[] = [
   "relatedServiceSlug": "gate-repair-and-maintenance",
   "title": "Why Your Gate Motor Is Humming but Not Moving",
   "metaTitle": "Why Your Gate Motor Is Humming but Not Moving | Driveway Gates London",
-  "metaDescription": "A humming gate motor needs diagnosis. Learn what you can observe safely, when to stop using the gate and what to tell a repair engineer.",
+  "metaDescription": "Gate motor humming but not moving? Understand possible mechanical, capacitor and control faults, safe observations and what a repair assessment should cover.",
   "category": "Maintenance",
   "publishDate": "2026-03-23",
   "featuredImage": "/images/blog/gate-motor-humming-not-moving.webp",
-  "excerpt": "A humming gate motor needs diagnosis. Learn what you can observe safely, when to stop using the gate and what to tell a repair engineer.",
+  "excerpt": "Gate motor humming but not moving? Understand possible mechanical, capacitor and control faults, safe observations and what a repair assessment should cover.",
   "content": [
     {
       "type": "h2",
@@ -1357,11 +1413,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "If the motor hums but the gate does not move, stop pressing the remote or entry control. The sound does not identify one particular fault, and repeated attempts can place further strain on the system. Keep people and vehicles clear of the gate and its movement area."
-    },
-    {
-      "type": "p",
-      "text": "If there is smoke, a burning smell, damaged wiring, a leaning gate or unexpected movement, stop using the entrance. Use the isolation arrangements in your user instructions only if you can reach and operate them safely. Do not open electrical covers or approach damaged equipment. Contact an engineer; if someone is trapped or there is immediate danger, call the emergency services."
+      "text": "<p>If the motor hums but the gate does not move, stop pressing the remote or entry control. The sound does not identify one particular fault, and repeated attempts can place further strain on the system. Keep people and vehicles clear of the gate and its movement area.</p><p>If there is smoke, a burning smell, damaged wiring, a leaning gate or unexpected movement, stop using the entrance. Use the isolation arrangements in your user instructions only if you can reach and operate them safely. Do not open electrical covers or approach damaged equipment. Contact an engineer; if someone is trapped or there is immediate danger, call the emergency services.</p>"
     },
     {
       "type": "h2",
@@ -1369,11 +1421,31 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "An obstruction, a mechanical problem, a drive fault or an electrical supply/control problem can prevent movement. A damaged hinge, wheel or running gear can change the load on the motor. Some motor designs also have components that can fail while the motor still makes a noise."
+      "text": "<p>An obstruction, a mechanical problem, a drive fault or an electrical supply/control problem can prevent movement. A damaged hinge, wheel or running gear can change the load on the motor. Some motor designs also have components that can fail while the motor still makes a noise.</p><p>An engineer needs the actual equipment details and an assessment of the complete entrance to distinguish these causes. Motor voltage, capacitor requirements and diagnostic readings vary by system. A generic internet voltage figure or replacement part is not a reliable diagnosis.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Mechanical resistance: swing gates and sliding gates"
     },
     {
       "type": "p",
-      "text": "An engineer needs the actual equipment details and an assessment of the complete entrance to distinguish these causes. Motor voltage, capacitor requirements and diagnostic readings vary by system. A generic internet voltage figure or replacement part is not a reliable diagnosis."
+      "text": "<p>For a swing gate, describe any scraping at the bottom edge, a leaf sitting lower than before or an impact near a hinge or mounting. For a sliding gate, note visible debris along the track, a wheel that appears displaced or fresh scraping marks. Stay outside the movement area and do not put fingers near rollers, hinges or drive components.</p><p>These observations help the engineer decide what to inspect. They do not establish whether the obstruction caused the fault or resulted from another failure. Ask the engineer to explain the condition of the gate and supports as well as the motor. Fitting a stronger operator would not repair a distorted track or an unstable support.</p><p>Avoid applying a general-purpose spray to every moving part. Follow the maintenance instructions for the particular installation. The engineer can identify which components need cleaning, lubrication, adjustment or replacement, and whether a damaged part has affected the rest of the mechanism.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Capacitors, supply problems and the motor itself"
+    },
+    {
+      "type": "p",
+      "text": "<p>A failed capacitor is a possibility on equipment that uses one, but a humming sound cannot confirm it. Motor and control designs differ. For example, the <a href=\"https://www.faac.co.uk/productfiles/112_Manual_rad2C484.pdf\">FAAC 410 MPS instructions</a> show capacitors associated with the operators in that particular arrangement. This is not a replacement specification for another gate.</p><p>Ask the engineer to identify the installed operator and controller before recommending parts. Their investigation may need to distinguish the incoming supply, the controller output and the condition of the drive equipment. A reading taken without the relevant operating conditions can leave part of the problem unexplained.</p><p>Do not open the cabinet, probe terminals or buy a capacitor based on a photograph or generic online rating. Explain any known power interruption or electrical work, then leave measurements and component work to the competent person. If the supply protection has tripped, report that too instead of repeatedly resetting it.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Controls, end positions and a fault after several cycles"
+    },
+    {
+      "type": "p",
+      "text": "<p>Tell the engineer whether the problem started at the fully open position, at the closed position or part-way through movement. If the gate has already stopped at the same point more than once, that history is useful. Do not recreate the event for a test. Ask whether the travel settings, position detection, control inputs or mechanical movement need investigation.</p><p>If the fault appeared after several normal operations, give that sequence rather than diagnosing overheating yourself. Some operators include thermal protection, but its operation and recovery depend on the product. The manufacturer lists thermal protection for the 230 V FAAC 412, for example; that does not supply a waiting period or reset procedure for your installation.</p><p>A gate that works again later still needs an explanation if the symptom recurs. Do not increase force, alter travel limits or bypass protective devices to overcome the stop. Those changes affect how the complete entrance operates.</p>"
     },
     {
       "type": "h2",
@@ -1381,11 +1453,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "From a safe position, note whether one leaf or both are affected, whether the problem happens when opening or closing, and which normal user control you tried. Record when the problem started and whether a power interruption, vehicle impact or recent work preceded it. Do not recreate an unsafe movement to obtain a video."
-    },
-    {
-      "type": "p",
-      "text": "Look for visible debris in a track, a displaced gate or a damaged fitting without entering a trapping zone or touching moving parts. If the system has a user display, note the message according to its instructions. These observations help the engineer plan a visit; they are not a reason to remove guards or test exposed terminals."
+      "text": "<p>From a safe position, note whether one leaf or both are affected, whether the problem happens when opening or closing, and which normal user control you tried. Record when the problem started and whether a power interruption, vehicle impact or recent work preceded it. Do not recreate an unsafe movement to obtain a video.</p><p>Look for visible debris in a track, a displaced gate or a damaged fitting without entering a trapping zone or touching moving parts. If the system has a user display, note the message according to its instructions. These observations help the engineer plan a visit; they are not a reason to remove guards or test exposed terminals.</p>"
     },
     {
       "type": "h2",
@@ -1393,11 +1461,15 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Follow the supplied user instructions and handover training if you need to use manual release. A released gate can move under wind, gravity or its own weight. Do not release a damaged or unstable gate, or try to push a gate that resists movement."
+      "text": "<p>Follow the supplied user instructions and handover training if you need to use manual release. A released gate can move under wind, gravity or its own weight. Do not release a damaged or unstable gate, or try to push a gate that resists movement.</p><p>If you do not know how to control and secure it, keep the area clear and ask for assistance. Our <a href=\"/guides/how-to-manually-open-electric-gate/\">manual-release guide</a> explains what information to check before acting. Never bypass a safety device to get the entrance working.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Describe the symptom without assuming the cause"
     },
     {
       "type": "p",
-      "text": "If you do not know how to control and secure it, keep the area clear and ask for assistance. Our <a href=\"/guides/how-to-manually-open-electric-gate/\">manual-release guide</a> explains what information to check before acting. Never bypass a safety device to get the entrance working."
+      "text": "<p>Use a short record to help the contractor distinguish the fault from other gate problems. Write down what you noticed during ordinary use, including whether the noise came from one operator or somewhere else near the entrance. A sound described as humming could be hard to locate from inside a vehicle.</p><ul><li><strong>One swing leaf stays still:</strong> identify the affected side and whether the other leaf moved normally.</li><li><strong>The gate moves a little and stops:</strong> describe where it stopped and any scraping or uneven movement you saw.</li><li><strong>The gate opens but cannot close:</strong> mention the direction-specific behaviour before assuming the drive has failed.</li><li><strong>A handset produces no response:</strong> distinguish silence from an audible motor or cabinet noise.</li></ul><p>For those last two situations, see the separate guides to <a href=\"/blog/electric-gates-open-but-wont-close/\">gates that open but will not close</a> and <a href=\"/blog/electric-gate-remote-not-working/\">remote-control faults</a>. Keep recordings you already have, but do not approach a defective mechanism to capture a better one.</p>"
     },
     {
       "type": "h2",
@@ -1405,15 +1477,15 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Send your postcode, a description of the fault and any safely accessible model details. Share maintenance records and photographs of the entrance taken from a safe position. Mention whether the gate is stuck open or closed and whether it affects access to the property."
+      "text": "<p>Send your postcode, a description of the fault and any safely accessible model details. Share maintenance records and photographs of the entrance taken from a safe position. Mention whether the gate is stuck open or closed and whether it affects access to the property.</p><p>Ask what the diagnostic visit covers, what it costs and how further work will be approved. The findings should explain the cause, any wider safety concern, the proposed repair and how the system will be checked before being returned to use. Electrical testing, capacitor work, control adjustments and powered movement tests belong with a competent person.</p><p>Request <a href=\"/services/gate-repair-and-maintenance/\">gate repair and maintenance</a>, or read our advice on <a href=\"/blog/repair-electric-gates-installed-by-another-company/\">changing gate repair companies</a> if records or support are missing.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Repair cost: compare the diagnosis and the complete scope"
     },
     {
       "type": "p",
-      "text": "Ask what the diagnostic visit covers, what it costs and how further work will be approved. The findings should explain the cause, any wider safety concern, the proposed repair and how the system will be checked before being returned to use. Electrical testing, capacitor work, control adjustments and powered movement tests belong with a competent person."
-    },
-    {
-      "type": "p",
-      "text": "Request <a href=\"/services/gate-repair-and-maintenance/\">gate repair and maintenance</a>, or read our advice on <a href=\"/blog/repair-electric-gates-installed-by-another-company/\">changing gate repair companies</a> if records or support are missing."
+      "text": "<p>A quote for a capacitor, a motor or a control board is not the same as a quote to find and resolve the fault. Confirm whether the price includes the diagnostic visit, labour, parts, return visit if needed, commissioning and VAT. Ask the contractor to identify work that is essential before the entrance can be used again and any separate maintenance recommendations.</p><p>If replacement is proposed, ask what evidence supports it and which existing equipment can remain. A repeat failure deserves a review of the underlying cause, not just another identical part. Our <a href=\"/blog/electric-gates-keep-breaking-down-repair-or-replace/\">repair-or-replace guide</a> explains the wider decision. There is no reliable fixed price for the humming symptom alone; the repair scope depends on the findings.</p>"
     },
     {
       "type": "h2",
@@ -1421,11 +1493,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Keep the diagnosis, parts information and service records with the gate instructions. Ask the engineer to explain any changed operating arrangements and the recommended maintenance for your equipment. Confirm the repair warranty in writing rather than assuming it matches the original installation cover."
-    },
-    {
-      "type": "p",
-      "text": "Source: <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/responsibilities.htm\" target=\"_blank\" rel=\"noopener noreferrer\">HSE guidance on responsibilities</a>. A humming noise alone does not establish whether a repair or replacement is needed."
+      "text": "<p>Keep the diagnosis, parts information and service records with the gate instructions. Ask the engineer to explain any changed operating arrangements and the recommended maintenance for your equipment. Confirm the repair warranty in writing rather than assuming it matches the original installation cover.</p><p>Source: <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/responsibilities.htm\" target=\"_blank\" rel=\"noopener noreferrer\">HSE guidance on responsibilities</a>. A humming noise alone does not establish whether a repair or replacement is needed.</p>"
     },
     {
       "type": "h2",
@@ -1457,7 +1525,7 @@ const blogArticleEntries: BlogArticle[] = [
     }
   ],
   "featuredImageAlt": "Repair engineer diagnosing a stationary sliding-gate motor",
-  "updatedDate": "2026-10-02",
+  "updatedDate": "2026-10-12",
   "useMetaTitle": true
 },
   {

@@ -167,23 +167,51 @@
   "best-intercom-systems": {
     "kind": "guide",
     "title": "Choosing an Intercom for Your Driveway Gate",
-    "description": "Compare wired, network and mobile intercom options around visitor calls, gate release and ongoing account costs.",
+    "description": "Compare audio, video, wired, IP and GSM gate intercoms, including retrofit compatibility, smartphone access, installation costs and handover checks.",
     "sections": [
       [
         "Decide where you want to answer visitors",
         "<p>List who should receive a call and whether they need an indoor monitor, phone calls, an app or a combination. Include anyone who does not use a smartphone. Decide what happens if nobody answers and how a visitor can leave a delivery.</p><p>Ask for a demonstration of the actual sequence: call, identify the visitor, grant entry and confirm that the gate has finished moving. Seeing a video does not necessarily mean the app reports the gate’s physical position.</p>"
       ],
       [
+        "Audio or video: choose the visitor information you need",
+        "<p>An audio intercom lets you speak to the visitor. A video intercom adds a view from its camera. Decide whether a conversation is enough for your entrance or whether you need to see a caller before granting access. Consider household members who find a small screen, quiet speaker or app notification difficult to use.</p><p>For video, ask to see the view from the proposed mounting position. A camera aimed at a driver may not give the same view of someone on foot. Discuss lighting after dark, glare, weather exposure and the position of a caller using a wheelchair. A specification such as camera resolution cannot answer those layout questions.</p><p>Decide whether you want live viewing only or recordings, missed-call images and notifications. Have the supplier identify which features the proposed configuration provides and any storage or subscription requirements. Avoid assuming that video entry automatically includes recording or confirms the position of the gate.</p>"
+      ],
+      [
+        "Wired, IP and mobile intercoms: compare the whole route",
+        "<p>Separate the connection between gate and house from the method used to answer a call. A system can have wired components and still use an app for some functions. Conversely, a wireless call path does not remove the need to supply and connect the equipment at the entrance.</p><div class=\"table-scroll\" role=\"region\" aria-label=\"Intercom connection comparison\" tabindex=\"0\"><table><thead><tr><th>Option</th><th>When to consider it</th><th>Confirm before ordering</th></tr></thead><tbody><tr><td>Dedicated wired indoor answering</td><td>You want a fixed handset or monitor for use at home.</td><td>Cable condition and route, compatible indoor units and whether local calls need any network service.</td></tr><tr><td>IP or app-based answering</td><td>You want supported network features or calls on selected phones.</td><td>Network coverage, account ownership, app support and which functions depend on an internet or cloud service.</td></tr><tr><td>Mobile-network entry</td><td>A suitable cellular service offers a practical call path at the entrance.</td><td>Device and SIM compatibility, voice or data requirements, signal and recurring charges.</td></tr></tbody></table></div><p>Some products combine indoor answering with phone access. Have the installer explain the configuration, including what still works if one connection fails. Calling a system hardwired does not establish that all of its features operate without the internet.</p>"
+      ],
+      [
         "Compare the connection paths",
         "<p>A wired indoor system can suit a household that wants a dedicated answering point. An IP system needs the specified network and power arrangements. A mobile-network intercom needs suitable coverage, device support and a compatible SIM plan.</p><p>Test the connection at the proposed gate position. A strong indoor Wi-Fi signal or a phone signal from another network does not prove the intercom will work there. Discuss what remains available during a broadband, mobile-service or power failure.</p>"
+      ],
+      [
+        "Smartphone apps and smart-home integration",
+        "<p>Write down the devices your household uses and the actions you need: answer a visitor, view the entrance, request opening or receive a missed-call notification. Ask the installer to demonstrate those actions on the proposed equipment. Support for one action does not establish support for all the others.</p><p>The <a href=\"https://pro.comelitgroup.com/product/app-comelit\">Comelit app documentation</a>, for example, lists entrance-panel calls and gate release among its functions, with manuals for named video-entry devices. Ask which functions the quoted hardware supports. That is why a brand name or an app logo is not enough to confirm compatibility with an existing installation.</p><p>For Ring, Google Home, Control4 or another existing system, use our <a href=\"/blog/smart-gate-integration-ring-nest-control4/\">smart-home integration checklist</a> to define the exact functions and equipment. Confirm who supports the connection after an update and how account access transfers when you change phone or sell the property. Do not assume a general-purpose video doorbell includes a supported gate-release interface.</p>"
+      ],
+      [
+        "Retrofit an intercom without replacing the whole entrance",
+        "<p>Start with the controller, existing answering equipment and any cable records. Ask the contractor to inspect the available route, supply and release connection. Reusing a cable or indoor monitor may be possible with a compatible system, but the proposal should identify the equipment it intends to keep and any limitations.</p><p>Tell the contractor whether you need full vehicle entry, pedestrian access or a separate pedestrian gate. Describe how each entrance should respond rather than asking for an extra relay without explaining its purpose. The team needs to assess the command interface alongside the safe operation of the gates.</p><p>If the current intercom rings but the gate does not open, record that symptom before deciding to replace the intercom. The calling function and release function need separate assessment. Buying a new entrance panel may not resolve a fault elsewhere in the system. This buying guide cannot diagnose that fault from the ringing sound alone.</p>"
       ],
       [
         "Get the exact equipment and account terms",
         "<p>Request model numbers, the proposed release interface, supported monitors and app requirements. Confirm recording options, retention, subscriptions, SIM charges and which account owns the system. Ask how to remove a former resident or contractor.</p><p>Product families contain different devices. Compare named configurations rather than assuming a brand guarantees compatibility. Our <a href=\"/blog/video-intercom-comelit-vs-hikvision/\">Comelit and Hikvision comparison</a> shows why the component list matters.</p>"
       ],
       [
+        "Compare installation costs and ongoing commitments",
+        "<p>A useful quotation names the entrance panel, camera if required, indoor answering devices, power equipment and connection to the gate. It also describes cable work, mounting, network setup, configuration, testing and reinstatement. Ask whether VAT is included and which items depend on the site survey.</p><p>Compare recurring costs on the same basis. List SIM charges, subscriptions, recording or cloud-storage plans and any paid support. Confirm what happens to each function if a subscription ends. Ask the supplier to distinguish equipment warranty from installation workmanship and explain how future visits will be charged.</p><p>There is no sound universal fitted price for every London entrance. An existing usable cable route and a new route through finished paving involve different work. For a meaningful comparison, send each contractor the same brief and request the same answering points and access functions, rather than comparing only the price of the outdoor panel.</p>"
+      ],
+      [
+        "Shared entrances, recordings and control of accounts",
+        "<p>For flats or a shared driveway, specify which household receives each call and who manages changes when residents move. Ask how visitors find the right name and how delivery access will work. Confirm the proposed capacity, user permissions and any management charges for the particular configuration.</p><p>If recording is proposed, discuss the camera view, whether audio is recorded, who can view footage, where it is stored and how long it is retained. Avoid treating a camera as permission to record neighbouring property without considering privacy. Agree the appropriate arrangements for the actual site before enabling recording.</p><p>Keep the property owner or responsible managing agent in control of administrator access and recovery details. Ask for a demonstration of removing a former resident without disrupting everyone else. Include residents who prefer a fixed answering point or cannot rely on a smartphone in the requirements from the start.</p>"
+      ],
+      [
         "Plan installation and support",
-        "<p>Include cable routes, power, camera position, lighting, accessibility and weather exposure in the survey. Confirm who commissions the connection to the gate controller and checks operation of the complete entrance.</p><p>Compare <a href=\"/services/access-control/video-intercoms/\">video intercoms</a> and <a href=\"/services/access-control/gsm-phone-entry/\">phone entry</a>. For an existing smart-home setup, use our <a href=\"/blog/smart-gate-integration-ring-nest-control4/\">integration checklist</a>. Check <a href=\"https://www.ofcom.org.uk/phones-and-broadband/coverage-and-speeds/3g-switch-off\">Ofcom’s network-retirement guidance</a> before buying mobile-network equipment.</p>"
+        "<p>Include cable routes, power, camera position, lighting, accessibility and weather exposure in the survey. Confirm who commissions the connection to the gate controller and checks operation of the complete entrance.</p><p>Compare <a href=\"/services/access-control/video-intercoms/\">video intercoms</a> and <a href=\"/services/access-control/gsm-phone-entry/\">phone entry</a>. Check <a href=\"https://www.ofcom.org.uk/phones-and-broadband/coverage-and-speeds/3g-switch-off\">Ofcom’s network-retirement guidance</a> before buying mobile-network equipment.</p>"
+      ],
+      [
+        "A handover demonstration worth asking for",
+        "<p>Use the visitor journey to check the installation with the contractor: a person arrives at the intended calling position, selects the right household, makes contact and receives a response. Then confirm the authorised release action and how users should observe or verify the entrance. Keep people outside the movement area during the demonstration.</p><ul><li>Check conversation quality and, where fitted, the camera view in the agreed conditions.</li><li>Demonstrate calls to each specified monitor or phone, including the unanswered-call arrangement.</li><li>Explain which functions depend on power, broadband, mobile service or an active account.</li><li>Show user management and provide the correct equipment instructions.</li><li>Record support contacts, renewal responsibilities and the agreed fallback access.</li></ul><p>A successful video call does not prove the whole powered gate is safe. The installer needs to check the completed entrance and its protective measures. Ask for the handover records and maintenance advice, and keep them accessible to the person responsible for the property.</p>"
       ]
     ],
     "faqs": [
@@ -194,37 +222,87 @@
       [
         "Does an app continue working during a power cut?",
         "That depends on backup power for the gate, intercom and network equipment, as well as the service connection. Ask for the actual failure arrangements."
+      ],
+      [
+        "Can I keep an indoor monitor and answer on my phone?",
+        "Some compatible configurations provide both. Ask for the exact monitor, network or gateway equipment, app requirements and unanswered-call behaviour rather than assuming every product in a range supports them."
+      ],
+      [
+        "Can an intercom be fitted to my existing gates?",
+        "A contractor needs to assess the gate controller, command interface, power and cable arrangements. Existing components may be reusable, but a universal retrofit promise would not establish compatibility."
+      ],
+      [
+        "Will a video intercom show whether the gate is closed?",
+        "A camera view and a gate-position signal are different features. Ask how the proposed system establishes and displays the actual gate state; do not assume an opening command confirms movement."
       ]
-    ]
+    ],
+    "updatedDate": "2026-10-12"
   },
   "gsm-gate-openers-london": {
     "kind": "blog",
     "title": "GSM Gate Openers: Network, SIM and Access Checks",
-    "description": "Check phone-entry compatibility, signal, SIM costs and account ownership before adding a mobile gate opener.",
+    "description": "Compare GSM gate openers for London homes: SIM and 4G compatibility, signal surveys, retrofit requirements, access permissions and ongoing costs.",
     "sections": [
       [
         "Separate phone entry from visitor calling",
         "<p>Some gate controllers recognise an authorised phone number and request an opening when it calls. An intercom also lets a visitor speak to a resident. Ask which function the proposed device provides, whether it uses voice, SMS or data, and what the caller experiences.</p><p>A remote command does not confirm that the entrance is clear or the gate has opened. Discuss how the complete system manages unattended operation and how you will know whether a fault has prevented movement.</p>"
       ],
       [
+        "How a SIM-card gate opener differs from an intercom",
+        "<p>With a phone-operated gate switch, an authorised user contacts the number or service assigned to the installed device. The unit then requests an action from the gate controller. An installer needs to confirm the supported method, permissions and controller connection for the chosen model. You should not assume that dialling any gate SIM number grants access.</p><p>The <a href=\"https://www.aesglobalonline.com/i-gatedual\">AES i-Gate product information</a>, for example, describes call and SMS control of its GSM switches. Its products and app arrangements vary, so specify the exact model rather than asking for an unspecified GSM box. A gate switch does not by itself give a visitor a microphone, camera or call button.</p><p>If you want a delivery driver to call you from the gate, specify that visitor conversation separately. Decide whether you need audio or video and how you want to answer. A cellular video system may use a data connection and an app, while another unit may place an ordinary voice call. Confirm the actual call path during the quotation stage.</p>"
+      ],
+      [
         "Check the device, SIM and network together",
-        "<p>Ask for the exact device model and supported network technologies. Confirm the SIM plan permits its required services and how the unit handles caller identification. A label saying 4G does not, by itself, confirm support for the voice service your network uses.</p><p>Mobile operators are retiring older networks. Check <a href=\"https://www.ofcom.org.uk/phones-and-broadband/coverage-and-speeds/3g-switch-off\">Ofcom’s current switch-off guidance</a> and obtain the equipment supplier’s migration advice. Avoid buying an older controller solely because a SIM currently connects.</p>"
+        "<p>Ask for the exact device model and supported network technologies. Confirm the SIM plan permits its required services and how the unit handles caller identification. A label saying 4G does not, by itself, confirm support for the voice service your network uses.</p><p>As checked in October 2026, Ofcom reports that UK 3G networks have switched off and that operators are preparing their 2G closures. Check <a href=\"https://www.ofcom.org.uk/phones-and-broadband/coverage-and-speeds/3g-switch-off\">Ofcom’s current switch-off guidance</a> and obtain the equipment supplier’s migration advice. Avoid buying an older controller solely because a SIM currently connects.</p>"
+      ],
+      [
+        "Signal at the entrance: check the installation position",
+        "<p>A postcode coverage result is a starting point for the survey, not an acceptance test for the finished installation. Ask the installer to check the proposed network at the intended unit and antenna positions. Give them the location of the gate relative to the house, boundary walls and any existing equipment enclosure.</p><p>On a London mews or recessed entrance, describe the physical layout instead of assuming that a city address guarantees coverage. The installer should explain how the antenna and cable route will suit the product. Do not run an antenna cable through a motor housing or move electrical equipment yourself to improve reception.</p><p>Agree how the team will demonstrate successful calls or commands after installation. Test the functions you bought from the places you expect to use them, under the agreed safe operating arrangements. Keep a record of any unresolved reception problem rather than accepting an occasional successful command as the whole handover.</p>"
+      ],
+      [
+        "Can phone entry be added to existing electric gates?",
+        "<p>A retrofit needs a compatibility assessment of the existing gate controller and the proposed entry device. Provide the controller details from your records and explain which remotes, keypads, intercoms or pedestrian controls you want to retain. The installer should identify the command interface and power arrangements before quoting the connection work.</p><p>Ask whether the new control will request full opening, pedestrian access or another configured action, and how that fits the current operation. A phone module does not repair an unreliable motor or make a defective entrance safe. Any wider fault needs its own assessment.</p><p>Discuss <a href=\"/services/access-control/gsm-phone-entry/\">adding GSM phone entry</a> with the equipment list and photographs taken from safe positions. Confirm who will install, configure and check the completed system. Avoid a universal wiring diagram or SMS command copied from a different product manual.</p>"
       ],
       [
         "Survey the signal and ongoing costs",
         "<p>Test service at the gate position on the proposed network. Discuss the enclosure, antenna location, cable route and power supply with the installer. Nearby buildings and the installed position can affect the result.</p><p>Confirm monthly charges, call or data allowances, top-up rules and what happens if an account expires. Ask whose name holds the SIM and how the household can change numbers or recover administrator access.</p>"
       ],
       [
+        "Purchase price, SIM charges and the cost of ownership",
+        "<p>Compare quotations for the complete installation. List the controller or intercom, antenna, power provision, wiring, mounting, configuration and handover. If existing cable or power provision can be reused, ask the contractor to state that assumption and what happens if the survey finds it unsuitable.</p><p>Ask for the recurring charges in a separate line: SIM rental or top-ups, outgoing calls, texts, data and any app or service subscription. Establish which functions need each service. A device that uses calls for entry can have different requirements from one that sends video to an app. Neither the GSM label nor an app-store download establishes that ongoing use is free.</p><p>Keep a note of the renewal date and the person responsible for payment. For a shared entrance, agree how residents will fund the service and who can speak to the provider. You can then compare options over the same period without relying on a claimed universal saving.</p>"
+      ],
+      [
+        "Authorised users, visitors and shared-driveway access",
+        "<p>Decide who should open the gate without speaking to a resident, who should receive visitor calls and who may change permissions. These can be different groups. Ask the supplier to demonstrate the permissions on the proposed model, including how to remove a lost phone or a former resident.</p><p>If you want time-limited visitor access, verify that the particular product and configuration support it. Agree who creates that access and what happens at expiry. Do not assume that every phone opener provides temporary codes, access logs, schedules or gate-position feedback. Those are features to confirm in writing.</p><p>Keep administrator credentials separate from everyday entry arrangements. Follow the product instructions to replace default credentials where applicable, and agree an account-recovery process that the property owner or managing agent controls. Avoid leaving the entire installation tied to the private account of a departed installer.</p>"
+      ],
+      [
         "Hand over access management",
-        "<p>Request a demonstration of adding and removing authorised users using the actual manual. Remove default credentials, restrict administrator access and arrange a backup entry method. Keep account recovery information with your gate records.</p><p>For installation, see <a href=\"/services/access-control/gsm-phone-entry/\">GSM phone entry</a>. Compare visitor workflows in our <a href=\"/guides/best-intercom-systems/\">intercom guide</a>. A failing controller belongs in a <a href=\"/services/gate-repair-and-maintenance/\">repair assessment</a> rather than a generic SMS reset sequence.</p>"
+        "<p>Request a demonstration of adding and removing authorised users using the actual manual. Remove default credentials, restrict administrator access and arrange a backup entry method. Keep account recovery information with your gate records.</p><p>Compare visitor workflows in our <a href=\"/guides/best-intercom-systems/\">intercom guide</a>. A failing controller belongs in a <a href=\"/services/gate-repair-and-maintenance/\">repair assessment</a> rather than a generic SMS reset sequence.</p>"
+      ],
+      [
+        "Loss of service, missed calls and handover checks",
+        "<p>Ask what remains available if the mobile service fails, the SIM account expires or the gate loses power. Retained remotes or a keypad may offer another command method where the gate system remains operational; they cannot overcome every power or mechanical fault. A backup battery has a particular capacity and maintenance requirement, not a guaranteed number of days of access.</p><p>If phone entry stops working, note whether ordinary gate controls still work, which callers are affected and what the caller hears. Check the account status through the provider or responsible administrator. Give the installer that information without opening the unit or resetting its stored users. A failed call and an accepted call with no gate movement need different investigations.</p><ol><li>Demonstrate resident entry and visitor calling if both were specified.</li><li>Confirm the intended gate action and explain any status message or notification.</li><li>Demonstrate adding and removing an authorised user using the correct instructions.</li><li>Record the SIM owner, payment arrangements, model details and support contact.</li><li>Explain fallback access and the circumstances in which the entrance must remain out of use.</li></ol><p>Keep that record with the gate documentation so another authorised person can manage the system later. Review permissions when occupants or regular contractors change, rather than waiting for an access problem.</p>"
       ]
     ],
     "faqs": [
       [
         "Will any UK SIM work?",
         "No universal compatibility claim is reliable. Check the device, network, required voice/SMS/data services and tariff restrictions together."
+      ],
+      [
+        "Do I need Wi-Fi at the gate?",
+        "A mobile-network device can use a compatible SIM service instead of a home Wi-Fi connection. Confirm the chosen model, signal, power supply and required voice or data services; other entry devices may use Wi-Fi."
+      ],
+      [
+        "Can I open the gate from abroad?",
+        "Ask the supplier and mobile provider about the chosen command method, international calling or roaming restrictions and charges. Remote access also depends on the installed system being operational and suitable for unattended commands."
+      ],
+      [
+        "Does a GSM opener include video calling?",
+        "Not necessarily. A phone-operated switch, an audio intercom and a cellular video intercom provide different functions. Specify visitor calling and video if you need them."
       ]
-    ]
+    ],
+    "updatedDate": "2026-10-12"
   },
   "telescopic-gates-space-saving-london": {
     "kind": "blog",

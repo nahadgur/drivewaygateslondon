@@ -79,3 +79,9 @@ The existing Codex automation has already been updated by the coordinating chat.
 Priority 5, `electric-gate-remote-not-working`, adds 1,442 body words, a unique illustrative WebP hero, metadata, a source ledger and a PASS release review under `docs/source-reviews/gate-remote*.json`. Its three prose destinations are used once each, with conditional links to the two published articles. Article 2 gains an incoming conditional link using existing wording. All four earlier article bodies and metadata remain unchanged.
 
 Validation: production build/lint/types passed; article visibility, hub, sitemap and source-ledger checks passed; shared route/asset verification passed. Desktop/mobile checks confirmed loaded imagery, no overflow, correct date and one end quote CTA. Mocked enquiry failure/retry/success passed; no real lead was sent. The weekday gate must run immediately before the production push.
+
+## Restore useful coverage in three existing pages, 12 October 2026
+
+Expanded the motor-humming and GSM opener blogs and the intercom buying guide while preserving the 2 October factual and safety corrections. The matching editorial records, typed data, rendered sections, table of contents, FAQs and descriptions remain aligned. Original URLs, titles, publication dates, hero assets and the quote/contact flow remain unchanged; updated dates are 12 October. This is maintenance of existing articles, not an additional publication in the finite queue.
+
+The source and scope review is `docs/source-reviews/content-recovery-2026-10-12.json`. It records restored topics and excluded unsupported claims. Validation covers production build/lint/types, three viewport widths, section/FAQ/schema agreement, original and modified dates, canonical metadata, loaded heroes, the comparison table, unique links and one end CTA. Existing article and consolidation checks passed. No real test enquiry was sent.

@@ -1,0 +1,124 @@
+{
+  "date_checked": "2026-10-12",
+  "verdict": "PASS",
+  "parent_commit": "fb18163cd62db7182d80a310e61eb1908ce3991d",
+  "scope": "Restore useful coverage in three already-published pages. No new article release, publication-date change, URL change, title change, hero replacement, schedule change or redirect change.",
+  "review_basis": "Compared current content with pre-correction rendered snapshots at d5304cd^; retained the 2 October factual and safety corrections. Content length is a coverage check, not a ranking guarantee.",
+  "pages": {
+    "gate-motor-humming-not-moving": {
+      "route": "/blog/gate-motor-humming-not-moving/",
+      "body_words_excluding_headings_and_faq": 1297,
+      "description_length": 157,
+      "updatedDate": "2026-10-12",
+      "originalPublishDate": "2026-03-23",
+      "sections": [
+        "Stop repeated attempts to open the gate",
+        "What can cause a humming gate motor?",
+        "Mechanical resistance: swing gates and sliding gates",
+        "Capacitors, supply problems and the motor itself",
+        "Controls, end positions and a fault after several cycles",
+        "Useful observations without dismantling anything",
+        "Manual release is specific to your system",
+        "Describe the symptom without assuming the cause",
+        "What to ask the repair engineer",
+        "Repair cost: compare the diagnosis and the complete scope",
+        "After the repair"
+      ]
+    },
+    "gsm-gate-openers-london": {
+      "route": "/blog/gsm-gate-openers-london/",
+      "body_words_excluding_headings_and_faq": 1245,
+      "description_length": 145,
+      "updatedDate": "2026-10-12",
+      "originalPublishDate": "2026-03-19",
+      "sections": [
+        "Separate phone entry from visitor calling",
+        "How a SIM-card gate opener differs from an intercom",
+        "Check the device, SIM and network together",
+        "Signal at the entrance: check the installation position",
+        "Can phone entry be added to existing electric gates?",
+        "Survey the signal and ongoing costs",
+        "Purchase price, SIM charges and the cost of ownership",
+        "Authorised users, visitors and shared-driveway access",
+        "Hand over access management",
+        "Loss of service, missed calls and handover checks"
+      ]
+    },
+    "best-intercom-systems": {
+      "route": "/guides/best-intercom-systems/",
+      "body_words_excluding_headings_and_faq": 1340,
+      "description_length": 148,
+      "updatedDate": "2026-10-12",
+      "originalPublishDate": "2026-02-14",
+      "sections": [
+        "Decide where you want to answer visitors",
+        "Audio or video: choose the visitor information you need",
+        "Wired, IP and mobile intercoms: compare the whole route",
+        "Compare the connection paths",
+        "Smartphone apps and smart-home integration",
+        "Retrofit an intercom without replacing the whole entrance",
+        "Get the exact equipment and account terms",
+        "Compare installation costs and ongoing commitments",
+        "Shared entrances, recordings and control of accounts",
+        "Plan installation and support",
+        "A handover demonstration worth asking for"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/basics.htm",
+      "supports": "Dangerous gates out of use, competent assistance, hazards and system maintenance. Retained safety boundaries."
+    },
+    {
+      "url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
+      "supports": "Whole-system assessment, movement risks, suitability and combined protective measures. Mechanical/control topics are assessment questions, not a DIY diagnostic procedure."
+    },
+    {
+      "url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/responsibilities.htm",
+      "supports": "Handover, user instructions, competent repair and responsibilities; retained existing guidance."
+    },
+    {
+      "url": "https://www.faac.co.uk/productfiles/112_Manual_rad2C484.pdf",
+      "supports": "410 MPS product-specific capacitor/operator arrangement. No universal replacement rating, voltage or capacitor diagnosis."
+    },
+    {
+      "url": "https://www.faac.co.uk/productfiles/4_DataSheet_rad59AC6.pdf",
+      "supports": "Thermal protection listed for the 230 V FAAC 412; no temperature, reset instruction or recovery duration reproduced. Official search text and direct PDF HTTP 200 checked."
+    },
+    {
+      "url": "https://www.aesglobalonline.com/i-gatedual",
+      "supports": "GSM gate-switch call/SMS command to controller; product/app arrangements vary. No promised capacity, range, security rating or support of future features."
+    },
+    {
+      "url": "https://www.aesglobalonline.com/prime-edge",
+      "supports": "Distinction between a cellular intercom for visitor calls and a gate switch. No product endorsement or claim of local stocking."
+    },
+    {
+      "url": "https://www.ofcom.org.uk/phones-and-broadband/coverage-and-speeds/3g-switch-off",
+      "supports": "Checked October 2026: UK 3G shutdown completed and 2G closures pending. No blanket compatibility guarantee or network-specific deadline included."
+    },
+    {
+      "url": "https://pro.comelitgroup.com/product/app-comelit",
+      "supports": "App functions and model-specific user manuals; product-specific example, not blanket compatibility. Stable product reference used after general brand site redirected to a regional homepage."
+    }
+  ],
+  "restored_coverage": {
+    "motor": "Mechanical resistance, capacitor and supply distinction, controls/end positions, recurring after-use symptoms, observation list, cost scope and repair/replacement questions.",
+    "gsm": "Call/SMS versus visitor intercom, SIM/network checks, signal survey, retrofit, installed and recurring costs, user permissions and service-loss handover.",
+    "intercom": "Audio/video, wired/IP/cellular comparison table, smartphone/smart-home setup, retrofit, costs, shared users, recording decisions and handover."
+  },
+  "excluded_old_claims": [
+    "Universal electrical measurements and replacement ratings",
+    "DIY live-terminal probing, capacitor changes, limit/force adjustments and safety bypasses",
+    "Universal brand-specific reset procedures and waiting times",
+    "Invented crime statistics, uptime percentages, customer stories and savings",
+    "Guaranteed global access, no-subscription claims and fixed battery runtimes",
+    "Unverified fitted prices, installation durations and guaranteed compatibility"
+  ],
+  "editorial_qualifications": "Purchasing, site-survey and handover checklists are original practical recommendations. No diagnoses, legal compliance certifications, brand rankings or ranking-recovery promises. Privacy described as decisions to discuss, not legal advice.",
+  "links": "Each article has unique internal destinations and at most one visible external link per domain. References remain in context; full source detail lives in this ledger.",
+  "preserved": "Original publication dates, titles, URLs, heroes, one end CTA, contact flow and all five prepared articles. FAQ copy kept consistent with schema.",
+  "validation_status": "PASS: production build/lint/types; three pages at 1440, 390 and 320 pixels; FAQ/schema agreement; datePublished preserved and dateModified 12 October; loaded heroes; canonical, CTA, TOC and unique links; no overflow. Shared verifier checked 206 templates and 5227 links/assets; all five prepared articles passed; existing consolidation checks passed.",
+  "external_reference_check": "AES i-Gate, FAAC manual, HSE responsibilities and direct Comelit product documentation returned HTTP 200. Ofcom direct automated request returned 403; its exact guidance URL was retrieved and read through web research. No claim that every reference accepted direct automated HTTP requests."
+}
