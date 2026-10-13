@@ -8,6 +8,7 @@ import { applyPublicationLinks, preparedArticleCard, type PublicationLink } from
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { EnquiryForm } from './EnquiryForm';
+import { editorialLayout } from '@/lib/editorial-layout';
 
 type PageTemplate = { className: string; main?: string; hero?: string; methods?: string; after?: string };
 type PreparedTemplate = PageTemplate & { publicationLinks: PublicationLink[] };
@@ -35,10 +36,12 @@ export function ShowcasePage({ route }: { route: string }) {
       .map(preparedArticleCard).join('');
     main = main!.replace('<div class="page-grid">', `<div class="page-grid">${cards}`);
   }
+  const editorial = /^\/(guides|blog)\//.test(route);
+  if (editorial) main = editorialLayout(main!, route);
   const home = route === '/';
   return <>
     {home && <div dangerouslySetInnerHTML={{ __html: shared.entrance }} />}
-    <div id={home ? 'site-shell' : 'top'} className={`showcase-page ${page.className}`}>
+    <div id={home ? 'site-shell' : 'top'} className={`showcase-page ${page.className}${editorial ? ' editorial-page' : ''}`}>
       <Header />
       {route === '/contact/' ? <main id="main"><div className="page-wrap">
         <div dangerouslySetInnerHTML={{ __html: page.hero! }} />
