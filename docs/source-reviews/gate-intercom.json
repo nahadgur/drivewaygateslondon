@@ -1,0 +1,101 @@
+[
+  {
+    "article_priority": 6,
+    "claim_id": "I1",
+    "section": "Call versus release",
+    "claim_or_recommendation": "A call and a release command are distinct; recognised keypad tones can activate relays.",
+    "source_url": "https://www.commtel.io/faqs/fault-finding/",
+    "date_checked": "2026-10-13",
+    "qualification": "Manufacturer explains successful calls with unrecognised DTMF and no release. Opening narrows investigation rather than diagnosing a part.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 6,
+    "claim_id": "I2",
+    "section": "Safety",
+    "claim_or_recommendation": "Stop dangerous gates, keep clear and use documented safe shutdown and competent help.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/basics.htm",
+    "date_checked": "2026-10-13",
+    "qualification": "No DIY wiring, terminal bridging or bypass instructions. Safety paragraph under 200 words derived from this source.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 6,
+    "claim_id": "I3",
+    "section": "Mobile calls",
+    "claim_or_recommendation": "Commtel identifies DTMF, Wi-Fi Calling and network conditions as possible causes.",
+    "source_url": "https://www.commtel.io/faqs/fault-finding/",
+    "date_checked": "2026-10-13",
+    "qualification": "Explicitly manufacturer-scoped; no universal release key, programming sequence or diagnosis. Total source-derived coverage under 200 words.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 6,
+    "claim_id": "I4",
+    "section": "App; outputs",
+    "claim_or_recommendation": "2N documents configurable outputs, activation routes and switch behaviour.",
+    "source_url": "https://wiki.2n.com/hip/conf/latest/en/5-konfigurace-interkomu/5-5-hardware/5-5-1-spinace",
+    "date_checked": "2026-10-13",
+    "qualification": "Model-specific example; do not equate visible command feedback with physical opening. No instruction to alter timings or install a third-party module. Source-derived coverage under 200 words.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 6,
+    "claim_id": "I5",
+    "section": "Relay observations",
+    "claim_or_recommendation": "Aiphone RY-IP44 contact outputs can respond to release or call activity.",
+    "source_url": "https://www.aiphone.co.uk/featured_item/ry-ip44/",
+    "date_checked": "2026-10-13",
+    "qualification": "Example only, not compatibility recommendation. Observation of a click is not a full circuit diagnosis. Coverage under 200 words.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 6,
+    "claim_id": "I6",
+    "section": "Remote comparison; inspection",
+    "claim_or_recommendation": "Different control outcomes help a contractor scope checks.",
+    "source_url": null,
+    "date_checked": "2026-10-13",
+    "qualification": "Original conditional diagnostic briefing, no claimed certainty or instruction to operate dangerous machinery.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 6,
+    "claim_id": "I7",
+    "section": "Repair; quotation; handover",
+    "claim_or_recommendation": "Obtain findings, retained-component scope, costs, access arrangements and checks against reported symptom.",
+    "source_url": null,
+    "date_checked": "2026-10-13",
+    "qualification": "Original buyer guidance. No invented price, availability, warranty, compliance guarantee or customer case.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 6,
+    "claim_id": "CTA",
+    "section": "End CTA",
+    "claim_or_recommendation": "Get a Free Quote through existing contact flow.",
+    "source_url": "https://www.drivewaygateslondon.co.uk/contact/",
+    "date_checked": "2026-10-13",
+    "qualification": "Existing authorised flow; no test leads, no inspection or response-time promise.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 6,
+    "claim_id": "IMAGE",
+    "section": "Hero",
+    "claim_or_recommendation": "Illustrated video intercom, brick pier and closed driveway gates.",
+    "source_url": null,
+    "date_checked": "2026-10-13",
+    "qualification": "Built-in image_gen. Accurate alt and existing illustrative-image disclosure. No claim of customer installation.",
+    "calculation": "None",
+    "verdict": "PASS"
+  }
+]

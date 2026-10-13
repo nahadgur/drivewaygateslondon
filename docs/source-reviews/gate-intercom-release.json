@@ -1,0 +1,40 @@
+{
+  "article_priority": 6,
+  "slug": "gate-intercom-rings-but-wont-open",
+  "publication_date": "2026-10-13",
+  "verdict": "PASS",
+  "body_words": 1475,
+  "intent": "Intercom call succeeds but release fails; phone/app/output distinction and repair-or-replace decision.",
+  "overlap_review": "Distinct from remote-control guide and general intercom purchasing guide; links to both.",
+  "source_review": "HSE, Commtel, 2N and Aiphone primary pages read 13 October 2026; claim qualifications in gate-intercom.json.",
+  "internal_links": "Remote article via conditional link, general intercom guide, repair service, end contact CTA; each destination once. Conditional incoming link from remote article.",
+  "external_links": "One each to HSE, Commtel, 2N and Aiphone; no repeated external domain.",
+  "authorisation": "User explicitly requested one extra new blog on 13 October. Prior 12 October release disclosed; one-off cadence exception, then minimum two days before the next release.",
+  "image": {
+    "source_file": "C:\\Users\\Jerwin\\.codex\\generated_images\\01a0f227-b194-76a2-8e2e-7fd2bc856b1e\\exec-f9676f8e-5bd7-4fbc-9b14-5fe956350e4c.png",
+    "tool": "built-in image_gen",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "webp": "/showcase/assets/content/gate-intercom-rings-but-wont-open.webp",
+    "sha256": "fa8a8af25c673f651ae81abfffe0c8c0dd0860e50c135ead4368fa3090d0983c",
+    "prompt": "Bright hand-painted architectural illustration of unbranded silver video intercom on brick pier beside closed charcoal driveway gates and leafy London suburban home; 1672x941; no people, labels, logos or exposed wiring.",
+    "disclosure": "Illustrative design inspiration, not a verified customer installation"
+  },
+  "copy_review": "British English; conditional fault interpretation; no numerical specifications, unverified prices, guarantees or unsafe troubleshooting.",
+  "parent_commit": "449a6f2906bbd94e0987ba9801a54c85d5c191a7",
+  "validation": [
+    "Build, TypeScript and lint passed; 1586 pages",
+    "All six prepared articles and HTTP visibility passed",
+    "Content consolidation and 206 templates/5231 links plus 1368 service-area pages passed",
+    "Browser at 1440,390,320px: metadata, schema, hero, date, links, typography, CTA, hub and sitemap passed",
+    "Existing first five article data and rendered bodies unchanged; one conditional incoming link added",
+    "All source pages read; Commtel and Aiphone both HTTP 200 in browser; raw-client 403 responses are bot filtering",
+    "No real leads sent"
+  ],
+  "remaining_after_push": [
+    "Matching successful GitHub Production deployment",
+    "Live page, hero, metadata, links, actual date, CTA and sitemap"
+  ]
+}
