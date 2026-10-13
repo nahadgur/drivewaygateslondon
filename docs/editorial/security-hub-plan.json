@@ -1,0 +1,313 @@
+{
+  "hub_route": "/guides/driveway-home-security/",
+  "hub_title": "Driveway & Home Security | A London Guide",
+  "publishDate": "2026-10-13",
+  "status": "registered for this release",
+  "scope": "One user-requested hub, outside the unchanged 34-topic article queue. This explicit immediate release is a one-off exception; no other release authorised today.",
+  "rules": [
+    "Each new spoke links back to the live hub once in context.",
+    "Publish only its own distinct intent; preserve existing merged destinations.",
+    "The hub activates its 13 prepared article links only for published slugs. Update the text/slug mapping if an approved route changes.",
+    "Add the reciprocal hub link in the same release as the new spoke; verify the built page rather than linking to a draft.",
+    "Keep one body link per destination and one visible external link per domain.",
+    "Keep the existing weekday and two-day publication spacing; this hub does not advance or reorder the queued topics."
+  ],
+  "topics": [
+    {
+      "priority": 23,
+      "route": "/blog/keep-car-safe-on-driveway/",
+      "hub_section": "car-and-key-security",
+      "status": "planned",
+      "hub_anchor": "keeping your car safe on the driveway",
+      "backlink_required": true
+    },
+    {
+      "priority": 24,
+      "route": "/blog/gates-vs-bollards-car-security/",
+      "hub_section": "gates-or-bollards",
+      "status": "planned",
+      "hub_anchor": "comparing gates and bollards for car security",
+      "backlink_required": true
+    },
+    {
+      "priority": 25,
+      "route": "/blog/make-side-gate-more-secure/",
+      "hub_section": "side-gates-and-locks",
+      "status": "planned",
+      "hub_anchor": "make a side gate more secure",
+      "backlink_required": true
+    },
+    {
+      "priority": 26,
+      "route": "/blog/gate-locks-open-from-both-sides/",
+      "hub_section": "side-gates-and-locks",
+      "status": "planned",
+      "hub_anchor": "Gate locks that open from both sides",
+      "backlink_required": true
+    },
+    {
+      "priority": 27,
+      "route": "/blog/protect-london-home-from-burglary/",
+      "hub_section": "home-and-holiday-routines",
+      "status": "planned",
+      "hub_anchor": "protect your London home from burglary",
+      "backlink_required": true
+    },
+    {
+      "priority": 28,
+      "route": "/blog/cctv-enough-protect-driveway/",
+      "hub_section": "cctv-and-lighting",
+      "status": "planned",
+      "hub_anchor": "whether CCTV is enough for your driveway",
+      "backlink_required": true
+    },
+    {
+      "priority": 29,
+      "route": "/blog/reduce-keyless-car-theft-risk/",
+      "hub_section": "car-and-key-security",
+      "status": "planned",
+      "hub_anchor": "how to reduce keyless car theft risk",
+      "backlink_required": true
+    },
+    {
+      "priority": 30,
+      "route": "/blog/secure-home-after-break-in/",
+      "hub_section": "after-a-break-in",
+      "status": "planned",
+      "hub_anchor": "securing your home after a break-in",
+      "backlink_required": true
+    },
+    {
+      "priority": 31,
+      "route": "/blog/home-security-before-holiday-london/",
+      "hub_section": "home-and-holiday-routines",
+      "status": "planned",
+      "hub_anchor": "home security before a holiday",
+      "backlink_required": true
+    },
+    {
+      "priority": 32,
+      "route": "/blog/stop-people-parking-on-driveway/",
+      "hub_section": "small-driveways-and-parking",
+      "status": "planned",
+      "hub_anchor": "how to stop people parking on your driveway",
+      "backlink_required": true
+    },
+    {
+      "priority": 33,
+      "route": "/blog/do-driveway-gates-deter-burglars/",
+      "hub_section": "privacy-and-deterrence",
+      "status": "planned",
+      "hub_anchor": "Whether driveway gates deter burglars",
+      "backlink_required": true
+    },
+    {
+      "priority": 34,
+      "route": "/blog/home-security-budget-what-first/",
+      "hub_section": "budget-and-insurance",
+      "status": "planned",
+      "hub_anchor": "home security on a budget",
+      "backlink_required": true
+    },
+    {
+      "priority": 21,
+      "route": "/blog/electric-gates-shared-driveway/",
+      "hub_section": "shared-access",
+      "status": "planned",
+      "hub_anchor": "A shared-driveway access plan",
+      "backlink_required": true
+    },
+    {
+      "route": "/blog/automated-gate-home-insurance/",
+      "hub_section": "budget-and-insurance",
+      "status": "existing",
+      "backlink_added": true
+    },
+    {
+      "route": "/blog/electric-gate-parcel-delivery-access-london/",
+      "hub_section": "deliveries-and-callers",
+      "status": "existing",
+      "backlink_added": true
+    },
+    {
+      "route": "/blog/smart-gate-integration-ring-nest-control4/",
+      "hub_section": "outages-and-digital-access",
+      "status": "existing",
+      "backlink_added": true
+    },
+    {
+      "route": "/blog/bi-fold-vs-sliding-gates-london/",
+      "hub_section": "small-driveways-and-parking",
+      "status": "existing",
+      "backlink_added": true
+    },
+    {
+      "route": "/blog/telescopic-gates-space-saving-london/",
+      "hub_section": "small-driveways-and-parking",
+      "status": "existing",
+      "backlink_added": true
+    },
+    {
+      "route": "/blog/do-i-need-a-dropped-kerb-for-a-driveway-gate-london/",
+      "hub_section": "small-driveways-and-parking",
+      "status": "existing",
+      "backlink_added": true
+    },
+    {
+      "route": "/guides/best-intercom-systems/",
+      "hub_section": "deliveries-and-callers",
+      "status": "existing",
+      "backlink_added": true
+    },
+    {
+      "route": "/guides/how-to-manually-open-electric-gate/",
+      "hub_section": "outages-and-digital-access",
+      "status": "existing",
+      "backlink_added": true
+    }
+  ],
+  "merged_questions": [
+    {
+      "title": "Do Faraday Pouches Protect Your Car Keys?",
+      "owner": "/blog/reduce-keyless-car-theft-risk/",
+      "hub_section": "car-and-key-security"
+    },
+    {
+      "title": "Solid or Open Driveway Gates | Privacy and Security",
+      "owner": "/blog/do-driveway-gates-deter-burglars/",
+      "hub_section": "privacy-and-deterrence"
+    },
+    {
+      "title": "Driveway Lighting for Security | What to Consider",
+      "owner": "/guides/driveway-home-security/#cctv-and-lighting",
+      "status": "Substantive hub section; no duplicate new article added"
+    },
+    {
+      "title": "Driveway Security for Small Spaces | Gates and Barriers",
+      "owner": "/blog/bi-fold-vs-sliding-gates-london/",
+      "hub_section": "small-driveways-and-parking"
+    }
+  ],
+  "requested_topic_coverage": [
+    {
+      "title": "How to Keep Your Car Safe on Your Driveway | London",
+      "hub_section": "car-and-key-security",
+      "owner": "/blog/keep-car-safe-on-driveway/",
+      "disposition": "planned"
+    },
+    {
+      "title": "Gates or Bollards | Which Is Better for Car Security?",
+      "hub_section": "gates-or-bollards",
+      "owner": "/blog/gates-vs-bollards-car-security/",
+      "disposition": "planned"
+    },
+    {
+      "title": "How to Make Your Side Gate More Secure",
+      "hub_section": "side-gates-and-locks",
+      "owner": "/blog/make-side-gate-more-secure/",
+      "disposition": "planned"
+    },
+    {
+      "title": "Gate Locks You Can Open From Both Sides",
+      "hub_section": "side-gates-and-locks",
+      "owner": "/blog/gate-locks-open-from-both-sides/",
+      "disposition": "planned"
+    },
+    {
+      "title": "How to Protect Your London Home from Burglary",
+      "hub_section": "home-and-holiday-routines",
+      "owner": "/blog/protect-london-home-from-burglary/",
+      "disposition": "planned"
+    },
+    {
+      "title": "Are CCTV Cameras Enough to Protect Your Driveway?",
+      "hub_section": "cctv-and-lighting",
+      "owner": "/blog/cctv-enough-protect-driveway/",
+      "disposition": "planned"
+    },
+    {
+      "title": "How to Reduce the Risk of Keyless Car Theft",
+      "hub_section": "car-and-key-security",
+      "owner": "/blog/reduce-keyless-car-theft-risk/",
+      "disposition": "planned"
+    },
+    {
+      "title": "How to Secure Your Home After a Break-In",
+      "hub_section": "after-a-break-in",
+      "owner": "/blog/secure-home-after-break-in/",
+      "disposition": "planned"
+    },
+    {
+      "title": "Home Security Before a Holiday | A London Checklist",
+      "hub_section": "home-and-holiday-routines",
+      "owner": "/blog/home-security-before-holiday-london/",
+      "disposition": "planned"
+    },
+    {
+      "title": "How to Stop People Parking on Your Driveway",
+      "hub_section": "small-driveways-and-parking",
+      "owner": "/blog/stop-people-parking-on-driveway/",
+      "disposition": "planned"
+    },
+    {
+      "title": "Do Driveway Gates Deter Burglars?",
+      "hub_section": "privacy-and-deterrence",
+      "owner": "/blog/do-driveway-gates-deter-burglars/",
+      "disposition": "planned"
+    },
+    {
+      "title": "Home Security on a Budget | What to Improve First",
+      "hub_section": "budget-and-insurance",
+      "owner": "/blog/home-security-budget-what-first/",
+      "disposition": "planned"
+    },
+    {
+      "title": "Do Faraday Pouches Protect Your Car Keys?",
+      "hub_section": "car-and-key-security",
+      "owner": "/blog/reduce-keyless-car-theft-risk/",
+      "disposition": "merge into planned keyless article"
+    },
+    {
+      "title": "Can Driveway Gates Affect Your Home Insurance?",
+      "hub_section": "budget-and-insurance",
+      "owner": "/blog/automated-gate-home-insurance/",
+      "disposition": "existing"
+    },
+    {
+      "title": "Driveway Security for Small Spaces | Gates and Barriers",
+      "hub_section": "small-driveways-and-parking",
+      "owner": "/blog/bi-fold-vs-sliding-gates-london/",
+      "disposition": "existing plus telescopic comparison"
+    },
+    {
+      "title": "Shared Driveway Security | Managing Access Safely",
+      "hub_section": "shared-access",
+      "owner": "/blog/electric-gates-shared-driveway/",
+      "disposition": "original queue priority 21"
+    },
+    {
+      "title": "Solid or Open Driveway Gates | Privacy and Security",
+      "hub_section": "privacy-and-deterrence",
+      "owner": "/blog/do-driveway-gates-deter-burglars/",
+      "disposition": "merge into planned deterrence article"
+    },
+    {
+      "title": "Driveway Lighting for Security | What to Consider",
+      "hub_section": "cctv-and-lighting",
+      "owner": "/guides/driveway-home-security/#cctv-and-lighting",
+      "disposition": "covered within hub; no new queue entry"
+    },
+    {
+      "title": "Do Smart Gates Work When the Internet Goes Down?",
+      "hub_section": "outages-and-digital-access",
+      "owner": "/blog/smart-gate-integration-ring-nest-control4/",
+      "disposition": "existing"
+    },
+    {
+      "title": "Secure Delivery Access | Letting Couriers Through Your Gate",
+      "hub_section": "deliveries-and-callers",
+      "owner": "/blog/electric-gate-parcel-delivery-access-london/",
+      "disposition": "existing"
+    }
+  ]
+}

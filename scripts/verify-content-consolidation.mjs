@@ -32,3 +32,4 @@ const example = pages['/guides/electric-gate-running-costs/'].main;
 for (const value of [movingKWh, idleKWh, movingKWh + idleKWh]) assert(example.includes(value.toFixed(2) + ' kWh'));
 assert(example.includes('£' + ((movingKWh + idleKWh) * 0.30).toFixed(2)));
 console.log('Verified four topic merges, direct destinations, editorial/snapshot agreement and the running-cost calculation.');
+await import('./verify-security-hub.mjs');

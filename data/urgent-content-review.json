@@ -162,7 +162,7 @@
     "sections": [
       [
         "Start with the instructions supplied for your gate",
-        "<p>Manual release arrangements differ between operators. Find the user instructions for your installed system and the release training provided at handover. Check the model from records or an identification label only where you can see it safely.</p><p>This guide cannot supply a universal key direction, cover-opening sequence or release position. If the instructions or key are missing, contact the installer or a competent gate engineer before attempting to release the mechanism.</p>"
+        "<p>Manual release arrangements differ between operators. Find the user instructions for your installed system and the release training provided at handover. Check the model from records or an identification label only where you can see it safely.</p><p>This guide cannot supply a universal key direction, cover-opening sequence or release position. If the instructions or key are missing, contact the installer or a competent gate engineer before attempting to release the mechanism.</p><p>Prepare your fallback access arrangements as part of a wider <a href=\"/guides/driveway-home-security/\">driveway and home security plan</a>, including keys, authorised users and the household’s response to a fault.</p>"
       ],
       [
         "Check whether releasing it could allow uncontrolled movement",
@@ -202,7 +202,8 @@
         "The gate is hard to move after release. Should I push harder?",
         "No. Stop, keep the area clear and ask for assistance. Resistance or uncontrolled movement can indicate a mechanical or structural problem."
       ]
-    ]
+    ],
+    "updatedDate": "2026-10-13"
   },
   "photocells-vs-safety-edges": {
     "kind": "guide",

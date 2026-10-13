@@ -1,4 +1,5 @@
 import { guideFeaturedImages } from './featuredImages';
+import securityHub from './security-hub.json';
 
 export type GuidePillar =
   | 'Pricing & Costs'
@@ -15,6 +16,7 @@ export interface Guide {
   slug: string;
   title: string;
   metaTitle: string;
+  useMetaTitle?: boolean;
   metaDescription: string;
   pillar: GuidePillar;
   excerpt: string;
@@ -31,6 +33,7 @@ export interface Guide {
 }
 
 const guideEntries: Guide[] = [
+  { ...securityHub, pillar: 'Safety & Compliance' },
 
   {
   "slug": "electric-driveway-gates-cost-london",
@@ -375,7 +378,7 @@ const guideEntries: Guide[] = [
   "sections": [
     {
       "heading": "Decide where you want to answer visitors",
-      "body": "<p>List who should receive a call and whether they need an indoor monitor, phone calls, an app or a combination. Include anyone who does not use a smartphone. Decide what happens if nobody answers and how a visitor can leave a delivery.</p><p>Ask for a demonstration of the actual sequence: call, identify the visitor, grant entry and confirm that the gate has finished moving. Seeing a video does not necessarily mean the app reports the gate’s physical position.</p>"
+      "body": "<p>List who should receive a call and whether they need an indoor monitor, phone calls, an app or a combination. Include anyone who does not use a smartphone. Decide what happens if nobody answers and how a visitor can leave a delivery.</p><p>Ask for a demonstration of the actual sequence: call, identify the visitor, grant entry and confirm that the gate has finished moving. Seeing a video does not necessarily mean the app reports the gate’s physical position.</p><p>Place the intercom decision within your <a href=\"/guides/driveway-home-security/\">driveway and home security plan</a>, so identifying callers, controlling entry and protecting parked vehicles work together.</p>"
     },
     {
       "heading": "Audio or video: choose the visitor information you need",
@@ -443,7 +446,7 @@ const guideEntries: Guide[] = [
   "relatedServiceSlug": "automated-gate-systems",
   "relatedGuides": [],
   "featuredImageAlt": "Installer showing a homeowner several driveway-gate intercom systems",
-  "updatedDate": "2026-10-12"
+  "updatedDate": "2026-10-13"
 },
 
   {
@@ -460,7 +463,7 @@ const guideEntries: Guide[] = [
   "sections": [
     {
       "heading": "Start with the instructions supplied for your gate",
-      "body": "<p>Manual release arrangements differ between operators. Find the user instructions for your installed system and the release training provided at handover. Check the model from records or an identification label only where you can see it safely.</p><p>This guide cannot supply a universal key direction, cover-opening sequence or release position. If the instructions or key are missing, contact the installer or a competent gate engineer before attempting to release the mechanism.</p>"
+      "body": "<p>Manual release arrangements differ between operators. Find the user instructions for your installed system and the release training provided at handover. Check the model from records or an identification label only where you can see it safely.</p><p>This guide cannot supply a universal key direction, cover-opening sequence or release position. If the instructions or key are missing, contact the installer or a competent gate engineer before attempting to release the mechanism.</p><p>Prepare your fallback access arrangements as part of a wider <a href=\"/guides/driveway-home-security/\">driveway and home security plan</a>, including keys, authorised users and the household’s response to a fault.</p>"
     },
     {
       "heading": "Check whether releasing it could allow uncontrolled movement",
@@ -504,7 +507,7 @@ const guideEntries: Guide[] = [
   "relatedServiceSlug": "gate-repair-and-maintenance",
   "relatedGuides": [],
   "featuredImageAlt": "Homeowner using the manual release on an electric sliding-gate motor",
-  "updatedDate": "2026-10-02"
+  "updatedDate": "2026-10-13"
 },
 
   {

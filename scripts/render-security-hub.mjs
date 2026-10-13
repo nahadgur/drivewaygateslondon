@@ -1,0 +1,17 @@
+import {readFileSync, writeFileSync} from 'node:fs';
+import assert from 'node:assert/strict';
+const hub=JSON.parse(readFileSync('data/security-hub.json','utf8'));
+const pages=JSON.parse(readFileSync('data/showcase/pages.json','utf8'));
+const esc=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
+const route=`/guides/${hub.slug}/`;
+const body=hub.sections.map(s=>`<section id="${s.id}"><h2>${esc(s.heading)}</h2>${s.body}</section>`).join('');
+const faq=`<section class="sub-section sub-faq" id="questions"><h2>Frequently asked questions</h2><div class="faq-list">${hub.faqs.map(f=>`<details><summary>${esc(f.question)}<span aria-hidden="true">+</span></summary><div>${esc(f.answer)}</div></details>`).join('')}</div></section>`;
+const toc=`<details class="hub-contents" open><summary>In this guide</summary><nav aria-label="Guide contents"><ul>${hub.sections.map(s=>`<li><a href="#${s.id}">${esc(s.heading)}</a></li>`).join('')}</ul></nav></details>`;
+pages[route]={className:'subpage tone-forest repair-article security-hub',main:`<div class="page-wrap"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a><span aria-hidden="true">/</span><b aria-current="page">Driveway and home security</b></nav><header class="article-header"><div class="article-meta"><time datetime="${hub.publishDate}">13 October 2026</time><span>${hub.readingMinutes} min read</span></div><h1>${esc(hub.title)}</h1><p class="lead">${esc(hub.intro)}</p></header><article class="article-content"><section class="hub-takeaway" aria-labelledby="short-takeaway"><h2 id="short-takeaway">Short takeaway</h2><p>${esc(hub.takeaway)}</p></section><figure class="repair-hero"><img src="${hub.featuredImage}" alt="${esc(hub.featuredImageAlt)}" width="1536" height="1024" fetchpriority="high" decoding="async"><figcaption>Illustrative entrance, not a verified customer installation or a site design.</figcaption></figure>${toc}${body}${faq}</article></div><section class="quote-band"><div><h2>Plan a safer, more usable entrance</h2><p>Tell us about your driveway, existing gates and the access you need.</p></div><a class="button light" href="/contact/">Get a Free Quote</a></section>`};
+const card=`<a class="page-card article-card" href="${route}" data-search="${esc((hub.title+' '+hub.excerpt+' '+hub.pillar).toLowerCase())}" data-category="${esc(hub.pillar)}"><div class="card-image"><img src="${hub.featuredImage}" alt="${esc(hub.featuredImageAlt)}" loading="lazy" decoding="async" width="1536" height="1024"></div><div class="card-copy"><span class="card-category">${esc(hub.pillar)}</span><h3>${esc(hub.title)}</h3><span class="card-action">Explore the guide</span></div></a>`;
+if(!pages['/guides/'].main.includes(`href="${route}"`)){
+ assert(pages['/guides/'].main.includes('<div class="page-grid">'));
+ pages['/guides/'].main=pages['/guides/'].main.replace('<div class="page-grid">','<div class="page-grid">'+card);
+}
+writeFileSync('data/showcase/pages.json',JSON.stringify(pages,null,2)+'\n');
+console.log('Rendered security hub and Guides index card.');

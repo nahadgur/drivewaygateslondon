@@ -276,7 +276,7 @@
     "sections": [
       [
         "Decide where you want to answer visitors",
-        "<p>List who should receive a call and whether they need an indoor monitor, phone calls, an app or a combination. Include anyone who does not use a smartphone. Decide what happens if nobody answers and how a visitor can leave a delivery.</p><p>Ask for a demonstration of the actual sequence: call, identify the visitor, grant entry and confirm that the gate has finished moving. Seeing a video does not necessarily mean the app reports the gate’s physical position.</p>"
+        "<p>List who should receive a call and whether they need an indoor monitor, phone calls, an app or a combination. Include anyone who does not use a smartphone. Decide what happens if nobody answers and how a visitor can leave a delivery.</p><p>Ask for a demonstration of the actual sequence: call, identify the visitor, grant entry and confirm that the gate has finished moving. Seeing a video does not necessarily mean the app reports the gate’s physical position.</p><p>Place the intercom decision within your <a href=\"/guides/driveway-home-security/\">driveway and home security plan</a>, so identifying callers, controlling entry and protecting parked vehicles work together.</p>"
       ],
       [
         "Audio or video: choose the visitor information you need",
@@ -341,7 +341,7 @@
         "A camera view and a gate-position signal are different features. Ask how the proposed system establishes and displays the actual gate state; do not assume an opening command confirms movement."
       ]
     ],
-    "updatedDate": "2026-10-12"
+    "updatedDate": "2026-10-13"
   },
   "gsm-gate-openers-london": {
     "kind": "blog",
@@ -416,7 +416,7 @@
     "sections": [
       [
         "How telescopic driveway gates work",
-        "<p>Telescopic driveway gates use two or more sliding panels that overlap as they open. The arrangement can fit an entrance where a single long sliding leaf would have too little room beside the opening. You still need space for the stored panels, their supports and the full movement of the mechanism.</p><p>Picture the entrance from above: the panels move along neighbouring paths and gather beside the driveway. The installer must show how the selected system coordinates them. A photograph of closed gates will not tell you the stored width, depth or position of the equipment behind them.</p><p>A manufacturer example helps explain the difference between systems. <a href=\"https://www.comunello.com/gate/products/ranger/ranger/\">Comunello’s Ranger mechanism</a> uses a ground-fixed toothed track and special wheels coupled to racks on the gate. That describes one engineered arrangement, rather than a specification for every telescopic gate. The proposed hardware and drawings should match each other.</p>"
+        "<p>Telescopic driveway gates use two or more sliding panels that overlap as they open. The arrangement can fit an entrance where a single long sliding leaf would have too little room beside the opening. You still need space for the stored panels, their supports and the full movement of the mechanism.</p><p>Picture the entrance from above: the panels move along neighbouring paths and gather beside the driveway. The installer must show how the selected system coordinates them. A photograph of closed gates will not tell you the stored width, depth or position of the equipment behind them.</p><p>A manufacturer example helps explain the difference between systems. <a href=\"https://www.comunello.com/gate/products/ranger/ranger/\">Comunello’s Ranger mechanism</a> uses a ground-fixed toothed track and special wheels coupled to racks on the gate. That describes one engineered arrangement, rather than a specification for every telescopic gate. The proposed hardware and drawings should match each other.</p><p>Include the sliding layout in a wider <a href=\"/guides/driveway-home-security/\">driveway and home security assessment</a>, covering vehicle protection, the adjoining boundary and access when equipment fails.</p>"
       ],
       [
         "Measure the opening and the space beside it",
@@ -470,7 +470,7 @@
     "sections": [
       [
         "Compare two different movement paths",
-        "<p>Bi-fold leaves fold as they swing, reducing the depth occupied by some designs compared with a single full-length swing leaf. Sliding gates move alongside the opening and need a clear path beside it. Both arrangements need supports and space for their moving parts.</p><p>For a short drive, draw the parked vehicle, its doors, the gate’s entire movement and a pedestrian route. Ask the installer to mark the dimensions of the actual mechanism rather than applying a percentage saving from another product.</p>"
+        "<p>Bi-fold leaves fold as they swing, reducing the depth occupied by some designs compared with a single full-length swing leaf. Sliding gates move alongside the opening and need a clear path beside it. Both arrangements need supports and space for their moving parts.</p><p>For a short drive, draw the parked vehicle, its doors, the gate’s entire movement and a pedestrian route. Ask the installer to mark the dimensions of the actual mechanism rather than applying a percentage saving from another product.</p><p>Once you have compared the movement space, use our <a href=\"/guides/driveway-home-security/\">driveway security guide</a> to check how the layout supports parking, walking access and control of visitors.</p>"
       ],
       [
         "Check folding joints and side space",
@@ -581,7 +581,7 @@
     "sections": [
       [
         "Decide what you want the smart-home system to do",
-        "<p>You can add smart-home features to some driveway gate installations, but a camera, an opening command and a gate-position signal perform different jobs. Start by listing the actions you need. You might want to answer a delivery driver from your phone, grant access from an indoor screen or check whether the gate has finished closing.</p><p>An app showing a successful command does not by itself confirm that the gate moved. A camera view may help you observe the entrance, while a separate status interface may report a position. Ask the installer to identify how the proposed system obtains each piece of information.</p><p>Keep the visitor journey in the brief: arrival, calling, answering, authorised entry and departure. That makes it easier to compare a smart-home proposal with a dedicated <a href=\"/guides/best-intercom-systems/\">gate intercom system</a> and to spot a missing function before buying equipment.</p>"
+        "<p>You can add smart-home features to some driveway gate installations, but a camera, an opening command and a gate-position signal perform different jobs. Start by listing the actions you need. You might want to answer a delivery driver from your phone, grant access from an indoor screen or check whether the gate has finished closing.</p><p>An app showing a successful command does not by itself confirm that the gate moved. A camera view may help you observe the entrance, while a separate status interface may report a position. Ask the installer to identify how the proposed system obtains each piece of information.</p><p>Keep the visitor journey in the brief: arrival, calling, answering, authorised entry and departure. That makes it easier to compare a smart-home proposal with a dedicated <a href=\"/guides/best-intercom-systems/\">gate intercom system</a> and to spot a missing function before buying equipment.</p><p>Review connected controls alongside the locks, boundary and visitor routine in our <a href=\"/guides/driveway-home-security/\">guide to driveway and home security</a>.</p>"
       ],
       [
         "Ring, Nest and Control4: the practical differences",
@@ -894,7 +894,7 @@
     "sections": [
       [
         "Ask about your own policy",
-        "<p>There is no insurance discount we can promise for adding a driveway gate. Contact your insurer or broker before relying on the gate as a policy security measure. Describe the proposed installation and any change to property access.</p><p>Ask whether you need to notify them when the work is complete and whether the policy contains conditions about operation, locking or maintenance. Request confirmation that you can keep with your policy documents.</p>"
+        "<p>There is no insurance discount we can promise for adding a driveway gate. Contact your insurer or broker before relying on the gate as a policy security measure. Describe the proposed installation and any change to property access.</p><p>Ask whether you need to notify them when the work is complete and whether the policy contains conditions about operation, locking or maintenance. Request confirmation that you can keep with your policy documents.</p><p>When planning changes to the entrance, use our <a href=\"/guides/driveway-home-security/\">driveway and home security guide</a> to consider gates, vehicle protection and daily access alongside the policy questions.</p>"
       ],
       [
         "Clarify what damage and costs are covered",
@@ -905,7 +905,8 @@
         "<p>Retain the quotation, installed product details, invoice, handover information and service records. Take photographs of the completed entrance and record changes to the equipment.</p><p>Use our <a href=\"/guides/electric-driveway-gates-cost-london/\">installed gate cost guide</a> to keep the installed scope clear. If you need <a href=\"/services/gate-repair-and-maintenance/\">repair work</a>, agree the inspection charge and authorisation arrangements while checking any insurer requirements.</p>"
       ]
     ],
-    "faqs": []
+    "faqs": [],
+    "updatedDate": "2026-10-13"
   },
   "driveway-gate-property-value-london": {
     "kind": "blog",
@@ -974,7 +975,7 @@
     "sections": [
       [
         "A gate does not authorise driving across a pavement",
-        "<p>If vehicles will cross a public footway to reach the property, check the vehicle-crossing requirements with the highway authority. An existing opening, gravel drive or gate is not proof that the crossing is approved.</p><p>Use the <a href=\"https://www.gov.uk/apply-dropped-kerb\">GOV.UK dropped-kerb service</a> to find the relevant council. Ask about an existing crossing as well as a proposed new or widened one.</p>"
+        "<p>If vehicles will cross a public footway to reach the property, check the vehicle-crossing requirements with the highway authority. An existing opening, gravel drive or gate is not proof that the crossing is approved.</p><p>Use the <a href=\"https://www.gov.uk/apply-dropped-kerb\">GOV.UK dropped-kerb service</a> to find the relevant council. Ask about an existing crossing as well as a proposed new or widened one.</p><p>After confirming the crossing requirements, use our <a href=\"/guides/driveway-home-security/\">driveway and home security checklist</a> to plan parking positions, pedestrian access and visitor controls within the entrance.</p>"
       ],
       [
         "Show the complete access arrangement",
@@ -1044,7 +1045,7 @@
     "sections": [
       [
         "Choose where parcels should go",
-        "<p>Decide whether a courier should enter the driveway or leave a parcel at an accessible delivery point outside the powered gate. Give clear instructions that do not require climbing, reaching through the gate or leaving goods in its movement path.</p><p>Consider pedestrian access and the position of a parcel box before adding an entry device. A delivery routine should also work when you cannot answer a call.</p>"
+        "<p>Decide whether a courier should enter the driveway or leave a parcel at an accessible delivery point outside the powered gate. Give clear instructions that do not require climbing, reaching through the gate or leaving goods in its movement path.</p><p>Consider pedestrian access and the position of a parcel box before adding an entry device. A delivery routine should also work when you cannot answer a call.</p><p>Fit the delivery routine into your wider <a href=\"/guides/driveway-home-security/\">driveway and home security plan</a>, including side access, vehicle protection and arrangements when nobody can answer.</p>"
       ],
       [
         "Manage codes and visitor calls",

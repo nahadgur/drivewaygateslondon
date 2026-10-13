@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const url = `${siteConfig.url}/guides/${guide.slug}/`;
 
   return {
-    title: params.slug === 'electric-driveway-gates-cost-london' ? guide.metaTitle : `${guide.title} | Driveway Gates London`,
+    title: guide.useMetaTitle || params.slug === 'electric-driveway-gates-cost-london' ? guide.metaTitle : `${guide.title} | Driveway Gates London`,
     description: guide.metaDescription,
     alternates: { canonical: url },
     openGraph: {

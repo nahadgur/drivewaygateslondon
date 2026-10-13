@@ -1,0 +1,84 @@
+{
+  "verdict": "PASS",
+  "date": "2026-10-13",
+  "route": "/guides/driveway-home-security/",
+  "body_words_excluding_headings_faq_takeaway": 2189,
+  "primary_sources": [
+    {
+      "url": "https://www.police.uk/cp/crime-prevention/keeping-vehicles-safe/preventing-car-vehicle-theft/",
+      "checked": "2026-10-13",
+      "verdict": "PASS",
+      "supports": "Vehicle locking, key storage, screened pouches and additional protection. Under 200 words derived; no theft-proof claims.",
+      "access": "Web tool retrieved current primary page; supplementary same-domain sources retained in ledger instead of duplicate public links."
+    },
+    {
+      "url": "https://www.met.police.uk/cp/crime-prevention/protect-home-crime/keep-burglars-out-property/",
+      "checked": "2026-10-13",
+      "verdict": "PASS",
+      "supports": "Visibility, CCTV limitations and lighting placement. Under 200 words derived; no numerical deterrence claim.",
+      "access": "Web tool retrieved current primary page; supplementary same-domain sources retained in ledger instead of duplicate public links."
+    },
+    {
+      "url": "https://www.met.police.uk/cp/crime-prevention/protect-home-crime/leaving-your-home-checklist/",
+      "checked": "2026-10-13",
+      "verdict": "PASS",
+      "supports": "Household closing-up and holiday routines. Under 200 words derived.",
+      "access": "Web tool retrieved current primary page; supplementary same-domain sources retained in ledger instead of duplicate public links."
+    },
+    {
+      "url": "https://www.met.police.uk/advice/advice-and-information/pa/problems-with-parking/",
+      "checked": "2026-10-13",
+      "verdict": "PASS",
+      "supports": "Distinguish private-land parking and crossing obstruction; seek advice before immobilising or moving vehicles. No self-help removal instructions.",
+      "access": "Web tool retrieved current primary page; supplementary same-domain sources retained in ledger instead of duplicate public links."
+    },
+    {
+      "url": "https://ico.org.uk/for-the-public/home-cctv-systems/",
+      "checked": "2026-10-13",
+      "verdict": "PASS",
+      "supports": "Recording beyond own boundary brings data-protection responsibilities; current guidance flags ongoing review. No invented retention period.",
+      "access": "Web tool retrieved current primary page; supplementary same-domain sources retained in ledger instead of duplicate public links."
+    },
+    {
+      "url": "https://www.ncsc.gov.uk/guidance/smart-devices-in-the-home",
+      "checked": "2026-10-13",
+      "verdict": "PASS",
+      "supports": "Account passwords, updates, manufacturer instructions and support life.",
+      "access": "Web tool retrieved current primary page; supplementary same-domain sources retained in ledger instead of duplicate public links."
+    },
+    {
+      "url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
+      "checked": "2026-10-13",
+      "verdict": "PASS",
+      "supports": "Whole-system, site-specific safety; maintenance; wind loading; preserve protection, no force adjustments.",
+      "access": "Web tool retrieved current primary page; supplementary same-domain sources retained in ledger instead of duplicate public links."
+    }
+  ],
+  "editorial_review": [
+    "All 20 proposed topic intents represented in 14 substantive sections, plus assessment/quote/safe-access guidance.",
+    "Original practical workflows and questions supplement limited primary-source paraphrase.",
+    "No invented prices, crime rates, effectiveness percentages, crash ratings, insurance savings, guarantees or case studies.",
+    "No dangerous DIY wiring, bypass, forced closing or lock modifications.",
+    "Only one end quote CTA, linking to existing real contact route.",
+    "Existing backlink edits are additive; corrected text and original publication dates retained."
+  ],
+  "asset": {
+    "path": "/images/guides/driveway-home-security.webp",
+    "size": [
+      1536,
+      1024
+    ],
+    "type": "Unique generated illustrative WebP; not a customer installation"
+  },
+  "backlinks": [
+    "/blog/automated-gate-home-insurance/",
+    "/blog/electric-gate-parcel-delivery-access-london/",
+    "/blog/smart-gate-integration-ring-nest-control4/",
+    "/blog/bi-fold-vs-sliding-gates-london/",
+    "/blog/telescopic-gates-space-saving-london/",
+    "/blog/do-i-need-a-dropped-kerb-for-a-driveway-gate-london/",
+    "/guides/best-intercom-systems/",
+    "/guides/how-to-manually-open-electric-gate/"
+  ],
+  "future_link_count": 13
+}

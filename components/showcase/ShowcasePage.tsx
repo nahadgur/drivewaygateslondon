@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import templates from '@/data/showcase/pages.json';
 import shared from '@/data/showcase/shared.json';
 import preparedTemplates from '@/data/showcase/repair-articles.json';
+import securityHub from '@/data/security-hub.json';
 import { publishedArticles } from '@/data/blog';
 import { applyPublicationLinks, preparedArticleCard, type PublicationLink } from '@/lib/prepared-article-links';
 import { Header } from '@/components/Header';
@@ -18,6 +19,9 @@ export function ShowcasePage({ route }: { route: string }) {
   const page = (templates as Record<string, PageTemplate>)[route] ?? (published ? prepared : undefined);
   if (!page) notFound();
   let main = page.main;
+  if (route === `/guides/${securityHub.slug}/`) {
+    main = applyPublicationLinks(main!, securityHub.publicationLinks, publishedArticles);
+  }
   if (prepared && published) {
     main = applyPublicationLinks(main!, prepared.publicationLinks, publishedArticles);
     const dateLabel = new Intl.DateTimeFormat('en-GB', {
