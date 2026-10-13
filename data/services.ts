@@ -41,7 +41,7 @@ export const services: Service[] = [
     }
   ],
   "reviewedFaqs": true,
-  "updatedDate": "2026-10-02"
+  "updatedDate": "2026-10-13"
 },
   {
   "id": "electric-swing",
@@ -384,7 +384,7 @@ export const services: Service[] = [
     }
   ],
   "reviewedFaqs": true,
-  "updatedDate": "2026-10-02"
+  "updatedDate": "2026-10-13"
 },
 ];
 

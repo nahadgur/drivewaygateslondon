@@ -55,11 +55,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Bi-fold leaves fold as they swing, reducing the depth occupied by some designs compared with a single full-length swing leaf. Sliding gates move alongside the opening and need a clear path beside it. Both arrangements need supports and space for their moving parts."
-    },
-    {
-      "type": "p",
-      "text": "For a short drive, draw the parked vehicle, its doors, the gate’s entire movement and a pedestrian route. Ask the installer to mark the dimensions of the actual mechanism rather than applying a percentage saving from another product."
+      "text": "<p>Bi-fold leaves fold as they swing, reducing the depth occupied by some designs compared with a single full-length swing leaf. Sliding gates move alongside the opening and need a clear path beside it. Both arrangements need supports and space for their moving parts.</p><p>For a short drive, draw the parked vehicle, its doors, the gate’s entire movement and a pedestrian route. Ask the installer to mark the dimensions of the actual mechanism rather than applying a percentage saving from another product.</p>"
     },
     {
       "type": "h2",
@@ -67,11 +63,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Folding designs need assessment around intermediate hinges and the area where the panels gather. Sliding designs need assessment along the run-back area and between the leaf and nearby walls or fencing."
-    },
-    {
-      "type": "p",
-      "text": "If one sliding leaf will not fit beside the entrance, compare <a href=\"/blog/telescopic-gates-space-saving-london/\">telescopic panels</a>. More panels change the support, movement and maintenance requirements; they do not make the surrounding space irrelevant."
+      "text": "<p>Folding designs need assessment around intermediate hinges and the area where the panels gather. Sliding designs need assessment along the run-back area and between the leaf and nearby walls or fencing.</p><p>If one sliding leaf will not fit beside the entrance, compare <a href=\"/blog/telescopic-gates-space-saving-london/\">telescopic panels</a>. More panels change the support, movement and maintenance requirements; they do not make the surrounding space irrelevant.</p>"
     },
     {
       "type": "h2",
@@ -79,11 +71,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Ground levels may interfere with a folding swing path or require changes to a sliding layout. Discuss drainage, parked-car position, visitors and bins. Ask what happens during manual release, particularly on a slope."
-    },
-    {
-      "type": "p",
-      "text": "Opening time depends on the selected equipment, travel and safe operation. Do not choose a layout on a universal two-second promise. A demonstration should show the proposed arrangement, including its stopping and closing behaviour."
+      "text": "<p>Ground levels may interfere with a folding swing path or require changes to a sliding layout. Discuss drainage, parked-car position, visitors and bins. Ask what happens during manual release, particularly on a slope.</p><p>Opening time depends on the selected equipment, travel and safe operation. Do not choose a layout on a universal two-second promise. A demonstration should show the proposed arrangement, including its stopping and closing behaviour.</p>"
     },
     {
       "type": "h2",
@@ -91,11 +79,35 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Request drawings, product models, groundworks, protective measures and service arrangements for both options. Use the <a href=\"/guides/swing-vs-sliding-gates/\">swing and sliding comparison</a> for the broader layout questions, then compare the complete quotations using our <a href=\"/guides/electric-driveway-gates-cost-london/\">installed gate cost guide</a>."
+      "text": "<p>Request drawings, product models, groundworks, protective measures and service arrangements for both options. Use the <a href=\"/guides/swing-vs-sliding-gates/\">swing and sliding comparison</a> for the broader layout questions, then compare the complete quotations using our <a href=\"/guides/electric-driveway-gates-cost-london/\">installed gate cost guide</a>.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Use a plan to compare what each design occupies"
+    },
+    {
+      "type": "p",
+      "text": "<div class=\"table-scroll\" role=\"region\" aria-label=\"Folding and sliding space comparison\" tabindex=\"0\"><table><thead><tr><th scope=\"col\">Measure</th><th scope=\"col\">Bi-fold proposal</th><th scope=\"col\">Sliding proposal</th></tr></thead><tbody><tr><td>Vehicle opening</td><td>Usable gap with the folded panels and hardware in their final positions.</td><td>Usable gap after the panel has travelled to its stored position.</td></tr><tr><td>Depth into the driveway</td><td>Entire folding and swinging envelope, not just the folded stack.</td><td>Projection of the complete travel arrangement and protective separation.</td></tr><tr><td>Space beside the opening</td><td>Room occupied by folded leaves, supports and operating equipment.</td><td>Full run-back length, supports and any cantilever tail.</td></tr><tr><td>Access for care</td><td>Hinges, linkages and operator servicing positions.</td><td>Running gear, guides, drive and track where fitted.</td></tr></tbody></table></div><p>Ask for both drawings at the same scale. Mark a parked car and the route a person uses beside it. A compact folded position does not show the space the gate passes through on the way there.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Compare realistic short-driveway situations"
+    },
+    {
+      "type": "p",
+      "text": "<p>Where the boundary has little free length but the drive has some depth, a folding design may deserve assessment. Where the car occupies much of the depth but a clear side strip remains, a sliding proposal may deserve assessment. These are starting points for a survey, not recommendations for an unmeasured entrance.</p><p>If both dimensions are constrained, ask which requirement would have to change: parking position, opening width, supports or the gate arrangement. Include bins, meter cupboards and access to the garden before calling any storage area spare space.</p><p>Show the approach with the actual vehicle you use. A gate that clears the parked car may still be awkward during a tight turn. Do not choose between drawings that assume different parking positions or omit a vehicle projection.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Allow for ownership and maintenance access"
+    },
+    {
+      "type": "p",
+      "text": "<p>Ask each supplier to identify the parts that need inspection and how an engineer reaches them. Discuss the effect of future paving, planting and fencing on that access. A design with more moving joints or panels needs a clear maintenance explanation, rather than a generic claim that all modern gates need little attention.</p><p>Compare finish care, supported replacement components and the documented manual-release arrangement. Ask for a demonstration of the complete operating sequence before handover. Keep the chosen layout with the service record so later changes to the drive can be checked against the gate’s actual movement.</p>"
     }
   ],
   "featuredImageAlt": "Installer checking a compact bi-fold driveway gate at a London home",
-  "updatedDate": "2026-10-02",
+  "updatedDate": "2026-10-13",
   "useMetaTitle": true
 },
   {
@@ -339,11 +351,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "An outward-opening gate can project beyond the property into a pavement or road. The visible edge of paving does not necessarily establish the legal highway boundary. Show the proposed swept path to the highway authority before choosing the layout."
-    },
-    {
-      "type": "p",
-      "text": "Section 153 of the <a href=\"https://www.legislation.gov.uk/ukpga/1980/66/section/153\">Highways Act 1980</a> addresses doors and gates opening onto a street. Obtain advice on the actual boundary and proposal rather than relying on an invented pavement clearance or fine amount."
+      "text": "<p>An outward-opening gate can project beyond the property into a pavement or road. The visible edge of paving does not necessarily establish the legal highway boundary. Show the proposed swept path to the highway authority before choosing the layout.</p><p>Section 153 of the <a href=\"https://www.legislation.gov.uk/ukpga/1980/66/section/153\">Highways Act 1980</a> addresses doors and gates opening onto a street. Obtain advice on the actual boundary and proposal rather than relying on an invented pavement clearance or fine amount.</p>"
     },
     {
       "type": "h2",
@@ -351,11 +359,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Gate height, listed status, withdrawn rights and the boundary work can affect planning requirements. A dropped kerb or vehicle crossing involves a separate highway enquiry. One approval does not settle all those matters."
-    },
-    {
-      "type": "p",
-      "text": "Use our <a href=\"/blog/do-i-need-a-dropped-kerb-for-a-driveway-gate-london/\">dropped-kerb guide</a> and <a href=\"/local-regulations/\">council planning directory</a> to prepare the questions."
+      "text": "<p>Gate height, listed status, withdrawn rights and the boundary work can affect planning requirements. A dropped kerb or vehicle crossing involves a separate highway enquiry. One approval does not settle all those matters.</p><p>Use our <a href=\"/blog/do-i-need-a-dropped-kerb-for-a-driveway-gate-london/\">dropped-kerb guide</a> and <a href=\"/local-regulations/\">council planning directory</a> to prepare the questions.</p>"
     },
     {
       "type": "h2",
@@ -363,15 +367,35 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "If an inward swing conflicts with a rising driveway or a parked car, ask for a measured comparison with sliding or folding options. Include pedestrians, visitors waiting to enter and manual operation."
+      "text": "<p>If an inward swing conflicts with a rising driveway or a parked car, ask for a measured comparison with sliding or folding options. Include pedestrians, visitors waiting to enter and manual operation.</p><p>See the <a href=\"/guides/swing-vs-sliding-gates/\">swing versus sliding guide</a> and <a href=\"/blog/automated-gates-sloping-driveways-london/\">sloping-driveway advice</a>. Changing the motor does not resolve a boundary conflict.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Draw the whole swept path against the boundary"
     },
     {
       "type": "p",
-      "text": "See the <a href=\"/guides/swing-vs-sliding-gates/\">swing versus sliding guide</a> and <a href=\"/blog/automated-gates-sloping-driveways-london/\">sloping-driveway advice</a>. Changing the motor does not resolve a boundary conflict."
+      "text": "<p>Use a plan that distinguishes the gate line, property boundary, highway extent and any shared or third-party land. Show each leaf closed, partway open and fully open. Include handles, stops and other projections rather than drawing only the central line of the leaf.</p><p>Mark where a person would stand to use the intercom and where a driver would wait for the gate. Show the usual pedestrian route along the frontage. If a boundary is uncertain, obtain the relevant advice before using the apparent edge of a paving material as the design limit.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Consider a setback as a measured proposal"
+    },
+    {
+      "type": "p",
+      "text": "<p>Setting a gate further inside the property may change where it moves and where vehicles wait. It can also reduce usable parking depth or affect the turning approach. Ask for the full layout to be checked rather than assuming a setback automatically resolves the design.</p><p>Compare an inward swing, folding arrangement or sliding option on the same plan. Identify which existing walls, piers or surfaces each alternative would alter. Include the effect on pedestrian entry and on access to bins, meters and garden routes.</p><p>For any outward proposal, obtain advice on the actual land and highway position and relevant permissions. Neither a motor selection nor an informal assurance that people rarely walk there settles the question.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Keep permission and fabrication documents aligned"
+    },
+    {
+      "type": "p",
+      "text": "<p>Provide the authority or adviser with existing and proposed plans, dimensions, photographs and an explanation of the work. Include changes to the vehicle crossing and driveway as separate items. Ask which decisions or approvals are needed before work starts.</p><p>Once the layout is agreed, compare the supplier’s fabrication drawing with it. Check the opening direction and position of the hinges explicitly. Keep any conditions with the quotation, and ask for further advice if a later change affects the swept path or frontage.</p>"
     }
   ],
   "featuredImageAlt": "Surveyor measuring a driveway boundary beside a London pavement",
-  "updatedDate": "2026-10-02",
+  "updatedDate": "2026-10-13",
   "useMetaTitle": true
 },
   {
@@ -391,11 +415,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "An underground swing-gate operator places much of the drive assembly in a foundation box near the hinge. This can reduce the equipment visible on the leaf, which may suit an entrance where appearance matters. Covers, release arrangements and other controls can remain visible."
-    },
-    {
-      "type": "p",
-      "text": "The operator is one part of the entrance. The installer still needs to assess the gate, hinges, supports, exposure and movement. Concealing a motor does not make an unsuitable gate ready for automation."
+      "text": "<p>An underground swing-gate operator places much of the drive assembly in a foundation box near the hinge. This can reduce the equipment visible on the leaf, which may suit an entrance where appearance matters. Covers, release arrangements and other controls can remain visible.</p><p>The operator is one part of the entrance. The installer still needs to assess the gate, hinges, supports, exposure and movement. Concealing a motor does not make an unsuitable gate ready for automation.</p>"
     },
     {
       "type": "h2",
@@ -403,11 +423,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Ask how the foundation box will drain at your property and who provides that work. Tell the installer about standing water and previous flooding. Discuss how the covers will remain accessible after paving, planting or resurfacing."
-    },
-    {
-      "type": "p",
-      "text": "The quotation should identify excavation, foundations, cable routes, drainage and reinstatement. Ask how future maintenance or replacement can take place without unnecessary damage to the finished driveway."
+      "text": "<p>Ask how the foundation box will drain at your property and who provides that work. Tell the installer about standing water and previous flooding. Discuss how the covers will remain accessible after paving, planting or resurfacing.</p><p>The quotation should identify excavation, foundations, cable routes, drainage and reinstatement. Ask how future maintenance or replacement can take place without unnecessary damage to the finished driveway.</p>"
     },
     {
       "type": "h2",
@@ -415,11 +431,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "An above-ground arm may involve a different set of alterations and maintenance access. Compare both options against the hinge geometry, required opening angle and appearance of the whole entrance."
-    },
-    {
-      "type": "p",
-      "text": "Request the proposed model and its suitability assessment. Voltage alone does not tell you whether a motor uses a hydraulic mechanism or what upkeep it needs. Follow the instructions for the specified equipment."
+      "text": "<p>An above-ground arm may involve a different set of alterations and maintenance access. Compare both options against the hinge geometry, required opening angle and appearance of the whole entrance.</p><p>Request the proposed model and its suitability assessment. Voltage alone does not tell you whether a motor uses a hydraulic mechanism or what upkeep it needs. Follow the instructions for the specified equipment.</p>"
     },
     {
       "type": "h2",
@@ -427,15 +439,35 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Ask for a demonstration of the actual manual release and how the leaf is controlled and secured afterwards. Keep the correct key and instructions accessible. Do not assume that every underground release sits in the same place."
+      "text": "<p>Ask for a demonstration of the actual manual release and how the leaf is controlled and secured afterwards. Keep the correct key and instructions accessible. Do not assume that every underground release sits in the same place.</p><p>Explore <a href=\"/services/electric-swing-gates/\">electric swing gates</a> and our <a href=\"/guides/automation-kit-installation-prices/\">retrofit quotation guide</a>. For an existing fault, arrange <a href=\"/services/gate-repair-and-maintenance/\">repair assessment</a> before opening a motor enclosure.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "What to include in a site survey"
     },
     {
       "type": "p",
-      "text": "Explore <a href=\"/services/electric-swing-gates/\">electric swing gates</a> and our <a href=\"/guides/automation-kit-installation-prices/\">retrofit quotation guide</a>. For an existing fault, arrange <a href=\"/services/gate-repair-and-maintenance/\">repair assessment</a> before opening a motor enclosure."
+      "text": "<p>Provide photographs of the full entrance, the hinge areas and the finished ground from safe positions. Explain whether the gate is existing or new, whether the driveway will be resurfaced and where water collects after rain. Ask the installer to identify any further structural or drainage investigation needed before quoting.</p><p>Have the proposed drawing show the relationship between the gate pivot and the operator, together with foundation boxes, covers and cable routes. Request confirmation of the opening angle and the space the leaf occupies throughout travel. Do not assume that a concealed operator removes restrictions caused by a rising driveway.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Read the groundworks allowance carefully"
+    },
+    {
+      "type": "p",
+      "text": "<div class=\"table-scroll\" role=\"region\" aria-label=\"Underground operator quotation scope\" tabindex=\"0\"><table><thead><tr><th scope=\"col\">Work</th><th scope=\"col\">Clarification to request</th></tr></thead><tbody><tr><td>Excavation and foundations</td><td>What is included, and how will unexpected ground conditions be handled?</td></tr><tr><td>Drainage</td><td>Where does water go and who provides and maintains the arrangement?</td></tr><tr><td>Power and cables</td><td>Which trade supplies the work and associated records?</td></tr><tr><td>Surface reinstatement</td><td>What finish will match the existing drive and which area is included?</td></tr><tr><td>Future access</td><td>How can covers be reached and equipment serviced after completion?</td></tr></tbody></table></div><p>Compare those items with an above-ground option before deciding that concealment is worth the additional site work for your entrance. Keep appearance, repair access and the complete quotation in the same discussion.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Retrofitting and replacing underground equipment"
+    },
+    {
+      "type": "p",
+      "text": "<p>For a retrofit, ask whether the existing hinges, posts and gate construction can work with the proposed operator. Identify any lifting, alterations or temporary removal in the quotation. Include safe access arrangements for residents while the entrance is unavailable.</p><p>For replacement equipment, provide the original models and service history. Ask whether existing boxes or parts can be retained and how their condition and compatibility will be established. Do not assume that an operator from the same brand fits the old box or retains every existing control.</p><p>At handover, request the care instructions and the documented release arrangements for the exact model. Agree who will inspect drainage and covers during servicing. If the installation develops a fault, describe the symptoms and obtain an assessment before opening concealed equipment.</p>"
     }
   ],
   "featuredImageAlt": "Engineer servicing an underground motor beneath a wrought-iron gate",
-  "updatedDate": "2026-10-02",
+  "updatedDate": "2026-10-13",
   "useMetaTitle": true
 },
   {
@@ -455,11 +487,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "An Article 4 direction removes specified permitted development rights in a defined area or at specified properties. Its existence somewhere in a borough does not establish the rules for your gate. Obtain the actual direction, map, schedule and effective date from the planning authority."
-    },
-    {
-      "type": "p",
-      "text": "Check whether the withdrawn rights cover the proposed boundary work. Camden’s <a href=\"https://www.camden.gov.uk/article-4-directions1\">Article 4 directory</a> separates different kinds of directions and links to the relevant records; use your own authority’s equivalent."
+      "text": "<p>An Article 4 direction removes specified permitted development rights in a defined area or at specified properties. Its existence somewhere in a borough does not establish the rules for your gate. Obtain the actual direction, map, schedule and effective date from the planning authority.</p><p>Check whether the withdrawn rights cover the proposed boundary work. Camden’s <a href=\"https://www.camden.gov.uk/article-4-directions1\">Article 4 directory</a> separates different kinds of directions and links to the relevant records; use your own authority’s equivalent.</p>"
     },
     {
       "type": "h2",
@@ -467,11 +495,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Conservation-area designation, listed status and conditions on earlier planning permissions are separate checks. The position beside a highway and the proposed height can also affect the gate proposal. A neighbour’s replacement gate is not proof that your work is permitted."
-    },
-    {
-      "type": "p",
-      "text": "Start with the <a href=\"/local-regulations/\">council planning directory</a> and <a href=\"https://www.planningportal.co.uk/permission/common-projects/fences-gates-and-garden-walls/planning-permission/\">general gate planning guidance</a>. Ask the authority which information it needs for your address."
+      "text": "<p>Conservation-area designation, listed status and conditions on earlier planning permissions are separate checks. The position beside a highway and the proposed height can also affect the gate proposal. A neighbour’s replacement gate is not proof that your work is permitted.</p><p>Start with the <a href=\"/local-regulations/\">council planning directory</a> and <a href=\"https://www.planningportal.co.uk/permission/common-projects/fences-gates-and-garden-walls/planning-permission/\">general gate planning guidance</a>. Ask the authority which information it needs for your address.</p>"
     },
     {
       "type": "h2",
@@ -479,15 +503,35 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Provide a site plan, photographs of the existing boundary and a drawing of the proposed gate, pillars and opening direction. Include dimensions, materials and any excavation, paving or access changes."
+      "text": "<p>Provide a site plan, photographs of the existing boundary and a drawing of the proposed gate, pillars and opening direction. Include dimensions, materials and any excavation, paving or access changes.</p><p>Ask whether a formal application, consent or certificate is appropriate. Retain the written response and any conditions with the quotation. Set the installation programme after the required checks.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Work through the map and written schedule together"
     },
     {
       "type": "p",
-      "text": "Ask whether a formal application, consent or certificate is appropriate. Retain the written response and any conditions with the quotation. Set the installation programme after the required checks."
+      "text": "<p>Begin with the council’s official directory, then open the actual direction and its supporting map. Locate your address and the boundary where the work is proposed. Check whether the document applies to the whole property, particular elevations or a mapped area. If the drawing is difficult to interpret, ask the planning team to confirm its application.</p><p>Read the schedule of rights withdrawn and compare it with the work you intend to do. A direction relating to a different type of development should not be treated as a blanket prohibition on all changes. Keep the date and document reference so the enquiry refers to the same record the authority uses.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Describe the proposed work in separate parts"
+    },
+    {
+      "type": "p",
+      "text": "<div class=\"table-scroll\" role=\"region\" aria-label=\"Article 4 enquiry information\" tabindex=\"0\"><table><thead><tr><th scope=\"col\">Part of the project</th><th scope=\"col\">Details to provide</th></tr></thead><tbody><tr><td>Existing boundary</td><td>Photographs, materials, condition and dimensions.</td></tr><tr><td>Gate alteration or replacement</td><td>Proposed height, width, infill, finish and opening direction.</td></tr><tr><td>Supports and groundworks</td><td>Piers, posts, foundations, drainage and excavation.</td></tr><tr><td>Automation and controls</td><td>Visible equipment, cable routes and associated alterations.</td></tr><tr><td>Other access changes</td><td>Paving, parking layout and any vehicle-crossing proposal.</td></tr></tbody></table></div><p>This makes it easier to obtain advice on the actual project. Avoid describing a complete replacement with new piers as a minor repair, or assuming that a hidden motor means there are no visible or physical changes to consider.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Keep a record before placing the order"
+    },
+    {
+      "type": "p",
+      "text": "<p>Save the applicable direction, map, written advice and any formal decision with the final drawings. Ask the supplier to identify revisions that change the approved or advised scope. Materials, heights and opening arrangements should match the documents used to resolve the permission question.</p><p>If you cannot establish whether a right remains available, ask the authority or a qualified planning adviser what formal route can give the required certainty. Do not treat a lack of enforcement against another property as evidence for yours. Resolve the issue before fabrication or removal of existing boundary features.</p>"
     }
   ],
   "featuredImageAlt": "Homeowner and surveyor reviewing gate plans on a Victorian London street",
-  "updatedDate": "2026-10-02",
+  "updatedDate": "2026-10-13",
   "useMetaTitle": true
 },
   {
@@ -507,11 +551,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Photograph the existing gate, railings, piers and adjacent frontage. Note original details you want to retain and damage that needs repair. Find the council’s conservation-area appraisal or management guidance for the actual address."
-    },
-    {
-      "type": "p",
-      "text": "Avoid assuming that all period homes need the same metalwork, colour or dimensions. A new gate should be discussed in the context of that boundary and the applicable planning controls."
+      "text": "<p>Photograph the existing gate, railings, piers and adjacent frontage. Note original details you want to retain and damage that needs repair. Find the council’s conservation-area appraisal or management guidance for the actual address.</p><p>Avoid assuming that all period homes need the same metalwork, colour or dimensions. A new gate should be discussed in the context of that boundary and the applicable planning controls.</p>"
     },
     {
       "type": "h2",
@@ -519,11 +559,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Check conservation designation, any Article 4 direction, listed status and existing conditions. Demolition or alteration of a boundary can raise a different question from adding automation. Ask the planning authority to identify the process for the complete proposal."
-    },
-    {
-      "type": "p",
-      "text": "Our <a href=\"/blog/article-4-directions-gate-planning-permission/\">Article 4 guide</a> explains how to read a direction. Use the <a href=\"/local-regulations/\">council directory</a> to locate the responsible authority."
+      "text": "<p>Check conservation designation, any Article 4 direction, listed status and existing conditions. Demolition or alteration of a boundary can raise a different question from adding automation. Ask the planning authority to identify the process for the complete proposal.</p><p>Our <a href=\"/blog/article-4-directions-gate-planning-permission/\">Article 4 guide</a> explains how to read a direction. Use the <a href=\"/local-regulations/\">council directory</a> to locate the responsible authority.</p>"
     },
     {
       "type": "h2",
@@ -531,11 +567,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Ask a suitable metalworker or joiner to assess the existing gate and supports. Retaining sound fabric may be an option, but condition and safe operation must guide the proposal. Compare repair, replacement and automation as separate pieces of work."
-    },
-    {
-      "type": "p",
-      "text": "Our <a href=\"/blog/wrought-iron-gate-restoration-london/\">metal-gate restoration guide</a> covers material identification and finish questions. Do not remove historic features before the necessary advice or consent."
+      "text": "<p>Ask a suitable metalworker or joiner to assess the existing gate and supports. Retaining sound fabric may be an option, but condition and safe operation must guide the proposal. Compare repair, replacement and automation as separate pieces of work.</p><p>Our <a href=\"/blog/wrought-iron-gate-restoration-london/\">metal-gate restoration guide</a> covers material identification and finish questions. Do not remove historic features before the necessary advice or consent.</p>"
     },
     {
       "type": "h2",
@@ -543,19 +575,35 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Drawings should show gate proportions, infill, pillars, finish and opening path. Include visible controls, cable routes, drainage and groundworks. A concealed motor still needs foundations and maintenance access."
+      "text": "<p>Drawings should show gate proportions, infill, pillars, finish and opening path. Include visible controls, cable routes, drainage and groundworks. A concealed motor still needs foundations and maintenance access.</p><p>Agree who obtains permissions and which approved details govern fabrication. Compare the quotation against those drawings before ordering.</p><p>Further reading: <a href=\"https://www.planningportal.co.uk/permission/common-projects/fences-gates-and-garden-walls/planning-permission/\">Planning Portal gate and boundary guidance</a>.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Build an address-specific evidence file"
     },
     {
       "type": "p",
-      "text": "Agree who obtains permissions and which approved details govern fabrication. Compare the quotation against those drawings before ordering."
+      "text": "<p>Save the council map showing your property, the relevant appraisal and the written controls that apply. Record the document dates and the parts you think relate to the boundary. If a map is unclear, ask the planning team to identify the property before commissioning a design around an assumption.</p><p>Include dated photographs from the street and the garden, with close views of hinges, piers, railings and decorative details. Label damage separately from alterations you would like to make. This helps an adviser distinguish a repair proposal from a different frontage design.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Compare repair, adaptation and replacement"
     },
     {
       "type": "p",
-      "text": "Further reading: <a href=\"https://www.planningportal.co.uk/permission/common-projects/fences-gates-and-garden-walls/planning-permission/\">Planning Portal gate and boundary guidance</a>."
+      "text": "<p>A repair brief might retain the leaves and address particular defective joints or fittings. An adaptation might retain the appearance while changing supports or introducing automation. A replacement could alter proportions, materials and the relationship with the adjoining boundary. Describe the actual work instead of relying on the word restoration to cover all three.</p><p>Ask the relevant specialist to explain which original parts could remain and which need intervention. Keep that assessment alongside the design drawings. Do not remove a gate for workshop work before the permission question and responsibility for secure temporary access have been resolved.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Prepare a drawing and materials checklist"
+    },
+    {
+      "type": "p",
+      "text": "<p>Show the existing and proposed elevations at a useful scale, together with a plan of the opening path. Label height, width, piers, infill, finials and the adjoining wall or railings. Include the colour, sheen and finish reference, with samples where requested.</p><p>Add the position of intercoms, keypads, lights, cabinets and any visible cabling. Show excavation or changes to paving and drainage, even if the finished motor is concealed. Ask the authority or adviser for its current submission requirements rather than assuming this checklist is the complete application.</p><p>Before ordering, compare the final quotation and fabrication drawing with any approved details. Keep the decision, conditions and agreed drawing revisions together. If the supplier proposes a change, establish whether it needs further advice before treating it as a harmless substitution.</p>"
     }
   ],
   "featuredImageAlt": "Gate specialist discussing sympathetic ironwork in a London conservation area",
-  "updatedDate": "2026-10-02",
+  "updatedDate": "2026-10-13",
   "useMetaTitle": true
 },
 
@@ -1057,11 +1105,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "List the motors, controller, intercom, receiver, sensors and any lighting or heaters. Record movement demand and the equipment that remains powered while the gate waits. The number of opening cycles alone cannot determine the required panel and battery."
-    },
-    {
-      "type": "p",
-      "text": "Use measured consumption or specifications for the exact equipment. Our <a href=\"/guides/electric-gate-running-costs/\">running-cost calculation</a> separates movement from standby demand."
+      "text": "<p>List the motors, controller, intercom, receiver, sensors and any lighting or heaters. Record movement demand and the equipment that remains powered while the gate waits. The number of opening cycles alone cannot determine the required panel and battery.</p><p>Use measured consumption or specifications for the exact equipment. Our <a href=\"/guides/electric-gate-running-costs/\">running-cost calculation</a> separates movement from standby demand.</p>"
     },
     {
       "type": "h2",
@@ -1069,11 +1113,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Ask the designer to assess panel location, orientation, shading and seasonal generation. Trees, buildings and winter sunlight can change the available energy. An annual generation average does not establish reliable operation through a run of poor weather."
-    },
-    {
-      "type": "p",
-      "text": "The proposal should state expected use, assumptions for low-generation periods and the battery reserve. Request a site-specific calculation rather than a generic panel, voltage and battery shopping list."
+      "text": "<p>Ask the designer to assess panel location, orientation, shading and seasonal generation. Trees, buildings and winter sunlight can change the available energy. An annual generation average does not establish reliable operation through a run of poor weather.</p><p>The proposal should state expected use, assumptions for low-generation periods and the battery reserve. Request a site-specific calculation rather than a generic panel, voltage and battery shopping list.</p>"
     },
     {
       "type": "h2",
@@ -1081,11 +1121,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Ask what happens when the battery reaches its operating limit, how you receive a warning and what access remains possible. Confirm charging arrangements, battery replacement and safe manual operation."
-    },
-    {
-      "type": "p",
-      "text": "A solar supply does not remove the need to assess gate movement, supports or protective measures. The installer must consider the complete powered entrance and how it behaves during a power shortage."
+      "text": "<p>Ask what happens when the battery reaches its operating limit, how you receive a warning and what access remains possible. Confirm charging arrangements, battery replacement and safe manual operation.</p><p>A solar supply does not remove the need to assess gate movement, supports or protective measures. The installer must consider the complete powered entrance and how it behaves during a power shortage.</p>"
     },
     {
       "type": "h2",
@@ -1093,15 +1129,35 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Price the solar equipment, mounting, cabling, batteries, maintenance and replacement alongside a suitable mains-supply proposal. Include trenching and reinstatement for the mains option. A payback claim needs those actual costs and load assumptions."
+      "text": "<p>Price the solar equipment, mounting, cabling, batteries, maintenance and replacement alongside a suitable mains-supply proposal. Include trenching and reinstatement for the mains option. A payback claim needs those actual costs and load assumptions.</p><p>Send the gate location, photographs and expected use when you discuss your entrance. Ask for equipment availability and supported configurations in writing before purchasing a kit.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "A small load example with explicit assumptions"
     },
     {
       "type": "p",
-      "text": "Send the gate location, photographs and expected use when you <a href=\"/contact/\">discuss your entrance</a>. Ask for equipment availability and supported configurations in writing before purchasing a kit."
+      "text": "<p>The following arithmetic is illustrative, not a recommended system size or a measured London installation. Assume the complete entrance draws 100 watts during movement, operates for 200 seconds per day and draws 5 watts during the remaining time. Movement uses 100 × 200 ÷ 3,600 = 5.56 watt-hours per day. Idle demand uses 5 × (24 − 200 ÷ 3,600) = 119.72 watt-hours. The assumed total is 125.28 watt-hours per day.</p><p>That example shows why the designer needs standby demand as well as cycle count. It does not include conversion or charging losses, battery operating limits, additional equipment or a reserve for poor weather. A battery’s nameplate capacity cannot be treated as fully usable energy, and a panel’s rated watts do not state its daily winter output.</p><p>Ask for the same calculation using the proposed equipment and site assumptions. Identify which loads the designer has included and how the required reserve was chosen. Keep the calculation with the quotation so a later intercom or lighting addition prompts a review.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Compare solar and mains by project scope"
+    },
+    {
+      "type": "p",
+      "text": "<div class=\"table-scroll\" role=\"region\" aria-label=\"Solar and mains project comparison\" tabindex=\"0\"><table><thead><tr><th scope=\"col\">Item</th><th scope=\"col\">Solar proposal</th><th scope=\"col\">Mains proposal</th></tr></thead><tbody><tr><td>Site work</td><td>Panel mounting, cables, battery location and access.</td><td>Supply assessment, cable route, excavation and reinstatement.</td></tr><tr><td>Energy planning</td><td>Seasonal generation, load, storage and low-generation reserve.</td><td>Suitability of the supply and operating consumption.</td></tr><tr><td>Ongoing care</td><td>Panel and battery care, monitoring and replacement terms.</td><td>Electrical and gate-system care under the specified instructions.</td></tr><tr><td>Interrupted supply</td><td>Defined behaviour at low battery and authorised fallback.</td><td>Defined behaviour during a power cut and any specified backup.</td></tr></tbody></table></div><p>Request comparable gate controls and protective measures in both options. The power-source choice should not quietly remove an access function that the household relies on.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Questions for a solar survey"
+    },
+    {
+      "type": "p",
+      "text": "<p>Show the proposed panel location at different times of day and identify nearby trees or buildings. Ask how the designer will account for seasonal shading and future growth. Confirm whether the mounting position is acceptable for the property and how someone will reach it for maintenance.</p><p>Explain normal usage and unusually busy days. Ask what warning the owner receives if energy becomes insufficient and who supports the charging equipment. Do not accept an annual average or a generic payback claim as proof that the gate will operate through the required low-generation period.</p>"
     }
   ],
   "featuredImageAlt": "Installer mounting a solar panel for an automated timber driveway gate",
-  "updatedDate": "2026-10-02",
+  "updatedDate": "2026-10-13",
   "useMetaTitle": true
 },
 
@@ -1174,11 +1230,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Accoya starts as softwood and undergoes acetylation, a modification process. It is not a naturally occurring hardwood or a chemical-free treatment. Read the manufacturer’s <a href=\"https://www.accoya.com/faq/is-accoya-hardwood-or-softwood/\">material explanation</a> when comparing it with other timber options."
-    },
-    {
-      "type": "p",
-      "text": "Specify the actual wood product in the quotation. The appearance of a finished gate also depends on its boards, joints, frame and coating."
+      "text": "<p>Accoya starts as softwood and undergoes acetylation, a modification process. It is not a naturally occurring hardwood or a chemical-free treatment. Read the manufacturer’s <a href=\"https://www.accoya.com/faq/is-accoya-hardwood-or-softwood/\">material explanation</a> when comparing it with other timber options.</p><p>Specify the actual wood product in the quotation. The appearance of a finished gate also depends on its boards, joints, frame and coating.</p>"
     },
     {
       "type": "h2",
@@ -1186,11 +1238,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Ask how the joiner has designed the gate for its width, weight and movement. Discuss the supports, fittings and exposure alongside the timber choice. Material properties alone cannot guarantee that a complete gate will never move, split or need adjustment."
-    },
-    {
-      "type": "p",
-      "text": "View a finish sample beside the property. Decide whether you want a painted surface, visible grain or a weathered appearance, and request the care schedule for that choice."
+      "text": "<p>Ask how the joiner has designed the gate for its width, weight and movement. Discuss the supports, fittings and exposure alongside the timber choice. Material properties alone cannot guarantee that a complete gate will never move, split or need adjustment.</p><p>View a finish sample beside the property. Decide whether you want a painted surface, visible grain or a weathered appearance, and request the care schedule for that choice.</p>"
     },
     {
       "type": "h2",
@@ -1198,11 +1246,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Request the current manufacturer terms for the supplied material and the separate terms for fabrication, finish, fittings, installation and automation. Confirm what a claim covers, exclusions, records required and any labour charges."
-    },
-    {
-      "type": "p",
-      "text": "A timber warranty does not automatically cover coatings, hinges or the workmanship of a finished gate. Check the documents linked from <a href=\"https://www.accoya.com/uk/faqs/owning-accoya/\">Accoya’s ownership guidance</a> against the proposed application."
+      "text": "<p>Request the current manufacturer terms for the supplied material and the separate terms for fabrication, finish, fittings, installation and automation. Confirm what a claim covers, exclusions, records required and any labour charges.</p><p>A timber warranty does not automatically cover coatings, hinges or the workmanship of a finished gate. Check the documents linked from Accoya’s ownership guidance against the proposed application.</p>"
     },
     {
       "type": "h2",
@@ -1210,11 +1254,35 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Use the same dimensions, board layout, finish and automation scope to compare Accoya with other <a href=\"/services/wooden-driveway-gates/\">wooden gates</a>. Our <a href=\"/guides/aluminium-vs-wooden-driveway-gates/\">timber and aluminium comparison</a> includes wood-effect options. Ask for product availability and written terms before deciding."
+      "text": "<p>Use the same dimensions, board layout, finish and automation scope to compare Accoya with other <a href=\"/services/wooden-driveway-gates/\">wooden gates</a>. Our <a href=\"/guides/aluminium-vs-wooden-driveway-gates/\">timber and aluminium comparison</a> includes wood-effect options. Ask for product availability and written terms before deciding.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Choose the finished appearance and care together"
+    },
+    {
+      "type": "p",
+      "text": "<p>Compare an opaque painted sample, a finish that leaves grain visible and any proposed uncoated or weathering approach with the fabricator. Ask which options are appropriate for its gate construction and the exposure at your entrance. A preference for natural colour should become a written finish brief rather than an assumption that the appearance will remain unchanged.</p><p>Look at board ends, joints, the rear face and the transition to hinges and posts. Ask how the finish will be applied to those areas and what happens after cutting or fitting on site. Match the pedestrian gate and adjoining frontage using the same approved samples.</p><p>Request the actual cleaning and inspection instructions. Discuss whether you will maintain the finish yourself within those instructions or arrange contractor care. The timber choice does not remove the need to look after fittings or automation.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Separate the promises in a quotation"
+    },
+    {
+      "type": "p",
+      "text": "<div class=\"table-scroll\" role=\"region\" aria-label=\"Accoya gate warranty questions\" tabindex=\"0\"><table><thead><tr><th scope=\"col\">Part</th><th scope=\"col\">Document to request</th></tr></thead><tbody><tr><td>Supplied wood</td><td>Current manufacturer terms for the product and intended application.</td></tr><tr><td>Gate construction</td><td>Fabricator’s terms covering its completed gate and workmanship.</td></tr><tr><td>Coating</td><td>Finish specification, care requirements and applicable coating terms.</td></tr><tr><td>Hinges and installation</td><td>Supplier and installer terms, including labour and exclusions.</td></tr><tr><td>Automation</td><td>Equipment and installation terms plus maintenance requirements.</td></tr></tbody></table></div><p>Ask who receives a claim if the cause is unclear. Establish whether removal, transport, refitting or refinishing would be included before treating a material warranty as cover for the complete entrance. Keep proof of the supplied product with the invoice and care records.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Compare an equivalent gate, not just a timber label"
+    },
+    {
+      "type": "p",
+      "text": "<p>Use the same opening dimensions, board arrangement, frame details and controls when requesting an alternative. Ask which changes the fabricator recommends for each timber and why. A price difference may reflect construction, finish or included site work as well as the raw material.</p><p>For retained posts or an existing powered entrance, request a suitability assessment of the whole arrangement. A replacement leaf may change weight, geometry or loading. Confirm those interfaces before ordering the new gates and keep the agreed specification for future repairs.</p>"
     }
   ],
   "featuredImageAlt": "Joiner checking an Accoya-style timber driveway gate after wet weather",
-  "updatedDate": "2026-10-02",
+  "updatedDate": "2026-10-13",
   "useMetaTitle": true
 },
   {
@@ -1286,11 +1354,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "A traditional appearance does not prove a gate is wrought iron. Ask a metalwork specialist to identify the material, previous repairs and the condition of leaves, hinges, fixings and supports. Photograph decorative details before work begins."
-    },
-    {
-      "type": "p",
-      "text": "A finish can hide loss of section or damaged joints. Separate cosmetic work from structural repair in the assessment, and keep people away from a gate that is unstable."
+      "text": "<p>A traditional appearance does not prove a gate is wrought iron. Ask a metalwork specialist to identify the material, previous repairs and the condition of leaves, hinges, fixings and supports. Photograph decorative details before work begins.</p><p>A finish can hide loss of section or damaged joints. Separate cosmetic work from structural repair in the assessment, and keep people away from a gate that is unstable.</p>"
     },
     {
       "type": "h2",
@@ -1298,11 +1362,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "The proposed method should suit the metal, condition and existing coatings. Ask how the contractor will assess unknown old paint and manage dust, waste and nearby surfaces. Do not start abrasive stripping or heating from a generic restoration recipe."
-    },
-    {
-      "type": "p",
-      "text": "If the boundary is listed or has conservation controls, check required advice or consent before removing fabric. Read our <a href=\"/blog/conservation-area-gate-planning-london/\">conservation-area guide</a> and record any conditions in the scope."
+      "text": "<p>The proposed method should suit the metal, condition and existing coatings. Ask how the contractor will assess unknown old paint and manage dust, waste and nearby surfaces. Do not start abrasive stripping or heating from a generic restoration recipe.</p><p>If the boundary is listed or has conservation controls, check required advice or consent before removing fabric. Read our <a href=\"/blog/conservation-area-gate-planning-london/\">conservation-area guide</a> and record any conditions in the scope.</p>"
     },
     {
       "type": "h2",
@@ -1310,11 +1370,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Compare physical samples for colour, sheen and texture. Ask how the coating system treats joints, edges, repaired areas and the back face. Confirm which preparation and coating stages form part of the quotation."
-    },
-    {
-      "type": "p",
-      "text": "For a period entrance, compare the gate with the railings, piers and house details. There is no universal heritage-grade finish that replaces an assessment of the actual material and conservation context. Request care instructions and written finish terms."
+      "text": "<p>Compare physical samples for colour, sheen and texture. Ask how the coating system treats joints, edges, repaired areas and the back face. Confirm which preparation and coating stages form part of the quotation.</p><p>For a period entrance, compare the gate with the railings, piers and house details. There is no universal heritage-grade finish that replaces an assessment of the actual material and conservation context. Request care instructions and written finish terms.</p>"
     },
     {
       "type": "h2",
@@ -1322,15 +1378,35 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "A restored appearance does not establish suitability for powered movement. Ask for assessment of the hinges, supports, geometry, exposure and hazards around the opening before adding a drive."
+      "text": "<p>A restored appearance does not establish suitability for powered movement. Ask for assessment of the hinges, supports, geometry, exposure and hazards around the opening before adding a drive.</p><p>Compare repair and replacement proposals with equivalent finishing and handover scope. Discuss <a href=\"/services/metal-driveway-gates/\">metal gate options</a> or <a href=\"/services/gate-repair-and-maintenance/\">gate repairs</a> using photographs and your existing service records.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Ask for an assessment-to-handover programme"
     },
     {
       "type": "p",
-      "text": "Compare repair and replacement proposals with equivalent finishing and handover scope. Discuss <a href=\"/services/metal-driveway-gates/\">metal gate options</a> or <a href=\"/services/gate-repair-and-maintenance/\">gate repairs</a> using photographs and your existing service records."
+      "text": "<p>Start with photographs and an inventory of the gate, matching railings, hinges and decorative pieces. Ask the specialist to separate urgent stability concerns, repairable damage and finish deterioration. Agree whether further findings may emerge after appropriate preparation exposes the material.</p><p>The written programme should explain temporary access, removal if needed, transport, workshop or on-site work, finish stages and refitting. Identify who deals with posts, masonry and automation where those fall outside the metalworker’s scope. Record how additional repairs will be priced and authorised.</p><p>At completion, compare the work with the inventory and agreed drawings. Ask for the repair record, finish specification and care instructions. For a powered entrance, arrange the relevant gate-system checks after refitting rather than assuming workshop restoration completes the whole job.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Compare finishing proposals by method and result"
+    },
+    {
+      "type": "p",
+      "text": "<div class=\"table-scroll\" role=\"region\" aria-label=\"Metal gate finish comparison\" tabindex=\"0\"><table><thead><tr><th scope=\"col\">Proposal detail</th><th scope=\"col\">What to ask</th></tr></thead><tbody><tr><td>Preparation</td><td>How will the method suit the identified metal, existing coatings and historic detail?</td></tr><tr><td>Coating system</td><td>Which stages and products apply to the exterior gate, repaired areas and fittings?</td></tr><tr><td>Appearance</td><td>What colour, sheen and texture will the approved sample show?</td></tr><tr><td>Future repair</td><td>How should scratches or local coating failure be assessed and treated?</td></tr></tbody></table></div><p>A finish label does not establish the suitability of the preparation or the quality of a repair beneath it. Ask how the contractor will protect fine detail and deal with inaccessible joints. Keep a sample and written reference so future maintenance has a clear starting point.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Decide what is worth retaining"
+    },
+    {
+      "type": "p",
+      "text": "<p>Compare the significance and condition of the existing metalwork with the alterations required to keep it in service. A gate with useful original detail may justify specialist repair, while extensive loss of structural material may require a different proposal. Ask the specialist to explain the evidence rather than choosing on a photograph of the front face.</p><p>Include refitting, support repairs and future care when comparing restoration with replacement. Historic England’s <a href=\"https://historicengland.org.uk/advice/technical-advice/buildings/maintain-and-conserve-metals/\">guidance on conserving architectural metals</a> provides background on material-appropriate care. Use professional advice for the actual gate and any conservation controls.</p>"
     }
   ],
   "featuredImageAlt": "Restoration specialist removing rust from a London wrought-iron gate",
-  "updatedDate": "2026-10-02",
+  "updatedDate": "2026-10-13",
   "useMetaTitle": true
 },
 
@@ -1509,11 +1585,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "If vehicles will cross a public footway to reach the property, check the vehicle-crossing requirements with the highway authority. An existing opening, gravel drive or gate is not proof that the crossing is approved."
-    },
-    {
-      "type": "p",
-      "text": "Use the <a href=\"https://www.gov.uk/apply-dropped-kerb\">GOV.UK dropped-kerb service</a> to find the relevant council. Ask about an existing crossing as well as a proposed new or widened one."
+      "text": "<p>If vehicles will cross a public footway to reach the property, check the vehicle-crossing requirements with the highway authority. An existing opening, gravel drive or gate is not proof that the crossing is approved.</p><p>Use the <a href=\"https://www.gov.uk/apply-dropped-kerb\">GOV.UK dropped-kerb service</a> to find the relevant council. Ask about an existing crossing as well as a proposed new or widened one.</p>"
     },
     {
       "type": "h2",
@@ -1521,11 +1593,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Provide photographs, the property address and a plan showing the gate, parking space, road and pavement. Identify street trees, utility covers, lamps and other features near the proposed crossing."
-    },
-    {
-      "type": "p",
-      "text": "Ask the authority for its current eligibility rules, application process, approved work arrangements and charges. Do not book pavement work on the basis of another borough’s dimensions or a generic online price."
+      "text": "<p>Provide photographs, the property address and a plan showing the gate, parking space, road and pavement. Identify street trees, utility covers, lamps and other features near the proposed crossing.</p><p>Ask the authority for its current eligibility rules, application process, approved work arrangements and charges. Do not book pavement work on the basis of another borough’s dimensions or a generic online price.</p>"
     },
     {
       "type": "h2",
@@ -1533,15 +1601,35 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Check planning requirements for the gate and entrance, highway approval for the crossing, and ownership or lease restrictions. The responsible authority should confirm which processes apply to your address and road."
+      "text": "<p>Check planning requirements for the gate and entrance, highway approval for the crossing, and ownership or lease restrictions. The responsible authority should confirm which processes apply to your address and road.</p><p>Paving and drainage need their own design. Read our <a href=\"/blog/front-garden-paving-suds-london/\">front-garden paving guide</a> and include approved crossover work and surface reinstatement in the <a href=\"/guides/electric-driveway-gates-cost-london/\">installed gate cost guide</a>.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Existing, new and widened crossings need different enquiries"
     },
     {
       "type": "p",
-      "text": "Paving and drainage need their own design. Read our <a href=\"/blog/front-garden-paving-suds-london/\">front-garden paving guide</a> and include approved crossover work and surface reinstatement in the <a href=\"/guides/electric-driveway-gates-cost-london/\">installed gate cost guide</a>."
+      "text": "<div class=\"table-scroll\" role=\"region\" aria-label=\"Vehicle crossing enquiry checklist\" tabindex=\"0\"><table><thead><tr><th scope=\"col\">Your situation</th><th scope=\"col\">Information to gather</th><th scope=\"col\">Question for the authority</th></tr></thead><tbody><tr><td>An existing crossing will stay</td><td>Address, photographs and any approval or completion records.</td><td>Does the recorded approval cover the access you intend to use?</td></tr><tr><td>You want a new crossing</td><td>A plan of the road, footway, entrance and proposed parking.</td><td>Is the location eligible, and what application and work process applies?</td></tr><tr><td>You want to widen or move access</td><td>Existing and proposed dimensions and nearby street features.</td><td>What approval is needed for the alteration and associated street work?</td></tr></tbody></table></div><p>Use the answer for your property rather than an assumption based on the neighbour’s driveway. An altered gate line can also affect how vehicles approach an existing crossing, so show the complete proposed layout.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Sequence the crossing and gate projects"
+    },
+    {
+      "type": "p",
+      "text": "<p>Resolve the access proposal before committing to a gate size or finished driveway layout. Ask the highway authority which drawings and supporting information it needs, who may carry out the work and whether other approvals must be obtained first. Keep the written requirements with your project brief.</p><p>Then coordinate the permitted crossing, gate position, driveway levels and drainage with the relevant contractors. Identify the work on private land separately from work affecting the highway. Ask who will manage each interface and what happens if an approval requires a different layout.</p><p>Avoid promising an installation date until the necessary decisions and work arrangements are known. Fabrication, crossing work and surfacing may follow different programmes. A change to one part of the entrance should prompt a check of the others before materials are ordered.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Prepare a useful first enquiry"
+    },
+    {
+      "type": "p",
+      "text": "<p>Send clear photographs looking from the road towards the parking area and along the pavement in both directions. On the plan, identify trees, lamp columns, utility covers and other features near the proposed access. Explain the vehicle you intend to park and show how it would sit inside the property.</p><p>Ask for the current process, charges, eligibility requirements and any survey needed. Keep questions about ownership, leases or shared access separate from the technical crossing design. The council’s response to a highway enquiry does not settle every private right or consent affecting the property.</p>"
     }
   ],
   "featuredImageAlt": "Surveyor measuring a London pavement and kerb for driveway access",
-  "updatedDate": "2026-10-02",
+  "updatedDate": "2026-10-13",
   "useMetaTitle": true
 },
   {
@@ -1693,11 +1781,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Decide whether a courier should enter the driveway or leave a parcel at an accessible delivery point outside the powered gate. Give clear instructions that do not require climbing, reaching through the gate or leaving goods in its movement path."
-    },
-    {
-      "type": "p",
-      "text": "Consider pedestrian access and the position of a parcel box before adding an entry device. A delivery routine should also work when you cannot answer a call."
+      "text": "<p>Decide whether a courier should enter the driveway or leave a parcel at an accessible delivery point outside the powered gate. Give clear instructions that do not require climbing, reaching through the gate or leaving goods in its movement path.</p><p>Consider pedestrian access and the position of a parcel box before adding an entry device. A delivery routine should also work when you cannot answer a call.</p>"
     },
     {
       "type": "h2",
@@ -1705,11 +1789,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "A keypad can offer temporary or separately managed codes if the selected product supports them. Check how codes expire and how you remove access. Avoid placing a permanent household code in public delivery notes."
-    },
-    {
-      "type": "p",
-      "text": "A video or phone intercom lets you speak with the visitor, subject to the installed connection and app features. Notifications, recordings and remote release vary by model and account. Request a demonstration rather than assuming they are included."
+      "text": "<p>A keypad can offer temporary or separately managed codes if the selected product supports them. Check how codes expire and how you remove access. Avoid placing a permanent household code in public delivery notes.</p><p>A video or phone intercom lets you speak with the visitor, subject to the installed connection and app features. Notifications, recordings and remote release vary by model and account. Request a demonstration rather than assuming they are included.</p>"
     },
     {
       "type": "h2",
@@ -1717,11 +1797,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Letting a visitor in does not confirm that the gate’s path is clear. The installation needs protective measures for the actual entrance, and users need instructions on where to wait and move. Do not ask a courier to hold a powered leaf open or obstruct a sensor."
-    },
-    {
-      "type": "p",
-      "text": "Agree an alternative for network or power failure. Keep manual release to trained users following the supplied instructions, rather than sharing a generic release sequence with delivery drivers."
+      "text": "<p>Letting a visitor in does not confirm that the gate’s path is clear. The installation needs protective measures for the actual entrance, and users need instructions on where to wait and move. Do not ask a courier to hold a powered leaf open or obstruct a sensor.</p><p>Agree an alternative for network or power failure. Keep manual release to trained users following the supplied instructions, rather than sharing a generic release sequence with delivery drivers.</p>"
     },
     {
       "type": "h2",
@@ -1729,11 +1805,35 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Compare <a href=\"/services/access-control/keypad-entry-systems/\">keypad access</a>, <a href=\"/services/access-control/video-intercoms/\">video entry</a> and <a href=\"/services/access-control/gsm-phone-entry/\">phone entry</a>. Check account ownership and recurring charges in the quotation. Our <a href=\"/guides/uk-electric-gate-safety-laws/\">gate safety guide</a> explains the handover information to request."
+      "text": "<p>Compare <a href=\"/services/access-control/keypad-entry-systems/\">keypad access</a>, <a href=\"/services/access-control/video-intercoms/\">video entry</a> and <a href=\"/services/access-control/gsm-phone-entry/\">phone entry</a>. Check account ownership and recurring charges in the quotation. Our <a href=\"/guides/uk-electric-gate-safety-laws/\">gate safety guide</a> explains the handover information to request.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Compare delivery routines before buying equipment"
+    },
+    {
+      "type": "p",
+      "text": "<div class=\"table-scroll\" role=\"region\" aria-label=\"Delivery access choices\" tabindex=\"0\"><table><thead><tr><th scope=\"col\">Routine</th><th scope=\"col\">What to confirm</th><th scope=\"col\">Limitation to plan for</th></tr></thead><tbody><tr><td>Parcel point outside the vehicle gate</td><td>A visible, accessible location that leaves the footway and gate movement clear.</td><td>Parcel size, collection and the courier’s ability to use it.</td></tr><tr><td>Resident answers an intercom</td><td>Where the call arrives and how entry and exit are managed.</td><td>Nobody answers, or the connection fails.</td></tr><tr><td>Temporary code where supported</td><td>Who creates it, when it expires and which entrance it operates.</td><td>An expired or forwarded code and a driver needing assistance.</td></tr><tr><td>Agreed staffed delivery window</td><td>Who receives the delivery and supervises the agreed access routine.</td><td>A vehicle arriving early, late or at the wrong entrance.</td></tr></tbody></table></div><p>Choose the fallback at the same time as the preferred routine. A new control adds little convenience if every missed call still leaves a driver unable to reach an agreed delivery point.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Write instructions a first-time courier can follow"
+    },
+    {
+      "type": "p",
+      "text": "<p>Describe the correct entrance, where to wait and how to call the recipient. Include a recognisable house number or entrance name rather than relying on a driver seeing an app map at exactly the right scale. Keep instructions short enough to follow without entering the gate path.</p><p>State what to do if nobody answers. That might be a specified parcel point or the carrier’s normal failed-delivery process. Do not invite a driver to climb over, reach through, defeat a latch or follow another vehicle inside. Check the carrier’s own delivery options rather than assuming it accepts every arrangement.</p><p>For bulky items, agree access with the supplier before the delivery day. Confirm the vehicle and handling space, and explain any restrictions. A routine suitable for a small parcel may be unsuitable for a pallet or a long vehicle.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Test the routine with the household"
+    },
+    {
+      "type": "p",
+      "text": "<p>Walk through the plan with the installer and the people who receive calls. Include someone using a normal resident account instead of only the administrator’s phone. Ask how temporary permissions are removed and how to contact support if a delivery code does not work.</p><p>Review the routine after a phone change, new tenant or change in work hours. Keep the parcel point and signs usable as planting grows or bins move. The aim is a repeatable delivery process that does not depend on improvising around a powered gate.</p>"
     }
   ],
   "featuredImageAlt": "Courier using an intercom to deliver a parcel through an electric gate",
-  "updatedDate": "2026-10-02",
+  "updatedDate": "2026-10-13",
   "useMetaTitle": true
 },
   {
@@ -1794,11 +1894,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Planning Portal explains that traditional impermeable front-garden paving over five square metres needs planning permission where water does not run to a permeable area. Its <a href=\"https://www.planningportal.co.uk/permission/common-projects/paving-your-front-garden/\">front-garden paving guidance</a> also sets out limits and exceptions to permitted development."
-    },
-    {
-      "type": "p",
-      "text": "Check property type, listed status, planning conditions and any Article 4 direction before assuming that a permeable surface settles the planning question. Ask the authority about the actual proposal."
+      "text": "<p>Planning Portal explains that traditional impermeable front-garden paving over five square metres needs planning permission where water does not run to a permeable area. Its <a href=\"https://www.planningportal.co.uk/permission/common-projects/paving-your-front-garden/\">front-garden paving guidance</a> also sets out limits and exceptions to permitted development.</p><p>Check property type, listed status, planning conditions and any Article 4 direction before assuming that a permeable surface settles the planning question. Ask the authority about the actual proposal.</p>"
     },
     {
       "type": "h2",
@@ -1806,11 +1902,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Tell the contractor about ponding, flooding and the current falls. Ask for the proposed surface build-up, drainage route and maintenance arrangements. A permeable top surface needs a suitable underlying design to work as intended."
-    },
-    {
-      "type": "p",
-      "text": "Coordinate the paving with gate tracks, motor boxes, supports and cable routes. Avoid setting final paving levels before those details have been agreed."
+      "text": "<p>Tell the contractor about ponding, flooding and the current falls. Ask for the proposed surface build-up, drainage route and maintenance arrangements. A permeable top surface needs a suitable underlying design to work as intended.</p><p>Coordinate the paving with gate tracks, motor boxes, supports and cable routes. Avoid setting final paving levels before those details have been agreed.</p>"
     },
     {
       "type": "h2",
@@ -1818,11 +1910,7 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Changing the garden surface does not authorise driving across the public footway. Check the <a href=\"/blog/do-i-need-a-dropped-kerb-for-a-driveway-gate-london/\">dropped-kerb requirements</a> and any approval for a new or altered crossing."
-    },
-    {
-      "type": "p",
-      "text": "Ask the quotation to distinguish paving, drainage, gate groundworks and highway work. Record who obtains each permission and who reinstates disturbed surfaces."
+      "text": "<p>Changing the garden surface does not authorise driving across the public footway. Check the <a href=\"/blog/do-i-need-a-dropped-kerb-for-a-driveway-gate-london/\">dropped-kerb requirements</a> and any approval for a new or altered crossing.</p><p>Ask the quotation to distinguish paving, drainage, gate groundworks and highway work. Record who obtains each permission and who reinstates disturbed surfaces.</p>"
     },
     {
       "type": "h2",
@@ -1830,15 +1918,35 @@ const blogArticleEntries: BlogArticle[] = [
     },
     {
       "type": "p",
-      "text": "Request cleaning and care instructions for the selected paving and drainage. Identify covers and access points that must remain reachable after the gate is installed."
+      "text": "<p>Request cleaning and care instructions for the selected paving and drainage. Identify covers and access points that must remain reachable after the gate is installed.</p><p>Consult the government’s <a href=\"https://www.gov.uk/government/publications/permeable-surfacing-of-front-gardens-guidance\">permeable-surfacing guidance</a> and use the <a href=\"/guides/electric-driveway-gates-cost-london/\">installed gate cost guide</a> to compare the complete entrance scope.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Compare surface choices with their drainage design"
     },
     {
       "type": "p",
-      "text": "Consult the government’s <a href=\"https://www.gov.uk/government/publications/permeable-surfacing-of-front-gardens-guidance\">permeable-surfacing guidance</a> and use the <a href=\"/guides/electric-driveway-gates-cost-london/\">installed gate cost guide</a> to compare the complete entrance scope."
+      "text": "<div class=\"table-scroll\" role=\"region\" aria-label=\"Front driveway surface planning\" tabindex=\"0\"><table><thead><tr><th scope=\"col\">Approach</th><th scope=\"col\">Design question</th><th scope=\"col\">Ownership question</th></tr></thead><tbody><tr><td>Permeable block paving</td><td>What sub-base, edge restraint and drainage arrangement suits the site?</td><td>How should joints and surface permeability be maintained?</td></tr><tr><td>Gravel or a stabilised gravel system</td><td>How will the construction support vehicles and meet the gate threshold?</td><td>How will displaced material be kept away from the gate equipment?</td></tr><tr><td>Porous asphalt or another specified permeable surface</td><td>What complete construction and discharge route is proposed?</td><td>What cleaning and repair methods suit the supplied system?</td></tr><tr><td>Impermeable paving with designed drainage</td><td>Where will runoff go, and which permissions or approvals apply?</td><td>Who maintains the drainage components and access points?</td></tr></tbody></table></div><p>Compare the proposed build-up, not just the visible finish. Ask the designer to explain any site investigations and how the arrangement deals with existing ground conditions. A product described as permeable is not a complete drainage design.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Coordinate foundations, ducts and final levels"
+    },
+    {
+      "type": "p",
+      "text": "<p>Put the gate installer and driveway contractor’s drawings together before work begins. Agree the positions of supports, tracks where applicable, motor boxes, cable ducts and inspection covers. Mark the finished levels at the opening and along the gate movement path.</p><p>Ask who checks these details before concrete, foundations or paving conceal the work. Record responsibility for drainage connections and for restoring disturbed surfaces. A late change in gate position can affect several trades, so resolve it before the driveway finish is laid.</p><p>Provide a maintenance access plan for covers and equipment. Avoid placing a decorative border or planter where an engineer needs to stand or remove a cover. Include the pedestrian route and any threshold that somebody must cross with a pushchair or wheelchair.</p>"
+    },
+    {
+      "type": "h2",
+      "text": "Handover the whole entrance together"
+    },
+    {
+      "type": "p",
+      "text": "<p>Request the paving specification, drainage information and care instructions alongside the gate documents. Ask how to report ponding or settlement and who investigates an issue at the boundary between the two contractors’ work.</p><p>Observe the completed entrance during ordinary wet weather and record unexpected water routes from a safe position. Report them to the responsible contractor rather than altering falls or digging around gate foundations. Keep changes to planting and parking compatible with the agreed drainage and access arrangements.</p>"
     }
   ],
   "featuredImageAlt": "Contractor demonstrating permeable driveway paving beside new gate posts",
-  "updatedDate": "2026-10-02",
+  "updatedDate": "2026-10-13",
   "useMetaTitle": true
 },
   {

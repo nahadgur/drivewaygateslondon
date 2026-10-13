@@ -15,7 +15,7 @@ export interface CommercialService {
 
 export const commercialServices: CommercialService[] = [
   {
-  "updatedDate": "2026-10-02",
+  "updatedDate": "2026-10-13",
   "id": "industrial-security-gates",
   "slug": "industrial-security-gates",
   "title": "Industrial Security Gates",
@@ -33,7 +33,10 @@ export const commercialServices: CommercialService[] = [
   "intro": [
     "Start with the site requirements: vehicle types, busiest arrival periods, clear opening, security objectives and routes for people on foot. Include delivery drivers and contractors who may not know the site.",
     "Discuss the gate layout and access controls together. Existing ground conditions, supports, power and the space for vehicles to wait can affect the installation scope. A site survey should establish which arrangements are suitable before you order equipment.",
-    "If your brief requires a tested security rating or a named certification, ask for evidence for the exact proposed product and configuration. Do not treat the appearance of a gate or a general supplier claim as proof of that requirement."
+    "If your brief requires a tested security rating or a named certification, ask for evidence for the exact proposed product and configuration. Do not treat the appearance of a gate or a general supplier claim as proof of that requirement.",
+    "Describe the vehicles that use the entrance, including the largest delivery vehicle and any combination of trailers or specialist equipment. Give the installer the operating hours and a picture of peak arrivals rather than only a daily average. Mark the place where a driver waits while permission is checked. For a warehouse, include visiting drivers who do not know the site. For an industrial estate, identify different tenants and how visitors reach the correct occupier. For a depot, explain shift changes and occasions when several vehicles return together. These are planning scenarios; the survey must establish the actual arrangement. Keep pedestrian entry and routes to reception visible on the layout. A driver should not need to leave a vehicle in a hazardous position to find the calling point. Coordinate the gate proposal with the site’s wider traffic arrangements and responsible person.",
+    "Option What to establish Sliding gate Run-back space, support arrangement, foundations and separation from people. Swing gate Complete swept area, supports and conflicts with waiting or turning vehicles. Folding arrangement The specified movement envelope, gathered panels and maintenance access. Barrier alongside other measures The vehicle-control purpose and any separate perimeter or pedestrian requirements. Ask for product and operating-duty information for the specified equipment. Do not infer a security rating, impact resistance or ability to cope with peak demand from the word industrial. If a rating forms part of the brief, match the evidence to the exact configuration being supplied.",
+    "Agree vehicle diversions, temporary access, pedestrian arrangements and the person coordinating the work. Explain any deliveries or operations that cannot be interrupted. Identify the responsibilities of the gate contractor, electrical contractor and site team before agreeing the programme. At handover, request user instructions, equipment details, completed checks and training for the people who will operate or manage the entrance. Record who administers permissions and who responds to a fault. Agree maintenance and support in writing, including charges and any stated response terms. Keep the site layout under review if traffic patterns, tenants or pedestrian routes change. A gate selected for an earlier arrangement should not be assumed suitable for a materially different operation without assessment."
   ],
   "benefits": [
     {

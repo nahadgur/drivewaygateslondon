@@ -1,0 +1,332 @@
+{
+  "date": "2026-10-13",
+  "verdict": "PASS",
+  "scope": "20 existing pages: all 19 remaining audit targets plus a targeted running-cost guide addition. No new article routes or publishDate changes.",
+  "baseline_commit": "800dd2fdaf37466f11a62dde6103091660bd4297",
+  "entries": [
+    {
+      "route": "/guides/swing-vs-sliding-gates/",
+      "verdict": "PASS",
+      "preserved_corrected_core": true,
+      "restored_coverage": [
+        "Compare the layouts on the same drawing",
+        "Three parking situations worth sketching",
+        "Wind exposure, privacy and the gate design",
+        "Plan walking access and breakdown arrangements",
+        "Compare installation and ownership costs",
+        "Bring these details to a survey"
+      ],
+      "primary_sources": [],
+      "method": "Original practical comparisons, inspection briefs, quotation and ownership workflows. Preserve corrected facts and qualify product/site dependent decisions. No invented price bands, performance guarantees, case studies or DIY electrical procedures.",
+      "checked": "2026-10-13"
+    },
+    {
+      "route": "/guides/winter-gate-maintenance/",
+      "verdict": "PASS",
+      "preserved_corrected_core": true,
+      "restored_coverage": [
+        "Separate routine observations from repair work",
+        "Rain, leaves and underground equipment",
+        "Frost and changes in movement",
+        "Book a service against an agreed scope",
+        "Prepare the household for an interrupted entrance",
+        "After a storm or an impact"
+      ],
+      "primary_sources": [
+        "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm"
+      ],
+      "method": "Original practical comparisons, inspection briefs, quotation and ownership workflows. Preserve corrected facts and qualify product/site dependent decisions. No invented price bands, performance guarantees, case studies or DIY electrical procedures.",
+      "checked": "2026-10-13"
+    },
+    {
+      "route": "/guides/automation-kit-installation-prices/",
+      "verdict": "PASS",
+      "preserved_corrected_core": true,
+      "restored_coverage": [
+        "Compare surface-mounted and underground operators",
+        "Identify what a motor kit actually includes",
+        "Power routes and driveway work can change the budget",
+        "Use a quotation worksheet instead of a generic price band",
+        "Three retrofit scopes to discuss with the installer",
+        "Agree the changeover day"
+      ],
+      "primary_sources": [
+        "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm"
+      ],
+      "method": "Original practical comparisons, inspection briefs, quotation and ownership workflows. Preserve corrected facts and qualify product/site dependent decisions. No invented price bands, performance guarantees, case studies or DIY electrical procedures.",
+      "checked": "2026-10-13"
+    },
+    {
+      "route": "/guides/aluminium-vs-wooden-driveway-gates/",
+      "verdict": "PASS",
+      "preserved_corrected_core": true,
+      "restored_coverage": [
+        "A practical material comparison",
+        "Choose the board pattern before deciding on colour",
+        "Construction matters as much as the surface",
+        "Budget for the upkeep you can realistically provide",
+        "Compare three choices using the same entrance brief",
+        "Ask what happens after accidental damage"
+      ],
+      "primary_sources": [],
+      "method": "Original practical comparisons, inspection briefs, quotation and ownership workflows. Preserve corrected facts and qualify product/site dependent decisions. No invented price bands, performance guarantees, case studies or DIY electrical procedures.",
+      "checked": "2026-10-13"
+    },
+    {
+      "route": "/services/electric-sliding-gates/",
+      "verdict": "PASS",
+      "preserved_corrected_core": true,
+      "restored_coverage": [
+        "Tracked, cantilever and telescopic choices",
+        "From site survey to working entrance",
+        "Choose the finish and maintainable details"
+      ],
+      "primary_sources": [],
+      "method": "Original practical comparisons, inspection briefs, quotation and ownership workflows. Preserve corrected facts and qualify product/site dependent decisions. No invented price bands, performance guarantees, case studies or DIY electrical procedures.",
+      "checked": "2026-10-13"
+    },
+    {
+      "route": "/blog/conservation-area-gate-planning-london/",
+      "verdict": "PASS",
+      "preserved_corrected_core": true,
+      "restored_coverage": [
+        "Build an address-specific evidence file",
+        "Compare repair, adaptation and replacement",
+        "Prepare a drawing and materials checklist"
+      ],
+      "primary_sources": [
+        "https://www.planningportal.co.uk/permission/common-projects/fences-gates-and-garden-walls/planning-permission/"
+      ],
+      "method": "Original practical comparisons, inspection briefs, quotation and ownership workflows. Preserve corrected facts and qualify product/site dependent decisions. No invented price bands, performance guarantees, case studies or DIY electrical procedures.",
+      "checked": "2026-10-13"
+    },
+    {
+      "route": "/services/access-control/anpr-systems/",
+      "verdict": "PASS",
+      "preserved_corrected_core": true,
+      "restored_coverage": [
+        "Plan residents, visitors and deliveries separately",
+        "Check the entry and exit sequence",
+        "Make ownership and ongoing costs explicit"
+      ],
+      "primary_sources": [
+        "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/cctv-and-video-surveillance/guidance-on-video-surveillance-including-cctv/"
+      ],
+      "method": "Original practical comparisons, inspection briefs, quotation and ownership workflows. Preserve corrected facts and qualify product/site dependent decisions. No invented price bands, performance guarantees, case studies or DIY electrical procedures.",
+      "checked": "2026-10-13"
+    },
+    {
+      "route": "/blog/wrought-iron-gate-restoration-london/",
+      "verdict": "PASS",
+      "preserved_corrected_core": true,
+      "restored_coverage": [
+        "Ask for an assessment-to-handover programme",
+        "Compare finishing proposals by method and result",
+        "Decide what is worth retaining"
+      ],
+      "primary_sources": [
+        "https://historicengland.org.uk/advice/technical-advice/buildings/maintain-and-conserve-metals/"
+      ],
+      "method": "Original practical comparisons, inspection briefs, quotation and ownership workflows. Preserve corrected facts and qualify product/site dependent decisions. No invented price bands, performance guarantees, case studies or DIY electrical procedures.",
+      "checked": "2026-10-13"
+    },
+    {
+      "route": "/blog/bi-fold-vs-sliding-gates-london/",
+      "verdict": "PASS",
+      "preserved_corrected_core": true,
+      "restored_coverage": [
+        "Use a plan to compare what each design occupies",
+        "Compare realistic short-driveway situations",
+        "Allow for ownership and maintenance access"
+      ],
+      "primary_sources": [],
+      "method": "Original practical comparisons, inspection briefs, quotation and ownership workflows. Preserve corrected facts and qualify product/site dependent decisions. No invented price bands, performance guarantees, case studies or DIY electrical procedures.",
+      "checked": "2026-10-13"
+    },
+    {
+      "route": "/blog/electric-gate-parcel-delivery-access-london/",
+      "verdict": "PASS",
+      "preserved_corrected_core": true,
+      "restored_coverage": [
+        "Compare delivery routines before buying equipment",
+        "Write instructions a first-time courier can follow",
+        "Test the routine with the household"
+      ],
+      "primary_sources": [],
+      "method": "Original practical comparisons, inspection briefs, quotation and ownership workflows. Preserve corrected facts and qualify product/site dependent decisions. No invented price bands, performance guarantees, case studies or DIY electrical procedures.",
+      "checked": "2026-10-13"
+    },
+    {
+      "route": "/blog/do-i-need-a-dropped-kerb-for-a-driveway-gate-london/",
+      "verdict": "PASS",
+      "preserved_corrected_core": true,
+      "restored_coverage": [
+        "Existing, new and widened crossings need different enquiries",
+        "Sequence the crossing and gate projects",
+        "Prepare a useful first enquiry"
+      ],
+      "primary_sources": [
+        "https://www.gov.uk/apply-dropped-kerb"
+      ],
+      "method": "Original practical comparisons, inspection briefs, quotation and ownership workflows. Preserve corrected facts and qualify product/site dependent decisions. No invented price bands, performance guarantees, case studies or DIY electrical procedures.",
+      "checked": "2026-10-13"
+    },
+    {
+      "route": "/blog/front-garden-paving-suds-london/",
+      "verdict": "PASS",
+      "preserved_corrected_core": true,
+      "restored_coverage": [
+        "Compare surface choices with their drainage design",
+        "Coordinate foundations, ducts and final levels",
+        "Handover the whole entrance together"
+      ],
+      "primary_sources": [
+        "https://www.planningportal.co.uk/permission/common-projects/paving-your-front-garden/",
+        "https://www.gov.uk/government/publications/permeable-surfacing-of-front-gardens-guidance"
+      ],
+      "method": "Original practical comparisons, inspection briefs, quotation and ownership workflows. Preserve corrected facts and qualify product/site dependent decisions. No invented price bands, performance guarantees, case studies or DIY electrical procedures.",
+      "checked": "2026-10-13"
+    },
+    {
+      "route": "/blog/solar-powered-gate-automation-london/",
+      "verdict": "PASS",
+      "preserved_corrected_core": true,
+      "restored_coverage": [
+        "A small load example with explicit assumptions",
+        "Compare solar and mains by project scope",
+        "Questions for a solar survey"
+      ],
+      "primary_sources": [],
+      "method": "Original practical comparisons, inspection briefs, quotation and ownership workflows. Preserve corrected facts and qualify product/site dependent decisions. No invented price bands, performance guarantees, case studies or DIY electrical procedures.",
+      "checked": "2026-10-13"
+    },
+    {
+      "route": "/blog/accoya-wood-gates-london/",
+      "verdict": "PASS",
+      "preserved_corrected_core": true,
+      "restored_coverage": [
+        "Choose the finished appearance and care together",
+        "Separate the promises in a quotation",
+        "Compare an equivalent gate, not just a timber label"
+      ],
+      "primary_sources": [
+        "https://www.accoya.com/faq/is-accoya-hardwood-or-softwood/"
+      ],
+      "method": "Original practical comparisons, inspection briefs, quotation and ownership workflows. Preserve corrected facts and qualify product/site dependent decisions. No invented price bands, performance guarantees, case studies or DIY electrical procedures.",
+      "checked": "2026-10-13"
+    },
+    {
+      "route": "/blog/underground-gate-motors-london/",
+      "verdict": "PASS",
+      "preserved_corrected_core": true,
+      "restored_coverage": [
+        "What to include in a site survey",
+        "Read the groundworks allowance carefully",
+        "Retrofitting and replacing underground equipment"
+      ],
+      "primary_sources": [],
+      "method": "Original practical comparisons, inspection briefs, quotation and ownership workflows. Preserve corrected facts and qualify product/site dependent decisions. No invented price bands, performance guarantees, case studies or DIY electrical procedures.",
+      "checked": "2026-10-13"
+    },
+    {
+      "route": "/blog/outward-swinging-gates-uk-rules/",
+      "verdict": "PASS",
+      "preserved_corrected_core": true,
+      "restored_coverage": [
+        "Draw the whole swept path against the boundary",
+        "Consider a setback as a measured proposal",
+        "Keep permission and fabrication documents aligned"
+      ],
+      "primary_sources": [
+        "https://www.legislation.gov.uk/ukpga/1980/66/section/153"
+      ],
+      "method": "Original practical comparisons, inspection briefs, quotation and ownership workflows. Preserve corrected facts and qualify product/site dependent decisions. No invented price bands, performance guarantees, case studies or DIY electrical procedures.",
+      "checked": "2026-10-13"
+    },
+    {
+      "route": "/blog/article-4-directions-gate-planning-permission/",
+      "verdict": "PASS",
+      "preserved_corrected_core": true,
+      "restored_coverage": [
+        "Work through the map and written schedule together",
+        "Describe the proposed work in separate parts",
+        "Keep a record before placing the order"
+      ],
+      "primary_sources": [
+        "https://www.camden.gov.uk/article-4-directions1",
+        "https://www.planningportal.co.uk/permission/common-projects/fences-gates-and-garden-walls/planning-permission/"
+      ],
+      "method": "Original practical comparisons, inspection briefs, quotation and ownership workflows. Preserve corrected facts and qualify product/site dependent decisions. No invented price bands, performance guarantees, case studies or DIY electrical procedures.",
+      "checked": "2026-10-13"
+    },
+    {
+      "route": "/commercial/industrial-security-gates/",
+      "verdict": "PASS",
+      "preserved_corrected_core": true,
+      "restored_coverage": [
+        "Plan for the site’s busiest arrival period",
+        "Compare gate types against operating requirements",
+        "Manage installation and handover as a site operation"
+      ],
+      "primary_sources": [
+        "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/responsibilities.htm"
+      ],
+      "method": "Original practical comparisons, inspection briefs, quotation and ownership workflows. Preserve corrected facts and qualify product/site dependent decisions. No invented price bands, performance guarantees, case studies or DIY electrical procedures.",
+      "checked": "2026-10-13"
+    },
+    {
+      "route": "/services/pedestrian-side-gates/",
+      "verdict": "PASS",
+      "preserved_corrected_core": true,
+      "restored_coverage": [
+        "A separate side gate or a wicket within the vehicle gate"
+      ],
+      "primary_sources": [],
+      "method": "Original practical comparisons, inspection briefs, quotation and ownership workflows. Preserve corrected facts and qualify product/site dependent decisions. No invented price bands, performance guarantees, case studies or DIY electrical procedures.",
+      "checked": "2026-10-13"
+    },
+    {
+      "route": "/guides/electric-gate-running-costs/",
+      "verdict": "PASS",
+      "preserved_corrected_core": true,
+      "restored_coverage": [
+        "Compare running costs without confusing voltage and consumption"
+      ],
+      "primary_sources": [],
+      "method": "Original practical comparisons, inspection briefs, quotation and ownership workflows. Preserve corrected facts and qualify product/site dependent decisions. No invented price bands, performance guarantees, case studies or DIY electrical procedures.",
+      "checked": "2026-10-13"
+    }
+  ],
+  "calculations": {
+    "solar_daily_wh": {
+      "assumptions": "100 W movement for 200 s/day; 5 W remaining idle load; excludes losses/reserve",
+      "movement_wh": 5.555555555555555,
+      "idle_wh": 119.72222222222221,
+      "total_wh": 125.27777777777777,
+      "verdict": "PASS illustrative arithmetic only; not a sizing recommendation"
+    },
+    "swing_geometry": "Preserved corrected 3.5 m opening / two equal leaves = approximately 1.75 m radius per leaf, explicitly not a safe parking distance."
+  },
+  "source_review": "Current HSE safety/basics, Planning Portal boundaries/paving, GOV.UK crossings, Camden Article 4, ICO ANPR, Accoya material/ownership and Historic England metals reviewed. Existing Highways Act section retained without expanding legal interpretation; public fetch verified separately. New material is principally original decision support rather than extended source paraphrase.",
+  "preserved_corrections": [
+    "No universal swing or sliding clearance",
+    "No fabricated prices, lifespans, speed, warranty or security promises",
+    "No universal lubricant, DIY box opening or force adjustments",
+    "No blanket conservation or Article 4 claims",
+    "No use of voltage to infer hydraulic mechanism or energy use",
+    "No backdating of existing content"
+  ],
+  "validation": [
+    "Production build, lint and TypeScript PASS; 1586 routes",
+    "20 pages at desktop 1440px and mobile 390px/320px PASS; exact rendered prose, headings, metadata, dates, FAQ/schema, tables, links and overflow",
+    "Corrected core retained on all 20 pages; no new routes; prior six article data/templates unchanged",
+    "206 templates and 5226 links/assets, 1368 service-area routes, consolidation and all six prepared articles PASS",
+    "Table screenshots visually inspected; existing shared styling retained",
+    "68/69 public link/asset destinations returned HTTP 200; Historic England source read through web tool, local HTTP/browser reached its Cloudflare challenge, not a missing page",
+    "No real enquiry submitted"
+  ],
+  "remaining_after_push": [
+    "Matching successful GitHub Production deployment",
+    "Live validation of all 20 pages"
+  ]
+}

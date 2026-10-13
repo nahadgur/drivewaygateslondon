@@ -112,7 +112,7 @@ const guideEntries: Guide[] = [
   "metaDescription": "Estimate annual gate electricity use from movement time, standby demand and your own electricity tariff.",
   "pillar": "Pricing & Costs",
   "excerpt": "Estimate annual gate electricity use from movement time, standby demand and your own electricity tariff.",
-  "readingMinutes": 2,
+  "readingMinutes": 3,
   "publishDate": "2026-01-17",
   "featuredImage": "/images/guides/electric-gate-running-costs.webp",
   "intro": "Estimate annual gate electricity use from movement time, standby demand and your own electricity tariff.",
@@ -132,6 +132,10 @@ const guideEntries: Guide[] = [
     {
       "heading": "Electricity is only part of ownership cost",
       "body": "<p>SIM plans, cloud subscriptions, servicing, replacement batteries and repairs are separate costs. Ask which apply to the proposed equipment and whether VAT is included. An existing household electricity standing charge is not usually an additional gate cost; a separate metered supply could introduce one.</p><p>Keep electricity estimates separate from maintenance budgets when using our <a href=\"/guides/electric-driveway-gates-cost-london/\">installed gate cost guide</a>. For a retrofit, compare the work described in our <a href=\"/guides/automation-kit-installation-prices/\">automation quotation guide</a>.</p>"
+    },
+    {
+      "heading": "Compare running costs without confusing voltage and consumption",
+      "body": "<p>A label such as 24 V describes a voltage, not the annual electricity bill. Compare the input energy used by the complete installation and its actual operating pattern. If you are replacing equipment, ask whether the quoted consumption includes the controller, receiver, intercom and any backup charging.</p><p>Keep fixed ownership costs separate from electricity. A useful annual worksheet has distinct lines for energy, scheduled maintenance, connectivity or app services, and a repair allowance chosen for your own budget. Mark which amounts are quotations and which are assumptions. Do not turn a small calculated electricity cost into a claim that the entrance costs almost nothing to own.</p><p>If your household changes how it uses the gate, revise the cycle count and movement time in the example. If new always-on equipment is added, revise the idle demand too. Ask a competent person for suitable consumption information; do not open a control cabinet or insert an unsuitable measuring device to obtain it.</p>"
     }
   ],
   "faqs": [
@@ -147,7 +151,7 @@ const guideEntries: Guide[] = [
   "relatedServiceSlug": "gate-repair-and-maintenance",
   "relatedGuides": [],
   "featuredImageAlt": "Electrician measuring the power draw of an automated driveway-gate motor",
-  "updatedDate": "2026-10-02"
+  "updatedDate": "2026-10-13"
 },
 
   {
@@ -157,7 +161,7 @@ const guideEntries: Guide[] = [
   "metaDescription": "Build a retrofit budget that includes the gate assessment, supports, power, controls and completed-system checks.",
   "pillar": "Pricing & Costs",
   "excerpt": "Build a retrofit budget that includes the gate assessment, supports, power, controls and completed-system checks.",
-  "readingMinutes": 2,
+  "readingMinutes": 7,
   "publishDate": "2026-01-24",
   "featuredImage": "/images/guides/automation-kit-installation-prices.webp",
   "intro": "Build a retrofit budget that includes the gate assessment, supports, power, controls and completed-system checks.",
@@ -176,7 +180,31 @@ const guideEntries: Guide[] = [
     },
     {
       "heading": "Compare retrofit and replacement",
-      "body": "<p>If repair and alteration costs are substantial, request a replacement option with equivalent appearance and controls. Compare the complete scope, disruption and upkeep rather than assuming retrofit must be cheaper.</p><p>Use the <a href=\"/guides/electric-driveway-gates-cost-london/\">installed gate cost guide</a> alongside our <a href=\"/services/gate-automation-kits/\">gate automation service</a>. Send photographs, approximate dimensions and known faults when you <a href=\"/contact/\">discuss your entrance</a>.</p><p>Further reading: <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm\">HSE guidance on complete-system assessment</a>.</p>"
+      "body": "<p>If repair and alteration costs are substantial, request a replacement option with equivalent appearance and controls. Compare the complete scope, disruption and upkeep rather than assuming retrofit must be cheaper.</p><p>Use the <a href=\"/guides/electric-driveway-gates-cost-london/\">installed gate cost guide</a> alongside our <a href=\"/services/gate-automation-kits/\">gate automation service</a>. Send photographs, approximate dimensions and known faults when you discuss your entrance.</p><p>Further reading: <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm\">HSE guidance on complete-system assessment</a>.</p>"
+    },
+    {
+      "heading": "Compare surface-mounted and underground operators",
+      "body": "<p>The operator type affects both the appearance of the gate and the installation work. Compare an above-ground linear or articulated-arm proposal with an underground proposal using the actual hinge and support arrangement. Ask for a drawing showing mounting positions, movement and access for servicing. Product names alone do not establish that either arrangement will fit.</p><div class=\"table-scroll\" role=\"region\" aria-label=\"Retrofit operator cost drivers\" tabindex=\"0\"><table><thead><tr><th scope=\"col\">Option</th><th scope=\"col\">Work to establish</th><th scope=\"col\">Questions for the quotation</th></tr></thead><tbody><tr><td>Above-ground linear arm</td><td>Mounting geometry on the leaf and support, brackets, cable route and movement clearance.</td><td>Can suitable fixings be made to the existing structure, and what alterations are included?</td></tr><tr><td>Above-ground articulated arm</td><td>Space for the linked arm and suitable mounting on the support and gate.</td><td>Where does the mechanism move, and how will the surrounding area be assessed?</td></tr><tr><td>Underground operator</td><td>Foundation box, hinge relationship, excavation, drainage, cables and access to covers.</td><td>Who provides drainage and reinstates the driveway, and what remains visible?</td></tr><tr><td>Existing sliding gate drive</td><td>Condition of the gate, running gear, supports and compatible drive arrangement.</td><td>Which existing parts can remain and what needs repair before automation?</td></tr></tbody></table></div><p>Above-ground equipment can still require groundworks for supports or cables. Underground equipment can still leave covers and release fittings visible. Compare the documented site work rather than treating one option as excavation-free or the other as completely invisible.</p>"
+    },
+    {
+      "heading": "Identify what a motor kit actually includes",
+      "body": "<p>Ask for a component list tied to the supplier and model numbers. Depending on the offer, a kit may include operators, a controller, receivers or selected accessories. It may exclude the equipment and work needed to make your particular entrance suitable. Have the installer mark supplied, retained and separately priced items on the same list.</p><p>A pair of existing manual gates also needs consideration as a structure and as a moving entrance. Photograph the hinges, supports and gate from safe positions, and send the approximate leaf dimensions. Tell the contractor about sagging, rubbing, repairs or occasions when wind moved a leaf unexpectedly.</p><p>Do not use a catalogue maximum weight as the only selection rule. Ask the contractor how the proposed equipment suits the gate dimensions, mounting geometry, infill, exposure and operating demand. The answer should identify the equipment being priced, not just promise a powerful motor.</p>"
+    },
+    {
+      "heading": "Power routes and driveway work can change the budget",
+      "body": "<p>Draw the approximate route from the entrance towards the available supply and flag finished paving, steps, walls, trees and inspection covers along it. The electrician and gate installer need to establish the actual electrical requirements and cable route. A photograph can help an initial discussion but cannot confirm the condition or suitability of the supply.</p><p>If you plan a new driveway, agree ducts, foundations and finished levels before the paving programme starts. Name who provides each part of the work and who checks the interfaces between trades. Include making good even where an existing route may be reusable; the quote should say what happens if inspection finds that it cannot be used.</p><p>For underground operators, request a specific drainage proposal for the site. Ask how covers remain accessible after resurfacing and how future equipment replacement would be approached. These are ownership questions as well as installation costs, because the cheapest initial arrangement may be inconvenient to maintain.</p>"
+    },
+    {
+      "heading": "Use a quotation worksheet instead of a generic price band",
+      "body": "<p>Create one row for each work package and one column for each proposal. Copy the contractor’s description and price into the worksheet without converting an allowance into a fixed amount. Leave an item marked not stated until the contractor clarifies it. That makes omissions visible before a deposit is agreed.</p><p>Separate the base installation from choices such as a different intercom, extra remotes or an additional pedestrian entrance. Record ongoing charges beside the features they support. A smartphone option may involve different ownership and connectivity arrangements from a fixed indoor answering point.</p><p>Check payment stages, quotation validity, VAT treatment and how variations require approval. Ask what happens if concealed damage or unsuitable foundations emerge after work starts. Avoid assuming an advertised equipment price includes fitting, electrical work, disposal or complete-system checks.</p><p>Where two proposals differ materially, ask for a comparable alternative rather than negotiating an unexplained total. A contractor who includes replacing damaged supports is pricing a different job from one who assumes that the existing supports can remain.</p>"
+    },
+    {
+      "heading": "Three retrofit scopes to discuss with the installer",
+      "body": "<p>For sound gates with suitable supports, the main question may be the operator arrangement and the work needed to connect, protect and commission the entrance. Ask the installer to confirm the condition and list retained components. Treat this as a possible scope, not an assurance that your own manual gates are ready.</p><p>For gates that sag or scrape, separate the repair proposal from automation. Ask what the repair would achieve, how the result would be assessed and whether further alterations remain necessary. A motor should not become the explanation for forcing a poorly moving gate through its travel.</p><p>For an entrance that needs major support work and new controls, compare a complete replacement using an equivalent design brief. Retaining the leaves may still be worthwhile for appearance or conservation reasons, but the quotation should show the cost and limitations of that choice.</p><p>These examples explain why a useful budget begins with a scope. Once the contractor has surveyed your gate, request a written proposal you can compare against the alternative, with the same finish, controls, safe operation and handover requirements.</p>"
+    },
+    {
+      "heading": "Agree the changeover day",
+      "body": "<p>Ask how long the entrance is expected to be unavailable and where vehicles should be parked during the work. Confirm access for residents, pedestrians and deliveries, especially if the gate is the only entrance. Programme electrical and driveway work around the installation rather than leaving responsibility unclear between contractors.</p><p>Before paying the final balance under your agreed terms, request the documented checks, user instructions and demonstration included in the quotation. Identify who will deal with any incomplete item and when it is expected to be resolved. Keep model numbers, settings records supplied for the owner and warranty documents together.</p><p>If the installer discovers work outside the agreed scope, request the reason, revised price and effect on the programme before authorising it. That is more useful than trying to compare an unexpectedly enlarged retrofit with an earlier equipment-only estimate.</p>"
     }
   ],
   "faqs": [
@@ -192,7 +220,7 @@ const guideEntries: Guide[] = [
   "relatedServiceSlug": "gate-automation-kits",
   "relatedGuides": [],
   "featuredImageAlt": "Engineers retrofitting automation to existing timber driveway gates",
-  "updatedDate": "2026-10-02"
+  "updatedDate": "2026-10-13"
 },
 
   {
@@ -202,7 +230,7 @@ const guideEntries: Guide[] = [
   "metaDescription": "Compare timber, painted aluminium and wood-effect finishes by appearance, construction, upkeep and complete installation scope.",
   "pillar": "Comparison & Buying",
   "excerpt": "Compare timber, painted aluminium and wood-effect finishes by appearance, construction, upkeep and complete installation scope.",
-  "readingMinutes": 2,
+  "readingMinutes": 7,
   "publishDate": "2026-01-31",
   "featuredImage": "/images/guides/aluminium-vs-wooden-driveway-gates.webp",
   "intro": "Compare timber, painted aluminium and wood-effect finishes by appearance, construction, upkeep and complete installation scope.",
@@ -221,7 +249,31 @@ const guideEntries: Guide[] = [
     },
     {
       "heading": "Compare equivalent quotations",
-      "body": "<p>Put the same opening dimensions, infill, finish, supports, automation and access controls into both quotations. Include removal of the old entrance, power, groundworks, VAT and reinstatement. This gives you a useful comparison without relying on a universal lifespan or percentage saving.</p><p>Explore <a href=\"/services/wooden-driveway-gates/\">wooden driveway gates</a> and <a href=\"/services/aluminium-driveway-gates/\">aluminium gates</a>. For modified timber, read our <a href=\"/blog/accoya-wood-gates-london/\">Accoya guide</a> and ask for the proposed product terms. Then <a href=\"/contact/\">discuss your entrance</a>.</p>"
+      "body": "<p>Put the same opening dimensions, infill, finish, supports, automation and access controls into both quotations. Include removal of the old entrance, power, groundworks, VAT and reinstatement. This gives you a useful comparison without relying on a universal lifespan or percentage saving.</p><p>Explore <a href=\"/services/wooden-driveway-gates/\">wooden driveway gates</a> and <a href=\"/services/aluminium-driveway-gates/\">aluminium gates</a>. For modified timber, read our <a href=\"/blog/accoya-wood-gates-london/\">Accoya guide</a> and ask for the proposed product terms. Then discuss your entrance.</p>"
+    },
+    {
+      "heading": "A practical material comparison",
+      "body": "<div class=\"table-scroll\" role=\"region\" aria-label=\"Aluminium and timber gate comparison\" tabindex=\"0\"><table><thead><tr><th scope=\"col\">Decision</th><th scope=\"col\">Timber</th><th scope=\"col\">Aluminium</th></tr></thead><tbody><tr><td>Appearance</td><td>Natural grain and variation, with the chosen species, board pattern and finish.</td><td>Painted or wood-effect finish, with profiles and joints that vary by range.</td></tr><tr><td>Construction</td><td>Ask about the frame, joints, board fixing, moisture management and fittings.</td><td>Ask about frame sections, infill attachment, joints, coating and fittings.</td></tr><tr><td>Care</td><td>Obtain the specified cleaning and coating care for the wood and exposure.</td><td>Obtain cleaning, coating inspection and hardware care instructions.</td></tr><tr><td>Damage and repairs</td><td>Ask how damaged boards, joints and finishes could be repaired.</td><td>Ask whether panels can be replaced and how finish repairs are handled.</td></tr><tr><td>Automation</td><td>Assess the complete gate, dimensions, supports and operating geometry.</td><td>Apply the same complete-system assessment to the proposed design.</td></tr><tr><td>Warranty</td><td>Separate timber, fabrication, finish, fittings and installation terms.</td><td>Separate coating, fabrication, fittings and installation terms.</td></tr></tbody></table></div><p>Use the matrix to compare actual products. The terms wooden and aluminium cover many constructions and finishes. Neither material name gives a reliable installed price, security rating or guaranteed service life for the complete entrance.</p>"
+    },
+    {
+      "heading": "Choose the board pattern before deciding on colour",
+      "body": "<p>A full boarded surface, spaced slats and an open upper section give different views through the entrance. Look from the pavement towards the house and from the house towards approaching visitors. Decide what needs screening and where visibility remains useful. Compare the rear face too, because that is the view you may see most often.</p><p>Ask for a drawing showing board widths, spacing, frame edges and the relationship between the driveway gate and any pedestrian gate. A narrow side gate may use a different arrangement of boards even when the finish matches. Check whether those differences are acceptable before fabrication.</p><p>For wood-effect aluminium, request a sample large enough to reveal repeating grain and the treatment of corners and ends. For timber, ask what variation to expect between boards and what the selected finish will look like after weathering. A small online colour swatch cannot settle those decisions.</p><p>For a period property, start with its actual boundary details rather than a rule that every older house must have timber or ornate metalwork. Where controls apply, discuss the proposed material and appearance with the relevant adviser before ordering. A convincing timber effect does not itself establish planning acceptability.</p>"
+    },
+    {
+      "heading": "Construction matters as much as the surface",
+      "body": "<p>Ask the fabricator to explain how the frame supports the infill and where the hinges or running gear attach. Request the details that matter for your chosen width and height. If automation is proposed, have the gate supplier and installer agree the arrangement instead of treating a motor kit as an unrelated addition.</p><p>Discuss solid infill and wind exposure together. A gate made from a lighter material still presents a surface to the wind, and the supports and equipment need assessment for the actual design. Avoid substituting an assumed material advantage for a measured specification.</p><p>Look for a written approach to drainage and moisture around joints, board ends and fittings. Ask how the selected hardware suits the material and exterior location. These questions help compare the proposed workmanship without assuming that every gate from one material has the same construction.</p><p>If you want to keep existing posts or brick piers, include their assessment in both material quotations. A change of leaf material does not establish that the old supports or hinges are suitable for the new entrance.</p>"
+    },
+    {
+      "heading": "Budget for the upkeep you can realistically provide",
+      "body": "<p>Ask each supplier for a care sheet before you accept the quotation. It should identify the permitted cleaning products, coating inspections and any specialist work. Consider access to both faces of the gate, nearby planting and the time or contractor help you are willing to allow for upkeep.</p><p>Decide whether you want timber to retain a particular colour or are comfortable with the appearance allowed by the chosen finish system. Record that preference when discussing coatings. Do not rely on a universal recoating interval taken from another species, finish or exposure.</p><p>For a coated aluminium gate, ask how to deal with a scratch, damaged edge or impact. Establish whether the supplier offers repair materials, replacement boards or a refinishing service, and request terms rather than assuming those services are included. Hardware and automation still require their own care.</p><p>For both materials, keep cleaning and service records where the terms require them. Ask who deals with a problem involving more than one supplier, such as movement that damages a finish. A long material warranty and a practical route to resolving an installation problem are different things.</p>"
+    },
+    {
+      "heading": "Compare three choices using the same entrance brief",
+      "body": "<p>If your priority is natural grain and you accept the specified care, compare suitable timber constructions and finishes. Ask about species or modified timber by name and request a sample of the proposed product. Include the fabrication and coating scope so the choice is more precise than wood versus metal.</p><p>If you prefer a uniform painted appearance, compare aluminium ranges against a painted timber alternative. Keep the infill, opening layout and finish colour consistent. Ask what changes at the joints, frame edges and reverse face; those details can explain why two apparently similar gates look different in person.</p><p>If you want a timber appearance with a different care routine, put wood-effect aluminium beside a real timber sample at the property. Make the decision in daylight and shade. Check the proposed posts and pedestrian gate at the same time so you are comparing a complete frontage.</p><p>Write down the non-negotiable requirements before requesting prices: usable opening, privacy, pedestrian access, acceptable upkeep and operation. Then compare the complete installed cost and written terms. You can choose on those practical differences without relying on invented lifespan figures or promises that any material needs no maintenance.</p>"
+    },
+    {
+      "heading": "Ask what happens after accidental damage",
+      "body": "<p>Consider a vehicle scraping one panel or a fitting being damaged during building work. Ask whether an individual component can be replaced, whether the original finish can be matched and who would carry out the repair. Availability and matching depend on the actual product, so request a supported repair route rather than a guarantee that a later replacement will be invisible.</p><p>Keep the approved drawing, colour reference, sample details and invoice. These records help a repair contractor identify the supplied gate and give you a clearer comparison if you later replace a pedestrian gate or extend the adjoining fence.</p>"
     }
   ],
   "faqs": [
@@ -237,7 +289,7 @@ const guideEntries: Guide[] = [
   "relatedServiceSlug": "aluminium-driveway-gates",
   "relatedGuides": [],
   "featuredImageAlt": "Homeowner comparing aluminium and wooden driveway-gate finishes",
-  "updatedDate": "2026-10-02"
+  "updatedDate": "2026-10-13"
 },
 
   {
@@ -247,7 +299,7 @@ const guideEntries: Guide[] = [
   "metaDescription": "Compare parking clearance, side space, slopes and everyday access before choosing how your driveway gate opens.",
   "pillar": "Comparison & Buying",
   "excerpt": "Compare parking clearance, side space, slopes and everyday access before choosing how your driveway gate opens.",
-  "readingMinutes": 2,
+  "readingMinutes": 7,
   "publishDate": "2026-02-07",
   "featuredImage": "/images/guides/swing-vs-sliding-gates.webp",
   "intro": "Compare parking clearance, side space, slopes and everyday access before choosing how your driveway gate opens.",
@@ -267,6 +319,30 @@ const guideEntries: Guide[] = [
     {
       "heading": "Choose around daily use",
       "body": "<p>Consider where visitors stop, how pedestrians enter, and how bins and deliveries pass the gate. Ask how you will operate the entrance during a power cut and what maintenance access the design needs.</p><p>Compare <a href=\"/services/electric-swing-gates/\">swing-gate installation</a> with <a href=\"/services/electric-sliding-gates/\">sliding-gate installation</a> using the same design and access requirements. Groundworks and the complete specification determine cost; there is no fixed percentage difference that applies to every site.</p>"
+    },
+    {
+      "heading": "Compare the layouts on the same drawing",
+      "body": "<p>Put both proposals on a plan showing the same opening, house, parking positions and boundary. Mark the gate closed, partway through its movement and fully open. Comparing only the open position can miss a conflict that occurs halfway through the cycle. Ask the surveyor to distinguish the structural opening from the clear space available to a vehicle after fittings and stops are installed.</p><div class=\"table-scroll\" role=\"region\" aria-label=\"Swing and sliding layout comparison\" tabindex=\"0\"><table><thead><tr><th scope=\"col\">Question</th><th scope=\"col\">Swing gates</th><th scope=\"col\">Sliding gates</th></tr></thead><tbody><tr><td>Where does the gate go?</td><td>Each leaf sweeps around its hinges into an agreed opening area.</td><td>The panel travels sideways into a run-back area beside the entrance.</td></tr><tr><td>What must remain clear?</td><td>The full arc, equipment and protective clearances, including when cars are parked.</td><td>The whole travel path, supports, drive and protected run-back zone.</td></tr><tr><td>What site work matters?</td><td>Suitable posts or piers, hinge geometry, levels and operator mounting.</td><td>Suitable foundations and guides, plus the specified track or cantilever support.</td></tr><tr><td>What can make it awkward?</td><td>A short parking bay, rising ground or a walking route through the swept area.</td><td>A return wall, bin store, tree or another entrance occupying the storage side.</td></tr><tr><td>What should the quote show?</td><td>Leaf sizes, opening direction, operator type and complete site work.</td><td>Panel length, stored position, support design and complete site work.</td></tr></tbody></table></div><p>Neither column supplies a minimum clearance. Use the table to identify the measurements that are missing from your quotation. A design that fits on an empty plan still needs checking against the way people actually use the property.</p>"
+    },
+    {
+      "heading": "Three parking situations worth sketching",
+      "body": "<p>For a short driveway with parking straight ahead, show the rear or front of the car nearest the gate, including a tow bar or other projection. A swing layout may work if the vehicle can park beyond the complete swept area; a sliding layout may be worth comparing if that position is impractical. Do not turn the illustrative leaf-radius calculation into a parking instruction.</p><p>For two cars parked side by side, draw both vehicles and their doors open. A gate that avoids one car can still obstruct access beside the other. Show how somebody gets from each parking space to the front door without stepping into the moving gate area. Include the position used when unloading shopping or helping a child out.</p><p>For a narrow approach or tight turn, include the vehicle arriving from the street as well as its final parking position. A wider gate opening may help one part of the manoeuvre while leaving another corner constrained. Ask the surveyor to assess your actual vehicle and approach; a catalogue gate width alone cannot settle the turning question.</p><p>These are layout examples rather than surveyed installations. Bring photographs of normal parking to the appointment so the drawing reflects everyday use instead of an unusually tidy, empty driveway.</p>"
+    },
+    {
+      "heading": "Wind exposure, privacy and the gate design",
+      "body": "<p>Discuss the amount of solid infill together with the location of the entrance. An exposed corner plot and a sheltered courtyard present different conditions. Give the installer information about strong gusts you have experienced, damage to earlier fittings and any planned removal of nearby screening. Ask how the proposed leaves, supports and operator suit that exposure.</p><p>Do not choose sliding solely because somebody calls it windproof, or fit a larger swing motor to compensate for unexplained resistance. The design needs to account for the complete assembly. A more open infill may deserve comparison where privacy requirements allow, but it still needs a site-specific assessment.</p><p>View the closed gate from inside and outside before committing to a privacy design. Consider visibility of visitors, headlights, the house frontage and any gap beside the stored sliding panel. Ask the drawing to show fencing or guarding required around the movement area, because those details also affect the finished appearance.</p>"
+    },
+    {
+      "heading": "Plan walking access and breakdown arrangements",
+      "body": "<p>Decide whether pedestrians will use the vehicle entrance or a separate gate. Mark the intercom or keypad where a visitor can reach it without standing in the gate path. Show the route for a pushchair, wheelchair, bicycle and wheelie bin where relevant. A convenient vehicle opening can still leave an awkward daily walking route.</p><p>Ask the installer to explain access during a power cut or a mechanical fault before choosing the layout. Record who can operate the documented release, where instructions and keys will be kept, and how a released leaf will be controlled. A battery option should come with a defined supported configuration and maintenance arrangements.</p><p>For shared driveways, agree these arrangements with the people using the entrance. Discuss how work and future servicing can happen while residents still need access. Keep the access-control choice separate from the physical gate layout until both parts of the proposal have been checked together.</p>"
+    },
+    {
+      "heading": "Compare installation and ownership costs",
+      "body": "<p>Ask both contractors to price an equivalent opening, finish and access-control brief. Separate gate fabrication, supports, operator equipment, power, excavation, drainage, protective measures and reinstatement. An inexpensive leaf can sit within a costly site project, while an existing suitable support or cable route may change the balance between proposals.</p><p>Record what each quotation excludes and which items remain allowances until inspection. Include waste removal, disruption to paving, access for installation equipment and any work by another trade. Ask who coordinates the finished levels if a driveway contractor is working at the same time.</p><p>Look beyond the initial total to the maintenance access, replacement-part support and finish care you are agreeing to. Request the service scope and written warranty terms for each proposal. There is no universal cost difference that makes one opening style the right choice for every London property.</p>"
+    },
+    {
+      "heading": "Bring these details to a survey",
+      "body": "<p>Prepare photographs looking towards the gate and along both sides of the boundary. Add approximate opening dimensions, the usual parking arrangement and any planned change to the driveway. Identify drains, inspection covers and entrances that must remain accessible. Tell the surveyor whether you need a matching pedestrian gate, particular privacy or retained brick piers.</p><p>Ask for the recommended layout and at least one feasible alternative, with the reasons for rejecting any option that will not fit. Keep the resulting plan with the quotation so changes in panel size, supports or opening direction receive another check before manufacture.</p>"
     }
   ],
   "faqs": [
@@ -282,7 +358,7 @@ const guideEntries: Guide[] = [
   "relatedServiceSlug": "electric-swing-gates",
   "relatedGuides": [],
   "featuredImageAlt": "Gate surveyor explaining a sliding-gate layout on a short London driveway",
-  "updatedDate": "2026-10-02"
+  "updatedDate": "2026-10-13"
 },
 
   {
@@ -438,7 +514,7 @@ const guideEntries: Guide[] = [
   "metaDescription": "Prepare your entrance for wet and cold weather with safe observations, the right service records and a clear fault plan.",
   "pillar": "Maintenance & Troubleshooting",
   "excerpt": "Prepare your entrance for wet and cold weather with safe observations, the right service records and a clear fault plan.",
-  "readingMinutes": 2,
+  "readingMinutes": 7,
   "publishDate": "2026-03-07",
   "featuredImage": "/images/guides/winter-gate-maintenance.webp",
   "intro": "Prepare your entrance for wet and cold weather with safe observations, the right service records and a clear fault plan.",
@@ -458,6 +534,30 @@ const guideEntries: Guide[] = [
     {
       "heading": "Prepare for a power cut or breakdown",
       "body": "<p>Check that you have the correct user instructions and release key, and understand how the gate would be controlled and secured. Wind and gravity can move a released gate. Battery backup, where fitted, needs its own maintenance and capacity checks.</p><p>Read our <a href=\"/guides/how-to-manually-open-electric-gate/\">manual-release guide</a> before an emergency. If the motor hums without moving, stop repeated attempts and use our <a href=\"/blog/gate-motor-humming-not-moving/\">fault information checklist</a> when requesting <a href=\"/services/gate-repair-and-maintenance/\">a repair assessment</a>.</p><p>Further reading: <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm\">HSE powered-gate safety and maintenance guidance</a>.</p>"
+    },
+    {
+      "heading": "Separate routine observations from repair work",
+      "body": "<div class=\"table-scroll\" role=\"region\" aria-label=\"Winter gate care responsibilities\" tabindex=\"0\"><table><thead><tr><th scope=\"col\">Situation</th><th scope=\"col\">Useful homeowner information</th><th scope=\"col\">Work to discuss with the engineer</th></tr></thead><tbody><tr><td>A new scraping sound</td><td>When it happens and whether the gate has changed position.</td><td>Mechanical condition, alignment and the cause of contact.</td></tr><tr><td>Water after rainfall</td><td>Where water collects and when it disappears, observed from a safe place.</td><td>Drainage, enclosures, connections and any affected equipment.</td></tr><tr><td>Intermittent opening</td><td>Which normal control was used and what response occurred.</td><td>The relevant control route and complete gate behaviour.</td></tr><tr><td>Visible damage</td><td>Photographs from outside the movement area and known impact history.</td><td>Stability, repairs and whether the gate should remain out of use.</td></tr><tr><td>Unknown service history</td><td>Available invoices, model details and handover documents.</td><td>An initial assessment and a maintenance plan for the installation.</td></tr></tbody></table></div><p>A checklist helps you describe changes; it is not permission to inspect moving parts. Keep observations brief and use what you have already noticed during normal use. If the gate is behaving dangerously, arrange help instead of collecting a better video of the fault.</p>"
+    },
+    {
+      "heading": "Rain, leaves and underground equipment",
+      "body": "<p>Look at the whole entrance when discussing water problems. Tell the contractor about recent paving, blocked surface-water routes, new planting or a change in driveway levels. Photographs taken after rain can help explain where water gathers, provided you can take them without approaching exposed equipment or entering the movement area.</p><p>An underground operator may be out of sight, but its cover and maintenance access need to remain identifiable. Do not cover the area with planters, stored materials or a new surface without consulting the installer. Ask the engineer to check the drainage arrangement and explain what the owner may observe or clean under the supplied instructions.</p><p>Do not lift motor-box covers or bail water around electrical equipment as a general seasonal task. Report standing water and the symptoms you have seen. If the gate stops working after rain, tell the contractor whether other outdoor electrical equipment was affected, but leave electrical investigation to the appropriate competent person.</p><p>For leaves and debris, ask the installer to mark the areas the owner may safely maintain and the isolation steps that apply. A clear-looking track does not establish the condition of rollers, supports or equipment beneath a cover.</p>"
+    },
+    {
+      "heading": "Frost and changes in movement",
+      "body": "<p>Report hesitation, unusual noise or a leaf that stops short instead of assuming cold weather explains it. Include the approximate weather conditions and whether the same behaviour occurred when the weather was milder. The engineer needs the actual model and condition to decide what to check.</p><p>Do not use boiling water, a blowtorch or another improvised heat source to free a gate. Avoid pulling on a powered leaf or repeatedly commanding it against ice or another obstruction. Follow the fault arrangements for the installation and keep people clear while access is restricted.</p><p>Ask for the specified care products and application points if the manufacturer permits owner lubrication. A general instruction to grease all hinges, tracks and racks ignores differences between systems. Keep the written instructions with the service record so a future owner does not inherit an unexplained bottle of lubricant and a guessed routine.</p>"
+    },
+    {
+      "heading": "Book a service against an agreed scope",
+      "body": "<p>Give the contractor a list of changes since the previous visit. Mention building work, a vehicle striking the gate, replacement controls and any periods when the equipment was disconnected. Send the previous report so the engineer can see outstanding recommendations and parts already replaced.</p><p>Ask whether the quoted visit covers inspection only, routine servicing, adjustments, testing or fault diagnosis. Establish how additional work will be authorised and whether a further visit might be required for parts. Request the findings in writing rather than treating a service sticker as the complete record.</p><p>The maintenance interval should reflect the installed equipment and its use. A heavily used shared entrance and a lightly used private driveway need discussion on their own terms. Ask the contractor to explain its recommended interval and any circumstances that should prompt an earlier assessment.</p><p>Keep a simple owner log with the date, observed symptom, contractor contacted and outcome. Do not record guesses as confirmed diagnoses. For example, write that the gate stopped after heavy rain rather than declaring that the motor flooded unless the engineer has confirmed it.</p>"
+    },
+    {
+      "heading": "Prepare the household for an interrupted entrance",
+      "body": "<p>Before poor weather arrives, check who has the instructions and knows whom to call. Keep the correct release key accessible to authorised users without storing it where visitors can misuse it. Ask for a demonstration at a service visit if you do not understand the documented procedure for your gate.</p><p>Discuss practical alternatives for arriving home, leaving for work and receiving deliveries while the gate is unavailable. A separate usable entrance can make a breakdown less disruptive. Do not rely on a courier or neighbour to improvise a release because they have used a different model before.</p><p>If backup power is fitted, ask what it supports, how its condition is checked and what happens when its capacity is exhausted. Record any warning indication the user should recognise. A working phone app does not establish that the motors have power or that the gate can move safely.</p><p>After a repair, ask what caused the problem, what changed and whether there is any revised owner care. Keep the new information beside the existing instructions. Seasonal preparation is most useful when it leaves the household with a clear access plan and a contractor with a reliable fault history.</p>"
+    },
+    {
+      "heading": "After a storm or an impact",
+      "body": "<p>Check from a safe position whether the entrance looks different before returning to the usual routine. A fallen branch, leaning support or disturbed cable needs a report to the responsible contractor. Tell other household members about a restriction so somebody else does not operate the gate while you are arranging help.</p><p>Keep photographs and the timing of the event with the fault report. If another trade has been working nearby, share its description of the work with the gate engineer. Ask what must be repaired or checked before normal operation resumes, rather than assuming the absence of a visible obstruction resolves the problem.</p>"
     }
   ],
   "faqs": [
@@ -473,7 +573,7 @@ const guideEntries: Guide[] = [
   "relatedServiceSlug": "gate-repair-and-maintenance",
   "relatedGuides": [],
   "featuredImageAlt": "Engineer clearing wet leaves from a sliding-gate track in winter",
-  "updatedDate": "2026-10-02"
+  "updatedDate": "2026-10-13"
 },
 
   {

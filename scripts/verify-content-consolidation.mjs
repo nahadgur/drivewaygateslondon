@@ -7,7 +7,7 @@ const ledger = read('docs/source-reviews/remaining-content-2026-10-02.json');
 const pages = read('data/showcase/pages.json');
 const revised = read('data/remaining-content-review.json');
 const redirects = await require('../next.config.js').redirects();
-const prefix = { blog: '/blog/', guide: '/guides/', service: '/services/', access: '/services/access-control/' };
+const prefix = { blog: '/blog/', guide: '/guides/', service: '/services/', access: '/services/access-control/', commercial: '/commercial/' };
 for (const [old, destination] of Object.entries(ledger.merges)) {
   assert(!pages[old], `Retired snapshot remains: ${old}`);
   assert(pages[destination], `Missing merge destination: ${destination}`);
