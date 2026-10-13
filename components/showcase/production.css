@@ -1,4 +1,20 @@
 .header-host,.footer-host{display:contents}
+.business-hours{margin:22px 0}
+.business-hours h3{font:600 16px/1.4 var(--sans);margin:0 0 6px}
+.business-hours p{margin:0;line-height:1.6}
+.site-footer .business-hours p{color:#fff}
+.business-service-catalogue{margin:32px 0 44px;padding:clamp(20px,3vw,36px);background:var(--sage,#e7eade);border-radius:6px;scroll-margin-top:150px}
+.business-service-catalogue>h2{font-size:clamp(26px,3vw,36px);line-height:1.2;margin:0 0 12px}
+.business-service-catalogue>p{max-width:700px;line-height:1.7;margin-bottom:28px}
+.business-service-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 40px}
+.business-service-group:first-child{grid-row:span 3}
+.business-service-group h3{font:600 18px/1.4 var(--sans);margin:0 0 8px}
+.business-service-group ul{list-style:none;margin:0;padding:0}
+.business-service-group li{margin:0;padding:0}
+.business-service-group a{display:flex;align-items:center;min-height:44px;padding:9px 0;border-bottom:1px solid #cad1c5;font:400 16px/1.5 var(--sans);color:var(--green,#1d4233);overflow-wrap:anywhere}
+.business-service-group a:hover{text-decoration:underline;text-underline-offset:4px}
+.business-service-group a:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+@media(max-width:600px){.business-service-groups{grid-template-columns:1fr;gap:28px}.business-service-group:first-child{grid-row:auto}}
 .showcase-page{min-height:100vh}
 body{display:block}
 .enquiry-error{padding:12px;border-left:3px solid #a34231;background:#fff2ec;color:#742f25!important}

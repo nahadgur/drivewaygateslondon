@@ -9,6 +9,8 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { EnquiryForm } from './EnquiryForm';
 import { editorialLayout } from '@/lib/editorial-layout';
+import { businessHoursHtml, renderBusinessServices } from '@/lib/business-profile';
+import { siteConfig } from '@/data/site';
 
 type PageTemplate = { className: string; main?: string; hero?: string; methods?: string; after?: string };
 type PreparedTemplate = PageTemplate & { publicationLinks: PublicationLink[] };
@@ -20,6 +22,9 @@ export function ShowcasePage({ route }: { route: string }) {
   const page = (templates as Record<string, PageTemplate>)[route] ?? (published ? prepared : undefined);
   if (!page) notFound();
   let main = page.main;
+  if (route === '/services/') {
+    main = main!.replace('<div class="compact-links">', `${renderBusinessServices()}<div class="compact-links">`);
+  }
   if (route === `/guides/${securityHub.slug}/`) {
     main = applyPublicationLinks(main!, securityHub.publicationLinks, publishedArticles);
   }
@@ -46,7 +51,9 @@ export function ShowcasePage({ route }: { route: string }) {
       {route === '/contact/' ? <main id="main"><div className="page-wrap">
         <div dangerouslySetInnerHTML={{ __html: page.hero! }} />
         <div className="contact-layout">
-          <section className="contact-intro" dangerouslySetInnerHTML={{ __html: page.methods! }} />
+          <section className="contact-intro" dangerouslySetInnerHTML={{ __html: page.methods!
+            .replace('<p>Lines are open during working hours. Outside them, the form reaches us fastest.</p>', `${businessHoursHtml}<p>You can send an enquiry through the form outside these hours.</p><p>${siteConfig.businessDescription}</p>`)
+          }} />
           <EnquiryForm />
         </div>
         <div dangerouslySetInnerHTML={{ __html: page.after! }} />

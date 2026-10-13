@@ -43,7 +43,16 @@ export const siteConfig = {
   map: { zoom: 15 },
   description: 'Driveway gate design, supply and installation across London. Electric sliding gates, swing gates, wooden and metal gates, automation, and repairs. Free site surveys and written quotes.',
   tagline: 'Driveway Gate Installation Across London',
+  // Business categories supplied by the owner from the Google Business Profile.
+  businessCategories: ['Security system installation service', 'Fence contractor'],
+  businessDescription: 'Security system installation service and fence contractor specialising in driveway gates and access control across London.',
 };
+
+const displayTime = (value: string) => {
+  const [hour, minute] = value.split(':').map(Number);
+  return `${hour % 12 || 12}${minute ? `:${String(minute).padStart(2, '0')}` : ''}${hour < 12 ? 'am' : 'pm'}`;
+};
+export const businessHoursLabel = `${siteConfig.hours.days.length === 7 ? 'Monday–Sunday' : siteConfig.hours.days.join(', ')}, ${displayTime(siteConfig.hours.opens)}–${displayTime(siteConfig.hours.closes)}`;
 
 /**
  * The one business entity. layout.tsx emits the full LocalBusiness node under

@@ -16,6 +16,7 @@ import '@/components/showcase/service-area.css';
 import { Enhancements } from '@/components/showcase/Enhancements';
 import { siteConfig, addressOneLine, ORGANIZATION_ID } from '@/data/site';
 import { LONDON_BOROUGHS } from '@/data/boroughs';
+import { businessServiceCatalogue } from '@/lib/business-profile';
 import { ConsentBanner } from '@/components/ConsentBanner';
 
 const dmSans = DM_Sans({
@@ -106,7 +107,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       width: 512,
       height: 512,
     },
-    description: "Design, supply and installation of driveway gates across London, including electric and automated systems, wooden and metal gates, repairs and servicing.",
+    description: siteConfig.businessDescription,
+    hasOfferCatalog: businessServiceCatalogue,
     image: `${siteConfig.url}/og-image.jpg`,
     // Emitted only while data/site.ts carries a number. Never claim a channel
     // nobody answers.

@@ -1,0 +1,15 @@
+{
+  "reviewedDate": "2026-10-13",
+  "source": "Business owner supplied Google Business Profile details in this task on 13 October 2026",
+  "businessName": "Driveway Gates London",
+  "telephone": "020 3773 1310",
+  "website": "https://www.drivewaygateslondon.co.uk/",
+  "categories": ["Security system installation service", "Fence contractor"],
+  "hours": {"days": "Monday–Sunday", "opens": "08:00", "closes": "20:00"},
+  "serviceCount": 24,
+  "serviceRegister": "data/business-services.json",
+  "implementation": "Shared footer and contact-page hours derive from data/site.ts. The visible service directory and LocalBusiness offer catalogue use the same service register. Existing relevant service pages are reused; bespoke enquiries link to contact.",
+  "address": "The supplied profile extract did not contain an address. Existing owner-confirmed site address has not been changed or independently reverified against GBP.",
+  "schemaReference": "https://schema.org/hasOfferCatalog",
+  "scope": "Align the website with the supplied profile. No changes to Google Business Profile, no invented reviews or ratings, and no new article releases."
+}
