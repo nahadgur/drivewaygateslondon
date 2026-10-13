@@ -1,0 +1,115 @@
+{
+  "date_checked": "2026-10-13",
+  "verdict": "PASS",
+  "parent_commit": "05c5e6fa0cef378f332cfba409eb4159c862a96e",
+  "scope": "Expand three existing published articles only. No new topic release or queue advancement. Preserve publication dates, URLs, titles, heroes and contact flow.",
+  "pages": {
+    "telescopic-gates-space-saving-london": {
+      "route": "/blog/telescopic-gates-space-saving-london/",
+      "body_words_excluding_headings_and_faq": 1250,
+      "description_length": 159,
+      "updatedDate": "2026-10-13",
+      "originalPublishDate": "2026-03-16",
+      "sections": [
+        "How telescopic driveway gates work",
+        "Measure the opening and the space beside it",
+        "Compare telescopic gates with other layouts",
+        "Tracks, supports, drainage and finished paving",
+        "Plan parking, pedestrian access and visitor waiting",
+        "Assess the moving gaps between panels",
+        "Manual operation, servicing and future repairs",
+        "Compare the full quotation before choosing a finish"
+      ]
+    },
+    "smart-gate-integration-ring-nest-control4": {
+      "route": "/blog/smart-gate-integration-ring-nest-control4/",
+      "body_words_excluding_headings_and_faq": 1234,
+      "description_length": 153,
+      "updatedDate": "2026-10-13",
+      "originalPublishDate": "2026-03-19",
+      "sections": [
+        "Decide what you want the smart-home system to do",
+        "Ring, Nest and Control4: the practical differences",
+        "Ring: distinguish the doorbell, Intercom and access controller",
+        "Nest: retain a clear boundary between video and gate release",
+        "Control4: specify the door station and the programmed actions",
+        "Prepare an equipment and connection checklist",
+        "Agree ownership, privacy and recurring charges",
+        "Check connection loss and safe remote operation",
+        "Use a handover demonstration to close the gaps"
+      ]
+    },
+    "video-intercom-comelit-vs-hikvision": {
+      "route": "/blog/video-intercom-comelit-vs-hikvision/",
+      "body_words_excluding_headings_and_faq": 1313,
+      "description_length": 151,
+      "updatedDate": "2026-10-13",
+      "originalPublishDate": "2026-03-19",
+      "sections": [
+        "Compare complete systems for the same entrance",
+        "Documented Comelit and Hikvision kit examples",
+        "Existing wiring can change the better option",
+        "Compare the camera and conversation at your gate",
+        "Phone answering, indoor screens and missed calls",
+        "Gate release needs its own installation check",
+        "Compare installed cost and ownership over the same period",
+        "Accounts, updates and support after installation",
+        "Choose the proposal you can verify"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "url": "https://www.comunello.com/gate/products/ranger/ranger/",
+      "supports": "Ranger tracked mechanism and coordinated panel hardware; manufacturer example only."
+    },
+    {
+      "url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
+      "supports": "Whole-installation assessment and moving gaps between telescopic leaves; no universal dimensions or DIY protective-device instructions."
+    },
+    {
+      "url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/basics.htm",
+      "supports": "Competent installation and maintenance, owners/users and powered-gate risk awareness."
+    },
+    {
+      "url": "https://ring.com/products/access-controller-pro-2",
+      "supports": "Access Controller Pro 2 is supported only within the United States. Verified 13 October 2026; not proposed as a UK-supported solution."
+    },
+    {
+      "url": "https://ring.com/gb/en/support/articles/xwk4u/Ring-Intercom-Support",
+      "supports": "Ring Intercom Audio/Video require a compatible existing intercom and product-specific feature checks. In ledger only to keep one visible Ring-domain reference."
+    },
+    {
+      "url": "https://support.google.com/googlehome/answer/9247132?hl=en",
+      "supports": "Integrated intercom/front-gate-control systems typically incompatible with Nest doorbells; separate camera is not a gate-release integration."
+    },
+    {
+      "url": "https://www.control4.com/solutions/products/door-stations",
+      "supports": "Compatible touchscreen/app visitor communication and configured access features. No promise about all installed generations, licence or subscription pricing."
+    },
+    {
+      "url": "https://pro.comelitgroup.com/en-ie/product/8451v",
+      "supports": "8451V pairs 4893M outdoor panel and 6741W indoor monitor in Simplebus 2, with supported app functions. Regional listing states limited spare stock; explicitly not a UK availability assertion."
+    },
+    {
+      "url": "https://assets.hikvision.com/prd/public/all/doc/m000062603/DS-KIS603-PC_Datasheet_20241012.pdf",
+      "supports": "Official DS-KIS603-P(C) PDF retrieved HTTP 200 and parsed locally: DS-KV6113-WPE1(C), DS-KH6320-WTE1 and two power supplies; Hik-Connect and PoE support. No claim that a PoE switch is included."
+    }
+  ],
+  "review_basis": "Audit against pre-correction snapshots at 89aa853^, then rebuild useful selection and survey guidance with checked primary sources. Preserve factual/safety corrections; no blind restoration.",
+  "restored_coverage": {
+    "telescopic": "Panel operation, measured survey checklist, layout comparison, support/drainage coordination, pedestrian/vehicle use, maintained access and complete quotes.",
+    "smart-home": "Platform matrix, explicit US-only Ring product limitation, Nest compatibility boundary, configured Control4 workflow, equipment brief, ownership/charges/outages and handover.",
+    "intercom": "Paired complete system examples, limited-stock qualification, retrofit wiring scope, camera/audio evaluation, call handling, release interface, ownership costs and support."
+  },
+  "editorial_scope": "Original buying/survey/handover questions are editorial guidance, not source-derived product guarantees. The bin-store example is explicitly hypothetical. No business case studies, claimed supplied brands, fitted prices, warranties or stock promises. Privacy topics are questions to agree, not a legal compliance verdict.",
+  "excluded_old_claims": [
+    "Universal space-saving percentages, opening speeds and fixed clearances",
+    "DIY wiring, force adjustment or safety bypasses",
+    "Automatic compatibility between brands or future protocols",
+    "Invented market share, security ratings, customer cases and cost guarantees"
+  ],
+  "links": "Each target used once in main content; at most one visible external link per registrable domain; full research references in ledger.",
+  "preserved": "Current shared typography, hero assets, original dates/titles, canonical routes, end quote CTA, five released repair articles and new-article schedule.",
+  "validation_status": "Editorial/source/scope review PASS. Build and rendered checks recorded separately."
+}
