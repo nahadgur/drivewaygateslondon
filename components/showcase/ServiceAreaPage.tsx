@@ -69,6 +69,10 @@ export function ServiceAreaPage({ service, cityName, locationSlug }: {
           <section id="coverage" className="area-section"><h2>{coverageTitle}</h2><p>Send your postcode and project details to confirm coverage and appointment arrangements around {cityName}.</p><ul className="area-links">{coverageAreas.map(area => <li key={area}>{getCityBySlug(toSlug(area)) ? <a href={service.slug === 'commercial-gates' ? '/commercial/' : `/services/${service.slug}/${toSlug(area)}/`}>{area}<span aria-hidden="true">↗</span></a> : <span>{area}</span>}</li>)}</ul></section>
           <section className="area-section"><h2>Other gate types in {cityName}</h2><ul className="area-links">{services.filter(item => item.id !== service.id).map(item => <li key={item.id}><a href={item.slug === 'commercial-gates' ? '/commercial/' : `/services/${item.slug}/${locationSlug}/`}>{item.slug === 'commercial-gates' ? 'Commercial gate services' : item.title}<span aria-hidden="true">↗</span></a></li>)}</ul></section>
         </div>
+        <section className="quote-band lead-quote" aria-label="Request a driveway gate quote">
+          <div><h2>Discuss your driveway gates in {cityName}</h2><p>Tell us about your entrance and the work you need. Use the enquiry form to request a quote.</p></div>
+          <a className="button light" href="#enquiry">Get a Free Quote</a>
+        </section>
       </main>
       <Footer />
     </div>

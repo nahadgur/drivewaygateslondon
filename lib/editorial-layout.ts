@@ -35,11 +35,5 @@ export function editorialLayout(html: string, route: string): string {
     });
   }
 
-  const fallback = '<section class="quote-band"><div><h2>Need help with your driveway gates?</h2><p>Tell us about your entrance and the installation, repair or access control work you need.</p></div><a class="button light" href="/contact/">Get a Free Quote</a></section>';
-  if (!html.includes('class="quote-band"')) {
-    const end = html.lastIndexOf('</div>');
-    html = end < 0 ? html + fallback : html.slice(0, end) + fallback + html.slice(end);
-  }
-  return html.replace(/<section class="quote-band">([\s\S]*?)<\/section>/g, (_, content: string) =>
-    `<section class="quote-band editorial-quote" aria-label="Request a driveway gate quote">${content.replace(/(<a\b[^>]*href="\/contact\/"[^>]*>)[\s\S]*?<\/a>/, '$1Get a Free Quote</a>')}</section>`);
+  return html;
 }

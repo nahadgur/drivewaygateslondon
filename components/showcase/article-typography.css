@@ -63,14 +63,17 @@
 .editorial-page .reading-layout{display:block;max-width:900px;margin-inline:auto}
 .editorial-page .reading-layout .article-content{max-width:780px;margin-inline:auto}
 .editorial-page .article-content [id]{scroll-margin-top:160px}
-.editorial-page .editorial-quote{display:flex;align-items:center;justify-content:space-between;gap:32px;padding:clamp(24px,4vw,44px);border-radius:6px;background:var(--green,#1d4233);color:#fff;text-align:left}
-.editorial-page .editorial-quote>div{max-width:660px;min-width:0}
-.editorial-page .editorial-quote h2{margin:0 0 12px;color:#fff;font-size:clamp(27px,3vw,36px);line-height:1.2}
-.editorial-page .editorial-quote p{margin:0;color:#fff;font-size:16px;line-height:1.65}
-.editorial-page .editorial-quote .button{flex:none;display:inline-flex;align-items:center;justify-content:center;min-height:52px;margin:0;padding:14px 24px;background:#faf9f5;color:#1d4233;font-weight:700;text-align:center;white-space:normal}
-.editorial-page .editorial-quote .button:hover{background:#e7eade}
-.editorial-page .editorial-quote .button:focus-visible{outline:3px solid #fff;outline-offset:5px}
+.showcase-page .lead-quote{display:flex;align-items:center;justify-content:space-between;gap:32px;padding:clamp(24px,4vw,44px);border-radius:6px;background:var(--green,#1d4233);color:#fff;text-align:left}
+.showcase-page .lead-quote>div{max-width:660px;min-width:0}
+.showcase-page .lead-quote h2{margin:0 0 12px;color:#fff;font-size:clamp(27px,3vw,36px);line-height:1.2}
+.showcase-page .lead-quote p{margin:0;color:#fff;font-size:16px;line-height:1.65}
+.showcase-page .lead-quote .button{flex:none;display:inline-flex;align-items:center;justify-content:center;min-height:52px;margin:0;padding:14px 24px;background:#faf9f5;color:#1d4233;font-weight:700;text-align:center;white-space:normal}
+.showcase-page .lead-quote .button:hover{background:#e7eade}
+.showcase-page .lead-quote .button:focus-visible{outline:3px solid #fff;outline-offset:5px}
 @media(max-width:700px){
- .editorial-page .editorial-quote{flex-direction:column;align-items:stretch;gap:24px}
- .editorial-page .editorial-quote .button{width:100%}
+ .showcase-page .lead-quote{flex-direction:column;align-items:stretch;gap:24px}
+ .showcase-page .lead-quote .button{width:100%}
 }
+
+#quote-form{scroll-margin-top:calc(var(--header-height,150px) + 20px)}
+.showcase-page .closing .button{min-height:52px}

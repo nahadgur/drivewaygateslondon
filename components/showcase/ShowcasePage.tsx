@@ -11,6 +11,7 @@ import { EnquiryForm } from './EnquiryForm';
 import { editorialLayout } from '@/lib/editorial-layout';
 import { businessHoursHtml, renderBusinessServices } from '@/lib/business-profile';
 import { siteConfig } from '@/data/site';
+import { ensureQuoteBanner } from '@/lib/quote-banner';
 
 type PageTemplate = { className: string; main?: string; hero?: string; methods?: string; after?: string };
 type PreparedTemplate = PageTemplate & { publicationLinks: PublicationLink[] };
@@ -43,6 +44,7 @@ export function ShowcasePage({ route }: { route: string }) {
   }
   const editorial = /^\/(guides|blog)\//.test(route);
   if (editorial) main = editorialLayout(main!, route);
+  if (route !== '/contact/') main = ensureQuoteBanner(main!);
   const home = route === '/';
   return <>
     {home && <div dangerouslySetInnerHTML={{ __html: shared.entrance }} />}
