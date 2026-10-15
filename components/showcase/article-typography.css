@@ -77,3 +77,9 @@
 
 #quote-form{scroll-margin-top:calc(var(--header-height,150px) + 20px)}
 .showcase-page .closing .button{min-height:52px}
+.article-content .lead-quote{margin:28px 0 32px;flex-direction:column;align-items:stretch;gap:22px}
+.article-content .lead-quote .button{align-self:flex-start;min-width:190px}
+.article-enquiry{max-width:780px;margin:0 auto 64px;scroll-margin-top:calc(var(--header-height,150px) + 20px)}
+.article-enquiry .quote-form{margin:0}
+@media(max-width:840px){.article-enquiry{margin-inline:20px}}
+@media(max-width:600px){.article-content .lead-quote .button{align-self:stretch;min-width:0}}

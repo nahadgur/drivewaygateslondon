@@ -11,7 +11,7 @@ import { EnquiryForm } from './EnquiryForm';
 import { editorialLayout } from '@/lib/editorial-layout';
 import { businessHoursHtml, renderBusinessServices } from '@/lib/business-profile';
 import { siteConfig } from '@/data/site';
-import { ensureQuoteBanner } from '@/lib/quote-banner';
+import { ensureQuoteBanner, placeArticleQuoteBanner } from '@/lib/quote-banner';
 
 type PageTemplate = { className: string; main?: string; hero?: string; methods?: string; after?: string };
 type PreparedTemplate = PageTemplate & { publicationLinks: PublicationLink[] };
@@ -45,6 +45,8 @@ export function ShowcasePage({ route }: { route: string }) {
   const editorial = /^\/(guides|blog)\//.test(route);
   if (editorial) main = editorialLayout(main!, route);
   if (route !== '/contact/') main = ensureQuoteBanner(main!);
+  const individualArticle = /^\/(guides|blog)\/[^/]+\/$/.test(route);
+  if (individualArticle) main = placeArticleQuoteBanner(main!);
   const home = route === '/';
   return <>
     {home && <div dangerouslySetInnerHTML={{ __html: shared.entrance }} />}
@@ -59,7 +61,12 @@ export function ShowcasePage({ route }: { route: string }) {
           <EnquiryForm />
         </div>
         <div dangerouslySetInnerHTML={{ __html: page.after! }} />
-      </div></main> : <main id="main" dangerouslySetInnerHTML={{ __html: main! }} />}
+      </div></main> : individualArticle ? <main id="main">
+        <div dangerouslySetInnerHTML={{ __html: main! }} />
+        <section id="article-enquiry" className="article-enquiry" aria-label="Request a driveway gate quote">
+          <EnquiryForm />
+        </section>
+      </main> : <main id="main" dangerouslySetInnerHTML={{ __html: main! }} />}
       <Footer home={home} />
     </div>
     {route !== '/contact/' && <div dangerouslySetInnerHTML={{ __html: shared.enquiry }} />}

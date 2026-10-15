@@ -12,9 +12,17 @@ for (const route of Object.keys(manifest.routes)) {
   const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)?.[1];
   assert(main, `${route}: no main content`);
   const banners = Array.from(main.matchAll(/<section class="[^"]*\b(?:quote-band|closing)\b[^"]*"[^>]*>([\s\S]*?)<\/section>/g));
-  assert.equal(banners.length, 1, `${route}: expected one closing CTA banner`);
+  assert.equal(banners.length, 1, `${route}: expected one CTA banner`);
   const href = banners[0][1].match(/<a\b[^>]*href="([^"]+)"/)?.[1];
-  assert(href && (/^\/contact\/(?:\?[^#]*)?#quote-form$/.test(href) || href === '#enquiry'), `${route}: CTA must lead directly to the enquiry form`);
+  assert(href && (/^\/contact\/(?:\?[^#]*)?#quote-form$/.test(href) || href === '#enquiry' || href === '#article-enquiry'), `${route}: CTA must lead directly to the enquiry form`);
+  if (/^\/(guides|blog)\/[^/]+$/.test(route)) {
+    const article = main.match(/<article class="article-content">([\s\S]*?)<\/article>/)?.[1];
+    assert(article && article.includes(banners[0][0]), `${route}: banner must be inside article`);
+    const before = article.slice(0, article.indexOf(banners[0][0]));
+    assert(before.includes('</p>') && !/<(?:h2|section|figure|details)\b/.test(before), `${route}: banner must follow introductory paragraphs before the first section`);
+    assert.equal(href, '#article-enquiry', `${route}: article CTA must reach its own form`);
+    assert(main.includes('id="article-enquiry"') && main.includes('id="quote-form"'), `${route}: missing article enquiry form`);
+  }
   if (href === '#enquiry') {
     assert(main.includes('id="enquiry"') && main.includes('id="quote-form"'), `${route}: missing local enquiry form`);
   }
