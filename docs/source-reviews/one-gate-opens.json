@@ -1,0 +1,101 @@
+[
+  {
+    "article_priority": 7,
+    "claim_id": "O1",
+    "section": "Pedestrian opening; delay",
+    "claim_or_recommendation": "MC424L supports single-leaf and two-leaf partial-opening options and a leaf delay.",
+    "source_url": "https://www.niceforyou.com/sites/default/files/upload/manuals/idv0619a00en.pdf",
+    "date_checked": "2026-10-16",
+    "qualification": "English manual printed pages 7 and 14, partial-opening functions and leaf-delay parameter. Explicitly model-specific; no programming instructions or assumption about the reader’s settings. Less than 200 derived words.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 7,
+    "claim_id": "O2",
+    "section": "Unsafe movement",
+    "claim_or_recommendation": "Dangerous gates remain out of use until safety concerns are addressed; competent assistance and safe shutdown.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/basics.htm",
+    "date_checked": "2026-10-16",
+    "qualification": "No cover removal, electrical investigation, force increase or safety bypass instructions. Less than 200 derived words.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 7,
+    "claim_id": "O3",
+    "section": "Engineering investigation",
+    "claim_or_recommendation": "BRAINY supports one or two actuators and separate motor limit-switch inputs and adjustments.",
+    "source_url": "https://www.beninca.com/en/product/external-control-units/brainy.html",
+    "date_checked": "2026-10-16",
+    "qualification": "Manufacturer product specification read. Explicitly controller-specific example, not a diagnosis or universal feature. Less than 200 derived words.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 7,
+    "claim_id": "O4",
+    "section": "Partial opening",
+    "claim_or_recommendation": "E124 offers programmable pedestrian-opening percentage.",
+    "source_url": "https://www.faac.co.uk/accessories-and-control-boards/control-boards/for-swing-gates/e124-control-board",
+    "date_checked": "2026-10-16",
+    "qualification": "Manufacturer product information read. Does not establish a safe width, setting or use for other installations. Less than 200 derived words.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 7,
+    "claim_id": "O5",
+    "section": "Safety after repair",
+    "claim_or_recommendation": "Assess the complete installation and its relevant safety measures after work.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
+    "date_checked": "2026-10-16",
+    "qualification": "No assertion that motion alone proves safety; no prescribed force setting. Supporting ledger source, not a second visible HSE link. Less than 200 derived words.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 7,
+    "claim_id": "O6",
+    "section": "Symptom history and enquiry",
+    "claim_or_recommendation": "Compare previous normal control behaviour, full movement sequence, recent work and manual release history.",
+    "source_url": null,
+    "date_checked": "2026-10-16",
+    "qualification": "Original conditional briefing for a contractor. Observations already available, not repeated fault operation; no confirmed diagnosis, invented price or guarantee.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 7,
+    "claim_id": "O7",
+    "section": "Repair scope",
+    "claim_or_recommendation": "Ask for findings, itemised work, retained equipment, compatibility explanation and safe handover.",
+    "source_url": null,
+    "date_checked": "2026-10-16",
+    "qualification": "Original consumer guidance; no promise that every single-leaf problem can be repaired or claim that replacing both motors is always unnecessary.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 7,
+    "claim_id": "CTA",
+    "section": "Introductory banner",
+    "claim_or_recommendation": "Get a Free Quote links to the same-page enquiry form.",
+    "source_url": "https://www.drivewaygateslondon.co.uk/contact/",
+    "date_checked": "2026-10-16",
+    "qualification": "Shared approved form and banner; raw end banner is moved by shared template immediately after intro and before first heading. No test leads or response-time promise.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 7,
+    "claim_id": "IMAGE",
+    "section": "Hero",
+    "claim_or_recommendation": "Illustrated paired green gates with left leaf open inward and right leaf closed.",
+    "source_url": null,
+    "date_checked": "2026-10-16",
+    "qualification": "Built-in image_gen, accurate alt text and illustrative-image disclosure; no customer-installation claim.",
+    "calculation": "None",
+    "verdict": "PASS"
+  }
+]

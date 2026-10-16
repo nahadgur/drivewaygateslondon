@@ -10,7 +10,9 @@ const reviewed = [
   ...JSON.parse(readFileSync('docs/source-reviews/replace-gate-automation.json', 'utf8')),
   ...JSON.parse(readFileSync('docs/source-reviews/gate-remote.json', 'utf8')),
   ...JSON.parse(readFileSync('docs/source-reviews/gate-intercom.json', 'utf8')),
+  ...JSON.parse(readFileSync('docs/source-reviews/one-gate-opens.json', 'utf8')),
 ];
+assert(reviewed.filter(row => row.article_priority === 7).every(row => row.verdict === 'PASS'), 'Article 7 source ledger must pass');
 // Load the pure TypeScript helpers without adding a runtime dependency or runner.
 const js = ts.transpileModule(readFileSync('lib/prepared-article-links.ts', 'utf8'), {
   compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 },
@@ -29,7 +31,7 @@ for (const [index, article] of articles.entries()) {
   assert(reviewed.some(row => row.article_priority === index + 1), `${route}: source ledger missing`);
   const prose = article.content.filter(block => block.type !== 'h2').flatMap(block => block.items || [block.text]).join(' ')
     .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\*\*/g, '');
-  const words = prose.match(/[\p{L}\p{N}]+(?:['’-][\p{L}\p{N}]+)*/gu).length;
+  const words = prose.match(/[\p{L}\p{N}]+(?:['â€™-][\p{L}\p{N}]+)*/gu).length;
   assert(words >= 1200, `${route}: ${words} body words`);
   assert.equal((page.main.match(/<h1>/g) || []).length, 1);
   assert.equal((page.main.match(/<img /g) || []).length, 1);
@@ -46,6 +48,8 @@ for (const [index, article] of articles.entries()) {
   for (const link of page.publicationLinks) {
     assert.equal(allLive.includes(`href="/blog/${link.targetSlug}/"`), articles.some(a => a.slug === link.targetSlug));
   }
+  const externalDomains = [...allLive.matchAll(/href="(https?:[^"]+)"/g)].map(match => new URL(match[1]).hostname.replace(/^www\./, ''));
+  assert.equal(new Set(externalDomains).size, externalDomains.length, `${route}: repeated external domain`);
   const card = preparedArticleCard(article);
   assert(card.includes(`href="${route}"`) && card.includes(article.featuredImage));
   console.log(`${article.slug}: ${words} body words; metadata, asset and release-link checks passed`);

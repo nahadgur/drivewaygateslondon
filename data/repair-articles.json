@@ -970,5 +970,186 @@
         "text": "When arranging [gate repair and maintenance](/services/gate-repair-and-maintenance/), send your postcode, intercom details and a brief description of the failed release. Include what other controls still do, who experiences the fault and any recent changes. That gives the contractor a useful starting point for investigating the problem and quoting for the work your entrance needs."
       }
     ]
+  },
+  {
+    "slug": "only-one-electric-gate-opens",
+    "title": "Why Does Only One Electric Gate Open?",
+    "metaTitle": "Why Does Only One Electric Gate Open? | London Repairs",
+    "useMetaTitle": true,
+    "metaDescription": "Only one electric gate opens? Check pedestrian-opening settings, leaf delays and signs of a fault. Learn what to report and when to arrange a safe repair.",
+    "category": "Maintenance",
+    "publishDate": "2026-10-16",
+    "draft": false,
+    "featuredImage": "/showcase/assets/content/only-one-electric-gate-opens.webp",
+    "featuredImageAlt": "Illustration of paired green driveway gates at a London brick house, with the left leaf open inward and the right leaf closed.",
+    "featuredImageWidth": 1672,
+    "featuredImageHeight": 941,
+    "excerpt": "Understand intentional single-leaf opening, delayed movement and faults affecting one side, with safe observations to help an engineer investigate.",
+    "relatedServiceSlug": "gate-repair-and-maintenance",
+    "content": [
+      {
+        "type": "p",
+        "text": "If only one leaf of your electric driveway gates opens, the cause may be an intended pedestrian-opening command, a delay between the leaves, or a fault affecting one side. The useful starting point is whether the same control used to open both leaves and whether the stationary leaf moves at all."
+      },
+      {
+        "type": "p",
+        "text": "**One moving leaf does not prove that the other motor needs replacing.** This guide covers paired swing gates: two leaves, each hinged to its own outer support. Tell the engineer if you have a different arrangement, such as linked telescopic sliding panels, because the drive layout and investigation will differ."
+      },
+      {
+        "type": "h2",
+        "text": "Check whether you selected pedestrian opening"
+      },
+      {
+        "type": "p",
+        "text": "Look at your handover instructions or the labels on your normal controls. Some installations provide a separate command for walking access. A different remote button, keypad command or intercom release may therefore produce a different opening from the vehicle-access control. Establish which function you requested before reporting a failed motor."
+      },
+      {
+        "type": "p",
+        "text": "For a specific example, [Nice’s MC424L instructions](https://www.niceforyou.com/sites/default/files/upload/manuals/idv0619a00en.pdf) describe one partial-opening option that opens a single leaf, and another that opens both leaves partway. The selected function depends on the installation’s programming. This explains how one leaf can open by design; it does not identify the settings on your gates."
+      },
+      {
+        "type": "p",
+        "text": "Write down the button you used and what it previously did. If the behaviour changed after someone supplied a replacement remote or altered access settings, include that history. Ask the installer to confirm the intended full-opening command. Avoid guessing programming sequences from a video or resetting the controller to see what happens."
+      },
+      {
+        "type": "h2",
+        "text": "Distinguish a normal delay from a leaf that never starts"
+      },
+      {
+        "type": "p",
+        "text": "Paired leaves need not begin moving together. The MC424L manual, for example, provides a leaf-delay setting. Your installer should explain the sequence for your own entrance, particularly where the leaves meet or overlap. A familiar staggered start is different from a new failure to complete the opening."
+      },
+      {
+        "type": "p",
+        "text": "Describe the full event you observed during normal use. Did the second leaf start later, make a small movement, stop at the same point, or remain still throughout? Say whether this happened once or on several separate occasions. An account of the complete sequence gives the engineer more to work with than “one side is slow”."
+      },
+      {
+        "type": "p",
+        "text": "Do not keep cycling a suspect gate to collect a better example. If you already have a recording from a fixed camera, you can share the relevant clip privately with the contractor. Remove unrelated footage and access details. There is no need to stand in the entrance to film another attempt."
+      },
+      {
+        "type": "h2",
+        "text": "Stop using the entrance if the movement looks unsafe"
+      },
+      {
+        "type": "p",
+        "text": "Keep people and vehicles clear if a leaf jerks, leans, scrapes heavily or moves unexpectedly. Stop pressing the controls. Follow the safe shutdown arrangements in your user instructions only if you can reach them without entering a hazardous area. A moving leaf can still create a trapping risk while its partner remains stationary."
+      },
+      {
+        "type": "p",
+        "text": "The [HSE’s powered-gate safety guidance](https://www.hse.gov.uk/work-equipment-machinery/powered-gates/basics.htm) says dangerous gates should remain out of use until the safety concerns have been addressed. Do not push a powered leaf, bridge safety inputs or open electrical covers. Arrange competent help if you cannot establish a safe way to use or secure the entrance."
+      },
+      {
+        "type": "h2",
+        "text": "Compare what the existing controls have done"
+      },
+      {
+        "type": "p",
+        "text": "Tell the contractor whether the problem affects your remote, the intercom release and any other authorised control. Use observations you already have from safe, normal operation. If the vehicle-opening button on one handset operated both leaves while another button opened one, the contractor can investigate their assigned functions. If the same leaf stayed still whichever control you used, say so."
+      },
+      {
+        "type": "p",
+        "text": "Record the time of each observation. A handset that worked six months ago offers a weaker comparison than one that worked before the fault appeared that morning. Also explain whether a visitor or resident used a different access method. On a shared entrance, ask one nominated person to collect these reports so the engineer receives a consistent account."
+      },
+      {
+        "type": "p",
+        "text": "Our guide to remote-control problems explains the distinction between the handset, receiver and command reaching the controller. Keep this single-leaf report focused on which side moves and which opening you expected. There is little value in buying another remote before the contractor has checked whether the original command is correct."
+      },
+      {
+        "type": "h2",
+        "text": "What the engineer may investigate on the stationary side"
+      },
+      {
+        "type": "p",
+        "text": "An engineer needs to trace the installed system rather than diagnose it from the appearance of the gate. They can assess the gate’s physical movement, its drive equipment, the relevant controls and the condition of the connections. Ask them to explain which finding accounts for the difference between the two leaves."
+      },
+      {
+        "type": "p",
+        "text": "The [Benincà BRAINY control-unit specification](https://www.beninca.com/en/product/external-control-units/brainy.html) illustrates why the two sides need separate consideration: it supports one or two actuators, with separate motor limit-switch inputs and adjustments. It also distinguishes pedestrian, opening and safety inputs. These features are specific to that controller; another installation may use different equipment and diagnostics."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Gate and supports: report visible leaning, a changed gap, scraping marks or damage after an impact. Leave movement checks and any dismantling to the contractor.",
+          "Drive and release mechanism: mention any recent manual operation, servicing or work around the motor. Describe what happened without assuming that the motor has burnt out.",
+          "Command and control: ask whether the intended opening instruction reaches the controller and whether its configuration matches the installed pair of gates.",
+          "Position and protective devices: ask the engineer to interpret the installed system’s indications and verify its response. A light or a click alone does not establish a safe repair."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "If the contractor proposes a replacement component, ask what inspection or measurement supports that recommendation. A clear explanation should connect the reported symptom with the finding and the proposed work. You should also know whether the quotation includes checking the completed pair of gates or only fitting a part."
+      },
+      {
+        "type": "h2",
+        "text": "If it started after a power cut or manual release"
+      },
+      {
+        "type": "p",
+        "text": "Tell the engineer who released the gates, which leaf they moved and whether they followed the instructions for that operator. Ask them to check the release and re-engagement arrangements if you are uncertain. Do not force a release lever or copy instructions intended for a different motor. Our [manual gate-release guide](/guides/how-to-manually-open-electric-gate/) explains the precautions and paperwork to check."
+      },
+      {
+        "type": "p",
+        "text": "Separate events in your report: the power went off, someone moved one leaf, power returned, and then you noticed the symptom. That sequence helps the engineer choose their checks. It does not prove that the power cut erased the settings, damaged a board or caused the motor to fail. Avoid a factory reset while the cause remains unclear."
+      },
+      {
+        "type": "h2",
+        "text": "If one leaf starts moving and then stops"
+      },
+      {
+        "type": "p",
+        "text": "A leaf that starts moving and then stops presents a different symptom from one that never responds. Note where it stopped, whether it reversed and whether you noticed contact with the ground or another object. Report recent paving, landscaping or damage near the entrance. Do not move into its travel area to check clearance while the system can operate."
+      },
+      {
+        "type": "p",
+        "text": "Do not increase the force setting to overcome the symptom. The contractor should assess the complete installation and the safety measures relevant to it. Ask for an explanation of any adjustment and the checks completed afterwards. The fact that both leaves move again does not, by itself, show that the original fault or safety concern has been resolved."
+      },
+      {
+        "type": "h2",
+        "text": "Can you keep using just the working leaf?"
+      },
+      {
+        "type": "p",
+        "text": "Ask the responsible contractor to confirm an arrangement for your particular entrance. An installation with a documented pedestrian-opening function differs from a faulty pair that happens to leave a narrow gap. Consider how residents would enter and leave, where vehicles would wait, and how you would secure the stationary leaf. Do not treat a convenient opening as permission to continue using a suspect system."
+      },
+      {
+        "type": "p",
+        "text": "Manufacturers also define partial opening differently. [FAAC’s E124 product information](https://www.faac.co.uk/accessories-and-control-boards/control-boards/for-swing-gates/e124-control-board) describes a programmable pedestrian-opening percentage. The presence of such a feature on one controller does not establish the opening width, permitted use or safe settings for yours. Obtain the instructions and a demonstration for the actual installation."
+      },
+      {
+        "type": "h2",
+        "text": "Prepare a useful repair enquiry"
+      },
+      {
+        "type": "p",
+        "text": "Send a short account of the fault with your postcode and any accessible make or model information. Describe the affected leaf from a fixed viewpoint, for example “the right-hand leaf when looking in from the street”. Left and right alone can confuse a conversation when the resident and engineer picture opposite sides of the entrance."
+      },
+      {
+        "type": "ol",
+        "items": [
+          "State which leaf opens, which stays still, and whether either leaf starts then stops or reverses.",
+          "Name the control used and whether that exact command previously opened both leaves.",
+          "Give the date the problem began and mention a power cut, manual release, impact or recent work.",
+          "Explain whether the entrance serves one household or several, and describe any urgent access difficulty.",
+          "Ask about the inspection charge, approval for additional work and what the engineer will provide after the repair."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Keep photographs limited to views you can take from a safe position. An overall entrance view and an externally readable product label may help the contractor prepare. You do not need to remove covers or expose wiring. If another company fitted the gates, send whatever handover and service records you hold rather than delaying the enquiry because you lack the original invoice."
+      },
+      {
+        "type": "h2",
+        "text": "Agree the repair scope and handover"
+      },
+      {
+        "type": "p",
+        "text": "Request an itemised proposal that distinguishes investigation, repair parts and optional replacement work. Ask which existing equipment can remain and why any wider change is necessary. A fault affecting one leaf does not automatically justify replacing both motors or the complete gate installation. If the engineer recommends a matched replacement, ask them to explain the compatibility or support limitation."
+      },
+      {
+        "type": "p",
+        "text": "Before accepting the handover, ask the contractor to demonstrate the agreed vehicle and pedestrian functions under safe conditions, explain any changed controls and provide the relevant records. Keep the repaired entrance’s instructions with the responsible contractor’s details. For [electric gate repair and maintenance](/services/gate-repair-and-maintenance/), your enquiry should make the single-leaf symptom clear so the discussion starts with the problem you need resolved."
+      }
+    ]
   }
 ]

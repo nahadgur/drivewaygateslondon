@@ -1,0 +1,42 @@
+{
+  "article_priority": 7,
+  "slug": "only-one-electric-gate-opens",
+  "publication_date": "2026-10-16",
+  "verdict": "PASS",
+  "body_words": 1595,
+  "intent": "One leaf of paired swing gates stays still: distinguish pedestrian commands, staggered opening and side-specific faults.",
+  "overlap_review": "Distinct from remote, intercom and stopping/reversing articles; existing remote article gains one conditional incoming link.",
+  "source_review": "Nice MC424L manual, HSE basics and safety pages, Beninca BRAINY and FAAC E124 primary sources checked 16 October 2026; claim ledger one-gate-opens.json.",
+  "internal_links": "Remote article, manual-release guide and repair service once each; future stopping/reversing link stays plain until published. Introductory banner links to same-page enquiry form.",
+  "external_links": "One visible link each to Nice, HSE, Beninca and FAAC.",
+  "authorisation": "User said ok proceed after the single next eligible article was identified. Friday 16 October, three calendar days after the last new release.",
+  "parent_commit": "276210502ba95757a70ede7ee9420744fa2a4d90",
+  "copy_review": "British English; conditional diagnosis; no prices, safety bypasses, unsupported guarantees or invented case studies.",
+  "image": {
+    "tool": "built-in image_gen",
+    "source_file": "C:/Users/Jerwin/.codex/generated_images/01a0f227-b194-76a2-8e2e-7fd2bc856b1e/exec-78e02761-7a73-49b9-8715-4a068aa4d199.png",
+    "webp": "/showcase/assets/content/only-one-electric-gate-opens.webp",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sha256": "79589e3827d8d8c68b38864592731ae0bd0b184c1faa3a0014665dca412106a9",
+    "prompt_summary": "Bright architectural editorial illustration: London brick house, paired equal-width green barred swing gates hinged to outer red-brick pillars; left leaf inward about 65 degrees, right closed; cream paving, shrubs, blue sky and autumn sunshine; no people, labels, logos, exposed wiring or technical arrows.",
+    "disclosure": "Illustration, not a verified customer installation"
+  },
+  "validation": [
+    "Build, lint and TypeScript passed; 1588 generated pages",
+    "Quote-banner verifier passed for 1580 marketing pages",
+    "Seven article data, assets, source ledgers, unique external domains and HTTP visibility checks passed",
+    "Content consolidation and security hub passed",
+    "207 templates, 5251 internal links/assets and 1368 service-area pages verified",
+    "Desktop 1440px and mobile 390/320px passed: hero, exact metadata, schema, date, collapsible contents, no overflow, introductory banner and same-page enquiry navigation",
+    "All article internal links return 200; incoming remote-article link appears once; future priority 8 remains plain text",
+    "Existing six article bodies and editorial data unchanged",
+    "Mobile screenshots visually reviewed; no enquiries submitted"
+  ],
+  "remaining_after_push": [
+    "Matching successful GitHub Production deployment",
+    "Live page, date, hero, metadata, links, CTA and sitemap"
+  ]
+}
