@@ -1,0 +1,101 @@
+[
+  {
+    "article_priority": 8,
+    "claim_id": "R1",
+    "section": "Protective reversal; intended commands",
+    "claim_or_recommendation": "CAME ZL19N describes reopening on a relevant safety input, motor-overload response and partial/stop commands.",
+    "source_url": "https://static.came.com/doc/319U33.pdf",
+    "date_checked": "2026-10-19",
+    "qualification": "Manufacturer manual 319U33 English pages 2, 3 and 8 (PDF indices 17,18,23). Model-specific examples only; no DIP, terminal, force, reset or programming instructions. Under 200 source-derived words.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 8,
+    "claim_id": "R2",
+    "section": "Inputs; resistance; repeated use",
+    "claim_or_recommendation": "Nice MC424L distinguishes photocell, stop-input, increased-resistance and manoeuvre-limit events; current varies with friction and wind.",
+    "source_url": "https://www.niceforyou.com/sites/default/files/upload/manuals/idv0619a00en.pdf",
+    "date_checked": "2026-10-19",
+    "qualification": "Manufacturer English pages 14 and 17, Table 10. No diagnostic code generalised to other equipment; no force adjustment or enclosure-opening instruction. Under 200 source-derived words.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 8,
+    "claim_id": "R3",
+    "section": "Reversal risk; weather; force testing",
+    "claim_or_recommendation": "Complete-system assessment includes environmental influences and safe reversal behaviour; force testing is relevant where force limitation is the primary protection.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
+    "date_checked": "2026-10-19",
+    "qualification": "No claim that reversal or a sensor proves safety; no numerical force limits, prescriptive test routine or general compliance guarantee. Under 200 source-derived words.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 8,
+    "claim_id": "R4",
+    "section": "Safe access",
+    "claim_or_recommendation": "Dangerous gates should remain out of use until concerns are addressed; competent assistance and safe shutdown arrangements.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/basics.htm",
+    "date_checked": "2026-10-19",
+    "qualification": "Supporting ledger source, not a second visible HSE link. No unsafe manual release, pushing or test-obstruction instructions. Under 200 source-derived words.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 8,
+    "claim_id": "R5",
+    "section": "Mechanical inspection",
+    "claim_or_recommendation": "Report scraping, changed gaps and recent works; ask the contractor to investigate movement, supports and running gear.",
+    "source_url": null,
+    "date_checked": "2026-10-19",
+    "qualification": "Original conditional inspection brief, consistent with the documented resistance/whole-installation principles. Does not diagnose a roller, hinge, motor or control board from a symptom.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 8,
+    "claim_id": "R6",
+    "section": "Symptom brief; intermittent behaviour",
+    "claim_or_recommendation": "Record direction, stopping point, subsequent motion, control used and timing from observations already available.",
+    "source_url": null,
+    "date_checked": "2026-10-19",
+    "qualification": "Original reporting framework. No instruction to reproduce a hazardous fault, open covers or capture a fresh operating video.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 8,
+    "claim_id": "R7",
+    "section": "Repair scope; handover",
+    "claim_or_recommendation": "Compare findings, defined repair, optional replacement, access arrangements and relevant handover records.",
+    "source_url": null,
+    "date_checked": "2026-10-19",
+    "qualification": "Original buyer guidance. No invented prices, promised repair, availability or claims about universal component life.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 8,
+    "claim_id": "CTA",
+    "section": "Introductory banner",
+    "claim_or_recommendation": "Get a Free Quote for investigation of stopping/reversing symptoms via the existing same-page form.",
+    "source_url": "https://www.drivewaygateslondon.co.uk/contact/",
+    "date_checked": "2026-10-19",
+    "qualification": "Reviewed route entry in data/article-ctas.json. No new fields, prefilled messages, free assessment or response-time promise. No test enquiries.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 8,
+    "claim_id": "IMAGE",
+    "section": "Hero",
+    "claim_or_recommendation": "Illustrated teal sliding gate partway across an entrance, with clear opening to the right.",
+    "source_url": null,
+    "date_checked": "2026-10-19",
+    "qualification": "Built-in image_gen; accurate alt and illustrative-image disclosure. No construction-drawing or verified-customer claim.",
+    "calculation": "None",
+    "verdict": "PASS"
+  }
+]

@@ -166,5 +166,9 @@
   "/blog/only-one-electric-gate-opens/": {
     "heading": "Need help getting both gate leaves working?",
     "description": "Tell us which leaf stays still, which control you used and whether the behaviour has changed. Ask about investigating the single-leaf fault before replacing a motor."
+  },
+  "/blog/electric-gates-stop-halfway-or-keep-reversing/": {
+    "heading": "Gates stopping halfway or reversing?",
+    "description": "Tell us where the movement stops and what happens next, using what you have already observed. Ask about investigating the fault and the repair work your gates may need."
   }
 }

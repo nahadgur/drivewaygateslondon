@@ -1,0 +1,42 @@
+{
+  "article_priority": 8,
+  "slug": "electric-gates-stop-halfway-or-keep-reversing",
+  "publication_date": "2026-10-19",
+  "verdict": "PASS",
+  "body_words": 1635,
+  "intent": "Movement begins then stops or reverses; distinguish response from diagnosis and prepare an evidence-based repair enquiry.",
+  "overlap_review": "Distinct from never closing, one stationary leaf, repeated breakdowns and future mechanical repair topics. Conditional links preserve the original queue.",
+  "source_review": "HSE powered-gate safety and basics, Nice MC424L manual and CAME ZL19N manual checked 19 October 2026; claim ledger gates-stopping-reversing.json.",
+  "internal_links": "Published never-closes article, safety-device guide, force-testing guide and repair service once each. Conditional future links to sliding-gate sticking and sagging swing gates stay plain. Incoming links from articles 2 and 7.",
+  "external_links": "One each to HSE, Nice and CAME.",
+  "authorisation": "User explicitly requested the next Monday article. Last new article dated 16 October; today Monday 19 October in Asia/Shanghai. Earlier CTA-only update did not advance the queue.",
+  "parent_commit": "8bac131d7e883c6af662e5d3bb292987e13393e2",
+  "copy_review": "British English, conditional fault assessment and original enquiry/quotation guidance. No bypass, force-adjustment instructions, prices or guarantees.",
+  "image": {
+    "tool": "built-in image_gen",
+    "source_file": "C:/Users/Jerwin/.codex/generated_images/01a0f227-b194-76a2-8e2e-7fd2bc856b1e/exec-67fbf16d-4e96-4152-9a3a-bd52e07cdab5.png",
+    "webp": "/showcase/assets/content/electric-gates-stop-halfway-or-keep-reversing.webp",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sha256": "d4e7477e1397d570bac6b5a747e3f3b6e5a82a515c512927e5fc07774e9738d1",
+    "prompt_summary": "Bright architectural editorial illustration of a teal horizontal-slat sliding gate partway across a London cream-brick home entrance; clear gap to right, level track, brick piers, autumn sunlight; no people, vehicles, exposed wiring, obstructions, logos or text.",
+    "disclosure": "Illustration, not a verified customer installation",
+    "prompt": "Create a unique bright architectural editorial illustration for a British homeowner article titled 'Electric Gates Stop Halfway or Keep Reversing: What Needs Checking?'. Wide 1672 by 941 pixels, landscape. Show one substantial forest-teal horizontal-slat SLIDING driveway gate partway across the entrance of a modest attractive London cream-brick home, with a clearly visible open gap to the right and the gate extending into its unobstructed run-back space to the left behind the boundary. Keep the sliding geometry physically plausible: one straight level ground track runs across the entrance and under the gate into the side run-back; no swing hinges or motors floating in space. View from outside at a gentle oblique angle so the track and partial opening are readable. Small unbranded dark photocell housings on the opposing entrance posts are acceptable, no visible beams. Warm pale paving, muted terracotta brick boundary piers, green hedges, sunny blue sky, soft autumn sunlight and a few golden leaves away from the movement path. Refined hand-painted architectural illustration with crisp shapes, subtle paper texture and soft dimensional shading, clearly an illustration not a customer photo. Entire gate and entrance comfortably inside frame with breathing room. No people, no vehicles, no objects obstructing the gate, no exposed wiring, no repair tools, no arrows, no diagram labels, no text or logos. The scene represents a gate paused partway, not a diagnostic construction drawing."
+  },
+  "validation": [
+    "Build, lint and TypeScript passed; 1589 generated pages",
+    "1581 marketing-page banner checks and 43 exact article CTA checks passed",
+    "Eight prepared articles passed metadata, asset, body-word, source-ledger, external-domain and internal-link checks",
+    "Content consolidation, security hub and existing template/internal-asset checks passed",
+    "New article at 1440,390,320px: metadata, schema, date, hero, collapsible contents, no overflow and introductory CTA navigation passed",
+    "Two incoming published links active; two future mechanical-topic links remain plain text",
+    "Existing seven article bodies and 42 previous CTA entries preserved; enquiry form fields and empty message unchanged",
+    "Mobile hero/header and tailored banner visually reviewed; no test enquiries submitted"
+  ],
+  "remaining_after_push": [
+    "Matching successful GitHub Production deployment",
+    "Live date, hero, metadata, CTA navigation, links, index and sitemap"
+  ]
+}

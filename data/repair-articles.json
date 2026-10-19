@@ -1151,5 +1151,189 @@
         "text": "Before accepting the handover, ask the contractor to demonstrate the agreed vehicle and pedestrian functions under safe conditions, explain any changed controls and provide the relevant records. Keep the repaired entrance’s instructions with the responsible contractor’s details. For [electric gate repair and maintenance](/services/gate-repair-and-maintenance/), your enquiry should make the single-leaf symptom clear so the discussion starts with the problem you need resolved."
       }
     ]
+  },
+  {
+    "slug": "electric-gates-stop-halfway-or-keep-reversing",
+    "title": "Electric Gates Stop Halfway or Keep Reversing: What Needs Checking?",
+    "metaTitle": "Electric Gates Stop Halfway or Reverse | London Repairs",
+    "useMetaTitle": true,
+    "metaDescription": "Electric gates stopping halfway or reversing? Learn what an engineer should check, which symptoms to report and how to compare safe repair options in London.",
+    "category": "Maintenance",
+    "publishDate": "2026-10-19",
+    "draft": false,
+    "featuredImage": "/showcase/assets/content/electric-gates-stop-halfway-or-keep-reversing.webp",
+    "featuredImageAlt": "Illustration of a teal sliding driveway gate partway across a London entrance, with a clear opening to the right.",
+    "featuredImageWidth": 1672,
+    "featuredImageHeight": 941,
+    "excerpt": "Understand stopping and reversing faults, the difference between protective responses and failed parts, and what to include in a repair enquiry.",
+    "relatedServiceSlug": "gate-repair-and-maintenance",
+    "content": [
+      {
+        "type": "p",
+        "text": "Electric gates that stop halfway or reverse before finishing their travel need a fault assessment. The controller may be reacting to resistance or a protective input, or the installation may have a problem with its movement, controls or position settings. The point where the gate stops is useful evidence, but it does not identify a failed motor on its own."
+      },
+      {
+        "type": "p",
+        "text": "**Stop repeated attempts and report the movement you have already seen.** Explain whether the gate stops and stays still, backs away a short distance or returns fully open. Keep people clear of the entrance and do not increase the force or bypass a sensor to make it finish the journey."
+      },
+      {
+        "type": "h2",
+        "text": "Start with the direction and the stopping point"
+      },
+      {
+        "type": "p",
+        "text": "Describe whether the fault occurs while opening, closing or both. “Halfway” might mean halfway across the driveway, just after starting, or shortly before the leaves meet. Use a visible reference you already know, such as the edge of a paving slab, rather than entering the movement area to measure the stopping point."
+      },
+      {
+        "type": "p",
+        "text": "Separate what happens next from the first stop. A gate that pauses and continues, one that backs off and remains still, and one that returns to its fully open position give the engineer different starting information. Mention whether you pressed the button again before it moved. That second command can make the original sequence harder to interpret."
+      },
+      {
+        "type": "p",
+        "text": "If you have paired swing gates, say whether both leaves behave alike. Identify the affected side from a fixed viewpoint, such as looking into the drive from the road. For gates that never attempt to close, the investigation starts with a different symptom; this article concentrates on movement that begins and then stops or changes direction."
+      },
+      {
+        "type": "h2",
+        "text": "A reversal can be a protective response"
+      },
+      {
+        "type": "p",
+        "text": "A reversal does not automatically mean that the controller has lost its settings. For example, the [CAME ZL19N manual](https://static.came.com/doc/319U33.pdf) describes reopening during closing when a relevant safety input operates, as well as a response to detected motor overload. These are examples from a particular controller, not a diagnosis of your installation or instructions to alter it."
+      },
+      {
+        "type": "p",
+        "text": "Ask the engineer what triggered the response on your gates and what evidence supports that finding. “It reversed” describes an outcome. It does not establish whether the entrance contained an obstruction, a device sent an incorrect signal or the gate encountered abnormal resistance. Keep that distinction when discussing a replacement sensor, motor or control board."
+      },
+      {
+        "type": "p",
+        "text": "Nor does a reversal prove that the whole entrance is safe. A gate can move towards another trapping point when it changes direction. Avoid trying to prove that a sensor works by standing in the opening, putting an object against the leaf or holding the gate back."
+      },
+      {
+        "type": "h2",
+        "text": "Photocells, safety edges and control inputs need separate checks"
+      },
+      {
+        "type": "p",
+        "text": "The [Nice MC424L troubleshooting guidance](https://www.niceforyou.com/sites/default/files/upload/manuals/idv0619a00en.pdf) distinguishes photocell intervention, a stop input and obstacle detection associated with increased motor resistance. Its diagnostic indications help a competent person distinguish those events. A code from a different model, or a flashing light without its matching manual, cannot establish the same cause."
+      },
+      {
+        "type": "p",
+        "text": "From a safe position, report anything visible that has changed around the devices: a damaged housing, a knocked mounting, new planting or items stored near the entrance. Leave electrical covers, alignment adjustments and wiring checks to the contractor. Do not bridge a connection or disable an input because the gate works when a device is excluded."
+      },
+      {
+        "type": "p",
+        "text": "Ask which device or command was active when the fault occurred, how the contractor checked it and whether the fault lies in the device, its connection or another part of the installation. Our guide to [photocells, safety edges and vehicle loops](/guides/photocells-vs-safety-edges/) explains their different roles. Replacing one type of device with another requires an assessment of the entrance, not just a matching connector."
+      },
+      {
+        "type": "h2",
+        "text": "Mechanical resistance can vary along the travel"
+      },
+      {
+        "type": "p",
+        "text": "Tell the contractor about scraping, juddering, a changed gap or damage you noticed before the gate stopped. If a sliding gate sticks or scrapes at one part of its route, ask them to inspect that area as well as the drive equipment. Relevant checks may include the track, rollers, guides and the relationship between the gate and its supports."
+      },
+      {
+        "type": "p",
+        "text": "For sagging swing gates, ask about the hinges, supports and ground clearance through the whole arc. The engineer needs to establish whether the leaf moves as intended before deciding that the motor is too weak. A quotation should explain any proposed hinge, support or running-gear work separately from replacing automation."
+      },
+      {
+        "type": "p",
+        "text": "Mention recent resurfacing, a new threshold, landscaping or a vehicle impact. Give the date and what changed, even if somebody else carried out the work. For example, “the paving was raised last week and the gate now stops beside the new edging” is useful history. It is still an observation for the contractor to investigate, not proof that the paving is the only cause."
+      },
+      {
+        "type": "h2",
+        "text": "Explain any link with weather or repeated use"
+      },
+      {
+        "type": "p",
+        "text": "Note whether the fault has appeared during gusty weather, after rain or after several movements close together. The HSE identifies weather, debris, wear and the condition of connections as factors in powered-gate safety. The Nice manual also explains that motor-current readings can vary with friction and wind, and distinguishes excessive consecutive movements in its diagnostics."
+      },
+      {
+        "type": "p",
+        "text": "Those patterns help the engineer plan the visit. They do not justify labelling the fault “water damage” or “an overheating motor” without inspection. If the entrance worked during the last service but failed after a busy morning, give both facts. For a shared driveway, ask residents to pass observations to one person rather than making separate attempts to reproduce the problem."
+      },
+      {
+        "type": "p",
+        "text": "A fault that disappears before the visit still deserves a clear record. Keep the date, weather and description of the movement. Share an existing fixed-camera clip if it shows the event, with unrelated footage and access information removed. Do not run a suspect gate again just to obtain a video."
+      },
+      {
+        "type": "h2",
+        "text": "Check the intended opening sequence with the installer"
+      },
+      {
+        "type": "p",
+        "text": "A deliberate partial-opening function can look like a gate stopping early if you expect vehicle access. The CAME manual includes partial-opening and stop commands, illustrating why the control used matters. Tell the contractor which button or access method you used and what that same command previously did."
+      },
+      {
+        "type": "p",
+        "text": "Report whether the problem began after a new remote, a control change, a service visit or manual release. Ask the engineer to check the intended travel and stopping arrangements against the actual installation. Do not start a learning cycle, move limit devices or perform a factory reset before the cause is understood."
+      },
+      {
+        "type": "p",
+        "text": "If someone else manages the entrance, establish who may authorise changes. Keep the engineer’s explanation of the full-opening and pedestrian functions with the handover records. Residents should not have to guess whether a shortened opening is deliberate or a fault that has been left unresolved."
+      },
+      {
+        "type": "h2",
+        "text": "Do not turn up the force to get past the fault"
+      },
+      {
+        "type": "p",
+        "text": "Increasing force can change how the gate responds to resistance. It may also leave the original mechanical or control problem unresolved. Any adjustment needs to form part of competent assessment and testing, rather than a homeowner experiment to get the entrance moving again."
+      },
+      {
+        "type": "p",
+        "text": "The [HSE’s guidance on powered-gate safety](https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm) treats the completed installation as a whole. Where force limitation provides the primary protection, objective force testing forms part of checking safety. Ask which checks your repair needs and request the relevant records. Our explanation of [electric gate force testing](/guides/force-testing-explained/) sets out useful questions for the contractor."
+      },
+      {
+        "type": "h2",
+        "text": "Agree safe access while the fault remains unresolved"
+      },
+      {
+        "type": "p",
+        "text": "If the gate moves unpredictably, appears unstable or presents a trapping risk, keep it out of use and seek competent help. Follow the shutdown instructions supplied for your installation only where you can do so safely. Do not push against a powered leaf, enter a gap that could close or improvise a restraint."
+      },
+      {
+        "type": "p",
+        "text": "Ask the contractor how the entrance can be left secure while awaiting work. Explain if it is the only vehicle route or serves several households. Manual release is specific to the operator and the condition of the gate; releasing a damaged or poorly restrained leaf can introduce another problem. Tell the contractor if you lack the key, instructions or a safe alternative route."
+      },
+      {
+        "type": "h2",
+        "text": "Send a concise fault brief before booking"
+      },
+      {
+        "type": "p",
+        "text": "A clear enquiry helps the repair company decide what information and equipment it needs before attending. You do not need to diagnose the failed part. Describe the symptom, give the postcode and include the make or model from records or a label you can read without removing a cover."
+      },
+      {
+        "type": "ol",
+        "items": [
+          "State whether the gate is sliding or swinging, and whether one leaf or the whole entrance is affected.",
+          "Describe the direction of travel, where the movement stops and how far it reverses, if at all.",
+          "Name the control used and say whether this behaviour is new or part of the usual opening sequence.",
+          "Mention recent work, damage, weather or interrupted power, with dates where possible.",
+          "Explain the access difficulty and ask about the attendance charge, investigation scope and approval of additional work."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Keep your observations separate from suggestions somebody has made. “The left leaf stops beside the drain” is an observation; “the motor needs replacing” is a proposal that needs evidence. If you have a previous report or quotation, include it so the next contractor can explain what it agrees with and what still needs checking."
+      },
+      {
+        "type": "h2",
+        "text": "Compare the repair scope and check the handover"
+      },
+      {
+        "type": "p",
+        "text": "Ask for the finding, the proposed remedy and the total work included. A repair might involve mechanical work, a protective device, a connection or control equipment, depending on the diagnosis. Ask what will be retained, which settings will change and how the engineer will check the reported fault after the work."
+      },
+      {
+        "type": "p",
+        "text": "Separate the investigation charge from optional improvements. If a contractor recommends wider replacement, ask why a smaller repair would not address the problem and what compatibility or condition issue limits the choices. There is no reliable fixed repair price for “gates reversing” without knowing the installed system and the cause."
+      },
+      {
+        "type": "p",
+        "text": "At handover, ask for an explanation of the corrected behaviour, any changed controls and the maintenance instructions relevant to the repair. Keep the findings and test records with your gate documents. When requesting [electric gate repair and maintenance](/services/gate-repair-and-maintenance/), describe the stopping or reversing sequence so the enquiry starts with the fault you need resolved."
+      }
+    ]
   }
 ]

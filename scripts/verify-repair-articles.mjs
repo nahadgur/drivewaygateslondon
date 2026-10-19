@@ -11,8 +11,12 @@ const reviewed = [
   ...JSON.parse(readFileSync('docs/source-reviews/gate-remote.json', 'utf8')),
   ...JSON.parse(readFileSync('docs/source-reviews/gate-intercom.json', 'utf8')),
   ...JSON.parse(readFileSync('docs/source-reviews/one-gate-opens.json', 'utf8')),
+  ...JSON.parse(readFileSync('docs/source-reviews/gates-stopping-reversing.json', 'utf8')),
 ];
-assert(reviewed.filter(row => row.article_priority === 7).every(row => row.verdict === 'PASS'), 'Article 7 source ledger must pass');
+for (const priority of [7, 8]) {
+  const ledger = reviewed.filter(row => row.article_priority === priority);
+  assert(ledger.length && ledger.every(row => row.verdict === 'PASS'), `Article ${priority} source ledger must pass`);
+}
 // Load the pure TypeScript helpers without adding a runtime dependency or runner.
 const js = ts.transpileModule(readFileSync('lib/prepared-article-links.ts', 'utf8'), {
   compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2020 },
@@ -31,7 +35,7 @@ for (const [index, article] of articles.entries()) {
   assert(reviewed.some(row => row.article_priority === index + 1), `${route}: source ledger missing`);
   const prose = article.content.filter(block => block.type !== 'h2').flatMap(block => block.items || [block.text]).join(' ')
     .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\*\*/g, '');
-  const words = prose.match(/[\p{L}\p{N}]+(?:['â€™-][\p{L}\p{N}]+)*/gu).length;
+  const words = prose.match(/[\p{L}\p{N}]+(?:['\u2019-][\p{L}\p{N}]+)*/gu).length;
   assert(words >= 1200, `${route}: ${words} body words`);
   assert.equal((page.main.match(/<h1>/g) || []).length, 1);
   assert.equal((page.main.match(/<img /g) || []).length, 1);
