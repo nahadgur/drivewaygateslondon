@@ -1,0 +1,485 @@
+{
+  "date": "2026-10-19",
+  "scope": "All 42 existing London guides and blogs; no new publication",
+  "user_direction": "Tailor banner heading and supporting copy only. Keep approved Get a Free Quote button and existing enquiry form unchanged. No topic fields, prefilled messages or additional form steps.",
+  "placement": "Inside article immediately after introduction, before first main section",
+  "articles": [
+    {
+      "route": "/blog/accoya-wood-gates-london/",
+      "article_title": "Accoya Wood for Driveway Gates",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Considering Accoya for your driveway gates?",
+        "description": "Tell us about the gate style, finish and upkeep you have in mind. Ask for a quote that separates the timber, gate construction and installation."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/anthracite-grey-gate-trends-london/",
+      "article_title": "Choosing Anthracite Grey for Driveway Gates",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Planning an anthracite gate finish?",
+        "description": "Tell us which gate material you are considering and what it needs to match. Ask about colour samples, sheen and the finish included in your quote."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/article-4-directions-gate-planning-permission/",
+      "article_title": "Article 4 Directions and Driveway Gate Planning Permission",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Planning gate work in an Article 4 area?",
+        "description": "Describe the gate changes you want and any restrictions the council has confirmed. Ask for a quote based on that scope; the planning authority must confirm permissions."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/automated-gate-home-insurance/",
+      "article_title": "Electric Driveway Gates and Home Insurance",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Need a quote for gate work your insurer has asked about?",
+        "description": "Tell us what your insurer needs and whether you are considering installation, repairs or replacement. We can discuss the gate work; your insurer decides cover and policy terms."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/automated-gates-sloping-driveways-london/",
+      "article_title": "Automated Gates on Sloping Driveways in London",
+      "previous_banner": "Discuss your gate projectTell us about the entrance and the work you need.Get in touch",
+      "new_banner": {
+        "heading": "Working out which gates suit your sloping drive?",
+        "description": "Describe where the drive rises or falls and how you park. Ask about an entrance layout and installation quote that account for the slope, gate movement and drainage."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/bi-fold-vs-sliding-gates-london/",
+      "article_title": "Bi-fold vs Sliding Gates for Short Driveways",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Comparing gates for a short driveway?",
+        "description": "Tell us about your parking space and the room beside the entrance. Ask for a quote based on a layout that allows for the full movement of folding or sliding gates."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/conservation-area-gate-planning-london/",
+      "article_title": "Designing Driveway Gates in a Conservation Area",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Planning repairs or new gates in a conservation area?",
+        "description": "Tell us which original details you want to retain and what the council has advised. Ask about repair or replacement options that fit your frontage and the confirmed requirements."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/do-i-need-a-dropped-kerb-for-a-driveway-gate-london/",
+      "article_title": "Do You Need a Dropped Kerb for a Driveway Gate?",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Coordinating your gates with a vehicle crossing?",
+        "description": "Tell us whether your crossing is existing, new or being widened, and what the highway authority has confirmed. Ask for a gate quote that accounts for the entrance layout and sequence of work."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/driveway-gate-property-value-london/",
+      "article_title": "Do Driveway Gates Add Value to a London Home?",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Considering gates before selling or improving your home?",
+        "description": "Tell us what you want to improve about the entrance and your budget. Ask for a quote based on appearance, access and upkeep, without relying on a promised increase in property value."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/driveway-gates-noise-reduction-london/",
+      "article_title": "Will Driveway Gates Reduce Traffic Noise?",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Considering gates for a noisy frontage?",
+        "description": "Describe the road, existing boundary and the change you want to make. Ask about gate design and installation costs; a gate quote alone cannot confirm a reduction in traffic noise."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/electric-gate-parcel-delivery-access-london/",
+      "article_title": "Parcel and Delivery Access Through Electric Gates",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Need a better delivery routine at your gates?",
+        "description": "Tell us where parcels should go and how you want to answer couriers. Ask about intercom or access-control changes that suit your existing gates and household routine."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/front-garden-paving-suds-london/",
+      "article_title": "Front Garden Paving, Drainage and Driveway Gates",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Planning paving and gate work together?",
+        "description": "Tell us about the proposed surface, finished levels and drainage arrangements. Ask for a gate quote that coordinates foundations and cable routes with the driveway work."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/gate-motor-humming-not-moving/",
+      "article_title": "Why Your Gate Motor Is Humming but Not Moving",
+      "previous_banner": "Discuss your gate projectTell us about the entrance and the work you need.Get in touch",
+      "new_banner": {
+        "heading": "Gate motor humming but the gate stays still?",
+        "description": "Tell us when the problem started and what you have already noticed, without trying the gate again. Ask about a repair assessment and the cost of investigating the fault."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/gsm-gate-openers-london/",
+      "article_title": "GSM Gate Openers: Network, SIM and Access Checks",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Want to open your gates by phone?",
+        "description": "Tell us about your current gate controls, mobile signal at the entrance and who needs access. Ask about compatible phone-entry options, installation and ongoing SIM costs."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/minimalist-steel-slat-gates-london/",
+      "article_title": "Steel Slat Driveway Gates: Privacy and Design Choices",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Planning steel slat gates for your entrance?",
+        "description": "Tell us how much privacy you want and which views need to stay clear. Ask for a quote that specifies the slat spacing, frame, finish and opening arrangement."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/outward-swinging-gates-uk-rules/",
+      "article_title": "Can Driveway Gates Open Outwards in London?",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Unsure how your gates can open within the boundary?",
+        "description": "Describe the available space and any highway boundary information you have. Ask about alternative gate layouts; the relevant authority must confirm boundary and permission questions."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/smart-gate-integration-ring-nest-control4/",
+      "article_title": "Connecting Driveway Gates to Ring, Nest and Control4",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Want your gates to work with your smart-home system?",
+        "description": "Tell us which Ring, Nest or Control4 equipment you use and whether you need visitor calls, gate release or status information. Ask for a compatibility check within the proposed installation scope."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/solar-powered-gate-automation-london/",
+      "article_title": "Can Solar Power Run a Driveway Gate in London?",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Considering solar power for your gates?",
+        "description": "Tell us about shade at the entrance, daily use and the equipment you want to power. Ask for a site-specific proposal that includes winter demand and backup arrangements."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/telescopic-gates-space-saving-london/",
+      "article_title": "Telescopic Driveway Gates for Limited Side Space",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Short of space beside your gate opening?",
+        "description": "Tell us the approximate opening width, available side space and parking layout. Ask whether telescopic gates are worth assessing and what the full installation quote would include."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/tree-protection-orders-gate-installation/",
+      "article_title": "Tree Preservation Orders and Driveway Gate Groundworks",
+      "previous_banner": "Discuss your gate projectTell us about the entrance and the work you need.Get in touch",
+      "new_banner": {
+        "heading": "Planning gate work near protected trees?",
+        "description": "Tell us where the trees stand and share any council or arboricultural advice you have. Ask for a gate proposal that accounts for those constraints before groundworks are agreed."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/underground-gate-motors-london/",
+      "article_title": "Underground Gate Motors for London Driveways",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Considering underground motors for your gates?",
+        "description": "Tell us whether you have existing gates and what you know about drainage at the entrance. Ask for a quote that includes foundation boxes, access for servicing and the surrounding groundworks."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/video-intercom-comelit-vs-hikvision/",
+      "article_title": "Comelit vs Hikvision Gate Intercoms: Compare the Actual System",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Comparing Comelit and Hikvision for your gate?",
+        "description": "Tell us about the existing wiring and where you want visitor calls to ring. Ask for a complete installed-system quote, including gate release, phone access and ongoing charges."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/wrought-iron-gate-restoration-london/",
+      "article_title": "Restoring Metal Driveway Gates in London",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Want to restore your existing metal gates?",
+        "description": "Describe the rust, damaged fittings or original details you want to keep. Ask about an assessment and a repair quote that separates metalwork, preparation and finishing."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/guides/aluminium-vs-wooden-driveway-gates/",
+      "article_title": "Aluminium vs Wooden Driveway Gates",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Choosing between aluminium and timber gates?",
+        "description": "Tell us the appearance you want, the upkeep you can manage and your approximate opening size. Ask for comparable quotes covering the same entrance and installation scope."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/guides/automation-kit-installation-prices/",
+      "article_title": "The Cost of Automating Existing Driveway Gates",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Budgeting to automate the gates you already have?",
+        "description": "Tell us about the existing gates, supports and nearby power supply. Ask for a retrofit quote that includes the condition assessment, controls and work around the motors."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/guides/best-intercom-systems/",
+      "article_title": "Choosing an Intercom for Your Driveway Gate",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Need an intercom that suits your household?",
+        "description": "Tell us who should answer visitors and whether you prefer a screen, phone or both. Ask about equipment and installation options for your gate and available connections."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/guides/electric-driveway-gates-cost-london/",
+      "article_title": "Electric Driveway Gate Costs in London",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you have in mind.Get a Free Quote",
+      "new_banner": {
+        "heading": "Need a cost for your own entrance?",
+        "description": "Tell us the approximate opening size, gate style and whether you need a new installation or retrofit. Ask for an itemised quote covering the gate, power, groundworks and controls."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/guides/electric-gate-running-costs/",
+      "article_title": "Electric Gate Running Costs: Calculate Your Electricity Use",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Concerned about the cost of running your gates?",
+        "description": "Tell us about your gate equipment and whether you are considering servicing or an upgrade. Ask about the work and ownership costs to compare before replacing equipment."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/guides/force-testing-explained/",
+      "article_title": "Electric Gate Force Testing: What Homeowners Should Ask",
+      "previous_banner": "Discuss your gate projectTell us about the entrance and the work you need.Get in touch",
+      "new_banner": {
+        "heading": "Need to discuss force testing for your gates?",
+        "description": "Tell us about the installation, any recent changes and the records you hold. Ask what a safety assessment would cover, which tests are appropriate and what the quoted work includes."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/guides/how-to-manually-open-electric-gate/",
+      "article_title": "How to Manually Open an Electric Gate During a Power Cut",
+      "previous_banner": "Discuss your gate projectTell us about the entrance and the work you need.Get in touch",
+      "new_banner": {
+        "heading": "Need help with your gate’s manual release?",
+        "description": "Tell us the operator model if you know it and whether you are dealing with a power cut, a missing key or a release fault. Ask about assistance without forcing the gate or dismantling the operator."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/guides/photocells-vs-safety-edges/",
+      "article_title": "Gate Safety Devices: Photocells, Safety Edges and Loops",
+      "previous_banner": "Discuss your gate projectTell us about the entrance and the work you need.Get in touch",
+      "new_banner": {
+        "heading": "Unsure which protection your gates need?",
+        "description": "Tell us about the existing devices and any change in gate behaviour. Ask about an assessment of the whole entrance and a quote for any recommended work."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/guides/swing-vs-sliding-gates/",
+      "article_title": "Swing vs Sliding Driveway Gates",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Not sure which opening layout fits your driveway?",
+        "description": "Tell us about the opening width, parking position and available side space. Ask for a layout assessment and quote that account for gate travel, slopes and walking access."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/guides/uk-electric-gate-safety-laws/",
+      "article_title": "UK Electric Gate Safety: Responsibilities and Handover",
+      "previous_banner": "Discuss your gate projectTell us about the entrance and the work you need.Get in touch",
+      "new_banner": {
+        "heading": "Need help assessing your existing electric gates?",
+        "description": "Tell us who uses the entrance, any concerns and which handover or service records you have. Ask what an assessment includes and what documentation comes with the quoted work."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/guides/winter-gate-maintenance/",
+      "article_title": "Winter Gate Maintenance for London Homes",
+      "previous_banner": "Discuss your driveway gatesTell us about your entrance and the work you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Preparing your gates for wet and cold weather?",
+        "description": "Tell us about the last service and any changes you have already noticed. Ask for a maintenance quote that covers your equipment, drainage concerns and manual-release arrangements."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/guides/driveway-home-security/",
+      "article_title": "Driveway & Home Security | A London Guide",
+      "previous_banner": "Plan a safer, more usable entranceTell us about your driveway, existing gates and the access you need.Get a Free Quote",
+      "new_banner": {
+        "heading": "Want to improve security at your entrance?",
+        "description": "Tell us about your existing gates, the access you need and the concern you want to address. Ask about gate repairs, replacement or access-control improvements that fit your driveway."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/repair-electric-gates-installed-by-another-company/",
+      "article_title": "Can You Repair Electric Gates Installed by Another Company?",
+      "previous_banner": "Get a Free QuoteTell us about your gates and the work you are considering.Get a Free Quote",
+      "new_banner": {
+        "heading": "Need help with gates fitted by another company?",
+        "description": "Tell us the make if you know it, what has gone wrong and which records you have. Ask whether your equipment can be assessed and what an initial repair visit would cost."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/electric-gates-open-but-wont-close/",
+      "article_title": "Electric Gates Open but Won’t Close: Common Causes and Repair Options",
+      "previous_banner": "Get a Free QuoteTell us about your gates and the work you are considering.Get a Free Quote",
+      "new_banner": {
+        "heading": "Need help with gates that won’t close?",
+        "description": "Describe whether the gates stay still, start closing or reverse, using what you have already observed. Ask about investigating the fault and the repair work your entrance may need."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/electric-gates-keep-breaking-down-repair-or-replace/",
+      "article_title": "Electric Gates Keep Breaking Down: Repair Again or Replace the System?",
+      "previous_banner": "Get a Free QuoteTell us about your gates and the work you are considering.Get a Free Quote",
+      "new_banner": {
+        "heading": "Unsure whether another gate repair is worthwhile?",
+        "description": "Tell us about the recurring faults and previous repairs. Ask for an assessment and itemised options so you can compare another repair with partial or complete replacement."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/replace-gate-automation-without-replacing-gates/",
+      "article_title": "Can You Replace Gate Automation Without Replacing the Gates?",
+      "previous_banner": "Get a Free QuoteTell us about the gates you want to retain and the automation you want to replace.Get a Free Quote",
+      "new_banner": {
+        "heading": "Want new automation while keeping your gates?",
+        "description": "Tell us which gate leaves and controls you want to retain. Ask for a replacement-automation quote that includes compatibility, condition checks and any supporting work."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/electric-gate-remote-not-working/",
+      "article_title": "Electric Gate Remote Not Working? Remote, Receiver or Gate Fault?",
+      "previous_banner": "Get a Free QuoteTell us which gate controls have stopped working and what you have noticed.Get a Free Quote",
+      "new_banner": {
+        "heading": "Need help with a gate remote that has stopped working?",
+        "description": "Tell us whether one or all handsets are affected and which other controls still work. Ask about checking the handset, receiver and gate system before buying replacement parts."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/gate-intercom-rings-but-wont-open/",
+      "article_title": "Gate Intercom Rings but Won’t Open the Gate | Repair or Replace?",
+      "previous_banner": "Get a Free QuoteTell us what happens when your intercom calls and which gate controls still work.Get a Free Quote",
+      "new_banner": {
+        "heading": "Intercom calls through but won’t open the gate?",
+        "description": "Tell us what happens when you request entry and whether another control still opens the gate. Ask about investigating the release fault before deciding to repair or replace the intercom."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    },
+    {
+      "route": "/blog/only-one-electric-gate-opens/",
+      "article_title": "Why Does Only One Electric Gate Open?",
+      "previous_banner": "Get a Free QuoteTell us which gate leaf stays still and what happens when you use your usual controls.Get a Free Quote",
+      "new_banner": {
+        "heading": "Need help getting both gate leaves working?",
+        "description": "Tell us which leaf stays still, which control you used and whether the behaviour has changed. Ask about investigating the single-leaf fault before replacing a motor."
+      },
+      "verdict": "PASS",
+      "review": "Matched to title, introduction and section coverage; enquiry about relevant gate work without promising diagnosis, approval, savings or a free technical assessment."
+    }
+  ],
+  "validation_status": "PASS",
+  "future_articles": "Add reviewed heading and description under the exact /blog/slug/ or /guides/slug/ route in data/article-ctas.json before building. The shared renderer keeps placement and button navigation. Do not alter the form.",
+  "scope_counts": {
+    "blogs": 30,
+    "guides": 12
+  },
+  "validation": [
+    "Build, lint and TypeScript passed",
+    "1580 marketing-page banner checks and 42 exact contextual-copy checks passed",
+    "All 42 articles at 1440, 390 and 320px: 126 browser checks passed",
+    "Article content preserved; form fields, placeholder and empty message unchanged",
+    "All buttons retain Get a Free Quote and navigate to the same-page form; no submissions",
+    "Representative desktop and mobile banner screenshots visually reviewed",
+    "Existing article metadata, source ledgers, internal links, security hub and 1368 service-area page checks passed"
+  ]
+}

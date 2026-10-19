@@ -46,7 +46,7 @@ export function ShowcasePage({ route }: { route: string }) {
   if (editorial) main = editorialLayout(main!, route);
   if (route !== '/contact/') main = ensureQuoteBanner(main!);
   const individualArticle = /^\/(guides|blog)\/[^/]+\/$/.test(route);
-  if (individualArticle) main = placeArticleQuoteBanner(main!);
+  if (individualArticle) main = placeArticleQuoteBanner(main!, route);
   const home = route === '/';
   return <>
     {home && <div dangerouslySetInnerHTML={{ __html: shared.entrance }} />}
