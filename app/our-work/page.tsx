@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { ShowcasePage } from '@/components/showcase/ShowcasePage';
+import { ProjectPhotoViewer } from '@/components/showcase/ProjectPhotoViewer';
 import projectPhotos from '@/data/project-photos.json';
 import { siteConfig, organizationRef } from '@/data/site';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
@@ -32,5 +33,6 @@ export default function OurWorkPage() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(buildBreadcrumbSchema([{ name: 'Our work', href: '/our-work/' }])) }} />
     <ShowcasePage route="/our-work/" />
+    <ProjectPhotoViewer />
   </>;
 }

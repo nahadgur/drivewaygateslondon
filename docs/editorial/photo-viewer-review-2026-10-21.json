@@ -1,0 +1,219 @@
+{
+  "date": "2026-10-21",
+  "verdict": "PASS",
+  "scope": "User-requested mobile check and Back to our work control for full-size images on /our-work/.",
+  "implementation": "Route-scoped client component uses a native modal dialog. Normal gallery clicks open the original WebP inside the full-screen viewer. A persistent Back to our work button, Escape and browser Back close it and restore the previous URL, scroll and selected-photo focus. Modified clicks retain normal browser behaviour. Image-load errors retain a working return button.",
+  "accessibility": "Native dialog with an associated heading, image alt text, initial back-button focus, keyboard escape, focus restoration, background scroll lock, touch targets at least 48px and safe-area-aware layout. Original image links remain available as fallback.",
+  "validation": {
+    "build": "PASS: 1590 routes; 1582 quote-banner checks and 43 article CTA checks",
+    "browser": {
+      "status": "PASS",
+      "results": [
+        {
+          "width": 1440,
+          "height": 1000,
+          "index": 0,
+          "status": "PASS",
+          "urlRestored": true,
+          "scrollRestored": true,
+          "focusRestored": true
+        },
+        {
+          "width": 1440,
+          "height": 1000,
+          "index": 7,
+          "status": "PASS",
+          "urlRestored": true,
+          "scrollRestored": true,
+          "focusRestored": true
+        },
+        {
+          "width": 768,
+          "height": 1000,
+          "index": 0,
+          "status": "PASS",
+          "urlRestored": true,
+          "scrollRestored": true,
+          "focusRestored": true
+        },
+        {
+          "width": 768,
+          "height": 1000,
+          "index": 7,
+          "status": "PASS",
+          "urlRestored": true,
+          "scrollRestored": true,
+          "focusRestored": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "index": 0,
+          "status": "PASS",
+          "urlRestored": true,
+          "scrollRestored": true,
+          "focusRestored": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "index": 1,
+          "status": "PASS",
+          "urlRestored": true,
+          "scrollRestored": true,
+          "focusRestored": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "index": 2,
+          "status": "PASS",
+          "urlRestored": true,
+          "scrollRestored": true,
+          "focusRestored": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "index": 3,
+          "status": "PASS",
+          "urlRestored": true,
+          "scrollRestored": true,
+          "focusRestored": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "index": 4,
+          "status": "PASS",
+          "urlRestored": true,
+          "scrollRestored": true,
+          "focusRestored": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "index": 5,
+          "status": "PASS",
+          "urlRestored": true,
+          "scrollRestored": true,
+          "focusRestored": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "index": 6,
+          "status": "PASS",
+          "urlRestored": true,
+          "scrollRestored": true,
+          "focusRestored": true
+        },
+        {
+          "width": 390,
+          "height": 844,
+          "index": 7,
+          "status": "PASS",
+          "urlRestored": true,
+          "scrollRestored": true,
+          "focusRestored": true
+        },
+        {
+          "width": 320,
+          "height": 700,
+          "index": 0,
+          "status": "PASS",
+          "urlRestored": true,
+          "scrollRestored": true,
+          "focusRestored": true
+        },
+        {
+          "width": 320,
+          "height": 700,
+          "index": 1,
+          "status": "PASS",
+          "urlRestored": true,
+          "scrollRestored": true,
+          "focusRestored": true
+        },
+        {
+          "width": 320,
+          "height": 700,
+          "index": 2,
+          "status": "PASS",
+          "urlRestored": true,
+          "scrollRestored": true,
+          "focusRestored": true
+        },
+        {
+          "width": 320,
+          "height": 700,
+          "index": 3,
+          "status": "PASS",
+          "urlRestored": true,
+          "scrollRestored": true,
+          "focusRestored": true
+        },
+        {
+          "width": 320,
+          "height": 700,
+          "index": 4,
+          "status": "PASS",
+          "urlRestored": true,
+          "scrollRestored": true,
+          "focusRestored": true
+        },
+        {
+          "width": 320,
+          "height": 700,
+          "index": 5,
+          "status": "PASS",
+          "urlRestored": true,
+          "scrollRestored": true,
+          "focusRestored": true
+        },
+        {
+          "width": 320,
+          "height": 700,
+          "index": 6,
+          "status": "PASS",
+          "urlRestored": true,
+          "scrollRestored": true,
+          "focusRestored": true
+        },
+        {
+          "width": 320,
+          "height": 700,
+          "index": 7,
+          "status": "PASS",
+          "urlRestored": true,
+          "scrollRestored": true,
+          "focusRestored": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "index": 0,
+          "status": "PASS",
+          "urlRestored": true,
+          "scrollRestored": true,
+          "focusRestored": true
+        },
+        {
+          "width": 844,
+          "height": 390,
+          "index": 7,
+          "status": "PASS",
+          "urlRestored": true,
+          "scrollRestored": true,
+          "focusRestored": true
+        }
+      ],
+      "errorRecovery": true,
+      "galleryAndFormPreserved": true,
+      "scopedToShowcase": true,
+      "formsSubmitted": 0,
+      "errors": []
+    },
+    "preservation": "Existing showcase main-content hash unchanged, including copy, galleries and enquiry form. No image edits, new article, route or publishing queue changes. Viewer absent from the metal-gate service page."
+  }
+}
