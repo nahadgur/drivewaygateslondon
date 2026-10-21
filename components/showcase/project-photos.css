@@ -57,6 +57,17 @@
 .work-project > header h2 { font-size: clamp(29px, 3.2vw, 43px); letter-spacing: -1px; }
 .work-project > header p { max-width: 560px; padding-top: 4px; }
 .work-single-photo { grid-template-columns: minmax(0, 1fr); max-width: 960px; }
+.work-showcase-page .project-photo-grid { align-items: stretch; }
+.work-showcase-page .project-photo { display: flex; flex-direction: column; border: 0; border-radius: 4px; overflow: hidden; background: var(--green); box-shadow: 0 8px 24px rgba(24, 33, 30, .10); }
+.work-showcase-page .project-photo > a { position: relative; flex: none; background: var(--green); }
+.work-showcase-page .project-photo figcaption { flex: 1; padding: 24px; border-top: 3px solid #8ba68f; }
+.work-showcase-page .project-photo figcaption h3 { color: #fff; font-size: clamp(22px, 2.2vw, 27px); margin-bottom: 10px; }
+.work-showcase-page .project-photo figcaption p { color: #e0e9e1; font-size: 16px; }
+.work-showcase-page .project-photo a:focus-visible { outline: 3px solid #fff; outline-offset: -6px; }
+.project-photo-view { position: absolute; right: 16px; top: 16px; display: inline-flex; align-items: center; min-height: 44px; padding: 10px 15px; background: rgba(29, 66, 51, .96); color: #fff; font: 500 14px/1.4 var(--sans); border: 1px solid rgba(255, 255, 255, .55); border-radius: 3px; pointer-events: none; }
+.work-showcase-page .project-photo > a:hover .project-photo-view { background: #fff; color: var(--green); }
+.work-showcase-page .work-project-jumps a { border-color: var(--green); color: var(--green); background: #fff; }
+.work-showcase-page .work-project-jumps a:hover { background: var(--green); color: #fff; }
 .work-related-services { padding-bottom: 30px; }
 .work-related-services h2 { font-size: clamp(30px, 3vw, 42px); margin-bottom: 22px; }
 .work-related-services nav { display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; }
@@ -79,6 +90,8 @@
   .work-project-jumps { display: grid; grid-template-columns: 1fr; }
   .work-showcase-lead { font-size: 17px; }
   .work-showcase-header h1 { letter-spacing: -1px; }
+  .work-showcase-page .project-photo figcaption { padding: 20px; }
+  .project-photo-view { right: 12px; top: 12px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .work-bento-tile img { transition: none; }

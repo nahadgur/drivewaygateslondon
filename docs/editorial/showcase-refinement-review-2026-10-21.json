@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-21",
+  "verdict": "PASS",
+  "request": "Improve the wording and the pale card styling on /our-work/.",
+  "scope": "Showcase introduction, six project-group descriptions, eight photo captions, quote banner copy and related-service heading. Forest-green caption panels, white headings, lighter body copy, full-image labels, coordinated jump links and visible keyboard focus. Styles scoped to work-showcase-page.",
+  "facts": "Copy explains visible design choices and relevant enquiry considerations. Retains work-in-progress labels and the two-view ornamental frontage grouping. No invented locations, dates, prices, material grades, certifications or project results. Images, approved quote button and form unchanged.",
+  "validation": {
+    "build": "PASS: 1590 routes, 1582 quote banners and 43 reviewed article CTAs",
+    "browser": {
+      "status": "PASS",
+      "results": [
+        {
+          "width": 1440,
+          "status": "PASS",
+          "minimumCaptionContrast": 8.999090569120357,
+          "overflow": false
+        },
+        {
+          "width": 1024,
+          "status": "PASS",
+          "minimumCaptionContrast": 8.999090569120357,
+          "overflow": false
+        },
+        {
+          "width": 768,
+          "status": "PASS",
+          "minimumCaptionContrast": 8.999090569120357,
+          "overflow": false
+        },
+        {
+          "width": 390,
+          "status": "PASS",
+          "minimumCaptionContrast": 8.999090569120357,
+          "overflow": false
+        },
+        {
+          "width": 320,
+          "status": "PASS",
+          "minimumCaptionContrast": 8.999090569120357,
+          "overflow": false
+        }
+      ],
+      "unchangedPages": 7,
+      "fullImageNavigation": true,
+      "formsSubmitted": 0,
+      "errors": []
+    },
+    "preservation": "Homepage and six service-page main-content hashes match the previously verified production release. No new article, route or queue changes."
+  },
+  "evidence": "outputs/showcase-refinement-2026-10-21/"
+}
