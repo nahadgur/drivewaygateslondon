@@ -1,0 +1,90 @@
+[
+  {
+    "article_priority": 9,
+    "claim_id": "R1",
+    "section": "System investigation; protective inputs",
+    "claim_or_recommendation": "Weather and water ingress at connections can impair safe gate operation; assess the whole installation.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
+    "date_checked": "2026-10-21",
+    "qualification": "Checked lines 49-67. One visible HSE domain link. Conditional inspection questions, no motor diagnosis, no sensor bypass, no force adjustment; fewer than 200 source-derived words.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 9,
+    "claim_id": "R2",
+    "section": "Safe access; shutdown",
+    "claim_or_recommendation": "Dangerous gates should remain out of use until safety concerns are addressed; water ingress may affect electrical and movement safety.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/basics.htm",
+    "date_checked": "2026-10-21",
+    "qualification": "Checked lines 63-85. Supporting source only, no repeated visible HSE link. No instruction to release unstable gates or approach suspect electrical equipment.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 9,
+    "claim_id": "R3",
+    "section": "Flooding and damaged electrics",
+    "claim_or_recommendation": "Do not touch wet or damaged fuse boxes; professional assessment of affected electrical equipment before reuse.",
+    "source_url": "https://www.electricalsafetyfirst.org.uk/press-and-media/what-should-i-do-if-my-home-is-flooded-vital-electrical-safety-flood-advice-as-severe-weather-hits-parts-of-the-uk/",
+    "date_checked": "2026-10-21",
+    "qualification": "Checked lines 68-80. Flood advice explicitly distinguished from diagnosing a rain-related gate fault. No wet electrical DIY or supply restoration; fewer than 200 source-derived words.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 9,
+    "claim_id": "R4",
+    "section": "Underground drainage",
+    "claim_or_recommendation": "CAME FROG-PC foundation-box instructions include drainage tubing and separate electrical routes.",
+    "source_url": "https://static.came.com/doc/119AV71.pdf",
+    "date_checked": "2026-10-21",
+    "qualification": "Checked English PDF page 4, instructions 4 and 6. Model-specific example only, no universal pipe size or DIY excavation specification; fewer than 200 source-derived words.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 9,
+    "claim_id": "R5",
+    "section": "Observations and enquiry",
+    "claim_or_recommendation": "Report the rain timing, symptoms, visible site changes and existing records without reproducing a fault.",
+    "source_url": null,
+    "date_checked": "2026-10-21",
+    "qualification": "Original evidence-gathering framework. No unsupported causal diagnosis, inspection guarantee or customer testimonial.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 9,
+    "claim_id": "R6",
+    "section": "Repair scope and handover",
+    "claim_or_recommendation": "Ask for diagnosed cause, defined repair scope, responsibility for drainage works and relevant handover records.",
+    "source_url": null,
+    "date_checked": "2026-10-21",
+    "qualification": "Original buyer guidance, conditional on findings; no fixed costs, guaranteed repair, response times or universal replacement rule.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 9,
+    "claim_id": "CTA",
+    "section": "Introductory banner",
+    "claim_or_recommendation": "Tailored rain-fault banner linking to unchanged same-page enquiry form.",
+    "source_url": "https://www.drivewaygateslondon.co.uk/contact/",
+    "date_checked": "2026-10-21",
+    "qualification": "Reviewed data/article-ctas.json route entry. Get a Free Quote button, no topic fields/prefills, no free assessment promise; no test leads.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 9,
+    "claim_id": "IMAGE",
+    "section": "Hero",
+    "claim_or_recommendation": "Generated illustration of green paired swing gates and wet paving after rain.",
+    "source_url": null,
+    "date_checked": "2026-10-21",
+    "qualification": "Built-in image_gen, visually checked 1672 x 941; correct hinges and centre meeting, no exposed wiring. Illustrative disclosure, not a client installation.",
+    "calculation": "None",
+    "verdict": "PASS"
+  }
+]

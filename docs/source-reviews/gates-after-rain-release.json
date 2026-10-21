@@ -1,0 +1,43 @@
+{
+  "article_priority": 9,
+  "slug": "electric-gates-not-working-after-rain",
+  "publication_date": "2026-10-21",
+  "verdict": "PASS",
+  "body_words": 1556,
+  "intent": "Rain-related failure: safe observations, system investigation, water-ingress repair scope and drainage questions.",
+  "overlap_review": "Distinct from electrical tripping and underground motor flooding. Future related links remain plain text. Existing never-closing and reversing articles linked once each.",
+  "source_review": "gates-after-rain.json; HSE, Electrical Safety First and official CAME instructions checked 21 October.",
+  "internal_links": "Four contextual published destinations plus repair service, each once. Incoming contextual link from reversing article. Two conditional future links.",
+  "external_links": "One visible link each to HSE, Electrical Safety First and CAME.",
+  "authorisation": "Standing scheduled direct-main release. Last new article 19 October. Actual Shanghai date 21 October, weekday and minimum two-day gap checked again before push.",
+  "parent_commit": "d838e47a55b9162a263e7702da4bb934e409defa",
+  "copy_review": "British English; 1556 body words; no causal diagnosis from rain, water/electrical DIY, resetting protective devices, guarantees, invented costs or unconfirmed services.",
+  "image": {
+    "tool": "built-in image_gen",
+    "source_file": "C:/Users/Jerwin/.codex/generated_images/01a0f227-b194-76a2-8e2e-7fd2bc856b1e/exec-3b0ab04e-1094-4ecb-a767-856e9d0644bd.png",
+    "webp": "/showcase/assets/content/electric-gates-not-working-after-rain.webp",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sha256": "d0e3bc84d03efa8b449314b565187c3ca800212981427d55318fcbf9ed378e10",
+    "prompt_summary": "Bright editorial architectural illustration of paired green swing gates between brick piers, wet paving and shallow foreground puddles after rain, London brick home, clearing sky, no people, text, wiring or logos.",
+    "disclosure": "Illustration, not verified customer work"
+  },
+  "validation": [
+    "1556 body words; checked primary sources and PASS claim ledger",
+    "Repair article verifier: all nine records, metadata, source ledgers, unique destinations and draft-safe conditional links PASS",
+    "Content consolidation and security hub verifiers PASS",
+    "Production build, type/lint checks and all 1591 generated routes PASS",
+    "Quote verifier: 1583 marketing pages; 44 reviewed guide/blog CTA entries PASS",
+    "207 template / 5255 internal links/assets and 1368 service-area page checks PASS",
+    "Browser desktop 1440, mobile 390 and 320: date, metadata, canonical, social image, illustration loaded, one introductory tailored banner, unchanged form, nine-section collapsible contents, no overflow PASS",
+    "Same-page CTA navigation and all contextual internal destinations PASS; no test lead submitted",
+    "Three distinct visible external domains; two unreleased topic links remain plain; incoming reversing article link, blog listing and sitemap PASS",
+    "Mobile top screenshot visually inspected; correct hero, readable copy and tailored CTA"
+  ],
+  "remaining_after_push": [
+    "Matching successful GitHub Production deployment",
+    "Live page/date/hero/links/metadata/CTA/mobile/sitemap"
+  ]
+}

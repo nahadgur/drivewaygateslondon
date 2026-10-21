@@ -170,5 +170,9 @@
   "/blog/electric-gates-stop-halfway-or-keep-reversing/": {
     "heading": "Gates stopping halfway or reversing?",
     "description": "Tell us where the movement stops and what happens next, using what you have already observed. Ask about investigating the fault and the repair work your gates may need."
+  },
+  "/blog/electric-gates-not-working-after-rain/": {
+    "heading": "Gates stopped working after rain?",
+    "description": "Tell us what stopped working and where you noticed water. Ask about investigating the rain-related fault and the repair work your gates may need."
   }
 }
