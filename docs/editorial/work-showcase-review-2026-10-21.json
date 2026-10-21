@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-21",
+  "verdict": "PASS",
+  "scope": "User-requested /our-work/ showcase plus homepage bento redesign. Six groupings of eight existing photos; no claim of six distinct projects. No new blog article or publishing queue changes.",
+  "provenance": "Use only the eight user-confirmed real work images in data/project-photos.json. Existing WebP files and original photos unchanged.",
+  "content": "Observational captions; work in progress labelled; two ornamental frontage views grouped together. No invented locations, completion dates, prices, certifications or measured outcomes.",
+  "layout": "Homepage now has four asymmetric photo tiles before the inspiration section, with descriptive links to showcase anchors. Mobile uses a single column to retain clear gate views. Full showcase preserves uncropped images, related service links, jump navigation, and one tailored quote banner to the unchanged same-page form.",
+  "discoverability": "Our work linked in desktop and mobile navigation, both footer variants, homepage and six service galleries; included in sitemap.",
+  "metadata": "Absolute title, meta description, canonical, OpenGraph/Twitter real photo and CollectionPage/ItemList schema for eight images, plus breadcrumbs.",
+  "validation": {
+    "build": "PASS: 1590 routes, 1582 banner checks, 43 article CTA copy checks",
+    "browser": {
+      "status": "PASS",
+      "results": [
+        {
+          "route": "/",
+          "width": 1440,
+          "status": "PASS",
+          "overflow": false
+        },
+        {
+          "route": "/",
+          "width": 1024,
+          "status": "PASS",
+          "overflow": false
+        },
+        {
+          "route": "/",
+          "width": 768,
+          "status": "PASS",
+          "overflow": false
+        },
+        {
+          "route": "/",
+          "width": 390,
+          "status": "PASS",
+          "overflow": false
+        },
+        {
+          "route": "/",
+          "width": 320,
+          "status": "PASS",
+          "overflow": false
+        },
+        {
+          "route": "/our-work/",
+          "width": 1440,
+          "status": "PASS",
+          "overflow": false
+        },
+        {
+          "route": "/our-work/",
+          "width": 1024,
+          "status": "PASS",
+          "overflow": false
+        },
+        {
+          "route": "/our-work/",
+          "width": 768,
+          "status": "PASS",
+          "overflow": false
+        },
+        {
+          "route": "/our-work/",
+          "width": 390,
+          "status": "PASS",
+          "overflow": false
+        },
+        {
+          "route": "/our-work/",
+          "width": 320,
+          "status": "PASS",
+          "overflow": false
+        }
+      ],
+      "mobileMenu": true,
+      "keyboardNavigation": true,
+      "fullImageLink": true,
+      "sitemap": true,
+      "formsSubmitted": 0,
+      "errors": []
+    },
+    "regression": "PASS: 207 templates/5255 links, 1368 service-area pages, source consolidation, security hub and all eight prepared article source/release checks",
+    "react": "Server rendering with pure escaped HTML helpers; no added client JavaScript or effects. Existing enquiry form unchanged. Explicit responsive image sources and dimensions, keyboard links, focus indicators and reduced-motion support.",
+    "ui": "UI/UX skill checklist applied. Optional design-system CLI was unavailable in the installed skill; existing approved branding and accessibility/responsive checks used."
+  }
+}

@@ -34,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const hubs: MetadataRoute.Sitemap = [
+    { url: `${base}/our-work/`, lastModified: new Date('2026-10-21'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/about/`, lastModified: new Date('2026-09-30'), changeFrequency: 'yearly', priority: 0.6 },
     { url: `${base}/services/`,                lastModified: new Date('2026-10-02'), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/location/`,                lastModified: CONTENT_LAST_UPDATED, changeFrequency: 'monthly', priority: 0.8 },

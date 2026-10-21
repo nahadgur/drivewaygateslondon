@@ -11,7 +11,7 @@ const escapeHtml = value => value.replace(/[&<>"']/g, character => ({
 let checked = 0;
 let articleCount = 0;
 for (const route of Object.keys(manifest.routes)) {
-  if (!/^\/(?:$|about$|(?:guides|blog|services|commercial|location|local-regulations)(?:\/|$))/.test(route)) continue;
+  if (!/^\/(?:$|about$|our-work$|(?:guides|blog|services|commercial|location|local-regulations)(?:\/|$))/.test(route)) continue;
   const file = `.next/server/app/${route === '/' ? 'index' : route.slice(1)}.html`;
   const html = fs.readFileSync(file, 'utf8');
   const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)?.[1];

@@ -20,3 +20,66 @@
   .project-photo-grid { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .project-photo figcaption { padding: 16px; }
 }
+
+/* A short photographic preview; the complete set lives on Our Work. */
+.home-work-heading { display: flex; align-items: end; justify-content: space-between; gap: 32px; margin-bottom: 28px; }
+.home-work-heading > div { max-width: 710px; }
+.home-work-heading h2 { margin: 10px 0 16px; }
+.home-work-heading .work-showcase-link { flex: none; margin-bottom: 3px; }
+.work-bento { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); grid-template-rows: repeat(2, clamp(220px, 21vw, 290px)); gap: 16px; }
+.work-bento-tile { position: relative; min-width: 0; overflow: hidden; display: block; background: var(--cream); border-radius: 3px; isolation: isolate; }
+.work-bento-feature { grid-column: 1 / span 7; grid-row: 1 / span 2; }
+.work-bento-frontage { grid-column: 8 / span 5; grid-row: 1; }
+.work-bento-arched { grid-column: 8 / span 3; grid-row: 2; }
+.work-bento-pedestrian { grid-column: 11 / span 2; grid-row: 2; }
+.work-bento-tile::after { content: ''; position: absolute; inset: 45% 0 0; background: linear-gradient(transparent, rgba(12, 26, 19, .88)); pointer-events: none; }
+.showcase-page .work-bento-tile img { display: block; width: 100%; height: 100%; object-fit: cover; transition: filter .2s ease; }
+.work-bento-feature img { object-position: 50% 65%; }
+.work-bento-frontage img { object-position: 50% 66%; }
+.work-bento-arched img { object-position: 50% 70%; }
+.work-bento-pedestrian img { object-position: 50% 45%; }
+.work-bento-caption { position: absolute; z-index: 1; bottom: 22px; left: 22px; right: 22px; color: white; font: 400 clamp(19px, 2vw, 27px)/1.18 var(--serif); letter-spacing: -.3px; }
+.work-bento-feature .work-bento-caption { font-size: clamp(26px, 3vw, 39px); max-width: 460px; }
+.work-bento-tile:hover img { filter: brightness(1.06); }
+.work-bento-tile:focus-visible { outline: 3px solid var(--green); outline-offset: 5px; }
+.project-showcase-text-link { display: inline-flex; align-items: center; min-height: 48px; margin-top: 20px; text-decoration: underline; text-underline-offset: 5px; color: var(--green); }
+.work-showcase-header { padding-top: 36px; padding-bottom: 44px; }
+.work-showcase-header .breadcrumbs [aria-current="page"] { color: var(--green); }
+.work-showcase-header .eyebrow { margin-top: 40px; }
+.work-showcase-header h1 { max-width: 900px; margin: 12px 0 24px; font: 400 clamp(44px, 6vw, 78px)/1.08 var(--serif); letter-spacing: -2px; }
+.work-showcase-lead { max-width: 740px; font-size: 19px; line-height: 1.65; }
+.work-project-jumps { display: flex; flex-wrap: wrap; gap: 8px 12px; margin-top: 28px; }
+.work-project-jumps a { display: inline-flex; align-items: center; padding: 10px 16px; min-height: 46px; border: 1px solid var(--line); font-size: 15px; line-height: 1.5; }
+.work-project-jumps a:hover { background: var(--sage); }
+.work-projects { padding-top: 64px; padding-bottom: 32px; }
+.work-project { padding: 0 0 52px; margin: 0 0 52px; border-bottom: 1px solid var(--line); scroll-margin-top: 170px; }
+.work-project > header { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; margin-bottom: 28px; }
+.work-project > header h2 { font-size: clamp(29px, 3.2vw, 43px); letter-spacing: -1px; }
+.work-project > header p { max-width: 560px; padding-top: 4px; }
+.work-single-photo { grid-template-columns: minmax(0, 1fr); max-width: 960px; }
+.work-related-services { padding-bottom: 30px; }
+.work-related-services h2 { font-size: clamp(30px, 3vw, 42px); margin-bottom: 22px; }
+.work-related-services nav { display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; }
+.work-related-services a { display: flex; align-items: center; min-height: 52px; padding: 12px 0; border-bottom: 1px solid var(--line); text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 1000px) {
+  .home-work-heading { align-items: start; flex-direction: column; gap: 22px; }
+  .work-bento-caption { bottom: 16px; left: 16px; right: 16px; }
+  .work-bento { grid-template-rows: 230px 230px; }
+}
+@media (max-width: 700px) {
+  .work-bento { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; gap: 12px; }
+  .work-bento-tile { grid-column: 1; grid-row: auto; aspect-ratio: 4 / 3; }
+  .work-bento-pedestrian { aspect-ratio: 4 / 5; }
+  .work-bento-caption { font-size: 23px; }
+  .work-bento-feature .work-bento-caption { font-size: 29px; }
+  .work-projects { padding-top: 40px; }
+  .work-project > header { grid-template-columns: 1fr; gap: 16px; }
+  .work-project { padding-bottom: 32px; margin-bottom: 32px; scroll-margin-top: 110px; }
+  .work-related-services nav { grid-template-columns: 1fr; }
+  .work-project-jumps { display: grid; grid-template-columns: 1fr; }
+  .work-showcase-lead { font-size: 17px; }
+  .work-showcase-header h1 { letter-spacing: -1px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .work-bento-tile img { transition: none; }
+}

@@ -12,7 +12,7 @@ import { editorialLayout } from '@/lib/editorial-layout';
 import { businessHoursHtml, renderBusinessServices } from '@/lib/business-profile';
 import { siteConfig } from '@/data/site';
 import { ensureQuoteBanner, placeArticleQuoteBanner } from '@/lib/quote-banner';
-import { addProjectPhotos } from '@/lib/project-photos';
+import { addProjectPhotos, ourWorkContent } from '@/lib/project-photos';
 
 type PageTemplate = { className: string; main?: string; hero?: string; methods?: string; after?: string };
 type PreparedTemplate = PageTemplate & { publicationLinks: PublicationLink[] };
@@ -21,7 +21,9 @@ type PreparedTemplate = PageTemplate & { publicationLinks: PublicationLink[] };
 export function ShowcasePage({ route }: { route: string }) {
   const prepared = (preparedTemplates as Record<string, PreparedTemplate>)[route];
   const published = publishedArticles.find(article => `/blog/${article.slug}/` === route);
-  const page = (templates as Record<string, PageTemplate>)[route] ?? (published ? prepared : undefined);
+  const page: PageTemplate | undefined = route === '/our-work/'
+    ? { className: 'subpage tone-sage work-showcase-page', main: ourWorkContent() }
+    : (templates as Record<string, PageTemplate>)[route] ?? (published ? prepared : undefined);
   if (!page) notFound();
   let main = page.main;
   if (route === '/services/') {
@@ -63,9 +65,9 @@ export function ShowcasePage({ route }: { route: string }) {
           <EnquiryForm />
         </div>
         <div dangerouslySetInnerHTML={{ __html: page.after! }} />
-      </div></main> : individualArticle ? <main id="main">
+      </div></main> : individualArticle || route === '/our-work/' ? <main id="main">
         <div dangerouslySetInnerHTML={{ __html: main! }} />
-        <section id="article-enquiry" className="article-enquiry" aria-label="Request a driveway gate quote">
+        <section id={individualArticle ? 'article-enquiry' : 'enquiry'} className="article-enquiry" aria-label="Request a driveway gate quote">
           <EnquiryForm />
         </section>
       </main> : <main id="main" dangerouslySetInnerHTML={{ __html: main! }} />}
