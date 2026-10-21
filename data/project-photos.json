@@ -1,0 +1,234 @@
+{
+  "receivedDate": "2026-10-21",
+  "provenance": "User supplied these eight photographs and confirmed they show the client’s previous gate work. No location, installation date, gate material grade, certification, price or completed scope was supplied.",
+  "processing": "Original files retained in Downloads. WebP delivery copies only: EXIF orientation applied, resized without cropping, metadata omitted. No generative editing or retouching.",
+  "photos": [
+    {
+      "id": "four-panel-metal-driveway-gates",
+      "title": "Four-panel driveway gates",
+      "alt": "Black four-panel metal driveway gates with spear-top bars outside a house.",
+      "caption": "Black four-panel driveway gates with spear-top bars",
+      "width": 1600,
+      "height": 1200,
+      "src": "/images/projects/four-panel-metal-driveway-gates.webp",
+      "variants": [
+        {
+          "src": "/images/projects/four-panel-metal-driveway-gates-480w.webp",
+          "width": 480,
+          "bytes": 51918
+        },
+        {
+          "src": "/images/projects/four-panel-metal-driveway-gates-960w.webp",
+          "width": 960,
+          "bytes": 196996
+        },
+        {
+          "src": "/images/projects/four-panel-metal-driveway-gates.webp",
+          "width": 1600,
+          "bytes": 454566
+        }
+      ],
+      "sameFrontage": null,
+      "sourceFilename": "WhatsApp Image 2026-10-21 at 4.57.24 PM.jpeg",
+      "sourceSha256": "33ecfe4c032b132feeb23c36f5a79cd118eac5e2524084eff09ac72f02610ffb"
+    },
+    {
+      "id": "arched-metal-gates-with-pedestrian-entrance",
+      "title": "Arched gates and pedestrian entrance",
+      "alt": "Arched black metal driveway gates with a matching pedestrian gate, photographed from inside the entrance.",
+      "caption": "Arched driveway gates with a matching pedestrian entrance",
+      "width": 1600,
+      "height": 1200,
+      "src": "/images/projects/arched-metal-gates-with-pedestrian-entrance.webp",
+      "variants": [
+        {
+          "src": "/images/projects/arched-metal-gates-with-pedestrian-entrance-480w.webp",
+          "width": 480,
+          "bytes": 52200
+        },
+        {
+          "src": "/images/projects/arched-metal-gates-with-pedestrian-entrance-960w.webp",
+          "width": 960,
+          "bytes": 196504
+        },
+        {
+          "src": "/images/projects/arched-metal-gates-with-pedestrian-entrance.webp",
+          "width": 1600,
+          "bytes": 454008
+        }
+      ],
+      "sameFrontage": null,
+      "sourceFilename": "WhatsApp Image 2026-10-21 at 4.57.20 PM.jpeg",
+      "sourceSha256": "7f593a4bc2fe6431c395186a24fa0ccf71dc86474438a43213e681eae7e3beaa"
+    },
+    {
+      "id": "straight-top-metal-driveway-gate-brick-pillars",
+      "title": "Straight-top driveway gate",
+      "alt": "Wide black metal driveway gate with vertical bars between brick pillars.",
+      "caption": "Straight-top metal gate between brick pillars",
+      "width": 1600,
+      "height": 1200,
+      "src": "/images/projects/straight-top-metal-driveway-gate-brick-pillars.webp",
+      "variants": [
+        {
+          "src": "/images/projects/straight-top-metal-driveway-gate-brick-pillars-480w.webp",
+          "width": 480,
+          "bytes": 51704
+        },
+        {
+          "src": "/images/projects/straight-top-metal-driveway-gate-brick-pillars-960w.webp",
+          "width": 960,
+          "bytes": 195312
+        },
+        {
+          "src": "/images/projects/straight-top-metal-driveway-gate-brick-pillars.webp",
+          "width": 1600,
+          "bytes": 482930
+        }
+      ],
+      "sameFrontage": null,
+      "sourceFilename": "WhatsApp Image 2026-10-21 at 4.57.40 PM.jpeg",
+      "sourceSha256": "e5623578b79bcd81a066db3e31761ce2639912b714a78671239d16e5f7bf3753"
+    },
+    {
+      "id": "ornamental-driveway-gates-matching-railings",
+      "title": "Gates and matching frontage",
+      "alt": "Ornamental black driveway gates and matching railings along a brick boundary wall.",
+      "caption": "An angled view of ornamental gates and matching railings",
+      "width": 1600,
+      "height": 1200,
+      "src": "/images/projects/ornamental-driveway-gates-matching-railings.webp",
+      "variants": [
+        {
+          "src": "/images/projects/ornamental-driveway-gates-matching-railings-480w.webp",
+          "width": 480,
+          "bytes": 48242
+        },
+        {
+          "src": "/images/projects/ornamental-driveway-gates-matching-railings-960w.webp",
+          "width": 960,
+          "bytes": 198908
+        },
+        {
+          "src": "/images/projects/ornamental-driveway-gates-matching-railings.webp",
+          "width": 1600,
+          "bytes": 500240
+        }
+      ],
+      "sameFrontage": "ornamental-frontage",
+      "sourceFilename": "WhatsApp Image 2026-10-21 at 4.57.30 PM.jpeg",
+      "sourceSha256": "8bfa5ad4feff0bb7e7b6288eb0816567d34bd2e3ccae519e4169c5a6a067dbe0"
+    },
+    {
+      "id": "driveway-gate-automation-work-in-progress",
+      "title": "Gate work in progress",
+      "alt": "A worker beside black metal driveway gates with visible above-ground operators and tools on the driveway.",
+      "caption": "Work in progress beside the gate operators; this is not a completed-installation photograph",
+      "width": 1600,
+      "height": 1200,
+      "src": "/images/projects/driveway-gate-automation-work-in-progress.webp",
+      "variants": [
+        {
+          "src": "/images/projects/driveway-gate-automation-work-in-progress-480w.webp",
+          "width": 480,
+          "bytes": 54416
+        },
+        {
+          "src": "/images/projects/driveway-gate-automation-work-in-progress-960w.webp",
+          "width": 960,
+          "bytes": 204034
+        },
+        {
+          "src": "/images/projects/driveway-gate-automation-work-in-progress.webp",
+          "width": 1600,
+          "bytes": 493466
+        }
+      ],
+      "sameFrontage": null,
+      "sourceFilename": "WhatsApp Image 2026-10-21 at 4.57.29 PM.jpeg",
+      "sourceSha256": "9679907abb02678fbf95e97777ec9f9b30a4d177f3339961ff3372519cb4e52f"
+    },
+    {
+      "id": "ornamental-gates-pedestrian-gate-front-view",
+      "title": "Ornamental driveway and pedestrian gates",
+      "alt": "Front view of ornamental black driveway gates and a matching pedestrian gate between brick pillars.",
+      "caption": "Front view of the same ornamental gate and railing frontage",
+      "width": 1600,
+      "height": 1200,
+      "src": "/images/projects/ornamental-gates-pedestrian-gate-front-view.webp",
+      "variants": [
+        {
+          "src": "/images/projects/ornamental-gates-pedestrian-gate-front-view-480w.webp",
+          "width": 480,
+          "bytes": 42298
+        },
+        {
+          "src": "/images/projects/ornamental-gates-pedestrian-gate-front-view-960w.webp",
+          "width": 960,
+          "bytes": 171466
+        },
+        {
+          "src": "/images/projects/ornamental-gates-pedestrian-gate-front-view.webp",
+          "width": 1600,
+          "bytes": 440662
+        }
+      ],
+      "sameFrontage": "ornamental-frontage",
+      "sourceFilename": "WhatsApp Image 2026-10-21 at 4.57.28 PM.jpeg",
+      "sourceSha256": "3a5e47b42e02eab7f783a405dc5e4185fbce0b974c98121186bcc6ec6471bc59"
+    },
+    {
+      "id": "spear-top-metal-driveway-gates",
+      "title": "Spear-top driveway gates",
+      "alt": "Black spear-top metal driveway gates between brick pillars, viewed from the pavement.",
+      "caption": "Spear-top metal driveway gates between brick pillars",
+      "width": 1200,
+      "height": 1600,
+      "src": "/images/projects/spear-top-metal-driveway-gates.webp",
+      "variants": [
+        {
+          "src": "/images/projects/spear-top-metal-driveway-gates-480w.webp",
+          "width": 480,
+          "bytes": 69156
+        },
+        {
+          "src": "/images/projects/spear-top-metal-driveway-gates-960w.webp",
+          "width": 960,
+          "bytes": 252322
+        },
+        {
+          "src": "/images/projects/spear-top-metal-driveway-gates.webp",
+          "width": 1200,
+          "bytes": 356354
+        }
+      ],
+      "sameFrontage": null,
+      "sourceFilename": "WhatsApp Image 2026-10-21 at 4.57.27 PM.jpeg",
+      "sourceSha256": "480e2925d68f9cbe5ddc6f3975e299f65b5773bbece52807c7d414b5a61c36e2"
+    },
+    {
+      "id": "metal-pedestrian-gate-side-passage",
+      "title": "Pedestrian gate for a side passage",
+      "alt": "Black metal pedestrian gate with spear-top bars across a paved passage between walls.",
+      "caption": "A metal pedestrian gate across a side passage",
+      "width": 900,
+      "height": 1600,
+      "src": "/images/projects/metal-pedestrian-gate-side-passage.webp",
+      "variants": [
+        {
+          "src": "/images/projects/metal-pedestrian-gate-side-passage-480w.webp",
+          "width": 480,
+          "bytes": 127906
+        },
+        {
+          "src": "/images/projects/metal-pedestrian-gate-side-passage.webp",
+          "width": 900,
+          "bytes": 380936
+        }
+      ],
+      "sameFrontage": null,
+      "sourceFilename": "WhatsApp Image 2026-10-21 at 4.57.26 PM.jpeg",
+      "sourceSha256": "780554af6d13008b873ebb434060b8b8d1bc1e9f46045db3c0188a9691b19535"
+    }
+  ]
+}

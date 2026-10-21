@@ -12,6 +12,7 @@ import { editorialLayout } from '@/lib/editorial-layout';
 import { businessHoursHtml, renderBusinessServices } from '@/lib/business-profile';
 import { siteConfig } from '@/data/site';
 import { ensureQuoteBanner, placeArticleQuoteBanner } from '@/lib/quote-banner';
+import { addProjectPhotos } from '@/lib/project-photos';
 
 type PageTemplate = { className: string; main?: string; hero?: string; methods?: string; after?: string };
 type PreparedTemplate = PageTemplate & { publicationLinks: PublicationLink[] };
@@ -43,6 +44,7 @@ export function ShowcasePage({ route }: { route: string }) {
     main = main!.replace('<div class="page-grid">', `<div class="page-grid">${cards}`);
   }
   const editorial = /^\/(guides|blog)\//.test(route);
+  main = addProjectPhotos(main!, route);
   if (editorial) main = editorialLayout(main!, route);
   if (route !== '/contact/') main = ensureQuoteBanner(main!);
   const individualArticle = /^\/(guides|blog)\/[^/]+\/$/.test(route);

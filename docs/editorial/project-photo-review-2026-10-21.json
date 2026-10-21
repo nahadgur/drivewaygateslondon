@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-21",
+  "verdict": "PASS",
+  "scope": "Eight user-confirmed photographs of the client’s previous work, added to the existing homepage and six relevant service pages. No new article, queue change or invented local case study.",
+  "confirmation": "User message dated 21 October 2026 confirmed these are real photographs of work the client has done.",
+  "source_manifest": "data/project-photos.json",
+  "facts_boundary": "Visual descriptions only. No inferred borough, installation date, project price, metal grade, certification, endorsement or performance claim. Work in progress is labelled; photographs are not counted as distinct completed projects. Two ornamental-frontage views are identified as the same frontage.",
+  "processing": "Responsive WebP copies, original aspect ratio, no cropping, no generative modification. Original source hashes checked and delivery metadata omitted.",
+  "placements": [
+    "/",
+    "/services/electric-swing-gates/",
+    "/services/metal-driveway-gates/",
+    "/services/wrought-iron-gates/",
+    "/services/pedestrian-side-gates/",
+    "/services/automated-gate-systems/",
+    "/services/gate-automation-kits/"
+  ],
+  "verification": {
+    "build": "PASS: 1589 routes; quote-banner checks on 1581 marketing pages and reviewed CTA copy on 43 guides/blogs",
+    "browser": "PASS: seven pages at 1440, 390 and 320 pixels; all gallery images load; no horizontal overflow; full-image links and existing quote-to-form navigation work; zero submissions",
+    "originals": "PASS: all eight SHA256 values match supplied originals",
+    "react": "Server-side helper only; no new client JS, effects or data requests; escaped captions; semantic figures; explicit image dimensions, responsive sources, lazy loading and focus styles",
+    "existing_content": "Reviewed page snapshots, article bodies, form components and article publication state unchanged"
+  },
+  "primary_source": "https://developers.google.com/search/docs/appearance/google-images",
+  "source_use": "Descriptive filenames and alt text; standard img fallback, relevant surrounding text and responsive images. No ranking guarantee."
+}
