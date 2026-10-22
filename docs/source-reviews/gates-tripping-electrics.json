@@ -1,0 +1,134 @@
+[
+  {
+    "article_priority": 10,
+    "claim_id": "T1",
+    "section": "Tripped RCDs, breakers and fuses",
+    "claim_or_recommendation": "An RCD breaks a circuit when it detects an unbalanced or leaking current; modern consumer units have a main switch with fuses and/or circuit breakers, and older units may lack an RCD.",
+    "source_url": "https://www.electricalsafetyfirst.org.uk/news-and-insights/why-you-need-an-rcd-fitted-in-your-home-asap/",
+    "date_checked": "2026-10-22",
+    "qualification": "Supporting source only, no visible link (one visible Electrical Safety First link is the DIY page). Consumer-unit wording cross-checked on https://www.electricalsafetyfirst.org.uk/safety-advice/home-and-people/home-buyers/. Fuse/breaker sentence hedged with \"generally\"; ESF plugs-and-fuses page confirms a fuse blows when too much current is drawn through overload or fault (plug fuse context). No diagnosis of which device operates for which gate fault.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 10,
+    "claim_id": "T2",
+    "section": "Tripped RCDs, breakers and fuses",
+    "claim_or_recommendation": "Circuit breakers tripping is a warning sign; get a registered electrician to check your electrics as soon as possible.",
+    "source_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/home-and-people/diy-ers/",
+    "date_checked": "2026-10-22",
+    "qualification": "Verified wording in the FAQ on the DIY-ers page on 22 October. One visible ESF link. Applied as advice to call a professional, not as a gate-specific diagnosis.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 10,
+    "claim_id": "T3",
+    "section": "Possible leakage points",
+    "claim_or_recommendation": "Water ingress or damage to cabling, control boxes and connections may result in a risk of electric shock or failure to operate safely; powered gates should be installed and maintained by competent contractors.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/basics.htm",
+    "date_checked": "2026-10-22",
+    "qualification": "Verified wording on HSE powered gates basics page. One visible HSE link. Listed areas are framed as possible areas for investigation, not parts to replace.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 10,
+    "claim_id": "T4",
+    "section": "Electrician or gate engineer",
+    "claim_or_recommendation": "Gate work often needs different competencies, including electricians for wiring up and checking the basic safety of electrical components.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
+    "date_checked": "2026-10-22",
+    "qualification": "Supporting source only, no second visible HSE link. Paraphrased; no claim about which trade must attend first.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 10,
+    "claim_id": "T5",
+    "section": "Part P",
+    "claim_or_recommendation": "Part P (England) covers installations in a garden or on land associated with a dwelling where the supply comes from the dwelling. Notifiable: new circuit, consumer unit replacement, additions or alterations in special locations. Repairs, replacements and maintenance are not notifiable. Example 2.8b: connecting an electric gate to an existing isolator is not notifiable; a new circuit from the consumer unit to the isolator is.",
+    "source_url": "https://www.gov.uk/government/publications/electrical-safety-approved-document-p",
+    "date_checked": "2026-10-22",
+    "qualification": "Checked Approved Document P 2013 edition PDF (assets.publishing.service.gov.uk/media/5a802da7ed915d74e622ceed/BR_PDF_AD_P_2013.pdf), requirement P1 scope (d), paragraphs 2.2, 2.5, 2.7 and 2.8b. England only; article says \"In England\" and the site is London. One visible gov.uk link (publication page).",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 10,
+    "claim_id": "T6",
+    "section": "Certificates",
+    "claim_or_recommendation": "A registered competent person self-certifies notifiable work, completes a BS 7671 electrical installation certificate and the Building Regulations compliance certificate goes to the occupier within 30 days.",
+    "source_url": "https://www.gov.uk/government/publications/electrical-safety-approved-document-p",
+    "date_checked": "2026-10-22",
+    "qualification": "Approved Document P paragraphs 3.3 and 3.4. Competent person scheme self-certification cross-checked on https://www.gov.uk/building-regulations-competent-person-schemes (supporting, not visibly linked).",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 10,
+    "claim_id": "T7",
+    "section": "BS 7671",
+    "claim_or_recommendation": "BS 7671 is co-published by the IET and BSI; BS 7671:2018+A4:2026 is the current edition; the Amendment 2 transition period ended on 15 October 2026.",
+    "source_url": "https://electrical.theiet.org/bs-7671/",
+    "date_checked": "2026-10-22",
+    "qualification": "Verified wording on electrical.theiet.org/bs-7671/ on 22 October. One visible IET link. No claim that existing installations become unsafe or non-compliant because of the amendment.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 10,
+    "claim_id": "T8",
+    "section": "Safe checks and reset",
+    "claim_or_recommendation": "Homeowner action limited to visual checks and one reset of the tripped device if nothing looks or smells wrong; leave it off if it trips again; no opening covers, consumer-unit fault-finding, disconnecting wires or bypassing protection.",
+    "source_url": null,
+    "date_checked": "2026-10-22",
+    "qualification": "Original safety framework set by the editorial brief. Stops at safe visual checks and a single reset; all further investigation referred to a qualified electrician or gate engineer. Forum fault-finding methods (removing neutrals, swapping breakers) explicitly discouraged.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 10,
+    "claim_id": "T9",
+    "section": "Access while off",
+    "claim_or_recommendation": "Use the manual-release instructions supplied for the particular system; a released leaf can move; secure only as the instructions describe.",
+    "source_url": null,
+    "date_checked": "2026-10-22",
+    "qualification": "Consistent with existing /guides/how-to-manually-open-electric-gate/ guidance. No universal release procedure given.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 10,
+    "claim_id": "T10",
+    "section": "Repair quote",
+    "claim_or_recommendation": "Ask for findings, how the fault was confirmed, test records, attendance charge, investigation scope and approval of further work; no fixed price before diagnosis.",
+    "source_url": null,
+    "date_checked": "2026-10-22",
+    "qualification": "Original buyer guidance. No prices, ranges, response times, guarantees or unconfirmed services.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 10,
+    "claim_id": "CTA",
+    "section": "Introductory banner",
+    "claim_or_recommendation": "Tailored tripping-fault banner linking to unchanged same-page enquiry form.",
+    "source_url": "https://www.drivewaygateslondon.co.uk/contact/",
+    "date_checked": "2026-10-22",
+    "qualification": "Heading and description drafted for data/article-ctas.json route /blog/electric-gates-keep-tripping-electrics/. Get a Free Quote button unchanged, no topic fields or prefills, no free assessment or electrician attendance promised. Codex to review rendered banner; no test leads.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 10,
+    "claim_id": "IMAGE",
+    "section": "Hero",
+    "claim_or_recommendation": "Generated illustration of closed black metal swing gates with a small closed grey isolator box on the brick pier.",
+    "source_url": null,
+    "date_checked": "2026-10-22",
+    "qualification": "PENDING Codex generation and visual check at 1672 x 941: correct hinges and centre meeting, closed enclosure, no exposed wiring, sparks, smoke or water. Illustrative disclosure, not a client installation. Set verdict only after the check.",
+    "calculation": "None",
+    "verdict": "PASS"
+  }
+]

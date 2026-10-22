@@ -1511,5 +1511,177 @@
         "text": "When requesting [electric gate repair and maintenance](/services/gate-repair-and-maintenance/), describe the rain-related pattern and your access needs. That gives the enquiry a practical purpose: identifying the fault, understanding the repair options and addressing the relevant installation issue before normal use resumes."
       }
     ]
+  },
+  {
+    "slug": "electric-gates-keep-tripping-electrics",
+    "title": "Electric Gates Keep Tripping the Electrics: When to Call an Engineer",
+    "metaTitle": "Electric Gates Keep Tripping the Electrics | London Repairs",
+    "useMetaTitle": true,
+    "metaDescription": "Electric gates tripping your RCD or fuse box? Learn the one safe reset, what to record, Part P rules for gate wiring and when to call an electrician or engineer.",
+    "category": "Maintenance",
+    "publishDate": "2026-10-22",
+    "draft": false,
+    "featuredImage": "/showcase/assets/content/electric-gates-keep-tripping-electrics.webp",
+    "featuredImageAlt": "Illustration of closed black metal swing gates at a London home, with a small grey isolator box mounted on the brick pier.",
+    "featuredImageWidth": 1672,
+    "featuredImageHeight": 941,
+    "excerpt": "What a tripped RCD or breaker means for electric gates, the one safe reset, what to record and when an electrician or gate engineer should take over.",
+    "relatedServiceSlug": "gate-repair-and-maintenance",
+    "content": [
+      {
+        "type": "p",
+        "text": "When electric gates keep tripping the electrics, a protective device in your consumer unit is switching off the supply because it has detected a problem. The gate is a sensible place to look, especially if the trip happens when the gate moves, but the timing alone does not prove which part is at fault. Treat a repeated trip as a fault report from the installation, not a nuisance to be worked around."
+      },
+      {
+        "type": "p",
+        "text": "**The short takeaway: reset the tripped device once, and only if it is safe to do so. If it trips again, leave it off and call a qualified electrician or gate engineer.** Do not open the control box, motor covers or any junction box, and do not try to find the faulty circuit yourself at the consumer unit."
+      },
+      {
+        "type": "h2",
+        "text": "Tripped RCDs, Breakers and Fuses"
+      },
+      {
+        "type": "p",
+        "text": "A modern consumer unit has a main switch with fuses or circuit breakers, and often one or more residual current devices (RCDs). An RCD switches off when it detects current leaking from a circuit, which can happen when damp or damage lets electricity escape where it should not. A fuse or circuit breaker generally cuts off when too much current flows, through an overload or a fault. Both are doing their job when they operate."
+      },
+      {
+        "type": "p",
+        "text": "You do not need to interpret which device has operated, but it is useful information for whoever attends. Note whether a single switch has dropped or a whole bank of circuits has gone off, and read the labels without removing any cover. Some installations also have a separate isolator or small consumer unit near the gate. Tell the engineer where you found the switch that was off."
+      },
+      {
+        "type": "p",
+        "text": "[Electrical Safety First’s advice for householders](https://www.electricalsafetyfirst.org.uk/safety-advice/home-and-people/diy-ers/) lists circuit breakers tripping among the warning signs that call for a registered electrician to check your electrics as soon as possible. A gate that trips the supply once after a storm and then works normally still deserves a mention when you book its next service."
+      },
+      {
+        "type": "h2",
+        "text": "The Pattern Worth Recording"
+      },
+      {
+        "type": "p",
+        "text": "The moment of the trip narrows the search more than any guess about the motor. Write down what was happening each time, from a safe position and without operating the gate just to repeat the fault. A short note made on the day is more reliable than a recollection a week later."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Did the trip happen as soon as the gate received a command, partway through travel, or while it was standing still?",
+          "Did it coincide with rain, frost or a period of standing water? Trips that cluster around [faults following wet weather](/blog/electric-gates-not-working-after-rain/) point the investigation towards water ingress.",
+          "Did lights, sockets or other outdoor equipment also lose power, or only the gate?",
+          "Was anything else running at the time, such as garden lighting, a pond pump or an outdoor socket on the same circuit?",
+          "Has there been recent digging, paving, fencing or planting along the route the gate cable is likely to take?"
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Keep the dates and times together with any earlier repair reports. If the gate shares a circuit with other outdoor equipment, say so. The electrician may need to separate those loads during testing, and the gate engineer will want to know that a trip might not originate at the gate at all."
+      },
+      {
+        "type": "h2",
+        "text": "Safe Checks Before You Call"
+      },
+      {
+        "type": "p",
+        "text": "Your part is limited to looking and, at most, one reset. Stay away from the consumer unit if it is damaged, hot, wet, scorched or making a crackling sound, and if you can smell burning. In those cases leave everything off and get professional help. Never touch electrical equipment with wet hands or while standing in water."
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Look at the consumer unit and identify which switch is off. Do not remove its cover.",
+          "If nothing looks or smells wrong, switch that device back on once.",
+          "If it trips again straight away or the next time the gate runs, switch nothing else and leave it off.",
+          "From a safe distance, look for obvious damage at the gate, such as a cracked housing, a cable pulled loose or water pooling around equipment. Do not touch or open anything.",
+          "Call a qualified electrician or your gate engineer and describe what you saw."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Online advice sometimes suggests switching circuits off one by one at the consumer unit, disconnecting wires or trying a different breaker until the trip stops. Work inside the consumer unit or on fixed wiring belongs to an electrician with the right test equipment. Never tape, wedge or hold a protective device on, or ask anyone to bypass it to keep the gate running."
+      },
+      {
+        "type": "h2",
+        "text": "Access While the Gate Is Switched Off"
+      },
+      {
+        "type": "p",
+        "text": "With the gate supply off, remotes, keypads and the intercom may stop working. If you need the entrance open, follow the [manual-release instructions for your gate](/guides/how-to-manually-open-electric-gate/) supplied with your particular system. A released leaf can move in the wind or under its own weight, so keep people, pets and vehicles clear and secure it only in the way the instructions describe."
+      },
+      {
+        "type": "p",
+        "text": "Do not restore power to test whether the gate has recovered. Tell anyone else who uses the entrance, including neighbours on a shared driveway, that the gate is out of use and why. If an engineer is coming, agree whether the gate should be left open or closed before the visit."
+      },
+      {
+        "type": "h2",
+        "text": "Possible Leakage Points on a Gate Installation"
+      },
+      {
+        "type": "p",
+        "text": "The [HSE’s powered gate guidance](https://www.hse.gov.uk/work-equipment-machinery/powered-gates/basics.htm) warns that water ingress or damage to cabling, control boxes and the connections between components may result in a risk of electric shock or a failure to operate safely. It also says powered gates should be installed and maintained by competent contractors. A gate installation has several places where moisture or damage can reach live parts, and none of them can be ruled out from the driveway."
+      },
+      {
+        "type": "p",
+        "text": "Possible areas for investigation include the supply cable between the house and the gate, junction boxes along the route, the control panel, the motors, and accessories such as photocells, keypads, intercom units and lighting. Where operators sit below ground, water around an underground motor is a specific line of enquiry. These are places an engineer may test, not a list of parts that need replacing."
+      },
+      {
+        "type": "p",
+        "text": "A fault may also come from equipment that shares the gate circuit, or from a supply cable damaged by work that seemed unrelated, such as a new fence post or a planting bed. Mention any work along the cable route, even if it happened months before the first trip."
+      },
+      {
+        "type": "h2",
+        "text": "Electrician or Gate Engineer"
+      },
+      {
+        "type": "p",
+        "text": "The two trades overlap, and the HSE describes gate work as often needing different skills, including electricians for wiring and checking the basic safety of electrical components. An electrician can isolate and test the supply circuit and its cable. A gate engineer knows the operator, control board and safety accessories, and how the system should behave once power is restored."
+      },
+      {
+        "type": "p",
+        "text": "When you book, ask the gate company whether its engineer will test the electrical supply or whether you need a separate electrician. If two people are involved, share each one’s findings with the other. A gate engineer replacing a control board without anyone testing the cable, or an electrician condemning the motor without the gate being examined, leaves part of the question unanswered."
+      },
+      {
+        "type": "h2",
+        "text": "Part P, Notifiable Work and Certificates"
+      },
+      {
+        "type": "p",
+        "text": "In England, Part P of the Building Regulations covers electrical installations in gardens and on land associated with a home where the supply comes from the dwelling. [Approved Document P](https://www.gov.uk/government/publications/electrical-safety-approved-document-p) gives a gate example: connecting an electric gate to an existing isolator switch is not notifiable, but installing a new circuit from the consumer unit to the isolator is. Replacement of a consumer unit is also notifiable, while repairs, replacements and maintenance are not."
+      },
+      {
+        "type": "p",
+        "text": "Non-notifiable work still has to meet the safety requirements of Part P. For notifiable work, an installer registered with a competent person scheme can self-certify it. Approved Document P says such installers should complete a BS 7671 electrical installation certificate, with a Building Regulations compliance certificate given to the occupier within 30 days. Keep both with your gate documents."
+      },
+      {
+        "type": "p",
+        "text": "BS 7671, the IET Wiring Regulations, is the national standard for electrical installations. The [IET says](https://electrical.theiet.org/bs-7671/) BS 7671:2018+A4:2026 is now the current edition, and that the transition period for Amendment 2 ended on 15 October 2026. If a repair turns into new wiring or a new gate circuit, ask the electrician which edition they are working to and what certificate you will receive."
+      },
+      {
+        "type": "h2",
+        "text": "Details to Send When You Book"
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Your postcode, the gate type and the make or model if you can read it safely from records or a label.",
+          "The dates and times of each trip and what the gate was doing.",
+          "Which device operated and whether other circuits lost power.",
+          "Recent work near the gate or along the likely cable route, and any earlier repair reports.",
+          "Whether the gate is your only vehicle access and how it has been left."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Questions for the Repair Quote"
+      },
+      {
+        "type": "p",
+        "text": "Ask what the engineer found, how the fault was confirmed and which component or cable section the proposed work addresses. Ask whether test results will be written down. If the trips have come back after earlier repairs, the decision about repairing gates that keep breaking down depends on that evidence, not on the number of visits."
+      },
+      {
+        "type": "p",
+        "text": "There is no dependable fixed price for a tripping fault before the cause is known, because a damaged buried cable, a failed accessory and a wet control panel involve very different work. Ask for the attendance charge, the investigation scope and how any further work will be approved. If new wiring is needed, confirm who will certify it."
+      },
+      {
+        "type": "p",
+        "text": "When requesting [electric gate repair and maintenance](/services/gate-repair-and-maintenance/), say that the gate trips the electrics and that the supply has been left off. That allows the right people to attend and the investigation to start from what you have already seen."
+      }
+    ]
   }
 ]
