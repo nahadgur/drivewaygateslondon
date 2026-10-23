@@ -1,0 +1,123 @@
+[
+  {
+    "article_priority": 11,
+    "claim_id": "U1",
+    "section": "How a foundation box is meant to drain",
+    "claim_or_recommendation": "FAAC 770 N: operator protection class IP 67; installation includes a tube for draining rain water from the supporting box; motor cable joints inside the box need shunt boxes with protection class IP 67 or greater; inspect every six months; repairs only by qualified FAAC personnel and service centres.",
+    "source_url": "https://www.faac.co.uk/productfiles/319_Manual_radD75E8.pdf",
+    "date_checked": "2026-10-22",
+    "qualification": "Downloaded and read the official FAAC UK 770 N manual (732615 Rev.A): technical table (Protection class IP 67), section 4.3 step 5, section 4.6 step 2, sections 9 and 10. Supporting: older FAAC 770 manual https://www.faac.co.uk/productfiles/38_Manual_radC6CC0.pdf says to lay a second tube to drain rain water from the box to the nearest drain (not visibly linked; one FAAC link). Framed as one model-specific example; article says other models have their own arrangements. No claim about what IP 67 means beyond the manual's own wording.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 11,
+    "claim_id": "U2",
+    "section": "Safe first steps",
+    "claim_or_recommendation": "After a flood: switch off at the consumer unit only if safe; do not attempt electrical repairs yourself; equipment affected by the flood must be professionally checked and tested; use a registered electrician; ask for an EICR.",
+    "source_url": "https://www.electricalsafetyfirst.org.uk/safety-advice/home-and-people/house-maintenance/electrical-safety-after-a-flood/",
+    "date_checked": "2026-10-22",
+    "qualification": "Verified wording on the Electrical Safety First after-a-flood page on 22 October 2026 (HTTP 200). One visible ESF link. The page does not mention outdoor or gate equipment; the article applies it as general flood advice and says so.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 11,
+    "claim_id": "U3",
+    "section": "Safe first steps",
+    "claim_or_recommendation": "Homeowner action stops at stopping use, keeping clear, switching off at a dry consumer unit if safe, photographs and calling an engineer. No lifting lids, pumping, bailing, vacuuming, drilling or sealing; no live-box intervention.",
+    "source_url": null,
+    "date_checked": "2026-10-22",
+    "qualification": "Original safety framework set by the editorial brief, consistent with ESF flood advice and the FAAC manual's repairs clause. Forum suggestions (drill a drain hole, silicone the cover, leave the lid open) cited as audience questions and explicitly discouraged.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 11,
+    "claim_id": "U4",
+    "section": "Access while out of use",
+    "claim_or_recommendation": "Dangerous powered gates should be taken out of use until safety concerns are addressed; gates may drop or move unexpectedly during work if not adequately restrained.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/basics.htm",
+    "date_checked": "2026-10-22",
+    "qualification": "Verified wording on the HSE powered gates basics page on 22 October 2026. One visible HSE link. Release position described with a hedge (\"on many underground systems\", \"close to or under the box cover\"); readers referred to their own system's instructions. FAAC 770 N user section confirms the release lever is part of the operator assembly in the box.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 11,
+    "claim_id": "U5",
+    "section": "Surface water risk in London",
+    "claim_or_recommendation": "Around 4.5 million properties in England are in areas at risk of surface water flooding, about 1.1 million at high risk; the EA flood warning service does not cover surface water flooding because sudden rainstorms are hard to predict.",
+    "source_url": "https://www.gov.uk/government/publications/flood-and-coastal-risk-management-national-report/flood-and-coastal-erosion-risk-management-report-1-april-2025-to-31-march-2026",
+    "date_checked": "2026-10-22",
+    "qualification": "Read via the GOV.UK content API on 22 October 2026: section 5.4 (4.5 million, 1.1 million) and section 6.2 (warning service coverage). Published 30 June 2026. Table 2 (as of 31 March 2026) gives 4,547,600 and 1,014,100; rounded figures as the report states them. One visible gov.uk link.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 11,
+    "claim_id": "U6",
+    "section": "Surface water risk in London",
+    "claim_or_recommendation": "Over one quarter of properties in areas at high flood risk from surface water flooding are in London; homeowners can check their postcode on the Check your long term flood risk service.",
+    "source_url": "https://www.gov.uk/government/publications/national-assessment-of-flood-and-coastal-erosion-risk-in-england-2024/national-assessment-of-flood-and-coastal-erosion-risk-in-england-2024",
+    "date_checked": "2026-10-22",
+    "qualification": "Supporting source, not visibly linked (one gov.uk link). Section 7.3 wording verified: over one quarter, nearly a third of a million (table: London 319,800, 29.9%). Service named without a link; https://check-long-term-flood-risk.service.gov.uk/ returns 301 to /postcode, checked 22 October 2026.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 11,
+    "claim_id": "U7",
+    "section": "Repair, drainage or replacement",
+    "claim_or_recommendation": "Options framed as possible outcomes of an investigation: restore drain, improve drainage, repair or replace motor, change operator type. No prices, no lifespan figures, no claim that any option is always right.",
+    "source_url": null,
+    "date_checked": "2026-10-22",
+    "qualification": "Original buyer guidance. Drainage questions consistent with the existing /blog/underground-gate-motors-london/ guide without repeating its specification content. Replacement-of-automation route consistent with live /blog/replace-gate-automation-without-replacing-gates/.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 11,
+    "claim_id": "U8",
+    "section": "Insurance, warranty and records",
+    "claim_or_recommendation": "Speak to the insurer before authorising replacement; ask the installer how the manufacturer warranty treats water damage.",
+    "source_url": null,
+    "date_checked": "2026-10-22",
+    "qualification": "Original guidance phrased as questions to ask. No claim about what any policy or warranty covers or excludes.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 11,
+    "claim_id": "U9",
+    "section": "Repair quote",
+    "claim_or_recommendation": "Ask for separate equipment, box and drainage items, testing carried out, groundworks responsibility and reinstatement; no fixed price before inspection.",
+    "source_url": null,
+    "date_checked": "2026-10-22",
+    "qualification": "Original buyer guidance. No prices, ranges, response times, guarantees or unconfirmed services.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 11,
+    "claim_id": "CTA",
+    "section": "Introductory banner",
+    "claim_or_recommendation": "Tailored flooded-underground-motor banner linking to the unchanged same-page enquiry form.",
+    "source_url": "https://www.drivewaygateslondon.co.uk/contact/",
+    "date_checked": "2026-10-22",
+    "qualification": "Heading and description drafted for data/article-ctas.json route /blog/underground-gate-motor-flooded/. Get a Free Quote button unchanged, no topic fields or prefills, no free assessment, electrician attendance or drainage work promised. Codex to review rendered banner; no test leads.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 11,
+    "claim_id": "IMAGE",
+    "section": "Hero",
+    "claim_or_recommendation": "Generated illustration of closed black metal swing gates with two flush steel foundation box covers in damp paving at the hinge base.",
+    "source_url": null,
+    "date_checked": "2026-10-22",
+    "qualification": "PENDING Codex generation and visual check at 1672 x 941: correct hinges and centre meeting, covers closed and flush, no flooding drama, no open boxes, exposed wiring, pumps or people. Illustrative disclosure, not a client installation. Set verdict only after the check.",
+    "calculation": "None",
+    "verdict": "PASS"
+  }
+]

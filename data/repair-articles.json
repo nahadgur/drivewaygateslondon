@@ -1683,5 +1683,189 @@
         "text": "When requesting [electric gate repair and maintenance](/services/gate-repair-and-maintenance/), say that the gate trips the electrics and that the supply has been left off. That allows the right people to attend and the investigation to start from what you have already seen."
       }
     ]
+  },
+  {
+    "slug": "underground-gate-motor-flooded",
+    "title": "Underground Gate Motor Flooded? Repair, Drainage or Replacement?",
+    "metaTitle": "Underground Gate Motor Flooded | London Repairs",
+    "useMetaTitle": true,
+    "metaDescription": "Underground gate motor box full of water? Learn the safe first steps, why foundation boxes flood and how to weigh repair, drainage work or replacement.",
+    "category": "Maintenance",
+    "publishDate": "2026-10-23",
+    "draft": false,
+    "featuredImage": "/showcase/assets/content/underground-gate-motor-flooded.webp",
+    "featuredImageAlt": "Illustration of closed black metal swing gates at a London home, with two flush steel foundation box covers set into damp paving at the base of each leaf.",
+    "featuredImageWidth": 1672,
+    "featuredImageHeight": 941,
+    "excerpt": "Why underground gate motor boxes fill with water, the safe first steps, what an engineer should check and how to weigh repair, drainage work or replacement.",
+    "relatedServiceSlug": "gate-repair-and-maintenance",
+    "content": [
+      {
+        "type": "p",
+        "text": "An underground gate motor that has flooded raises three separate questions: what the water has done to the equipment, why the foundation box held water in the first place, and whether a concealed operator still suits that part of the drive. A replacement motor answers only the first. If the box cannot drain, the new motor sits in the same conditions as the old one."
+      },
+      {
+        "type": "p",
+        "text": "**The short takeaway: stop using the gates, keep away from standing water around the covers and leave the box closed.** Switch off the supply at the consumer unit only if you can reach it safely and it is dry. Do not lift the lids, pump or bail out the box, or drill drainage holes yourself. A gate engineer and, where needed, an electrician should take it from there."
+      },
+      {
+        "type": "h2",
+        "text": "How a Foundation Box Is Meant to Drain"
+      },
+      {
+        "type": "p",
+        "text": "An underground swing operator sits in a metal foundation box set into the ground at the hinge, with the leaf connected to it through a lever. Rain can reach the box through the cover and around the cable entries, so manufacturers plan for water leaving it. The [FAAC 770 N installation instructions](https://www.faac.co.uk/productfiles/319_Manual_radD75E8.pdf) are one example. They list the operator’s protection class as IP 67, yet still provide for a tube to drain rain water from the supporting box, and they say any cable joints made inside the box need a protection class of IP 67 or greater."
+      },
+      {
+        "type": "p",
+        "text": "The same manual recommends an inspection every six months and leaves repairs to qualified service personnel. Other models have their own arrangements, so the instructions for your particular operator govern what the installer should have done. The useful point for a homeowner is simpler: a well-specified box is expected to shed water, and a box that stays full points to a problem with the route out, not just the motor."
+      },
+      {
+        "type": "h2",
+        "text": "Safe First Steps for Homeowners"
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Stop operating the gates from remotes, keypads or the intercom, and ask everyone who uses the entrance to do the same.",
+          "Keep people, children and pets away from the covers and any standing water around the gate posts.",
+          "If you can reach the consumer unit safely and it is dry, switch off the gate supply there. Do not touch a wet or damaged consumer unit.",
+          "Leave the box lids closed. Do not pump, bail, sponge or vacuum water out of a box that contains electrical equipment.",
+          "Take photographs from a dry position showing the water, the covers and the surrounding paving.",
+          "Call a gate engineer, and tell them if the household electrics have also been affected."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "[Electrical Safety First’s advice after a flood](https://www.electricalsafetyfirst.org.uk/safety-advice/home-and-people/house-maintenance/electrical-safety-after-a-flood/) says to switch off at the consumer unit only if it is safe, not to attempt electrical repairs yourself, and to have equipment affected by the flood checked and tested by a registered electrician before it is used again. A gate motor in a flooded box falls squarely within that advice, even if the house itself stayed dry."
+      },
+      {
+        "type": "p",
+        "text": "Forum threads about wet underground boxes often suggest drilling a hole in the base, sealing the cover with silicone or leaving the lid open to dry the box out. Each of those alters equipment you cannot see properly and may hide the evidence an engineer needs. Flooding that also trips the household supply adds an electrical fault to the problem, and [gates that keep tripping the electrics](/blog/electric-gates-keep-tripping-electrics/) should stay switched off until an electrician has tested the circuit."
+      },
+      {
+        "type": "h2",
+        "text": "Access While the Motors Are Out of Use"
+      },
+      {
+        "type": "p",
+        "text": "On many underground systems the manual release sits at the base of the leaf, close to or under the box cover. That can mean standing over a flooded box to operate it. If water is pooled around the release, leave the gate where it is and arrange other access until an engineer attends. Where the area is dry and safe, follow the [manual-release instructions for your gate](/guides/how-to-manually-open-electric-gate/) supplied with your particular system."
+      },
+      {
+        "type": "p",
+        "text": "The [HSE’s powered gate guidance](https://www.hse.gov.uk/work-equipment-machinery/powered-gates/basics.htm) says that gates found to be dangerous should be taken out of use until the safety concerns have been addressed, and warns that gates may move unexpectedly during work if they are not adequately restrained. A released leaf on a flooded operator may swing more freely than you expect, so keep vehicles and people clear and secure it only as the instructions describe."
+      },
+      {
+        "type": "h2",
+        "text": "Observations That Help the Engineer"
+      },
+      {
+        "type": "p",
+        "text": "Record what you can see without opening anything. The pattern over a few days often says more about the drainage than a single visit to a full box."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "Whether water was visible at the cover, around it, or only on the paving nearby.",
+          "How heavy the rain was and how long after it the gates stopped working.",
+          "Whether the water level around the covers falls within hours, stays for days or returns after every shower.",
+          "Whether one box or both appear affected, and whether the gates worked normally before the rain.",
+          "Any recent paving, landscaping, drainage or kerb work near the entrance, or a change in where water runs across the drive.",
+          "Earlier repair reports, especially any that mention water, corrosion or replaced motors."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Changes to the drive surface are worth mentioning even when they seem unrelated. New impermeable paving can send more water towards the lowest point of a front garden, which is sometimes where the gate posts sit. Planning rules on [front garden paving and drainage](/blog/front-garden-paving-suds-london/) also govern where the run-off from a new surface may go."
+      },
+      {
+        "type": "h2",
+        "text": "What the Engineer Should Separate"
+      },
+      {
+        "type": "p",
+        "text": "A useful visit ends with three distinct findings rather than a single verdict. The first is the condition of the equipment: the motor, its cable and any joints, limit switches or encoders, and the release mechanism. The second is the condition of the box itself, including its cover, fixings and any corrosion. The third is the drainage route: whether a drain tube was fitted, whether it is clear and where it discharges."
+      },
+      {
+        "type": "p",
+        "text": "Electrical safety may need a separate check. The gate engineer can assess the operator and control board, while an electrician can test the supply circuit and cable after a flood. If water has affected wiring beyond the gate, Electrical Safety First suggests asking the registered electrician for an Electrical Installation Condition Report. Ask each person to put their findings in writing so the repair decision rests on the same evidence."
+      },
+      {
+        "type": "h2",
+        "text": "Repair, Drainage Work or Replacement"
+      },
+      {
+        "type": "p",
+        "text": "The right answer depends on what the findings show, and the options can be combined. Ask the engineer which of these the evidence supports and why."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "**Restoring the existing drain:** where the motor tests sound and the drain tube is present but blocked or silted, clearing it and drying the box under controlled conditions may be the main work.",
+          "**Improving the drainage:** where no drain was fitted, or its outlet does not carry water away, the remedy is groundwork rather than gate work. Ask where the water will go, who will carry out the excavation and reinstatement, and who maintains the route afterwards.",
+          "**Repairing or replacing the motor:** where water has reached the motor or its connections, ask whether the damaged part can be repaired, whether a replacement fits the existing box, and what has been done about the route the water took.",
+          "**Changing the type of operator:** where the box floods repeatedly and drainage cannot reasonably be improved, an above-ground operator may suit the entrance better. Ask whether the gates, hinges and controls can stay when [replacing the automation](/blog/replace-gate-automation-without-replacing-gates/), and how the redundant boxes will be dealt with."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "If a concealed operator is still preferred, the same questions that apply when first [choosing underground gate motors](/blog/underground-gate-motors-london/) apply again, with the benefit of knowing how this entrance behaves in heavy rain. A replacement quote that does not mention drainage at a box that has already flooded leaves the cause unaddressed."
+      },
+      {
+        "type": "h2",
+        "text": "Surface Water Risk in London"
+      },
+      {
+        "type": "p",
+        "text": "Underground boxes are low points by design, so they collect water that runs across paving during intense rain. The Environment Agency’s [flood and coastal erosion risk management report for April 2025 to March 2026](https://www.gov.uk/government/publications/flood-and-coastal-risk-management-national-report/flood-and-coastal-erosion-risk-management-report-1-april-2025-to-31-march-2026) puts around 4.5 million properties in England in areas at risk of surface water flooding, about 1.1 million of them at high risk. It also notes that its flood warning service does not cover surface water flooding, because sudden storms are difficult to predict."
+      },
+      {
+        "type": "p",
+        "text": "London carries a large share of that risk. The agency’s national assessment found that over one quarter of properties in areas at high risk from surface water flooding are in London. You can look up your own postcode on the government’s Check your long term flood risk service before deciding between drainage work and a different operator, and share the result with whoever is quoting."
+      },
+      {
+        "type": "p",
+        "text": "A box that floods only after exceptional storms presents a different decision from one that fills after ordinary rain. For [other gate faults after rain](/blog/electric-gates-not-working-after-rain/), such as photocells or control boxes affected by water, the investigation starts from a different set of components."
+      },
+      {
+        "type": "h2",
+        "text": "Insurance, Warranty and Records"
+      },
+      {
+        "type": "p",
+        "text": "Before any work starts, photograph the scene, keep the engineer’s written findings and note the dates of the rain. If you intend to claim, speak to your insurer before authorising replacement, because it may want to see the damage or a report first. Ask how your policy treats [automated gates, motors and underground services](/blog/automated-gate-home-insurance/) rather than assuming either way."
+      },
+      {
+        "type": "p",
+        "text": "If the operators are recent, ask the installer how the manufacturer’s warranty applies to water damage and whether the original installation included the drainage that the instructions call for. Keep the installation manual, any service reports and the new findings together, since the next engineer will need all three."
+      },
+      {
+        "type": "h2",
+        "text": "Details to Send When You Book"
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Your postcode, and the make and model of the operators if you know them from records.",
+          "Whether one or both boxes appear flooded and what the gates were doing when they stopped.",
+          "Your photographs from a dry position, and whether the water level has changed since.",
+          "Whether the supply has been switched off and whether any household circuits have tripped.",
+          "Recent paving or drainage work near the entrance, and any earlier repair reports.",
+          "Whether the gate is your only vehicle access and the position it has been left in."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Questions for the Repair Quote"
+      },
+      {
+        "type": "p",
+        "text": "Ask the engineer to separate equipment, box and drainage work in the quote, and to say which findings support each item. Ask what testing was carried out, who will do any groundworks and how the paving will be reinstated. There is no dependable fixed price before the box has been inspected, because clearing a drain, replacing a motor and installing a new drainage run involve very different work."
+      },
+      {
+        "type": "p",
+        "text": "When requesting [electric gate repair and maintenance](/services/gate-repair-and-maintenance/), say that the underground motor box has flooded, whether the supply is off and how quickly the water has drained since. That lets the right people attend and the investigation start from what you have already seen."
+      }
+    ]
   }
 ]
