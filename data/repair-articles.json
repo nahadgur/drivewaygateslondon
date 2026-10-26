@@ -1867,5 +1867,190 @@
         "text": "When requesting [electric gate repair and maintenance](/services/gate-repair-and-maintenance/), say that the underground motor box has flooded, whether the supply is off and how quickly the water has drained since. That lets the right people attend and the investigation start from what you have already seen."
       }
     ]
+  },
+  {
+    "slug": "sliding-gate-sticking-or-scraping-ground",
+    "title": "Sliding Gate Sticking or Scraping the Ground? Track and Roller Repairs",
+    "metaTitle": "Sliding Gate Sticking or Scraping? | London Repairs",
+    "useMetaTitle": true,
+    "metaDescription": "Sliding gate sticking, grinding or scraping the ground? Learn the safe checks, why tracks, wheels and guide rollers wear and what a proper repair covers.",
+    "category": "Maintenance",
+    "publishDate": "2026-10-26",
+    "draft": false,
+    "featuredImage": "/showcase/assets/content/sliding-gate-sticking-or-scraping-ground.webp",
+    "featuredImageAlt": "Illustration of a closed black metal sliding gate at a London home, running on a ground track set into block paving beside a brick pier.",
+    "featuredImageWidth": 1672,
+    "featuredImageHeight": 941,
+    "excerpt": "Why sliding gates stick or scrape, the warning signs that mean stop using the gate, and how track, wheel, guide roller and rack repairs differ.",
+    "relatedServiceSlug": "gate-repair-and-maintenance",
+    "content": [
+      {
+        "type": "p",
+        "text": "A sliding gate that sticks or scrapes the ground is telling you that its weight is no longer being carried and guided the way it was designed to be. The cause may be as simple as debris in the track, or as serious as a worn wheel, a loose upper guide or a gate that has started to drop. The motor often gets the blame because it is the part that strains, but it is usually responding to a problem elsewhere."
+      },
+      {
+        "type": "p",
+        "text": "**The short takeaway: if the gate leans, wobbles, has lifted out of its track or has lost an end stop, stop using it and keep everyone clear until an engineer has made it safe.** A sliding gate can weigh hundreds of kilograms. Do not lever it back onto the track, adjust guide rollers or loosen fixings yourself."
+      },
+      {
+        "type": "h2",
+        "text": "How a Sliding Gate Carries Its Weight"
+      },
+      {
+        "type": "p",
+        "text": "Many domestic sliding gates in London run on wheels along a ground track, with guide rollers at the top of a post holding the leaf upright. Cantilever gates have no ground track; they are carried by roller carriages mounted beside the opening and overhang the drive. On an automated gate, a motor drives a toothed rack fixed along the leaf, and mechanical end stops limit how far the gate can travel."
+      },
+      {
+        "type": "p",
+        "text": "Manufacturers set conditions for that structure before automation. The [FAAC 844 installation manual](https://www.faac.co.uk/productfiles/65_Manual_rad7D974.pdf) says the wheel diameter must be in proportion to the weight of the gate, that an upper guide must be provided, and that mechanical stop limits are needed to prevent the gate derailing. It asks installers to check that there is no friction during gate travel and warns against putting grease or other lubricants between the rack and pinion."
+      },
+      {
+        "type": "p",
+        "text": "That last point matters because a common forum suggestion for a sticking gate is to spray lubricant on everything that moves. On some systems that is the wrong treatment for the rack and can attract grit. The user instructions for your gate say what, if anything, you should clean or lubricate."
+      },
+      {
+        "type": "h2",
+        "text": "Warning Signs That Mean Stop Using the Gate"
+      },
+      {
+        "type": "p",
+        "text": "The [HSE’s powered gate safety guidance](https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm) lists coming off tracks and falling over among the hazards that a gate’s design should eliminate, and notes that component parts can wear and fail, sometimes catastrophically. A worn guide or a missing stop removes part of that protection. Treat any of the following as a reason to stop operating the gate and call an engineer the same day."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "The leaf leans away from the upper guide or moves sideways when pushed lightly by the wind.",
+          "A wheel has lifted out of the track, or the gate rides up at one point of its travel.",
+          "An end stop is bent, loose or missing, or the gate runs past its usual open position.",
+          "Guide rollers at the top of the post are damaged, seized or no longer touching the leaf.",
+          "A cantilever gate has started to drop at its free end or touches the ground where it used to clear it.",
+          "There are fresh cracks in the paving or concrete around the track, posts or roller carriages."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "The risk is not theoretical. In June 2026, [SafeWork NSW reported fines](https://www.safework.nsw.gov.au/news/safework-media-releases/gate-manufacturer-and-installer-fined-after-a-200kg-gate-fell-on-a-mother-and-three-children) for the maker and installer of a 200kg sliding gate in Sydney that overran its supports and fell onto a woman and three children walking past. The case was decided under Australian law, but the mechanism is the same on any sliding gate, which is why a gate that is moving outside its normal path needs attention before it is used again."
+      },
+      {
+        "type": "h2",
+        "text": "Common Causes of Sticking and Scraping"
+      },
+      {
+        "type": "p",
+        "text": "Where the problem appears along the travel is the most useful clue. Sticking at one spot points towards the track or the ground at that spot. A gate that drags along its whole length, or scrapes more as it opens, suggests something about the leaf, the wheels or the guides has changed. These are lines of enquiry for the engineer rather than a diagnosis."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "**Debris in the track:** leaves, gravel, grit and silt build up in autumn and after rain, and a single stone can lift a wheel.",
+          "**A track that has moved:** a rail fixed only into a thin bed of concrete or mortar can rock, sink or lift as vehicles cross it.",
+          "**Worn wheels or bearings:** a flattened wheel or a failed bearing lets the gate drop and drag, and often makes a grinding sound.",
+          "**Upper guides and rollers:** worn or loose rollers let the leaf lean, so it binds against the post or scrapes the ground.",
+          "**Rack and pinion:** a rack section that has dropped or lifted can bind on the pinion or slip, which feels like sticking.",
+          "**Ground movement:** settlement, tree roots or frost can change levels beside a track or under a cantilever carriage.",
+          "**Impact:** a knock from a vehicle can bend the track, the leaf or a post without obvious damage from a distance."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "If the gate also stops or reverses part way, describe that alongside the scraping, because the controller may be reacting to the extra resistance. Gates [stopping or reversing during travel](/blog/electric-gates-stop-halfway-or-keep-reversing/) can have a mechanical cause of exactly this kind, and the engineer needs both symptoms. So can [a motor that hums but does not move the leaf](/blog/gate-motor-humming-not-moving/), which is worth investigating before anyone replaces the motor."
+      },
+      {
+        "type": "h2",
+        "text": "Safe Checks for Homeowners"
+      },
+      {
+        "type": "p",
+        "text": "Your part is to observe, record and keep people clear. Do it from outside the movement area, with the gate stationary, and never put hands or feet near the track, rollers, rack or the gap between the leaf and the post while the gate could move."
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Stop operating the gate if any warning sign above is present, and tell other users.",
+          "From a safe position, note where along the travel the sticking or scraping happens.",
+          "Look for visible debris in the track, fresh scrape marks on the paving and any lean in the leaf.",
+          "Photograph the track, the upper guide and the end stops without touching them.",
+          "Check the user instructions for any cleaning you are permitted to do, and with the power isolated if they say so.",
+          "Call a gate engineer and describe what you saw, including any recent impact or groundwork."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "If you need the entrance open in the meantime, use the [manual release for your gate](/guides/how-to-manually-open-electric-gate/) only if the leaf is upright, in its track and not showing any warning sign. Pushing a dragging gate by hand adds load to the same worn parts, and a released leaf that is out of its guides may not stay where you leave it."
+      },
+      {
+        "type": "h2",
+        "text": "Repairs a Proper Visit Should Cover"
+      },
+      {
+        "type": "p",
+        "text": "A good engineer checks the whole path of the gate rather than the single point where it scrapes. Expect them to look at the track or carriages, wheels, guide rollers, rack, end stops and the leaf itself, and then at the drive and safety devices once the movement is free. The repair usually falls into one or more of these categories."
+      },
+      {
+        "type": "ul",
+        "items": [
+          "**Track work:** cleaning, straightening, refixing or replacing sections of track, and providing a sound foundation where the old bed has failed.",
+          "**Wheels and bearings:** replacing worn wheels or bearings, with wheels suited to the gate’s weight.",
+          "**Guides and stops:** replacing or adjusting guide rollers and refitting or renewing mechanical end stops.",
+          "**Rack adjustment:** resetting rack height and spacing against the pinion, or replacing damaged sections.",
+          "**Leaf repairs:** straightening or strengthening a distorted leaf, or adjusting a cantilever gate’s carriages after it has dropped."
+        ]
+      },
+      {
+        "type": "p",
+        "text": "Freeing a gate that was dragging changes how it moves, so ask whether the engineer checked the safety devices afterwards and, where the system relies on force limitation, whether [force testing](/guides/force-testing-explained/) was repeated. A gate that runs more freely may also need its travel and slow-down settings reviewed."
+      },
+      {
+        "type": "h2",
+        "text": "Damage From Impacts and Ground Movement"
+      },
+      {
+        "type": "p",
+        "text": "Sliding gates sit across the line of the drive, so a vehicle clipping the leaf or the track is one possible cause of a gate that suddenly starts to stick. Tell the engineer about any knock, even a minor one, because a bent track section or a distorted post can explain a fault that appears weeks later. A written finding also helps with insurance and with planning the wider repair of damage following a vehicle impact."
+      },
+      {
+        "type": "p",
+        "text": "Ground movement is slower and harder to spot. Repeated scraping at the same place after wet or frosty weather, or a track that rises and falls under car wheels, may point to the foundation. In that case a new wheel or roller treats the symptom, and the quote should say whether the track bed itself needs rebuilding. Frost can change how a gate moves for weeks at a time, so [winter gate maintenance](/guides/winter-gate-maintenance/) is a sensible point to have the track bed checked."
+      },
+      {
+        "type": "h2",
+        "text": "Repair or Replace the Running Gear"
+      },
+      {
+        "type": "p",
+        "text": "Many sticking and scraping faults can be repaired without replacing the gate. Replacement of the leaf or the whole system becomes a serious option when the leaf is badly distorted, when the original wheels and track were never suited to the gate’s weight, or when the gate has been extended or reclad so that it is heavier than its running gear and motor were chosen for. Ask the engineer to explain which of those applies and what evidence supports it."
+      },
+      {
+        "type": "p",
+        "text": "If the gate itself is sound but the drive is old or unsupported, the decision may be about the motor rather than the gate. If you are weighing a different gate type for a tight or sloping entrance, the trade-offs between [swing and sliding gates](/guides/swing-vs-sliding-gates/) apply, including the space a sliding leaf needs beside the opening."
+      },
+      {
+        "type": "h2",
+        "text": "Details to Send When You Book"
+      },
+      {
+        "type": "ol",
+        "items": [
+          "Your postcode, whether the gate runs on a ground track or is a cantilever design, and the motor make if you know it.",
+          "Where along the travel the gate sticks or scrapes, and whether it is getting worse.",
+          "Whether the leaf leans, has left the track or has run past its usual stopping point.",
+          "Your photographs of the track, upper guide and end stops.",
+          "Any recent impact, paving, drainage or tree work near the gate.",
+          "Whether the gate is your only vehicle access and how it has been left."
+        ]
+      },
+      {
+        "type": "h2",
+        "text": "Questions for the Repair Quote"
+      },
+      {
+        "type": "p",
+        "text": "Ask the engineer to name the parts that are worn or damaged, how they established it and what each item of work fixes. Ask whether the track foundation is included, what safety checks will follow the repair and whether the gate can be used safely while parts are ordered. There is no dependable fixed price before inspection, because clearing a track and rebuilding a track bed are very different jobs."
+      },
+      {
+        "type": "p",
+        "text": "When requesting [electric gate repair and maintenance](/services/gate-repair-and-maintenance/), say that the sliding gate is sticking or scraping, where along its travel it happens and whether it has stopped being used. That lets the engineer bring the right parts and start from what you have already seen."
+      }
+    ]
   }
 ]

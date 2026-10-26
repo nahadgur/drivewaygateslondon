@@ -15,8 +15,9 @@ const reviewed = [
   ...JSON.parse(readFileSync('docs/source-reviews/gates-after-rain.json', 'utf8')),
   ...JSON.parse(readFileSync('docs/source-reviews/gates-tripping-electrics.json', 'utf8')),
   ...JSON.parse(readFileSync('docs/source-reviews/underground-motor-flooded.json', 'utf8')),
+  ...JSON.parse(readFileSync('docs/source-reviews/sliding-gate-sticking.json', 'utf8')),
 ];
-for (const priority of [7, 8, 9, 10, 11]) {
+for (const priority of [7, 8, 9, 10, 11, 12]) {
   const ledger = reviewed.filter(row => row.article_priority === priority);
   assert(ledger.length && ledger.every(row => row.verdict === 'PASS'), `Article ${priority} source ledger must pass`);
 }

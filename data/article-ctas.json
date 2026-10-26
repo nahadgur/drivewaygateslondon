@@ -182,5 +182,9 @@
   "/blog/underground-gate-motor-flooded/": {
     "heading": "Underground gate motor flooded?",
     "description": "Tell us where the water collected and what the gates were doing before they stopped. Ask about investigating the motors, the box drainage and the repair work your gates may need."
+  },
+  "/blog/sliding-gate-sticking-or-scraping-ground/": {
+    "heading": "Sliding gate sticking or scraping?",
+    "description": "Tell us where along its travel the gate sticks and whether it leans or has left its track. Ask about investigating the track, wheels and guides and the repair work your gate may need."
   }
 }

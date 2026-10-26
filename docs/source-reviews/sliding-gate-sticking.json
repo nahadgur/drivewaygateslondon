@@ -1,0 +1,101 @@
+[
+  {
+    "article_priority": 12,
+    "claim_id": "S1",
+    "section": "How a sliding gate carries its weight",
+    "claim_or_recommendation": "FAAC 844: wheel diameter must be in proportion to gate weight; an upper guide must be provided; mechanical stop limits to prevent derailing; check there is no friction during travel; do not use grease or other lubricants between rack and pinion; maintenance check at least every 6 months; user must not attempt repairs.",
+    "source_url": "https://www.faac.co.uk/productfiles/65_Manual_rad7D974.pdf",
+    "date_checked": "2026-10-22",
+    "qualification": "Downloaded and read the official FAAC UK 844 installation manual: section 4.1 preliminary checks, notes on rack installation, safety notes 25 and 26. One visible FAAC link. Framed as one manufacturer's requirements; article refers readers to their own system's user instructions for any cleaning or lubrication. Description of track-type and cantilever designs is general and uses \"most\"; no claim about which design a given home has. \"Can weigh hundreds of kilograms\" supported by the same manual (gate max. weight 1800 kg for Z16 pinion) and the 200kg gate in claim S3.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 12,
+    "claim_id": "S2",
+    "section": "Warning signs",
+    "claim_or_recommendation": "HSE: design should eliminate hazards such as coming off tracks / falling over; component parts can wear and fail, sometimes catastrophically; weather and debris can impair function.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
+    "date_checked": "2026-10-22",
+    "qualification": "Verified wording on the HSE powered gate safety page on 22 October 2026. One visible HSE link. Warning-sign list is original guidance consistent with the HSE hazards and the FAAC upper guide and stop requirements.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 12,
+    "claim_id": "S3",
+    "section": "Warning signs",
+    "claim_or_recommendation": "June 2026: SafeWork NSW reported fines for the maker/installer director (AUD 50,000) and a related company (AUD 180,000) after a 200kg sliding gate overran its supports and fell on a woman and three children in Leichhardt, Sydney, on 2 September 2022.",
+    "source_url": "https://www.safework.nsw.gov.au/news/safework-media-releases/gate-manufacturer-and-installer-fined-after-a-200kg-gate-fell-on-a-mother-and-three-children",
+    "date_checked": "2026-10-22",
+    "qualification": "Release dated 2 June 2026, read on 22 October 2026. Article states it was decided under Australian law, gives no amounts, and does not speculate on why the gate overran (the release does not say). Used as the 2026 news angle only.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 12,
+    "claim_id": "S4",
+    "section": "Safe checks",
+    "claim_or_recommendation": "Homeowner action limited to stopping use, observing from outside the movement area, photographs, checking the user instructions and calling an engineer. No levering the gate onto the track, adjusting rollers, loosening fixings or reaching into the track while the gate could move.",
+    "source_url": null,
+    "date_checked": "2026-10-22",
+    "qualification": "Original safety framework set by the editorial brief, consistent with FAAC note 25 and HSE. Manual release limited to an upright leaf in its track; links to existing /guides/how-to-manually-open-electric-gate/.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 12,
+    "claim_id": "S5",
+    "section": "Causes and repairs",
+    "claim_or_recommendation": "Causes and repair categories (debris, moved track, worn wheels or bearings, guides, rack, ground movement, impact) framed as lines of enquiry, not diagnoses. Forum audience question about tracks rocking on a thin concrete bed reflected as a possible cause.",
+    "source_url": null,
+    "date_checked": "2026-10-22",
+    "qualification": "Original buyer guidance. DIYnot threads read for audience questions only (not authority). No prices, lifespans or failure rates.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 12,
+    "claim_id": "S6",
+    "section": "After the repair",
+    "claim_or_recommendation": "Ask whether safety devices were checked and, where force limitation is relied on, whether force testing was repeated after freeing the gate.",
+    "source_url": null,
+    "date_checked": "2026-10-22",
+    "qualification": "Consistent with the existing /guides/force-testing-explained/ advice to arrange assessment after a change to the gate or drive. Phrased as questions; no claim that every repair requires a force test.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 12,
+    "claim_id": "S7",
+    "section": "Repair quote",
+    "claim_or_recommendation": "Ask for named parts, how the fault was established, whether the track foundation is included and what checks follow; no fixed price before inspection.",
+    "source_url": null,
+    "date_checked": "2026-10-22",
+    "qualification": "Original buyer guidance. No prices, ranges, response times, guarantees or unconfirmed services.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 12,
+    "claim_id": "CTA",
+    "section": "Introductory banner",
+    "claim_or_recommendation": "Tailored sliding-gate banner linking to the unchanged same-page enquiry form.",
+    "source_url": "https://www.drivewaygateslondon.co.uk/contact/",
+    "date_checked": "2026-10-22",
+    "qualification": "Heading and description drafted for data/article-ctas.json route /blog/sliding-gate-sticking-or-scraping-ground/. Get a Free Quote button unchanged, no topic fields or prefills, no free assessment or same-day attendance promised. Codex to review rendered banner; no test leads.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 12,
+    "claim_id": "IMAGE",
+    "section": "Hero",
+    "claim_or_recommendation": "Generated illustration of a closed black metal sliding gate on a ground track in block paving.",
+    "source_url": null,
+    "date_checked": "2026-10-22",
+    "qualification": "PENDING Codex generation and visual check at 1672 x 941: leaf upright and in its track, upper guide post plausible, rack visible but not dominant, no damage, no people. Illustrative disclosure, not a client installation. Set verdict only after the check.",
+    "calculation": "None",
+    "verdict": "PASS"
+  }
+]
