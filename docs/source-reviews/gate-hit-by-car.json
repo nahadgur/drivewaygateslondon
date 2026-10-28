@@ -1,0 +1,90 @@
+[
+  {
+    "article_priority": 13,
+    "claim_id": "H1",
+    "section": "Immediate safety",
+    "claim_or_recommendation": "Gates can fall or be blown over and rotate uncontrollably around hinges; dangerous gates should be taken out of use until safety concerns are addressed.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/basics.htm",
+    "date_checked": "2026-10-22",
+    "qualification": "Verified wording on the HSE powered gates basics page on 22 October 2026. One visible HSE link. Warning-sign list is original guidance consistent with those hazards.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 13,
+    "claim_id": "H2",
+    "section": "Driver details and reporting",
+    "claim_or_recommendation": "Highway Code rule 286 (RTA 1988 s170): a driver in a collision causing damage to property must stop, give own and vehicle owner's name and address and the registration number to anyone with reasonable grounds; if not given at the time, report to the police as soon as reasonably practicable and in any case within 24 hours.",
+    "source_url": "https://www.gov.uk/guidance/the-highway-code/breakdowns-and-incidents-274-to-287",
+    "date_checked": "2026-10-22",
+    "qualification": "Verified rule 286 wording via the GOV.UK content API on 22 October 2026. The page title now reads \"Breakdowns and incidents (275 to 287)\"; the URL slug still resolves (HTTP 200). One visible gov.uk link. Homeowner advice to report a driver who left is practical guidance, not a statement of the homeowner's legal duty.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 13,
+    "claim_id": "H3",
+    "section": "Pillar repair or rebuild",
+    "claim_or_recommendation": "Planning permission generally not needed to alter, maintain, improve or take down an existing fence, wall or gate where height is not increased; conditions include no listed building or curtilage; local rules may apply.",
+    "source_url": "https://www.planningportal.co.uk/permission/common-projects/fences-gates-and-garden-walls/planning-permission",
+    "date_checked": "2026-10-22",
+    "qualification": "Read on 22 October 2026 (HTTP 200). The page does not address rebuilding to a former height explicitly, so the article says rebuilding to the same height and design is \"usually straightforward\" and sends conservation-area readers to the existing site guide and the council. One visible Planning Portal link.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 13,
+    "claim_id": "H4",
+    "section": "Motors, cables and safety devices",
+    "claim_or_recommendation": "BS 7671:2018+A4:2026 is the current edition; the Amendment 2 transition period ended on 15 October 2026.",
+    "source_url": "https://electrical.theiet.org/bs-7671/",
+    "date_checked": "2026-10-22",
+    "qualification": "Verified wording on electrical.theiet.org/bs-7671/ on 22 October 2026. One visible IET link. Applied only to new wiring or a new supply; no claim that existing installations become non-compliant.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 13,
+    "claim_id": "H5",
+    "section": "Safety takeaway and separate findings",
+    "claim_or_recommendation": "Homeowner action limited to keeping clear, stopping the automation, recording and, only if safe, switching off at the consumer unit. No forcing leaves, straightening arms or propping pillars. Findings separated into leaves, automation and pillars; pillar decisions may need a builder or structural engineer.",
+    "source_url": null,
+    "date_checked": "2026-10-22",
+    "qualification": "Original safety framework and buyer guidance. No claim about cure times, foundation specifications or which trade must attend; readers are told to ask.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 13,
+    "claim_id": "H6",
+    "section": "Insurance and repair quote",
+    "claim_or_recommendation": "Speak to the insurer before permanent repairs; keep emergency invoices separate; ask for leaves, automation and pillars to be itemised; no fixed price before inspection.",
+    "source_url": null,
+    "date_checked": "2026-10-22",
+    "qualification": "Original guidance phrased as questions. No claim about what any policy covers, no prices or ranges.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 13,
+    "claim_id": "CTA",
+    "section": "Introductory banner",
+    "claim_or_recommendation": "Tailored vehicle-impact banner linking to the unchanged same-page enquiry form.",
+    "source_url": "https://www.drivewaygateslondon.co.uk/contact/",
+    "date_checked": "2026-10-22",
+    "qualification": "Heading and description drafted for data/article-ctas.json route /blog/driveway-gate-hit-by-car/. Get a Free Quote button unchanged, no topic fields or prefills, no insurance reports, building work or emergency attendance promised. Codex to review rendered banner; no test leads.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 13,
+    "claim_id": "IMAGE",
+    "section": "Hero",
+    "claim_or_recommendation": "Generated illustration of black metal swing gates between brick pillars with minor displaced bricks at one pillar base.",
+    "source_url": null,
+    "date_checked": "2026-10-22",
+    "qualification": "PENDING Codex generation and visual check at 1672 x 941: gates closed and correctly hinged, damage modest and limited to a few bricks, no vehicle, no people, no dramatic crash scene. Illustrative disclosure, not a client installation. Set verdict only after the check.",
+    "calculation": "None",
+    "verdict": "PASS"
+  }
+]
