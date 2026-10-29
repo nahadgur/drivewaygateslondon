@@ -1,0 +1,171 @@
+{
+  "/commercial/car-park-barriers/": {
+    "src": "/images/services/car-park-barriers-illustration.webp",
+    "alt": "Illustration of a red-and-white boom barrier across an office car park entrance.",
+    "width": 1672,
+    "height": 941,
+    "provenance": "illustration",
+    "caption": "Concept illustration, not a completed client project."
+  },
+  "/commercial/heavy-duty-sliding-gates/": {
+    "src": "/images/services/heavy-duty-sliding-gates-illustration.webp",
+    "alt": "Illustration of a charcoal cantilever sliding gate with a triangular tail at a warehouse yard.",
+    "width": 1672,
+    "height": 941,
+    "provenance": "illustration",
+    "caption": "Concept illustration, not a completed client project."
+  },
+  "/commercial/industrial-security-gates/": {
+    "src": "/images/services/industrial-security-gates-illustration.webp",
+    "alt": "Illustration of a green vertical-bar sliding gate at a warehouse entrance, with a separate pedestrian gate.",
+    "width": 1672,
+    "height": 940,
+    "provenance": "illustration",
+    "caption": "Concept illustration, not a completed client project."
+  },
+  "/commercial/school-gate-systems/": {
+    "src": "/images/services/school-gate-systems-illustration.webp",
+    "alt": "Illustration of a school entrance with separate green vehicle and pedestrian gates.",
+    "width": 1672,
+    "height": 941,
+    "provenance": "illustration",
+    "caption": "Concept illustration, not a completed client project."
+  },
+  "/services/access-control/anpr-systems/": {
+    "src": "/showcase/assets/content/anpr-systems-34a9163.webp",
+    "alt": "Illustration of a vehicle approaching a driveway gate with a number-plate camera.",
+    "width": 1200,
+    "height": 800,
+    "provenance": "illustration",
+    "caption": "Concept illustration, not a completed client project."
+  },
+  "/services/access-control/gsm-phone-entry/": {
+    "src": "/showcase/assets/content/gsm-phone-entry-f32fe18.webp",
+    "alt": "Illustration of a person using a mobile phone beside a driveway entrance.",
+    "width": 1200,
+    "height": 800,
+    "provenance": "illustration",
+    "caption": "Concept illustration, not a completed client project."
+  },
+  "/services/access-control/keypad-entry-systems/": {
+    "src": "/showcase/assets/content/keypad-entry-systems-3bfb451.webp",
+    "alt": "Illustration of a hand entering a code on a gate keypad mounted to a stone pier.",
+    "width": 1200,
+    "height": 800,
+    "provenance": "illustration",
+    "caption": "Concept illustration, not a completed client project."
+  },
+  "/services/access-control/video-intercoms/": {
+    "src": "/showcase/assets/content/video-intercoms-dd5d897.webp",
+    "alt": "Illustration of a visitor using a video intercom beside a metal pedestrian gate.",
+    "width": 1200,
+    "height": 800,
+    "provenance": "illustration",
+    "caption": "Concept illustration, not a completed client project."
+  },
+  "/services/aluminium-driveway-gates/": {
+    "src": "/showcase/assets/content/gate-aluminium-sliding-vertical-bar-modern-c49a8a8.webp",
+    "alt": "Illustration of contemporary dark vertical-bar driveway gates between stone piers.",
+    "width": 1200,
+    "height": 655,
+    "provenance": "illustration",
+    "caption": "Concept illustration, not a completed client project."
+  },
+  "/services/automated-gate-systems/": {
+    "src": "/showcase/assets/content/gate-automation-intercom-evening-lighting-6414ab1.webp",
+    "alt": "Illustration of metal driveway gates beside a brick pier with an entry intercom.",
+    "width": 1200,
+    "height": 655,
+    "provenance": "illustration",
+    "caption": "Concept illustration, not a completed client project."
+  },
+  "/services/commercial-gates/": {
+    "src": "/images/services/industrial-security-gates-illustration.webp",
+    "alt": "Illustration of a green vertical-bar sliding gate at a warehouse entrance, with a separate pedestrian gate.",
+    "width": 1672,
+    "height": 940,
+    "provenance": "illustration",
+    "caption": "Concept illustration, not a completed client project."
+  },
+  "/services/composite-driveway-gates/": {
+    "src": "/images/services/composite-driveway-gates-illustration.webp",
+    "alt": "Concept illustration of brown composite-effect infill boards within grey driveway gate frames.",
+    "width": 1672,
+    "height": 941,
+    "provenance": "illustration",
+    "caption": "Concept illustration, not a completed client project."
+  },
+  "/services/electric-sliding-gates/": {
+    "src": "/showcase/assets/content/gate-aluminium-sliding-modern-dark-brick-553aa55.webp",
+    "alt": "Illustration of a dark horizontal-slat driveway gate at a modern house.",
+    "width": 1200,
+    "height": 655,
+    "provenance": "illustration",
+    "caption": "Concept illustration, not a completed client project."
+  },
+  "/services/electric-swing-gates/": {
+    "src": "/showcase/assets/content/gate-aluminium-swing-open-luxury-garden-fd599ef.webp",
+    "alt": "Illustration of paired grey horizontal-slat swing gates between stone piers.",
+    "width": 1200,
+    "height": 655,
+    "provenance": "illustration",
+    "caption": "Concept illustration, not a completed client project."
+  },
+  "/services/gate-automation-kits/": {
+    "src": "/images/projects/arched-metal-gates-with-pedestrian-entrance.webp",
+    "alt": "Arched black metal driveway gates with a matching pedestrian gate, photographed from inside the entrance.",
+    "width": 1600,
+    "height": 1200,
+    "provenance": "client-photo",
+    "caption": "Client-supplied project photograph. Location not specified."
+  },
+  "/services/gate-repair-and-maintenance/": {
+    "src": "/images/projects/driveway-gate-automation-work-in-progress.webp",
+    "alt": "A worker beside black metal driveway gates with visible above-ground operators and tools on the driveway.",
+    "width": 1600,
+    "height": 1200,
+    "provenance": "client-photo",
+    "caption": "Client-supplied project photograph. Location not specified."
+  },
+  "/services/hardwood-driveway-gates/": {
+    "src": "/showcase/assets/content/gate-wooden-oak-swing-cottage-flowers-92bd35f.webp",
+    "alt": "Illustration of timber driveway gates with diagonal braces beside a cottage garden.",
+    "width": 1200,
+    "height": 655,
+    "provenance": "illustration",
+    "caption": "Concept illustration, not a completed client project."
+  },
+  "/services/metal-driveway-gates/": {
+    "src": "/showcase/assets/content/gate-wrought-iron-ornate-daytime-manor-e16af31.webp",
+    "alt": "Illustration of ornate black metal driveway gates with decorative scrollwork.",
+    "width": 1200,
+    "height": 655,
+    "provenance": "illustration",
+    "caption": "Concept illustration, not a completed client project."
+  },
+  "/services/pedestrian-side-gates/": {
+    "src": "/images/projects/metal-pedestrian-gate-side-passage.webp",
+    "alt": "Black metal pedestrian gate with spear-top bars across a paved passage between walls.",
+    "width": 900,
+    "height": 1600,
+    "provenance": "client-photo",
+    "caption": "Client-supplied project photograph. Location not specified.",
+    "position": "center 45%"
+  },
+  "/services/wooden-driveway-gates/": {
+    "src": "/showcase/assets/content/gate-wooden-oak-swing-cottage-garden-d00f4c0.webp",
+    "alt": "Illustration of timber driveway gates between stone walls beside a cottage.",
+    "width": 1200,
+    "height": 655,
+    "provenance": "illustration",
+    "caption": "Concept illustration, not a completed client project."
+  },
+  "/services/wrought-iron-gates/": {
+    "src": "/showcase/assets/content/gate-wrought-iron-open-manor-spring-gardens-57dd35f.webp",
+    "alt": "Illustration of traditional-style metal gates opening onto a tree-lined drive.",
+    "width": 1200,
+    "height": 655,
+    "provenance": "illustration",
+    "caption": "Concept illustration, not a completed client project."
+  }
+}

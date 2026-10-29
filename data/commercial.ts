@@ -22,7 +22,7 @@ export const commercialServices: CommercialService[] = [
   "metaTitle": "Industrial Security Gates London | Heavy-Duty Sliding & Swing Gates",
   "metaDescription": "Industrial gate systems for London sites. Discuss vehicle access, operating frequency, security requirements and aftercare before specifying equipment.",
   "description": "Industrial gate systems for London sites. Discuss vehicle access, operating frequency, security requirements and aftercare before specifying equipment.",
-  "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=1170&auto=format&fit=crop",
+  "image": "/images/services/industrial-security-gates-illustration.webp",
   "typicalClients": [
     "Warehouses and distribution centres",
     "Manufacturing facilities",
@@ -79,7 +79,7 @@ export const commercialServices: CommercialService[] = [
   "metaTitle": "School Gate Systems London | Automated Security Gates for Schools",
   "metaDescription": "School entrance gate planning and installation in London, with vehicle movement, pedestrian access and day-to-day management considered together.",
   "description": "School entrance gate planning and installation in London, with vehicle movement, pedestrian access and day-to-day management considered together.",
-  "image": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?q=80&w=1170&auto=format&fit=crop",
+  "image": "/images/services/school-gate-systems-illustration.webp",
   "typicalClients": [
     "Primary schools",
     "Secondary schools and academies",
@@ -133,7 +133,7 @@ export const commercialServices: CommercialService[] = [
   "metaTitle": "Car Park Barriers London | Automated Barrier Systems for London Car Parks",
   "metaDescription": "Car-park barriers and entry controls for London premises. Plan vehicle flow, visitor access and support arrangements around the site.",
   "description": "Car-park barriers and entry controls for London premises. Plan vehicle flow, visitor access and support arrangements around the site.",
-  "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1170&auto=format&fit=crop",
+  "image": "/images/services/car-park-barriers-illustration.webp",
   "typicalClients": [
     "Office buildings with employee parking",
     "Retail parks and shopping centres",
@@ -187,7 +187,7 @@ export const commercialServices: CommercialService[] = [
   "metaTitle": "Heavy-Duty Commercial Sliding Gates London | Large Openings, HGV Rated",
   "metaDescription": "Commercial sliding gate installation in London. Assess the opening, side space, supports and operating demand for your business entrance.",
   "description": "Commercial sliding gate installation in London. Assess the opening, side space, supports and operating demand for your business entrance.",
-  "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1170&auto=format&fit=crop",
+  "image": "/images/services/heavy-duty-sliding-gates-illustration.webp",
   "typicalClients": [
     "Builders merchants and trade counters",
     "Commercial vehicle depots",

@@ -13,6 +13,7 @@ import { businessHoursHtml, renderBusinessServices } from '@/lib/business-profil
 import { siteConfig } from '@/data/site';
 import { ensureQuoteBanner, placeArticleQuoteBanner } from '@/lib/quote-banner';
 import { addProjectPhotos, ourWorkContent } from '@/lib/project-photos';
+import { applyServiceImages } from '@/lib/service-images';
 
 type PageTemplate = { className: string; main?: string; hero?: string; methods?: string; after?: string };
 type PreparedTemplate = PageTemplate & { publicationLinks: PublicationLink[] };
@@ -25,7 +26,7 @@ export function ShowcasePage({ route }: { route: string }) {
     ? { className: 'subpage tone-sage work-showcase-page', main: ourWorkContent() }
     : (templates as Record<string, PageTemplate>)[route] ?? (published ? prepared : undefined);
   if (!page) notFound();
-  let main = page.main;
+  let main = page.main ? applyServiceImages(page.main, route) : page.main;
   if (route === '/services/') {
     main = main!.replace('<div class="compact-links">', `${renderBusinessServices()}<div class="compact-links">`);
   }

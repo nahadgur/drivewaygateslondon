@@ -23,7 +23,7 @@ const accessControlEntries: AccessControlService[] = [
   "metaTitle": "Video Intercom Systems | Driveway Gates London",
   "metaDescription": "See and speak to visitors through a video-entry system specified for your gate, network and household.",
   "description": "See and speak to visitors through a video-entry system specified for your gate, network and household.",
-  "image": "/images/access-control/video-intercoms.webp",
+  "image": "/showcase/assets/content/video-intercoms-dd5d897.webp",
   "intro": [
     " Discuss indoor monitors, phones and the people who need to answer. Confirm whether you need live video only, recordings or gate-position feedback. These functions vary by product and configuration.  Ask to see the proposed call and release sequence, including what happens when nobody answers. Plan deliveries and pedestrian access alongside vehicle entry. ",
     " Survey power, cable routes, camera position, lighting and the required network connection. App access may depend on broadband or a mobile service as well as power at the entrance.  Confirm the exact interface with the gate controller. An intercom is not automatically compatible with every existing motor or control board. Changes need assessment and commissioning with the complete entrance. ",
@@ -72,7 +72,7 @@ const accessControlEntries: AccessControlService[] = [
   "metaTitle": "Keypad Entry Systems | Driveway Gates London",
   "metaDescription": "Code-based gate access with user management, weather exposure and controller compatibility specified for your property.",
   "description": "Code-based gate access with user management, weather exposure and controller compatibility specified for your property.",
-  "image": "/images/access-control/keypad-entry-systems.webp",
+  "image": "/showcase/assets/content/keypad-entry-systems-3bfb451.webp",
   "intro": [
     " Decide who needs permanent access and who should have temporary permission. Ask whether the selected keypad supports separate users, expiry or time windows. Those functions vary by model.  Avoid one shared code for everyone if you need to remove an individual’s access. Agree who can change settings and how you recover administrator control. ",
     " Discuss pedestrian and driver use, reach, lighting and the position relative to moving leaves. Visitors should not need to reach through a gate or stand in its movement path to enter a code.  Confirm the enclosure rating, operating conditions and mounting requirements for the actual product. There is no single weather rating we can promise for every proposed keypad. ",
@@ -121,7 +121,7 @@ const accessControlEntries: AccessControlService[] = [
   "metaTitle": "GSM Phone Entry Systems | Driveway Gates London",
   "metaDescription": "Phone-based gate entry with the device, signal, SIM plan and user permissions checked for your entrance.",
   "description": "Phone-based gate entry with the device, signal, SIM plan and user permissions checked for your entrance.",
-  "image": "/images/access-control/gsm-phone-entry.webp",
+  "image": "/showcase/assets/content/gsm-phone-entry-f32fe18.webp",
   "intro": [
     " Discuss whether you want authorised callers to request opening, a visitor intercom that calls residents, or both. Ask how the proposed system identifies a caller and what happens if nobody answers.  A phone command does not confirm physical gate position. Agree how the household recognises a failed opening and how visitors obtain help. ",
     " Identify the exact device and the voice, SMS or data services it needs. Check the SIM provider’s requirements, tariff and account-expiry conditions. Calls or messages should not be described as universally free.  Read  Ofcom’s mobile-network retirement guidance  and obtain product-specific support information. The word GSM is often used for phone entry generally; confirm which network technology the proposed unit actually uses. ",
@@ -170,7 +170,7 @@ const accessControlEntries: AccessControlService[] = [
   "metaTitle": "ANPR Gate Entry Systems | Driveway Gates London",
   "metaDescription": "Number-plate entry planned around camera position, authorised vehicles, safe waiting and access-data management.",
   "description": "Number-plate entry planned around camera position, authorised vehicles, safe waiting and access-data management.",
-  "image": "/images/access-control/anpr-systems.webp",
+  "image": "/showcase/assets/content/anpr-systems-34a9163.webp",
   "intro": [
     "ANPR reads a vehicle registration and checks it against access permissions. It does not establish who is driving or prevent a second vehicle following the first. Decide where the driver waits and how entry works if a plate is not read. Do not assume a vehicle can drive through without stopping. Camera recognition, the command to the controller and safe gate movement are separate parts of the sequence. Include visitors, deliveries and pedestrian access in the plan.",
     "Survey camera position, approach angle, lighting, headlight glare, stopping distance and the expected plate types. Ask the supplier to demonstrate the proposed equipment under the conditions that matter at your site. A manufacturer’s performance figure under defined test conditions is not a guarantee for every vehicle or weather condition. Agree a keypad, intercom or other authorised fallback.",

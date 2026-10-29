@@ -1,3 +1,5 @@
+import { serviceIntent } from '@/lib/service-intent';
+import { serviceImage } from '@/lib/service-images';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { services, getServiceBySlug } from '@/data/services';
@@ -21,8 +23,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cityName = getCityBySlug(params.locationSlug);
   if (!service || !cityName) return {};
 
-  const title = `${service.title} in ${cityName} | Installation, Free Quotes`;
-  const description = `${service.title} installation in ${cityName}. We design, supply and install ourselves. Free site survey and written quote, no obligation.`;
+  const image = serviceImage(`/services/${service.slug}/`);
+  const intent = serviceIntent(service.slug, cityName);
+  const title = `${service.title} in ${cityName} | ${intent?.titleSuffix ?? "Installation, Free Quotes"}`;
+  const description = intent?.description ?? `${service.title} installation in ${cityName}. We design, supply and install ourselves. Free site survey and written quote, no obligation.`;
   const url = `${siteConfig.url}/services/${service.slug}/${params.locationSlug}/`;
 
   return {
@@ -36,9 +40,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'website',
       siteName: siteConfig.name,
       locale: 'en_GB',
-      images: [{ url: service.image.startsWith('http') ? service.image : `${siteConfig.url}${service.image}`, width: 1200, height: 630, alt: `${service.title} in ${cityName}` }],
+      images: [{ url: `${siteConfig.url}${image.src}`, width: image.width, height: image.height, alt: image.alt }],
     },
-    twitter: { card: 'summary_large_image', title, description },
+    twitter: { card: 'summary_large_image', title, description, images: [`${siteConfig.url}${image.src}`] },
   };
 }
 

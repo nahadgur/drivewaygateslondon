@@ -23,7 +23,7 @@ export const services: Service[] = [
   "title": "Electric Sliding Gates",
   "slug": "electric-sliding-gates",
   "description": "Electric sliding gates designed around your London driveway, side space, supports and access requirements.",
-  "image": "/images/gates/gate-aluminium-sliding-modern-dark-brick.png",
+  "image": "/showcase/assets/content/gate-aluminium-sliding-modern-dark-brick-553aa55.webp",
   "icon": "Zap",
   "color": "amber",
   "faqs": [
@@ -48,7 +48,7 @@ export const services: Service[] = [
   "title": "Electric Swing Gates",
   "slug": "electric-swing-gates",
   "description": "Single and paired electric swing gates planned around your opening, parking space and everyday access.",
-  "image": "/images/gates/gate-aluminium-swing-open-luxury-garden.png",
+  "image": "/showcase/assets/content/gate-aluminium-swing-open-luxury-garden-fd599ef.webp",
   "icon": "Shield",
   "color": "emerald",
   "faqs": [
@@ -73,7 +73,7 @@ export const services: Service[] = [
   "title": "Wooden Driveway Gates",
   "slug": "wooden-driveway-gates",
   "description": "Timber driveway gates for London homes, with the species, construction, finish and upkeep agreed before ordering.",
-  "image": "/images/gates/gate-wooden-oak-swing-cottage-garden.png",
+  "image": "/showcase/assets/content/gate-wooden-oak-swing-cottage-garden-d00f4c0.webp",
   "icon": "Sparkles",
   "color": "amber",
   "faqs": [
@@ -98,7 +98,7 @@ export const services: Service[] = [
   "title": "Metal Driveway Gates",
   "slug": "metal-driveway-gates",
   "description": "Compare metal driveway gate designs, fabrication and finish options for your London entrance.",
-  "image": "/images/gates/gate-wrought-iron-ornate-daytime-manor.png",
+  "image": "/showcase/assets/content/gate-wrought-iron-ornate-daytime-manor-e16af31.webp",
   "icon": "Globe",
   "color": "sky",
   "faqs": [
@@ -232,7 +232,7 @@ export const services: Service[] = [
   "title": "Commercial Gates",
   "slug": "commercial-gates",
   "description": "Commercial gate and access-control installation in London. Plan vehicle movement, pedestrian access, operating frequency and maintenance around how your site works.",
-  "image": "/images/gates/gate-wrought-iron-aerial-gold-trim-estate.png",
+  "image": "/images/services/industrial-security-gates-illustration.webp",
   "icon": "Shield",
   "color": "sky",
   "faqs": [
@@ -258,7 +258,7 @@ export const services: Service[] = [
   "title": "Aluminium Driveway Gates",
   "slug": "aluminium-driveway-gates",
   "description": "Aluminium driveway gates designed, supplied and installed across London. Choose a finish and opening layout with the specification, installation scope and aftercare confirmed in writing.",
-  "image": "/images/gates/gate-aluminium-sliding-vertical-bar-modern.png",
+  "image": "/showcase/assets/content/gate-aluminium-sliding-vertical-bar-modern-c49a8a8.webp",
   "icon": "Sparkles",
   "color": "sky",
   "faqs": [
@@ -287,7 +287,7 @@ export const services: Service[] = [
   "title": "Composite Driveway Gates",
   "slug": "composite-driveway-gates",
   "description": "Composite driveway gates supplied and fitted in London. Compare board finishes, frame construction, opening options and the upkeep your chosen product needs.",
-  "image": "/images/gates/gate-aluminium-swing-open-contemporary-mansion.png",
+  "image": "/images/services/composite-driveway-gates-illustration.webp",
   "icon": "Globe",
   "color": "amber",
   "faqs": [
@@ -316,7 +316,7 @@ export const services: Service[] = [
   "title": "Hardwood Driveway Gates",
   "slug": "hardwood-driveway-gates",
   "description": "Hardwood driveway gates for London homes, with the timber, construction, finish and installation details agreed for your entrance.",
-  "image": "/images/gates/gate-wooden-oak-swing-cottage-flowers.png",
+  "image": "/showcase/assets/content/gate-wooden-oak-swing-cottage-flowers-92bd35f.webp",
   "icon": "Medal",
   "color": "amber",
   "faqs": [
@@ -341,7 +341,7 @@ export const services: Service[] = [
   "title": "Wrought Iron Gates",
   "slug": "wrought-iron-gates",
   "description": "Traditional-style metal driveway gates in London, with the actual metal, decorative details, protective finish and opening system specified in your quote.",
-  "image": "/images/gates/gate-wrought-iron-open-manor-spring-gardens.png",
+  "image": "/showcase/assets/content/gate-wrought-iron-open-manor-spring-gardens-57dd35f.webp",
   "icon": "Shield",
   "color": "sky",
   "faqs": [
@@ -366,7 +366,7 @@ export const services: Service[] = [
   "title": "Pedestrian and Side Gates",
   "slug": "pedestrian-side-gates",
   "description": "Pedestrian and side gates for London properties. Plan a usable walking route with the opening, lock, privacy and fitting details suited to your entrance.",
-  "image": "/images/gates/gate-wrought-iron-open-golden-hour-curved-drive.png",
+  "image": "/images/projects/metal-pedestrian-gate-side-passage.webp",
   "icon": "Users",
   "color": "emerald",
   "faqs": [

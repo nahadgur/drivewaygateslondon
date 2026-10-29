@@ -1,3 +1,4 @@
+import { serviceImage } from '@/lib/service-images';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { accessControlServices, getAccessControlBySlug } from '@/data/access-control';
@@ -15,6 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = getAccessControlBySlug(params.subSlug);
   if (!service) return {};
 
+  const image = serviceImage(`/services/access-control/${service.slug}/`);
   const title = `${service.title} for Driveway Gates London | Installation & Quotes`;
   const description = `${service.description} Gate access control installation across London. Free site survey and written quote, no obligation.`;
   const url = `${siteConfig.url}/services/access-control/${service.slug}/`;
@@ -30,9 +32,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'website',
       siteName: siteConfig.name,
       locale: 'en_GB',
-      images: [{ url: service.image.startsWith('http') ? service.image : `${siteConfig.url}${service.image}`, width: 1536, height: 1024, alt: service.imageAlt || service.title }],
+      images: [{ url: `${siteConfig.url}${image.src}`, width: image.width, height: image.height, alt: image.alt }],
     },
-    twitter: { card: 'summary_large_image', title, description, images: [service.image.startsWith('http') ? service.image : `${siteConfig.url}${service.image}`] },
+    twitter: { card: 'summary_large_image', title, description, images: [`${siteConfig.url}${image.src}`] },
   };
 }
 
@@ -47,7 +49,7 @@ export default function AccessControlPage({ params }: Props) {
     description: service.description,
     url: `${siteConfig.url}/services/access-control/${service.slug}/`,
     serviceType: service.title,
-    image: service.image.startsWith('http') ? service.image : `${siteConfig.url}${service.image}`,
+    image: `${siteConfig.url}${serviceImage(`/services/access-control/${service.slug}/`).src}`,
     areaServed: { '@type': 'City', name: 'London', addressCountry: 'GB' },
     provider: organizationRef,
   };

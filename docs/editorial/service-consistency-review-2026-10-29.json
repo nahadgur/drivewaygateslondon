@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-29",
+  "parent_commit": "bc44fd060d8ddc0ec63851af117e8f3515c0fa9e",
+  "scope": "Resolve the eight visual/content consistency audit findings in one release. No article publication or schedule changes.",
+  "client_images": [
+    {
+      "src": "/images/projects/arched-metal-gates-with-pedestrian-entrance.webp",
+      "alt": "Arched black metal driveway gates with a matching pedestrian gate, photographed from inside the entrance.",
+      "provenance": "client-photo",
+      "caption": "Client-supplied project photograph. Location not specified."
+    },
+    {
+      "src": "/images/projects/driveway-gate-automation-work-in-progress.webp",
+      "alt": "A worker beside black metal driveway gates with visible above-ground operators and tools on the driveway.",
+      "provenance": "client-photo",
+      "caption": "Client-supplied project photograph. Location not specified."
+    },
+    {
+      "src": "/images/projects/metal-pedestrian-gate-side-passage.webp",
+      "alt": "Black metal pedestrian gate with spear-top bars across a paved passage between walls.",
+      "provenance": "client-photo",
+      "caption": "Client-supplied project photograph. Location not specified."
+    }
+  ],
+  "provenance": "Client confirmed supplied images show prior work. No project locations, completion dates, material grades or repair outcomes inferred. Work-in-progress image is not represented as proof of a particular repair.",
+  "generated_images": [
+    {
+      "slug": "industrial-security-gates",
+      "tool": "built-in image_gen",
+      "source_file": "C:/Users/Jerwin/.codex/generated_images/01a0f227-b194-76a2-8e2e-7fd2bc856b1e/exec-65fd57bc-7518-4dc3-bda3-6364eeef6d7a.png",
+      "asset": "/images/services/industrial-security-gates-illustration.webp",
+      "sha256": "9fccf10ce2b92c0ff43eb18096a0450c2fd76db3331c9a5344f93dd3a7346761",
+      "review": "Visually checked full subject, plausible entrance geometry and correspondence with title; no logos, certification or customer-project claim. Composite is explicitly a concept illustration, not material certification."
+    },
+    {
+      "slug": "school-gate-systems",
+      "tool": "built-in image_gen",
+      "source_file": "C:/Users/Jerwin/.codex/generated_images/01a0f227-b194-76a2-8e2e-7fd2bc856b1e/exec-83318662-42b1-4a5a-a72e-d77ac15553dd.png",
+      "asset": "/images/services/school-gate-systems-illustration.webp",
+      "sha256": "4b720d5796acb895ab9be3b1e4788135679a8c25dca5c940c3fd11cfa49afefc",
+      "review": "Visually checked full subject, plausible entrance geometry and correspondence with title; no logos, certification or customer-project claim. Composite is explicitly a concept illustration, not material certification."
+    },
+    {
+      "slug": "car-park-barriers",
+      "tool": "built-in image_gen",
+      "source_file": "C:/Users/Jerwin/.codex/generated_images/01a0f227-b194-76a2-8e2e-7fd2bc856b1e/exec-1022db1c-c681-42fb-b64a-89bef6777dc1.png",
+      "asset": "/images/services/car-park-barriers-illustration.webp",
+      "sha256": "04f6ca20ffef1bdb2f8fb5a0a85ebe4d0b75a46d0f1620290ecc1d68b253980b",
+      "review": "Visually checked full subject, plausible entrance geometry and correspondence with title; no logos, certification or customer-project claim. Composite is explicitly a concept illustration, not material certification."
+    },
+    {
+      "slug": "heavy-duty-sliding-gates",
+      "tool": "built-in image_gen",
+      "source_file": "C:/Users/Jerwin/.codex/generated_images/01a0f227-b194-76a2-8e2e-7fd2bc856b1e/exec-cb17e6a1-c3d6-406b-a7b6-181373ec09aa.png",
+      "asset": "/images/services/heavy-duty-sliding-gates-illustration.webp",
+      "sha256": "1cefbb00c9b23a45b983080153279aaaad767646b763c6ac6b91a1c8fe02fd8f",
+      "review": "Visually checked full subject, plausible entrance geometry and correspondence with title; no logos, certification or customer-project claim. Composite is explicitly a concept illustration, not material certification."
+    },
+    {
+      "slug": "composite-driveway-gates",
+      "tool": "built-in image_gen",
+      "source_file": "C:/Users/Jerwin/.codex/generated_images/01a0f227-b194-76a2-8e2e-7fd2bc856b1e/exec-1917e63d-15f8-4180-ac19-60d119c80625.png",
+      "asset": "/images/services/composite-driveway-gates-illustration.webp",
+      "sha256": "583674af974a01250a51ac2cf3e0ad8ae7402a221f8db5f828777831c5169155",
+      "review": "Visually checked full subject, plausible entrance geometry and correspondence with title; no logos, certification or customer-project claim. Composite is explicitly a concept illustration, not material certification."
+    }
+  ],
+  "copy_review": "Repair and retrofit parent/location headlines, process, scope checklists, banners and metadata distinguish existing equipment from fabrication of new gates. Attendance charges are confirmed rather than implying free fault diagnosis. Existing factual and safety corrections retained. Enquiry forms unchanged.",
+  "architecture": "One 21-route registry supplies cards, heroes, social images, dimensions, alt and provenance. Reviewed snapshot sources agree. Server-only rendering preserved; no new client payload or form state.",
+  "validation": [
+    "TypeScript, lint and production build PASS",
+    "1587 marketing quote banners and 48 guide/blog banners PASS",
+    "21 image records and 1389 built service/commercial pages passed consistency checks",
+    "207 templates, 5256 internal links/assets and 1368 location pages passed existing verifier",
+    "Content consolidation, security hub and all 13 prepared articles passed",
+    "33 browser checks at 1440,390,320 widths passed; no test enquiries",
+    "Final commercial mobile full-width images visually checked; 33 browser checks repeated against final build at 1440,390,320 widths."
+  ],
+  "mobile_refinement": "Commercial mobile cards show full-width 16:9 images instead of narrow cropped thumbnails, so barrier and gate geometry remain identifiable. Recheck final build before push.",
+  "verdict": "PASS",
+  "react_review": "Multiple TSX component review completed with vercel:react-best-practices: server-only data/rendering, stable keys, descriptive image alternatives, correct intrinsic image dimensions, no new client component or changed form state; TypeScript and lint passed."
+}
