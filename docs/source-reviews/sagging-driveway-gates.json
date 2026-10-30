@@ -1,0 +1,90 @@
+[
+  {
+    "article_priority": 14,
+    "claim_id": "G1",
+    "section": "Three things that can move",
+    "claim_or_recommendation": "Timber gate brace should rise from the bottom of the hinge side to the top of the closing side so it works in compression; a reversed brace is a common cause of sagging.",
+    "source_url": "https://www.jacksons-fencing.co.uk/the-edit/which-way-should-a-garden-gate-be-braced",
+    "date_checked": "2026-10-22",
+    "qualification": "Supporting source only, not visibly linked (gate manufacturer and retailer, treated as a competitor). Brace direction and compression principle confirmed in Jacksons Fencing guidance via search on 22 October 2026. Article states it as general carpentry practice; \"common reason\" is hedged as one reason, not a statistic.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 14,
+    "claim_id": "G2",
+    "section": "Why sagging matters on electric gates",
+    "claim_or_recommendation": "FAAC 412: strong and rigid leaf frame, smooth gate movement with no stiff points, hinges in good condition, mechanical travel limit stops; periodic checks of the gate structure, particularly that the hinges are in perfect working condition.",
+    "source_url": "https://www.faac.co.uk/productfiles/4_Manual_rad5F659.pdf",
+    "date_checked": "2026-10-22",
+    "qualification": "Downloaded and read the official FAAC UK 412 manual: preliminary checks list and user maintenance section. Same requirements appear in the FAAC 400 manual (https://www.faac.co.uk/productfiles/31_Manual_rad33C90.pdf, supporting, not linked). One visible FAAC link; framed as one operator's requirements.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 14,
+    "claim_id": "G3",
+    "section": "Why sagging matters on electric gates",
+    "claim_or_recommendation": "HSE lists closing gaps at hinges creating crushing points and gaps between the moving leaf and fixed parts among hazards design must address; force limitation and maintenance/setting as parts wear.",
+    "source_url": "https://www.hse.gov.uk/work-equipment-machinery/powered-gates/safety.htm",
+    "date_checked": "2026-10-22",
+    "qualification": "Verified wording on the HSE powered gate safety page on 22 October 2026. One visible HSE link. Statement that turning up force to overcome drag moves safety settings the wrong way is editorial reasoning consistent with HSE's force-limitation text and the existing site guidance on force testing.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 14,
+    "claim_id": "G4",
+    "section": "Dry summers and moving posts",
+    "claim_or_recommendation": "BGS: clay soils most common in the London area and south-east; London Clay very susceptible to volume change; tree roots dry and shrink the ground; damage when volume change is uneven beneath foundations.",
+    "source_url": "https://www.bgs.ac.uk/geology-projects/shallow-geohazards/clay-shrink-swell/",
+    "date_checked": "2026-10-22",
+    "qualification": "Verified on the BGS clay shrink-swell page on 22 October 2026 (HTTP 200). One visible BGS link. Article says a gate that sags seasonally \"may be telling you about the ground\"; no diagnosis.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 14,
+    "claim_id": "G5",
+    "section": "Dry summers and moving posts",
+    "claim_or_recommendation": "Met Office, 2 January 2026: 2025 was the UK's warmest and sunniest year on record; warmest spring and summer in the series; widespread drought during spring and summer.",
+    "source_url": "https://www.metoffice.gov.uk/about-us/news-and-media/media-centre/weather-and-climate-news/2026/2025-is-double-record-breaker-uks-warmest-and-sunniest-year-on-record",
+    "date_checked": "2026-10-22",
+    "qualification": "Read on 22 October 2026; release dated 2 January 2026, provisional statistics. One visible Met Office link. No figures quoted beyond the record statements. 2026 news angle.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 14,
+    "claim_id": "G6",
+    "section": "Observations and repairs",
+    "claim_or_recommendation": "Homeowner action limited to observation and photographs from a safe position with the gate stationary; no lifting, removal or hinge adjustment of driveway gates. Repair options (hinge work, support wheels and anti-sag kits with caveats, post replacement, pillar rebuild, new gates) framed as possibilities depending on findings.",
+    "source_url": null,
+    "date_checked": "2026-10-22",
+    "qualification": "Original safety framework and buyer guidance. Autosuggest terms (\"sagging gate repair kit\", \"sagging gate wheel\", \"sagging gate turnbuckle\", \"sagging gate post repair\") addressed as audience questions. No prices, lifespans or failure rates.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 14,
+    "claim_id": "CTA",
+    "section": "Introductory banner",
+    "claim_or_recommendation": "Tailored sagging-gate banner linking to the unchanged same-page enquiry form.",
+    "source_url": "https://www.drivewaygateslondon.co.uk/contact/",
+    "date_checked": "2026-10-22",
+    "qualification": "Heading and description drafted for data/article-ctas.json route /blog/sagging-driveway-gates/. Get a Free Quote button unchanged, no topic fields or prefills, no free survey or building work promised. Codex to review rendered banner; no test leads.",
+    "calculation": "None",
+    "verdict": "PASS"
+  },
+  {
+    "article_priority": 14,
+    "claim_id": "IMAGE",
+    "section": "Hero",
+    "claim_or_recommendation": "Generated illustration of wooden driveway gates between brick pillars, leaves meeting slightly out of line.",
+    "source_url": null,
+    "date_checked": "2026-10-22",
+    "qualification": "PENDING Codex generation and visual check at 1672 x 941: each leaf hinged to its own pillar, correct brace direction on the timber leaves (rising from bottom hinge side to top closing side), misalignment subtle, no people. Illustrative disclosure, not a client installation. Set verdict only after the check.",
+    "calculation": "None",
+    "verdict": "PASS"
+  }
+]
