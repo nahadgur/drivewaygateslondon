@@ -14,6 +14,7 @@ import { siteConfig } from '@/data/site';
 import { ensureQuoteBanner, placeArticleQuoteBanner } from '@/lib/quote-banner';
 import { addProjectPhotos, ourWorkContent } from '@/lib/project-photos';
 import { PRICE_BANDS_MARKER, renderPriceBandTable } from '@/lib/price-table';
+import { openFaqs } from '@/lib/faq-open';
 import { applyServiceImages } from '@/lib/service-images';
 
 type PageTemplate = { className: string; main?: string; hero?: string; methods?: string; after?: string };
@@ -54,6 +55,7 @@ export function ShowcasePage({ route }: { route: string }) {
   if (route !== '/contact/') main = ensureQuoteBanner(main!);
   const individualArticle = /^\/(guides|blog)\/[^/]+\/$/.test(route);
   if (individualArticle) main = placeArticleQuoteBanner(main!, route);
+  if (main) main = openFaqs(main);
   const home = route === '/';
   return <>
     <div id={home ? 'site-shell' : 'top'} className={`showcase-page ${page.className}${editorial ? ' editorial-page' : ''}`}>
