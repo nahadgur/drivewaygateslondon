@@ -18,13 +18,12 @@ const SHARED_CONTENT_UPDATED = new Date('2026-10-02');
 // 1.0  — Primary page (homepage)
 // 0.8  — Section hubs (services, locations, blog, guides, commercial, etc.)
 // 0.6  — Individual content pages (articles, guides, service details, locations)
-// 0.4  — Programmatic / cross-product pages (service × location)
 //
 // ── changeFrequency scheme ─────────────────────────────────────────────────────
 // weekly   — homepage, blog hub (new content regularly)
 // monthly  — section hubs, service pages, guides (occasional updates)
 // monthly  — blog articles, guide articles (rarely updated after publish)
-// yearly   — location pages, regulations, service×location (template-driven, stable)
+// yearly   — location pages and regulations (template-driven, stable)
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url;
@@ -70,7 +69,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const locationPages: MetadataRoute.Sitemap = allCities.map(city => ({
     url: `${base}/location/${toSlug(city)}/`,
-    lastModified: SHARED_CONTENT_UPDATED,
+    // Rebuilt 6 November 2026 to carry every gate type, price and repair section.
+    lastModified: new Date('2026-11-06'),
     changeFrequency: 'yearly' as const,
     priority: 0.6,
   }));
@@ -96,15 +96,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  const serviceLocationPages: MetadataRoute.Sitemap = residentialServices.flatMap(service =>
-    allCities.map(city => ({
-      url: `${base}/services/${service.slug}/${toSlug(city)}/`,
-      lastModified: SHARED_CONTENT_UPDATED,
-      changeFrequency: 'yearly' as const,
-      priority: 0.4,
-    }))
-  );
-
   return [
     ...homepage,
     ...hubs,
@@ -115,6 +106,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...regulationPages,
     ...guidePages,
     ...blogPages,
-    ...serviceLocationPages,
   ];
 }

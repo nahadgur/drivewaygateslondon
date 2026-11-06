@@ -101,6 +101,12 @@ const nextConfig = {
       { source: '/guides/driveway-gate-costs-london/', destination: '/guides/electric-driveway-gates-cost-london/', permanent: true },
       { source: '/guides/wood-vs-aluminium-gates/', destination: '/guides/aluminium-vs-wooden-driveway-gates/', permanent: true },
       { source: '/guides/gate-motor-humming-fix/', destination: '/blog/gate-motor-humming-not-moving/', permanent: true },
+      // Service × location consolidation, 6 November 2026. Search Console showed
+      // ~1,370 near-duplicate pages, mostly "crawled – currently not indexed".
+      // Each area page now carries every gate type, so redirect to its section.
+      { source: '/services/:service(electric-sliding-gates|electric-swing-gates|wooden-driveway-gates|metal-driveway-gates|automated-gate-systems|gate-automation-kits|aluminium-driveway-gates|composite-driveway-gates|hardwood-driveway-gates|wrought-iron-gates|pedestrian-side-gates)/:town/', destination: '/location/:town/#:service', permanent: true },
+      { source: '/services/gate-repair-and-maintenance/:town/', destination: '/location/:town/#repairs', permanent: true },
+      { source: '/services/commercial-gates/:town/', destination: '/commercial/', permanent: true },
     ];
   },
 };

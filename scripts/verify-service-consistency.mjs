@@ -52,7 +52,7 @@ for (const route of Object.keys(manifest.routes)) {
 }
 const origin = process.argv[2];
 if (origin) {
-  for (const route of [...Object.keys(images), '/services/gate-repair-and-maintenance/barnet/', '/services/gate-automation-kits/barnet/']) {
+  for (const route of Object.keys(images)) {
     const response = await fetch(origin+route);
     assert.equal(response.status,200,route); verify(await response.text(),route);
   }

@@ -2,9 +2,10 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { LOCATIONS, toSlug, getCityBySlug } from '@/data/locations';
 import { siteConfig, organizationRef } from '@/data/site';
-import { ShowcasePage } from '@/components/showcase/ShowcasePage';
+import { LocationPage } from '@/components/showcase/LocationPage';
+import { locationFaqs } from '@/lib/location-content';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
-import { fitTitle } from '@/lib/seo-title';
+import { fitTitle, fitDescription } from '@/lib/seo-title';
 
 interface Props { params: { city: string } }
 
@@ -17,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!cityName) return {};
 
   const title = fitTitle(`Driveway Gates in ${cityName}`, ['Installation, Free Quotes', 'Free Quotes']);
-  const description = `Driveway gate installation in ${cityName}, London. We design, supply and install electric, wooden, and metal gates. Free site survey and written quote.`;
+  const description = fitDescription([`Driveway gates in ${cityName}: electric sliding and swing, wooden, metal and composite gates, automation and repairs, with typical prices.`, 'Free site survey and written quote.']);
   const url = `${siteConfig.url}/location/${params.city}/`;
 
   return {
@@ -63,6 +64,16 @@ export default function CityPage({ params }: Props) {
     },
   };
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: locationFaqs(cityName).map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+    })),
+  };
+
   const breadcrumbSchema = buildBreadcrumbSchema([
     { name: 'Locations', href: '/location/' },
     { name: cityName, href: `/location/${params.city}/` },
@@ -71,8 +82,9 @@ export default function CityPage({ params }: Props) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <ShowcasePage route={`/location/${params.city}/`} />
+      <LocationPage cityName={cityName} />
     </>
   );
 }

@@ -2,7 +2,7 @@
 
 The reviewed design is rendered by `components/showcase/ShowcasePage.tsx` as server-side HTML. The 210 templates in `data/showcase/pages.json` contain repository-owned, reviewed content only. They must never contain user-supplied HTML. No template JSON is imported by a client component.
 
-Existing route modules retain metadata, canonicals, structured data, not-found checks, redirects and static parameters. The existing service-by-location routes and privacy page keep their body content and use the new shared header/footer. No new service-by-location pages were added.
+Existing route modules retain metadata, canonicals, structured data, not-found checks, redirects and static parameters. The privacy page keeps its body content and uses the new shared header/footer. Service-by-location routes were retired on 6 November 2026 (see below).
 
 The production contact page renders `EnquiryForm.tsx`, using the established endpoint and payload from `data/leadForm.ts`. It is not the preview review form. Analytics remains behind the existing consent component. The business email removed at the owner's request is also omitted from structured data and the privacy contact channel.
 
@@ -60,7 +60,7 @@ The annual winter checklist now redirects to the winter guide; the timber/alumin
 
 The 27 borough planning pages now contain property checks and official-resource links instead of unsourced counts, enforcement characterisations and blanket permission claims. Greenwich uses the official council finder because a specific current conservation page was not verified. These directories do not establish permission for any address. The source ledger records the linked resources and that limitation.
 
-Location URLs remain live and indexable. Search Console triage is recorded in the task's location decision report; missing export rows are unknown, not zero. Check current query performance, enquiries and backlinks before any selective redirects. Commercial links generated from the service/location template now point to the commercial directory rather than promoting more commercial/location permutations.
+Location URLs remain live and indexable (see the location consolidation of 6 November 2026 below). Search Console triage is recorded in the task's location decision report; missing export rows are unknown, not zero. Check current query performance, enquiries and backlinks before any selective redirects. Commercial links generated from the service/location template now point to the commercial directory rather than promoting more commercial/location permutations.
 
 Validation: production build/type checks passed. Browser checks covered all 34 revised pages at 320, 390, 768 and 1440 pixels, all 27 council pages on mobile, hero images, canonical URLs, FAQ/schema agreement, the corrected running-cost figures, and ten direct redirects including the eight new/retargeted paths. The template verifier checked 206 templates and 5,224 internal links/assets. Service/cost and mocked enquiry-consent regressions passed. About and prepared repair-article data were preserved; no real enquiry or Analytics event was sent.
 
@@ -85,3 +85,13 @@ Validation: production build/lint/types passed; article visibility, hub, sitemap
 Expanded the motor-humming and GSM opener blogs and the intercom buying guide while preserving the 2 October factual and safety corrections. The matching editorial records, typed data, rendered sections, table of contents, FAQs and descriptions remain aligned. Original URLs, titles, publication dates, hero assets and the quote/contact flow remain unchanged; updated dates are 12 October. This is maintenance of existing articles, not an additional publication in the finite queue.
 
 The source and scope review is `docs/source-reviews/content-recovery-2026-10-12.json`. It records restored topics and excluded unsupported claims. Validation covers production build/lint/types, three viewport widths, section/FAQ/schema agreement, original and modified dates, canonical metadata, loaded heroes, the comparison table, unique links and one end CTA. Existing article and consolidation checks passed. No real test enquiry was sent.
+
+## Location consolidation, 6 November 2026
+
+Search Console (16 months to 6 November 2026) showed 296 indexed pages. About 960 service × location pages were "Crawled – currently not indexed" and 108 of 114 location pages were "Discovered – currently not indexed". Service × location pages earned 196 clicks across 141 URLs; location pages earned none.
+
+The service × location matrix (`/services/<service>/<area>/`) is retired. `components/showcase/LocationPage.tsx` renders every `/location/<area>/` page from data: a card per gate type (headed "<service> in <area>"), the owner-approved price table from `data/pricing.ts`, repair and retrofit sections from `lib/service-intent.ts`, the installation process, quotation checklist, planning guidance with the borough guide from `data/location-boroughs.ts`, FAQs from `lib/location-content.ts` (also used for the FAQ schema) and nearby areas from `data/nearby-areas.ts`. The 114 location snapshots were removed from `pages.json`.
+
+`next.config.js` permanently redirects each retired URL to its section: `/location/<area>/#<service>`, `#repairs` for gate repair, and `/commercial/` for commercial gates. Access-control URLs are excluded. The sitemap no longer lists the retired URLs. `scripts/verify-showcase.mjs` audits the generated location pages and, with a preview URL, the redirects.
+
+After deployment, resubmit the sitemap and compare clicks for the 141 previously clicked URLs over four to eight weeks. Restore an individual service × location page only if the evidence shows a material loss.

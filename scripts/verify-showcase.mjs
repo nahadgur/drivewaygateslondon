@@ -35,13 +35,15 @@ for(const html of [...Object.values(pages).map(page=>Object.values(page).join('\
 assert.deepEqual([...new Set(failures)],[],'Broken production destinations');
 console.log(`Verified ${Object.keys(pages).length} production templates and ${checked} internal links/assets against the built route manifest.`);
 
-// The service/location matrix is rendered by React, not by pages.json. Check
-// its actual generated HTML so a legacy template cannot escape this audit.
-const areaRoutes=Object.entries(manifest.routes).filter(([,entry])=>entry.srcRoute==='/services/[serviceSlug]/[locationSlug]');
-assert(areaRoutes.length>0,'No generated service-area pages found');
+// Location pages are rendered by React (LocationPage), not by pages.json. Check
+// their generated HTML so a legacy template cannot escape this audit. The old
+// service × location pages now redirect to sections of these pages.
+const areaRoutes=Object.entries(manifest.routes).filter(([,entry])=>entry.srcRoute==='/location/[city]');
+assert(areaRoutes.length>0,'No generated location pages found');
+assert(!Object.values(manifest.routes).some(entry=>entry.srcRoute==='/services/[serviceSlug]/[locationSlug]'),'Retired service × location pages are still generated');
 function verifyArea(html,route){
  const visible=html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g,'');
- assert(/class="showcase-page subpage [^"]*service-area-page"/.test(visible),`${route}: missing new design wrapper`);
+ assert(/class="showcase-page subpage [^"]*\bservice-area-page\b[^"]*"/.test(visible),`${route}: missing new design wrapper`);
  const hero=visible.match(/<img[^>]*class="hero-backdrop"[^>]*src="([^"]+)"/);
  assert(hero,`${route}: missing hero photograph`);
  assert(existsSync(resolve(root,'public','.'+hero[1])),`${route}: missing hero asset`);
@@ -60,11 +62,14 @@ function verifyArea(html,route){
 }
 for(const [route] of areaRoutes)verifyArea(readFileSync(join(root,'.next/server/app',route+'.html'),'utf8'),route);
 if(preview){
- const route='/services/commercial-gates/hornchurch';
- const response=await fetch(new URL(route+'/',preview));
- assert.equal(response.status,200,route);
- verifyArea(await response.text(),route);
+ for(const [from,to] of [['/services/electric-sliding-gates/hornchurch/','/location/hornchurch/#electric-sliding-gates'],['/services/gate-repair-and-maintenance/barnet/','/location/barnet/#repairs'],['/services/commercial-gates/hornchurch/','/commercial/']]){
+  const response=await fetch(new URL(from,preview),{redirect:'manual'});
+  assert.equal(response.status,308,from+' must redirect permanently');
+  assert.equal(new URL(response.headers.get('location'),preview).href,new URL(to,preview).href,from+' redirect target');
+ }
+ const access=await fetch(new URL('/services/access-control/anpr-systems/',preview),{redirect:'manual'});
+ assert.equal(access.status,200,'Access-control pages must not be caught by the location redirect');
 }
 const privacy=readFileSync(join(root,'.next/server/app/privacy.html'),'utf8');
 assert(privacy.includes('showcase-page subpage tone-forest privacy-page')&&privacy.includes('hero-backdrop'),'Privacy page must use the new design');
-console.log(`Verified new design, hero assets, internal destinations, canonicals and FAQ consistency across ${areaRoutes.length} generated service-area pages, plus privacy and the on-demand commercial route.`);
+console.log(`Verified new design, hero assets, internal destinations, canonicals and FAQ consistency across ${areaRoutes.length} generated location pages, plus privacy and the retired service × location redirects.`);
