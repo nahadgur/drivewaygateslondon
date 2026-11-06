@@ -23,7 +23,7 @@ body{display:block}
 .quote-form .form-note a{text-decoration:underline;text-underline-offset:3px}
 .site-footer{margin-top:0}
 [aria-label="Cookie notice"]{z-index:80!important;bottom:0}
-.menu-is-open [aria-label="Cookie notice"],.entering [aria-label="Cookie notice"]{visibility:hidden}
+.menu-is-open [aria-label="Cookie notice"]{visibility:hidden}
 @media(max-width:1000px),(hover:none){body.has-mobile-enquiry [aria-label="Cookie notice"]{bottom:calc(66px + env(safe-area-inset-bottom))}}
 
 /* Prepared repair articles: one meaningful hero, kept uncropped on small screens. */

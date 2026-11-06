@@ -54,7 +54,6 @@ export function ShowcasePage({ route }: { route: string }) {
   if (individualArticle) main = placeArticleQuoteBanner(main!, route);
   const home = route === '/';
   return <>
-    {home && <div dangerouslySetInnerHTML={{ __html: shared.entrance }} />}
     <div id={home ? 'site-shell' : 'top'} className={`showcase-page ${page.className}${editorial ? ' editorial-page' : ''}`}>
       <Header />
       {route === '/contact/' ? <main id="main"><div className="page-wrap">

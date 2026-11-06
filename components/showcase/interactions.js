@@ -155,79 +155,8 @@ if (search) {
 })();
 
 (()=>{
-if (!document.getElementById('entrance'))
+if (!document.querySelector('.preference'))
     return;
-'use strict';
-const entrance = document.getElementById('entrance');
-const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-const sessionKey = 'dgl-entrance-seen-v6';
-const entranceStatus = document.getElementById('entrance-status');
-let entranceRun = 0;
-let entranceTimer;
-let startFrame;
-const stopEntrance = () => {
-    entranceRun += 1;
-    clearTimeout(entranceTimer);
-    cancelAnimationFrame(startFrame);
-    entrance.hidden = true;
-    entrance.classList.remove('is-playing', 'is-loading');
-    document.body.classList.remove('entering');
-    if (document.activeElement === document.getElementById('skip-intro')) {
-        document.querySelector('.nav-brand')?.focus({ preventScroll: true });
-    }
-};
-const playEntrance = async () => {
-    stopEntrance();
-    if (reduceMotion.matches)
-        return;
-    const run = entranceRun;
-    entrance.hidden = false;
-    entrance.classList.add('is-loading');
-    entranceStatus.textContent = 'Loading your entrance…';
-    let readyTimeout;
-    // Wait only for the entrance artwork. Slow or failed assets never trap visitors.
-    const artworkReady = Promise.all([...entrance.querySelectorAll('img')].map(img => img.decode().then(() => img.naturalWidth > 0).catch(() => false))).then(results => results.every(Boolean));
-    const ready = await Promise.race([
-        artworkReady,
-        new Promise(resolve => { readyTimeout = later(() => resolve(false), 2500); })
-    ]);
-    clearTimeout(readyTimeout);
-    if (run !== entranceRun)
-        return;
-    if (!ready) {
-        stopEntrance();
-        return;
-    }
-    entrance.classList.remove('is-loading');
-    entranceStatus.textContent = 'Opening gates…';
-    document.body.classList.add('entering');
-    startFrame = frame(() => {
-        startFrame = frame(() => {
-            entrance.classList.add('is-playing');
-            // The fade ends playback; this timeout only guards against a missing event.
-            entranceTimer = later(stopEntrance, 4500);
-        });
-    });
-};
-listen(entrance, 'animationend', e => {
-    if (e.target === entrance && e.animationName === 'entrance-fade')
-        stopEntrance();
-});
-let alreadySeen = true;
-try {
-    alreadySeen = sessionStorage.getItem(sessionKey) === 'yes';
-    sessionStorage.setItem(sessionKey, 'yes');
-}
-catch { /* If storage is unavailable, skip automatic playback. */ }
-if (!alreadySeen && !location.hash)
-    playEntrance();
-listen(document.getElementById('skip-intro'), 'click', stopEntrance);
-listen(document, 'keydown', e => { if (e.key === 'Escape' || e.key === 'Tab')
-    stopEntrance(); });
-listen(document, 'pointerdown', e => { if (!entrance.hidden && !entrance.contains(e.target))
-    stopEntrance(); });
-listen(window, 'scroll', stopEntrance, { passive: true });
-listen(reduceMotion, 'change', stopEntrance);
 const options = {
     "contemporary": {
         "title": "Aluminium Driveway Gates",
@@ -272,7 +201,6 @@ document.querySelectorAll('.preference').forEach(button => {
   listen(button, 'focus', select);
   listen(button, 'pointerenter', event => { if (event.pointerType !== 'touch') select(); });
 });
-cleanups.push(stopEntrance);
 
 })();
 
@@ -280,5 +208,5 @@ cleanups.push(stopEntrance);
  document.querySelectorAll('.desktop-navigation .nav-category,.mobile-navigation .nav-category').forEach(group=>{const link=group.querySelector('.nav-category-link');if(link){const target=new URL(link.href).pathname;group.classList.toggle('is-current',pathname.startsWith(target)&&!(target==='/services/'&&pathname.startsWith('/services/access-control/')));}});
  document.querySelectorAll('.nav-direct').forEach(link=>link.classList.toggle('is-current',pathname.startsWith(new URL(link.href).pathname)));
  document.querySelectorAll('.site-header a[href],.mobile-navigation a[href]').forEach(link=>{if(new URL(link.href).pathname===pathname)link.setAttribute('aria-current','page');else link.removeAttribute('aria-current');});
- return ()=>{cleanups.reverse().forEach(dispose=>dispose());document.body.classList.remove('entering','menu-is-open','has-mobile-enquiry');};
+ return ()=>{cleanups.reverse().forEach(dispose=>dispose());document.body.classList.remove('menu-is-open','has-mobile-enquiry');};
 }

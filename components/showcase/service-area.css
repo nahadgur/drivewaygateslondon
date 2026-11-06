@@ -34,3 +34,10 @@
 @media(max-width:1000px){.service-area-page .area-process{grid-template-columns:repeat(2,minmax(0,1fr))}.service-area-page .area-links{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:800px){.service-area-page .area-intro-grid,.service-area-page .area-quote-scope{grid-template-columns:minmax(0,1fr);gap:32px}.service-area-page .area-content{padding-block:32px 44px}.service-area-page .area-section{padding-top:32px;margin-top:32px}}
 @media(max-width:480px){.service-area-page .area-process,.service-area-page .area-links{grid-template-columns:minmax(0,1fr)}.service-area-page .area-process{gap:16px}.service-area-page .area-content h3{font-size:23px}.service-area-page .quote-form .form-row{grid-template-columns:minmax(0,1fr)}}
+.service-area-page .area-price-scroll{overflow-x:auto;margin-top:24px}
+.service-area-page .area-price-table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.5}
+.service-area-page .area-price-table th,.service-area-page .area-price-table td{min-width:0;padding:14px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;color:var(--muted)}
+.service-area-page .area-price-table thead th{color:var(--green);font-weight:600;border-bottom-color:var(--green)}
+.service-area-page .area-price-table tbody th{background:none;color:var(--dark);font-weight:600}
+.service-area-page .area-price-table .area-price{color:var(--green);font-family:var(--serif);font-size:19px;white-space:nowrap}
+@media(max-width:600px){.service-area-page .area-price-table{font-size:14px}.service-area-page .area-price-table th,.service-area-page .area-price-table td{padding:12px 8px}.service-area-page .area-price-table th:first-child,.service-area-page .area-price-table td:first-child{padding-left:10px}.service-area-page .area-price-table th:nth-child(4),.service-area-page .area-price-table td:nth-child(4){display:none}.service-area-page .area-price-table .area-price{font-size:16px;white-space:normal}}
