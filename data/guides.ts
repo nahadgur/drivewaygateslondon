@@ -52,6 +52,10 @@ const guideEntries: Guide[] = [
       "body": "<p>A gate advertised at a particular price may include only the leaves or sliding panel. A motor-kit price may cover the motor and controller without the work needed to make the complete installation suitable for your site. Before comparing totals, establish whether each quotation covers the same opening, materials and work.</p><p>There is no single installed price that applies to every London driveway. Width and height, ground conditions, access for the installation team, existing pillars, the power route and your chosen entry controls can change the scope. A useful quotation identifies those items and states what remains subject to inspection.</p><p>For a new powered entrance, discuss <a href=\"/services/automated-gate-systems/\">a complete automated gate installation</a>. For gates you intend to keep, start with <a href=\"/services/gate-automation-kits/\">an assessment for automating existing gates</a>. The two projects need different quotations.</p>"
     },
     {
+      "heading": "Typical installed price ranges in London",
+      "body": "<p>These guide ranges come from our current pricing for complete jobs. They are not quotes. Your price depends on the measured entrance, supports, groundworks and power route, and is confirmed in an itemised written quote after a free site survey. Check whether VAT is included, as explained below.</p><!-- price-bands --><p>Time on site covers the installation visit once the gates are made. Fabrication lead time is separate and depends on the design. To start a project, see how we design, supply and install <a href=\"/\">driveway gates in London</a>, or browse <a href=\"/services/\">every gate type we install</a>.</p>"
+    },
+    {
       "heading": "The items to include in your quotation",
       "body": "<div class=\"table-scroll\" role=\"region\" aria-label=\"Gate quotation checklist\" tabindex=\"0\"><table><thead><tr><th>Part of the job</th><th>Ask the quotation to identify</th></tr></thead><tbody><tr><td>Gate supply</td><td>Dimensions, material, construction, finish, delivery and fittings.</td></tr><tr><td>Supports and groundworks</td><td>Posts or pillar alterations, foundations, track or other support work, drainage and removal of waste.</td></tr><tr><td>Automation</td><td>Motor and controller models, installation, system-specific protective measures and commissioning.</td></tr><tr><td>Electrical work</td><td>Supply assessment, cable route, required work and who provides the relevant test records.</td></tr><tr><td>Access controls</td><td>Remotes, intercom, keypad or phone entry, connectivity and ongoing charges.</td></tr><tr><td>Finishing and handover</td><td>Reinstatement of paving or planting, removal of old equipment, user instructions and demonstration.</td></tr><tr><td>Price and terms</td><td>VAT treatment, exclusions, allowances, payment stages, warranty and maintenance conditions.</td></tr></tbody></table></div><p>Ask who supplies each item and who takes responsibility for the assembled installation. If separate trades are involved, agree the handover between them before work starts.</p>"
     },
@@ -83,7 +87,7 @@ const guideEntries: Guide[] = [
   "faqs": [
     {
       "question": "How much do electric driveway gates cost installed in London?",
-      "answer": "The total depends on the measured entrance, gate specification, supports, groundworks, power and controls. Ask for a site-specific itemised quotation. A gate-only or motor-kit price is not a complete installed price."
+      "answer": "As a guide, fully installed electric sliding gates typically cost £4,500 to £12,000 and electric swing gates £3,500 to £10,000. Automating existing gates is typically £1,200 to £3,500. The total depends on the measured entrance, gate specification, supports, groundworks, power and controls, and is confirmed in an itemised quotation after a site survey. A gate-only or motor-kit price is not a complete installed price."
     },
     {
       "question": "Is automating existing gates cheaper than replacing them?",
@@ -105,7 +109,7 @@ const guideEntries: Guide[] = [
   "relatedServiceSlug": "automated-gate-systems",
   "relatedGuides": [],
   "featuredImageAlt": "London homeowner reviewing an electric driveway-gate quote with an installer",
-  "updatedDate": "2026-10-02"
+  "updatedDate": "2026-11-06"
 },
 
   {

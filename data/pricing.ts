@@ -11,6 +11,10 @@ export const quotationChecklist = [
 
 // Guide price ranges restored 2 November 2026 at the owner's request. They are
 // ranges only: the price is confirmed after a site survey. No finance offer.
+// The cost guide table renders from this list automatically (lib/price-table.ts).
+// The figures are also quoted in prose in the homepage FAQs (data/site.ts and the
+// "/" snapshot) and the cost guide's first FAQ (data/guides.ts and its snapshot):
+// update those answers when a range changes.
 export interface PriceBand {
   slug: string;
   label: string;

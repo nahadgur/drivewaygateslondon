@@ -13,6 +13,7 @@ import { businessHoursHtml, renderBusinessServices } from '@/lib/business-profil
 import { siteConfig } from '@/data/site';
 import { ensureQuoteBanner, placeArticleQuoteBanner } from '@/lib/quote-banner';
 import { addProjectPhotos, ourWorkContent } from '@/lib/project-photos';
+import { PRICE_BANDS_MARKER, renderPriceBandTable } from '@/lib/price-table';
 import { applyServiceImages } from '@/lib/service-images';
 
 type PageTemplate = { className: string; main?: string; hero?: string; methods?: string; after?: string };
@@ -27,6 +28,7 @@ export function ShowcasePage({ route }: { route: string }) {
     : (templates as Record<string, PageTemplate>)[route] ?? (published ? prepared : undefined);
   if (!page) notFound();
   let main = page.main ? applyServiceImages(page.main, route) : page.main;
+  if (main?.includes(PRICE_BANDS_MARKER)) main = main.replace(PRICE_BANDS_MARKER, renderPriceBandTable());
   if (route === '/services/') {
     main = main!.replace('<div class="compact-links">', `${renderBusinessServices()}<div class="compact-links">`);
   }
