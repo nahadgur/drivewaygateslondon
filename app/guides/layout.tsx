@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { siteConfig } from '@/data/site';
 
 export const metadata: Metadata = {
-  title: 'Driveway Gate Guides for London Homeowners | Expert Advice Hub',
-  description: 'Complete driveway gate guides for London — pricing, comparisons, maintenance, and safety compliance. Expert advice before you buy, install, or repair any gate in London.',
+  title: { absolute: 'Driveway Gate Guides for London Homeowners' },
+  description: 'Driveway gate guides for London homeowners: pricing, comparisons, maintenance and safety. Read before you buy, install or repair a gate.',
   alternates: { canonical: `${siteConfig.url}/guides/` },
   openGraph: {
     title: 'Driveway Gate Guides for London Homeowners',

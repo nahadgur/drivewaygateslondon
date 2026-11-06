@@ -60,7 +60,7 @@ export function ShowcasePage({ route }: { route: string }) {
         <div dangerouslySetInnerHTML={{ __html: page.hero! }} />
         <div className="contact-layout">
           <section className="contact-intro" dangerouslySetInnerHTML={{ __html: page.methods!
-            .replace('<p>Lines are open during working hours. Outside them, the form reaches us fastest.</p>', `${businessHoursHtml}<p>You can send an enquiry through the form outside these hours.</p><p>${siteConfig.businessDescription}</p>`)
+            .replace('<p>Lines are open during working hours. Outside them, the form reaches us fastest.</p>', `${businessHoursHtml.replace('<h3>', '<h2>').replace('</h3>', '</h2>')}<p>You can send an enquiry through the form outside these hours.</p><p>${siteConfig.businessDescription}</p>`)
           }} />
           <EnquiryForm />
         </div>

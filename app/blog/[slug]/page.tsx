@@ -5,6 +5,7 @@ import { services } from '@/data/services';
 import { siteConfig, organizationRef } from '@/data/site';
 import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
+import { fitTitle, fitBrandedTitle, BRAND } from '@/lib/seo-title';
 
 interface Props { params: { slug: string } }
 
@@ -20,8 +21,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: article.useMetaTitle
-      ? { absolute: article.metaTitle }
-      : `${article.title} | Driveway Gates London`,
+      ? { absolute: fitBrandedTitle(article.metaTitle) }
+      : fitTitle(article.title, [BRAND]),
     description: article.metaDescription,
     alternates: { canonical: url },
     openGraph: {

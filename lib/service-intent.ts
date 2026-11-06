@@ -1,7 +1,7 @@
 export function serviceIntent(slug: string, city: string) {
   if (slug === 'gate-repair-and-maintenance') return {
     titleSuffix: 'Repairs & Servicing',
-    description: `Electric gate fault investigation, repairs and maintenance in ${city}. Describe the fault and agree inspection charges and repair scope before booking.`,
+    description: `Electric gate fault finding, repairs and maintenance in ${city}. Describe the fault and agree inspection charges and repair scope before booking.`,
     eyebrow: 'Fault Investigation, Repairs & Servicing',
     lead: `Need help with existing electric gates in ${city}? Tell us what stopped working, the equipment you have and whether the entrance is accessible. Agree the investigation scope and any attendance charge before booking.`,
     footnotes: ['Existing gate systems', 'Agreed repair scope', 'Inspection charges confirmed'],
@@ -17,7 +17,7 @@ export function serviceIntent(slug: string, city: string) {
   };
   if (slug === 'gate-automation-kits') return {
     titleSuffix: 'Automation for Existing Gates',
-    description: `Gate automation for existing gates in ${city}. Assess the gates, supports, movement and site layout before agreeing compatible motors, controls and installation work.`,
+    description: `Gate automation for existing gates in ${city}. We assess the gates, supports and layout before agreeing motors, controls and installation work.`,
     eyebrow: 'Automation for Existing Gates',
     lead: `Looking to automate existing gates in ${city}? Share photographs and details of the opening and supports. A site assessment establishes whether the gates are suitable and which automation, protective measures and related work are needed.`,
     footnotes: ['Existing gates assessed', 'Compatibility checked', 'Written automation scope'],

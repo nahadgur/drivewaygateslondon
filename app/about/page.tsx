@@ -8,7 +8,7 @@ const description = 'Founded in 2025 by Ben and Jack, Driveway Gates London prov
 const url = `${siteConfig.url}/about/`;
 
 export const metadata: Metadata = {
-  title,
+  title: { absolute: title },
   description,
   alternates: { canonical: url },
   openGraph: { title, description, url, type: 'website', siteName: siteConfig.name, locale: 'en_GB' },

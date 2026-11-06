@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { siteConfig } from '@/data/site';
 
 export const metadata: Metadata = {
-  title: 'Driveway Gate Installation Across London | Areas We Cover',
+  title: { absolute: 'Driveway Gate Installation Across London | Areas We Cover' },
   description: 'Driveway gate installation in every London borough. Search by area to see how we work near you. Free site survey and written quote.',
   alternates: { canonical: `${siteConfig.url}/location/` },
   openGraph: {

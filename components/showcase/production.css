@@ -1,6 +1,6 @@
 .header-host,.footer-host{display:contents}
 .business-hours{margin:22px 0}
-.business-hours h3{font:600 16px/1.4 var(--sans);margin:0 0 6px}
+.business-hours h3,.contact-methods .business-hours h2{font:600 16px/1.4 var(--sans);letter-spacing:0;margin:0 0 6px}
 .business-hours p{margin:0;line-height:1.6}
 .site-footer .business-hours p{color:#fff}
 .business-service-catalogue{margin:32px 0 44px;padding:clamp(20px,3vw,36px);background:var(--sage,#e7eade);border-radius:6px;scroll-margin-top:150px}
@@ -57,3 +57,5 @@ body{display:block}
  .commercial-directory .page-card .card-copy{padding:14px 0 20px}
  .commercial-directory .page-card .card-copy p{display:block}
 }
+.areas-copy{max-width:780px;margin:0 0 30px}.areas-copy p+p{margin-top:14px}.areas-copy .intro-text{max-width:none}.areas-copy a,.hub-heading p a{color:inherit;text-decoration:underline;text-underline-offset:3px}.areas-copy a:hover{color:var(--green)}
+.visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}

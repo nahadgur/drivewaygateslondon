@@ -157,7 +157,7 @@ export const FAQS_LOCATION = [
 export const HOMEPAGE_FAQS = [
   {
     "question": "How much do driveway gates cost in London?",
-    "answer": "The total depends on the measured entrance, gate material and design, supports, groundworks, electrical supply and manual or automated operation. Request an itemised quotation with VAT, exclusions and payment terms stated."
+    "answer": "As a guide, fully installed electric sliding gates are typically £4,500 to £12,000 and electric swing gates £3,500 to £10,000. Installed wooden driveway gates run from about £2,500 to £8,000 and metal driveway gates from £2,800 to £9,500. Automating existing gates is typically £1,200 to £3,500. Your price depends on the measured entrance, material, supports, groundworks and electrical supply, and is confirmed in an itemised written quote after a free site survey."
   },
   {
     "question": "Do I need planning permission for driveway gates in London?",
@@ -165,7 +165,7 @@ export const HOMEPAGE_FAQS = [
   },
   {
     "question": "How long does a driveway gate installation take?",
-    "answer": "The programme depends on fabrication, supports, groundworks, electrical work and the agreed gate specification. Ask for the proposed lead time and installation schedule in your written quotation."
+    "answer": "Once the gates are made, work on site typically takes 2 to 4 days for swing, wooden and metal driveway gates, and 3 to 5 days for electric sliding gates. Automating existing gates usually takes 1 to 2 days. Fabrication lead time depends on the design, and your written quote sets out the proposed programme."
   },
   {
     "question": "What type of gate is best for a London driveway?",

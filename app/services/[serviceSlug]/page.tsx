@@ -6,6 +6,7 @@ import { services, getServiceBySlug } from '@/data/services';
 import { siteConfig, FAQS_SERVICES, organizationRef } from '@/data/site';
 import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
+import { fitTitle } from '@/lib/seo-title';
 
 interface Props { params: { serviceSlug: string } }
 
@@ -19,8 +20,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const image = serviceImage(`/services/${service.slug}/`);
   const intent = serviceIntent(service.slug, 'London');
-  const title = `${service.title} in London | ${intent?.titleSuffix ?? "Installation, Free Quotes"}`;
-  const description = intent?.description ?? (service.reviewedFaqs ? service.description : `${service.title} installation across London. We design, supply and install ourselves. Free site survey and written quote, no obligation.`);
+  const title = fitTitle(`${service.title} in London`, [intent?.titleSuffix ?? 'Installation, Free Quotes', 'Free Quotes']);
+  const description = intent?.description ?? (service.reviewedFaqs ? (service.metaDescription ?? service.description) : `${service.title} installation across London. We design, supply and install ourselves. Free site survey and written quote, no obligation.`);
   const url = `${siteConfig.url}/services/${service.slug}/`;
 
   return {

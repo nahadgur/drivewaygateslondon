@@ -7,6 +7,7 @@ import { LOCATIONS, toSlug, getCityBySlug } from '@/data/locations';
 import { siteConfig, organizationRef } from '@/data/site';
 import { ServiceAreaPage } from '@/components/showcase/ServiceAreaPage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
+import { fitTitle } from '@/lib/seo-title';
 
 interface Props { params: { serviceSlug: string; locationSlug: string } }
 
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const image = serviceImage(`/services/${service.slug}/`);
   const intent = serviceIntent(service.slug, cityName);
-  const title = `${service.title} in ${cityName} | ${intent?.titleSuffix ?? "Installation, Free Quotes"}`;
+  const title = fitTitle(`${service.title} in ${cityName}`, [intent?.titleSuffix ?? 'Installation, Free Quotes', 'Free Quotes']);
   const description = intent?.description ?? `${service.title} installation in ${cityName}. We design, supply and install ourselves. Free site survey and written quote, no obligation.`;
   const url = `${siteConfig.url}/services/${service.slug}/${params.locationSlug}/`;
 

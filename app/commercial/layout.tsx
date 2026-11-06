@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { siteConfig } from '@/data/site';
 
 export const metadata: Metadata = {
-  title: 'Commercial Gate Systems London | Industrial, Schools, Car Parks',
-  description: 'Heavy-duty commercial gate systems for London businesses. Industrial security gates, school gate systems, car park barriers, and heavy-duty sliding gates. Free commercial quotes.',
+  title: { absolute: 'Commercial Gates London | Industrial, Schools, Car Parks' },
+  description: 'Commercial gate systems for London businesses: industrial security gates, school gates, car park barriers and heavy-duty sliding gates. Free quotes.',
   alternates: { canonical: `${siteConfig.url}/commercial/` },
   openGraph: {
     title: 'Commercial Gate Systems London',

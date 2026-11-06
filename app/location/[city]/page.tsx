@@ -4,6 +4,7 @@ import { LOCATIONS, toSlug, getCityBySlug } from '@/data/locations';
 import { siteConfig, organizationRef } from '@/data/site';
 import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
+import { fitTitle } from '@/lib/seo-title';
 
 interface Props { params: { city: string } }
 
@@ -15,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cityName = getCityBySlug(params.city);
   if (!cityName) return {};
 
-  const title = `Driveway Gates in ${cityName} | Installation, Free Quotes`;
+  const title = fitTitle(`Driveway Gates in ${cityName}`, ['Installation, Free Quotes', 'Free Quotes']);
   const description = `Driveway gate installation in ${cityName}, London. We design, supply and install electric, wooden, and metal gates. Free site survey and written quote.`;
   const url = `${siteConfig.url}/location/${params.city}/`;
 

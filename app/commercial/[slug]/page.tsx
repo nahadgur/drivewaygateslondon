@@ -5,6 +5,7 @@ import { commercialServices, getCommercialBySlug } from '@/data/commercial';
 import { siteConfig, organizationRef } from '@/data/site';
 import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
+import { fitTitle } from '@/lib/seo-title';
 
 interface Props { params: { slug: string } }
 
@@ -17,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!service) return {};
 
   const image = serviceImage(`/commercial/${service.slug}/`);
-  const title = `${service.title} in London | Commercial Gate Specialists`;
+  const title = fitTitle(`${service.title} in London`, ['Commercial Gate Specialists', 'Commercial Gates']);
   const description = service.metaDescription;
   const url = `${siteConfig.url}/commercial/${service.slug}/`;
 

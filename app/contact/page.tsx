@@ -4,11 +4,11 @@ import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
 
 const title = 'Contact Driveway Gates London | Get a Free Quote';
-const description = 'Contact Driveway Gates London about gate installation near you. Fill out the form and we call you back to arrange a free site survey and written quote. No obligation.';
+const description = 'Contact Driveway Gates London about new gates, automation or repairs. We call you back to arrange a free site survey and written quote. No obligation.';
 const url = `${siteConfig.url}/contact/`;
 
 export const metadata: Metadata = {
-  title,
+  title: { absolute: title },
   description,
   alternates: { canonical: url },
   openGraph: {

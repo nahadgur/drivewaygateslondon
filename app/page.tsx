@@ -5,7 +5,7 @@ import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 
 export const metadata: Metadata = {
   title: "Driveway Gates London | Supply & Installation, Free Quotes",
-  description: "Driveway gate design, supply and installation across London. Electric sliding gates, swing gates, wooden gates, metal gates, automation, and repairs. Free site survey and written quote.",
+  description: "Driveway gates designed, supplied and installed across London: electric sliding and swing, wooden and metal gates, automation and repairs. Free site survey.",
   alternates: { canonical: siteConfig.url },
   openGraph: {
     title: "Driveway Gates London | Supply & Installation, Free Quotes",

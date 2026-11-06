@@ -4,6 +4,7 @@ import { guides, getGuideBySlug } from '@/data/guides';
 import { siteConfig, organizationRef } from '@/data/site';
 import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
+import { fitTitle, fitBrandedTitle, BRAND } from '@/lib/seo-title';
 
 interface Props { params: { slug: string } }
 
@@ -18,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const url = `${siteConfig.url}/guides/${guide.slug}/`;
 
   return {
-    title: guide.useMetaTitle || params.slug === 'electric-driveway-gates-cost-london' ? guide.metaTitle : `${guide.title} | Driveway Gates London`,
+    title: guide.useMetaTitle || params.slug === 'electric-driveway-gates-cost-london' ? fitBrandedTitle(guide.metaTitle) : fitTitle(guide.title, [BRAND]),
     description: guide.metaDescription,
     alternates: { canonical: url },
     openGraph: {

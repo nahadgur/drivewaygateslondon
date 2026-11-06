@@ -8,6 +8,8 @@ export interface Service {
   title: string;
   slug: string;
   description: string;
+  /** Shorter search-result description when `description` exceeds ~160 characters. */
+  metaDescription?: string;
   image: string;
   icon: string;
   color: string;
@@ -123,6 +125,7 @@ export const services: Service[] = [
     title: 'Automated Gate Systems',
     slug: 'automated-gate-systems',
     description: "Plan an automated driveway gate system in London, including gates, motors, controls and site-specific protective measures. Compare new installations and suitable upgrades after assessment.",
+    metaDescription: "Plan an automated driveway gate system in London: gates, motors, controls and protective measures, for new installations or upgrades after assessment.",
     image: '/images/gates/gate-automation-intercom-evening-lighting.png',
     icon: 'Medal',
     color: 'indigo',
@@ -232,6 +235,7 @@ export const services: Service[] = [
   "title": "Commercial Gates",
   "slug": "commercial-gates",
   "description": "Commercial gate and access-control installation in London. Plan vehicle movement, pedestrian access, operating frequency and maintenance around how your site works.",
+  "metaDescription": "Commercial gate and access-control installation in London, planned around vehicle movement, pedestrian access, operating frequency and maintenance.",
   "image": "/images/services/industrial-security-gates-illustration.webp",
   "icon": "Shield",
   "color": "sky",
@@ -258,6 +262,7 @@ export const services: Service[] = [
   "title": "Aluminium Driveway Gates",
   "slug": "aluminium-driveway-gates",
   "description": "Aluminium driveway gates designed, supplied and installed across London. Choose a finish and opening layout with the specification, installation scope and aftercare confirmed in writing.",
+  "metaDescription": "Aluminium driveway gates designed, supplied and installed across London, with the finish, opening layout, installation scope and aftercare agreed in writing.",
   "image": "/showcase/assets/content/gate-aluminium-sliding-vertical-bar-modern-c49a8a8.webp",
   "icon": "Sparkles",
   "color": "sky",

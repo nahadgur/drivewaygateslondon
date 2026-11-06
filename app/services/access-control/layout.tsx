@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { siteConfig } from '@/data/site';
 
 export const metadata: Metadata = {
-  title: 'Gate Access Control Systems London | Intercoms, Keypads, ANPR',
+  title: { absolute: 'Gate Access Control London | Intercoms, Keypads, ANPR' },
   description: 'Gate access control installation in London. We fit video intercoms, keypad entry, GSM phone openers, and ANPR systems. Free site survey and written quote.',
   alternates: { canonical: `${siteConfig.url}/services/access-control/` },
   openGraph: {

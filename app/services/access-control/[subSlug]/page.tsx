@@ -5,6 +5,7 @@ import { accessControlServices, getAccessControlBySlug } from '@/data/access-con
 import { siteConfig, organizationRef } from '@/data/site';
 import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
+import { fitTitle, fitDescription } from '@/lib/seo-title';
 
 interface Props { params: { subSlug: string } }
 
@@ -17,8 +18,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!service) return {};
 
   const image = serviceImage(`/services/access-control/${service.slug}/`);
-  const title = `${service.title} for Driveway Gates London | Installation & Quotes`;
-  const description = `${service.description} Gate access control installation across London. Free site survey and written quote, no obligation.`;
+  const title = fitTitle(`${service.title} for Driveway Gates in London`, ['Free Quotes']);
+  const description = fitDescription([service.description, 'Installed across London.', 'Free site survey and written quote.']);
   const url = `${siteConfig.url}/services/access-control/${service.slug}/`;
 
   return {

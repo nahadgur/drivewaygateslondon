@@ -4,6 +4,7 @@ import { boroughRegulations, getBoroughBySlug } from '@/data/regulations';
 import { siteConfig, organizationRef } from '@/data/site';
 import { ShowcasePage } from '@/components/showcase/ShowcasePage';
 import { buildBreadcrumbSchema } from '@/lib/breadcrumbs';
+import { fitTitle } from '@/lib/seo-title';
 
 interface Props { params: { borough: string } }
 
@@ -15,8 +16,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const borough = getBoroughBySlug(params.borough);
   if (!borough) return {};
 
-  const title = `Driveway Gate Planning Permission in ${borough.name} | London Planning Guide`;
-  const description = `Find official resources for driveway gate planning in ${borough.name}. Check the property, proposed boundary work, conservation status and relevant directions.`;
+  const title = fitTitle(`Driveway Gate Planning Permission in ${borough.name}`, ['London Planning Guide']);
+  const description = `Find official resources for driveway gate planning in ${borough.name}. Check conservation status, Article 4 directions and boundary rules.`;
   const url = `${siteConfig.url}/local-regulations/${borough.slug}/`;
 
   return {

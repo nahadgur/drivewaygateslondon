@@ -45,7 +45,7 @@ function homeBento(): string {
     const sources = photo.variants.map(variant => `${variant.src} ${variant.width}w`).join(', ');
     return `<a class="work-bento-tile work-bento-${tile.style}" href="/our-work/#${tile.anchor}" aria-label="${escape(`See our work: ${tile.label}`)}"><img src="${photo.src}" srcset="${sources}" sizes="(max-width: 700px) calc(100vw - 40px), (max-width: 1000px) 50vw, 65vw" width="${photo.width}" height="${photo.height}" alt="${escape(photo.alt)}" loading="lazy" decoding="async"><span class="work-bento-caption">${escape(tile.label)}</span></a>`;
   }).join('');
-  return `<section id="previous-gate-work" class="project-photo-section home-work-section page-wrap" aria-labelledby="previous-gate-work-heading"><header class="home-work-heading"><div><p class="eyebrow">Our gate work</p><h2 id="previous-gate-work-heading">A closer look at our work</h2><p>Driveway gates, matching railings and pedestrian entrances, photographed on our projects.</p></div><a class="button work-showcase-link" href="/our-work/">View our work</a></header><div class="work-bento">${cards}</div></section>`;
+  return `<section id="previous-gate-work" class="project-photo-section home-work-section page-wrap" aria-labelledby="previous-gate-work-heading"><header class="home-work-heading"><div><h2 id="previous-gate-work-heading">A closer look at our Driveway Gate work In London</h2><p>Driveway gates, matching railings and pedestrian entrances, photographed on our projects.</p></div><a class="button work-showcase-link" href="/our-work/">View our work</a></header><div class="work-bento">${cards}</div></section>`;
 }
 
 export function addProjectPhotos(main: string, route: string): string {
