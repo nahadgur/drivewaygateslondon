@@ -16,11 +16,19 @@ for (const route of Object.keys(manifest.routes)) {
   const html = fs.readFileSync(file, 'utf8');
   const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)?.[1];
   assert(main, `${route}: no main content`);
+  // Every page carries its own enquiry form. Ordinary pages put their closing
+  // copy in the green enquiry section; articles and location pages also keep
+  // one banner, which must jump to the on-page form.
+  assert(main.includes('id="quote-form"'), `${route}: no on-page enquiry form`);
+  assert(!/class="[^"]*\beyebrow\b/.test(html), `${route}: eyebrow text is not used; fold it into the intro`);
+  assert(!/href="\/contact\//.test(main), `${route}: quote links must use the on-page form, not /contact/`);
   const banners = Array.from(main.matchAll(/<section class="[^"]*\b(?:quote-band|closing)\b[^"]*"[^>]*>([\s\S]*?)<\/section>/g));
-  assert.equal(banners.length, 1, `${route}: expected one CTA banner`);
-  const href = banners[0][1].match(/<a\b[^>]*href="([^"]+)"/)?.[1];
-  assert(href && (/^\/contact\/(?:\?[^#]*)?#quote-form$/.test(href) || href === '#enquiry' || href === '#article-enquiry'), `${route}: CTA must lead directly to the enquiry form`);
+  assert(banners.length <= 1, `${route}: more than one CTA banner`);
+  const href = banners[0]?.[1].match(/<a\b[^>]*href="([^"]+)"/)?.[1];
+  if (banners.length) assert(href === '#enquiry' || href === '#article-enquiry', `${route}: CTA must lead directly to the on-page enquiry form`);
+  else assert(main.includes('class="page-enquiry"'), `${route}: missing enquiry section`);
   if (/^\/(guides|blog)\/[^/]+$/.test(route)) {
+    assert.equal(banners.length, 1, `${route}: expected one article CTA banner`);
     const article = main.match(/<article class="article-content">([\s\S]*?)<\/article>/)?.[1];
     assert(article && article.includes(banners[0][0]), `${route}: banner must be inside article`);
     const before = article.slice(0, article.indexOf(banners[0][0]));
@@ -35,10 +43,10 @@ for (const route of Object.keys(manifest.routes)) {
   if (href === '#enquiry') {
     assert(main.includes('id="enquiry"') && main.includes('id="quote-form"'), `${route}: missing local enquiry form`);
   }
-  assert(banners[0][1].includes('Get a Free Quote'), `${route}: quote CTA missing`);
+  if (banners.length) assert(banners[0][1].includes('Get a Free Quote'), `${route}: quote CTA missing`);
   checked++;
 }
 assert(checked > 0, 'No marketing pages checked');
 assert(fs.readFileSync('.next/server/app/contact.html', 'utf8').includes('id="quote-form"'), 'Contact form anchor missing');
-console.log(`Quote banners PASS: ${checked} built marketing pages each have one banner linked directly to a lead form.`);
+console.log(`Enquiry forms PASS: ${checked} built marketing pages each have an on-page enquiry form, and any banner links straight to it.`);
 console.log(`Article CTA copy PASS: ${articleCount} guides and blogs have their reviewed topic-specific banner.`);

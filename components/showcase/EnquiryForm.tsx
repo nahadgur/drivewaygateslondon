@@ -6,7 +6,7 @@ import { gateTypeForSlug } from '@/components/HeroLeadForm';
 import { trackEnquiry } from '@/lib/analytics';
 
 export function EnquiryForm({ initialArea = '', initialService, formId = 'contact_enquiry' }: {
-  initialArea?: string; initialService?: string; formId?: 'contact_enquiry' | 'hero_enquiry';
+  initialArea?: string; initialService?: string; formId?: 'contact_enquiry' | 'hero_enquiry' | 'page_enquiry';
 } = {}) {
   const [values, setValues] = useState({ fullName: '', phone: '', email: '', location: initialArea, treatment: gateTypeForSlug(initialService) || 'Not sure yet', message: '' });
   const [state, setState] = useState<'ready' | 'sending' | 'success'>('ready');
@@ -33,7 +33,15 @@ export function EnquiryForm({ initialArea = '', initialService, formId = 'contac
     try {
       const response = await fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST', signal: controller.signal,
-        body: JSON.stringify({ ...values, page: window.location.href, source: 'Driveway Gates London' }),
+        // Lead source: the page the form was submitted from, for the lead sheet.
+        body: JSON.stringify({
+          ...values,
+          page: window.location.href,
+          pagePath: window.location.pathname,
+          pageTitle: document.title,
+          formPlacement: formId,
+          source: 'Driveway Gates London',
+        }),
       });
       if (!response.ok) throw new Error('Submission failed');
       const text = await response.text();

@@ -13,8 +13,9 @@ export const quotationChecklist = [
 // ranges only: the price is confirmed after a site survey. No finance offer.
 // The cost guide table renders from this list automatically (lib/price-table.ts).
 // The figures are also quoted in prose in the homepage FAQs (data/site.ts and the
-// "/" snapshot) and the cost guide's first FAQ (data/guides.ts and its snapshot):
-// update those answers when a range changes.
+// "/" snapshot), the cost guide's first FAQ (data/guides.ts and its snapshot) and the
+// automation retrofit page (data/services.ts FAQs and its snapshot): update those
+// answers when a range changes.
 export interface PriceBand {
   slug: string;
   label: string;

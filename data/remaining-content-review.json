@@ -160,7 +160,7 @@
     "sections": [
       [
         "Measure the space each leaf occupies",
-        "<p>A swing leaf travels around its hinge. For an illustrative pair of equal leaves across a 3.5 m opening, each leaf is about 1.75 m wide before allowing for gaps and fittings. Its free edge traces an arc with roughly that radius, rather than the full 3.5 m opening width.</p><p>That arithmetic is not a safe parking distance. Hinge position, opening angle, vehicle shape, pedestrian routes and protective clearances determine the usable space. Ask for a scaled plan showing the gate in motion and your car parked.</p><figure><img src=\"/images/guides/swing-clearance-example.svg\" alt=\"Illustrative plan: two approximately 1.75 metre swing leaves across a 3.5 metre opening, with each leaf sweeping its own arc.\" width=\"600\" height=\"580\" loading=\"lazy\" style=\"width:100%;height:auto\"><figcaption>Illustration only. Not a site design or a minimum safe clearance.</figcaption></figure>"
+        "<p>A swing leaf travels around its hinge. For an illustrative pair of equal leaves across a 3.5 m opening, each leaf is about 1.75 m wide before allowing for gaps and fittings. Its free edge traces an arc with roughly that radius, rather than the full 3.5 m opening width.</p><p>That arithmetic is not a safe parking distance. Hinge position, opening angle, vehicle shape, pedestrian routes and protective clearances determine the usable space. Ask for a scaled plan showing the gate in motion and your car parked.</p><figure><img src=\"/images/guides/swing-clearance-example.svg\" alt=\"Illustrative plan: two approximately 1.75 metre swing leaves across a 3.5 metre opening, with each leaf sweeping its own arc.\" width=\"600\" height=\"580\" loading=\"lazy\" style=\"width:100%;height:auto\"></figure>"
       ],
       [
         "Allow for the full sliding arrangement",
@@ -1363,38 +1363,54 @@
   "keypad-entry-systems": {
     "kind": "access",
     "title": "Keypad Entry Systems",
-    "description": "Code-based gate access with user management, weather exposure and controller compatibility specified for your property.",
+    "description": "A keypad for your automated gate, with a separate code for each family member, cleaner or trade, and codes you can delete when access is no longer needed.",
     "sections": [
       [
-        "Choose how you will manage codes",
-        "<p>Decide who needs permanent access and who should have temporary permission. Ask whether the selected keypad supports separate users, expiry or time windows. Those functions vary by model.</p><p>Avoid one shared code for everyone if you need to remove an individual’s access. Agree who can change settings and how you recover administrator control.</p>"
+        "Wired or wireless",
+        "<p>A wired keypad is connected by cable to your gate’s control panel and runs off the same power supply. It’s the most reliable option and needs no batteries. If the keypad sits on a post away from the pillar, though, a cable duct has to be laid under the driveway or verge. On a new installation that’s simple to plan in. On a finished block-paved drive it means lifting and relaying a strip of paving.</p><p>A wireless keypad runs on batteries and sends a coded radio signal to a receiver in the control panel. There’s no digging, so it’s the usual choice when you’re adding a keypad to a gate that’s already installed. Expect to change the batteries roughly every one to two years. On very thick brick pillars or long driveways the signal range needs testing on site first.</p><p>There’s also the question of where the codes are stored. A standalone keypad stores them itself and is programmed at the keypad. An app-managed keypad lets you add, delete and schedule codes from your phone, which is useful if you’re often away or let the property.</p>"
       ],
       [
-        "Place the keypad for its users",
-        "<p>Discuss pedestrian and driver use, reach, lighting and the position relative to moving leaves. Visitors should not need to reach through a gate or stand in its movement path to enter a code.</p><p>Confirm the enclosure rating, operating conditions and mounting requirements for the actual product. There is no single weather rating we can promise for every proposed keypad.</p>"
+        "Codes, users and visitors",
+        "<p>Basic keypads hold a handful of codes. Better models hold hundreds, each one separate, so you can remove the cleaner’s access without changing the code the family uses. Some also support time windows (a code that only works on Tuesday mornings, for example), codes that expire on a set date, and a log of which code was used and when.</p><p>When we hand the system over, we suggest six-digit codes rather than four. We also suggest a separate code for each regular visitor and a lockout after several wrong entries. We change the installer’s default master code in front of you, so nobody but you can reprogramme the keypad. Codes you give to people outside the household should be changed every so often. Worn buttons on a keypad that’s been used for years can show which numbers are in the code.</p>"
       ],
       [
-        "Check the gate connection",
-        "<p>The installer needs to assess the control interface, power, wiring and the existing gate’s condition. Code acceptance requests entry; it does not replace the protective measures needed for powered movement.</p><p>Ask what happens after repeated incorrect attempts, loss of power or a controller fault. Agree an authorised alternative for residents and visitors.</p>"
+        "Where the keypad goes",
+        "<p>For drivers, the keypad goes on a gooseneck post on the driver’s side, at roughly car-window height (about a metre). It’s set back far enough that the car waits clear of the gate while it opens. This matters most with outward-opening swing gates, where the post has to sit beyond the arc of the gate leaves. For people on foot, a keypad on the pillar beside a pedestrian gate at about chest height works well.</p><p>Many London front gardens are shallow. If there’s no room for a car to pull off the road before the gate, a driver using a keypad ends up waiting across the pavement. In that case a remote or <a href=\"/services/access-control/anpr-systems/\">ANPR</a> for residents, with the keypad kept for visitors on foot, is often a better arrangement. If you’re in a conservation area, check our <a href=\"/local-regulations/\">borough planning guides</a> before adding a post to the front of the property.</p><p>Keypads facing the street need backlit keys for use after dark, a rain hood, and a rating of IP65 or higher for weather sealing. Where vandalism is a concern, look for an impact rating of IK08 or above.</p>"
       ],
       [
-        "Include setup and handover",
-        "<p>Request model details, programming, instructions and written support terms. At handover, practise adding and removing a user, replacing the initial codes and recovering access.</p><p>Compare <a href=\"/services/access-control/video-intercoms/\">video entry</a> for visitors you want to speak with and our <a href=\"/blog/electric-gate-parcel-delivery-access-london/\">delivery-access guide</a> for couriers. Then <a href=\"/contact/\">discuss your entrance</a>.</p>"
+        "Adding a keypad to an existing gate",
+        "<p>Most gate control panels from the main brands (BFT, CAME, FAAC, Nice and others) have an input that a keypad can trigger, so adding one is usually straightforward. On the survey we check that the control panel has a spare input and enough power, we plan the cable or radio route, and we test the gate’s safety devices. A keypad is another way to start the gate moving. It does nothing to stop the gate hitting a person or a car. That’s the job of the <a href=\"/guides/photocells-vs-safety-edges/\">photocells and safety edges</a> required under BS EN 12453, and we won’t connect a keypad to a gate that isn’t safe to run automatically.</p><p>If the power goes off, a keypad on mains power stops working along with the gate, unless the system has battery backup. Make sure everyone who needs to get in knows how to <a href=\"/guides/how-to-manually-open-electric-gate/\">release the gate manually</a>, or has a key to the pedestrian gate.</p>"
+      ],
+      [
+        "What it costs",
+        "<p>As a rough guide, a wireless keypad added to an existing automated gate typically costs £250 to £450 fitted. A wired keypad on a gooseneck post, including ducting and making good, usually comes to £500 to £1,000, depending on distance and the surface that has to be cut. App-managed keypads with scheduling and access logs sit at the upper end or above. We give a fixed written price after the survey.</p>"
+      ],
+      [
+        "Keypad, intercom or phone entry?",
+        "<p>A keypad suits people you trust to let themselves in. If you want to see and speak to visitors before opening the gate, look at <a href=\"/services/access-control/video-intercoms/\">video intercoms</a>. If you’d rather open the gate from your mobile wherever you are, <a href=\"/services/access-control/gsm-phone-entry/\">GSM phone entry</a> does that, and many homes combine it with a keypad. For couriers specifically, see our <a href=\"/blog/electric-gate-parcel-delivery-access-london/\">parcel delivery access guide</a>.</p>"
       ]
     ],
     "faqs": [
-      [
-        "Can delivery codes expire automatically?",
-        "Some models support expiry or time schedules. Specify that requirement and have the supplier demonstrate it before accepting the configuration."
-      ],
-      [
-        "How many users can I add?",
-        "Capacity and whether users have separate codes depend on the selected model. Confirm the limit in the product specification."
-      ],
-      [
-        "Can a keypad be fitted to an existing gate?",
-        "Compatibility, power, wiring and safe operation need assessment before installation."
-      ]
+      {
+        "question": "Can I give a delivery driver or tradesperson a temporary code?",
+        "answer": "Yes, with a keypad that supports timed or expiring codes. You set the code to work for a set period and it stops working after that. Basic standalone keypads can’t do this, so tell us at survey stage if you need it."
+      },
+      {
+        "question": "How many codes can a keypad hold?",
+        "answer": "It depends on the model. Entry-level keypads hold a few codes, while mid-range and app-managed units hold hundreds, each separate from the others."
+      },
+      {
+        "question": "What if someone finds out a code?",
+        "answer": "Delete that code or change it. You don’t need to change anyone else’s, as long as each person has their own code. A lockout after repeated wrong entries stops anyone trying codes until one works."
+      },
+      {
+        "question": "Does the keypad work in a power cut?",
+        "answer": "Only if the gate has battery backup. Otherwise use the manual release or the pedestrian gate key until power is restored."
+      },
+      {
+        "question": "Can you fit a keypad to a gate someone else installed?",
+        "answer": "Usually, yes. We check the control panel, the power supply and the gate’s safety devices on the survey first."
+      }
     ]
   },
   "pedestrian-side-gates": {
@@ -1442,42 +1458,54 @@
   "industrial-security-gates": {
     "kind": "commercial",
     "title": "Industrial Security Gates",
-    "description": "Industrial gate systems for London sites. Discuss vehicle access, operating frequency, security requirements and aftercare before specifying equipment.",
+    "description": "Industrial gates take more punishment than anything on a domestic drive. They open dozens or hundreds of times a day, they have lorries reversing near them, and they may be the only thing between your stock and a thief with an angle grinder. We design, supply and install sliding, speed and swing gates, palisade and mesh fencing, and access control for warehouses, depots, yards, builders’ merchants and industrial estates across London.",
     "sections": [
       [
-        "Plan your entrance",
-        "<p>Start with the site requirements: vehicle types, busiest arrival periods, clear opening, security objectives and routes for people on foot. Include delivery drivers and contractors who may not know the site.</p><p>Discuss the gate layout and access controls together. Existing ground conditions, supports, power and the space for vehicles to wait can affect the installation scope. A site survey should establish which arrangements are suitable before you order equipment.</p><p>If your brief requires a tested security rating or a named certification, ask for evidence for the exact proposed product and configuration. Do not treat the appearance of a gate or a general supplier claim as proof of that requirement.</p>"
+        "Choosing the right gate type",
+        "<p>Cantilever sliding gates are the standard choice for industrial entrances. The gate hangs from rollers on posts beside the opening instead of running on a ground track, so grit, ice, pallets and debris can’t jam it. A single leaf can span a very wide opening, comfortably wide enough for an articulated lorry. The trade-off is space. The gate needs a straight run alongside the fence, longer than the opening itself, because part of the frame acts as a counterweight. Our <a href=\"/commercial/heavy-duty-sliding-gates/\">heavy-duty sliding gates</a> page covers these in more detail.</p><p>Tracked sliding gates run on a rail set in the ground. They need less run-back than a cantilever gate, but the track has to be kept clear. That makes them a weaker choice for yards with loose material or heavy plant crossing the threshold.</p><p>Speed gates are bi-folding gates driven by powerful motors. They open in a few seconds rather than the 20 to 30 seconds a typical sliding gate takes. They suit busy entrances where vehicles would otherwise queue onto the road, and sites where tailgating through a slow-closing gate is a security problem. They fold back within their own posts, so they need very little side space. They cost more than a sliding gate.</p><p>Swing gates are the cheapest powered option and work where there’s room for the leaves to open fully without clashing with waiting or turning vehicles. Wide leaves with solid infill catch the wind badly, so on exposed sites they need heavier hinges and operators, or a different gate type.</p><p>Barriers control vehicles but don’t secure a perimeter. Many sites use a barrier for the busy working day and a gate to lock the site at night. See <a href=\"/commercial/car-park-barriers/\">car park barriers</a>.</p>"
       ],
       [
-        "Agree the installation scope",
-        "<h3>Vehicle movement</h3><p>Assess the approach, turning room and clear opening for the vehicles using the entrance.</p><h3>Operating demand</h3><p>Give the installer the expected frequency and busiest periods so they can select equipment for the proposed duty.</p><h3>Access control</h3><p>Agree how staff, visitors and delivery drivers gain entry and who manages permissions.</p><h3>Aftercare</h3><p>Request written maintenance, fault-response and call-out terms. No response time applies unless it is agreed in the service contract.</p><p>Read <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/responsibilities.htm\" target=\"_blank\" rel=\"noopener noreferrer\">HSE guidance on powered-gate responsibilities</a>. For an existing fault, discuss a <a href=\"/services/gate-repair-and-maintenance/\">gate repair assessment</a>. You can also compare the <a href=\"/commercial/\">commercial entrance options</a>.</p>"
+        "Security ratings",
+        "<p>If your insurer, landlord or tender asks for a rated gate, you’ll normally see one of two standards. LPS 1175 (from the Loss Prevention Certification Board) rates how long a gate or fence resists a deliberate forced attack, and with what tools. Lower ratings cover hand tools; higher ones cover extended attack with powered cutting equipment. Hostile vehicle mitigation ratings (PAS 68, IWA 14 and ISO 22343) are crash-tested ratings for stopping a vehicle being driven through the entrance. They’re usually only needed for critical infrastructure and high-risk sites.</p><p>A rating applies to the exact tested product, including its posts, foundations and locking. A heavy-looking palisade gate isn’t rated just because it looks strong. If you need a rating, we’ll supply the certification for the specific gate and configuration in the quote.</p><p>Most sites don’t need a formal rating. For them, the practical choices are what count: anti-climb mesh (358 mesh is the common high-security standard) or triple-pointed steel palisade, a height of 2.4 to 3 metres, no horizontal rails on the outside to climb, and shrouded hinges and locks that can’t easily be cut.</p>"
       ],
       [
-        "Plan for the site’s busiest arrival period",
-        "<p>Describe the vehicles that use the entrance, including the largest delivery vehicle and any combination of trailers or specialist equipment. Give the installer the operating hours and a picture of peak arrivals rather than only a daily average. Mark the place where a driver waits while permission is checked.</p><p>For a warehouse, include visiting drivers who do not know the site. For an industrial estate, identify different tenants and how visitors reach the correct occupier. For a depot, explain shift changes and occasions when several vehicles return together. These are planning scenarios; the survey must establish the actual arrangement.</p><p>Keep pedestrian entry and routes to reception visible on the layout. A driver should not need to leave a vehicle in a hazardous position to find the calling point. Coordinate the gate proposal with the site’s wider traffic arrangements and responsible person.</p>"
+        "Planning for lorries and busy periods",
+        "<p>Tell us the largest vehicle that uses the entrance and how it arrives. A 16.5-metre articulated lorry needs room to swing in. It also needs somewhere to wait while the gate opens that isn’t across the pavement or the road. On many London sites, that means setting the gate back from the boundary so the longest vehicle can stand clear of the highway.</p><p>Peak traffic matters as much as total traffic. A depot where 20 vans return at the end of a shift needs a faster gate and smarter access control than a warehouse with the same number of movements spread across the day. Motors are selected for their duty rating, meaning how many cycles an hour they can run without overheating. That’s why a domestic gate motor fails quickly on an industrial site.</p><p>Keep people on foot separate from vehicles. A pedestrian gate or turnstile beside the vehicle entrance stops staff and visiting drivers walking through the path of a moving gate.</p>"
       ],
       [
-        "Compare gate types against operating requirements",
-        "<div class=\"table-scroll\" role=\"region\" aria-label=\"Industrial entrance layout questions\" tabindex=\"0\"><table><thead><tr><th scope=\"col\">Option</th><th scope=\"col\">What to establish</th></tr></thead><tbody><tr><td>Sliding gate</td><td>Run-back space, support arrangement, foundations and separation from people.</td></tr><tr><td>Swing gate</td><td>Complete swept area, supports and conflicts with waiting or turning vehicles.</td></tr><tr><td>Folding arrangement</td><td>The specified movement envelope, gathered panels and maintenance access.</td></tr><tr><td>Barrier alongside other measures</td><td>The vehicle-control purpose and any separate perimeter or pedestrian requirements.</td></tr></tbody></table></div><p>Ask for product and operating-duty information for the specified equipment. Do not infer a security rating, impact resistance or ability to cope with peak demand from the word industrial. If a rating forms part of the brief, match the evidence to the exact configuration being supplied.</p>"
+        "Access control for staff, fleet and visitors",
+        "<p>ANPR cameras open the gate automatically for registered vehicles. They’re ideal for fleet and staff parking (see <a href=\"/services/access-control/anpr-systems/\">ANPR systems</a>). Staff on foot use fobs or cards, which can be cancelled individually and can log who came in and when. Visiting drivers use an <a href=\"/services/access-control/video-intercoms/\">intercom</a> to reception or the gatehouse. For lorries, the intercom needs a second, higher panel at cab height, so the driver doesn’t have to climb down onto a live entrance.</p><p>On multi-tenant industrial estates, an intercom with a directory lets visitors call the right unit. Each tenant manages their own staff fobs, and the estate manager controls the gate itself.</p>"
       ],
       [
-        "Manage installation and handover as a site operation",
-        "<p>Agree vehicle diversions, temporary access, pedestrian arrangements and the person coordinating the work. Explain any deliveries or operations that cannot be interrupted. Identify the responsibilities of the gate contractor, electrical contractor and site team before agreeing the programme.</p><p>At handover, request user instructions, equipment details, completed checks and training for the people who will operate or manage the entrance. Record who administers permissions and who responds to a fault. Agree maintenance and support in writing, including charges and any stated response terms.</p><p>Keep the site layout under review if traffic patterns, tenants or pedestrian routes change. A gate selected for an earlier arrangement should not be assumed suitable for a materially different operation without assessment.</p>"
+        "Installation on a working site",
+        "<p>Most industrial sites can’t simply close for a week. We phase the work so one side of the entrance stays usable, put temporary fencing in overnight where the perimeter is opened up, and schedule groundworks and gate hanging around your deliveries and shift patterns. Before work starts, we agree a method statement covering traffic management, pedestrian routes and who on your side is the point of contact. Heavier gates and fast motors may need a new three-phase or upgraded power supply. We identify that at survey so it doesn’t hold up the programme.</p><p>At handover you get operating instructions, training for the people who’ll run the entrance, safety test records and a log of who controls access permissions.</p>"
+      ],
+      [
+        "What it costs",
+        "<p>As a rough guide, a powered cantilever sliding gate for a typical industrial entrance costs £12,000 to £30,000 installed, depending on width, height, foundations and access control. Speed gates usually cost £20,000 to £45,000. LPS 1175 rated gates cost significantly more than unrated equivalents. Every quote is itemised and fixed in writing after survey.</p>"
+      ],
+      [
+        "Servicing and breakdowns",
+        "<p>High-use gates wear quickly and should be serviced every quarter, with safety devices and closing forces tested at each visit. Under <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/responsibilities.htm\" target=\"_blank\" rel=\"noopener noreferrer\">HSE guidance on powered gates</a>, the site operator is responsible for keeping them safe, and written service records are your evidence that you have. We offer service contracts with the visit frequency and breakdown response times set out in writing. For a gate that’s already faulty, see <a href=\"/services/gate-repair-and-maintenance/\">gate repair and servicing</a>.</p>"
       ]
     ],
     "faqs": [
-      [
-        "Can you quote for a gate with a specified security rating?",
-        "Share the requirement with the enquiry. The proposed product and configuration need supporting evidence, and availability must be confirmed before a quotation promises a particular rating."
-      ],
-      [
-        "Is emergency call-out cover included?",
-        "Ask for the available support arrangements, charges and response terms in writing. Installation does not establish an automatic emergency-service agreement."
-      ],
-      [
-        "What should we prepare for the survey?",
-        "Provide the site layout, vehicle types, operating hours, access requirements and any known constraints. Identify who will approve the specification and look after the system after handover."
-      ]
+      {
+        "question": "Can you supply a gate with an LPS 1175 rating?",
+        "answer": "Yes. Tell us the rating your insurer or specification requires, and the quote will include the certification for the exact gate and configuration."
+      },
+      {
+        "question": "Is emergency call-out included?",
+        "answer": "Not automatically. Breakdown response is part of a service contract, with the response times and charges set out in writing. Sites that can’t operate with the gate down usually choose a contract with a guaranteed response."
+      },
+      {
+        "question": "What should we have ready for the survey?",
+        "answer": "A site plan if you have one, the largest vehicle using the entrance, your operating hours and busiest periods, and how staff, visitors and deliveries currently get in. It also helps to know who will sign off the specification and who will manage the gate afterwards."
+      },
+      {
+        "question": "Can you replace the gate but keep our existing fencing?",
+        "answer": "Often, yes. We check the condition of the posts and fence at survey, because a powered industrial gate puts far more load on its supports than a manual one."
+      }
     ],
     "updatedDate": "2026-10-13"
   }

@@ -1,6 +1,8 @@
 import shared from '@/data/showcase/shared.json';
 
-// The optional callback remains compatible with existing service-area pages.
-export function Header(_props: { onOpenModal?: () => void } = {}) {
-  return <div className="header-host" dangerouslySetInnerHTML={{ __html: shared.header }} />;
+// quoteHref points the header's "Get a Free Quote" buttons at the page's own
+// enquiry form; the contact page keeps the default.
+export function Header({ quoteHref = '/contact/' }: { quoteHref?: string; onOpenModal?: () => void } = {}) {
+  const html = shared.header.replaceAll('<a href="/contact/" class="button">', `<a href="${quoteHref}" class="button">`);
+  return <div className="header-host" dangerouslySetInnerHTML={{ __html: html }} />;
 }

@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { siteConfig } from '@/data/site';
 
 export const metadata: Metadata = {
-  title: { absolute: 'Driveway Gate Types We Install Across London' },
-  description: 'Every type of driveway gate we install in London: electric sliding, swing, wooden, metal, bi-fold and automated systems. Free site survey and written quote.',
+  title: { absolute: 'Types of Driveway Gates in London | Free Site Survey' },
+  description: 'Compare the types of driveway gates we install in London: electric sliding and swing, aluminium, wooden, metal and composite gates, plus automation and repairs.',
   alternates: { canonical: `${siteConfig.url}/services/` },
   openGraph: {
     title: 'Driveway Gate Types for London Homes',

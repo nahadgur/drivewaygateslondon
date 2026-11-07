@@ -18,8 +18,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!service) return {};
 
   const image = serviceImage(`/services/access-control/${service.slug}/`);
-  const title = fitTitle(`${service.title} for Driveway Gates in London`, ['Free Quotes']);
-  const description = fitDescription([service.description, 'Installed across London.', 'Free site survey and written quote.']);
+  const title = fitTitle(service.headline ?? `${service.title} for Driveway Gates in London`, ['Free Quotes']);
+  const description = fitDescription([service.metaDescription, 'Installed across London.', 'Free site survey and written quote.']);
   const url = `${siteConfig.url}/services/access-control/${service.slug}/`;
 
   return {

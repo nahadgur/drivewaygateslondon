@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import { siteConfig } from '@/data/site';
 
 export const metadata: Metadata = {
-  title: { absolute: 'London Driveway Gate Planning Rules by Borough' },
-  description: 'Driveway gate planning rules for every London borough: conservation areas, Article 4 directions, permitted development heights and when to apply.',
+  title: { absolute: 'Driveway Gate Planning Permission in London | By Borough' },
+  description: 'Do driveway gates need planning permission in London? Permitted development heights, conservation areas, Article 4, listed buildings and borough resources.',
   alternates: { canonical: `${siteConfig.url}/local-regulations/` },
   openGraph: {
     title: 'London Driveway Gate Planning Rules by Borough',

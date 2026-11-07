@@ -2,7 +2,6 @@ export function serviceIntent(slug: string, city: string) {
   if (slug === 'gate-repair-and-maintenance') return {
     titleSuffix: 'Repairs & Servicing',
     description: `Electric gate fault finding, repairs and maintenance in ${city}. Describe the fault and agree inspection charges and repair scope before booking.`,
-    eyebrow: 'Fault Investigation, Repairs & Servicing',
     lead: `Need help with existing electric gates in ${city}? Tell us what stopped working, the equipment you have and whether the entrance is accessible. Agree the investigation scope and any attendance charge before booking.`,
     footnotes: ['Existing gate systems', 'Agreed repair scope', 'Inspection charges confirmed'],
     overview: 'A repair starts with the reported fault and the condition of the complete installation. Share previous service records, recent changes and equipment details you can read without removing covers. Keep a faulty or unsafe gate out of use and obtain instructions specific to the installation.',
@@ -18,7 +17,6 @@ export function serviceIntent(slug: string, city: string) {
   if (slug === 'gate-automation-kits') return {
     titleSuffix: 'Automation for Existing Gates',
     description: `Gate automation for existing gates in ${city}. We assess the gates, supports and layout before agreeing motors, controls and installation work.`,
-    eyebrow: 'Automation for Existing Gates',
     lead: `Looking to automate existing gates in ${city}? Share photographs and details of the opening and supports. A site assessment establishes whether the gates are suitable and which automation, protective measures and related work are needed.`,
     footnotes: ['Existing gates assessed', 'Compatibility checked', 'Written automation scope'],
     overview: 'Retrofitting automation means assessing the gates already in place. The contractor needs to check their condition, movement, supports, surrounding clearances and suitability for powered operation before selecting equipment.',

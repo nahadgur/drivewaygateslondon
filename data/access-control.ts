@@ -4,6 +4,8 @@ export interface AccessControlService {
   id: string;
   slug: string;
   title: string;
+  /** Page H1 and title-tag phrase when it differs from the card title. */
+  headline?: string;
   metaTitle: string;
   metaDescription: string;
   description: string;
@@ -69,50 +71,69 @@ const accessControlEntries: AccessControlService[] = [
   "id": "keypad-entry-systems",
   "slug": "keypad-entry-systems",
   "title": "Keypad Entry Systems",
-  "metaTitle": "Keypad Entry Systems | Driveway Gates London",
-  "metaDescription": "Code-based gate access with user management, weather exposure and controller compatibility specified for your property.",
-  "description": "Code-based gate access with user management, weather exposure and controller compatibility specified for your property.",
+  "headline": "Keypad Entry for Electric Gates in London",
+  "metaTitle": "Keypad Entry for Electric Gates in London | Driveway Gates London",
+  "metaDescription": "Keypad entry for electric gates in London: wired or wireless keypads, separate codes for visitors, placement, fitting to existing gates and typical prices.",
+  "description": "A keypad for your automated gate, with a separate code for each family member, cleaner or trade, and codes you can delete when access is no longer needed.",
   "image": "/showcase/assets/content/keypad-entry-systems-3bfb451.webp",
   "intro": [
-    " Decide who needs permanent access and who should have temporary permission. Ask whether the selected keypad supports separate users, expiry or time windows. Those functions vary by model.  Avoid one shared code for everyone if you need to remove an individual’s access. Agree who can change settings and how you recover administrator control. ",
-    " Discuss pedestrian and driver use, reach, lighting and the position relative to moving leaves. Visitors should not need to reach through a gate or stand in its movement path to enter a code.  Confirm the enclosure rating, operating conditions and mounting requirements for the actual product. There is no single weather rating we can promise for every proposed keypad. ",
-    " The installer needs to assess the control interface, power, wiring and the existing gate’s condition. Code acceptance requests entry; it does not replace the protective measures needed for powered movement.  Ask what happens after repeated incorrect attempts, loss of power or a controller fault. Agree an authorised alternative for residents and visitors. ",
-    " Request model details, programming, instructions and written support terms. At handover, practise adding and removing a user, replacing the initial codes and recovering access.  Compare  video entry  for visitors you want to speak with and our  delivery-access guide  for couriers. Then  discuss your entrance . "
+    "A wired keypad is connected by cable to your gate’s control panel and runs off the same power supply. It’s the most reliable option and needs no batteries. If the keypad sits on a post away from the pillar, though, a cable duct has to be laid under the driveway or verge. On a new installation that’s simple to plan in. On a finished block-paved drive it means lifting and relaying a strip of paving. A wireless keypad runs on batteries and sends a coded radio signal to a receiver in the control panel. There’s no digging, so it’s the usual choice when you’re adding a keypad to a gate that’s already installed. Expect to change the batteries roughly every one to two years. On very thick brick pillars or long driveways the signal range needs testing on site first. There’s also the question of where the codes are stored. A standalone keypad stores them itself and is programmed at the keypad. An app-managed keypad lets you add, delete and schedule codes from your phone, which is useful if you’re often away or let the property.",
+    "Basic keypads hold a handful of codes. Better models hold hundreds, each one separate, so you can remove the cleaner’s access without changing the code the family uses. Some also support time windows (a code that only works on Tuesday mornings, for example), codes that expire on a set date, and a log of which code was used and when. When we hand the system over, we suggest six-digit codes rather than four. We also suggest a separate code for each regular visitor and a lockout after several wrong entries. We change the installer’s default master code in front of you, so nobody but you can reprogramme the keypad. Codes you give to people outside the household should be changed every so often. Worn buttons on a keypad that’s been used for years can show which numbers are in the code.",
+    "For drivers, the keypad goes on a gooseneck post on the driver’s side, at roughly car-window height (about a metre). It’s set back far enough that the car waits clear of the gate while it opens. This matters most with outward-opening swing gates, where the post has to sit beyond the arc of the gate leaves. For people on foot, a keypad on the pillar beside a pedestrian gate at about chest height works well. Many London front gardens are shallow. If there’s no room for a car to pull off the road before the gate, a driver using a keypad ends up waiting across the pavement. In that case a remote or ANPR for residents, with the keypad kept for visitors on foot, is often a better arrangement. If you’re in a conservation area, check our borough planning guides before adding a post to the front of the property. Keypads facing the street need backlit keys for use after dark, a rain hood, and a rating of IP65 or higher for weather sealing. Where vandalism is a concern, look for an impact rating of IK08 or above.",
+    "Most gate control panels from the main brands (BFT, CAME, FAAC, Nice and others) have an input that a keypad can trigger, so adding one is usually straightforward. On the survey we check that the control panel has a spare input and enough power, we plan the cable or radio route, and we test the gate’s safety devices. A keypad is another way to start the gate moving. It does nothing to stop the gate hitting a person or a car. That’s the job of the photocells and safety edges required under BS EN 12453, and we won’t connect a keypad to a gate that isn’t safe to run automatically. If the power goes off, a keypad on mains power stops working along with the gate, unless the system has battery backup. Make sure everyone who needs to get in knows how to release the gate manually , or has a key to the pedestrian gate.",
+    "As a rough guide, a wireless keypad added to an existing automated gate typically costs £250 to £450 fitted. A wired keypad on a gooseneck post, including ducting and making good, usually comes to £500 to £1,000, depending on distance and the surface that has to be cut. App-managed keypads with scheduling and access logs sit at the upper end or above. We give a fixed written price after the survey.",
+    "A keypad suits people you trust to let themselves in. If you want to see and speak to visitors before opening the gate, look at video intercoms . If you’d rather open the gate from your mobile wherever you are, GSM phone entry does that, and many homes combine it with a keypad. For couriers specifically, see our parcel delivery access guide ."
   ],
   "benefits": [
     {
-      "title": "Choose how you will manage codes",
-      "desc": " Decide who needs permanent access and who should have temporary permission. Ask whether the selected keypad supports separate users, expiry or time windows. Those functions vary by model.  Avoid one shared code for everyone if you need to remove an individual’s access. Agree who can change settings and how you recover administrator control. "
+      "title": "Wired or wireless",
+      "desc": "A wired keypad is connected by cable to your gate’s control panel and runs off the same power supply. It’s the most reliable option and needs no batteries. If the keypad sits on a post away from the pillar, though, a cable duct has to be laid under the driveway or verge. On a new installation that’s simple to plan in. On a finished block-paved drive it means lifting and relaying a strip of paving. A wireless keypad runs on batteries and sends a coded radio signal to a receiver in the control panel. There’s no digging, so it’s the usual choice when you’re adding a keypad to a gate that’s already installed. Expect to change the batteries roughly every one to two years. On very thick brick pillars or long driveways the signal range needs testing on site first. There’s also the question of where the codes are stored. A standalone keypad stores them itself and is programmed at the keypad. An app-managed keypad lets you add, delete and schedule codes from your phone, which is useful if you’re often away or let the property."
     },
     {
-      "title": "Place the keypad for its users",
-      "desc": " Discuss pedestrian and driver use, reach, lighting and the position relative to moving leaves. Visitors should not need to reach through a gate or stand in its movement path to enter a code.  Confirm the enclosure rating, operating conditions and mounting requirements for the actual product. There is no single weather rating we can promise for every proposed keypad. "
+      "title": "Codes, users and visitors",
+      "desc": "Basic keypads hold a handful of codes. Better models hold hundreds, each one separate, so you can remove the cleaner’s access without changing the code the family uses. Some also support time windows (a code that only works on Tuesday mornings, for example), codes that expire on a set date, and a log of which code was used and when. When we hand the system over, we suggest six-digit codes rather than four. We also suggest a separate code for each regular visitor and a lockout after several wrong entries. We change the installer’s default master code in front of you, so nobody but you can reprogramme the keypad. Codes you give to people outside the household should be changed every so often. Worn buttons on a keypad that’s been used for years can show which numbers are in the code."
     },
     {
-      "title": "Check the gate connection",
-      "desc": " The installer needs to assess the control interface, power, wiring and the existing gate’s condition. Code acceptance requests entry; it does not replace the protective measures needed for powered movement.  Ask what happens after repeated incorrect attempts, loss of power or a controller fault. Agree an authorised alternative for residents and visitors. "
+      "title": "Where the keypad goes",
+      "desc": "For drivers, the keypad goes on a gooseneck post on the driver’s side, at roughly car-window height (about a metre). It’s set back far enough that the car waits clear of the gate while it opens. This matters most with outward-opening swing gates, where the post has to sit beyond the arc of the gate leaves. For people on foot, a keypad on the pillar beside a pedestrian gate at about chest height works well. Many London front gardens are shallow. If there’s no room for a car to pull off the road before the gate, a driver using a keypad ends up waiting across the pavement. In that case a remote or ANPR for residents, with the keypad kept for visitors on foot, is often a better arrangement. If you’re in a conservation area, check our borough planning guides before adding a post to the front of the property. Keypads facing the street need backlit keys for use after dark, a rain hood, and a rating of IP65 or higher for weather sealing. Where vandalism is a concern, look for an impact rating of IK08 or above."
     },
     {
-      "title": "Include setup and handover",
-      "desc": " Request model details, programming, instructions and written support terms. At handover, practise adding and removing a user, replacing the initial codes and recovering access.  Compare  video entry  for visitors you want to speak with and our  delivery-access guide  for couriers. Then  discuss your entrance . "
+      "title": "Adding a keypad to an existing gate",
+      "desc": "Most gate control panels from the main brands (BFT, CAME, FAAC, Nice and others) have an input that a keypad can trigger, so adding one is usually straightforward. On the survey we check that the control panel has a spare input and enough power, we plan the cable or radio route, and we test the gate’s safety devices. A keypad is another way to start the gate moving. It does nothing to stop the gate hitting a person or a car. That’s the job of the photocells and safety edges required under BS EN 12453, and we won’t connect a keypad to a gate that isn’t safe to run automatically. If the power goes off, a keypad on mains power stops working along with the gate, unless the system has battery backup. Make sure everyone who needs to get in knows how to release the gate manually , or has a key to the pedestrian gate."
+    },
+    {
+      "title": "What it costs",
+      "desc": "As a rough guide, a wireless keypad added to an existing automated gate typically costs £250 to £450 fitted. A wired keypad on a gooseneck post, including ducting and making good, usually comes to £500 to £1,000, depending on distance and the surface that has to be cut. App-managed keypads with scheduling and access logs sit at the upper end or above. We give a fixed written price after the survey."
+    },
+    {
+      "title": "Keypad, intercom or phone entry?",
+      "desc": "A keypad suits people you trust to let themselves in. If you want to see and speak to visitors before opening the gate, look at video intercoms . If you’d rather open the gate from your mobile wherever you are, GSM phone entry does that, and many homes combine it with a keypad. For couriers specifically, see our parcel delivery access guide ."
     }
   ],
   "faqs": [
     {
-      "question": "Can delivery codes expire automatically?",
-      "answer": "Some models support expiry or time schedules. Specify that requirement and have the supplier demonstrate it before accepting the configuration."
+      "question": "Can I give a delivery driver or tradesperson a temporary code?",
+      "answer": "Yes, with a keypad that supports timed or expiring codes. You set the code to work for a set period and it stops working after that. Basic standalone keypads can’t do this, so tell us at survey stage if you need it."
     },
     {
-      "question": "How many users can I add?",
-      "answer": "Capacity and whether users have separate codes depend on the selected model. Confirm the limit in the product specification."
+      "question": "How many codes can a keypad hold?",
+      "answer": "It depends on the model. Entry-level keypads hold a few codes, while mid-range and app-managed units hold hundreds, each separate from the others."
     },
     {
-      "question": "Can a keypad be fitted to an existing gate?",
-      "answer": "Compatibility, power, wiring and safe operation need assessment before installation."
+      "question": "What if someone finds out a code?",
+      "answer": "Delete that code or change it. You don’t need to change anyone else’s, as long as each person has their own code. A lockout after repeated wrong entries stops anyone trying codes until one works."
+    },
+    {
+      "question": "Does the keypad work in a power cut?",
+      "answer": "Only if the gate has battery backup. Otherwise use the manual release or the pedestrian gate key until power is restored."
+    },
+    {
+      "question": "Can you fit a keypad to a gate someone else installed?",
+      "answer": "Usually, yes. We check the control panel, the power supply and the gate’s safety devices on the survey first."
     }
   ],
   "imageAlt": "Homeowner entering a PIN on a driveway-gate keypad in London",
-  "updatedDate": "2026-10-02"
+  "updatedDate": "2026-11-07"
 },
   {
   "id": "gsm-phone-entry",

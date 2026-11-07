@@ -24,7 +24,6 @@ export function applyServiceImages(html: string, route: string) {
   const image = (images as Record<string, ServiceImage>)[route];
   if (image) {
     html = html.replace(/<img\b[^>]*class="hero-backdrop"[^>]*>/, tag => imageTag(tag, image));
-    html = html.replace(/(<section class="sub-hero[^>]*>[\s\S]*?<\/section>)/, `$1<p class="service-image-credit">${escape(image.caption)}</p>`);
   }
   return html;
 }

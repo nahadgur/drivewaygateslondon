@@ -47,7 +47,7 @@ for (const [index, article] of articles.entries()) {
   assert.equal((page.main.match(/<img /g) || []).length, 1);
   assert.equal((page.main.match(/class="quote-band"/g) || []).length, 1);
   assert(!/sidebar-quote|related-reading|noindex|localhost/.test(page.main));
-  assert(page.main.includes('Images illustrate styles and are not verified customer installations.'));
+  assert(!page.main.includes('Images illustrate styles and are not verified customer installations.'));
   const draftCopy = applyPublicationLinks(page.main, page.publicationLinks, []);
   assert.equal(draftCopy, page.main, 'Unpublished destinations must stay plain text');
   const firstRelease = applyPublicationLinks(page.main, page.publicationLinks, [articles[0]]);

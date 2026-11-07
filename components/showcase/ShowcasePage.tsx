@@ -8,6 +8,7 @@ import { applyPublicationLinks, preparedArticleCard, type PublicationLink } from
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { EnquiryForm } from './EnquiryForm';
+import { PageEnquiry, takeClosingBanner } from './PageEnquiry';
 import { editorialLayout } from '@/lib/editorial-layout';
 import { businessHoursHtml, renderBusinessServices } from '@/lib/business-profile';
 import { siteConfig } from '@/data/site';
@@ -16,6 +17,7 @@ import { addProjectPhotos, ourWorkContent } from '@/lib/project-photos';
 import { PRICE_BANDS_MARKER, renderPriceBandTable } from '@/lib/price-table';
 import { openFaqs } from '@/lib/faq-open';
 import { applyServiceImages } from '@/lib/service-images';
+import { pointQuoteLinks, serviceForRoute } from '@/lib/quote-links';
 
 type PageTemplate = { className: string; main?: string; hero?: string; methods?: string; after?: string };
 type PreparedTemplate = PageTemplate & { publicationLinks: PublicationLink[] };
@@ -31,7 +33,7 @@ export function ShowcasePage({ route }: { route: string }) {
   let main = page.main ? applyServiceImages(page.main, route) : page.main;
   if (main?.includes(PRICE_BANDS_MARKER)) main = main.replace(PRICE_BANDS_MARKER, renderPriceBandTable());
   if (route === '/services/') {
-    main = main!.replace('<div class="compact-links">', `${renderBusinessServices()}<div class="compact-links">`);
+    main = main!.replace('<!-- business-services -->', renderBusinessServices());
   }
   if (route === `/guides/${securityHub.slug}/`) {
     main = applyPublicationLinks(main!, securityHub.publicationLinks, publishedArticles);
@@ -56,10 +58,17 @@ export function ShowcasePage({ route }: { route: string }) {
   const individualArticle = /^\/(guides|blog)\/[^/]+\/$/.test(route);
   if (individualArticle) main = placeArticleQuoteBanner(main!, route);
   if (main) main = openFaqs(main);
+  const contact = route === '/contact/';
+  const formAnchor = individualArticle ? 'article-enquiry' : 'enquiry';
+  if (main && !contact) main = pointQuoteLinks(main, formAnchor);
+  const quoteHref = contact ? '#quote-form' : `#${formAnchor}`;
+  // Ordinary pages: the closing banner's copy heads the green enquiry section.
+  const closing = !contact && !individualArticle ? takeClosingBanner(main!) : null;
+  if (closing) main = closing.html;
   const home = route === '/';
   return <>
     <div id={home ? 'site-shell' : 'top'} className={`showcase-page ${page.className}${editorial ? ' editorial-page' : ''}`}>
-      <Header />
+      <Header quoteHref={quoteHref} />
       {route === '/contact/' ? <main id="main"><div className="page-wrap">
         <div dangerouslySetInnerHTML={{ __html: page.hero! }} />
         <div className="contact-layout">
@@ -69,14 +78,14 @@ export function ShowcasePage({ route }: { route: string }) {
           <EnquiryForm />
         </div>
         <div dangerouslySetInnerHTML={{ __html: page.after! }} />
-      </div></main> : individualArticle || route === '/our-work/' ? <main id="main">
+      </div></main> : <main id="main">
         <div dangerouslySetInnerHTML={{ __html: main! }} />
-        <section id={individualArticle ? 'article-enquiry' : 'enquiry'} className="article-enquiry" aria-label="Request a driveway gate quote">
-          <EnquiryForm />
-        </section>
-      </main> : <main id="main" dangerouslySetInnerHTML={{ __html: main! }} />}
+        {closing
+          ? <PageEnquiry heading={closing.heading} text={closing.text} initialService={serviceForRoute(route)} />
+          : <PageEnquiry id={formAnchor} heading="Discuss your driveway gates" text="Tell us about your entrance and the work you have in mind." />}
+      </main>}
       <Footer home={home} />
     </div>
-    {route !== '/contact/' && <div dangerouslySetInnerHTML={{ __html: shared.enquiry }} />}
+    {!contact && <div dangerouslySetInnerHTML={{ __html: pointQuoteLinks(shared.enquiry, formAnchor) }} />}
   </>;
 }

@@ -20,8 +20,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const image = serviceImage(`/services/${service.slug}/`);
   const intent = serviceIntent(service.slug, 'London');
-  const title = fitTitle(`${service.title} in London`, [intent?.titleSuffix ?? 'Installation, Free Quotes', 'Free Quotes']);
-  const description = intent?.description ?? (service.reviewedFaqs ? (service.metaDescription ?? service.description) : `${service.title} installation across London. We design, supply and install ourselves. Free site survey and written quote, no obligation.`);
+  const title = service.headline
+    ? fitTitle(service.headline, ['Free Quotes'])
+    : fitTitle(`${service.title} in London`, [intent?.titleSuffix ?? 'Installation, Free Quotes', 'Free Quotes']);
+  const description = service.metaDescription ?? intent?.description ?? (service.reviewedFaqs ? service.description : `${service.title} installation across London. We design, supply and install ourselves. Free site survey and written quote, no obligation.`);
   const url = `${siteConfig.url}/services/${service.slug}/`;
 
   return {

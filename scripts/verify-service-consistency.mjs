@@ -31,16 +31,16 @@ function verify(html, route) {
     assert(!hero.includes('aria-hidden="true"'), `${route}: meaningful image hidden`);
     assert(html.includes(`property="og:image" content="https://www.drivewaygateslondon.co.uk${image.src}"`), `${route}: OG differs`);
     assert(html.includes(`property="og:image:alt" content="${escape(image.alt)}"`), `${route}: OG alt differs`);
-    assert(visible.includes(image.caption), `${route}: provenance missing`);
+    assert(!visible.includes(image.caption), `${route}: image disclaimer should not be shown`);
   }
   if (/\/services\/(gate-repair-and-maintenance|gate-automation-kits)\//.test(route)) {
     assert(!visible.includes('Design, Supply &amp; Install') && !visible.includes('We Install Across London'));
     assert(!visible.includes('gate is designed, fabricated, and delivered'));
     assert(!/<title>[^<]*\| Installation, Free Quotes<\/title>/.test(html));
     if (/gate-repair-and-maintenance/.test(route)) {
-      assert(visible.includes('Fault Investigation, Repairs &amp; Servicing'));
+      assert(visible.includes('We repair and service swing and sliding gates'));
       assert(!visible.includes('Free site survey and written quote. No pressure, no obligation.'));
-    } else assert(visible.includes('Automation for Existing Gates'));
+    } else assert(visible.includes('We automate existing driveway gates'));
   }
 }
 let count = 0;

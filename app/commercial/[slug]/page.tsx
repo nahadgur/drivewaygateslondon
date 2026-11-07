@@ -18,7 +18,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!service) return {};
 
   const image = serviceImage(`/commercial/${service.slug}/`);
-  const title = fitTitle(`${service.title} in London`, ['Commercial Gate Specialists', 'Commercial Gates']);
+  const title = service.headline
+    ? fitTitle(service.headline, ['Free Quotes'])
+    : fitTitle(`${service.title} in London`, ['Commercial Gate Specialists', 'Commercial Gates']);
   const description = service.metaDescription;
   const url = `${siteConfig.url}/commercial/${service.slug}/`;
 

@@ -6,6 +6,8 @@ export interface FAQ {
 export interface Service {
   id: string;
   title: string;
+  /** Page title-tag phrase when it differs from the card title. */
+  headline?: string;
   slug: string;
   description: string;
   /** Shorter search-result description when `description` exceeds ~160 characters. */
@@ -160,36 +162,35 @@ export const services: Service[] = [
   {
     id: 'gate-repair',
     title: 'Gate Repair and Maintenance',
+    headline: 'Electric Gate Repair and Servicing in London',
+    metaDescription: "Electric gate repair and servicing in London for all main brands, including gates we didn't install. Common faults, what a service includes and typical costs.",
     slug: 'gate-repair-and-maintenance',
     description: "Electric gate fault diagnosis, repairs and maintenance in London. Discuss the fault, existing equipment and inspection scope before arranging work.",
     image: '/images/gates/gate-swing-open-night-stone-pillars-drive.png',
     icon: 'Users',
     color: 'rose',
     reviewedFaqs: true,
+    updatedDate: '2026-11-07',
     faqs: [
       {
-            "question": "How often should driveway gates be serviced?",
-            "answer": "Follow the maintenance and inspection schedule for the installed system, taking account of its use, condition and environment. Ask a competent contractor to confirm the appropriate tasks and intervals. Keep service records and check the actual warranty conditions rather than assuming a fixed interval guarantees cover."
+            "question": "Can you repair a gate another company installed?",
+            "answer": "Yes. Gates from the mainstream manufacturers are straightforward to work on. Unbranded or discontinued systems can be harder to get parts for. In that case we’ll tell you which parts can still be repaired and which need replacing."
       },
       {
-            "question": "My gate is making a grinding noise. What should I do?",
-            "answer": "Stop using the faulty gate and keep people clear of its movement area. Describe the sound and behaviour to a competent gate contractor. Do not force the gate, open electrical enclosures or attempt a generic manual-release procedure; obtain instructions specific to the installation and its condition."
+            "question": "How quickly can you come out?",
+            "answer": "We prioritise gates that are stuck open or trapping a car in or out. Tell us when you call if that’s your situation."
       },
       {
-            "question": "Can another company repair my gates?",
-            "answer": "A competent contractor may be able to assess equipment installed by another company. Acceptance depends on the installation, available records, parts support and the work required. Supply those details when enquiring and agree the inspection scope before booking."
+            "question": "How long does a repair take?",
+            "answer": "Most faults are fixed in a single visit of one to three hours. If a specific part has to be ordered, the gate can usually be left safely in manual mode while you wait, typically a few working days."
       },
       {
-            "question": "How much will the work cost?",
-            "answer": "Request an itemised quotation after the installation has been assessed. Ask which parts, labour, electrical work, access controls and making-good work it includes. Agree any inspection charge and the process for approving additional work before booking."
+            "question": "My gate is making a grinding noise. Should I keep using it?",
+            "answer": "No. Stop using it on automatic and book a repair. Grinding usually means worn gears or a misaligned drive, and running it on tends to turn a part replacement into a new motor."
       },
       {
-            "question": "How long will the work take?",
-            "answer": "Ask for a schedule based on the surveyed entrance, the proposed work and confirmed parts availability. Agree how you will manage access if the gates cannot return to service during the first visit."
-      },
-      {
-            "question": "What warranty applies?",
-            "answer": "Request the written warranty terms for the quoted equipment and workmanship before accepting. Check the duration, exclusions, attendance charges and any servicing conditions. Retained equipment may have different cover from newly fitted parts."
+            "question": "What warranty do repairs carry?",
+            "answer": "New parts carry the manufacturer’s warranty and our workmanship is guaranteed in writing. Parts of the system we haven’t replaced aren’t covered by that guarantee, and the report will say which those are."
       }
 ],
   },
@@ -197,36 +198,34 @@ export const services: Service[] = [
   {
     id: 'gate-automation-kits',
     title: 'Gate Automation (Retrofit)',
+    headline: 'Gate Automation for Existing Gates in London',
     slug: 'gate-automation-kits',
     description: "Explore automation for existing driveway gates in London. A site assessment determines whether the gates, supports and surrounding layout are suitable for powered operation.",
     image: '/images/gates/gate-aluminium-sliding-modern-dark-brick-2.png',
     icon: 'Zap',
     color: 'indigo',
     reviewedFaqs: true,
+    updatedDate: '2026-11-07',
     faqs: [
       {
             "question": "Can any manual gate be automated?",
-            "answer": "Suitability requires a site-specific assessment of the gates, supports, movement and surrounding layout. A motor cannot compensate for defective structures or an unsuitable design. Ask the installer to explain any repair, alteration or replacement needed before automation."
+            "answer": "Many can, but not all. The gates need to be straight, move freely by hand and hang on hinges and posts strong enough for a motor. We check this on the survey and tell you what needs repairing first."
       },
       {
-            "question": "What should the automation quotation include?",
-            "answer": "Ask for the proposed motors, controls, access equipment and protective measures, together with necessary electrical and structural work. The specification should explain compatibility and the assessment of the complete powered gate. A standard kit or a pair of photocells alone does not establish that the finished installation is safe."
+            "question": "How much does it cost to automate existing gates?",
+            "answer": "Typically £1,200 to £3,500 for the motors, safety devices and remotes. Structural repairs, long cable runs, underground motors and access control add to that. You get a fixed written price after the survey."
       },
       {
-            "question": "Can I retain my existing intercom?",
-            "answer": "Ask the installer to check the intercom model and its compatibility with the proposed controller. Establish which functions can be retained, what needs replacing and who will manage programming or account access."
+            "question": "How long does the installation take?",
+            "answer": "Usually one to two days on site once the parts are in. If groundwork or repairs are needed first, we set out the programme in the quote."
       },
       {
-            "question": "How much will the work cost?",
-            "answer": "Request an itemised quotation after the installation has been assessed. Ask which parts, labour, electrical work, access controls and making-good work it includes. Agree any inspection charge and the process for approving additional work before booking."
+            "question": "Can I keep my existing intercom or keypad?",
+            "answer": "Often, if it can trigger the new control panel. We check the model on the survey and tell you what can stay and what needs replacing."
       },
       {
-            "question": "How long will the work take?",
-            "answer": "Ask for a schedule based on the surveyed entrance, the proposed work and confirmed parts availability. Agree how you will manage access if the gates cannot return to service during the first visit."
-      },
-      {
-            "question": "What warranty applies?",
-            "answer": "Request the written warranty terms for the quoted equipment and workmanship before accepting. Check the duration, exclusions, attendance charges and any servicing conditions. Retained equipment may have different cover from newly fitted parts."
+            "question": "What happens in a power cut?",
+            "answer": "Every gate we automate has a manual release, and we show you how to use it at handover. Many 24V motors can also run on battery backup for a limited number of cycles."
       }
 ],
   },

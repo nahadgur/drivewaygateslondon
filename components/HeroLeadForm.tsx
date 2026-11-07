@@ -29,6 +29,7 @@ const SLUG_TO_GATE_TYPE: Record<string, string> = {
   'hardwood-driveway-gates': 'Hardwood Gates',
   'wrought-iron-gates': 'Metal / Wrought Iron Gates',
   'pedestrian-side-gates': 'Pedestrian / Side Gates',
+  'access-control': 'Access Control System',
 };
 export const gateTypeForSlug = (slug?: string): string => (slug ? SLUG_TO_GATE_TYPE[slug] ?? '' : '');
 

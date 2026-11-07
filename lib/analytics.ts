@@ -41,7 +41,7 @@ function send(name: string, parameters: Record<string, string>) {
   } catch { /* Analytics must never prevent an enquiry or a phone call. */ }
 }
 
-export function trackEnquiry(formId: 'contact_enquiry' | 'hero_enquiry' | 'modal_enquiry') {
+export function trackEnquiry(formId: 'contact_enquiry' | 'hero_enquiry' | 'modal_enquiry' | 'page_enquiry') {
   send('generate_lead', { form_id: formId, lead_source: 'website_enquiry' });
 }
 

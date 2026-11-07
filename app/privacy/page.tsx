@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { PageEnquiry } from '@/components/showcase/PageEnquiry';
 import { siteConfig } from '@/data/site';
 
 export const metadata: Metadata = {
@@ -28,7 +29,7 @@ function LegalH2({ n, children }: { n: string; children: React.ReactNode }) {
 export default function PrivacyPage() {
   return (
     <div id="top" className="showcase-page subpage tone-forest privacy-page">
-      <Header />
+      <Header quoteHref="#enquiry" />
 
       <main id="main">
         <div className="page-wrap"><section className="sub-hero">
@@ -45,7 +46,7 @@ export default function PrivacyPage() {
               <p>
                 This website, Driveway Gates London (drivewaygateslondon.co.uk), operates under
                 the trading name &apos;Driveway Gates London&apos;. We design, supply and install
-                driveway gates across Greater London. For any data protection request, <Link href="/contact/">contact us using our enquiry form</Link> and we will respond
+                driveway gates across Greater London. For any data protection request, <a href="#enquiry">contact us using our enquiry form</a> and we will respond
                 with a named contact.
               </p>
 
@@ -116,7 +117,7 @@ export default function PrivacyPage() {
               </ul>
               <p>
                 To exercise any of these rights, {' '}
-                <Link href="/contact/">contact us using our enquiry form</Link>. We will respond within
+                <a href="#enquiry">contact us using our enquiry form</a>. We will respond within
                 one month.
               </p>
 
@@ -148,7 +149,7 @@ export default function PrivacyPage() {
               <p>
                 Questions about this privacy policy or about how we handle your data:
                 <br />
-                <Link href="/contact/">contact us using our enquiry form</Link>
+                <a href="#enquiry">contact us using our enquiry form</a>
               </p>
 
               <div className="mt-12 pt-6 border-t border-brand-100 flex gap-6 text-[13px]">
@@ -158,6 +159,7 @@ export default function PrivacyPage() {
             </div>
           </div>
         </section>
+        <PageEnquiry heading="Discuss your driveway gates" text="Tell us about your entrance and the work you have in mind." />
       </main>
 
       <Footer />
