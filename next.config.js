@@ -107,6 +107,8 @@ const nextConfig = {
       { source: '/services/:service(electric-sliding-gates|electric-swing-gates|wooden-driveway-gates|metal-driveway-gates|automated-gate-systems|gate-automation-kits|aluminium-driveway-gates|composite-driveway-gates|hardwood-driveway-gates|wrought-iron-gates|pedestrian-side-gates)/:town/', destination: '/location/:town/#:service', permanent: true },
       { source: '/services/gate-repair-and-maintenance/:town/', destination: '/location/:town/#repairs', permanent: true },
       { source: '/services/commercial-gates/:town/', destination: '/commercial/', permanent: true },
+      // 10 November 2026: the commercial service page duplicated the /commercial/ hub.
+      { source: '/services/commercial-gates/', destination: '/commercial/', permanent: true },
     ];
   },
 };

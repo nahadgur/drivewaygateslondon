@@ -294,41 +294,6 @@
       }
     ]
   },
-  "commercial-gates": {
-    "description": "Commercial gate and access-control installation in London. Plan vehicle movement, pedestrian access, operating frequency and maintenance around how your site works.",
-    "sections": [
-      [
-        "Start with the way your site operates",
-        "<p>Record the vehicles using the entrance, busiest arrival periods, opening hours and who authorises access. Include deliveries, visitors and staff on foot. Those requirements help establish whether a gate, barrier or separate pedestrian route suits the site.</p><p>Our <a href=\"/commercial/\">commercial gate directory</a> covers industrial gates, school entrances, car-park barriers and heavy-duty sliding systems. Use it to find the service closest to your project.</p>"
-      ],
-      [
-        "Specify the whole entrance",
-        "<p>Discuss clearances, swept paths, queueing space, supports, power and access equipment during the survey. The proposed system needs to suit the expected pattern of use; a residential product description alone is not a commercial specification.</p><p>Confirm how staff manage credentials, how visitors request entry and how authorised people gain access when equipment fails. Keep emergency access and pedestrian movement in the site assessment.</p>"
-      ],
-      [
-        "Agree responsibilities and handover",
-        "<p>Name the person responsible for the gate after installation and agree the training, instructions and records they will receive. Include maintenance arrangements and the procedure for taking faulty equipment out of use. HSE sets out <a href=\"https://www.hse.gov.uk/work-equipment-machinery/powered-gates/responsibilities.htm\" target=\"_blank\" rel=\"noopener noreferrer\">responsibilities for powered gates</a>.</p>"
-      ],
-      [
-        "Compare commercial quotations",
-        "<p>Compare the gate or barrier specification, civil work, power, access controls, commissioning, handover and maintenance provision. Ask the contractor to identify exclusions, working-hour restrictions and any work required from other trades. Agree the acceptance and payment stages before installation.</p><p>For an existing faulty entrance, use our <a href=\"/services/gate-repair-and-maintenance/\">gate repair service</a>. For a new project, <a href=\"/contact/?gate=commercial-gates\">send your site requirements</a> to discuss the next step.</p>"
-      ]
-    ],
-    "faqs": [
-      {
-        "question": "How do I choose a commercial gate system?",
-        "answer": "Assess the vehicles, pedestrians, operating frequency, security needs, site layout and access arrangements together. Specify the equipment after that assessment rather than choosing by opening width alone."
-      },
-      {
-        "question": "Can you include access controls?",
-        "answer": "Discuss the required intercom, keypad, phone-entry or number-plate system alongside the gate. Confirm compatibility, power, connectivity and any subscription or administration requirements in the quotation."
-      },
-      {
-        "question": "Who looks after the gate once installed?",
-        "answer": "Agree a responsible person, handover records and maintenance arrangements before completion. Workplace gate owners and those responsible for the premises should understand their responsibilities and fault-reporting procedure."
-      }
-    ]
-  },
   "electric-sliding-gates": {
     "description": "Electric sliding gates designed around your London driveway, side space, supports and access requirements.",
     "sections": [

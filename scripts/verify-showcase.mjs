@@ -7,7 +7,7 @@ const shared=JSON.parse(readFileSync(join(root,'data/showcase/shared.json'),'utf
 const manifest=JSON.parse(readFileSync(join(root,'.next/prerender-manifest.json'),'utf8'));
 const known=new Set(Object.keys(manifest.routes).map(route=>route.replace(/\/$/,'')||'/'));
 const preview=process.argv[2];
-// Existing fallback routes, such as commercial-gates, render on demand.
+// Any route not prerendered must still render on demand.
 for(const route of Object.keys(pages)){
  const normalized=route.replace(/\/$/,'')||'/';
  if(known.has(normalized))continue;
@@ -62,7 +62,7 @@ function verifyArea(html,route){
 }
 for(const [route] of areaRoutes)verifyArea(readFileSync(join(root,'.next/server/app',route+'.html'),'utf8'),route);
 if(preview){
- for(const [from,to] of [['/services/electric-sliding-gates/hornchurch/','/location/hornchurch/#electric-sliding-gates'],['/services/gate-repair-and-maintenance/barnet/','/location/barnet/#repairs'],['/services/commercial-gates/hornchurch/','/commercial/']]){
+ for(const [from,to] of [['/services/electric-sliding-gates/hornchurch/','/location/hornchurch/#electric-sliding-gates'],['/services/gate-repair-and-maintenance/barnet/','/location/barnet/#repairs'],['/services/commercial-gates/hornchurch/','/commercial/'],['/services/commercial-gates/','/commercial/']]){
   const response=await fetch(new URL(from,preview),{redirect:'manual'});
   assert.equal(response.status,308,from+' must redirect permanently');
   assert.equal(new URL(response.headers.get('location'),preview).href,new URL(to,preview).href,from+' redirect target');
