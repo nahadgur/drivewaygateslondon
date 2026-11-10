@@ -22,50 +22,88 @@ const accessControlEntries: AccessControlService[] = [
   "id": "video-intercoms",
   "slug": "video-intercoms",
   "title": "Video Intercom Systems",
-  "metaTitle": "Video Intercom Systems | Driveway Gates London",
-  "metaDescription": "See and speak to visitors through a video-entry system specified for your gate, network and household.",
+  "headline": "Video Intercoms for Gates in London",
+  "metaTitle": "Video Intercoms for Gates in London | Driveway Gates London",
+  "metaDescription": "Video intercoms for gates in London: see and speak to visitors from a monitor or your phone, two-wire, IP and 4G systems, cabling, recording and costs.",
   "description": "See and speak to visitors through a video-entry system specified for your gate, network and household.",
   "image": "/showcase/assets/content/video-intercoms-dd5d897.webp",
   "intro": [
-    " Discuss indoor monitors, phones and the people who need to answer. Confirm whether you need live video only, recordings or gate-position feedback. These functions vary by product and configuration.  Ask to see the proposed call and release sequence, including what happens when nobody answers. Plan deliveries and pedestrian access alongside vehicle entry. ",
-    " Survey power, cable routes, camera position, lighting and the required network connection. App access may depend on broadband or a mobile service as well as power at the entrance.  Confirm the exact interface with the gate controller. An intercom is not automatically compatible with every existing motor or control board. Changes need assessment and commissioning with the complete entrance. ",
-    " Agree who owns the administrator account, how residents are added and removed, and how recovery works. Confirm subscriptions, storage, recording settings and any remote-access charges.  Position cameras with neighbouring property and the public area in mind. Ask what privacy controls apply and obtain advice on the responsibilities of the operator where needed. ",
-    " Use our  intercom buying guide  and  documented product comparison . Confirm offered brands and model availability in your quotation.  Send photographs and any safely accessible equipment details when you  discuss your entrance . Include installation, programming, user training and support in the agreed scope. "
+    "A visitor presses the call button on a panel at the gate. The panel has a camera, microphone and speaker. The call rings on one or more screens inside the house and, on most modern systems, on your phone through an app. You see and speak to the visitor, then press a button to open the driveway gate, the pedestrian gate or both. The intercom simply tells the gate’s control panel to open, just like a remote. The gate’s own safety devices still control how it moves.",
+    "Two-wire systems send video, audio and power along a single pair of cables. They’re robust and reliable over long distances, often more than 100 metres, which suits long drives. They’re also ideal where an old intercom cable already runs from the gate to the house and can be reused. Comelit, Videx and Fermax all make well-regarded two-wire ranges. Many now add app calling through a gateway unit. IP systems run over network cable, usually a single external-grade Cat6 cable carrying data and power (Power over Ethernet) up to about 100 metres. They give the sharpest video, app calling, multiple monitors, recording and easy integration with CCTV, and are increasingly the default for new installations. Hikvision, Akuvox, 2N and DoorBird are common choices. Wireless and Wi-Fi systems avoid digging a cable trench, but a gate is often 20 to 50 metres from the house, sometimes behind brick walls and metal gates. Home Wi-Fi rarely reaches reliably. Where trenching isn’t practical, a point-to-point wireless link (a pair of small dishes) is far more dependable than Wi-Fi. For gates with no cable route at all, a 4G video intercom works over the mobile network instead. See GSM phone entry .",
+    "Most of the work in a video intercom installation is the cable route. The cable runs in a duct, usually under the drive or along a boundary, from the gate to the point where it enters the house. If you’re having the drive relaid or new gates installed, put the duct in then. It costs far less than lifting paving later. We survey the route, check any existing cables and agree where the indoor monitor and network connection will go before quoting.",
+    "Choose an external panel built for life outdoors on a street. It should be weatherproof (IP65 or better) and vandal-resistant, with a wide-angle camera, infrared night vision so you can see faces after dark, and wide dynamic range so a visitor isn’t just a silhouette against bright sky or headlights. Panels can include a keypad or fob reader, so the same unit handles visitors and residents. Mount the panel at around 1.4 to 1.5 metres for people on foot. For drivers, fit a second panel on a gooseneck post at car-window height, or mount it where the driver can reach it without leaving the car or stopping across the pavement. On commercial sites, a third panel at lorry-cab height is common. See car park barriers .",
+    "Indoor monitors range from simple 4 or 7-inch screens to 10-inch touchscreens that can also show CCTV cameras. You can have several, such as one in the kitchen, one upstairs and one in a home office, and they can all ring together or in sequence. Monitors can also act as an internal intercom between rooms.",
+    "App calling forwards the call to your phone, so you can let in a delivery driver or cleaner while you’re out. It relies on the gate panel having a network connection and your phone getting the notification. Expect a few seconds’ delay compared with an indoor monitor, and make sure the system will still ring the indoor monitor if your broadband goes down. Some apps need a subscription for remote access or cloud recordings. We’ll tell you exactly what’s included before you buy.",
+    "The intercom connects to the gate’s control panel to open the gate. It can also connect to a second relay for an electric lock on a pedestrian gate . Most modern gate control panels from the main manufacturers accept an intercom without difficulty. Older or unusual ones sometimes need an interface or an upgrade, which we check at survey. If you want the intercom to show whether the gate is actually open or closed, that needs a gate position sensor wired back to the intercom, and not every system supports it.",
+    "Many systems save a snapshot or short video clip each time someone calls, either on a memory card in the monitor, on a recorder or in the cloud. That’s useful for checking deliveries and visitors you missed. If the camera captures images beyond your property, such as the street or a neighbour’s house, data protection law applies even at home. The ICO’s guidance on domestic CCTV explains your responsibilities. We angle cameras to cover the visitor, not the pavement opposite, and many panels let you mask out areas you don’t want recorded.",
+    "As a rough guide, a two-wire video intercom with one indoor monitor, connected to an existing gate, typically costs £900 to £2,000 installed. IP systems with app calling and multiple monitors usually cost £1,500 to £3,500. Premium panels with integrated keypads, fob readers and high-end cameras run £2,500 to £5,000. Trenching, ducting and reinstating the drive are itemised separately, and any app or cloud subscriptions are shown in the quote. Our intercom buying guide and Comelit vs Hikvision comparison go into the brands in more detail."
   ],
   "benefits": [
     {
-      "title": "Choose where calls should ring",
-      "desc": " Discuss indoor monitors, phones and the people who need to answer. Confirm whether you need live video only, recordings or gate-position feedback. These functions vary by product and configuration.  Ask to see the proposed call and release sequence, including what happens when nobody answers. Plan deliveries and pedestrian access alongside vehicle entry. "
+      "title": "How it works",
+      "desc": "A visitor presses the call button on a panel at the gate. The panel has a camera, microphone and speaker. The call rings on one or more screens inside the house and, on most modern systems, on your phone through an app. You see and speak to the visitor, then press a button to open the driveway gate, the pedestrian gate or both. The intercom simply tells the gate’s control panel to open, just like a remote. The gate’s own safety devices still control how it moves."
     },
     {
-      "title": "Check the site connection",
-      "desc": " Survey power, cable routes, camera position, lighting and the required network connection. App access may depend on broadband or a mobile service as well as power at the entrance.  Confirm the exact interface with the gate controller. An intercom is not automatically compatible with every existing motor or control board. Changes need assessment and commissioning with the complete entrance. "
+      "title": "Types of system",
+      "desc": "Two-wire systems send video, audio and power along a single pair of cables. They’re robust and reliable over long distances, often more than 100 metres, which suits long drives. They’re also ideal where an old intercom cable already runs from the gate to the house and can be reused. Comelit, Videx and Fermax all make well-regarded two-wire ranges. Many now add app calling through a gateway unit. IP systems run over network cable, usually a single external-grade Cat6 cable carrying data and power (Power over Ethernet) up to about 100 metres. They give the sharpest video, app calling, multiple monitors, recording and easy integration with CCTV, and are increasingly the default for new installations. Hikvision, Akuvox, 2N and DoorBird are common choices. Wireless and Wi-Fi systems avoid digging a cable trench, but a gate is often 20 to 50 metres from the house, sometimes behind brick walls and metal gates. Home Wi-Fi rarely reaches reliably. Where trenching isn’t practical, a point-to-point wireless link (a pair of small dishes) is far more dependable than Wi-Fi. For gates with no cable route at all, a 4G video intercom works over the mobile network instead. See GSM phone entry ."
     },
     {
-      "title": "Keep control of accounts and recordings",
-      "desc": " Agree who owns the administrator account, how residents are added and removed, and how recovery works. Confirm subscriptions, storage, recording settings and any remote-access charges.  Position cameras with neighbouring property and the public area in mind. Ask what privacy controls apply and obtain advice on the responsibilities of the operator where needed. "
+      "title": "Getting the signal to the house",
+      "desc": "Most of the work in a video intercom installation is the cable route. The cable runs in a duct, usually under the drive or along a boundary, from the gate to the point where it enters the house. If you’re having the drive relaid or new gates installed, put the duct in then. It costs far less than lifting paving later. We survey the route, check any existing cables and agree where the indoor monitor and network connection will go before quoting."
     },
     {
-      "title": "Compare the specified equipment",
-      "desc": " Use our  intercom buying guide  and  documented product comparison . Confirm offered brands and model availability in your quotation.  Send photographs and any safely accessible equipment details when you  discuss your entrance . Include installation, programming, user training and support in the agreed scope. "
+      "title": "The gate panel",
+      "desc": "Choose an external panel built for life outdoors on a street. It should be weatherproof (IP65 or better) and vandal-resistant, with a wide-angle camera, infrared night vision so you can see faces after dark, and wide dynamic range so a visitor isn’t just a silhouette against bright sky or headlights. Panels can include a keypad or fob reader, so the same unit handles visitors and residents. Mount the panel at around 1.4 to 1.5 metres for people on foot. For drivers, fit a second panel on a gooseneck post at car-window height, or mount it where the driver can reach it without leaving the car or stopping across the pavement. On commercial sites, a third panel at lorry-cab height is common. See car park barriers ."
+    },
+    {
+      "title": "Inside the house",
+      "desc": "Indoor monitors range from simple 4 or 7-inch screens to 10-inch touchscreens that can also show CCTV cameras. You can have several, such as one in the kitchen, one upstairs and one in a home office, and they can all ring together or in sequence. Monitors can also act as an internal intercom between rooms."
+    },
+    {
+      "title": "Answering on your phone",
+      "desc": "App calling forwards the call to your phone, so you can let in a delivery driver or cleaner while you’re out. It relies on the gate panel having a network connection and your phone getting the notification. Expect a few seconds’ delay compared with an indoor monitor, and make sure the system will still ring the indoor monitor if your broadband goes down. Some apps need a subscription for remote access or cloud recordings. We’ll tell you exactly what’s included before you buy."
+    },
+    {
+      "title": "Linking to the gate",
+      "desc": "The intercom connects to the gate’s control panel to open the gate. It can also connect to a second relay for an electric lock on a pedestrian gate . Most modern gate control panels from the main manufacturers accept an intercom without difficulty. Older or unusual ones sometimes need an interface or an upgrade, which we check at survey. If you want the intercom to show whether the gate is actually open or closed, that needs a gate position sensor wired back to the intercom, and not every system supports it."
+    },
+    {
+      "title": "Recording and privacy",
+      "desc": "Many systems save a snapshot or short video clip each time someone calls, either on a memory card in the monitor, on a recorder or in the cloud. That’s useful for checking deliveries and visitors you missed. If the camera captures images beyond your property, such as the street or a neighbour’s house, data protection law applies even at home. The ICO’s guidance on domestic CCTV explains your responsibilities. We angle cameras to cover the visitor, not the pavement opposite, and many panels let you mask out areas you don’t want recorded."
+    },
+    {
+      "title": "Rough costs of video intercom systems in London",
+      "desc": "As a rough guide, a two-wire video intercom with one indoor monitor, connected to an existing gate, typically costs £900 to £2,000 installed. IP systems with app calling and multiple monitors usually cost £1,500 to £3,500. Premium panels with integrated keypads, fob readers and high-end cameras run £2,500 to £5,000. Trenching, ducting and reinstating the drive are itemised separately, and any app or cloud subscriptions are shown in the quote. Our intercom buying guide and Comelit vs Hikvision comparison go into the brands in more detail."
     }
   ],
   "faqs": [
     {
       "question": "Can a video intercom work with my existing gate?",
-      "answer": "The installer needs to check the existing controller, wiring, condition and proposed interface. Compatibility cannot be promised from the motor brand alone."
+      "answer": "Almost always, with modern gate control panels. Older or unusual control panels sometimes need an interface. We check the make and model at survey."
     },
     {
-      "question": "Can I answer remotely?",
-      "answer": "Some configurations support remote calls through an app. Confirm the required connection, account, charges and failure arrangements for the specified model."
+      "question": "Can I answer the gate from my phone?",
+      "answer": "Yes, with an IP system or a two-wire system with an app gateway. You’ll need broadband at the house (or a 4G intercom), and some apps charge a subscription."
     },
     {
-      "question": "Does every system record visitors?",
-      "answer": "No. Recording, event logs, storage and subscriptions vary. Request the exact functions and privacy settings."
+      "question": "Do I need a cable from the gate to the house?",
+      "answer": "For the most reliable system, yes, run in a duct. Where that’s not possible, a point-to-point wireless link or a 4G intercom are good alternatives. Home Wi-Fi usually isn’t reliable enough."
+    },
+    {
+      "question": "Can I reuse my old intercom cable?",
+      "answer": "Often, with a two-wire system designed for exactly that. We test the existing cable first."
+    },
+    {
+      "question": "Does it record visitors?",
+      "answer": "Many systems save a snapshot or clip for every call. Continuous recording usually needs a CCTV recorder. Check which you’re getting before you buy."
+    },
+    {
+      "question": "Can it open a pedestrian gate too?",
+      "answer": "Yes. Most intercoms have two outputs, one for the driveway gate and one for a pedestrian gate lock."
     }
   ],
   "imageAlt": "Homeowner speaking to a visitor through a driveway-gate video intercom",
-  "updatedDate": "2026-10-02"
+  "updatedDate": "2026-11-09"
 },
   {
   "id": "keypad-entry-systems",
@@ -102,7 +140,7 @@ const accessControlEntries: AccessControlService[] = [
       "desc": "Most gate control panels from the main brands (BFT, CAME, FAAC, Nice and others) have an input that a keypad can trigger, so adding one is usually straightforward. On the survey we check that the control panel has a spare input and enough power, we plan the cable or radio route, and we test the gate’s safety devices. A keypad is another way to start the gate moving. It does nothing to stop the gate hitting a person or a car. That’s the job of the photocells and safety edges required under BS EN 12453, and we won’t connect a keypad to a gate that isn’t safe to run automatically. If the power goes off, a keypad on mains power stops working along with the gate, unless the system has battery backup. Make sure everyone who needs to get in knows how to release the gate manually , or has a key to the pedestrian gate."
     },
     {
-      "title": "What it costs",
+      "title": "Cost of keypad entry for electric gates in London",
       "desc": "As a rough guide, a wireless keypad added to an existing automated gate typically costs £250 to £450 fitted. A wired keypad on a gooseneck post, including ducting and making good, usually comes to £500 to £1,000, depending on distance and the surface that has to be cut. App-managed keypads with scheduling and access logs sit at the upper end or above. We give a fixed written price after the survey."
     },
     {
@@ -139,102 +177,175 @@ const accessControlEntries: AccessControlService[] = [
   "id": "gsm-phone-entry",
   "slug": "gsm-phone-entry",
   "title": "GSM Phone Entry Systems",
-  "metaTitle": "GSM Phone Entry Systems | Driveway Gates London",
-  "metaDescription": "Phone-based gate entry with the device, signal, SIM plan and user permissions checked for your entrance.",
+  "headline": "GSM Phone Entry for Gates in London",
+  "metaTitle": "GSM Phone Entry for Gates in London | Driveway Gates London",
+  "metaDescription": "GSM phone entry for gates in London: 4G openers and intercoms that open your gate from any mobile, user management, SIM costs, signal checks and prices.",
   "description": "Phone-based gate entry with the device, signal, SIM plan and user permissions checked for your entrance.",
   "image": "/showcase/assets/content/gsm-phone-entry-f32fe18.webp",
   "intro": [
-    " Discuss whether you want authorised callers to request opening, a visitor intercom that calls residents, or both. Ask how the proposed system identifies a caller and what happens if nobody answers.  A phone command does not confirm physical gate position. Agree how the household recognises a failed opening and how visitors obtain help. ",
-    " Identify the exact device and the voice, SMS or data services it needs. Check the SIM provider’s requirements, tariff and account-expiry conditions. Calls or messages should not be described as universally free.  Read  Ofcom’s mobile-network retirement guidance  and obtain product-specific support information. The word GSM is often used for phone entry generally; confirm which network technology the proposed unit actually uses. ",
-    " Test the proposed service at the equipment location. Plan the power supply, antenna and cable route. A phone on a different network is not a complete signal test for the installation.  Phone entry may avoid dependence on home Wi-Fi, but it still depends on its own network, equipment and power. Agree a fallback for outages and confirm any backup maintenance. ",
-    " Record who owns the SIM and administrator account. Demonstrate adding and removing users using the supplied instructions. Confirm recurring charges and how support handles a change of phone number or ownership.  Read the  phone-entry buying checklist  or compare  intercom options  before you  discuss your entrance . "
+    "A GSM gate opener is a small unit wired into the gate’s control panel. You store a list of authorised phone numbers in it. When one of those numbers calls the unit, it recognises the caller ID, rejects the call and opens the gate. The call is never answered, so it normally costs the caller nothing. Calls from unknown numbers are ignored. It’s the simplest and cheapest way to give lots of people keyless access. A GSM intercom adds a call panel at the gate for visitors. When someone presses the button, the unit rings your mobile (and then other numbers in turn if you don’t answer). You talk to the visitor and press a key on your phone to open the gate. Most GSM intercoms also work as an opener for authorised numbers. Video versions send a live picture to an app on your phone; see video intercoms .",
+    "Depending on the model, a GSM unit holds anywhere from a few hundred to several thousand phone numbers. Better units let you restrict numbers to set days and times (a cleaner on Tuesday mornings only), set numbers to expire on a date, and keep a log of who opened the gate and when. Most are managed by text message, a phone app or a web portal, so you can add or remove someone in seconds from wherever you are. When a carer or tenant leaves, you delete their number and their access stops immediately. Some units can also tell you whether the gate actually opened. They do this by connecting to the gate’s position sensor and texting you a confirmation. That’s worth having if you open the gate remotely for deliveries and can’t see it.",
+    "“GSM” originally meant the 2G mobile network, and many gate units still run on it. UK networks have now switched off 3G, and 2G will follow. The government’s agreement with the operators keeps 2G running until 2033 at the latest, but some services may wind down sooner. A unit bought today should be a 4G model, ideally one that supports voice calls over 4G (VoLTE), so it isn’t left stranded when older networks close. If you have an older 3G unit, it has almost certainly already stopped working. Ofcom’s switch-off guidance has the background.",
+    "The unit needs a SIM card that supports the services it uses: voice calls for opening and intercom calls, and texts for programming and alerts. Data is also needed for app-based models. A cheap SIM-only contract of a few pounds a month is the most reliable choice. Pay-as-you-go SIMs work, but many networks deactivate them if they’re not topped up or used for several months. A pay-as-you-go SIM in a gate that’s only opened by free rejected calls can quietly expire. Auto top-up avoids that. Intercom calls to your mobile come out of the gate SIM’s allowance, so busy entrances need a plan with enough minutes. We record who owns the SIM and the admin account at handover. That way, if you move house or change installers, control of the system goes with the property and not with whoever set it up.",
+    "The unit only works as well as the mobile signal where it’s installed. Before installation, we test signal strength on the network you’ll use, in the exact position of the unit. A good signal on your own phone in the house is not the same test. Gate posts, metal enclosures and basement car parks can block reception. Where signal is weak, an external antenna on a short cable to a better spot usually solves it, or a different network can be used. GSM entry doesn’t depend on home Wi-Fi or broadband, which is its big advantage over Wi-Fi gate systems. It does still need power. If the gate has battery backup, the GSM unit can usually run from it during a power cut. For the rare network outage, keep a remote or keypad as a backup way in. See keypad entry .",
+    "GSM entry is as secure as the phones on its list. Keep the list up to date and remove numbers as soon as someone no longer needs access. Caller ID can in principle be faked, so for higher-security properties choose a unit that can require a PIN code during the call, or app control with proper log-in. Pairing GSM with a video intercom means you can see who you’re letting in rather than relying on a voice.",
+    "GSM entry suits homes with lots of regular visitors, holiday lets and Airbnb properties, where guest numbers can be added for the length of a stay. It’s also popular for elderly relatives with carers visiting at different times, shared driveways and small blocks of flats, and rural or outbuilding gates where broadband doesn’t reach. It works with any modern electric gate or barrier, including swing gates , sliding gates and car park barriers .",
+    "As a rough guide, a 4G GSM gate opener added to an existing electric gate typically costs £400 to £900 installed. An audio GSM intercom with a call panel is usually £900 to £1,800, and a 4G video intercom with app control £1,500 to £3,000. Add the SIM plan, usually a few pounds a month. Extra cabling, antennas and battery backup are itemised in the quote. Established makers such as AES, Videx and 2N all offer UK-supported 4G units."
   ],
   "benefits": [
     {
-      "title": "Decide how phone entry should work",
-      "desc": " Discuss whether you want authorised callers to request opening, a visitor intercom that calls residents, or both. Ask how the proposed system identifies a caller and what happens if nobody answers.  A phone command does not confirm physical gate position. Agree how the household recognises a failed opening and how visitors obtain help. "
+      "title": "Two kinds of GSM system",
+      "desc": "A GSM gate opener is a small unit wired into the gate’s control panel. You store a list of authorised phone numbers in it. When one of those numbers calls the unit, it recognises the caller ID, rejects the call and opens the gate. The call is never answered, so it normally costs the caller nothing. Calls from unknown numbers are ignored. It’s the simplest and cheapest way to give lots of people keyless access. A GSM intercom adds a call panel at the gate for visitors. When someone presses the button, the unit rings your mobile (and then other numbers in turn if you don’t answer). You talk to the visitor and press a key on your phone to open the gate. Most GSM intercoms also work as an opener for authorised numbers. Video versions send a live picture to an app on your phone; see video intercoms ."
     },
     {
-      "title": "Confirm the supported network and plan",
-      "desc": " Identify the exact device and the voice, SMS or data services it needs. Check the SIM provider’s requirements, tariff and account-expiry conditions. Calls or messages should not be described as universally free.  Read  Ofcom’s mobile-network retirement guidance  and obtain product-specific support information. The word GSM is often used for phone entry generally; confirm which network technology the proposed unit actually uses. "
+      "title": "Managing who can get in",
+      "desc": "Depending on the model, a GSM unit holds anywhere from a few hundred to several thousand phone numbers. Better units let you restrict numbers to set days and times (a cleaner on Tuesday mornings only), set numbers to expire on a date, and keep a log of who opened the gate and when. Most are managed by text message, a phone app or a web portal, so you can add or remove someone in seconds from wherever you are. When a carer or tenant leaves, you delete their number and their access stops immediately. Some units can also tell you whether the gate actually opened. They do this by connecting to the gate’s position sensor and texting you a confirmation. That’s worth having if you open the gate remotely for deliveries and can’t see it."
     },
     {
-      "title": "Survey signal and fallback access",
-      "desc": " Test the proposed service at the equipment location. Plan the power supply, antenna and cable route. A phone on a different network is not a complete signal test for the installation.  Phone entry may avoid dependence on home Wi-Fi, but it still depends on its own network, equipment and power. Agree a fallback for outages and confirm any backup maintenance. "
+      "title": "The network switch-off",
+      "desc": "“GSM” originally meant the 2G mobile network, and many gate units still run on it. UK networks have now switched off 3G, and 2G will follow. The government’s agreement with the operators keeps 2G running until 2033 at the latest, but some services may wind down sooner. A unit bought today should be a 4G model, ideally one that supports voice calls over 4G (VoLTE), so it isn’t left stranded when older networks close. If you have an older 3G unit, it has almost certainly already stopped working. Ofcom’s switch-off guidance has the background."
     },
     {
-      "title": "Hand over account control",
-      "desc": " Record who owns the SIM and administrator account. Demonstrate adding and removing users using the supplied instructions. Confirm recurring charges and how support handles a change of phone number or ownership.  Read the  phone-entry buying checklist  or compare  intercom options  before you  discuss your entrance . "
+      "title": "SIM cards and running costs",
+      "desc": "The unit needs a SIM card that supports the services it uses: voice calls for opening and intercom calls, and texts for programming and alerts. Data is also needed for app-based models. A cheap SIM-only contract of a few pounds a month is the most reliable choice. Pay-as-you-go SIMs work, but many networks deactivate them if they’re not topped up or used for several months. A pay-as-you-go SIM in a gate that’s only opened by free rejected calls can quietly expire. Auto top-up avoids that. Intercom calls to your mobile come out of the gate SIM’s allowance, so busy entrances need a plan with enough minutes. We record who owns the SIM and the admin account at handover. That way, if you move house or change installers, control of the system goes with the property and not with whoever set it up."
+    },
+    {
+      "title": "Signal, power and reliability",
+      "desc": "The unit only works as well as the mobile signal where it’s installed. Before installation, we test signal strength on the network you’ll use, in the exact position of the unit. A good signal on your own phone in the house is not the same test. Gate posts, metal enclosures and basement car parks can block reception. Where signal is weak, an external antenna on a short cable to a better spot usually solves it, or a different network can be used. GSM entry doesn’t depend on home Wi-Fi or broadband, which is its big advantage over Wi-Fi gate systems. It does still need power. If the gate has battery backup, the GSM unit can usually run from it during a power cut. For the rare network outage, keep a remote or keypad as a backup way in. See keypad entry ."
+    },
+    {
+      "title": "Security",
+      "desc": "GSM entry is as secure as the phones on its list. Keep the list up to date and remove numbers as soon as someone no longer needs access. Caller ID can in principle be faked, so for higher-security properties choose a unit that can require a PIN code during the call, or app control with proper log-in. Pairing GSM with a video intercom means you can see who you’re letting in rather than relying on a voice."
+    },
+    {
+      "title": "Where GSM works well",
+      "desc": "GSM entry suits homes with lots of regular visitors, holiday lets and Airbnb properties, where guest numbers can be added for the length of a stay. It’s also popular for elderly relatives with carers visiting at different times, shared driveways and small blocks of flats, and rural or outbuilding gates where broadband doesn’t reach. It works with any modern electric gate or barrier, including swing gates , sliding gates and car park barriers ."
+    },
+    {
+      "title": "Cost of GSM phone entry in London",
+      "desc": "As a rough guide, a 4G GSM gate opener added to an existing electric gate typically costs £400 to £900 installed. An audio GSM intercom with a call panel is usually £900 to £1,800, and a 4G video intercom with app control £1,500 to £3,000. Add the SIM plan, usually a few pounds a month. Extra cabling, antennas and battery backup are itemised in the quote. Established makers such as AES, Videx and 2N all offer UK-supported 4G units."
     }
   ],
   "faqs": [
     {
-      "question": "Will any SIM work?",
-      "answer": "Check the model, supported network services and tariff terms together. Not every SIM or plan supports every gate device."
+      "question": "Will any SIM card work?",
+      "answer": "Most standard SIMs from the main networks work, as long as the plan covers voice and text and suits the unit. Avoid data-only SIMs, and be careful with pay-as-you-go SIMs that expire if they’re not used."
     },
     {
-      "question": "Is phone entry independent of power and broadband?",
-      "answer": "It may not need home broadband, but the gate and phone-entry equipment still need power and the required mobile service."
+      "question": "Does it cost anything to open the gate?",
+      "answer": "With a standard GSM opener, no. The unit rejects your call, so it isn’t answered or charged. Intercom calls from the gate to your mobile use the gate SIM’s minutes."
     },
     {
-      "question": "Are opening calls free?",
-      "answer": "That depends on how the product handles calls and the applicable tariffs. Confirm the charges rather than assuming a missed-call arrangement."
+      "question": "Do I need broadband or Wi-Fi?",
+      "answer": "No. The unit uses the mobile network. It does need power, and a mobile signal at the gate."
+    },
+    {
+      "question": "Will the network switch-off affect my system?",
+      "answer": "3G units have already stopped working. 2G units will stop working by 2033 at the latest. Any new unit should be 4G with voice over 4G (VoLTE) support."
+    },
+    {
+      "question": "How many people can I add?",
+      "answer": "Usually hundreds and often thousands of numbers, depending on the model. Each one can be given time limits or removed individually."
+    },
+    {
+      "question": "Can I open the gate from abroad?",
+      "answer": "Yes. If your phone can make a call or use the app, it can open the gate from anywhere."
     }
   ],
   "imageAlt": "Homeowner opening a driveway gate remotely with a mobile phone",
-  "updatedDate": "2026-10-02"
+  "updatedDate": "2026-11-09"
 },
   {
   "id": "anpr-systems",
   "slug": "anpr-systems",
   "title": "ANPR Gate Entry Systems",
-  "metaTitle": "ANPR Gate Entry Systems | Driveway Gates London",
-  "metaDescription": "Number-plate entry planned around camera position, authorised vehicles, safe waiting and access-data management.",
+  "headline": "ANPR Gate Entry in London",
+  "metaTitle": "ANPR Gate Entry in London | Driveway Gates London",
+  "metaDescription": "ANPR gate entry in London: number plate recognition for electric gates and barriers, camera placement, visitor access, GDPR, safety and typical costs.",
   "description": "Number-plate entry planned around camera position, authorised vehicles, safe waiting and access-data management.",
   "image": "/showcase/assets/content/anpr-systems-34a9163.webp",
   "intro": [
-    "ANPR reads a vehicle registration and checks it against access permissions. It does not establish who is driving or prevent a second vehicle following the first. Decide where the driver waits and how entry works if a plate is not read. Do not assume a vehicle can drive through without stopping. Camera recognition, the command to the controller and safe gate movement are separate parts of the sequence. Include visitors, deliveries and pedestrian access in the plan.",
-    "Survey camera position, approach angle, lighting, headlight glare, stopping distance and the expected plate types. Ask the supplier to demonstrate the proposed equipment under the conditions that matter at your site. A manufacturer’s performance figure under defined test conditions is not a guarantee for every vehicle or weather condition. Agree a keypad, intercom or other authorised fallback.",
-    "Decide who can add, remove and review authorised registrations. Confirm expiry for temporary vehicles, administrator access and account recovery. Ask whether the system records images or events, where it stores them and how long it keeps them. Where data-protection law applies, the operator must address the purpose, lawful use, notice, retention and access controls. Consult ICO video-surveillance guidance . A product label does not make the whole installation compliant.",
-    "Include camera and controller models, network and power, gate interface, subscriptions, commissioning and user training. Confirm ongoing support and the effect of connection or power failure. Compare video entry and keypads for visitors. Send your entrance layout and expected use when you discuss your entrance.",
-    "User Permission arrangement to agree Fallback to plan Resident or regular staff vehicle Who enters and removes registrations, including replacement cars. An authorised alternative if a plate is not recognised. Expected visitor Whether a temporary registration can be approved and expired. An intercom call or staffed confirmation. Delivery driver Whether the vehicle is known in advance and who accepts the delivery. A safe waiting point and a way to contact the recipient. Contractor or hired vehicle Time-limited access if supported, with a named approver. A process for an unexpected registration change. Do not publish a broad permanent permission list simply to reduce administration. Ask the supplier to demonstrate adding, correcting and removing a registration using the proposed system. Agree which person handles a resident changing car at short notice.",
-    "Draw the vehicle approach, waiting point and path through the entrance. Explain whether the same gate serves both directions and how a departing vehicle interacts with an arriving one. Include the busiest expected period rather than only a single test car on an empty driveway. Ask the installer what triggers entry, how exit works and which component determines whether the gate can move safely. An accepted registration is permission to request entry; it is not confirmation that a person or another vehicle is clear of the gate. Agree what happens when the network, recognition service or power is unavailable. Specify the authorised fallback and the person who receives a fault report. Avoid leaving an unexpected visitor with no way to call for help from the waiting position.",
-    "Request camera, processing and controller models, installation work, connectivity, licences and support terms in the quotation. Confirm which functions run locally and which depend on another service. Ask what changes if a subscription ends or the site changes its broadband provider. The site operator should understand whether images, registrations and access events are retained, who can retrieve them and how deletion works. Record administration and account recovery arrangements at handover. Review access permissions when staff, residents or contractors leave, rather than allowing an old vehicle list to become the default."
+    "A dedicated ANPR camera watches the approach to the gate. It uses infrared light to read the reflective number plate clearly, day or night. Software reads the registration and checks it against a list of authorised vehicles. If it matches, the system sends an open signal to the gate’s control panel, exactly like pressing a remote. Unknown plates are ignored, logged, or passed to an intercom so the driver can call the house or reception. This isn’t ordinary CCTV with software added. ANPR cameras use fast shutters and infrared lighting tuned to reading plates. A general security camera pointed at the drive will struggle, especially at night and with moving cars.",
+    "Most of an ANPR system’s reliability comes down to where the camera goes. It needs a clear view of the front plate as the car approaches, from a fairly shallow angle. It’s typically mounted on a post or wall at around bumper-to-roof height, 3 to 10 metres from where the car will be when the plate is read. Too steep an angle, a camera looking into low sun or headlights, or a bend in the approach all reduce read rates. We survey the approach, test the position and set up the camera on site with real vehicles before handover.",
+    "A well-installed system reads clean, standard UK plates very reliably. Reads fail on dirty or damaged plates, plates partly hidden by a towbar or bike rack, and illegal “show plates” with altered fonts or spacing. Foreign plates may also be missed. Motorbikes have no front plate, so they need another way in, or a camera placed to read the rear. That’s why every ANPR installation should keep a backup: a remote, keypad , GSM phone entry or intercom , so a missed read is a minor inconvenience, not a locked-out driver.",
+    "With a barrier , ANPR feels almost seamless. The barrier opens in a few seconds and most cars barely stop. With a swing or sliding gate , the gate still takes 15 to 25 seconds to open, so you’ll usually wait a short time unless the camera reads your plate well before you reach the gate. Placing the camera further down the approach helps where there’s room. Either way, the gate is designed to open fully before you drive through, and the car should never be waiting on the pavement or road. Exit is usually automatic, triggered by a sensor loop in the drive or an exit button, so you don’t need a second camera unless you want exit logs.",
+    "You manage the list of authorised plates through an app or web portal. Good systems make the everyday changes simple. You can add a new car, remove a sold one, or give a builder’s van access for the next three weeks only. Visitors expected on a particular day can be added with an expiry time, so their access stops automatically. Unknown vehicles can trigger the intercom or send a notification to your phone with a photo, so you can let them in with a tap. Many systems also tell you when a family member’s car has arrived home. For residential developments and commercial sites, sort out early who has permission to add and remove plates, how residents or staff register a new car, and how quickly leavers are removed. A list that’s never reviewed gradually lets in people who should no longer have access.",
+    "ANPR handles vehicles you know about. For everyone else, pair it with an intercom placed where a visiting driver can reach it from the car window. Couriers and delivery drivers usually come in unknown vans, so a video intercom or GSM intercom that rings your phone is the practical answer. Our parcel delivery access guide covers this in more detail.",
+    "Some ANPR systems do everything on the camera or a small unit on site, so they keep working if your internet goes down. Others use a cloud service for the plate list, the app and the logs, which makes remote management easy but adds a monthly subscription and depends on your connection. Many systems combine the two: plates are checked locally and synced from the cloud. We’ll explain which parts of the system you’re paying for monthly, and what still works if the subscription ends or the broadband fails.",
+    "Number plates are personal data. On commercial sites and residential developments, the site operator is responsible for using ANPR lawfully under UK GDPR. That means signs telling drivers ANPR is in use, a clear reason for collecting the data, a set retention period for plate images and logs, and control over who can see them. For a private home, the ICO’s guidance is that data protection law applies if the camera captures images beyond your own property boundary, such as the public road. We aim cameras to cover your approach and as little of the street as possible, and set sensible retention periods by default. The ICO’s guidance on video surveillance sets out the full requirements.",
+    "ANPR decides whether a car is allowed to enter. It doesn’t decide whether the gate is safe to move. That’s still the job of the gate’s photocells, safety edges and force limits , tested to BS EN 12453. ANPR also doesn’t stop a second car following the first through an open gate, so on sites where tailgating matters, the gate or barrier should close promptly behind each vehicle.",
+    "As a rough guide, adding ANPR to an existing electric gate at a home typically costs £1,500 to £3,500 installed, including the camera, set-up and integration. Commercial and multi-lane installations are usually £2,500 to £6,000 per lane. Cloud-managed systems usually carry an ongoing subscription, often somewhere between £10 and £50 a month depending on features and the number of vehicles. Every quote sets out the equipment, installation and ongoing costs separately."
   ],
   "benefits": [
     {
-      "title": "Plan the approach and fallback",
-      "desc": " ANPR reads a vehicle registration and checks it against access permissions. It does not establish who is driving or prevent a second vehicle following the first. Decide where the driver waits and how entry works if a plate is not read.  Do not assume a vehicle can drive through without stopping. Camera recognition, the command to the controller and safe gate movement are separate parts of the sequence. Include visitors, deliveries and pedestrian access in the plan. "
+      "title": "How ANPR works",
+      "desc": "A dedicated ANPR camera watches the approach to the gate. It uses infrared light to read the reflective number plate clearly, day or night. Software reads the registration and checks it against a list of authorised vehicles. If it matches, the system sends an open signal to the gate’s control panel, exactly like pressing a remote. Unknown plates are ignored, logged, or passed to an intercom so the driver can call the house or reception. This isn’t ordinary CCTV with software added. ANPR cameras use fast shutters and infrared lighting tuned to reading plates. A general security camera pointed at the drive will struggle, especially at night and with moving cars."
     },
     {
-      "title": "Check recognition at the actual entrance",
-      "desc": " Survey camera position, approach angle, lighting, headlight glare, stopping distance and the expected plate types. Ask the supplier to demonstrate the proposed equipment under the conditions that matter at your site.  A manufacturer’s performance figure under defined test conditions is not a guarantee for every vehicle or weather condition. Agree a keypad, intercom or other authorised fallback. "
+      "title": "Camera position makes or breaks it",
+      "desc": "Most of an ANPR system’s reliability comes down to where the camera goes. It needs a clear view of the front plate as the car approaches, from a fairly shallow angle. It’s typically mounted on a post or wall at around bumper-to-roof height, 3 to 10 metres from where the car will be when the plate is read. Too steep an angle, a camera looking into low sun or headlights, or a bend in the approach all reduce read rates. We survey the approach, test the position and set up the camera on site with real vehicles before handover."
     },
     {
-      "title": "Manage permissions and records",
-      "desc": " Decide who can add, remove and review authorised registrations. Confirm expiry for temporary vehicles, administrator access and account recovery. Ask whether the system records images or events, where it stores them and how long it keeps them.  Where data-protection law applies, the operator must address the purpose, lawful use, notice, retention and access controls. Consult  ICO video-surveillance guidance . A product label does not make the whole installation compliant. "
+      "title": "How reliable is it?",
+      "desc": "A well-installed system reads clean, standard UK plates very reliably. Reads fail on dirty or damaged plates, plates partly hidden by a towbar or bike rack, and illegal “show plates” with altered fonts or spacing. Foreign plates may also be missed. Motorbikes have no front plate, so they need another way in, or a camera placed to read the rear. That’s why every ANPR installation should keep a backup: a remote, keypad , GSM phone entry or intercom , so a missed read is a minor inconvenience, not a locked-out driver."
     },
     {
-      "title": "Specify the complete installation",
-      "desc": " Include camera and controller models, network and power, gate interface, subscriptions, commissioning and user training. Confirm ongoing support and the effect of connection or power failure.  Compare  video entry  and  keypads  for visitors. Send your entrance layout and expected use when you  discuss your entrance . "
+      "title": "What it’s like to drive in",
+      "desc": "With a barrier , ANPR feels almost seamless. The barrier opens in a few seconds and most cars barely stop. With a swing or sliding gate , the gate still takes 15 to 25 seconds to open, so you’ll usually wait a short time unless the camera reads your plate well before you reach the gate. Placing the camera further down the approach helps where there’s room. Either way, the gate is designed to open fully before you drive through, and the car should never be waiting on the pavement or road. Exit is usually automatic, triggered by a sensor loop in the drive or an exit button, so you don’t need a second camera unless you want exit logs."
+    },
+    {
+      "title": "Managing vehicles",
+      "desc": "You manage the list of authorised plates through an app or web portal. Good systems make the everyday changes simple. You can add a new car, remove a sold one, or give a builder’s van access for the next three weeks only. Visitors expected on a particular day can be added with an expiry time, so their access stops automatically. Unknown vehicles can trigger the intercom or send a notification to your phone with a photo, so you can let them in with a tap. Many systems also tell you when a family member’s car has arrived home. For residential developments and commercial sites, sort out early who has permission to add and remove plates, how residents or staff register a new car, and how quickly leavers are removed. A list that’s never reviewed gradually lets in people who should no longer have access."
+    },
+    {
+      "title": "Visitors and deliveries",
+      "desc": "ANPR handles vehicles you know about. For everyone else, pair it with an intercom placed where a visiting driver can reach it from the car window. Couriers and delivery drivers usually come in unknown vans, so a video intercom or GSM intercom that rings your phone is the practical answer. Our parcel delivery access guide covers this in more detail."
+    },
+    {
+      "title": "Local or cloud-based",
+      "desc": "Some ANPR systems do everything on the camera or a small unit on site, so they keep working if your internet goes down. Others use a cloud service for the plate list, the app and the logs, which makes remote management easy but adds a monthly subscription and depends on your connection. Many systems combine the two: plates are checked locally and synced from the cloud. We’ll explain which parts of the system you’re paying for monthly, and what still works if the subscription ends or the broadband fails."
+    },
+    {
+      "title": "Data protection",
+      "desc": "Number plates are personal data. On commercial sites and residential developments, the site operator is responsible for using ANPR lawfully under UK GDPR. That means signs telling drivers ANPR is in use, a clear reason for collecting the data, a set retention period for plate images and logs, and control over who can see them. For a private home, the ICO’s guidance is that data protection law applies if the camera captures images beyond your own property boundary, such as the public road. We aim cameras to cover your approach and as little of the street as possible, and set sensible retention periods by default. The ICO’s guidance on video surveillance sets out the full requirements."
+    },
+    {
+      "title": "Safety",
+      "desc": "ANPR decides whether a car is allowed to enter. It doesn’t decide whether the gate is safe to move. That’s still the job of the gate’s photocells, safety edges and force limits , tested to BS EN 12453. ANPR also doesn’t stop a second car following the first through an open gate, so on sites where tailgating matters, the gate or barrier should close promptly behind each vehicle."
+    },
+    {
+      "title": "Cost of ANPR gate entry in London",
+      "desc": "As a rough guide, adding ANPR to an existing electric gate at a home typically costs £1,500 to £3,500 installed, including the camera, set-up and integration. Commercial and multi-lane installations are usually £2,500 to £6,000 per lane. Cloud-managed systems usually carry an ongoing subscription, often somewhere between £10 and £50 a month depending on features and the number of vehicles. Every quote sets out the equipment, installation and ongoing costs separately."
     }
   ],
   "faqs": [
     {
       "question": "Will ANPR read every plate?",
-      "answer": "Recognition depends on the camera, setup, approach, lighting, plate condition and supported plate formats. Test the actual proposal and agree a fallback."
+      "answer": "It will read the vast majority of clean, standard UK plates when the camera is well positioned. Dirty, damaged, non-standard and foreign plates can fail, which is why a backup entry method is always included."
     },
     {
-      "question": "Can cars enter without stopping?",
-      "answer": "Do not assume this. The design must provide a suitable approach and waiting arrangement while recognition and safe gate movement take place."
+      "question": "Can cars drive straight in without stopping?",
+      "answer": "With a fast barrier, nearly. With a swing or sliding gate, expect a short wait while the gate opens, unless the camera can read the plate well before you reach it."
     },
     {
-      "question": "Does ANPR replace gate safety devices?",
-      "answer": "No. Permission to enter is separate from the protective measures and checks required for the powered entrance."
+      "question": "Does it work at night?",
+      "answer": "Yes. ANPR cameras use infrared lighting and read plates in complete darkness."
+    },
+    {
+      "question": "What about motorbikes?",
+      "answer": "Motorbikes only have a rear plate, so a front-facing camera won’t read them. Use a remote or keypad, or a camera positioned to read the rear plate."
+    },
+    {
+      "question": "What happens when I change my car?",
+      "answer": "Remove the old registration and add the new one in the app. It takes seconds."
+    },
+    {
+      "question": "Does ANPR replace the gate’s safety devices?",
+      "answer": "No. It only sends the open command. Photocells, safety edges and force testing are still required."
     }
   ],
   "imageAlt": "Car approaching a London driveway gate fitted with ANPR access control",
-  "updatedDate": "2026-10-13"
+  "updatedDate": "2026-11-09"
 },
 ];
 

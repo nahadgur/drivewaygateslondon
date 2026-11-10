@@ -46,7 +46,7 @@ export function LocationPage({ cityName }: { cityName: string }) {
             <div className="service-heading"><h1>Driveway Gates in {cityName}</h1></div>
             <div className="service-summary">
               <p className="lead">We design, supply and install driveway gates in {cityName}{region ? `, ${region},` : ''} automate existing gates and repair them when they go wrong. Fill in the short form, we call you back to arrange a free site survey, then you get a written fixed quote.</p>
-              <div className="hero-actions"><a className="button" href="#enquiry">Get a Free Quote <span aria-hidden="true">→</span></a><a className="button phone-button" href="tel:+442037731310">020 3773 1310</a></div>
+              <div className="hero-actions"><a className="button" href="#enquiry">Get a Free Quote <span aria-hidden="true">→</span></a><a className="button phone-button" href="tel:+442037731310">Call 020 3773 1310</a></div>
               <div className="hero-footnote"><span>Free Site Surveys</span><span>Written Fixed Quotes</span><span>Design, Supply &amp; Install</span></div>
             </div>
           </section>

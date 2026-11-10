@@ -19,7 +19,7 @@ export const locationGateGroups: { id: string; title: (city: string) => string; 
     id: 'electric-gates',
     title: city => `Electric and automated gates in ${city}`,
     intro: 'Powered gates are planned around the opening, the space each leaf or panel needs to move, the power route and how everyone in the household gets in and out.',
-    services: ['electric-sliding-gates', 'electric-swing-gates', 'automated-gate-systems', 'gate-automation-kits'].map(bySlug),
+    services: ['electric-sliding-gates', 'telescopic-sliding-gates', 'electric-swing-gates', 'automated-gate-systems', 'gate-automation-kits'].map(bySlug),
   },
   {
     id: 'gate-materials',

@@ -26,6 +26,7 @@ export const services: Service[] = [
   "id": "electric-sliding",
   "title": "Electric Sliding Gates",
   "slug": "electric-sliding-gates",
+  "metaDescription": "Electric sliding gates in London: tracked, cantilever and telescopic gates for short or sloping drives, side-space checks, safety, motors and typical costs.",
   "description": "Electric sliding gates designed around your London driveway, side space, supports and access requirements.",
   "image": "/showcase/assets/content/gate-aluminium-sliding-modern-dark-brick-553aa55.webp",
   "icon": "Zap",
@@ -33,24 +34,71 @@ export const services: Service[] = [
   "faqs": [
     {
       "question": "How much side space does a sliding gate need?",
-      "answer": "The required space depends on the tracked, cantilever or multi-panel design, supporting structure and protective clearances. Request a drawing of the complete travel and stored position."
+      "answer": "For a tracked gate, roughly the width of the opening plus a few hundred millimetres. For a cantilever gate, about one and a half times the opening. A telescopic gate needs about half the opening plus the overlap. We measure it precisely at survey."
     },
     {
-      "question": "Can a sliding gate work on a slope?",
-      "answer": "A survey must assess the travel path, levels, drainage, supports and safe manual movement. A sloping driveway does not automatically favour a particular sliding design."
+      "question": "Can a sliding gate work on a sloping drive?",
+      "answer": "Usually, yes. A drive that slopes up from the road is often the reason people choose a sliding gate. What needs to be level is the ground along the gate line and the run-back, not the drive itself. A gate sliding along a slope needs a stepped or raked design and careful engineering."
+    },
+    {
+      "question": "Swing or sliding?",
+      "answer": "Sliding if your drive is short, you park close to the gate, or the drive rises behind it. Swing if you lack side space or want the lower cost. Our swing vs sliding guide compares them, and electric swing gates covers the alternative."
+    },
+    {
+      "question": "Will a tracked gate work on a gravel drive?",
+      "answer": "Not well, because stones get into the track and jam the wheels. A cantilever gate is the better choice on gravel."
     },
     {
       "question": "How long will installation take?",
-      "answer": "Agree a programme after the measured design and groundworks are known. Fabrication, power and reinstatement can affect the schedule."
+      "answer": "Two to three days for most tracked gates. Cantilever gates take two visits about a week apart. Larger groundworks or new power supplies add time."
+    },
+    {
+      "question": "Do I need planning permission?",
+      "answer": "Gates next to a road or footpath can usually be up to 1 metre high under permitted development rules. Taller gates, conservation areas and listed buildings need checking. See our borough planning guides."
     }
   ],
   "reviewedFaqs": true,
   "updatedDate": "2026-10-13"
 },
   {
+  "id": "telescopic-sliding",
+  "title": "Telescopic Sliding Gates",
+  "slug": "telescopic-sliding-gates",
+  "metaDescription": "Telescopic sliding gates in London: stacking panels that need about half the side space of a standard sliding gate, for tight plots. Space, safety and costs.",
+  "description": "Sliding gates with two or more panels that stack as they open, needing about half the side space of a standard sliding gate.",
+  "image": "/showcase/assets/content/telescopic-gates-space-saving-london-33a333a.webp",
+  "icon": "Layers",
+  "color": "teal",
+  "faqs": [
+    {
+      "question": "How much side space does a telescopic gate need?",
+      "answer": "For a two-panel gate, roughly half the opening plus a few hundred millimetres. For three panels, about a third of the opening plus the overlaps. The survey gives exact figures."
+    },
+    {
+      "question": "Are telescopic gates reliable?",
+      "answer": "Yes, when they’re well built and serviced. The extra wheels and the linking mechanism need a little more attention than a single-panel gate, which is why an annual service matters."
+    },
+    {
+      "question": "Telescopic sliding gate or bi-folding gate?",
+      "answer": "Both save space. A telescopic gate needs side space but almost no depth. A bi-folding gate folds back into the drive, so it needs depth but no side space. Which works better depends on where your spare room is."
+    },
+    {
+      "question": "Can I convert my existing sliding gate to telescopic?",
+      "answer": "Rarely. The panels, tracks and running gear are designed as a system, so it’s normally a new gate. The motor and access control can sometimes be reused."
+    },
+    {
+      "question": "Do I need planning permission?",
+      "answer": "The same rules apply as for any gate. Usually up to 1 metre high next to a road or footpath without permission, with stricter rules in conservation areas and for listed buildings. See our borough planning guides."
+    }
+  ],
+  "reviewedFaqs": true,
+  "updatedDate": "2026-11-08"
+},
+  {
   "id": "electric-swing",
   "title": "Electric Swing Gates",
   "slug": "electric-swing-gates",
+  "metaDescription": "Electric swing gates in London: space and slope checks, ram, articulated arm and underground motors, safety testing, power and typical costs.",
   "description": "Single and paired electric swing gates planned around your opening, parking space and everyday access.",
   "image": "/showcase/assets/content/gate-aluminium-swing-open-luxury-garden-fd599ef.webp",
   "icon": "Shield",
@@ -58,15 +106,27 @@ export const services: Service[] = [
   "faqs": [
     {
       "question": "Should swing gates open inward?",
-      "answer": "The site layout, boundary and highway requirements need checking. Do not let a proposed leaf sweep over a public pavement or road without resolving the legal and safety implications with the relevant authority."
+      "answer": "Almost always, if the gate is on the boundary with a public pavement or road. Outward opening is only possible over private land, and the arc still needs to be kept clear of anywhere people walk."
     },
     {
       "question": "What width should I choose?",
-      "answer": "Measure vehicle turning, the clear opening, supports and pedestrian use. A standard width cannot establish suitability for every driveway."
+      "answer": "At least 3 metres for a car, and 3.5 to 4 metres if you’re turning in from a narrow street. Make sure there’s space behind the gates for the leaves to open with your car parked beyond them."
     },
     {
-      "question": "Are swing gates always cheaper than sliding gates?",
-      "answer": "Compare complete quotations for your entrance. Supports, groundworks, gate design and controls can change the relative cost."
+      "question": "Are swing gates cheaper than sliding gates?",
+      "answer": "Usually, because they need less groundwork. But a swing gate on a slope or tight drive can need costly workarounds, and then a sliding gate can cost about the same."
+    },
+    {
+      "question": "Can you automate my existing gates?",
+      "answer": "Often, yes, if the gates are rigid, the hinges are sound and the piers are strong enough. See gate automation retrofits."
+    },
+    {
+      "question": "What happens in a power cut?",
+      "answer": "24V systems can run on battery backup for a number of cycles. Otherwise, each leaf can be released with a key and opened by hand."
+    },
+    {
+      "question": "How long do the gates take to open?",
+      "answer": "Typically 15 to 25 seconds, depending on leaf length and motor type."
     }
   ],
   "reviewedFaqs": true,
@@ -76,6 +136,7 @@ export const services: Service[] = [
   "id": "wooden-gates",
   "title": "Wooden Driveway Gates",
   "slug": "wooden-driveway-gates",
+  "metaDescription": "Wooden driveway gates in London: softwood, oak, iroko, cedar and Accoya, properly jointed and finished, manual or automated, with planning advice and costs.",
   "description": "Timber driveway gates for London homes, with the species, construction, finish and upkeep agreed before ordering.",
   "image": "/showcase/assets/content/gate-wooden-oak-swing-cottage-garden-d00f4c0.webp",
   "icon": "Sparkles",
@@ -83,15 +144,23 @@ export const services: Service[] = [
   "faqs": [
     {
       "question": "How long do wooden gates last?",
-      "answer": "Condition over time depends on the timber, construction, finish, exposure and care. Request the proposed product specification and terms rather than relying on a universal number of years."
+      "answer": "It depends mostly on the timber and how well it’s looked after. Treated softwood typically lasts 10 to 15 years with regular painting. Good hardwood and Accoya gates commonly last 25 years or more. Joinery quality and how well the end grain is sealed matter as much as the species."
     },
     {
       "question": "Can wooden gates be automated?",
-      "answer": "Potentially, after assessment of the complete gate, supports, geometry and hazards. Motor capacity alone does not establish suitability."
+      "answer": "Yes, if the gate is rigid and the motor is sized for its weight and wind load. Heavy solid gates and wide leaves need more powerful motors, and gates with a weak frame should be rebuilt before they’re automated."
     },
     {
       "question": "Which timber should I choose?",
-      "answer": "Compare samples, construction, finish care and the written terms for the available species or modified-wood product."
+      "answer": "For a painted gate you want to stay straight with minimal fuss, choose Accoya. For a traditional natural look on a period property, oak or iroko. For a lighter contemporary slatted gate, cedar or iroko. On a tight budget, treated softwood is the sensible choice. We bring samples to the survey so you can see each one against your house."
+    },
+    {
+      "question": "Will my wooden gate warp?",
+      "answer": "All timber moves a little with the seasons, so boards may show small gaps in summer and tighten in winter. Proper joinery, stable timbers and laminated stiles keep that movement from becoming warping or sagging."
+    },
+    {
+      "question": "Wood or aluminium?",
+      "answer": "Aluminium is lighter, needs almost no maintenance and is available in convincing wood-effect finishes. Real timber looks and feels better on many period homes. Our wooden and aluminium comparison covers the trade-offs, and our hardwood gates page goes deeper on oak and iroko."
     }
   ],
   "reviewedFaqs": true,
@@ -101,6 +170,7 @@ export const services: Service[] = [
   "id": "metal-gates",
   "title": "Metal Driveway Gates",
   "slug": "metal-driveway-gates",
+  "metaDescription": "Metal driveway gates in London: made-to-measure steel and aluminium, galvanised and powder-coated, traditional or modern, manual or automated, with costs.",
   "description": "Compare metal driveway gate designs, fabrication and finish options for your London entrance.",
   "image": "/showcase/assets/content/gate-wrought-iron-ornate-daytime-manor-e16af31.webp",
   "icon": "Globe",
@@ -108,15 +178,23 @@ export const services: Service[] = [
   "faqs": [
     {
       "question": "Are all metal gates galvanised?",
-      "answer": "Do not assume so. Confirm the actual metal and preparation/coating system in the quotation."
+      "answer": "No, and many cheaper gates aren’t. Ask whether the gate is hot-dip galvanised after fabrication, then powder-coated. That combination is what keeps rust away for decades."
     },
     {
-      "question": "Can you restore an existing iron-style gate?",
-      "answer": "A specialist needs to identify the material, condition and repair scope before advising whether restoration is suitable."
+      "question": "Is a “wrought iron” gate really wrought iron?",
+      "answer": "Almost certainly not, unless it’s antique. Modern iron-style gates are mild steel, which is just as good-looking and easier to repair."
+    },
+    {
+      "question": "Steel or aluminium?",
+      "answer": "Steel is stronger, heavier and better for intricate traditional ironwork. Aluminium is lighter, can’t rust, and is better for wide gates, weak piers and sliding gates. Both can be made in traditional or modern styles."
+    },
+    {
+      "question": "Can you restore an existing iron gate?",
+      "answer": "Usually, yes. We check whether it’s steel, wrought iron or cast iron and how much corrosion there is, then advise whether restoration or replacement makes more sense."
     },
     {
       "question": "Are metal gates maintenance-free?",
-      "answer": "No. Follow the supplied care instructions for the finish, fittings and any automation."
+      "answer": "Not quite, but close if they’re galvanised and powder-coated. An occasional wash, touching up chips and greasing the hinges once a year is usually all they need."
     }
   ],
   "reviewedFaqs": true,
@@ -290,6 +368,7 @@ export const services: Service[] = [
   "id": "composite-gates",
   "title": "Composite Driveway Gates",
   "slug": "composite-driveway-gates",
+  "metaDescription": "Composite driveway gates in London: capped boards on aluminium frames, no painting or staining, manual or automated swing and sliding gates, with costs.",
   "description": "Composite driveway gates supplied and fitted in London. Compare board finishes, frame construction, opening options and the upkeep your chosen product needs.",
   "image": "/images/services/composite-driveway-gates-illustration.webp",
   "icon": "Globe",
@@ -297,19 +376,23 @@ export const services: Service[] = [
   "faqs": [
     {
       "question": "Do composite gates need maintenance?",
-      "answer": "Yes. Follow the board manufacturer’s care instructions and maintain the frame, hinges, locks and any automation. The required work depends on the specified product and site conditions."
+      "answer": "Very little. A wash once or twice a year, plus annual hinge greasing, keeps them looking right. They never need painting or staining. Automated gates also need regular servicing of the motors and safety devices."
+    },
+    {
+      "question": "Will composite fade?",
+      "answer": "Capped boards fade very little, though all outdoor materials soften slightly in colour over time. Uncapped boards lighten much more noticeably, which is why we recommend capped boards for gates."
     },
     {
       "question": "Can a composite gate be automated?",
-      "answer": "It may be suitable after assessment of the complete gate, its supports, movement, wind exposure and surrounding entrance. Compatibility cannot be established from the board material alone."
+      "answer": "Yes. On an aluminium frame it’s lighter than most hardwood gates. The motor has to be matched to the gate’s size and wind exposure, especially for solid boarded designs."
     },
     {
-      "question": "How much do composite gates cost supplied and fitted?",
-      "answer": "The price depends on the measured opening, boards, frame, finish, support work and manual or automated operation. Request an itemised site-specific quotation with VAT and exclusions stated."
+      "question": "How much do composite gates cost?",
+      "answer": "Typically £2,500 to £5,000 for a manual pair supplied and fitted, with automation on top. We give a fixed itemised price after a free survey."
     },
     {
-      "question": "What warranty comes with a composite gate?",
-      "answer": "The quoted products and installation determine the terms. Ask for the cover, exclusions, maintenance conditions and claims contact for each part of the system before ordering."
+      "question": "Can a damaged board be replaced?",
+      "answer": "Yes. On a slot-in frame, a single board can be removed and replaced without taking the gate apart. That’s one reason to choose a proper gate system rather than fence boards fixed to a frame."
     }
   ],
   "reviewedFaqs": true,
@@ -319,6 +402,7 @@ export const services: Service[] = [
   "id": "hardwood-gates",
   "title": "Hardwood Driveway Gates",
   "slug": "hardwood-driveway-gates",
+  "metaDescription": "Hardwood driveway gates in London: kiln-dried oak, iroko and sapele, properly jointed and hung, oiled or left to silver, manual or automated, with costs.",
   "description": "Hardwood driveway gates for London homes, with the timber, construction, finish and installation details agreed for your entrance.",
   "image": "/showcase/assets/content/gate-wooden-oak-swing-cottage-flowers-92bd35f.webp",
   "icon": "Medal",
@@ -326,15 +410,27 @@ export const services: Service[] = [
   "faqs": [
     {
       "question": "How long will a hardwood gate last?",
-      "answer": "Species, construction, exposure, finish and maintenance all affect its condition over time. Ask for the specified timber and written warranty; we do not promise one lifespan for every hardwood gate."
+      "answer": "A well-built oak or iroko gate commonly lasts 30 years or more. The joinery, how well the end grain is sealed and how the gate is hung matter as much as the species. Cheap hardwood gates with screwed joints fail far sooner."
+    },
+    {
+      "question": "Oak or iroko?",
+      "answer": "Oak for a traditional look on a period property and the classic silvered finish if left unfinished. Iroko for better stability, a warmer colour and usually a lower price. We bring samples of both to the survey."
     },
     {
       "question": "Can hardwood gates be automated?",
-      "answer": "A suitable system requires assessment of the gate, supports, weight, movement and surrounding entrance. Ask for the proposed equipment and any structural changes in the quotation."
+      "answer": "Yes, with motors sized for their weight and wind load, and a frame rigid enough not to sag. Through-bolted brackets and an electric lock are good practice on heavy leaves."
     },
     {
       "question": "Will I need to stain the gates every year?",
-      "answer": "Use the care schedule for the selected timber and coating. Inspect the finish and follow that guidance rather than assuming the same annual schedule applies to every product."
+      "answer": "Only if you want to keep the original colour, and even then exposed gates typically need re-coating every one to two years, sheltered ones less often. If you’re happy for the timber to turn silver, it needs no staining at all."
+    },
+    {
+      "question": "Why has my new oak gate left dark marks on the paving?",
+      "answer": "That’s tannin washing out of fresh oak. It eases off after the first few months. Rinsing the gate and paving a few times early on, and using stainless fixings, keeps it to a minimum."
+    },
+    {
+      "question": "Wood or aluminium?",
+      "answer": "See our wooden and aluminium comparison for the trade-offs."
     }
   ],
   "reviewedFaqs": true,
@@ -344,22 +440,31 @@ export const services: Service[] = [
   "id": "wrought-iron-gates",
   "title": "Wrought Iron Gates",
   "slug": "wrought-iron-gates",
+  "metaDescription": "Wrought iron gates in London: new hand-forged or traditional steel gates and railings, restoration of original ironwork, conservation advice and costs.",
   "description": "Traditional-style metal driveway gates in London, with the actual metal, decorative details, protective finish and opening system specified in your quote.",
   "image": "/showcase/assets/content/gate-wrought-iron-open-manor-spring-gardens-57dd35f.webp",
   "icon": "Shield",
   "color": "sky",
   "faqs": [
     {
-      "question": "Are new wrought-iron-style gates made from wrought iron?",
-      "answer": "The name can describe an appearance. Ask the fabricator to identify the actual material and construction in writing, especially when comparing a new gate with an older iron gate."
+      "question": "Are new wrought iron gates actually made of wrought iron?",
+      "answer": "Almost never. New iron-style gates are mild steel, often with cast details. True wrought iron is only available as reclaimed material, and it’s mostly used in restoring historic work."
     },
     {
-      "question": "Can you assess an existing metal gate for repair?",
-      "answer": "We offer gate repairs and maintenance. Share photographs and the problem you have noticed so we can discuss an assessment. The condition of the gate and supports determines the options."
+      "question": "How can I tell if my old gate is wrought iron or cast iron?",
+      "answer": "Wrought iron has a fibrous, grainy texture where it’s corroded and often flakes in layers. Its joints are riveted or hand-welded. Cast iron has crisp, moulded ornament, often with faint casting lines, and breaks cleanly rather than bending. We can identify it at survey."
     },
     {
-      "question": "Does a protective coating remove the need for upkeep?",
-      "answer": "No. Follow the coating supplier’s care instructions, inspect for damage and arrange appropriate repairs and system maintenance."
+      "question": "Is it worth restoring my original gates?",
+      "answer": "Usually, if they’re genuine wrought or cast iron and the frame is mostly sound. On a listed building, it may be expected. If the gate is later mild steel that’s badly corroded, replacement often makes more sense."
+    },
+    {
+      "question": "Do I need permission to replace iron gates?",
+      "answer": "On a listed building, almost certainly. In a conservation area, possibly, depending on the design and the council. Anywhere, if the gate is over 1 metre high next to a road. Check before ordering."
+    },
+    {
+      "question": "Does a protective coating mean no maintenance?",
+      "answer": "No. A galvanised and coated gate needs very little upkeep, but it should still be washed and touched up when chipped. Traditionally painted ironwork needs repainting every few years."
     }
   ],
   "reviewedFaqs": true,
@@ -369,22 +474,31 @@ export const services: Service[] = [
   "id": "pedestrian-side-gates",
   "title": "Pedestrian and Side Gates",
   "slug": "pedestrian-side-gates",
+  "metaDescription": "Pedestrian and side gates in London: secure side passage gates, matching front gates, locks, closers and electric entry, sized for bins, bikes and buggies.",
   "description": "Pedestrian and side gates for London properties. Plan a usable walking route with the opening, lock, privacy and fitting details suited to your entrance.",
   "image": "/images/projects/metal-pedestrian-gate-side-passage.webp",
   "icon": "Users",
   "color": "emerald",
   "faqs": [
     {
-      "question": "Can the pedestrian gate match my driveway gate?",
-      "answer": "Discuss the material, finish, infill and visible fittings together. Matching options depend on the chosen range and the space available for the pedestrian entrance."
-    },
-    {
-      "question": "Can I use an intercom or keypad with a side gate?",
-      "answer": "It depends on the lock, access-control equipment, power supply and exit arrangements. Confirm the proposed components and failure behaviour before ordering."
+      "question": "Can the pedestrian gate match my driveway gates?",
+      "answer": "Yes. Made at the same time, it can match the material, colour, infill pattern and details exactly. Matching an older gate is usually possible too, though weathered timber and historic ironwork can take more work."
     },
     {
       "question": "What width should a pedestrian gate be?",
-      "answer": "Start with the people and equipment using the route, then assess the clear opening after fitting, approach space and threshold. Ask the installer to confirm suitability for your site and any applicable requirements."
+      "answer": "Usually 900 mm to 1 metre for a front path gate, with at least 850 mm of clear opening if wheelchair users need access. Side passage gates benefit from 1 metre or more for bins and bikes."
+    },
+    {
+      "question": "Can I use an intercom or keypad with a side gate?",
+      "answer": "Yes, with an electric lock. Choose a lock type that suits what should happen in a power cut, and make sure there’s always an easy way to open the gate from inside."
+    },
+    {
+      "question": "How tall should a side gate be for security?",
+      "answer": "At least 1.8 metres, with no climbable rails on the outside, and fitted as close to the front of the house as possible."
+    },
+    {
+      "question": "Should I choose a separate gate or a wicket in the driveway gate?",
+      "answer": "A separate gate if there’s room. It gives a level, independent walking route. A wicket is a good fallback where space is tight, but expect a threshold to step over and a narrower opening."
     }
   ],
   "reviewedFaqs": true,

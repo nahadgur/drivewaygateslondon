@@ -17,6 +17,7 @@ const TRUST_BADGES = [
 // Resolve a service slug to its matching gate-type option so the dropdown pre-fills.
 const SLUG_TO_GATE_TYPE: Record<string, string> = {
   'electric-sliding-gates': 'Electric Sliding Gates',
+  'telescopic-sliding-gates': 'Electric Sliding Gates',
   'electric-swing-gates': 'Electric Swing Gates',
   'wooden-driveway-gates': 'Wooden Driveway Gates',
   'metal-driveway-gates': 'Metal / Wrought Iron Gates',

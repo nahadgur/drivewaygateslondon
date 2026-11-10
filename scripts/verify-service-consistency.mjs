@@ -57,4 +57,4 @@ if (origin) {
     assert.equal(response.status,200,route); verify(await response.text(),route);
   }
 }
-console.log(`Service consistency PASS: 21 image records, all snapshot cards, ${count} built service/commercial pages, distinct commercial subjects, alt text, metadata, provenance and repair/retrofit intent.`);
+console.log(`Service consistency PASS: ${Object.keys(images).length} image records, all snapshot cards, ${count} built service/commercial pages, distinct commercial subjects, alt text, metadata, provenance and repair/retrofit intent.`);

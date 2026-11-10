@@ -57,7 +57,7 @@ export const commercialServices: CommercialService[] = [
       "desc": "Most industrial sites can’t simply close for a week. We phase the work so one side of the entrance stays usable, put temporary fencing in overnight where the perimeter is opened up, and schedule groundworks and gate hanging around your deliveries and shift patterns. Before work starts, we agree a method statement covering traffic management, pedestrian routes and who on your side is the point of contact. Heavier gates and fast motors may need a new three-phase or upgraded power supply. We identify that at survey so it doesn’t hold up the programme. At handover you get operating instructions, training for the people who’ll run the entrance, safety test records and a log of who controls access permissions."
     },
     {
-      "title": "What it costs",
+      "title": "Cost of industrial security gates in London",
       "desc": "As a rough guide, a powered cantilever sliding gate for a typical industrial entrance costs £12,000 to £30,000 installed, depending on width, height, foundations and access control. Speed gates usually cost £20,000 to £45,000. LPS 1175 rated gates cost significantly more than unrated equivalents. Every quote is itemised and fixed in writing after survey."
     },
     {
@@ -124,7 +124,7 @@ export const commercialServices: CommercialService[] = [
       "desc": "We provide what schools, academy trusts and local authorities normally need: a site-specific risk assessment and method statement, insurance certificates, DBS checks for staff working on site, and drawings for approval. At handover you get operating instructions, staff training on daily use and emergency release, and the records your premises team needs. If you’re buying through a framework or need several quotes for your procurement rules, tell us at enquiry stage."
     },
     {
-      "title": "What it costs",
+      "title": "Cost of school gates and entrance security in London",
       "desc": "As a rough guide, a powered sliding vehicle gate for a school entrance typically costs £8,000 to £20,000 installed, depending on width, groundworks and access control. A controlled pedestrian gate with an electric lock, self-closer and video intercom is usually £3,000 to £7,000. Airlock entrances, new perimeter fencing and links to existing systems are priced after survey. Every quote is itemised and fixed in writing."
     },
     {
@@ -157,12 +157,12 @@ export const commercialServices: CommercialService[] = [
   "headline": "School Gates and Entrance Security in London"
 },
   {
-  "updatedDate": "2026-10-02",
+  "updatedDate": "2026-11-07",
   "id": "car-park-barriers",
   "slug": "car-park-barriers",
   "title": "Car Park Barriers and Access Control",
-  "metaTitle": "Car Park Barriers London | Automated Barrier Systems for London Car Parks",
-  "metaDescription": "Car-park barriers and entry controls for London premises. Plan vehicle flow, visitor access and support arrangements around the site.",
+  "metaTitle": "Car Park Barriers and Access Control in London | Driveway Gates London",
+  "metaDescription": "Car park barriers and access control in London: boom, high-speed and folding-arm barriers, induction loops, ANPR and fobs, layout, GDPR and typical costs.",
   "description": "Car-park barriers and entry controls for London premises. Plan vehicle flow, visitor access and support arrangements around the site.",
   "image": "/images/services/car-park-barriers-illustration.webp",
   "typicalClients": [
@@ -173,42 +173,69 @@ export const commercialServices: CommercialService[] = [
     "Airports and transport hubs"
   ],
   "intro": [
-    "A barrier can manage vehicle entry to a car park, but the layout also needs to account for people on foot, cyclists and drivers who stop to request access. Review the approach, waiting space and exit route before choosing a product.",
-    "Discuss whether staff, residents, visitors or paying customers use the car park. Decide who grants access and how authorised people enter when a credential or connection fails. Include deliveries and any shared entrances in the brief.",
-    "Identify the proposed controller, reader or intercom in the quotation. ANPR, ticketing and payment integrations depend on the selected systems and connectivity. Confirm subscriptions, administration and data-handling responsibilities before ordering."
+    "A standard boom barrier has a single straight arm, typically 3 to 6 metres long, and suits most surface car parks. It’s the cheapest and simplest option, and a good barrier opens in around three to six seconds.",
+    "High-speed barriers open in a second or two. They’re for busy entrances where a queue would otherwise back up onto the road, such as staff car parks at shift change and retail sites at peak times.",
+    "Folding-arm barriers have a hinged arm that folds as it rises, so it fits under a low ceiling. They’re the usual answer for underground and multi-storey car parks with limited headroom, often paired with a height-restriction bar at the entrance so oversized vans don’t hit the structure.",
+    "Skirted barriers have a hanging mesh or rail skirt below the arm, which stops pedestrians, cyclists and mopeds slipping underneath. They’re useful where the barrier is the only control on the entrance.",
+    "For higher-security sites, rising bollards or road blockers stop a vehicle physically rather than just signalling it to stop. They cost considerably more."
   ],
   "benefits": [
     {
-      "title": "Traffic flow",
-      "desc": "Assess opening demand, waiting space and the effect of queues on the entrance and surrounding roads."
+      "title": "How vehicles are detected",
+      "desc": "Most barriers rely on induction loops: wire loops cut into the road surface that sense the metal of a car above them. A safety loop under the arm stops it coming down onto a vehicle. An exit loop can lift the barrier automatically for cars leaving the site, so nobody needs a fob to get out. A closing loop lowers the arm as soon as each car has passed, which cuts down tailgating. Photocells add a second layer of protection, especially for higher vehicles and pedestrians."
     },
     {
-      "title": "Visitor access",
-      "desc": "Choose a process for visitors and deliveries that the people managing the site can operate."
+      "title": "How drivers get in",
+      "desc": "ANPR (automatic number plate recognition) reads the number plate and lifts the barrier for registered vehicles. There’s nothing to hand out, and visitors can be pre-registered through an online portal by reception or residents. It needs a well-positioned camera and good lighting, and it struggles with dirty or non-standard plates. Most sites keep a back-up method alongside it. See ANPR systems . Long-range tags stick to the windscreen and are read from several metres away. They’re very reliable and fast, so they suit staff and residents who arrive every day. Proximity fobs and cards are read by a post-mounted reader at window height. They’re cheap and easy to manage, but the driver has to stop and reach out. Intercoms let visitors and delivery drivers call reception, a concierge or a remote monitoring service, who then lifts the barrier. A video intercom lets staff see who they’re letting in. GSM phone entry lets authorised users open the barrier by calling it from their mobile. On pay-to-park sites, ticketing and payment are handled by specialist parking management systems. We install and maintain the barriers and detection and work alongside the payment provider you choose."
     },
     {
-      "title": "Equipment scope",
-      "desc": "Specify the barrier, supports, power, protective measures and entry controls as a complete installation."
+      "title": "Layout and queuing",
+      "desc": "The barrier should sit far enough back from the road that a car waiting at it, plus any car behind, is fully off the highway. On busy sites that may mean space for two or three cars. Reader posts and intercoms are set at driver’s-window height and positioned so the driver can reach them without leaving the car. Entry and exit lanes with a central island are easier to manage than a single shared lane. People on foot should have their own route beside the barrier, not one that crosses in front of a moving arm."
     },
     {
-      "title": "Ongoing costs",
-      "desc": "Compare service charges, connectivity fees, replacement credentials and support terms as well as installation cost."
+      "title": "ANPR and your data",
+      "desc": "Number plates are personal data, so an ANPR system brings legal duties under UK GDPR. You’ll need signs telling drivers that ANPR is in use, a clear policy on how long plate data is kept, and someone responsible for who can see it. We set the system up with sensible retention settings and can advise on signage. The legal responsibility sits with the site operator."
+    },
+    {
+      "title": "Barrier or gate?",
+      "desc": "A barrier controls vehicles but doesn’t secure a site. Anyone on foot can walk round it, and a determined driver can drive through it. Many sites use a barrier for the working day and a sliding or swing gate to lock the car park at night. If you need to keep people out as well as cars, see industrial security gates or heavy-duty sliding gates ."
+    },
+    {
+      "title": "Installation",
+      "desc": "A barrier is bolted to a concrete base, with ducting for power and control cables. Induction loops are cut into the road surface and sealed. Most single-lane installations take one day on site, with the entrance closed for part of it. We plan the work for quiet periods, evenings or weekends where the car park can’t close during the day. At handover, the site team is shown how to manage users, release the barrier by hand, and what to do if the arm is hit. Powered barriers come under the same safety standards and HSE guidance as powered gates. That means safety loops and photocells, recorded safety tests, and regular servicing."
+    },
+    {
+      "title": "Cost of car park barriers in London",
+      "desc": "As a rough guide, a standard barrier with induction loops and a fob reader typically costs £3,000 to £6,000 installed, per lane. High-speed and folding-arm barriers usually cost £5,000 to £9,000. Adding ANPR is typically £2,500 to £6,000 per lane, plus an ongoing software or support subscription on most systems. Look at the running costs too: replacement fobs or tags, SIM connectivity for intercoms and GSM units, software licences and service contracts. Every quote sets these out separately, so you can compare like with like."
+    },
+    {
+      "title": "Servicing and damage",
+      "desc": "Barriers on busy car parks cycle hundreds of times a day and should be serviced two to four times a year. Arms do get hit. A good barrier has a breakaway arm fixing that protects the motor when that happens, and keeping a spare arm on site means the entrance is back in use the same day. For a barrier that’s already faulty, see gate repair and servicing ."
     }
   ],
   "faqs": [
     {
-      "question": "Does a barrier provide the same security as a closed gate?",
-      "answer": "A barrier controls vehicle passage but may leave access around or beneath it. Define the site’s security requirement before deciding whether a barrier, gate or combined arrangement is suitable."
+      "question": "Does a barrier give the same security as a gate?",
+      "answer": "No. A barrier controls vehicles, but people on foot can walk round it. Use a gate, or a barrier plus a gate locked out of hours, if you need to secure the site itself."
     },
     {
-      "question": "Can you include number-plate recognition?",
-      "answer": "Discuss the desired use and provide the site layout. Equipment compatibility, visibility, connectivity and permission management need checking before the proposed scope is confirmed."
+      "question": "Can you add number plate recognition to an existing barrier?",
+      "answer": "Usually, yes. We check the barrier’s controller, the camera position and the power and network connections at survey. Older barriers sometimes need a new controller to work reliably with ANPR."
+    },
+    {
+      "question": "What happens if the power fails?",
+      "answer": "The barrier can be lifted by hand with a release key. Battery backup or a setting that raises the arm on power loss is worth considering for sites where vehicles must always be able to leave."
     },
     {
       "question": "What should a barrier quotation include?",
-      "answer": "Ask for the equipment specification, groundworks, power, access controls, commissioning, handover and making good, with VAT, exclusions and ongoing charges stated."
+      "answer": "The barrier model, groundworks, loops, access control equipment, commissioning, training and making good, with VAT, exclusions and any ongoing subscriptions or service charges shown separately. Ours do."
+    },
+    {
+      "question": "Can the barrier work with an underground car park’s low ceiling?",
+      "answer": "Yes. A folding-arm barrier rises within a much lower height than a straight arm. We measure the clear headroom at survey."
     }
-  ]
+  ],
+  "headline": "Car Park Barriers and Access Control in London"
 },
   {
   "updatedDate": "2026-11-07",
@@ -259,7 +286,7 @@ export const commercialServices: CommercialService[] = [
       "desc": "Sliding gates work with every type of access control: ANPR for fleet and staff vehicles, fobs and cards, video intercoms for visitors (with a second cab-height panel for lorry drivers), and GSM phone entry for opening from a mobile. For broader planning of security, traffic and pedestrian routes on an industrial site, see industrial security gates ."
     },
     {
-      "title": "What it costs",
+      "title": "Cost of heavy-duty commercial sliding gates in London",
       "desc": "As a rough guide, a powered cantilever gate for a 6-metre opening typically costs £10,000 to £18,000 installed. Openings of 10 metres and over usually run from £18,000 to £35,000, depending on height, infill, groundworks and power supply. Tracked gates generally come in somewhat cheaper. Replacing the motor on a sound existing gate is usually £2,500 to £6,000. Every quote is itemised and fixed in writing after survey."
     }
   ],
